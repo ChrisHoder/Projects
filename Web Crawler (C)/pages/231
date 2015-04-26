@@ -1,0 +1,39 @@
+http://www.cs.dartmouth.edu/~cbk/news.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | News </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="abs.php#csb09a"><img src="img/pub/csb09a.png" alt="CSB09a" /></a><div><a href="abs.php#csb09a">Pubs | CSB-09a</a>: sequence+structure graphical models</div></div></div>
+<div id="body"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php"  >projects</a></span><span><a href="classes.php"  >classes</a></span><span><a href="pubs.php"  >pubs</a></span><span><a href="news.php" class="navhere" >news</a></span>
+</div>
+	<div id="content"><table id="newspage"><tr class="on"><td class="newsdate">Jan 11</td><td><a href="http://www.immunome.org/events/1st-immunogenicity-determinants-and-correlates/">Immunogenicity workshop</a> announced for this May</td></tr><tr class="off"><td class="newsdate">Dec 10</td><td>Chris has been awarded a Dartmouth Senior Faculty Grant to help support his sabbatical next year at the <a href="http://www.immunome.org">Institute for Immunology and Informatics</a></td></tr><tr class="on"><td class="newsdate">Dec 10</td><td>Congratulations to Jeff and Tony (Bruce Donald's lab, Duke), whose paper "A geometric arrangement algorithm for structure determination of symmetric protein homo-oligomers from NOEs and RDCs" was accepted to RECOMB-11.</td></tr><tr class="off"><td class="newsdate">Dec 10</td><td>Congratulations to Andrew, whose paper "Optimization of combinatorial mutagenesis" was accepted to RECOMB-11.</td></tr><tr class="on"><td class="newsdate">Nov 10</td><td>We welcome Betty Huang, who will be joining us as a <a href="http://www.dartmouth.edu/~wisp/">WISP</a> intern this winter.</td></tr><tr class="off"><td class="newsdate">Oct 10</td><td>The preprint of Hetu's <a href="http://onlinelibrary.wiley.com/doi/10.1002/prot.22894/pdf">GOBLIN paper</a> (graphical model for predicting binding free energies) is up, well in advance of Halloween</td></tr><tr class="on"><td class="newsdate">Sep 10</td><td>The NSF is supporting our proposal "Analysis of multi-dimensional protein design spaces with Pareto optimization of experimental designs", collaborative with Alan Friedman (Purdue)</td></tr><tr class="off"><td class="newsdate">Sep 10</td><td>Congratulations to Hetu (Chris Langmead's lab at CMU), whose paper "Accounting for Conformational Entropy in Predicting Binding Free Energies of Protein-protein Interactions" has been accepted to <i>Proteins</i></td></tr><tr class="on"><td class="newsdate">Aug 10</td><td>Andrew's <a href="http://www.lifesciencessociety.org/CSB2010/toc/100.2010.html">IP<sup>2</sup> deimmunization</a> paper (<a href="deimm/ipip/">demo</a>) is presented at CSB-10.</td></tr><tr class="off"><td class="newsdate">Jul 10</td><td>Congratulations to Himanshu, whose paper "A lower bound on the error in dimensionality reduction resulting from
+projection onto a restricted subspace" was accepted to <i>Linear Algebra and its Applications</i></td></tr><tr class="on"><td class="newsdate">Jun 10</td><td><em>Drs.</em> Fei and Wei in their floppy hats: <br/><a href="img/lab/fei-wei-cbk.jpg"><img src="img/lab/fei-wei-cbk-small.jpg" alt="Fei and Wei PhD" /></a></td></tr><tr class="off"><td class="newsdate">Jun 10</td><td>Congratulations to Himanshu, who will be presenting a poster "NMR structural inference of symmetric homo-oligomers" at 3dsig.</td></tr><tr class="on"><td class="newsdate">Jun 10</td><td>Congratulations to Lu, who will be giving an oral presentation "Pareto optimal protein design" at 3dsig.</td></tr><tr class="off"><td class="newsdate">May 10</td><td>Congratulations to Fei, whose paper "Planning Combinatorial Disulfide Cross-links for Protein Fold Determination" was accepted to BioKDD</td></tr><tr class="on"><td class="newsdate">May 10</td><td>Congratulations to <i>Dr.</i> Fei Xiong, for successfully defending his thesis "Graph algorithms for NMR resonance assignmentand cross-link experiment planning"!</td></tr><tr class="off"><td class="newsdate">May 10</td><td>Congratulations to <i>Dr.</i> Wei Zheng, for successfully defending his thesis "Optimization Algorithms for Site-directed Protein Recombination Experiment Planning"!</td></tr><tr class="on"><td class="newsdate">May 10</td><td>Congratulations to Andrew, whose paper "Optimization of therapeutic proteins to delete T-cell epitopes  while maintaining beneficial residue interactions" was accepted to CSB-2010</td></tr><tr class="off"><td class="newsdate">Apr 10</td><td>Wei's <a href="http://www.liebertonline.com/doi/abs/10.1089/cmb.2009.0189">fragment swapping</a> paper is out in <i>JCB</i>.</td></tr><tr class="on"><td class="newsdate">Apr 10</td><td>Paritosh's <a href="http://www.worldscinet.com/jbcb/08/0802/S0219720010004781.html">solution scattering</a> paper is out in <i>JBCB</i>.</td></tr><tr class="off"><td class="newsdate">Mar 10</td><td>Congratulations to Andrew, whose paper "Optimization algorithms for functional deimmunization of therapeutic proteins" was accepted to <i>BMC Bioinformatics</i>.</td></tr><tr class="on"><td class="newsdate">Jan 10</td><td>Congratulations to Andrew for the best poster award at the departmental research symposium.</td></tr><tr class="off"><td class="newsdate">Jan 10</td><td>Congratulations to Nancy for winning the Francis L. Town Scientific Prize in Computer Science, which is awarded annually to "one meritorious and deserving student in each department of scientific study at the College".</td></tr><tr class="on"><td class="newsdate">Jan 10</td><td>The Neukom Institute has produced an <a href="http://neukominstitute.com/index.php/section/information/people/70/254/chris_bailey_kellogg_karl_e_griswold">overview video</a> about our deimmunization work.</td></tr><tr class="off"><td class="newsdate">Dec 09</td><td>An extended version of Paritosh's solution scattering paper was accepted to the CSB-09 special issue of <i>J. Bioinf. Comp. Bio.</i></td></tr><tr class="on"><td class="newsdate">Dec 09</td><td>An extended version of Wei's fragment swapping paper was accepted to the RECOMB-09 special issue of <i>J. Comp. Bio.</i></td></tr></table><p><a href="news.php?from=25">[prev 25]</a>&nbsp;&nbsp;</p></div>
+</div>
+<div id="footer"></div>
+</div>
+</body>
+</html>

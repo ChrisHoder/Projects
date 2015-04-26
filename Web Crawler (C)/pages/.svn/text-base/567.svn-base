@@ -1,0 +1,274 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_14
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Lecture 14" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Lecture 14 - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Lecture_14";
+		var wgTitle = "Lecture 14";
+		var wgAction = "view";
+		var wgArticleId = "28";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 353;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lecture_14 skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Lecture 14</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Brief_review"><span class="tocnumber">1</span> <span class="toctext">Brief review</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Model-checking_.28for_satisfiability_and_entailment.29"><span class="tocnumber">1.1</span> <span class="toctext">Model-checking (for satisfiability and entailment)</span></a></li>
+<li class="toclevel-2"><a href="#Resolution_.28for_entailment.29"><span class="tocnumber">1.2</span> <span class="toctext">Resolution (for entailment)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Forward_Chaining.3B_Horn_clauses"><span class="tocnumber">2</span> <span class="toctext">Forward Chaining; Horn clauses</span></a></li>
+<li class="toclevel-1"><a href="#SAT_problems"><span class="tocnumber">3</span> <span class="toctext">SAT problems</span></a>
+<ul>
+<li class="toclevel-2"><a href="#DPLL"><span class="tocnumber">3.1</span> <span class="toctext">DPLL</span></a></li>
+<li class="toclevel-2"><a href="#WALKSAT"><span class="tocnumber">3.2</span> <span class="toctext">WALKSAT</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Brief_review" id="Brief_review"></a><h2> <span class="mw-headline">Brief review</span></h2>
+<p>A few concepts.  First, we have the <b>syntax</b> of propositional logic.  But as we've seen, it's possible to greatly simplify the syntax using conjunctive normal form (CNF), so that any sentence or conjunction of sentences can be written in the form "clause <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" /> clause <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" /> clause <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" />...", where a clause is a disjunction of literals (atomic symbols or their negation).
+</p><p>Second, we have an idea of a <b>model</b> for propositional logic.  A model is a possible world; the assertion that a sentence holds is a constraint on the possible world.  A model for propositional logic is an assignment of values <i>true</i> or <i>false</i> to every atomic symbol.    
+</p><p>The <b>semantics</b> of propositional logic take a sentence (that satisfies the syntax) and a model, and evaluates the truth of the sentence.  This is particularly easy if the sentence is expressed in CNF:  a clause is true if any literal in the clause evaluates to true, and the sentence is true if all the clauses are true.
+</p><p>There are basically two questions we might like to ask using propositional logic:
+</p>
+<ul><li> <b>Entailment</b>.  Assume sentence <span class="texhtml">&alpha;</span> is true.  Does this guarantee that sentence <span class="texhtml">&beta;</span> is true?  Put another way, for all models for which <span class="texhtml">&alpha;</span> is true, does <span class="texhtml">&beta;</span> evaluate to true?
+</li><li> <b>Satisfiability</b>.  Do there exist any models under which sentence <span class="texhtml">&alpha;</span> is true?
+</li></ul>
+<p>There are different cases where we might be interested in each.  For example, we might like to prove something using entailment.  Consider a 3x3 minesweeper world:  
+</p>
+<pre>
+0..
+1x.
+0..
+</pre>
+<p>We have detected the numbers along the left column and would like to prove that there <i>must</i> be a mine in the location marked by x.  The sentences would describe the rules of minesweeper, and the numbers at the locations along the left column.  It is <b>not</b> sufficient to check satisfiability in this case:  it's not enough to know that there is at least one consistent model in which there is a mine in the square x; we want to know that there is a mine at x in <i>all</i> models.
+</p><p>A problem where satisfiability (SAT) might be useful would be solving a sudoku problem.  There might be many solutions, but we're happy to just find one of them.  We'll come back to this example when we discuss satisfiability later in the lecture.
+</p>
+<a name="Model-checking_.28for_satisfiability_and_entailment.29" id="Model-checking_.28for_satisfiability_and_entailment.29"></a><h3> <span class="mw-headline">Model-checking (for satisfiability and entailment) </span></h3>
+<p>A straightforward (but perhaps unwise) approach to checking SAT or entailment is to enumerate all models.  For SAT, if we find a model such that <span class="texhtml">&alpha;</span> evaluates to true, stop and return true.  If we enumerate all models without this happening, return false; the sentence is unsatisfiable.
+</p><p>For entailment, we could just enumerate all models.  For each model for which <span class="texhtml">&alpha;</span> evaluates to true, check if <span class="texhtml">&beta;</span> does too.  If not, stop and return false.  If we finish enumerating all models without returning false, then the entailment has been proven; return true.
+</p><p>Notice that SAT model checking might return early on success (though in the worst case, the only satisfying model is the one we check last), but entailment returns early on failure.
+</p><p>Also notice that we could check entailment by showing that <img class="tex" alt="\alpha \and \neg \beta" src="/~robotics/cs44/images/math/b/7/0/b70c129afead5d4015ccbc02ecdd29d7.png" /> is unsatisfiable, so we really only need the (un)satisfiability algorithm.
+</p>
+<a name="Resolution_.28for_entailment.29" id="Resolution_.28for_entailment.29"></a><h3> <span class="mw-headline">Resolution (for entailment) </span></h3>
+<p>Consider the problem of proving entailment where we have <span class="texhtml">&alpha;</span> as the following knowledge base:
+</p>
+<dl><dd><img class="tex" alt="&#10;A \Rightarrow B \or C \or D \or E&#10;" src="/~robotics/cs44/images/math/f/f/b/ffbe25d482cde76fbd48d7342a580aa7.png" />
+</dd><dd><img class="tex" alt="&#10;\neg B \and \neg D \and \neg E&#10;" src="/~robotics/cs44/images/math/2/5/d/25d485752ed263484802445ba0f0e5d4.png" />
+</dd><dd><span class="texhtml"><i>A</i></span>
+</dd><dd><img class="tex" alt="&#10;F \or G \or H \or I \or J \or K \or L \or M \or N... \or Z&#10;" src="/~robotics/cs44/images/math/0/a/4/0a43f4d631808961a9bcc867ea9a69f7.png" />
+</dd></dl>
+<p>Prove that B is entailed by the knowledge base.  Using the model-checking approach above, we'd add <img class="tex" alt="\neg B" src="/~robotics/cs44/images/math/d/9/a/d9a9ce3734464ec8b2fa333bb4a87500.png" /> to the KB, and enumerate all models.  When done, if the knowledge base evaluated to false every time, then KB <img class="tex" alt="\and \neg B" src="/~robotics/cs44/images/math/5/7/9/5798f622ba4b178eb9ca098cf0d2ed67.png" /> is unsatisfiable, and the entailment has been proven.  This would take a number of steps equal to <span class="texhtml">2<sup>26</sup></span>, since there are 26 symbols.
+</p><p>Or we might notice that <span class="texhtml"><i>A</i></span> and <img class="tex" alt=" A \Rightarrow B \or C \or D \or E " src="/~robotics/cs44/images/math/f/f/b/ffbe25d482cde76fbd48d7342a580aa7.png" /> can be combined to form a new sentence <img class="tex" alt="B \or C \or D \or E" src="/~robotics/cs44/images/math/c/f/d/cfd476b3b66f3e0b344621c6066427e3.png" />.  This is an <b>inference</b> rule called <i>modus ponens</i>.  And then we could use another inference rule to recognize that  <img class="tex" alt="B \or C \or D \or E" src="/~robotics/cs44/images/math/c/f/d/cfd476b3b66f3e0b344621c6066427e3.png" /> and <img class="tex" alt="\neg B \and \neg D \and \neg E" src="/~robotics/cs44/images/math/2/5/d/25d485752ed263484802445ba0f0e5d4.png" /> give us the new sentence B.
+</p><p>But if we have both B and <img class="tex" alt="\neg" src="/~robotics/cs44/images/math/a/0/c/a0c4c2ce7f9c78efeedd2bfb53ab9f3e.png" />B, then there can be no model satisfying this, so without looking at a single model, we can say that KB <img class="tex" alt="\and \neg B" src="/~robotics/cs44/images/math/5/7/9/5798f622ba4b178eb9ca098cf0d2ed67.png" /> is unsatisfiable.
+</p><p>We talked last time about how you could build a complete resolution algorithm that would take pairs of sentences in CNF and use the resolution inference rule to attempt to add new sentences until we find a literal, and a negation of that literal.  If found, this proves unsatisfiability, and that can be used to show entailment.
+</p>
+<a name="Forward_Chaining.3B_Horn_clauses" id="Forward_Chaining.3B_Horn_clauses"></a><h2> <span class="mw-headline">Forward Chaining; Horn clauses</span></h2>
+<p>Resolution on CNF sentences can be shown to require, in the worst case, exponential time in the number of symbols.  What if we use a restricted subset of sentences, for which proofs are "easy"?  
+</p><p>Define a <b>Horn clause</b> to be a disjunction of literals, such that at most one is positive.  Section 7.53 in the book and figure 7.16 give a terse description of how a KB of horn clauses can be used to prove entailment of a symbol in linear time, so I won't go into details here.
+</p>
+<a name="SAT_problems" id="SAT_problems"></a><h2> <span class="mw-headline">SAT problems</span></h2>
+<p>Let's turn from entailment to satisfiability.  Notice that a <i>complete</i> SAT algorithm that runs in bounded time can be used to prove entailment, since entailment can be proven by showing unsatisfiability of <img class="tex" alt="\alpha \and \neg \beta" src="/~robotics/cs44/images/math/b/7/0/b70c129afead5d4015ccbc02ecdd29d7.png" />.  We'll look at two commonly-used SAT algorithms, both based on model checking.
+</p>
+<ul><li> <b>DPLL</b>.  A complete backtracking model-enumeration approach.  Because this algorithm is complete, it could be used to prove entailment.  I do not know how DPLL compares to resolution to check entailment, but it seems like it would depend on the structure of the problem.  For example, if the KB is made of horn clauses, the book points out that DPLL essentially reduces to forward checking, and could prove entailment in time linear in the number of clauses.  
+</li></ul>
+<ul><li> <b>WALKSAT</b>.  A random-walk model-checking approach.  Because the random walk could take an infinite time to explore all models, walksat is not a good choice to prove unsatisfiability.  However, for many problems, walksat proves satisfiability quickly, and has the added advantage that implementing the basic algorithm is trivial.
+</li></ul>
+<a name="DPLL" id="DPLL"></a><h3> <span class="mw-headline">DPLL</span></h3>
+<p>Most recent SAT solvers appear to be based on DPLL.  Examples include CHAFF, <a href="http://minisat.se/MiniSat.html" class="external text" title="http://minisat.se/MiniSat.html" rel="nofollow">minisat</a> (open source) and even one in java:  <a href="http://www.sat4j.org/" class="external text" title="http://www.sat4j.org/" rel="nofollow">SAT4J</a>.  Interestingly, SAT4J is integrated into Eclipse, and used to check dependencies of Eclipse modules.  The basic idea of DPLL is to do a recursive enumeration of models (just like backtracking), but with a few improvements:
+</p>
+<ul><li> <b>Early termination.</b>  If any literal in a clause evaluates to true, the clause evaluates to true.  If every literal in a clause evaluates to false, then the clause evaluates to false, and a subtree in search space can be pruned.
+</li></ul>
+<ul><li> <b>Pure symbols.</b>  A symbol that appears only positively in a set of clauses, or only negatively, is called a pure symbol.  If there is any model satisfying the sentence(s), then there is one in which the pure symbol is set to true.  Clauses that are already known to be true (from early termination) can be ignored in the analysis. 
+</li></ul>
+<ul><li> <b>Unit clause heuristic.</b>  A clause with just one literal.  In DPLL, also a clause in which all literals except one have been assigned false.
+</li></ul>
+<a name="WALKSAT" id="WALKSAT"></a><h3> <span class="mw-headline">WALKSAT</span></h3>
+<p>In CNF, a model satisfies the sentences if all clauses evaluate to true.  In WALKSAT, pick a random model (assignment).  If it satisfies the sentences, we're done.  Otherwise, randomly pick a symbol to swap between true and false.  With some probability, we either pick a symbol that satisfies the most new clauses, or pick some other symbol.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 95/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:28-0!1!0!!en!2!edit=0 and timestamp 20110220172529 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_14">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_14</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Lecture_14" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Lecture_14&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Lecture_14&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Lecture_14&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Lecture_14" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Lecture_14" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Lecture_14" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Lecture_14&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Lecture_14&amp;oldid=353" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 6 February 2010, at 13:53.</li>
+					<li id="viewcount">This page has been accessed 1,614 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.229 secs. --></body></html>

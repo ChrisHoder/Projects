@@ -1,0 +1,158 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/logistics.html
+3
+<HTML>
+<HEAD>
+<TITLE>CS37: Course Information</TITLE>
+</HEAD>
+<BODY>
+
+<font size="6">Course Information</font>
+<p>
+<b>Instructor:</b> Joshua Brody
+<br>
+<b><em> Email:</em> </b>
+<a href="mailto:jbrody@cs.dartmouth.edu"><b>jbrody AT cs DOT dartmouth DOT edu</b></a>.
+<br><b><em> Office:</em> </b>Sudikoff 217 <br>
+<b><em> Office hours:</em></b> Wednesday and Friday, 9-10:30AM and by appointment.
+<br>
+<p>
+<hr>
+<b>Teaching Assistants:</b> 
+<br>
+<ul>
+<li>Ranganath Kondapally<br>
+<a href="mailto:rangak@cs.dartmouth.EDU"><b>rangak AT cs DOT dartmouth DOT edu</b></a>.<br>
+<b><em> Office:</em> </b>Sudikoff 112<br>
+<b><em> Office hours:</em></b> Thursday 4-5PM and by appointment.<p>
+<li>James Hughes<br>
+<a href="mailto:hughes@cs.dartmouth.EDU"><b>hughes AT cs DOT dartmouth DOT edu</b></a>.<br>
+<b><em> Office:</em> </b>Sudikoff 157<br>
+<b><em> Office hours:</em></b> Tuesday 4-5PM and by appointment.<p>
+</ul>
+<p>
+Ranga and James will also staff <b>lab hours</b> each Sunday, 4-6PM, at Sudikoff 005.
+<hr>
+<b>Staff:</b>
+<p>
+Email to <a href="mailto:cs37staff@cs.Dartmouth.EDU"><b>cs37staff@cs.dartmouth.edu</b></a> goes to the entire
+course staff.
+<hr>
+<b>Lectures:</b>
+<p>
+Meeting times: 
+<ul>
+<li> <i>Regular classes:</i> Monday, Wednesday, Friday, 12:30-1:35PM.
+<li> <i>X-hour:</i> Tuesday, 1-1:50PM.
+</ul>
+<p>
+Location: Kemeny 006.
+<p>
+
+<hr>
+<b>Public Lab Space:</b>
+<p>
+There is lab space available in Sudikoff Room 003,005.
+
+Ranga and James will have <b>lab hours</b> each Sunday from 4-6PM in Sudikoff 005.
+<p>
+<hr>
+<a name="LS"><b>LogiSim:</b></a>
+<p>
+We will be using the Georgia Tech version of the
+LogiSim simulator for the exercises.
+The tool will be installed 
+on the machines in 005
+(but you can also install it on your own
+machine)
+<p>
+For more information, see the <a href="../resources/index.shtml#LS"><b>LogiSim material on the resources page</b></a>
+
+<p><b>Note:</b> If you choose to run Logisim on your own machine, you do so at your own risk.  The cs37 staff only supports MacOS 10.5 and up.
+
+<p><b>Also note:</b> Do not use Logisim on <b>Ubuntu</b> machines---students have had problems in the past.  Logisim tends to occasionally crash and/or save mangled circuits instead of nice, clean circuits. If you submit a circuit you've created using Logisim on a Ubuntu machine, do not be surprised if you get a low grade because your circuit is mangled.  You've been warned ;)
+<p>
+<hr>
+<b>Late Assignments:</b>
+<p>
+<ul>
+<li> Each student has two (virtual) "one-day late" coupons.
+Each coupon is good for a 1-day extension on one project.
+<li> However, an N-person project requires N coupons for a 1-day extension.
+</ul>
+Plan accordingly.
+<p>
+If/after you burn through both coupons, I'll charge 
+a 5% off per hour penalty.
+<hr>
+<b>Exams:</b>
+<p>
+<p>
+<i>Midterms:</i> We'll be holding one midterm.  See the syllabus page for time/venue.
+<p>
+<i>Final:</i> scheduled by the registrar.
+<p>
+<hr>
+<a name="grading"><b>Grading:</b></a>
+<p>
+
+<p>
+Here's a rough breakdown of how your grade will be calculated:
+<ul>
+<li> homework projects: 45%
+<li> final exam: 30%
+<li> midterm:   20%
+<li> classroom participation: 5%
+</ul>
+(This is subject to change.)
+<p>
+<hr>
+<b>Honor Code:</b>
+<p>
+The Dartmouth Honor
+Code applies to your conduct in this course.  In particular, all
+work submitted for credit must be your own.
+You may discuss your
+homework assignments and programming projects with your classmates, the
+course staff, and with me. 
+However, you should write up your own written homework solutions
+and should not read or copy the solutions written by others (in
+this or previous terms, at Dartmouth or elsewhere). 
+<p>
+You should also write your own code and
+not read code written by classmates.  <b>Do not look at another student's homework.</b>
+<p>
+
+The Dartmouth College policy on sources also applies to
+this course, which means that all sources must be acknowledged,
+whether allowed by the instructor or not.  For example, software
+given to you by us must be acknowledged 
+when incorporated into your work.<br>
+<p>
+<B>If you have any questions about the
+honor code as it relates to CS 37, please come speak with me. 
+Violations of the honor code will be treated seriously.</B>
+
+<p>
+<hr>
+
+<b>Students with Disabilities:</b>
+<p>
+If you have any disabilities, including &quot;invisible&quot;
+disabilities such as chronic diseases and learning disabilities,
+please come see me so we can discuss possible accomodations I might
+make.
+<p>
+
+
+(If this may apply to you, you should also discuss things with the
+<a href="http://www.dartmouth.edu/~accessibility/"><b>Student Accessibility Services</b></a> office,  
+if you haven't already.  They've set up a system where
+they keep the "appropriate accommodations" on file---so you don't have
+to discuss details with each new instructor!)
+
+
+<p>
+
+<A HREF="/~cs37"><b>Back to CS37 Home Page</b></A>
+</BODY>
+</HTML>

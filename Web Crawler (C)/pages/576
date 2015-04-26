@@ -1,0 +1,91 @@
+http://www.cs.dartmouth.edu/~cs52/assignments.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<title>CS52 - Computer Graphics - Fall 2010</title>
+	<meta name="author" content="Fabio Pellacini" />
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+<div class="pagebackground">
+
+<div class="pagedecorationbefore"></div>
+<div class="pagedecoration">
+
+<div class="page">
+
+<div class="header">
+<div class="title">Computer Graphics</div>
+<div class="subtitle">CS52 - Fall 2010</div>
+<div class="subtitle">Instructor: William Kerr</div>
+</div>
+
+<div class="navigation">
+<span class="navigationitem"><a href="index.html">About</a></span>
+<span class="navigationitem"><a href="schedule.html">Schedule</a></span>
+<span class="navigationitem"><a href="homeworks.html">Homeworks</a></span>
+<span class="navigationitem"><a href="assignments.html">Assignments</a></span>
+</div>
+
+<div class="content">
+<h1>Assignments</h1>
+
+<h2 id="RayI">Raytrace I</h2>
+<p>
+<a href="assignments/rayI.pdf"-->Assignment</a> | 
+<a href="assignments/rayI-framework.zip"-->Framework</a> | 
+<a href="assignments/rayI-scenes.zip"-->Test Scenes</a> | 
+<a href="assignments/eclipse-tutorial.pdf">Eclipse Tutorial</a> |
+<a href="assignments/rayI-solution.zip">Solution</a> 
+</p>
+
+<h2 id="Model">Modeling</h2>
+<p>
+<a href="assignments/modeling.pdf">Assignment</a> | 
+<a href="assignments/modeling-framework.zip">Framework</a> | 
+<a href="assignments/modeling-scenes.zip">Test Scenes</a> | 
+<a href="assignments/modeling-bin.zip">Compiled Solution</a> | 
+<a href="assignments/jogl-1.1.1-windows-i586.zip">External Libraries (Win)</a> | 
+<a href="assignments/jogl-1.1.1-macosx-universal.zip">External Libraries (Mac)</a> | 
+<a href="assignments/modeling-solution.zip">Solution</a>
+</p>
+
+<h2 id="Anim">Animation</h2>
+<p>
+<a href="assignments/animation.pdf">Assignment</a> | 
+<a href="assignments/animation-framework.zip">Framework</a> | 
+<a href="assignments/animation-scenes.zip">Test Scenes</a> | 
+<a href="assignments/animation-bin.zip">Compiled Solution</a> | 
+<a href="assignments/jogl-1.1.1-windows-i586.zip">External Libraries (Win)</a> | 
+<a href="assignments/jogl-1.1.1-macosx-universal.zip">External Libraries (Mac)</a> | 
+<a href="assignments/animation-solution.zip">Solution</a>
+</p>
+
+<h2 id="RayI">Raytrace II</h2>
+<p>
+<a href="assignments/rayII.pdf">Assignment</a>
+</p>
+
+</div>
+
+<div class="footer">
+<table align="center">
+<tr><td align="right">Page Administrator:</td><td>William Kerr (wkerr -at- cs -dot- dartmouth -dot- edu)</td></tr>
+<tr><td align="right">Page Template Author:</td><td>Fabio Pellacini (fabio -at- cs -dot- dartmouth -dot- edu)</td></tr>
+</table>
+</div>
+
+</div>
+
+</div>
+<div class="pagedecorationafter"></div>
+
+</div>
+
+</body>
+</html>

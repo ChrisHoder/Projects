@@ -1,0 +1,136 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July19
+3
+<html><head><title>July 19: Architecture</title></head>
+
+<body>           
+
+<h1>July 19: Architecture</h1>
+
+
+<hr><h2>0) Recap</h2><hr> 
+
+Last Friday, we talked about busses and gave an example of how to use
+them to <i>gracefully</i> connect the CPU to multiple RAM chips.
+
+<p>Here's another example: 
+<p><center>
+<img src="fig3-33.jpg" alt="oops" width = "60%"></img>
+</center><p>
+
+<hr><h2>1) Key Concepts</h2><hr>
+<h3>Abstraction</h3>
+
+Hide details of <i>how</i> to manage all the complexity of e.g.,
+loading data from memory into a register.
+
+<p><hr>
+<h3>The Program</h3>
+
+<ul>
+<li>Sequence of <b>instructions</b>
+<li>we'll also need: program counter, method of fetching instructions, way to figure out what each instruction does, plan for maniipulating appropriate control lines.
+</ul>
+
+<p>Example instruction:  <b>LDR</b>  (from P&amp;P, appendix A)
+<p><center>
+<img src="ldr.jpg" alt="oops" width="90%"></img>
+</center><p>
+
+LDR == Load Base+Offset
+<ul>
+<li>add offset to contents of BaseR
+<li>go to that address
+<li>load that word into register DR
+</ul>
+Note: the opcode specifies <i>which</i> instruction to execute.
+
+<p>This instruction is what the software layer sees.  It abstracts
+away all the steps we need to execute the instruction (and all the
+flags that need to be wiggled to get these steps done.)</p>
+
+<hr><h2>2) The Von Neumann Model</h2><hr>
+Question:  Where should the program reside?
+<br>Answer:
+<ul>
+<li><a href="vonneumann.jpg" alt="oops"><b>Von Neumann</b></a> model: store program in memory.
+<li><a href="hahvahd.jpg" alt="oops"><b>Harvard</b></a> architecture: separate data from instructions.
+</ul>
+For the most part, we'll use Von Neumann model in this class. 
+<p>The Von Neumann Model:
+<p><center>
+<img src="fig4-1.jpg" alt="oops" width="60%"></img>
+</center></p>
+
+<hr><h2>3) ISA Overview</h2><hr>
+ISA: Instruction Set Architecture.
+<ul>
+<li>Specifies everything about the computer that the software has to be aware of.
+<li>(except not really.  This is only how it <i>should</i> work.)
+</ul>
+
+<p>
+Things that go into an ISA:
+<ul>
+<li>instruction set--specifies the available instructions, opcodes, operands, ...
+<li>word length
+<li>memory organization
+<ul>
+<li>address space
+<li>addressability.  byte addressable? word addressable?
+</ul>
+<li>Registers
+<ul>
+<li>R0,...,R7: General Purpose Registers.
+<li>Why are these part of the ISA?
+<li>hidden registers: registers in ISA implementation that
+are <i>not</i> specified in ISA.
+</ul>
+<li>data types.  How is your data being stored?
+<li>ALU.  What operations does the ALU support?
+<li>state flags.  These keep track of information about what's going on in the system.
+<br>Example: test (x == y) --> compute (x-y), then check if last write equals zero.
+</ul>
+
+<hr><h3>The LC-3 ISA</h3><hr> 
+
+The P&amp;P book defines a computer called the LC-3 (Little Computer,
+version 3).  It's what you'll be implementing in the next few weeks.<p>
+
+LC-3 specification:
+<ul>
+<li>instruction set -- (we'll go over this tomorrow)
+<li>word length -- 16 bits.
+<li>memory organization -- 2^16 addresses, word addressable.
+<li>temporary storage -- 8 general purpose registers: R0,...,R7
+<li>data types -- 2's complement.  (and nothing else!)
+<li>ALU -- AND, ADD, NOT
+<li>state flags: N,Z,P: 1 if the last GPR write was negative, zero, positive.
+</ul>
+
+<p>
+Other stuff:
+<ul>
+<li>ZEXT -- extend with zeros
+<li>SEXT -- sign extension.  extend with whatever the msb is.
+</ul>
+
+Look at the datapath again:
+<p><center>
+<img src="fig3-33.jpg" alt="oops" width="60%"></img>
+</center></p>
+
+Can you find:
+<ul>
+<li>the register file?
+<li>the ALU?
+<li>the program counter?
+<li>instruction register?
+<li>place where microcode ROM is hidden?
+</ul>
+
+Why do you think there's a +1 loop by the PC?
+<br>Why do you think there's a path from the IR to the FSM?
+<br>Why do you think there's a PCMUX?
+</body>
+</html>
+

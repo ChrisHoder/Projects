@@ -1,0 +1,253 @@
+http://www.cs.dartmouth.edu/~cs39/syllabus.html
+3
+<html> <head>
+<title>Computer Science 39, Winter 2011 Course Information</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1><a href="/~cs25/">CS 39 Winter 2011</a><br>
+Syllabus</h1>
+
+<h2>Instructor</h2>
+
+<a href="/~prasad/">Prasad Jayanti</a><br>
+Office: 224 Sudikoff Laboratory<br>
+Email: <a href="mailto:prasad@cs.dartmouth.edu">prasad@cs.dartmouth.edu</a> <br>
+
+<h2>Teaching Assistants</h2> 
+<ul>
+<li> Shahrzad Haddadan, <a href="mailto:
+shahrzad.haddadan@dartmouth.edu">shahrzad.haddadan@dartmouth.edu</a></li>
+<li> Carter Schonwald, <a href="mailto:carter.schonwald@dartmouth.edu">carter.schonwald@dartmouth.edu </a> </li>
+<li> Nancy Zheng '11, <a href="mailto:nan.zheng@dartmouth.edu">nan.zheng@dartmouth.edu </a> </li>
+</ul>
+
+<h2>Office Hours</h2> 
+<ul>
+<li>Sundays: 7.00-8.00pm (Carter, 213 Sudikoff)
+<li>Mondays: 1.00-2.00pm (Prasad, 224/214 Sudikoff) & 2.00-3.00pm (214 Sudikoff, Carter) & 7.00-8.00pm (Carter, 213 Sudikoff)
+<li>Tuesdays: 2.00-4.00pm (Prasad, 212/213/224 Sudikoff) & 4.00-6.00pm (Nancy, 212/213 Sudikoff) & 7.00-9.00pm (Shahrzad, 213 Sudikoff)
+<li>Fridays: 1.00-2.00pm (Prasad, 224 Sudikoff)
+</ul>
+
+
+<h2>Course Description </h2>
+This course serves as an introduction to formal models of languages and computation.
+Topics covered include finite automata, regular languages, pushdown automata, context-free languages,
+Turing machines, computability, and NP-completeness.
+
+The course has substantial mathematical content.
+It is expected that a student who enrolls for this course 
+<em>already knows how to write mathematical proofs</em> and is generally mathematically mature.
+If a student passes this basic criterion and is interested in thinking philosophically about
+what a computer can or cannot do, then this course should be great fun.
+
+<h2>Lectures</h2>
+
+Lectures are in 108 Kemeny in the 11 hour: MWF, 11:15-12:20.
+X-hour is Tuesday 12:00-12:50.
+
+<h2>X-hours</h2>
+<p>
+Since this course covers a lot of nontrivial material,
+I will use all X-hours for lectures or quizzes.
+It is <b>extremely important</b> that you have no other engagements during X-hours.
+I will be away in India attending a conference and return to Dartmouth only on January 6.
+So there will be no lectures on January 4 and 5, and our first lecture will be on Friday, Jan 7.
+
+<h2>
+Prerequisite</h2>
+<p>
+Computer Science 25 or a strong mathematical background and permission of the instructor.
+
+<h2>Text</h2>
+Required: <i>Introduction to the Theory of Computation</i>, Second Edition, by Michael Sipser.
+
+<!--
+<p>
+The <a href="journal.html">Day by Day</a> page will tell you what
+reading I expect you to do for each lecture.  
+-->
+
+<h2>Homework</h2>
+
+There will be weekly homework assignments.  They usually go out on
+a Wednesday and are due in class one week later; the first homework will be
+assigned on Wednesday, January 12.  
+
+<p>
+A few points about the homework assignments:
+
+<ul>
+<li> <strong>Start early.</strong> Difficult problems are not
+typically solved in one sitting.  Start early and let the ideas
+come to you over the course of a few days.
+<p>
+
+<li> Use good mathematical notation to be <strong>rigorous and concise.</strong> 
+<p>
+
+<li> <strong>You can work with others.</strong> Some of the problems will be
+difficult, and it might often be helpful to discuss them with
+others.  Feel free to form study groups.  The idea, however, is for
+<em>everyone</em> to understand the problems and experience
+working through the solutions, and so you should not simply "give"
+a solution to another classmate.  In particular, each student
+should write up his or her own homework solutions and should
+not read or copy the solutions of others.
+For each problem, if you worked on that problem with anyone,
+you should write down their names at the start of the solution
+to that problem.
+If you receive help from the professor or the TAs, be sure to acknowledge those names also.
+
+<p>
+<li><strong>Work on your own before talking to others:</strong>
+Although, as I said above, you can work with others on the homework problems,
+you will learn the most by first trying out each problem on your own.
+Make as much progress as possible on your own before you meet with your
+study group.  If you get used to working with others and
+often don't come up with the solutions on your own,
+you may do okay in the homework component of your grade,
+but you will suffer in the exams and quizzes where you are strictly prohibited
+from collaborating with anyone (see below under the section titled ``Exams'').
+<p>
+
+<li><strong> Protocol during office hours:</strong>
+If you receive any help during office hours (from me or the TA), we require that
+you don't take any notes during such help sessions.
+The idea is that you should understand what we discuss and be able to reconstruct it later
+to write up the solution on your own.
+<p>
+
+<li><strong>Challenge problems:</strong>
+In some homeworks, I might assign challenge problems.
+Your work on these doesn't help the grade.
+I therefore encourage you to work on challenge problems
+only after you have solved the regular problems as well as you possibly can,
+and you enjoy additional challenge.
+</ul>
+
+<h2>Homework Lateness Policy</h2>
+<p>
+Homework is due at the <em>beginning of class</em> on the announced due date.
+Late homework has an immediate 20% penalty
+(unless you have a valid excuse and, unless impossible,
+have discussed with me in advance), and 10% penalty per calendar day after that.
+I will not accept a homework after the next homework is due, or after the final.
+In this course, if you do not do homework on time,
+you will soon find yourself overwhelmed, so please be regular with your work.
+
+
+<h2>Quizzes</h2>
+
+There will be two in-class, closed book, hour long quizzes on Thursday evenings.
+<ul>
+<li> Quiz 1: 7.00-8.00pm, Thursday, January 27.  Location: Carson, Room #60.
+<li> Quiz 2: 7.00-8.00pm, Thursday, February 24.  Location: Carson, Room #60.
+</ul>
+
+<h2>Exams</h2>
+There will be a midterm exam and a final exam, both of which will be
+take-home.  Unlike the homework assignments, you may not discuss exam
+problems with anyone, not even with the professor.
+
+<p>
+The midterm exam will go out on Wednesday, February 9 and will be due
+before class starts on Wednesday, February 16.
+The midterm exam replaces that week's homework.
+
+<p>
+The final exam will be a takehome exam.
+It will be available on the web starting March 12
+(more precisely, no later than 12.01am on March 12).
+You will have 48 hours to work on the exam.
+To accomodate everyone's schedule, I let each of you decide
+when you want to start on the exam, but you must start
+on the exam no later than 11.59am on March 14.
+This way I can be certain that I have all of the exams back
+before noon on March 16.
+
+<p>
+Before the final exam, we will have a review session 1.00-2.30pm on Friday, March 11
+at Kemeny Hall Herringer Classroom 006.
+
+<h2>Grading</h2>
+Simple formula:
+<ul>
+<li> Homework: 35%
+<li> Quizzes: 15%
+<li> Midterm: 25%
+<li> Final: 25%
+</ul>
+
+<h2>Honor Code</h2>
+<strong>All work submitted for credit must be your own.</strong>
+As explained below, the rules with regard to the extent of collaboration are different for homework and exams.
+<p>
+
+You may discuss the homework problems with your classmates, the
+TAs, and Professor Jayanti,  but you must write up your own
+solutions.  For each problem, you must indicate who else you worked
+with or got any help from, small or big.  Even if you worked with the same people on the entire
+assignment, be sure to write their names at the start of the solution of each problem.
+Any written sources used (apart from the text, your lecture notes and any
+homework solutions that I distribute) must also be
+acknowledged; however, <strong>you may <em>not</em> consult any
+solutions on the internet or from previous years' assignments, whether they are student-
+or faculty-generated.</strong>
+
+<p>
+
+The rules are different for the exams (because
+exams are where we find out what you have learned by doing the homework).
+Unlike the homework, any discussion of the problems is prohibited for
+the midterm and the final exams:
+you may not discuss the problems with your classmates, the TA, the professor or anyone else.
+You may not consult written sources other than
+the text book, your class notes, and any homework solutions that I distribute during this term;
+and you may not consult any electronic sources, including the internet.
+
+<p>
+You should consult a copy of <em>Sources, their Use and Acknowledgment</em>,
+which can be found on the internet at www.dartmouth.edu/~sources
+
+<p>
+Dartmouth's Academic Honor Principle applies to this course.
+Please be sure to read the principle, which you can find at
+<a href="http://www.dartmouth.edu/~reg/regulations/undergrad/acad-honor.html"></a>.
+
+<p>
+
+Please ask me if you have any questions about the honor code as it
+applies to CS 39.  Better safe than sorry!
+
+<h2>Disabilities</h2>
+
+Students with disabilities enrolled in this course and who may
+need disability-related accommodations are encouraged to make an appointment
+to see me on or before January 14.
+All discussions will remain confidential, although the
+Student Accessibility Services office may be consulted
+to discuss appropriate implementation of any accommodation
+requested.
+
+<h2>Religious Observances</h2>
+
+Some students may wish to take part in religious observances that occur during
+this acdemic term.  If you have a religious observance that conflicts with
+your participation in the course, please meet with me
+on or before Friday, January 14 to discuss appropriate accommodations.
+
+<hr>
+<p>
+
+<a href="/~cs39/">Back to CS 39 home page</a>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~prasad/">Prasad Jayanti 
+&lt;prasad@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Wednesday, December 22, 2010
+<!-- hhmts end -->
+</body> </html>
+

@@ -1,0 +1,295 @@
+http://www.cs.dartmouth.edu/~fabio/courses.php
+3
+
+
+
+
+
+
+
+
+
+    
+
+
+<html>
+<head>
+  <link rel="stylesheet" href="style/fp-reset.css" type="text/css">
+    <link rel="stylesheet" href="style/fp-style-vertical.css" type="text/css"> 
+  </head>
+<body>
+<div class="wrapper">
+    <div class="header">
+    	<div class="logo">
+        	<div class="sitetitle"><a href="about.php">Fabio Pellacini</a></div>
+          	<div class="sitesubtitle">Associate Professor / Computer Science / Dartmouth</div>
+          </div>
+        <div class="nav">
+            <a href="about.php" class="navitem">About</a>
+            <a href="research.php" class="navitem">Research</a>
+            <a href="teaching.php" class="navitem">Teaching</a>
+            <a href="publications.php" class="navitem">Publications</a>
+            <a href="courses.php" class="navitem">Courses</a>
+            <a href="cv.pdf" class="navitem">CV</a>
+        </div>
+    </div>
+
+
+    <div class="content">
+<h1>Courses at Dartmouth</h1><div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=projects10">
+			<img class="listthumbimg" src="courses/projects10/projects10-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=projects10">Projects in Digital Art</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=programming10">
+			<img class="listthumbimg" src="courses/programming10/programming10-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=programming10">Programming for Interactive Digital Art</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=graphics09">
+			<img class="listthumbimg" src="courses/graphics09/graphics09-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=graphics09">Computer Graphics</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2009		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=projects09">
+			<img class="listthumbimg" src="courses/projects09/projects09-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=projects09">Projects in Digital Art</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2009		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=projects08">
+			<img class="listthumbimg" src="courses/projects08/projects08-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=projects08">Projects in Digital Art</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=graphics08">
+			<img class="listthumbimg" src="courses/graphics08/graphics08-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=graphics08">Computer Graphics</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=topics08">
+			<img class="listthumbimg" src="courses/topics08/topics08-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=topics08">Topics in Computer Graphics</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=projects07">
+			<img class="listthumbimg" src="courses/projects07/projects07-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=projects07">Projects in Digital Art</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2007		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=concepts07">
+			<img class="listthumbimg" src="courses/concepts07/concepts07-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=concepts07">Concepts in Computing</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2007		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=graphics06">
+			<img class="listthumbimg" src="courses/graphics06/graphics06-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=graphics06">Computer Graphics</a>
+		</h3>
+		<p>
+			F. Pellacini.<br/>Dartmouth, 2006		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=topics08">
+			<img class="listthumbimg" src="courses/topics08/topics08-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=topics08">Topics in Computer Graphics</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2006		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=graphics05">
+			<img class="listthumbimg" src="courses/graphics05/graphics05-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=graphics05">Computer Graphics</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>Dartmouth, 2005		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+	</div>
+    <div class="content">
+<h1>Courses at SIGGRAPH</h1><div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=gpu08">
+			<img class="listthumbimg" src="courses/gpu08/gpu08-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=gpu08">Beyond Programmable Shading</a>
+		</h3>
+		<p>
+			C. Boyd, K. Fatahalian, T. Forsyth, M. Houston, A. Lefohn, D. Luebke, A. Munshi, J. Olick, J. Owens, F. Pellacini, M. Pharr, J. Shopf<br/>SIGGRAPH, 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=gpu06">
+			<img class="listthumbimg" src="courses/gpu06/gpu06-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=gpu06">GPU Shading and Rendering</a>
+		</h3>
+		<p>
+			M. Olano, D. Blythe, L. Gritz, M. Kilgard, M. McCool, F. Pellacini, T. Scheuermann<br/>SIGGRAPH, 2006		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+	</div>
+    <div class="content">
+<h1>Courses at Cornell</h1><div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=advanimation05">
+			<img class="listthumbimg" src="courses/advanimation05/advanimation05-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=advanimation05">Advanced Computer Animation</a>
+		</h3>
+		<p>
+			F. Pellacini, D. Greenberg<br/>Cornell, 2005		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="course.php?id=animation04">
+			<img class="listthumbimg" src="courses/animation04/animation04-example-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="course.php?id=animation04">Computer Animation</a>
+		</h3>
+		<p>
+			F. Pellacini, D. Greenberg<br/>Cornell, 2004		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+	</div>
+
+      <div class="footer">
+    	email: fabio-at-cs-dot-dartmouth-dot-edu <br/>
+    	address: 6211 Sudikoff Lab, Hanover, NH, 03755 <br/>
+    	tel: (603) 646 - 8710 | fax: (603) 646 - 1672 <br/>
+    	credits: Design inspired by <a href="http://vostoktheme.com/white/?p=1818">Vostok Theme</a></div>
+   </div>
+<!-- google analytics -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> </script>
+<script type="text/javascript"> _uacct = "UA-787336-1"; urchinTracker(); </script>
+</body>
+</html>

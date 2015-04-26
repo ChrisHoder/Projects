@@ -1,0 +1,224 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_5
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Lecture 5" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Lecture 5 - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Lecture_5";
+		var wgTitle = "Lecture 5";
+		var wgAction = "view";
+		var wgArticleId = "13";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 155;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lecture_5 skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Lecture 5</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<a name="Local_search_.28from_R_.26_N.29" id="Local_search_.28from_R_.26_N.29"></a><h2> <span class="mw-headline"> Local search (from R &amp; N) </span></h2>
+<p>Local search is reasonable to consider if:
+</p>
+<ul><li> We don't care about the path, just the solution.  (e.g, 8-queens)
+</li><li> Memory is an issue
+</li><li> The state space is large (or continuous, i.e. infinite) 
+</li></ul>
+<p>Examples:
+</p>
+<ul><li> Hill climbing and the 8-queens problem.  
+</li><li> Value functions
+</li><li> Problems with hill climbing:  local maxima, shoulders, plateaus.
+</li><li> Hill-climbing with stochastic sideways moves.
+</li><li> Hill-climbing with random restarts.
+</li><li> Beam search.  (hill climbing with random starting locations, but choose k best neighbors at each step, allowing resources to be put in promising directions)
+</li><li> Genetic algorithms.
+</li></ul>
+<a name="Local_search_in_continuous_spaces_.28very_briefly.29" id="Local_search_in_continuous_spaces_.28very_briefly.29"></a><h2> <span class="mw-headline">Local search in continuous spaces (very briefly)</span></h2>
+<p>One of the problems with searching in continous spaces using UCS, A*, DFS, etc, is that there are infinite possible actions and the state space is of infinite size.  We've seen a few ways to deal with this problem (RRTS, or the Barraquand and Latombe approach to discretization).  But sometimes you don't care about the path to get to the goal -- the only problem is to find some state that satisfies some goal test, or maximizes  some value function.
+</p><p>Example:  airports in Romania, from R &amp; N.
+</p><p>Just like the problems for discrete local search, it's often the case that there is a value function (or heuristic function) available for every state.  (If there isn't, there's not much we can do, other than sample the points randomly, and hope we get lucky!)
+</p><p>We can use this value function to guide a local search.  One idea is to follow the gradient.  Follow it for some step size, and keep doing this.  This is very similar to hill-climbing.  We might do this with random restarts, or beam search, etc.
+</p><p>But how do you choose the step size?  Choose it too small, and the search takes forever, or you get caught in a local minimum.  Choose it too large, and you overshoot the goal.  One idea is to search along the direction the gradient points (along a <b>line</b>) until the value function decreases again.  Idea:  choose the step size to be delta.  Check for an increase in the value function; if you find it, use that point.  Else double the step size and keep going; repeat.
+</p>
+<a name="Planning_in_non-deterministic_worlds" id="Planning_in_non-deterministic_worlds"></a><h2> <span class="mw-headline"> Planning in non-deterministic worlds</span></h2>
+<p>Contingency planning.  Vacuum-cleaner example from R &amp; N.  And-or graphs.  Generating a conditional plan.  
+</p><p>Searching with partial information (or no information).  Sensorless planning mazeworld.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:13-0!1!0!!en!2!edit=0 and timestamp 20110220143858 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_5">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_5</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Lecture_5" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Lecture_5&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Lecture_5&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Lecture_5&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Lecture_5" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Lecture_5" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Lecture_5" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Lecture_5&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Lecture_5&amp;oldid=155" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 13 January 2010, at 18:15.</li>
+					<li id="viewcount">This page has been accessed 1,059 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.202 secs. --></body></html>

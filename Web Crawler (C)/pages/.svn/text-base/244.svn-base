@@ -1,0 +1,313 @@
+http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php/Paritosh_Kavathekar
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.14.0" />
+		<meta name="keywords" content="Paritosh Kavathekar,Andrei Furtuna,Main Page" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/mediawiki/opensearch_desc.php" title="Balkcom robotics lab (en)" />
+		<link rel="alternate" type="application/rss+xml" title="Balkcom robotics lab RSS Feed" href="http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="Balkcom robotics lab Atom Feed" href="http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Paritosh Kavathekar - Balkcom robotics lab</title>
+		<link rel="stylesheet" href="/~robotics/mediawiki/skins/common/shared.css?195" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/skins/common/commonPrint.css?195" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/main.css?195" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE50Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE55Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE60Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE70Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/mediawiki/skins/common/IEFixes.js?195"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/mediawiki/skins";
+		var wgArticlePath = "/~robotics/mediawiki/index.php/$1";
+		var wgScriptPath = "/~robotics/mediawiki";
+		var wgScript = "/~robotics/mediawiki/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Paritosh_Kavathekar";
+		var wgTitle = "Paritosh Kavathekar";
+		var wgAction = "view";
+		var wgArticleId = "80";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = "751";
+		var wgVersion = "1.14.0";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/mediawiki/skins/common/wikibits.js?195"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/mediawiki/skins/common/ajax.js?195"></script>
+		
+<style type="text/css">
+<!--
+.highlight {
+    background-color: yellow;
+}
+.blockquote {
+	border-left: 12px solid #BBBBBB;
+	margin:5px 0 5px -25px;
+	padding:0;
+	padding-left: 15px;
+}
+-->
+</style>		<script type="text/javascript" src="/~robotics/mediawiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Paritosh_Kavathekar skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/mediawiki/index.php?title=Special:UserLogin&amp;returnto=Paritosh_Kavathekar" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> balkcom robotics lab </div>
+<div id="site-subtitle">dartmouth computer science</div>
+	
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/mediawiki/index.php/Paritosh_Kavathekar" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/mediawiki/index.php?title=Talk:Paritosh_Kavathekar&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/mediawiki/index.php?title=Paritosh_Kavathekar&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/mediawiki/index.php?title=Paritosh_Kavathekar&amp;action=history" title="Past versions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Paritosh Kavathekar</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Balkcom robotics lab</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table>
+<tr>
+<td style="vertical-align:top"> <div class="floatleft"><a href="/~robotics/mediawiki/index.php/File:Paritosh4.jpg" class="image" title="Paritosh4.jpg"><img alt="" src="/~robotics/mediawiki/images/2/25/Paritosh4.jpg" width="250" height="307" border="0" /></a></div>
+</td><td style="vertical-align:top">
+<p><b>Paritosh A. Kavathekar</b><br />
+<i>Office:</i> 202, Sudikoff Laboratory, Hanover, NH<br />
+<i>Phone:</i> 603-646-1036 <br />
+<i>email:</i> paritosh at cs dot dartmouth dot edu<br />
+</p>
+<a name="About_Me:" id="About_Me:"></a><h3> <span class="mw-headline">About Me:</span></h3>
+<p>I am a PhD student in the <a href="http://www.cs.dartmouth.edu" class="external text" title="http://www.cs.dartmouth.edu" rel="nofollow">Computer Science</a> department at <a href="http://www.dartmouth.edu" class="external text" title="http://www.dartmouth.edu" rel="nofollow">Dartmouth College</a>. I am from Delhi, India. I got a bachelors degree in Physics from St Stephen's college, University of Delhi, and a masters degree in Computer Science from the University of Pune. Presently, I am working in the <a href="/~robotics/mediawiki/index.php/Main_Page" title="Main Page">Robtoics Lab</a> under my advisor, Prof. Devin Balkcom.
+</p><p>My non-academic interests include reading, hiking, gardening and playing squash.
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<a name="Research_Projects" id="Research_Projects"></a><h3> <span class="mw-headline">Research Projects</span></h3>
+<p><br />
+<b>Thesis topic:  Assisting human motion-tasks with minimal feedback</b>
+</p><p>Human beings frequently need external assistance to accomplish physical motion tasks. Such situations frequently arise in sports (where a coach or a training video is used), sensory augmentation (assisting the physically challenged), learning new skills such as dancing, etc. Realtime, corrective feedback can potentially speed up and improve this teaching process. The goal of this research is to develop systems that assist people in achieving motion tasks, while leveraging the human understanding of the world.
+</p><p>Planning tasks for humans is fundamentally different from planning them for robots. Humans have binocular vision, touch-sensitive skin, ten fingers, compliant force control, and natural inverse-kinematics. Conversely, due to a lack of "standard interface", human response to feedback is slow, error-prone, and unpredictable. In their current form, our systems use a motion-capture system to track the user’s actions, and tiny vibration motors as feedback devices. Our systems restrict the user’s actions to a predefined set of motion primitives. The vibration motors prompt the user to perform a sequence of these motions primitives to accomplish a task.
+</p><p>We have built example systems to: assist a blindfolded user in folding a T-shirt, guide a person
+to assume arm poses acted by another person, enable a blindfolded actor to navigate to an object, and reposition it. <br />
+</p><p>Here are links to some youtube videos of our system. <br />
+</p>
+<table width="350">
+<tr>
+<td>
+<div class="floatleft"><a href="http://www.youtube.com/watch?v=ZV-6f9NcjGQ"><img alt="" src="/~robotics/mediawiki/images/1/19/ShirtFolding.jpg" width="300" height="225" border="0" /></a></div>
+</td>
+<td>
+<div class="floatleft"><a href="http://www.youtube.com/watch?v=Rsu46TAEttI"><img alt="" src="/~robotics/mediawiki/images/7/72/CopyArmPose.jpg" width="300" height="225" border="0" /></a></div>
+</td>
+<td>
+<div class="floatleft"><a href="http://www.youtube.com/watch?v=uQxBgdfZa38"><img alt="" src="/~robotics/mediawiki/images/6/6b/MobileManipulation.jpg" width="300" height="225" border="0" /></a></div>
+</td>
+</tr>
+
+<tr>
+
+<td>
+<p><a href="http://www.youtube.com/watch?v=ZV-6f9NcjGQ" class="external text" title="http://www.youtube.com/watch?v=ZV-6f9NcjGQ" rel="nofollow">Guiding a blindfolded user through sequence of moves to fold a T-shirt.</a>
+</p>
+</td>
+<td>
+<p><a href="http://www.youtube.com/watch?v=Rsu46TAEttI" class="external text" title="http://www.youtube.com/watch?v=Rsu46TAEttI" rel="nofollow">Copying poses for a four DOF arm.</a> 
+</p>
+</td>
+<td>
+<p><a href="http://www.youtube.com/watch?v=uQxBgdfZa38" class="external text" title="http://www.youtube.com/watch?v=uQxBgdfZa38" rel="nofollow">Mobile manipulation system.</a> 
+</p>
+</td>
+</tr>
+
+</table>
+<p><b>Protein structure from solution state scattering</b>
+</p>
+<table>
+<tr>
+<td style="vertical-align:top"> <div class="floatleft"><a href="/~robotics/mediawiki/index.php/File:ProteinExample.png" class="image" title="ProteinExample.png"><img alt="" src="/~robotics/mediawiki/images/c/ce/ProteinExample.png" width="128" height="128" border="0" /></a></div>
+</td><td style="vertical-align:top">
+<p>Solution state scattering (SAX) is an alternate technique for protein structure elucidation. In this technique, a narrow beam of X-rays is directed towards a dilute solution of macromolecules. Electrons in the molecule scatter the beam, and a detector on the other side measures the scattering intensity in different directions. The scattering intensity curve (<i>I(q)</i>) is the Fourier transform of the interatomic distance distribution function (<i>P(r)</i>) for the protein. 
+</p><p>We have studied one component of the problem of elucidating three-dimensional structure from solution scattering data, determining the distribution of interatomic distances, the <i>P(r)</i> curve. We proposed a set of linear constraints to precisely describe the space of all feasible <i>P(r)</i> curves for a scattering profile. We showed that all feasible <i>P(r)</i> curves lie in a high-dimensional polytope of histogram values or Fourier coefficients.
+</p><p>We proposed a linear-programming based approach to quickly generate an ensemble of feasible <i>P(r)</i> curves for a given scattering curve. Our results show that feasible <i>P(r)</i> curves exhbit significant diversity under the CATH classification of proteins. 
+</p>
+</td></tr></table>
+<p><b>Exact optimal trajectories for an omni-directional robot</b>
+</p>
+<table>
+<tr>
+<td style="vertical-align:top"> <div class="floatleft"><a href="/~robotics/mediawiki/index.php/File:Pprk.jpg" class="image" title="Pprk.jpg"><img alt="" src="/~robotics/mediawiki/images/c/cc/Pprk.jpg" width="128" height="102" border="0" /></a></div>
+</td><td style="vertical-align:top">
+<p>We studied the structure of time-optimal trajectories for a symmetric, three-wheeled, omni-directional vehicle. This vehicle can instantaneously move in any direction, but not at the same speed. We applied Pontryagin's Maximum Principle to show that shortest paths for this robot consist of straight lines and arcs of circles. (<a href="/~robotics/mediawiki/index.php/Andrei_Furtuna" title="Andrei Furtuna"> Andrei Furtuna</a> has, since, generalized these results to the fastest sequence of translations and rotations for a general rigid body in a plane). Combining these segments, we described four classes of optimal trajectories. We further showed that any optimal trajectory consists of at most 18 segments. 
+</p><p>Apart from steered cars and differential drives this is the only other vehicle whose optimal trajectories have been explicitly enumerated. Surprisingly, although this robot can move in any direction, some optimal trajectories correspond to parallel-parking-type maneuvers that move the robot sideways.
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<a name="Publications:" id="Publications:"></a><h3> <span class="mw-headline">Publications:</span></h3>
+<p><b>Journal Publications:</b>
+</p>
+<ul><li> Paritosh A. Kavathekar, Bruce A. Craig, Alan M. Friedman, Chris Bailey-Kellogg and Devin J. Balkcom. <a href="http://www.worldscinet.com/jbcb/08/0802/S0219720010004781.html" class="external text" title="http://www.worldscinet.com/jbcb/08/0802/S0219720010004781.html" rel="nofollow">Characterizing the Space of Interatomic Distance Distribution Functions Consistent with Solution Scattering Data.</a>. <i>Journal of Bioinformatics and Computational Biology</i>, 2010, 8, 2, 315--335.
+</li><li> Devin J. Balkcom, Paritosh A. Kavathekar, Matthew T. Mason. <a href="http://www.cs.dartmouth.edu/~robotics/papers/djb-ijrr2006.pdf" class="external text" title="http://www.cs.dartmouth.edu/~robotics/papers/djb-ijrr2006.pdf" rel="nofollow">Time-optimal trajectories for an omni-directional vehicle.</a> <i>International Journal of Robotics Research</i>, 2006, 25, 10, 985--999.
+</li></ul>
+<p><b>Conference Papers:</b>
+</p>
+<ul><li> Paritosh A. Kavathekar, Bruce A. Craig, Alan M. Friedman, Chris Bailey-Kellogg and Devin J. Balkcom. <a href="http://www.csb2009.org/pdf/064Balkcom.pdf" class="external text" title="http://www.csb2009.org/pdf/064Balkcom.pdf" rel="nofollow">Characterizing the space of interatomic distance distribution functions consistent with solution scattering data.</a> <i>In proceeding of the 8th Annual International Conference in Computational Systems Bioinformatics</i>, August 2009, 239--250.
+</li><li> Andrei A. Furtuna and Devin J. Balkcom and Hamid Reza Chitsaz and Paritosh A. Kavathekar. <a href="http://www.cs.dartmouth.edu/~robotics/papers/aaf-icra08.pdf" class="external text" title="http://www.cs.dartmouth.edu/~robotics/papers/aaf-icra08.pdf" rel="nofollow">Generalizing the Dubins and Reeds-Shepp cars: Fastest paths for bounded-velocity mobile robots.</a>  <i>IEEE Conference on Robotics and Automation</i>, 2008, 2533-2539.
+</li><li> Devin J. Balkcom, Paritosh A. Kavathekar, Matthew T. Mason. The minimum-time trajectories of an omni-directional vehicle. <i>Workshop for Algorithmic Foundations of Robotics</i>, July 2006, 47, 343--358.
+</li><li> Paritosh A. Kavathekar, Devin J. Balkcom, Matthew T. Mason. The geometry of time-optimal trajectories of an omni-directional vehicle. <i>20th International Workshop on Qualitative Reasoning</i>, July 2006.
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 22/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki:pcache:idhash:80-0!1!0!!en!2!edit=0 and timestamp 20110220181211 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php/Paritosh_Kavathekar">http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php/Paritosh_Kavathekar</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-notes'>
+		<h5>notes</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Join-the-lab"><a href="/~robotics/mediawiki/index.php/Join_the_lab">Join the lab</a></li>
+				<li id="n-Equipment-notes"><a href="/~robotics/mediawiki/index.php/Equipment_notes">Equipment notes</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-people'>
+		<h5>people</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Devin-Balkcom"><a href="/~robotics/mediawiki/index.php/Devin_Balkcom">Devin Balkcom</a></li>
+				<li id="n-Paritosh-Kavathekar"><a href="/~robotics/mediawiki/index.php/Paritosh_Kavathekar">Paritosh Kavathekar</a></li>
+				<li id="n-Matthew-Bell"><a href="/~robotics/mediawiki/index.php/Matthew_Bell">Matthew Bell</a></li>
+				<li id="n-Andrei-Furtuna"><a href="/~robotics/mediawiki/index.php/Andrei_Furtuna">Andrei Furtuna</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/mediawiki/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value=""/>
+				<input id="searchInput" name="search" type="text" title="Search Balkcom robotics lab [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />
+				<div><a href="/~robotics/mediawiki/index.php/Special:Search" rel="search">Advanced search</a></div>
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/mediawiki/index.php/Special:WhatLinksHere/Paritosh_Kavathekar" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/mediawiki/index.php/Special:RecentChangesLinked/Paritosh_Kavathekar" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/mediawiki/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/mediawiki/index.php?title=Paritosh_Kavathekar&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/mediawiki/index.php?title=Paritosh_Kavathekar&amp;oldid=751" title="Permanent link to this version of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/mediawiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 30 November 2010, at 20:39.</li>
+					<li id="viewcount">This page has been accessed 3,411 times.</li>
+					<li id="privacy"><a href="/~robotics/mediawiki/index.php/Balkcom_robotics_lab:Privacy_policy" title="Balkcom robotics lab:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/mediawiki/index.php/Balkcom_robotics_lab:About" title="Balkcom robotics lab:About">About Balkcom robotics lab</a></li>
+					<li id="disclaimer"><a href="/~robotics/mediawiki/index.php/Balkcom_robotics_lab:General_disclaimer" title="Balkcom robotics lab:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6668244-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script><!-- Served in 0.237 secs. --></body></html>

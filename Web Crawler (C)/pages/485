@@ -1,0 +1,61 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/June28
+3
+<h1>June 28: Binary, Combinatorial Logic</h1>
+
+<p>Reading: P&amp;P 2, 3.3.1<br>
+    T 3.1, Appendix A
+<hr>
+<h2>0) Recap</h2>
+<ul>
+<li>Electricity
+<li>Transistors<br>
+      ...before transistors: <a href="vacuumtubes.jpeg">vacuum tubes</a>.
+<li><a href="mooreslaw.gif">Moore's Law</a>.
+<li>Logic Gates
+</ul>
+<hr>
+<h2>1) From Electricity to Gates</h2>
+<ul>
+<li>NOT gate
+<li>OR, NOR, NAND, ...
+</ul>
+<p>
+Simplify Circuits: <a href="http://en.wikipedia.org/wiki/De_Morgan's_Law">De Morgan's Law</a>.
+<br>&nbsp;&nbsp;&nbsp;...see the wikipedia page for a proof of De Morgan's Law(s) using <b>set theory</b>.
+<hr>
+<h2>2) Representing Numbers</h2>
+<hr>
+<h3>Bases</h3>
+<ul>
+<li>Base 10<br><img src="10.jpg" alt="oops"></img>
+<li>Base 2<br><img src="2.jpg" alt="oops"></img>
+<li>Base 16<br><img src="16.jpg" alt="oops"></img>
+</ul>
+<hr>
+<h3>Powers of Two</h3>
+<img src="powers.jpg" alt="oops"></img>
+<br>Memorize these!
+<hr>
+<h3>Data Types</h3>
+<ul>
+<li>2's complement<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-x: invert x, then add 1.<p>
+<li>Binary Coded Decimal (BCD)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;convert each digit to binary separately.<p>
+<li>1's complement, floating point.
+</ul>
+<hr>
+<h3>Logisim Tricks</h3>
+<!-- include hex.circ after class -->
+<ul>
+<li>width of wires
+<li>splitter
+<li>multi-line pins
+<li>multi-line probes
+<li>labels
+</ul>
+<p>
+<hr>
+<h2>3) Combinatorial Logic</h2>
+Comparator: are two 4-bit numbers equal?  <a href="compare.circ">compare.circ</a>
+

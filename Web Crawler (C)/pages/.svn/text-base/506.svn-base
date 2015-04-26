@@ -1,0 +1,244 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug10
+3
+<html><head><title>August 10: Stack Frames, Pointers, Data Structures, and Other Cool Stuff</title></head>
+
+<body>
+
+<h1>August  10: Stack Frames, Pointers, Data Structures, and Other Cool Stuff</h1>
+
+<hr><h2>0) Recap</h2><hr>
+First, we'll tie up loose ends from yesterday.
+
+<p>What goes in the stack?
+
+<centerline>
+<img src="img/StackFrame.jpeg" alt="oops" width="60%"></img>
+</centerline>
+
+The stack frame above is how the LC-3 compiler structures the stack
+frame.  <b>Note:</b> other compilers using other programming languages
+on other architectures may structure this differently.  The key concepts to know are:
+
+<ul>
+<li>What gets put in a stack frame?
+<li>Who's job is it to push data into the stack frame or pop data from the frame?
+<li>How does a calling function communicate with a function invocation?  How does this information get passed around?
+</ul>
+
+Here's another example: <a href="code/simple.c"><b>simple.c</b></a>
+<centerline>
+<img src="img/simple.jpg" alt="oops" width="95%"></img>
+</centerline>
+
+As we saw yesterday and see in this example,
+<ul>
+<li>The <b>caller</b> pushes function arguments onto the stack.
+<li>The <b>callee</b> pushes the return value, old R5/R7, and local variables.
+<li>The <b>callee</b> also pops local vars and the old R5/R7.
+<li>The return value is left for the <b>caller</b> to consume.
+<li>The <b>caller</b> pops the return value after control has returned from the function.
+<li><b>No one</b> pops the function arguments!  This is a memory leak.
+</ul>
+
+Check
+out <a href="code/fun4.c"><b>fun4.c</b></a>, <a href="code/fun4.asm"><b>fun4.asm</b></a>
+to see what happens when we leak lots of memory this way on the LC-3.
+
+<hr><h3>Variable-length arguments in functions.</h3><hr>  
+Some of you asked yesterday how the stack frame works when you have
+functions that take a variable number of arguments.
+
+<p><b>printf</b> is a good example of a function that doesn't take
+a <i>fixed</i> number of arguments:
+
+<p>(<a href="code/example.c"><b>example.c</b></a>)
+<p><pre>
+#include <stdio.h>
+
+int x=0;
+int y=1;
+int z=2;
+int foo = 3;
+int bar = 4;
+int wong = 5;
+
+int main() {
+
+  
+  printf("hello world\n");
+
+
+  printf("Hello world %d\n", x);
+  printf("Hello world %d %d\n", x, y);
+  printf("Hello world %d %d %d\n", x, y, z);
+  printf("Hello world %d %d %d %d\n", x, y, z, foo);
+
+
+  return 42;
+}
+
+</pre>
+Compiled LC-3 assembly code: <a href="code/example.asm"><b>examplelcc.asm</b></a>
+<p>Step through the assembly code using the simuilator.  What do you see?
+<ul>
+<li>function arguments get pushed onto the stack in reverse order (e.g., z,y,x,format string)
+<li>The LC-3 uses the <b>format string</b> to determine how many
+arguments it needs -- when it sees a '%' character, it knows that an
+argument is needed and then pops it off the stack.
+</ul>
+<b>Question:</b>What happens if we give printf too many/too few arguments?
+<br><b>Answer:</b>Try it!  See for yourself.
+
+<p>In general, C provides the standard library <b>&#60;stdarg.h&#62;</b> as
+a mechanism to write your own variable length argument functions.
+There are a couple of different ways (provide num_args parameter, use
+a sentinel) to make sure you're actually using the right number of
+variables.  But from the architecture perspective, there's nothing to
+worry about!  Once you know at the programming-language level how you
+want to handle the variable length argument list, the compiler is
+happy to generate assembly code for you.
+
+<p>Note:  by "the comiler" I really mean gcc.  The LC-3 does not appear to support stdarg.h.
+
+<hr><h2>1) Pointers</h2><hr> 
+
+What's up with <b>char *</b>'s, really?  And what is the ampersand in
+the <b>&amp;local_1</b> example from yesterday?
+
+<p>Both are examples of dealing with addresses.
+
+<p>(<a href="code/pointers.c"><b>pointers.c</b></a>)
+<pre>
+#include <stdio.h>
+
+int ival;
+int *ivalp;
+
+main() {
+
+  printf("ival lives at 0x%08x, ivalp lives at 0x%08x\n", &ival, &ivalp);
+
+  ival = 23;
+
+  printf("setting ival = 23\n");
+  
+  printf("dramatic pause...\n");
+  sleep(5);
+
+  printf("ival = %d, ivalp = 0x%08x\n", ival, ivalp);
+  
+  ivalp = &ival;
+
+  printf("setting ivalp = &ival\n");
+
+  printf("dramatic pause...\n");
+  sleep(5);
+
+  printf("ival = %d, ivalp = 0x%08x\n", ival, ivalp);
+
+  *ivalp = 42;
+
+  printf("setting *ivalp = 42\n");
+  printf("dramatic pause...\n");
+  sleep(5);
+
+  printf("ival = %d\n", ival);
+}
+</pre>
+
+A <b>pointer</b> stores an address to something else.  (e.g., a char *
+stores an address to a char, and int * stores an address to an int, an
+int ** stores an address to an (int *))
+
+<p>In the code above:
+<ul>
+<li>ivalp is a pointer to an int
+<li>(*ivalp) refers to the int that ivalp points to
+<li>&ival is the address of ival.
+<li>What happens when you try to dereference (i.e. use (*ivalp)) a
+pointer that hasn't been initialized?
+</ul>
+
+Really, that's it with pointers.  Pointers as a concept are
+notoriously difficult.  When schools use C in their CS5-equivalent
+course, students <i>always</i> have trouble.  (I had trouble with it
+too, but then again, I missed the lecture for pointers, which made it
+even harder)
+
+<p>Once you understand how things are stored from an architecture
+perspective, thinking about pointers becomes much easier.  Pointers
+are just <b>addresses</b> to other things.
+
+<p>One caveat: While not difficult to understand at this level, it's
+still easy to make pointer mistakes when doing large programming
+assignments.  At least with the architecture point of view, you get a
+very good understanding of what <i>should</i> be happening in your
+program.
+
+<hr><h2>2) Data Structures</h2><hr> C is not an object-oriented
+language, but it would still be nice to group variables together in an
+easy manner.  This is what C <b>structs</b> are for.
+
+From (<a href="struct.c"><b>struct.c</b></a>)
+<pre>
+#include <stdio.h>
+
+typedef struct {
+  int field0;
+  int field1;
+  int field2;
+} foo_t;
+
+foo_t foo;
+
+main() {
+
+  foo_t *foop = &foo;
+
+  foo.field0 = 1;
+  printf("%d\n", (*foop).field0);
+
+}
+
+</pre>
+Some highights:
+<ul>
+<li>"typedef struct" defines a struct.  add fields to the struct by declaring variables, similar to local/global variable declaration (except without the inilitialization)
+<li>To access a field element, use a period:  foo.field0 refers to the field0 field in foo.
+<li>If you have a <i>pointer</i> to a data structure, use "->" instead of '.'.  example:  foop->field0 is probably easier to write than (*foop).field0.
+</ul>
+<hr>
+How does this get implemented in hardware? (<a href="pack.c"><b>pack.c</b></a>)
+<p><pre>
+#include <stdio.h>
+
+typedef struct {
+  unsigned short short1;
+  int int1;
+  unsigned char char1;
+  int int2;
+
+} foo_t;
+
+foo_t foo;
+
+int main() {
+
+  printf("foo        lives at %p\n", &foo);
+  printf("foo.short1 lives at %p\n", &(foo.short1));
+  printf("foo.int1   lives at %p\n", &(foo.int1));
+  printf("foo.char1  lives at %p\n", &(foo.char1));
+  printf("foo.int2   lives at %p\n", &(foo.int2));
+  printf("sizeof(foo) = %d\n", sizeof(foo));
+
+  return 42;
+}
+<pre>
+Try compiling this with gcc:
+<ul>
+<li>gcc pack.c -o pack
+<li>gcc pack.c -fpack-struct -o pack
+</ul>
+<hr>
+</body>
+</html>

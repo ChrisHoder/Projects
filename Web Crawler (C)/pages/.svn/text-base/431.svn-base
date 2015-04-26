@@ -1,0 +1,217 @@
+http://www.cs.dartmouth.edu/%7Edfk
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD><TITLE>David Kotz</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>David Kotz, Professor of <a href="/">Computer Science</a></H1>
+
+<table>
+<tr valign=top>
+<td>
+  <center>
+    <IMG width=300 height=343 align=top alt="photo" src="photos/Kotz2009-desk-small.jpg">
+  </center>
+</td>
+
+<td> 
+
+<h3>
+    Ph.D. <A HREF="http://www.cs.duke.edu/">Duke University</A>, 1991.<br>
+    A.B. <A HREF="http://www.dartmouth.edu/">Dartmouth College</A>,
+	<a href="http://www.alum.dartmouth.org/classes/86/">1986</a>.<br>
+    <A HREF="http://www.choate.edu/">Choate Rosemary Hall</A>, 1982.
+</h3>
+<p>
+
+<strong>Search my web pages:</strong><br>
+<form name="seek" method="get" action="http://search.dartmouth.edu/query.html">
+<input type=hidden name=qp value="+url:www.cs.dartmouth.edu/~dfk/">
+<input type=hidden name=qs value="">
+<input type=hidden name=qc value="">
+<input type=hidden name=ws value="0">
+<input type=hidden name=qm value="0">
+<input type=hidden name=st value="1">
+<input type=hidden name=nh value="10">
+<input type=hidden name=lk value="1">
+<input type=hidden name=rf value="0">
+<input type=hidden name=oq value="">
+<input type=hidden name=rq value="0">
+<input type="text" name="qt" size="15" value="" maxlength="200">
+<input type=submit value=" Search ">
+<FONT SIZE="2">
+&nbsp;&nbsp;<a href="http://search.dartmouth.edu/help/">Help</a>
+</FONT>
+</form>
+
+<p></p>  
+<p>
+<a href="#contact">Contact information</a> (below)
+<p></p>  
+<p></p>  
+<p>
+  <font size=+1><b>
+  In 2008-09 I spent nine months as a
+  <a href="http://www.cies.org/US_scholars/">Fulbright Scholar</a>
+  in India.<br>
+  You can read about it on my
+  <a href="http://web.me.com/dfkotz/">blog</a>.
+  </b></font>
+</p>
+
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<td valign=middle bgcolor=lightgreen width="60%">
+<font size="+1"><b>Professional</b></font>
+</td>
+<td valign=middle bgcolor=lightblue>
+<font size="+1"><b>Personal</b></font>
+</td>
+</tr>
+<tr>
+<!-- -------------------- -->
+<!-- Professional section -->
+<td valign=top>
+<table>
+<tr valign=top align=left>
+<td> <!-- photo -->
+<IMG width=75 height=100 align=left alt="formal photo" src="photos/Kotz2009-face-tiny.jpg">
+</td>
+<td align=left> <!-- list -->
+<ul>
+  <li><a href="vita.pdf">My vita</a> (pdf) and <a href="bio-dfk.txt">short bio</a></li>
+
+  <!-- 
+  <li><a href="schedule.html">My schedule</A></li>
+  -->
+
+  <li><a href="papers/">My research interests, and papers</a></li>
+       
+  <li> <a href="people.html">My group</a></li>
+       
+  <li><a href="teaching.html">My courses</a>
+</ul>
+</td>
+</tr>
+<tr align=left valign=top>
+<td colspan=2> <!-- list -->
+<b>Current Activities:</b>
+<ul>
+  <li> <a href="http://www.dartmouth.edu/~dof/">Associate Dean of
+  Faculty for the Sciences</a>, Dartmouth College
+  <li> Principal Investigator, <a href="http://www.ists.dartmouth.edu">Institute for Security,
+  Technology, and Society</a> (ISTS)
+  <li> Co-lead of <a href=http://sharps.org>Strategic Healthcare IT Advanced Research Projects on Security (SHARPS)</a>
+  <li>Associate Editor of <a href="http://www.computer.org/tmc/"><em>IEEE Transactions on Mobile Computing</em></a>
+  <li>Associate Editor of <a
+  href="http://www.elsevier.com/wps/locate/pmc"><em>Pervasive and
+  Mobile Computing</em></a>
+  <li>Steering committee for <a href="http://www.comsnets.org/nethealth.html">NetHealth workshop</a> at <a href="http://www.comsnets.org/">COMSNETS 2011</a></li>
+  <li>Member of <a href="http://www.pbk.org/">Phi Beta Kappa</a> since 2010</li>
+  <li> <a href="http://www.ieee.org/web/membership/fellows/index.html" >IEEE Fellow</a>
+  and member of the
+  <a href="http://www.computer.org">IEEE Computer Society</a></li>
+  <li> Senior Member of the <a href="http://www.acm.org">ACM</a></li>
+  <li> Member of <a href="http://www.usenix.org/">USENIX</a>,
+  and University Campus Liaison
+</ul>
+</td>
+</tr>
+</table>
+
+<!-- -------------------- -->
+<!-- Personal section     -->
+<td valign=top>
+<table>
+<tr align=left valign=top>
+<td> <!-- photo -->
+<IMG border=0 width=75 height=109 align=left alt="photo of me" src="photos/Kotz2008-elephant.jpg">
+</td>
+<td> <!-- list -->
+<ul>
+  <li> My three <a href="kids.html">kids</a>.
+       
+  <li> My 'invention', the <a href="seatpack/">seatpack</a>.
+       
+  <li> My house projects: <a href="house/">1997</a>,
+       <a href="house/deck/">1998</a>,
+       <a href="house/addition/">2000</a>,
+       <a href="house/patio/">2005</a>,
+       <a href="house/walls/">2006</a>,
+       <a href="house/riverbank/">2006</a>, and
+       <a href="house/boatshed/">2007</a>.
+  <li> You can rent our <a href="http://homepage.mac.com/pcjenkins/Kiawah/beach-house.html">beach house</a> in South Carolina.
+  <li> I was an early co-author of <a href="http://www.gnuplot.info">gnuplot</a>.
+</ul>
+</td>
+</tr>
+<tr align=left valign=top>
+<td> <!-- photo -->
+</td>
+<td> <!-- list -->
+<ul>
+  <li> <a name="hiking" href="outdoors/hiking.html">Hiking and skiing</a>
+  <li> <a name="travel" href="trips/">Travel and trips</a> (old)
+  <li> <a href="http://web.me.com/dfkotz">Travel blog</a> (including India)
+</ul>
+<tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h3><a name="contact">Contact information</a>, and how to pronounce Kotz:</h3>
+Pronounce "Kotz" like "coats", not "cots".  Thanks!
+
+<p>
+<table>
+  <tr align=left valign=bot>
+    <td><em>Dean of Faculty business</em></td>
+    <td>&nbsp&nbsp&nbsp</td>
+    <td><em>other business</em></td>
+  </tr>
+  <tr align=left valign=top>
+    <td>
+      David Kotz<br>
+      Associate Dean of Faculty for the Sciences<br>
+      6045 Wentworth Hall<br>
+      Dartmouth College<br>
+      Hanover, NH  03755 USA  
+      <p>
+      firstname dot lastname <img src=at.gif> dartmouth.edu<br>
+      +1 603 646-1302 (voice)<br>
+      Assistant: Ed dot Leavitt at dartmouth.edu
+    </td>
+    <td>&nbsp</td>
+    <td>
+      Professor David Kotz<br>
+      Department of Computer Science<br>
+      6211 Sudikoff Laboratory<br>
+      Dartmouth College<br>
+      Hanover, NH  03755-3510 USA
+      <p>
+      lastname <img src=at.gif> cs.dartmouth.edu<br>
+      +1 603 646-1439 (voice)<br>
+      +1 206 339-3145 (fax-to-email)<br>
+    </td>
+  </tr>
+</table>
+<p>
+<a href="Kotz.vcf"><img src=vcard.png align=center>&nbsp;vCard</a>
+containing all of the above
+</ul>
+
+<p>
+<hr>
+<p>
+
+</BODY>
+</HTML>

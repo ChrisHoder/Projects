@@ -1,0 +1,109 @@
+http://www.cs.dartmouth.edu/~tanzeem/news/news.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<!-- #BeginEditable "doctitle" -->
+  <title>Tanzeem Choudhury's Webpage</title>
+
+
+<!-- #EndEditable -->
+  <link href="../styles/style0.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+
+  <style type="text/css">
+.style1 {
+color: #006699;
+}
+  </style>
+</head>
+
+
+<body>
+
+<!-- Begin Container -->
+<div id="container"><!-- Begin Masthead -->
+<div id="masthead">
+<h1><a href="#">Tanzeem Choudhury</a></h1>
+
+<h3>Assistant Professor</h3>
+
+<h4>Computer Science, Dartmouth College</h4>
+
+</div>
+
+<!-- End Masthead --><!-- Begin Navigation -->
+<div id="navigation">
+<ul>
+
+  <li><a href="../index.html">About</a></li>
+
+  <li><a href="../pubs/pubs.html">Publications</a></li>
+
+  <li><a href="../cv/TanzeemChoudhury_CV.pdf">C.V.</a></li>
+
+  <li><a href="../students/students.html">Students</a></li>
+
+  <li><a href="../teaching/teaching.html">Teaching</a></li>
+
+  <li><a href="../press/press.html">Press</a></li>
+
+  <li><a href="../news/news.html">News</a></li>
+
+  <li><a href="../contact/contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<!-- End Navigation --><!-- Begin content_container -->
+<div id="content_container"><!-- Begin Left Column -->
+<div id="column_left"><br />
+
+<img style="width: 35px; height: 35px;" alt="NAE" src="../images/nae.gif" />Participated in <a href="http://www.nae.edu/cms/7087/8683/9820.aspx">NAE's 2009
+Frontiers of Engineering Symposium</a><br />
+
+<img style="height: 35px;" alt="NSFlogo" src="../images/nsf.jpg" /> <a href="http://www.nsf.gov/discoveries/disc_summ.jsp?cntn_id=114494">Computer
+Science -- A Growing Field That Needs a Few (More) Good Women</a><br />
+
+<p class="style2"> <img style="width: 38px; height: 27px;" alt="LoCA2009logo" src="../images/loca2009.png" /> I am also
+the program co-chair (along with <a href="http://www.cs.ucd.ie/staff/aquigley/home/">Aaron
+Quigley</a>) of <a href="http://loca2009.context-aware.org/">LoCA
+2009</a> (4th International Symposium on Location and
+Context-Awareness)</p>
+
+<p class="style2"><img style="border: 0px solid ; width: 37px; height: 27px;" alt="AAAIlogo" src="../images/image320.jpg" /><a href="http://research.microsoft.com/%7Eakapoor/"> Ashish
+Kapoor</a>, <a href="http://www.cs.rochester.edu/u/kautz/">Henry
+Kautz</a>, and I organized the <a href="http://www.aaai.org/Library/Symposia/Spring/ss09-04.php">AAAI
+Spring 2009 Symposium</a> on <a href="http://www.cs.dartmouth.edu/%7Etanzeem/hbm_ss09">Human
+Behavior Modeling</a><br />
+
+<br />
+
+<img style="height: 35px;" alt="NSFlogo" src="../images/nsf.jpg" />
+<a href="http://www.columbia.edu/%7Ejak2190/">Prof. James
+Kitts</a>
+and I organized a workshop sponsored by NSF on <a href="http://seattle.intel-research.net/MSD/">Modeling
+Social Dynamics</a>. The workshop <a href="http://seattle.intel-research.net/MSD/Modeling%20Social%20Dynamics%20-%20Workshop%20Report.pdf">
+report</a> is now available<br />
+
+</p>
+
+</div>
+
+<!-- End Left Column --><!-- Begin Right Column --><!-- End Right Column --><!-- Begin Footer -->
+<div id="footer">
+<p><a href="../index.html">About</a>| <a href="../pubs/pubs.html">Publications</a> | <a href="../cv/TanzeemChoudhury_CV.pdf">C.V.</a>|
+<a href="../students/students.html">Students</a> | <a href="../teaching/teaching.html">Teaching</a> | <a href="../press/press.html">Press</a> | <a href="../news/news.html">News</a> | <a href="../contact/contact.html"> Contact</a></p>
+
+</div>
+
+<!-- End Footer --></div>
+
+<!-- End content_container --></div>
+
+<!-- End Container -->
+</body>
+</html>

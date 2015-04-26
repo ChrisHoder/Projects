@@ -1,0 +1,138 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw2
+3
+<html> <head>
+<title>CS37: Homework 2</title>
+</head>
+ 
+<body>
+
+<h1>Homework 2</h1>
+
+Published: Tuesday, July 6<br>
+Due: <strong>11:59PM</strong>, Moday, July 12<br>
+<p>
+Remember your test harnesses!
+<p>
+<hr>
+<h2>Part I: Building blocks</h2>
+<hr>
+<p>
+LogiSim provides registers, comparators, and tri-state buffers as baked-in components.
+<p>
+In Part II, you will use (16-bit) versions of these baked-in components.   
+<p>
+However, for full enlightenment, you will first build 8-bit versions from gates. 
+<p>
+<hr>
+<p>
+Q1:  We haven't told you much about "tri-state" logic.  This is another case of the physical reality of circuits "usefully contaminating" the pure world of digital logic:  in addition to 1 and 0, a line can also be "open"---not connected to anything.   (E.g., 
+see the "controlled buffer" gate baked into LogiSim.)
+<p>
+In TTL circuits (in the real world), we use a "pull-up" resistor to
+ensure a floating line will be read as a 1---without changing its
+value, should the line be driven 0 or 1.  In LogiSim, if you want to
+treat a floating line as one (but otherwise regard it as whatever
+value it is), you can AND against the constant 1.  (However, I don't
+think you'll need to do this here or later.)
+<p>
+Build an 8-bit controlled buffer.
+<ul>
+<li> Use individual gates and 1-bit controlled buffers.
+<li> The input and output lines should be width-8 wires.
+</ul>
+<p>
+(Tri-state gates like this give us an easy way of multiplexing without having to have giant OR gates.)
+<P>
+<p>
+<hr>
+Q2:  Make an 8-bit register device, with active high reset,
+an active high enable line, 
+and a rising-edge clock.
+<p>
+<ul>
+<li> Use individual gates---no LogiSim memory components.
+<li> Use separate data-in and data-out lines.   Each line should be a width-8 wire.
+</ul>
+<p>
+<hr>
+<p>
+Q3: Build a device that takes two 8-bit words as input, and outputs a 1 if and only if the inputs are equal. 
+<ul>
+<li> Use individual gates---no advanced LogiSim components.
+<li> Use separate data-in and data-out lines.   Each line should be a width-8 wire.
+</ul>
+<p>
+<hr>
+<p>
+<hr>
+<p>
+Q4:  Consider the following formalism for "RAM"....
+<p>
+<img width="100%" src="standard.jpg"></img>
+<p>
+Use your work from Q1 and Q2 (and individual gates) to build an 8-word
+RAM, clocked on the rising edge.  Use 8-bit words.
+<p>
+<hr>
+<p>
+
+
+<hr>
+<h2>Part II: the fun!  (This part will be weighted higher)</h2>
+<hr>
+Consider the following formalism for "Associative RAM":
+<p>
+<img width="100%" src="assoc.jpg"></img>
+<p>
+<hr>
+
+<p>
+You are now going to build an 8-entry associative  ram with 14-bit tags as well as 16-bit words, and a "least recently written" eviction policy (rather than "least recently used" as sketched above).
+<p>
+Here's how you'll do it:
+<p>
+<ul>
+<li> Each entry consists of a register to store the tag and another to store the data.
+<li> Since it's messy to think about "empty" vs "full," we add another bit to the tag:
+"zero" means this entry is empty.  We hardwire this bit to "1" in
+all incoming tags, so they never match an "empty" slot.
+<li> We consider the entries as a vertical stack.   We always write to the bottom entry, and slide the values
+up.  
+<lI> However, this leads to an anomaly: if an entry has current tag that matches the incoming one, then that entry's contents just disappear, rather than getting moved up to the next entry.
+</ul>
+<p>
+You may use LogiSim registers, multibit LogiSim controlled buffers, and multibit  LogiSim comparators.
+<p>
+<hr>
+<p>
+Q5: Build a "control box" device for each entry in the associative RAM. 
+<p>
+The inputs:
+<ul>
+<li> <strong>clock-in</strong>: rises when someone is trying to write to the ARAM.
+<li> <strong>bottom</strong>: true when this entry is the bottom one in the stack
+<li> <strong>move-up-in</strong>: true when the entry below this one expects to move its contents up to this one
+<li> <strong>tag-match</strong>: true when the current tag coming in matches the tag stored in this entry
+</ul>
+<p>
+The outputs:
+<ul>
+<li> <strong>clock-out:</strong> the clock signal to this entry's tag and data registers.  This rises when clock-in rises, and when this entry is supposed to get re-written.
+<li> <strong>move-up-out:</strong> true when this entry's contents need to get bubbled up to the next one.  
+</ul>
+<p>
+<p>
+<hr>
+<p>
+Q6: Use your answer from Q5 to build the ARAM.
+<p>
+<hr>
+<p>
+<hr>
+<h2>Submission</h2>
+<hr>
+<p>
+ Send email to cs37staff@cs with the subject line "Homework 2 Submitted".  Attach all relevant files.  Packaging your submission into a zip file is preferred.
+<p>
+<hr>
+</body> </html>

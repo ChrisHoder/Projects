@@ -1,0 +1,83 @@
+http://www.cs.dartmouth.edu/~afra
+2
+<html>
+<head>
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+<title>Afra's Home Page</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body bgcolor=#ffffff >
+
+<hr align=center noshade>
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+
+<!-- ----- Left-hand side navbar ----- -->
+<td align=right>
+<font size="+1" align=right>
+afra<br>
+zomorodian<br>
+<br>
+</font>
+<b>home</b><br>
+<a href="personal.html">personal</a><br>
+<a href="book.html">book</a><br>
+<a href="papers.html">papers</a><br>
+<a href="teaching.html">teaching</a><br>
+<a href="goodies.html">goodies</a><br>
+<br>
+<br>
+</td>
+
+<!-- ----- Interior left margin ----- -->
+<td width=25>&nbsp;</td> 
+
+<!-- ----- Page body ----- -->
+<td>
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr>
+<td>
+<img align=top src = "images/afra.png">
+</td>
+<tr>
+<td align=right>
+<font size = "-2">
+<i>
+Photo by Joseph Mehling
+</i></font>
+<!-- <a href = "http://afra.smugmug.com/gallery/736796/2/32407797">Red Square,
+Moscow, Russia</a></i></font>
+<a href = "http://afra.smugmug.com/gallery/71133/1/2462530">
+Oia, Santorini, Greece</a></i></font> -->
+
+</td>
+</tr>
+</table>
+
+</td>
+
+<!-- ----- Right-hand margin ----- -->
+<td width=25>&nbsp;</td>
+</tr>
+</table>
+<hr align=center noshade>
+<table cellspacing=2 cellpadding=2 border=0>
+<tr>
+<td>
+<center>-
+<a href="http://graphics.stanford.edu/~ngelfand/pages/tnd/tnd.php">tnd (rip)</a> -
+<a href="http://afra.smugmug.com">photos</a> 
+<!-- -
+<a href="zomorodian-vitae.pdf">cv</a>-
+-->
+</center>
+</td>
+</tr>
+</table>
+</body>
+
+</html>
+

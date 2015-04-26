@@ -1,0 +1,126 @@
+http://www.cs.dartmouth.edu/%7Epway
+3
+<html>
+<head>
+<title>Wei Pan's Home Page</title>
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+
+You've reached Wei Pan's homepage.
+<body>
+<div class="ctr" align="center">
+<table align="center">
+<tr>
+<td>
+<img src="weipan3.jpg" height="200px" alt="weipan3.jpg"> </img>
+</td>
+<td>
+<h2> Wei Pan (潘巍) </h2>
+panwei --@AT@-- media.mit.edu
+<br>
+E15-388
+<br>
+20 Ames St
+<br>
+Cambridge, MA 02139
+<br>
+<object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=e929a6da7f9b47e68bd414a7276480107f5224bf&style=0" /></object>
+</td>
+<td>
+<!--<img src="weipan1.jpg" width=100px, alt="anotherpic"> </img>
+-->
+</td>
+</tr>
+</table>
+</div>
+<div class="ctr">
+<hr>
+
+<!--<h1> We just won the <a href="http://networkchallenge.darpa.mil">DARPA network challenge </a></p></h1>
+-->
+<br>
+<h2>Research Interests </h2>
+I am a Ph.D student at MIT Media Lab. I am interested in <a href=http://www.sciencemag.org/cgi/reprint/323/5915/721.pdf>Computational Social Science</a>, and I am in the <a href="http://hd.media.mit.edu">Human Dynamics Group</a> led by my advisor <a href="http://web.media.mit.edu/~sandy">Sandy Pentland</a>.
+<p>
+I work on measuring, understanding
+and predicting communities and societies as the collective 
+behaviors of individuals by using modern sensing and modeling techniques. I also do interesting
+things such as the <a href="http://www.scientificamerican.com/article.cfm?id=darpa-network-challenge-results">DARPA Red Balloon Challenge</a>.
+
+<p>
+<h2>Bio</h2>
+I am a graduate student in the <a href="http://hd.media.mit.edu"> Human
+Dynamics Group</a> of <a href="http://www.media.mit.edu">MIT Media 
+Lab</a>. Before that, I spent two years in the <a href="http://www.cs.dartmouth.edu">Computer Science Department</a> at Dartmouth College.  I got my
+B.Eng. from <a href="http://www.tsinghua.edu.cn">Tsinghua University</a> in 2007, in computer science, which is the MIT in China (at least I believe so).
+<br>
+I've worked in Google Research China and a couple of start-ups in China.
+<br>
+
+<h2>C.V. </h2>
+Here is the <a href="cv.pdf">pdf</a> version. You can find the news release
+and publications about me in it.
+ 
+<p>
+
+<h2>News and Fun</h2>
+<p> Please notice my blog is up: <a href="moria.media.mit.edu/blog/">Link</a>.
+<p>
+December 2010: I delivered two talks in NIPS Workshop on <a href="http://nips.cc/Conferences/2010/Program/event.php?ID=1990">Computational Social Science</a> and 
+<a href="http://www.denveruasipresents.com/?page_id=267">Denver UASI</a> Conference.
+<p>
+September 2010: Technology Review Arxiv Blog: <a href="http://www.technologyreview.com/blog/arxiv/25712/"> How To Tell Who is Influencing Whom in a Group Discussion</a>.
+<p>
+June 2010: I am involved in the inaugural EmTech China: <a href="http://tech.sina.com.cn/z/EmTechChina2010/index.shtml"> Sina.com.cn report (in Chinese)</a>.
+<p>
+
+<h2>Blog</h2>
+Click <a href="http://moria.media.mit.edu/blog/">here</a>.
+
+<h2>Research Software</h2>
+2009: Hierachical Model for Human Locomotion, click <a href="http://www.cs.dartmouth.edu/~lorenzo/hlm/index.html">here</a>.
+<br>
+2008: Optimal Tuning Systems (see my ICMC'08 paper), click <a href="owt/">here</a>.
+<p>
+
+<br>
+Last update: January, 2011
+</div>
+<br>
+<br>
+<br>
+<div class="ctr"> 
+<p>
+<p>
+<p>
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-1301167858509404";
+/* 125x125, created 9/25/10 */
+google_ad_slot = "2369170888";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+</div>
+ 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13246236-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>

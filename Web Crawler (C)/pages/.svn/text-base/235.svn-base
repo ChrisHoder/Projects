@@ -1,0 +1,489 @@
+http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php/Planar_mobile-robot_kinematics_tutorial
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="keywords" content="planar robot kinematics, rigid-body kinematics, mobile robot kinematics, tutorial" />
+		<meta name="description" content="How to write a simple simulator for a simple planar mobile robot." />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.14.0" />
+		<meta name="keywords" content="Planar mobile-robot kinematics tutorial,Kinematics for wheeled omni-directional vehicles" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/mediawiki/opensearch_desc.php" title="Balkcom robotics lab (en)" />
+		<link rel="alternate" type="application/rss+xml" title="Balkcom robotics lab RSS Feed" href="http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="Balkcom robotics lab Atom Feed" href="http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Planar mobile-robot kinematics tutorial - Balkcom robotics lab</title>
+		<link rel="stylesheet" href="/~robotics/mediawiki/skins/common/shared.css?195" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/skins/common/commonPrint.css?195" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/main.css?195" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE50Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE55Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE60Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/mediawiki/skins/letterhead/IE70Fixes.css?195" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/mediawiki/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/mediawiki/skins/common/IEFixes.js?195"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/mediawiki/skins";
+		var wgArticlePath = "/~robotics/mediawiki/index.php/$1";
+		var wgScriptPath = "/~robotics/mediawiki";
+		var wgScript = "/~robotics/mediawiki/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Planar_mobile-robot_kinematics_tutorial";
+		var wgTitle = "Planar mobile-robot kinematics tutorial";
+		var wgAction = "view";
+		var wgArticleId = "91";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = "675";
+		var wgVersion = "1.14.0";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/mediawiki/skins/common/wikibits.js?195"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/mediawiki/skins/common/ajax.js?195"></script>
+		
+<style type="text/css">
+<!--
+.highlight {
+    background-color: yellow;
+}
+.blockquote {
+	border-left: 12px solid #BBBBBB;
+	margin:5px 0 5px -25px;
+	padding:0;
+	padding-left: 15px;
+}
+-->
+</style>		<script type="text/javascript" src="/~robotics/mediawiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Planar_mobile-robot_kinematics_tutorial skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/mediawiki/index.php?title=Special:UserLogin&amp;returnto=Planar_mobile-robot_kinematics_tutorial" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> balkcom robotics lab </div>
+<div id="site-subtitle">dartmouth computer science</div>
+	
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/mediawiki/index.php/Planar_mobile-robot_kinematics_tutorial" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/mediawiki/index.php?title=Talk:Planar_mobile-robot_kinematics_tutorial&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/mediawiki/index.php?title=Planar_mobile-robot_kinematics_tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/mediawiki/index.php?title=Planar_mobile-robot_kinematics_tutorial&amp;action=history" title="Past versions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Planar mobile-robot kinematics tutorial</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Balkcom robotics lab</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p><!-- META_keywords cGxhbmFyIHJvYm90IGtpbmVtYXRpY3MsIHJpZ2lkLWJvZHkga2luZW1hdGljcywgbW9iaWxlIHJvYm90IGtpbmVtYXRpY3MsIHR1dG9yaWFs -->
+<!-- META_description SG93IHRvIHdyaXRlIGEgc2ltcGxlIHNpbXVsYXRvciBmb3IgYSBzaW1wbGUgcGxhbmFyIG1vYmlsZSByb2JvdC4= -->
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#The_simulation_algorithm"><span class="tocnumber">2</span> <span class="toctext">The simulation algorithm</span></a></li>
+<li class="toclevel-1"><a href="#Source_code"><span class="tocnumber">3</span> <span class="toctext">Source code</span></a></li>
+<li class="toclevel-1"><a href="#Model"><span class="tocnumber">4</span> <span class="toctext">Model</span></a></li>
+<li class="toclevel-1"><a href="#Example_systems"><span class="tocnumber">5</span> <span class="toctext">Example systems</span></a></li>
+<li class="toclevel-1"><a href="#Velocity_controls_in_the_frame_of_the_robot"><span class="tocnumber">6</span> <span class="toctext">Velocity controls in the frame of the robot</span></a></li>
+<li class="toclevel-1"><a href="#Discrete_controls"><span class="tocnumber">7</span> <span class="toctext">Discrete controls</span></a></li>
+<li class="toclevel-1"><a href="#Geometry_of_constant_controls:__rotation_centers"><span class="tocnumber">8</span> <span class="toctext">Geometry of constant controls:  rotation centers</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Computing_the_location_of_the_rotation_center"><span class="tocnumber">8.1</span> <span class="toctext">Computing the location of the rotation center</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#The_constant-control_transform_matrix"><span class="tocnumber">9</span> <span class="toctext">The constant-control transform matrix</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Introduction" id="Introduction"></a><h2> <span class="mw-headline">Introduction</span></h2>
+<p>How will a simple planar mobile robot move when the motors set velocities for the wheels?  Although most researchers in mobile robotics find it easy enough to derive the equations of motion, a standard form makes it easy to implement simulation or planning software quickly.  We present our own form, with the advantage of a unified matrix description of constant-velocity translations and rotations.  
+</p><p>Our assumptions describe the simplest model of a planar mobile robot.  The robot configuration is given by variables <span class="texhtml">(<i>x</i>,<i>y</i>,&theta;)</span>, and that the control of the robot is given by the (vector) velocity and angular velocity of the robot, described in its own frame of reference.  We assume the controls are piece-wise constant in the frame of the robot.  These assumptions make simulation efficient and precise, since no numerical integration is required.
+</p>
+<a name="The_simulation_algorithm" id="The_simulation_algorithm"></a><h2> <span class="mw-headline"> The simulation algorithm </span></h2>
+<p>This section briefly describes the results, and if you are just looking for equations for simulating simple kinematic mobile robot motion, this is the place.  The derivation of the equations and discussion follow in later sections, as well as a brief introduction to homogeneous coordinates.
+</p><p>We assume the model of the robot is a rigid body in the plane, with a frame rigidly attached to the body.  The configuration of the robot is described by numbers <span class="texhtml"><i>x</i>,<i>y</i>,&theta;</span> that give the orientation and location of the body frame with respect to some world coordinate system.  Equivalently, the configuration of the body frame (and thus the robot) can be given by a homogeneous transform matrix
+</p>
+<dl><dd><img class="tex" alt="{^wT_0} = &#10;\begin{pmatrix}&#10;\cos \theta &amp; -\sin \theta &amp; x \\&#10;\sin \theta &amp; \cos \theta &amp; y \\&#10;0 &amp; 0 &amp; 1&#10;\end{pmatrix}.&#10;" src="/~robotics/mediawiki/images/math/a/6/9/a69e327944a6920b64ac943bac236f2d.png" /> 
+</dd></dl>
+<p>The superscript and subscript on the <span class="texhtml"><i>T</i></span> indicate that the transform <span class="texhtml"><i>T</i></span> gives the coordinates of the body frame at time <span class="texhtml">0</span> with respect to the world frame <span class="texhtml"><i>w</i></span>.  
+</p><p>Consider a control <img class="tex" alt="u_i = (\dot x, \dot y, \dot \theta)" src="/~robotics/mediawiki/images/math/e/1/9/e194bc588fc444aed203e4d4e7587dcd.png" />, giving the velocity and angular velocity of the robot, <b>with respect to the body frame</b>.  For example, <span class="texhtml"><i>u</i><sub><i>i</i></sub> = (0,1,2)</span> might indicate the control "drive forwards with speed 1 meter per second, with angular velocity 2 radians per second", if the y axis of the body frame is chosen to align with the "forwards" direction of the robot.
+</p><p>It turns out that for any such control, we can construct a homogeneous transform matrix <span class="texhtml"><i>U</i><sub><i>i</i></sub></span> such that 
+</p>
+<dl><dd><span class="texhtml"><sup><i>w</i></sup><i>T</i><sub>1</sub> = <sup><i>w</i></sup><i>T</i><sub>0</sub><i>U</i><sub><i>i</i></sub></span>
+</dd></dl>
+<p>The equation for <span class="texhtml"><i>U</i><sub><i>i</i></sub></span> is
+</p>
+<dl><dd><img class="tex" alt="&#10;U(t) =&#10;\begin{pmatrix}&#10;\cos (t \dot \theta) &amp; -\sin (t \dot \theta) &amp; t (\dot x \mathrm{sinc} (t \dot \theta) - \dot y \mathrm{versc}(t \dot \theta)) \\&#10;\sin (t \dot \theta) &amp; \cos (t \dot \theta) &amp; t (\dot x \mathrm{versc} (t \dot \theta) + \dot y \mathrm{sinc}(t \dot \theta)) \\&#10;0 &amp; 0 &amp; 1&#10;\end{pmatrix} &#10;" src="/~robotics/mediawiki/images/math/e/f/2/ef25e77e51572c582cfdc15580fdcc1d.png" />
+</dd></dl>
+<p>where <span class="texhtml">sinc</span> is the <a href="http://mathworld.wolfram.com/SincFunction.html" class="external text" title="http://mathworld.wolfram.com/SincFunction.html" rel="nofollow">cardinal sine</a>:
+</p>
+<dl><dd><img class="tex" alt="&#10;\mathrm{sinc} = &#10;\begin{cases}&#10;\frac{\sin x }{x}, &amp; x \ne 0 \\&#10;1, &amp; x = 0&#10;\end{cases}&#10;" src="/~robotics/mediawiki/images/math/0/4/4/044e79bb680858b63b642a25a2943fb3.png" />
+</dd></dl>
+<p>By analogy with the cardinal sine and with a once-popular function known as the <a href="http://en.wikipedia.org/wiki/Versine" class="external text" title="http://en.wikipedia.org/wiki/Versine" rel="nofollow">versine</a> we define a function called the <i>cardinal versine</i>:
+</p>
+<dl><dd><img class="tex" alt="&#10;\mathrm{versc} = &#10;\begin{cases}&#10;\frac{1 - \cos x }{x}, &amp; x \ne 0 \\&#10;0, &amp; x = 0&#10;\end{cases}&#10;" src="/~robotics/mediawiki/images/math/4/b/8/4b8694a1cb9e7bb9cfc03c1da7c0f99d.png" />
+</dd></dl>
+<p>Assume a sequence of controls <span class="texhtml"><i>u</i><sub>0</sub></span>, <span class="texhtml"><i>u</i><sub>1</sub></span>, <span class="texhtml"><i>u</i><sub>2</sub></span>,... , <span class="texhtml"><i>u</i><sub><i>n</i></sub></span> is applied.  Then the final configuration of the robot <span class="texhtml"><sup><i>w</i></sup><i>T</i><sub><i>n</i></sub></span> is given by
+</p>
+<dl><dd><img class="tex" alt="&#10;{^wT_n} = {^wT_0} U_0 U_1 U_2 U_3 \ldots U_n&#10;" src="/~robotics/mediawiki/images/math/c/d/d/cdd2d25d389279feeb48b49c0e227c22.png" />
+</dd></dl>
+<a name="Source_code" id="Source_code"></a><h2> <span class="mw-headline"> Source code </span></h2>
+<p>Here is python example code to demonstrate how the above formulation can be used to very easily write a simulator for kinematic models of several types of mobile robots, in about 20 lines of code.  Let us know if you find the code useful, and of course, cite the authors.
+</p>
+<pre>
+'''
+Created on Apr 22, 2010
+
+@authors: Devin Balkcom and Andrei Furtuna
+
+'''
+from numpy import array
+from numpy.core.numeric import dot
+from numpy.ma.core import sin, cos
+
+vehicle_controls = {'dubins': [(1., 0., 0), (1., 0, 1), (1., 0., -1.)] ,
+            'rs': [(1., 0., 0), (1., 0, 1), (1., 0., -1.),
+                   (-1., 0., 0), (-1., 0, 1), (-1., 0., -1.) ],
+            'diffdrive': [ (1., 0., .0), (-1., 0., 0.), (0., 0., 1.),
+                           (0., 0., -1.) ],
+            'omnidir': [  (0., 0., 3.), (0., 0., -3.), (0., -1.15, 1.),
+                        (0., -1.15, -1.), (1., .58, 1.), (1., .58, -1),
+                        (-1., .58, 1.), (-1., .58, -1.)  ]
+            }
+
+
+_epsilon = .00000001
+
+def sinc(x):
+    ''' The cardinal sine function '''
+    if abs(x) &lt; _epsilon:
+        return 1
+    return sin(x) / x
+    
+def versc(x):
+    ''' the 'cardinal versine' function'''
+    if abs(x) &lt; _epsilon:
+        return 0
+    return (1 - cos(x)) / x
+
+def matrix_U(t, rqdot):
+    ''' given qdot = (xdot, ydot, thetadot) in the frame of the robot (r)
+    and a duration t, compute the matrix expressing the displacement of the robot
+    with respect to its own frame'''
+    
+    xdot, ydot, thetadot = rqdot
+    
+    deltatheta = t * thetadot
+    c = cos(deltatheta)
+    s = sin(deltatheta)
+    sc = sinc(deltatheta)
+    vc = versc(deltatheta)
+    
+    U = array([ 
+               [ c, -s, t * (xdot * sc - ydot * vc) ],
+               [ s, c, t * (xdot * vc + ydot * sc) ],
+               [ 0, 0, 1]
+              ])
+
+    return U
+
+if __name__ == &quot;__main__&quot;:
+    #example simulation of a Dubins steered car
+    
+    # turn left for .5 seconds:
+    U1 = matrix_U(.5, vehicle_controls[&quot;dubins&quot;][1])
+    # drive straight for 1.5 seconds:
+    U2 = matrix_U(1.5, vehicle_controls[&quot;dubins&quot;][0])
+    #Turn right for .4 seconds
+    U3 = matrix_U(.4, vehicle_controls[&quot;dubins&quot;][2])
+    
+    # multiply the matrices together to get the final configuration of the 
+    # robot:
+    print dot(dot(U1, U2), U3)
+
+</pre>
+<a name="Model" id="Model"></a><h2> <span class="mw-headline">Model</span></h2>
+<p>The remainder of the tutorial explains the equations in more detail, includes a few figures, and describes how to find constant controls that are representative of the motion of wheeled mobile robots.  
+</p><p>The simplest model of a mobile robot is a rigid body in the plane.  There is a frame attached to the world, and a frame attached to the body.  The coordinates of the body frame with respect to the world frame give the <i>configuration</i> of the robot.  There are two standard ways of representing the coordinates:  minimal coordinates, and homogeneous transform matrices.    
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:Diffdrive.png" class="image" title="Diffdrive.png"><img alt="" src="/~robotics/mediawiki/images/6/68/Diffdrive.png" width="256" height="137" border="0" /></a></div></div> 
+<p>The <b>minimal coordinates</b> representation uses just three numbers to represent the configuration of the body frame, <span class="texhtml">(<i>x</i>,<i>y</i>,&theta;)</span>, collected in a vector <span class="texhtml"><i>q</i> = (<i>x</i>,<i>y</i>,&theta;)</span>.  The <b>homogeneous transform matrix</b> representation uses nine numbers, collected in a matrix:
+</p>
+<dl><dd><img class="tex" alt="{^wT_r} = &#10;\begin{pmatrix}&#10;\cos \theta &amp; -\sin \theta &amp; x \\&#10;\sin \theta &amp; \cos \theta &amp; y \\&#10;0 &amp; 0 &amp; 1&#10;\end{pmatrix}&#10;" src="/~robotics/mediawiki/images/math/e/1/f/e1ffd6d41f18adc932fd1c1c44d4db2d.png" />
+</dd></dl>
+<p>Why ever use nine numbers to represent the configuration, when three will do?  The transform matrix allows points whose coordinates are given in the robot frame (for example, the location of a wheel on the robot with respect to the robot frame) to be transformed into world frame coordinates.  This is useful if you want to draw the wheel of the robot on a computer screen (which uses world coordinates), or compute if the wheel is touching an obstacle (the boundary of which is given in world coordinates).  The only requirement is that points be given in <b>homogeneous coordinates</b>:  a third number, 1, is appended to the <span class="texhtml">(<i>x</i>,<i>y</i>)</span> coordinates of the point.  
+</p>
+<dl><dd><img class="tex" alt="&#10;\begin{pmatrix}&#10;^wx \\&#10;^wy \\&#10;1&#10;\end{pmatrix}&#10;={^wT}_r&#10;\begin{pmatrix}&#10;^rx \\&#10;^ry \\&#10;1&#10;\end{pmatrix}&#10;" src="/~robotics/mediawiki/images/math/c/6/f/c6fecca61beec822c4a2c286f21b69c9.png" /> 
+</dd></dl>
+<p>The superscripts before variables indicates the frame with respect to which the coordinates are given.  Homogeneous coordinates are very standard in computer graphics and vision; a web search will quickly find you many tutorials.  For our purposes it is enough to know that homogeneous transforms allow frames or points to be simultaneously rotated and translated using a single matrix multiplication.
+</p>
+<a name="Example_systems" id="Example_systems"></a><h2> <span class="mw-headline">Example systems</span></h2>
+<p>Here are a few vehicles of the type we are interested in:  steered cars (with a bound on the curvature of paths that can be followed), differential-drives that can spin in place, and three- and four-wheeled vehicles that can drive in any direction.
+</p>
+<center>
+<table border="1">
+<tr>
+<td> Steered car
+</td><td> 2-wheeled diff-drive
+</td><td> 3-wheeled omni
+</td><td> 4-wheeled omni
+</td></tr>
+<tr>
+<td><div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:Car.jpg" class="image" title="Car.jpg"><img alt="" src="/~robotics/mediawiki/images/c/c1/Car.jpg" width="128" height="102" border="0" /></a></div></div>
+</td><td><div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:Garcia.jpg" class="image" title="Garcia.jpg"><img alt="" src="/~robotics/mediawiki/images/3/36/Garcia.jpg" width="128" height="128" border="0" /></a></div></div>
+</td><td><div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:Pprk.jpg" class="image" title="Pprk.jpg"><img alt="" src="/~robotics/mediawiki/images/c/cc/Pprk.jpg" width="128" height="102" border="0" /></a></div></div>
+</td><td><div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:Rmp.png" class="image" title="Rmp.png"><img alt="" src="/~robotics/mediawiki/images/a/a6/Rmp.png" width="128" height="70" border="0" /></a></div></div>
+</td></tr></table>
+</center>
+<p>(Robots by Acroname and Segway.)
+</p><p><br />
+</p>
+<a name="Velocity_controls_in_the_frame_of_the_robot" id="Velocity_controls_in_the_frame_of_the_robot"></a><h2> <span class="mw-headline"> Velocity controls in the frame of the robot </span></h2>
+<p>Assume a steered car is facing east, and can drive eastwards with speed one.  If the same car were facing north, the car could drive northwards with speed one.  We say that the available controls are <i>attached</i> to the car.  Rotating the robot rotates the direction in which the controls are applied.  
+</p><p>Let <img class="tex" alt="{\dot q}" src="/~robotics/mediawiki/images/math/d/c/d/dcd2e16a485d3ff9b563b024dc9c6fb5.png" /> be the time derivative of the velocity in the world frame.  The trajectory of the robot is
+</p>
+<dl><dd><img class="tex" alt="{q}(t) = {q}(0) + \int_0^t {\dot q}(t) dt.&#10;" src="/~robotics/mediawiki/images/math/2/4/0/24022260155b2fa15941ef1ef336da83.png" />
+</dd></dl>
+<p>(We omit the superscripts describing the frame when the frame is clear from context.  So we write simply <span class="texhtml"><i>q</i></span> instead of <span class="texhtml"><sup><i>w</i></sup><i>q</i></span>.)
+</p><p>For our kinematic model, we assume that <img class="tex" alt="{\dot q}" src="/~robotics/mediawiki/images/math/d/c/d/dcd2e16a485d3ff9b563b024dc9c6fb5.png" />, the time derivative of the configuration, is in some way controlled by the robot.  However, this depends on the particular robot design.  A steered car has a set of controls, a differential drive where the relative speeds of the two driving wheels turn the robot another.  
+</p><p>Because the controls are attached to the robot, it makes sense to describe the controls for the robot <i>in the frame of the robot</i>.  For example, let <img class="tex" alt="{^r\dot q} = (1, 0, 0)" src="/~robotics/mediawiki/images/math/e/d/c/edcecb43f33f7c80de9a7ad41c6e6556.png" />.  This would express the control <i>drive with speed one in the direction that the first axis of the robot frame is pointing</i>.  <img class="tex" alt="{^r\dot q} = (0, 1, 0)" src="/~robotics/mediawiki/images/math/d/6/9/d691acc66f9c6b0dbbfd5c4485fe4660.png" /> would express <i>drive in the direction that the second axis of the robot frame is pointing</i>.  <img class="tex" alt="{^r\dot q} = (0, 0, 1)" src="/~robotics/mediawiki/images/math/5/4/9/54985169777785058f3b906ba9ab5f0c.png" /> would be <i>spin in place counter-clockwise with angular velocity one</i>.
+</p><p>Notice that the angular velocity is the same in either the world frame or the body frame, but the translational velocity in the world frame changes depending on how the body frame is rotated.  Define
+</p>
+<dl><dd><img class="tex" alt="&#10;R =&#10;\begin{pmatrix}&#10;\cos \theta &amp; -\sin \theta &amp; 0 \\&#10;\sin \theta &amp; \cos \theta &amp; 0 \\&#10;0 &amp; 0 &amp; 1&#10;\end{pmatrix}.&#10;" src="/~robotics/mediawiki/images/math/4/6/f/46ffb6d3ba269cb77731f5c0f67d65a3.png" />
+</dd></dl>
+<p>We then have
+</p>
+<dl><dd><img class="tex" alt="&#10;{\dot q} = R~{^r\dot q}. &#10;" src="/~robotics/mediawiki/images/math/f/7/0/f7073f1c1da27a8914bac3d14566c5fa.png" />
+</dd></dl>
+<dl><dd><img class="tex" alt="&#10;{q}(t) = {q}(0) + \int_0^t R(t)~{^r\dot q}  (t) dt.&#10;" src="/~robotics/mediawiki/images/math/b/d/0/bd0f601428cd742e2ad109a3b75259e6.png" />
+</dd></dl>
+<p>This integral equation might be numerically integrated given a <i>control signal</i>:  a function of time <img class="tex" alt="{^r\dot q}  (t)" src="/~robotics/mediawiki/images/math/a/4/f/a4fc79847d32fbbac707c8c2bcb1f384.png" />.  However, if the controls are piecewise constant, the resulting configuration of the robot can be computed exactly.  It turns out that constant controls correspond to rotating the robot around a fixed point, or translating the robot.
+</p><p>For a steered car or differential-drive robot, <img class="tex" alt="^r\dot q = (v, 0, \omega) " src="/~robotics/mediawiki/images/math/5/c/2/5c275d02fe6d0edc5758c3d0683be83e.png" />, where <span class="texhtml"><i>v</i></span> is the forward velocity of the robot, and <span class="texhtml">&omega;</span> is the angular velocity.  The second element of the vector is always zero, since the car cannot drive sideways.  For a differential drive robot, it is easy to show that if the wheel speeds in the direction the robot is facing are given by <span class="texhtml"><i>v</i><sub>1</sub>,<i>v</i><sub>2</sub></span>,
+</p>
+<dl><dd><img class="tex" alt="&#10;v = \frac{v_2 + v_1}{2}&#10;" src="/~robotics/mediawiki/images/math/f/1/6/f167e079b5295166d98f509151664444.png" />
+</dd></dl>
+<p>and 
+</p>
+<dl><dd><img class="tex" alt="&#10;\omega = \frac{v_2 - v_1}{d}&#10;" src="/~robotics/mediawiki/images/math/9/e/a/9ea969d73e2d1e0b9e87826ce6d60cd4.png" />
+</dd></dl>
+<p>where <span class="texhtml"><i>d</i></span> is the distance between the wheels.  The situation with omnidirectional vehicles is somewhat more complicated; here is a <a href="/~robotics/mediawiki/index.php/Kinematics_for_wheeled_omni-directional_vehicles" title="Kinematics for wheeled omni-directional vehicles"> sketch</a> of how to compute the relationship between wheel-speed controls and the motion of the robot.
+</p>
+<a name="Discrete_controls" id="Discrete_controls"></a><h2> <span class="mw-headline"> Discrete controls </span></h2>
+<p>Robot path planners often choose a discrete set of controls to represent the available motions of the robot.  The following table gives some example of discrete velocity controls for four vehicle types.   
+</p>
+<center>
+<table border="1">
+<tr>
+<th> Vehicle
+</th><th> controls: <img class="tex" alt="{^r \dot q}" src="/~robotics/mediawiki/images/math/a/4/c/a4c9d86fc31c4bf45db941540635f375.png" />
+</th></tr>
+<tr>
+<td> Dubins steered car
+</td><td> (1, 0, 0), (1, 0, 1), (1, 0, -1)
+</td></tr>
+<tr>
+<td>Reeds-Shepp steered car
+</td><td> (1, 0, 0), (1, 0, 1), (1, 0, -1), (-1, 0, 0), (-1, 0, 1), (-1, 0, -1)
+</td></tr>
+<tr>
+<td>Two-wheeled diff-drive
+</td><td> (1, 0, 0), (-1, 0, 0), (0, 0, 1), (0, 0, -1)
+</td></tr>
+<tr>
+<td>Three-wheeled omnidir
+</td><td>(0, 0, 3), (0, 0, -3), (0, -1.15, 1), (0, -1.15, -1), (1, .58, 1), (1, .58, -1), (-1, .58, 1), (-1, .58, -1)
+</td></tr></table>
+</center>
+<p>In fact, for any of these robots, there is an infinite selection of constant controls -- it is only required that the controls satisfy constraints based on the physical design of the robot.  For example, a steered car should not have the control <span class="texhtml">(0,0,1)</span>, since spinning in place is not a feasible motion.  The controls listed are in some sense <i>extreme</i> -- they are at the limits of what the robot can do (e.g., a maximally sharp turn for a car, or a full-speed spin for a differential-drive).  (In fact, recent work by Furtuna and Balkcom shows that these extreme controls are sufficient to describe minimum-time trajectories in the obstacle-free plane, making the listed controls a good candidate set to use in a path-planning algorithms that use a finite approximation of the control space.)
+</p>
+<a name="Geometry_of_constant_controls:__rotation_centers" id="Geometry_of_constant_controls:__rotation_centers"></a><h2> <span class="mw-headline">Geometry of constant controls:  rotation centers</span></h2>
+<p>Applying any discrete control for some period of time yields either a pure translation or a rotation about a fixed rotation center.  
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:Rotationcenter.png" class="image" title="Rotationcenter.png"><img alt="" src="/~robotics/mediawiki/images/c/cb/Rotationcenter.png" width="255" height="255" border="0" /></a></div></div>
+<p>For example, consider a steered car.  Because the rear wheels are not permitted to slip sideways, the rotation center must be on a line that passes through both rear wheels.  Since there is a bound on how sharply the car can turn, the rotation center must also be some minimum distance from the center point of the rear axle.  
+</p><p>The red rotation centers correspond to the discrete controls from the last section:  in this case, the rotation centers closest to the car, corresponding to the sharpest turns, together with a forward translation. 
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:SteeredRC.png" class="image" title="SteeredRC.png"><img alt="" src="/~robotics/mediawiki/images/2/2d/SteeredRC.png" width="420" height="61" border="0" /></a></div></div>
+<p>An omni-directional robot can rotate about any rotation center in the plane.  However, by choosing the wheel speeds at minimum or maximum values, we get four bounding rotation centers.  Rotation can be either positive or negative about each center.  Rotation about the central rotation center is three times faster than any of the other rotations.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/mediawiki/index.php/File:OmniRC.png" class="image" title="OmniRC.png"><img alt="" src="/~robotics/mediawiki/images/1/18/OmniRC.png" width="350" height="287" border="0" /></a></div></div>
+<p>(Omni-directional rotation-center figure by Matthew Mason.  "Saturated" and other notations describe which of the wheels would be spinning fastest for a rotation center in the marked region.)
+</p><p>Since each discrete control corresponds to a rotation center and a constant angular velocity, we may specify the controls for the robot as a list of rotation centers, together with rotational velocities, and a list of translational velocity vectors.  This is useful because rotation centers allow controls to be identified easily visually.  Rotation centers also allow a simple description of the motion of the robot.
+</p>
+<a name="Computing_the_location_of_the_rotation_center" id="Computing_the_location_of_the_rotation_center"></a><h3> <span class="mw-headline">Computing the location of the rotation center</span></h3>
+<p>Given rotation control <img class="tex" alt="u = (\dot x, \dot y, \dot \theta)" src="/~robotics/mediawiki/images/math/5/2/2/522c0bbad9d799fb21eb7a3d0f9fe514.png" /> in any frame, the location of the rotation center in that frame is given by
+</p>
+<dl><dd><img class="tex" alt="&#10;x_u = -\dot y / \dot \theta &#10;" src="/~robotics/mediawiki/images/math/9/7/4/974eed45172e8dbb4f6523e88d3ceac2.png" />
+</dd><dd><img class="tex" alt="&#10;y_u = \dot x / \dot \theta&#10;" src="/~robotics/mediawiki/images/math/2/f/b/2fbbd68224243cb57159e51c19cc1bb9.png" />
+</dd></dl>
+<p>It is convenient to use homogeneous coordinates to describe the location of the rotation center.  Instead of putting a 1 in the third element of the vector, we place <img class="tex" alt="\dot \theta" src="/~robotics/mediawiki/images/math/6/1/d/61d466d6e64e3af7b8e8f4499a274986.png" /> in the third element, 'storing' the angular velocity. We have:
+</p>
+<dl><dd><img class="tex" alt="&#10;C_u = (-\dot y, \dot x, \dot \theta)&#10;" src="/~robotics/mediawiki/images/math/9/3/6/93655b586d849194ba6319a85ed91350.png" />
+</dd></dl>
+<p>To compute the location of a point given its homogeneous coordinates, divide the first and second coordinates by the third.  There is an additional benefit to this representation of a control.  If <img class="tex" alt="\dot \theta = 0" src="/~robotics/mediawiki/images/math/9/1/2/9125535147a570ea3bd5b68497a2d5c7.png" />, the rotation center is 'at infinity' along a vector perpendicular to the direction of the translation.  Translation need not be handled as a special case if we use homogeneous coordinates.
+</p>
+<a name="The_constant-control_transform_matrix" id="The_constant-control_transform_matrix"></a><h2> <span class="mw-headline">The constant-control transform matrix</span></h2>
+<p>Rotation around a point <span class="texhtml"><i>c</i></span> can be described by the following homogeneous transform matrix:
+</p>
+<dl><dd><img class="tex" alt="&#10;R_c = &#10;\begin{pmatrix}&#10;R &amp; (I_2 - R) c \\&#10;0 &amp; 1&#10;\end{pmatrix}.&#10;" src="/~robotics/mediawiki/images/math/8/6/b/86bda8af3bbe081557b02892b92ba28d.png" />
+</dd></dl>
+<p>By placing into the formula the coordinates of the rotation center, we get a matrix
+</p>
+<dl><dd><img class="tex" alt="&#10;T_{\dot q}(t) =&#10;\begin{pmatrix}&#10;\cos (t \dot \theta) &amp; -\sin (t \dot \theta) &amp; t (\dot x \mathrm{sinc} (t \dot \theta) - \dot y \mathrm{versc}(t \dot \theta)) \\&#10;\sin (t \dot \theta) &amp; \cos (t \dot \theta) &amp; t (\dot x \mathrm{versc} (t \dot \theta) + \dot y \mathrm{sinc}(t \dot \theta)) \\&#10;0 &amp; 0 &amp; 1&#10;\end{pmatrix} &#10;" src="/~robotics/mediawiki/images/math/3/e/c/3ecd9d05219d4da7c9c1afac4f3584c8.png" />
+</dd></dl>
+<p>where <span class="texhtml">sinc</span> is the <a href="http://mathworld.wolfram.com/SincFunction.html" class="external text" title="http://mathworld.wolfram.com/SincFunction.html" rel="nofollow">cardinal sine</a>:
+</p>
+<dl><dd><img class="tex" alt="&#10;\mathrm{sinc} = &#10;\begin{cases}&#10;\frac{\sin x }{x}, &amp; x \ne 0 \\&#10;1, &amp; x = 0&#10;\end{cases}&#10;" src="/~robotics/mediawiki/images/math/0/4/4/044e79bb680858b63b642a25a2943fb3.png" />
+</dd></dl>
+<p>By analogy with the cardinal sine and with a once-popular function known as the <a href="http://en.wikipedia.org/wiki/Versine" class="external text" title="http://en.wikipedia.org/wiki/Versine" rel="nofollow">versine</a> we define a function called the <i>cardinal versine</i>:
+</p>
+<dl><dd><img class="tex" alt="&#10;\mathrm{versc} = &#10;\begin{cases}&#10;\frac{1 - \cos x }{x}, &amp; x \ne 0 \\&#10;0, &amp; x = 0&#10;\end{cases}&#10;" src="/~robotics/mediawiki/images/math/4/b/8/4b8694a1cb9e7bb9cfc03c1da7c0f99d.png" />
+</dd></dl>
+<p>The benefit of using these unusual functions is that they allow translation and rotation to be treated uniformly, rather than on a case-by-case basis.  This approach also solves the problem of numerical instability for the case where translational velocity is much larger than the (non-zero) angular velocity, which corresponds to rotating about a point "nearly" at infinity.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 202/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki:pcache:idhash:91-0!1!0!!en!2!edit=0 and timestamp 20110220171646 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php/Planar_mobile-robot_kinematics_tutorial">http://www.cs.dartmouth.edu/~robotics/mediawiki/index.php/Planar_mobile-robot_kinematics_tutorial</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-notes'>
+		<h5>notes</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Join-the-lab"><a href="/~robotics/mediawiki/index.php/Join_the_lab">Join the lab</a></li>
+				<li id="n-Equipment-notes"><a href="/~robotics/mediawiki/index.php/Equipment_notes">Equipment notes</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-people'>
+		<h5>people</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Devin-Balkcom"><a href="/~robotics/mediawiki/index.php/Devin_Balkcom">Devin Balkcom</a></li>
+				<li id="n-Paritosh-Kavathekar"><a href="/~robotics/mediawiki/index.php/Paritosh_Kavathekar">Paritosh Kavathekar</a></li>
+				<li id="n-Matthew-Bell"><a href="/~robotics/mediawiki/index.php/Matthew_Bell">Matthew Bell</a></li>
+				<li id="n-Andrei-Furtuna"><a href="/~robotics/mediawiki/index.php/Andrei_Furtuna">Andrei Furtuna</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/mediawiki/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value=""/>
+				<input id="searchInput" name="search" type="text" title="Search Balkcom robotics lab [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />
+				<div><a href="/~robotics/mediawiki/index.php/Special:Search" rel="search">Advanced search</a></div>
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/mediawiki/index.php/Special:WhatLinksHere/Planar_mobile-robot_kinematics_tutorial" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/mediawiki/index.php/Special:RecentChangesLinked/Planar_mobile-robot_kinematics_tutorial" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/mediawiki/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/mediawiki/index.php?title=Planar_mobile-robot_kinematics_tutorial&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/mediawiki/index.php?title=Planar_mobile-robot_kinematics_tutorial&amp;oldid=675" title="Permanent link to this version of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/mediawiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 19 August 2010, at 13:08.</li>
+					<li id="viewcount">This page has been accessed 4,570 times.</li>
+					<li id="privacy"><a href="/~robotics/mediawiki/index.php/Balkcom_robotics_lab:Privacy_policy" title="Balkcom robotics lab:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/mediawiki/index.php/Balkcom_robotics_lab:About" title="Balkcom robotics lab:About">About Balkcom robotics lab</a></li>
+					<li id="disclaimer"><a href="/~robotics/mediawiki/index.php/Balkcom_robotics_lab:General_disclaimer" title="Balkcom robotics lab:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6668244-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script><!-- Served in 0.242 secs. --></body></html>

@@ -1,0 +1,153 @@
+http://www.cs.dartmouth.edu/~sorber
+2
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jacob Sorber (Dartmouth College)</title>
+<link rel=StyleSheet HREF="display.css" TYPE="text/css"/>
+
+<meta name="google-site-verification" content="wt14Hrc60d4g5O7ve1D9z91pULYZu20_OuSrzbK-TmY" />
+
+
+
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-2808122-2");
+	pageTracker._initData();
+	pageTracker._trackPageview()
+</script><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="Jacob M. Sorber" />
+<meta name="description" content="Professional web site for Jacob M. Sorber, Postdoctoral Researcher in Computer Science/ISTS at Dartmouth College.  Research, Publications, Contact Info, etc."/>
+<meta name="keywords" content="mobile systems, TurtleNet, perpetual systems, energy aware 
+sensing, wildlife tracking, low-power sensing, eon language, security, privacy, mHealth"/>
+
+
+</head>
+
+<body>
+<div id="bodydiv">
+	<div id="topdiv">
+		<div id="turtlediv" style="height:200px;">
+        	<a href="http://prisms.cs.umass.edu/dome/index.php?page=turtlenet"><img class="topimg_l" height="100%" src="img/gt3.jpg" alt="TurtleNet: In situ monitoring study of threatened Gopher Tortoises"/></a>
+        </div>
+        <div id="toptextdiv" >
+        	<h2>Jacob Sorber</h2>
+            Postdoctoral Research Associate<br/>
+  Institute for Security, Technology, and Society (ISTS)<br/>
+            Dartmouth College<br/>
+  Hanover, NH<br/><br/>
+            <span class="fixedw">jacob.m.sorber</span><span style="display:none;">.no.spam</span><span class="fixedw">&#64;</span><span style="display:none;">.no.spam</span><span class="fixedw">dartmouth.edu</span><br/>
+        </div>
+        <div id="facediv">
+        	<img class="topimg_r" height="200px" src="img/wvface.jpg" alt="Jacob Sorber" />
+        </div>
+    </div>
+    <div id='contentdiv'>
+   
+        <h2 class="section">News</h2>
+
+	<p>
+    	<strong>(02/2011)</strong>&nbsp;<a href='#teaching'>I&#39m teaching Computer Architecture (CS 37) this Summer</a>&nbsp 		<strong>(11/2010)</strong>&nbsp;<a href='#mementos'>Mementos paper accepted to ASPLOS 2011.</a>&nbsp 		<strong>(8/2010)</strong>&nbsp;Started a postdoc at ISTS, Dartmouth College.&nbsp 	</p>
+
+<h2 class="section">About Me</h2>
+
+	<p>I'm a postdoc at the Institute for Security Technology and Society (ISTS) and the Computer Science Department at Dartmouth College, working for <a href="http://www.cs.dartmouth.edu/~dfk/">David Kotz</a>.</p>
+
+	<p>
+		<strong>Before Dartmouth: </strong> MS/PhD (<a href="http://www .cs.umass.edu">UMass Amherst, 2010)</a> &mdash; 
+    	Intern (<a href="http://research.intel.com">Intel Research</a>,2007) &mdash;
+		BS (<a href="www.cs.byu.edu">BYU</a>, 2002)
+    </p>
+
+	<p><strong>Details: </strong><a href="app_materials/CV.pdf" onClick="javascript: pageTracker._trackPageview('/app/CV');" >[CV]</a></p>
+
+<h2 class="section">Research Interests</h2>
+
+	<p>
+		<strong>Broadly: </strong>Mobile Systems, Wireless Sensor Networks, and Pervasive Computing.  <br><br> 
+		<strong>Specifically: </strong>Security and privacy in mHealth sensing, perpetual systems, energy management and awareness, runtime profiling and adaptation, programming 
+        languages, operating systems, and disruption tolerant systems.<br><br>
+
+		<strong>Projects: </strong>mHealth Security and Privacy, Perpetual Systems (Tula, <a href="http://www.cs.dartmouth.edu/~sorber/eon/index.html">Eon</a>, 
+        	<a href="http://prisms.cs.umass.edu/dome/index.php?page=turtlenet">TurtleNet</a>), RFID-scale computing (<a href="#mementos">Mementos</a>), and 
+            Hierarchical Power Management (see <a href="#turducken">Turducken</a> and <a href="#triage">Triage</a> papers).
+	</p>
+
+
+<h2 class="section">Publications</h2>
+<ul class="nobullet">
+
+
+<li><h3>Papers</h3>
+
+<ul class="nobullet">
+
+<li><span class="pub" id="mementos">Mementos: System Support for Long-Running Computation on RFID-Scale Devices</span><br/>
+B. Ransford, J. Sorber, K. Fu.  To appear at the Sixteenth International Conference on Architectural Support for Programming Languages and Operating Systems <span class="pub">(ASPLOS 2011)</span>.&nbsp;<a href="papers/ransford-mementos-asplos11.pdf" onClick="javascript: pageTracker._trackPageview('/downloads/ransford-mementos-asplos11');" >[PDF]</a>&nbsp;<a href="https://github.com/ransford/mementos" onClick="javascript: pageTracker._trackPageview('/links/mementos-source');">[Source/Docs]</a>
+
+<li><span class="pub">Eon: A Language and Runtime System for Perpetual Systems.</span><br>
+J. Sorber, A. Kostadinov, M. Garber, M. Brennan, M. D. Corner, E.D. Berger. In Proceedings of the Fifth International ACM Conference on Embedded Networked Sensor Systems <span class="pub">(SenSys 2007)</span>, Sydney, Australia, November 2007. <a href="http://prisms.cs.umass.edu/mcorner/papers/sorber07sensys.pdf" target="_blank" onClick="javascript: pageTracker._trackPageview('/downloads/sensys07eon');" >[PDF]</a>&nbsp; <a  href="slides/eon_sensys07.ppt" onClick="javascript: pageTracker._trackPageview('/downloads/sensys07eon_slides');" >[Slides]</a></li>
+
+<li><span class="pub" id="triage">Triage: Balancing Energy Consumption and Quality of Service in Tiered Microservers</span><br>
+N. Banerjee, J. Sorber, M. D.  Corner, S. Rollins, and D. Ganesan.  In Proceedings of the 5th International Conference on Mobile Systems, Applications, and Services <span class="pub">(MobiSys 2007)</span>, Puerto Rico, June 2007.<a href="http://www.cs.umass.edu/~nilanb/papers/mobisys_triage.pdf" target="_blank" onClick="javascript: pageTracker._trackPageview('/downloads/mobisys07triage');">[PDF]</a></li>
+
+<li><span class="pub" id="turducken">Turducken: Hierarchical Power Management for Mobile Devices</span><br>
+J. Sorber, N. Banerjee, M. D. Corner, and S. Rollins.  In Proceedings of The Third International Conference on Mobile Systems, Applications, and Services <span class="pub">(MobiSys '05)</span>, Seattle, WA, June 2005.  <a
+href="papers/mobisys05.pdf" target="_blank" onClick="javascript: pageTracker._trackPageview('/downloads/mobisys05turducken');" >[PDF]</a>&nbsp;<a
+href="slides/mobisys2005slides.ppt" onClick="javascript: pageTracker._trackPageview('/downloads/mobisys05turducken_slides');" >[Slides]</a></li>
+
+
+<li><span class="pub">Parallel search for LTL violations</span><br>
+M. D. Jones, J. Sorber, International Journal on Software Tools for Technology Transfer
+<span class="pub">(STTT)</span>, Volume 7, Issue 1, Feb 2005, Pages 31 - 42. <a
+href="papers/sttt-journal.pdf" target="_blank" onClick="javascript: pageTracker._trackPageview('/downloads/sttt05ltl');">[PDF]</a></li>
+
+</ul></li>
+
+
+<li><h3>Works in Progress, Tech Reports, Posters, etc</h3>
+
+<ul  class="nobullet">
+
+
+<li><span class="pub">Tula: Balancing Energy for Sensing and Communication in a Perpetual Mobile System</span><br>
+J. M. Sorber, A. Balasubramanian, M. D. Corner, J. Ennen, C Qualls.  Technical Report&nbsp;UM-CS-2009-058. University of Massachusetts-Amherst, Amherst, MA. December, 2009. <a href="http://www.cs.umass.edu/publication/details.php?id=1977" target="_blank" onClick="javascript: pageTracker._trackPageview('/downloads/tula09techrept');" >[PDF]</a></li>
+
+
+<li><span class="pub">eFlux: Simple Automatic Adaptation for Environmentally Powered Devices (Poster/Demo)</span><br>
+J. Sorber, A. Kostadinov, M. Brennan, M. D. Corner, E.D. Berger. In 7th IEEE Workshop on Mobile Computing Systems and Applications <span class="pub">(HotMobile/WMCSA)</span>, Semiahmoo Resort, Washington, April 2006.</li>
+     
+<li><span class="pub">Parallel Random Walk Search for LTL Violations</span><br>
+M. D. Jones, J. Sorber, , Workshop on Parallel and Distributed Model Checking <span class="pub">(PDMC)</span>, Brno, Czeck Republic, August 2002</li>
+
+
+</ul>
+</li>
+</ul>
+
+<h2 class="section" id="teaching">Teaching</h2>
+<ul class="nobullet">
+<li><strong>CS 37: Computer Architecture.  Summer 2011.</strong>
+</li>
+</ul>
+
+
+<h2 class="section">Awards</h2>
+
+<p>
+<b>Best Presentation</b>, Ph.D. Forum, MobiSys 2008, Breckenridge, CO.
+</p>
+
+        
+	</div>
+</div>
+
+
+</body>
+</html>
+

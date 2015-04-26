@@ -1,0 +1,413 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Mechanisms and configuration spaces" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Mechanisms and configuration spaces - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Mechanisms_and_configuration_spaces";
+		var wgTitle = "Mechanisms and configuration spaces";
+		var wgAction = "view";
+		var wgArticleId = "68";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1093;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Mechanisms_and_configuration_spaces skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Mechanisms_and_configuration_spaces" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Mechanisms_and_configuration_spaces&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Mechanisms_and_configuration_spaces&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Mechanisms_and_configuration_spaces&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Mechanisms and configuration spaces</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Joints_and_linkages"><span class="tocnumber">1</span> <span class="toctext">Joints and linkages</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Linkages_as_devices_for_computation"><span class="tocnumber">1.1</span> <span class="toctext">Linkages as devices for computation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Workspaces_for_branching_and_serial_mechanisms_.28graphical_method.29"><span class="tocnumber">2</span> <span class="toctext">Workspaces for branching and serial mechanisms (graphical method)</span></a></li>
+<li class="toclevel-1"><a href="#Reuleaux_collection_of_mechansims"><span class="tocnumber">3</span> <span class="toctext">Reuleaux collection of mechansims</span></a></li>
+<li class="toclevel-1"><a href="#Definitions"><span class="tocnumber">4</span> <span class="toctext">Definitions</span></a></li>
+<li class="toclevel-1"><a href="#Trajectories_in_configuration_space"><span class="tocnumber">5</span> <span class="toctext">Trajectories in configuration space</span></a></li>
+<li class="toclevel-1"><a href="#Topology_of_configuration_spaces"><span class="tocnumber">6</span> <span class="toctext">Topology of configuration spaces</span></a></li>
+<li class="toclevel-1"><a href="#Constraint_counting"><span class="tocnumber">7</span> <span class="toctext">Constraint counting</span></a></li>
+<li class="toclevel-1"><a href="#Configuration_spaces_for_rigid_bodies"><span class="tocnumber">8</span> <span class="toctext">Configuration spaces for rigid bodies</span></a></li>
+<li class="toclevel-1"><a href="#Parameterized_configuration_space"><span class="tocnumber">9</span> <span class="toctext">Parameterized configuration space</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Parameterized_configuration_space_for_rigid_bodies"><span class="tocnumber">9.1</span> <span class="toctext">Parameterized configuration space for rigid bodies</span></a></li>
+<li class="toclevel-2"><a href="#Parameterized_configuration_space_for_linkages"><span class="tocnumber">9.2</span> <span class="toctext">Parameterized configuration space for linkages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Obstacles"><span class="tocnumber">10</span> <span class="toctext">Obstacles</span></a></li>
+<li class="toclevel-1"><a href="#Visualizing_configuration_spaces"><span class="tocnumber">11</span> <span class="toctext">Visualizing configuration spaces</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Obstacles_for_2R_planar_arms"><span class="tocnumber">11.1</span> <span class="toctext">Obstacles for 2R planar arms</span></a></li>
+<li class="toclevel-2"><a href="#Planar_translation_of_rigid_bodies"><span class="tocnumber">11.2</span> <span class="toctext">Planar translation of rigid bodies</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Translations_and_rotations_of_rigid_bodies_in_the_plane"><span class="tocnumber">12</span> <span class="toctext">Translations and rotations of rigid bodies in the plane</span></a></li>
+<li class="toclevel-1"><a href="#Other_abstract_spaces"><span class="tocnumber">13</span> <span class="toctext">Other abstract spaces</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Joints_and_linkages" id="Joints_and_linkages"></a><h2> <span class="mw-headline">Joints and linkages</span></h2>
+<p>Joints constrain the motion between pairs of rigid bodies.  For example, a revolute joint allows pure rotation of the bodies.  A linear prismatic joint allows linear translation along an axis.  There are some stylized symbols used to draw diagrams of <i>linkages</i>, collections of joints and rigid bodies (or links).  
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Linkagenotation.png" class="image" title="Linkagenotation.png"><img alt="" src="/~robotics/cs54/images/e/ed/Linkagenotation.png" width="766" height="330" border="0" /></a></div></div>
+<p>These symbols also allow some simple 3D mechanisms to be drawn in flat configurations without the need for a complicated perspective drawing.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Linkage_examples.png" class="image" title="Linkage examples.png"><img alt="" src="/~robotics/cs54/images/e/eb/Linkage_examples.png" width="304" height="497" border="0" /></a></div></div> 
+<p>The classification of linkages as ``parallel``, ``branching``, or ``serial`` in the figure depends on whether the arrangement of links and joints forms loops (also called cycles) or not.  We will see later that computing the possible motions of parallel mechanisms can be difficult.
+</p><p>We use some notation to roughly describe the type of a serial robot arm.  For example, an RR arm would indicate a serial arm with two revolute joints.  A PR arm would indicate an arm with a prismatic joint and a revolute joint, in that order starting from the ground.  We shorten this even further if there are multiple joints of the same type in a row -- a 2R arm has two revolute joints.  
+</p><p>The top two mechanisms in the figure above are a 2R and an RP arm.
+</p>
+<a name="Linkages_as_devices_for_computation" id="Linkages_as_devices_for_computation"></a><h3> <span class="mw-headline">Linkages as devices for computation</span></h3>
+<p>Linkages provide the transmission between the motors and the world in robots, but they can do more than that.  For example, consider the problem of computing the value of <span class="texhtml">sin(<i>x</i>)</span>.  One approach would be to write a computer program that computes an an approximation using a series expansion.  Another approach would be to build a linkage composed of an arm of length one connected by a revolute joint to another arm, like this:
+</p><p><a href="/~robotics/cs54/index.php/File:Protractor.png" class="image" title="File:protractor.png"><img alt="File:protractor.png" src="/~robotics/cs54/images/6/65/Protractor.png" width="275" height="231" border="0" /></a>
+</p><p>The "input" for this computational machine is the joint angle, and the "output" is the length of the perpendicular from the arm of length one to the other arm.  We have a name for this mechanism -- it's a protractor!  Slide rules are another example of a clever way to compute a function mechanically.  I wonder if it's true that every function can be approximated arbitarily well by a planar mechanism composed of only rigid links, and revolute and prismatic joints?
+</p><p>The reason this idea is more than a curiosity is that clever linkage design can be one way of "programming" robot motion.  A beautiful example of this is <a href="http://ruina.tam.cornell.edu/research/topics/locomotion_and_robotics/papers/3d_passive_dynamic/index.htm" class="external text" title="http://ruina.tam.cornell.edu/research/topics/locomotion_and_robotics/papers/3d_passive_dynamic/index.htm" rel="nofollow">passive dynamic walking</a>.
+</p>
+<a name="Workspaces_for_branching_and_serial_mechanisms_.28graphical_method.29" id="Workspaces_for_branching_and_serial_mechanisms_.28graphical_method.29"></a><h2> <span class="mw-headline">Workspaces for branching and serial mechanisms (graphical method)</span></h2>
+<p>Think about a robot arm bolted to the ground.  The distal point on the arm is called the <b>end effector</b>, and is a natural place to put a tool of some type -- fingers, a screw driver, or an arc welder.  The set of points that the end effector can reach is called the robot <b>workspace</b>.  Given a mechanism, what is its workspace?  Here's an example with a planar 2R arm.  
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Serial_workspace.png" class="image" title="Serial workspace.png"><img alt="" src="/~robotics/cs54/images/6/61/Serial_workspace.png" width="348" height="155" border="0" /></a></div></div>
+<p>First, imagine all joints fixed (locked in place) except the last one.  In our case, that means fixing the first joint.  Move the last joint through its full range.  In the general case, there might be limits on the range of motion of the joint, but in this case, the last joint can move freely; the end effector moves along the dashed circle shown in the left figure.  This is the workspace of the last joint, assuming the other joints are fixed.
+</p><p>Now free the next joint closer to the ground, and move that joint through its full range of motion, dragging the workspace we've already constructed.  In this case, the first joint drags the dashed circle in a big circle.  The region that is swept out is a "donut", or annulus; this is the workspace for the arm.
+</p><p>Not all points in the workspace are the same.  The figure on the right shows that there are two ways (or configurations of the arm) in which the end effector can reach any point on the interior of the workspace.  We call these two configurations <b>elbow up</b> and <b>elbow down</b> configurations of the arm.
+</p><p>Each point on the outer boundary of the workspace can only be reached in one way (with the second joint fully extended, and the first joint at a particular angle), and each point on the inner boundary of the workspace can only be reached one way -- with the second joint fully flexed.  
+</p><p>This difference between the boundary of the workspace and the interior is interesting and important.  Notice that for arm configurations in the interior, it is possible to move the effector instantaneously in any direction.  However, for a point on the boundary, it is not possible to achieve an instantaneous velocity for the end effector that points inwards -- first you have to bend the second joint, then you can move the effector inwards or outwards.  We'll look at this phenomenon (called **singularities** of mechanisms)  more closely when we study differential kinematics, but you might already be familiar with some uses of it:  stiff-arming someone, standing straight to lift a heavy weight, or holding a suitcase with your arm at full extension.
+</p><p><br />
+</p>
+<a name="Reuleaux_collection_of_mechansims" id="Reuleaux_collection_of_mechansims"></a><h2> <span class="mw-headline">Reuleaux collection of mechansims</span></h2>
+<p>There is a brilliant collection of different types of mechanisms that was built by Reuleaux in the 19th century.  Cornell now has this collection and has a web page describing each mechanism:
+</p><p><a href="http://kmoddl.library.cornell.edu/model.php?m=reuleaux" class="external text" title="http://kmoddl.library.cornell.edu/model.php?m=reuleaux" rel="nofollow">Reuleaux mechanisms at Cornell</a>
+</p>
+<a name="Definitions" id="Definitions"></a><h2> <span class="mw-headline">Definitions</span></h2>
+<p>We will need ways to describe mechanical systems so that we can reason about them, or write algorithms to control them.  The word <i>system</i> is used in many ways in the robotics literature, but the definition we will use is
+</p><p><b>System</b>:  A set of particles.
+</p><p>In a physical system, each particle has a location in a plane, described by two real numbers, or in three-dimensional space, described by three real numbers.  We say that the particles are <i>embedded</i> in  <span class="texhtml"><i>R</i><sup>2</sup></span> or <span class="texhtml"><i>R</i><sup>3</sup></span>.  We define the <i>configuration</i> of the system:
+</p><p><b>Configuration</b>:  The location of every particle in the system.
+</p><p>The particles may be constrained to lie on a curve, or on a surface.  There may also be other constraints; for example, the particles might all be part of a rigid body, so that their locations are not independent. 
+</p><p><b>Configuration space:</b>  The set of all possible configurations of the system.
+</p><p><b>Degrees of freedom:</b>  The independent ways in which the configurations of a system can change.
+</p><p>This definition of degrees of freedom is accurate, but vague.  What does "independent" mean in this context?  What does "ways" mean?  In some cases a more precise definition is possible; we will see this by the end of the lecture.  
+</p><p>Let's look at a concrete example.  Consider a single particle in the plane.  It takes two numbers to represent the particle's location, so the particle has two degrees of freedom.  How about a system of two particles that can move independently?  Four numbers are needed, so the system has four degrees of freedom.
+</p><p>What happens if there are constraints on the motion of the particles?  Consider a system made up of two particles, constrained so that the distance between the particles is one.  (One what?  It could be one meter, or one inch, or one micron.  Let's agree to always use the same units for everything, so that we can omit writing the units.)  We could represent the configuration of the system using four numbers, <span class="texhtml">(<i>x</i><sub>1</sub>,<i>y</i><sub>1</sub>,<i>x</i><sub>2</sub>,<i>y</i><sub>2</sub>)</span>, the Cartesian coordinates of each point.    
+</p><p>However, not all choices of four coordinates are consistent with the constraint
+</p>
+<dl><dd><img class="tex" alt="&#10;(x_2 - x_1)^2 + (y_2 - y_1)^2 = 1\,&#10;" src="/~robotics/cs54/images/math/d/b/f/dbf764bec02d0dfbb814b48336dadbab.png" />
+</dd></dl>
+<p>This constraint removes one degree of freedom, so this system has three degrees of freedom.  How can we tell?  If you knew three of the values of the coordinates (for example, <span class="texhtml"><i>x</i><sub>1</sub>,<i>y</i><sub>1</sub>,<i>y</i>2</span>), then the last coordinate (<span class="texhtml"><i>x</i><sub>2</sub></span>) would be <i>almost</i> determined.  Notice that although there are actually two possible solutions for <span class="texhtml"><i>x</i><sub>2</sub></span>, no motion is possible between those points; a set of discrete points has dimension zero.  So, since three numbers and the constraint remove the possibility of continuous motion, this system has three degrees of freedom.
+</p><p>Let's imagine that we still use four numbers to represent the configuration of this two-point system.  The possible configurations are then a three-dimensional surface embedded in <span class="texhtml"><i>R</i><sup>4</sup></span>.  This surface is smooth everywhere, and local motion on the surface is possible everywhere, while preserving the rigid-body constraint.
+</p>
+<a name="Trajectories_in_configuration_space" id="Trajectories_in_configuration_space"></a><h2> <span class="mw-headline">Trajectories in configuration space</span></h2>
+<p>Every point on the configuration space surface corresponds to a configuration of the system.  For example, the coordinate <span class="texhtml">(0,0,1,0)</span> on this surface would indicate that one of the particles in the system is at the origin, and the other is on the positive <i>x</i> axis at distance 1.  We could describe a smooth continuous motion of the rigid body by a curve that lies within the configuration space, parameterized by time:  <span class="texhtml">(<i>x</i><sub>1</sub>(<i>t</i>),<i>y</i><sub>1</sub>(<i>t</i>),<i>x</i><sub>2</sub>(<i>t</i>),<i>y</i><sub>2</sub>(<i>t</i>))</span>, with <img class="tex" alt="t \in [0, T]" src="/~robotics/cs54/images/math/e/6/6/e66a2b7fedcba80ccb192b87440f8d9c.png" />, where zero is the start time, and <span class="texhtml"><i>T</i></span> is the end time.  
+</p><p>We distinguish between a <i>path</i> and a <i>trajectory</i>.  
+</p><p><b>Path:</b>  A continuous curve on the configuration space.
+</p><p><b>Trajectory:</b>  A continuous curve on the configuration space parameterized by time.
+</p><p>There are some formal mathematical terms to describe the relationship between a path and a trajectory:  a trajectory is a <a href="http://mathworld.wolfram.com/Parameterization.html" class="external text" title="http://mathworld.wolfram.com/Parameterization.html" rel="nofollow">parameterization</a> of a path,  and the <a href="http://mathworld.wolfram.com/Image.html" class="external text" title="http://mathworld.wolfram.com/Image.html" rel="nofollow">image</a> of a trajectory over time is a path.  A path simply tells where the particles of a system might go; a trajectory also tells us information about the velocity of the system and the time at which it gets to each point.
+</p>
+<a name="Topology_of_configuration_spaces" id="Topology_of_configuration_spaces"></a><h2> <span class="mw-headline">Topology of configuration spaces</span></h2>
+<p>We have said that the configuration space is a surface.  Surfaces may be smooth or nonsmooth, differentiable or not, connected or not.  A <a href="http://mathworld.wolfram.com/Manifold.html" class="external text" title="http://mathworld.wolfram.com/Manifold.html" rel="nofollow">manifold</a> is a special type of surface that is locally similar to <span class="texhtml"><i>R</i><sup><i>d</i></sup></span>. That is, at every point on the surface, it is possible to attach a local coordinate system with <i>d</i> dimensions.  If the configuration space is a manifold, there is a precise way to count the degrees of freedom of a system:  the number of degrees of freedom is equal to the dimensionality of the manifold.  Most of the configuration spaces we will see will be manifolds, but there will be exceptions.
+</p><p>The surface of a sphere is a 2-manifold; at each point you can attach a local two-dimensional coordinate system.  For example, at most places on the sphere you could use latitude and longitude as your coordinates.  However, you should choose something else in the neighborhood of the north pole, since all longitudes describe the same point if the latitude is 90.  That's why we say "local" two-dimensional coordinate system.
+</p><p>The plane is also a 2-manifold (just choose coordinates x and y everywhere, for example).  However, there is an interesting difference between these manifolds:  the plane is infinite, while the surface of the sphere is finite.  Neither manifold has a boundary.  If you "keep going" on the surface of the sphere you might end up somewhere you've been before; this won't happen in the plane.  The study of which points are adjacent to other points is called topology.  There are a few standard surface shapes that we will see over and over.
+</p><p>First, the one-dimensional surfaces.  The real number line <span class="texhtml"><i>R</i></span> is infinite and does not loop back on itself.  On the other hand, the unit circle has one loop and is finite; we call the unit circle <span class="texhtml"><i>S</i><sup>1</sup></span>.  What about more complicated curves?  If the curve is infinite and does not cross itself, then we can establish a one-to-one correspondence between points on the curve and points on the real line <span class="texhtml"><i>R</i></span>; we say that the curve has the <i>topology of</i> <span class="texhtml"><i>R</i></span>.  If the curve has a single loop, and can be continuously deformed into a circle without changing the adjacency relationship between any points, the curve has the topology of a circle, <span class="texhtml"><i>S</i><sup>1</sup></span>.  How about a figure-eight?  There are two loops.  In fact, since the tangent space is not similar to either <span class="texhtml"><i>R</i><sup>1</sup></span> or <span class="texhtml"><i>R</i><sup>2</sup></span> at the junction point, the figure eight is not even a manifold.  Maybe there is a standard name for the topology of a figure eight, but I do not know it.
+</p><p>Let's think about two-dimensional manifolds.  One example is <span class="texhtml"><i>R</i><sup>2</sup></span>.  It is infinite in all directions and contains no holes.  Another is <span class="texhtml"><i>S</i><sup>2</sup></span>, the surface of a sphere.   How about an infinite cylinder?  In one direction, you can move around the outside of the cylinder, coming back to where you started.  In another direction, you move off towards infinity.  We say that the topology is <img class="tex" alt="R \times S^1 " src="/~robotics/cs54/images/math/d/4/e/d4eafb56a01f664bc76a0b1f8eb2ae79.png" />.  The <img class="tex" alt="\times" src="/~robotics/cs54/images/math/9/e/e/9eedd61e32f7a8e70e171028a7e5dc08.png" /> symbol is called the <a href="http://en.wikipedia.org/wiki/Cartesian_product" class="external text" title="http://en.wikipedia.org/wiki/Cartesian_product" rel="nofollow">Cartesian product</a>, and it means that for each element from one space, there is associated an entire space of the second type.  We are already familiar with the Cartesian product:  <span class="texhtml"><i>R</i><sup>3</sup></span> is the same as <img class="tex" alt="R \times R \times R" src="/~robotics/cs54/images/math/5/b/c/5bc3eb2ba9711cfe734ef3f77e0903b4.png" />.  
+</p><p>The <i>d</i>-dimensional unit sphere is given the symbol <span class="texhtml"><i>S</i><sup><i>d</i></sup></span>.  Remarkably, the topology of <span class="texhtml"><i>S</i><sup><i>d</i></sup></span> is <b>not</b> <img class="tex" alt="S^1 \times S^1 \times S^1\ldots S^1" src="/~robotics/cs54/images/math/7/e/3/7e3b19cac6e9b4b0654d1b6651eb9d38.png" /> for <img class="tex" alt="d \ge 2" src="/~robotics/cs54/images/math/9/c/a/9ca822321e86aadb590da4c945f5ffc5.png" />.  Consider <span class="texhtml"><i>S</i><sup>2</sup></span>.  You might choose to describe locations on the sphere by latitude and longitude.  For most latitudes, there is in fact an entire circle of longitudes, so we might be tempted to say that the topology is <img class="tex" alt="S^1 \times S^1" src="/~robotics/cs54/images/math/b/8/2/b8225d34eb11ab3ecf5f99eeeb5168df.png" />.  However, at two latitudes (at the north and south poles), there is not an entire ring of longitudes.  
+</p><p>So what shape does the topology <img class="tex" alt="S^1 \times S^1" src="/~robotics/cs54/images/math/b/8/2/b8225d34eb11ab3ecf5f99eeeb5168df.png" /> describe?  For each point on a <a href="http://en.wikipedia.org/wiki/Torus" class="external text" title="http://en.wikipedia.org/wiki/Torus" rel="nofollow">torus</a>, there are two types of circles:  one that goes around the rim of the donut, and one that goes all the way around the hole in the center of the donut.  There is no degenerate pole, as there is for the unit sphere.  In general, the topology of the <i>d</i>-dimensional torus is the Cartesian product of <i>d</i> circles.  This is more than a mathematical curiosity -- we will see that many robot arms have configuration spaces with the topology of a torus.
+</p><p>Let's return to the example of a 2-particle rod of unit length in the plane.  We said that the configuration space was embedded in <span class="texhtml"><i>R</i><sup>4</sup></span>, and there was one constraint, so the dimensionality of the configuration space was 3.  Although we have not shown this, it also turns out that the configuration space is a manifold.  What is the topology of this manifold?  There are two directions of translation, and a rotation.  This indicates that the topology of the configuration space is <img class="tex" alt="R^2 \times S^1" src="/~robotics/cs54/images/math/f/9/7/f9720e5d6237bcd8cbfd931eac008a50.png" />.  We will go into more details when we discuss rotations and translations.
+</p>
+<a name="Constraint_counting" id="Constraint_counting"></a><h2> <span class="mw-headline">Constraint counting</span></h2>
+<p>For a complicated system, it can be daunting to count the independent degrees of freedom.  The most reliable method is based on the observation that a constraint typically removes a single degree of freedom.  For example, our 2-particle rigid body of length one had the constraint
+</p>
+<dl><dd><span class="texhtml">(<i>x</i><sub>2</sub> &minus; <i>x</i><sub>1</sub>)<sup>2</sup> + (<i>y</i><sub>2</sub> &minus; <i>y</i><sub>1</sub>)<sup>2</sup> = 1.</span>  
+</dd></dl>
+<p>If the length of the rod were able to vary freely, then the two particles could move independently.  The constraint removes this dimension, length, so the rigid body has three degrees of freedom.  What if we added another constraint?  For example,  
+</p>
+<dl><dd><span class="texhtml"><i>x</i><sub>1</sub> = 0</span>  
+</dd></dl>
+<p>Then the rigid body could slide along the <i>y</i> axis and rotate, but could not translate in the <i>x</i> direction.  We have removed one more degree of freedom.  How about one more constraint?
+</p>
+<dl><dd><span class="texhtml"><i>y</i><sub>1</sub> = 0</span>  
+</dd></dl>
+<p>Now the rod is pinned to the origin, and can only rotate.  By adding three constraints, we have reduced the degrees of freedom of the two-particle system from four (<span class="texhtml"><i>R</i><sup>4</sup></span>) to one (<span class="texhtml"><i>S</i><sup>1</sup></span>).  It can be tricky to figure out <i>which</i> degrees of freedom remain after applying several constraints, but counting how many degrees of freedom remain is easy:  just subtract one degree of freedom for each independent constraint.  (We will see later what is meant by independent.)
+</p>
+<a name="Configuration_spaces_for_rigid_bodies" id="Configuration_spaces_for_rigid_bodies"></a><h2> <span class="mw-headline">Configuration spaces for rigid bodies</span></h2>
+<p>Armed with constraint-counting, we are now ready to think about the degrees of freedom for systems that are more complicated than just two points.  Many of the objects we study in robots are approximately rigid.  Consider a system of <i>n</i> particles in the plane.  If unconstrained, each of the <i>n</i> particles has two degrees of freedom, so the system has <i>2n</i> degrees of freedom in total.  
+</p><p>A rigid body has constraints that maintain the distance between each pair of particles.  There are <i>n choose 2</i> pairs of particles, so a naive application of constraint counting would suggest that a rigid body has <i>2n - choose(n, 2)</i> degrees of freedom.  This would imply that a system with 10 particles had 2 * 10 - 45 = -25 degrees of freedom.  Something is wrong.
+</p><p>The problem is that many of the constraints in the rigid body are redundant.  If we had two particles, and one constraint between them (as in our example system), there would be 2 * 2 - 1 = 3 degrees of freedom, which is what we expect.  Since there is only one constraint, it is clearly not redundant.  Now imagine adding one additional particle.  We need to attach it to each of the previous particles, requiring two additional constraints.  So we have three particles and three constraints; <i>2 * n - 3 = 3</i> degrees of freedom, still.  Now let's add a fourth particle.  We want the distance two each of the particles in the triangle already formed to remain constant, but we can do this by adding only two constraints, specifying the distance to only two of the previous particles.  We now have <i>n=4</i> and there are 5 constraints, so we still have three degrees of freedom.  Each additional particle requires only two constraints to fix it to the current rigid body, so in general, the rigid body in the plane has three degrees of freedom.
+</p>
+<a name="Parameterized_configuration_space" id="Parameterized_configuration_space"></a><h2> <span class="mw-headline">Parameterized configuration space</span></h2>
+<p>It would be inconvenient if we had to write down the location of every particle in a rigid body to describe the configuration.  Instead, we are likely to choose a reference point on the body, and describe the configuration of the body by stating the location of that coordinate, and the orientation of the body with respect to some initial orientation.
+</p><p>Consider a simple example of a particle in <span class="texhtml"><i>R</i><sup>2</sup></span> constrained to lie on a unit circle.  The configuration space has one dimension; there is one degree of freedom.  The topology of the configuration space is <span class="texhtml"><i>S</i><sup>1</sup></span>.  We could express the configuration using two numbers and a constraint:
+</p>
+<dl><dd><img class="tex" alt="&#10;x = (x_1, x_2) \in R^2&#10;" src="/~robotics/cs54/images/math/6/a/c/6ac049efb33c06ac1d0ca48bc7f2b78f.png" />
+</dd></dl>
+<dl><dd><img class="tex" alt="&#10;x_1^2 + x_2^2 = 1           &#10;" src="/~robotics/cs54/images/math/f/f/4/ff4773183dd892014abe96e7ca0430f3.png" />
+</dd></dl>
+<p>or we could use a single number <img class="tex" alt="\theta \in [0, 2\pi)" src="/~robotics/cs54/images/math/9/3/b/93b500d382a3ed0942310dcd632efc55.png" /> to describe the angle of of the particle with respect to the horizontal.  The second representation is convenient in that it uses only one number instead of two.  This is called a 'reduced-coordinate' description of the configuration.  If the number of coordinates matches the number of degrees of freedom (i.e. no additional constraints are needed) then it is a <b>minimal coordinate</b> representation of the system.
+</p><p>Minimal coordinates are not always the best choice.  It may be difficult to determine what the minimal coordinates are, and when we are thinking about the motion of the system, we may still need to worry about the fact that the particles are really following a curve, moving along a surface.  There are problems both of topology and geometry.  For example, think about a point body in <span class="texhtml"><i>R</i><sup>3</sup></span> constrained to move on a sphere.  You could use the latitude and longitude as minimal coordinates:  <span class="texhtml"><i>q</i> = (&theta;<sub>1</sub>,&theta;<sub>2</sub>)</span>.  Let's say you'd like to sample the surface of the sphere.  If you sample the latitudes and longitudes, you will get many many more points near the north and south pole than anywhere else, which is probably not what you wanted.  The fact that all longitudes are the same at the north and south poles is also going to cause trouble with numerical computations involving velocities near the poles.  If you are very close to the north pole, even a slow walk east is going to change your longitude very fast.  We will see these problems again when we look at Euler-angle representation of rotations in 3D.
+</p><p>Even so, minimal coordinates are the most typical way to represent the configuration of a mechanical system.  We assign one coordinate for each degree of freedom, and use a vector of numbers (by convention, this vector is named <span class="texhtml"><i>q</i></span>) to describe the configuration.  For example, the configuration space for a rigid body in the plane has the topology <img class="tex" alt=" R^2 \times S^1" src="/~robotics/cs54/images/math/f/9/7/f9720e5d6237bcd8cbfd931eac008a50.png" />, so it is common to take <span class="texhtml"><i>q</i> = (<i>x</i>,<i>y</i>,&theta;)</span>, which describes the location and orientation of the body with respect to some world frame.  (We will look at frames more closely in the next few lectures.)
+</p><p>A revolute joint allows one degree of rotation, so the configuration of a joint might be represented by an angle <span class="texhtml">&theta;</span>.  A planar robot arm with three revolute joints connected serially might have the configuration described by <span class="texhtml"><i>q</i> = (&theta;<sub>1</sub>,&theta;<sub>2</sub>,&theta;<sub>3</sub>)</span>; the topology of the configuration space is <img class="tex" alt="S^1 \times S^1 \times S^1" src="/~robotics/cs54/images/math/3/5/1/351118b92ac5238a2013252e1b5644a2.png" />. 
+</p><p>The minimal coordinates are parameters that describe a location in configuration space:  that is, the coordinates can be used to determine the location of every particle in the system.  As the parameters change, the configuration of the system changes.  There may be many different possible choices of coordinate systems to describe the same configuration space; we call such a choice a "parameterization" of the space.  
+</p>
+<a name="Parameterized_configuration_space_for_rigid_bodies" id="Parameterized_configuration_space_for_rigid_bodies"></a><h3> <span class="mw-headline">Parameterized configuration space for rigid bodies</span></h3>
+<p>First consider a rigid body in the plane.  As we've seen from constraint counting, we expect to need three numbers to represent the configuration.  A typical choice is to choose a reference point rigidly attached to the body, and use two of the numbers to describe the location of that point.  This does not specifiy the orientation of the body, however, so we attach a rigid frame to the reference point, and a rigid frame to the world, and use a third number to describe the angle between these two frames.  We take <span class="texhtml"><i>q</i> = (<i>x</i>,<i>y</i>,&theta;)</span>.  
+</p><p>Rigid bodies in 3D space are trickier.  Constraint counting indicates that the configuration space has six dimensions, so we might think that six numbers are enough.  They are, sort of.  We use the first three numbers to represent the location of one point on the body.  Representing the orientation of the body is harder.  We might use "airplane coordinates":  three angles that give the roll, pitch, and yaw of the body frame with respect to the world frame.  As pointed out above, however, this representation is inconvenient in many ways, particularly if we would like to do something like uniformly sample the configuration space, or come up with some idea of the "distance" between two points on the configuration space.  Often, we will use four numbers or more to represent the rotation of the rigid body frame, and this will be the topic of an upcoming lecture.
+</p>
+<a name="Parameterized_configuration_space_for_linkages" id="Parameterized_configuration_space_for_linkages"></a><h3> <span class="mw-headline">Parameterized configuration space for linkages</span></h3>
+<p>Let's return to the planar case, but with more than one rigid body in the system.  Consider a planar robot arm with two links and two joints, intended to move a hand (shown as the point <span class="texhtml">(<i>x</i>,<i>y</i>)</span> in the plane.  We might use three numbers (two for position and one for orientation) to represent the configuration of the first link, and three numbers to represent the second link, for a total of six numbers.  However, it is usually more convenient to just use two numbers to describe the configuration:  a value for each of the angles at the joints.  We have <span class="texhtml"><i>q</i> = (&theta;<sub>1</sub>,&theta;<sub>2</sub>)</span>.
+</p><p><br />
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:PlanarArm.png" class="image" title="PlanarArm.png"><img alt="" src="/~robotics/cs54/images/b/ba/PlanarArm.png" width="198" height="205" border="0" /></a></div></div>
+<a name="Obstacles" id="Obstacles"></a><h2> <span class="mw-headline">Obstacles</span></h2>
+<p>A point in the configuration space corresponds to a particular configuration of the system.  If there are obstacles, some configurations of the system will not be possible.  We call the space of configurations that do not collide with obstacles the <b>free configuration space</b>; we call the space of points in configuration space that cause collisions the "configuration space obstacles".  Every continuous trajectory that lies within the free configuration space corresponds to a motion of the robot that will not cause a collision; writing algorithms to find such trajectories is a central problem in the robotics literature.      
+</p>
+<a name="Visualizing_configuration_spaces" id="Visualizing_configuration_spaces"></a><h2> <span class="mw-headline">Visualizing configuration spaces</span></h2>
+<p>Paramaterizations sometimes allow us to visualize configuration spaces.  For example, consider a 2R planar arm with no joint limits.  We might use the angles <span class="texhtml">&theta;<sub>1</sub></span>  and <span class="texhtml">&theta;<sub>2</sub></span> to represent configurations.  We could then graph <span class="texhtml">&theta;<sub>1</sub></span>  vs <span class="texhtml">&theta;<sub>2</sub></span>.  Each point on the graph represents a unique configuration of the arm.  A path would represent a connected set of configurations that can be reached by continuous motions of the joints.  Notice that the graph "wraps around" -- a path that goes off the graph at <span class="texhtml">2&pi;</span> wraps to zero, and should be considered connected.  (Remember that the topology of the configuration space for a 2R arm is actually a torus -- we can visualize this by thinking of the graph on a piece of paper, rolling the paper into a tube to glue the top and bottom edges of the paper together, and then curving the tube into a donut to glue the left and right edges of the paper together.)   
+</p><p>Some points in the configuration space will correspond to cases where the arm collides with an obstacle.  The set of points in the configuration space that do not collide with any obstacle is called the <i>free configuration space</i>.  The set of points that do cause collisions are called the <i>configuration space obstacles</i>.  
+</p><p>Planning a collision free motion for the robot (which might be very complicated -- imagine a snake robot, for example!) then can be abstractly formulated as the problem of planning a path for a point robot among obstacles in the configuration space.  
+</p><p>It is very convenient to always be able to think about motion planning problems as planning paths for a point, but there is a problem:  finding the locations of the configuration-space obstacles is usually hard.  There are a few special cases that we will examine:  2R planar arms, and rigid bodies in the plane.
+</p>
+<a name="Obstacles_for_2R_planar_arms" id="Obstacles_for_2R_planar_arms"></a><h3> <span class="mw-headline">Obstacles for 2R planar arms</span></h3>
+<p>Here is a 2R planar arm, with one point obstacle in the physical space:
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Arm2r_cspace.png" class="image" title="Arm2r cspace.png"><img alt="" src="/~robotics/cs54/images/3/3a/Arm2r_cspace.png" width="411" height="238" border="0" /></a></div></div>
+<p><br />
+The location of the obstacle is such that only the first link can collide with it, and that link collides at about <span class="texhtml">&theta;<sub>1</sub> = &pi; / 4</span>.  Since the collision happens for every value of <span class="texhtml">&theta;<sub>2</sub></span>, the configuration space obstacle looks like a line in the graph of the configuration space the right.
+</p><p>What would happen if the placement of the obstacle was such that link 2 could collide with it?  The situation would be much more complicated.  The cspace obstacle is the set of configurations where there is a collision, so you could imagine sliding link 2 along the obstacle, while causing link 1 to comply with that motion.
+</p>
+<a name="Planar_translation_of_rigid_bodies" id="Planar_translation_of_rigid_bodies"></a><h3> <span class="mw-headline">Planar translation of rigid bodies</span></h3>
+<p>Here is a triangular planar robot that can only translate, and some polygonal obstacles:
+</p><p><br />
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Translation_workspace.png" class="image" title="Translation workspace.png"><img alt="" src="/~robotics/cs54/images/f/f8/Translation_workspace.png" width="373" height="241" border="0" /></a></div></div>
+<p><br />
+We will describe the configuration of the robot by the location of a reference point attached to the robot.  The configuration space is therefore <img class="tex" alt="\mathbf R^2" src="/~robotics/cs54/images/math/0/6/0/060a620dfe0aecfe4f18a026103fc8c4.png" />.  As we drag the robot around by its reference point, there will be intersections between the robot and the obstacles.  We mark those <span class="texhtml">(<i>x</i>,<i>y</i>)</span> configurations as collisions in the configuration space, as shown in pink below.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Translation_cspace_const.png" class="image" title="Translation cspace const.png"><img alt="" src="/~robotics/cs54/images/b/b8/Translation_cspace_const.png" width="415" height="288" border="0" /></a></div></div>
+<p><br />
+There's a pattern to the set of points where there are collisions, and we can use this pattern to derive a graphical method for constructing the configuration space obstacles.  Imagine an obstacle that is just a point.  For what configurations of the robot does that particular point collide with the robot?  Slide the robot edges around the point, marking the location of the reference point as you slide.  You'll find that you get a shape in configuration space that looks like a flipped version of the robot -- a reflection of the robot in <i>x</i> and <i>y</i> across horizontal and vertical lines through the reference point. 
+</p><p>Notice that the boundaries of the polygonal obstacles are unions of point obstacles.  The configuration space obstacles are therefore unions of flipped robots.  So, to construct the configuration space obstacles, flip the robot, drag it around the boundary of all the physical obstacles, and that will give you the shapes of the configuration space obstacles.    
+</p><p>It's not surprising that the c-space obstacles are larger than the original physical obstacles -- the robot has 'shrunk' to a point.
+</p>
+<a name="Translations_and_rotations_of_rigid_bodies_in_the_plane" id="Translations_and_rotations_of_rigid_bodies_in_the_plane"></a><h2> <span class="mw-headline">Translations and rotations of rigid bodies in the plane</span></h2>
+<p>What if the rigid body can rotate as well as translate?  We might describe the configurations using the location of the reference point, together with an angle describing how far the robot has rotated from some base configuration.  We parameterize the configuration space by three numbers:  <span class="texhtml">(<i>x</i>,<i>y</i>,&theta;)</span>.  We can graph <span class="texhtml">&theta;</span> on the <i>z</i> axis, so long as we remember that it wraps from 0 to <span class="texhtml">2&pi;</span>.  
+</p><p>Obstacles will then be volumes in the configuration space.  It's harder to visualize the boundaries of cspace obstacles, but we can use the trick from the previous section to visualize slices of obstacles.  Choose <span class="texhtml">&theta; = 0</span>.  This is a robot that can only translate, and we can draw this slice of the cspace by flipping the robot and dragging around the boundaries of obstacles. Now choose some other value of  <span class="texhtml">&theta;</span>.  The robot has rotated, but as long as we maintain that value of <span class="texhtml">&theta;</span>, the rotated robot only translates.  So flip the rotated robot, and drag along the boundaries.
+</p><p>If we choose all values of <span class="texhtml">&theta;</span> (or more practically, choose some discrete sampling), we can construct the cspace obstacles in slices.
+</p><p>You can imagine that it is possible to analytically construct the boundaries of obstacles for planar rigid bodies.  This is correct, but harder than you might think.  See Randy Brosts's Ph.D. thesis, or more recent work by Elisha Sacks, for details.
+</p>
+<a name="Other_abstract_spaces" id="Other_abstract_spaces"></a><h2> <span class="mw-headline">Other abstract spaces</span></h2>
+<p>The <i>state</i> of a system is the set of quantities that we are interested in.  For physical systems, we are often interested in the location of all the particles, so the state of the system is its configuration.  A configuration space is therefore a special case of a <b>state space</b>.
+</p><p>In other disciplines, we might be interested in other quantities, but the idea of thinking about associating a point in a space with each state in the system is common.  For example, in physics, it is typical to be interested in the motion of particles or rigid bodies together with their momenta, since Hamiltonian formulation of the dynamics equations are expressed in terms of momenta.  The <i>phase space</i> of a system is the set of configurations of the particles and their momenta.  That is, the phase space is the cartesian product of the configuration space with the momentum space.
+</p><p>In control theory or the study of systems of differential equations, we are interested in both variables and derivatives of those variables.  If those variables describe a phsyical system, they might describe a configuration of the system.  Derivatives would then correspond to velocities of the physical system.  A point in the <i>state space of the dynamic system</i> assigns a value to each variable and its derivative.    
+</p><p>In computer science, the states of a system are often discrete.  The <i>discrete state space</i> of the system can therefore be represented by a graph showing the connectivity of the different states.  Consider a chess board, for example.  An AI to play chess would consider the state of a single piece to be its location on the board, and the state of the entire game to be the location of every piece on the board.  Each individual chess piece is analogous to a particle, and the set of chess pieces is analogous to a system of particles.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 238/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:68-0!1!0!!en!2!edit=0 and timestamp 20110220172615 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Mechanisms_and_configuration_spaces" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Mechanisms_and_configuration_spaces" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Mechanisms_and_configuration_spaces&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Mechanisms_and_configuration_spaces&amp;oldid=1093" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 20 January 2011, at 18:19.</li>
+					<li id="viewcount">This page has been accessed 319 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.202 secs. --></body></html>

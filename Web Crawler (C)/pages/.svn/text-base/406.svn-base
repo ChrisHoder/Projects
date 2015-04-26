@@ -1,0 +1,83 @@
+http://www.cs.dartmouth.edu/~weibel/minperi.php
+3
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+      Christophe Weibel at Dartmouth
+    </title>
+    <meta name="author" content="Christophe Weibel">
+    <link rel="stylesheet" href="style.css" type=" ">
+  </head>
+  <body>
+    <div id="pagetitle">
+      Christophe Weibel at Dartmouth
+    </div>
+    <div id="sidebar">
+      <!-- menu -->
+      <div class="topmenu">
+        <a href="index.php">Main page</a>
+      </div>
+      <div class="box_title blue">
+        Research
+      </div>
+      <div class="box grey">
+        <a href="publications.php">Publications</a><br>
+        <a href="research.php">Research interests</a><br>
+        &nbsp;&nbsp;<a href="hirsch.php">Hirsch conjecture</a><br>
+        &nbsp;&nbsp;<a href="minksum.php">MinkSum</a><br>
+        &nbsp;&nbsp;<a href="minperi.php">Min perimeter convex hull</a>
+      </div>
+      <div class="box_title blue">
+        Links
+      </div>
+      <div class="box grey">
+        <a href="http://www.cs.dartmouth.edu">Computer Science</a><br>
+        <a href="http://www.dartmouth.edu">Dartmouth College</a><br>
+        <a href="http://www.math.mcgill.ca/~vetta/DiscreteGroup/">McGill Discrete Math Group</a><br>
+        <a href="http://roso.epfl.ch">ROSO</a>
+      </div>
+      <div class="box_title blue">
+        Personal
+      </div>
+      <div class="box grey">
+        <a href="http://picasaweb.google.com/anthony.weibel">Pictures</a><br>
+        <a href=cv.php>Curriculum Vitae</a> <a href=cvWeibel.pdf>(PDF)</a>
+      </div>
+    </div>
+    <div id="content">
+<h1>Minimum perimeter comvex hull of imprecise points</h1>
+<p>
+Linqiao and I have made a mini movie on the subject of
+computing minimum perimeter convex hulls of imprecise points.
+</p>
+<p>
+Given a set of imprecise points on a plane, each is constrained within
+    a convex region of the plane, the problem
+is to find the set of positions such that the perimeter of
+their convex hull will be as small as possible.
+</p>
+<p>
+    This movie explains a few theoretical findings, and demonstrates
+an algorithm based on a physical interpretation.
+</p>
+<ul>
+    <li><a href="min_perimeter.mov">High-quality version</a> (560 Mb)
+    <li><a href="min_perimetermpeg.mov">Lower-quality version</a> (35 Mb)
+</ul>
+<p>
+    <a href="http://www.youtube.com/watch?v=Y-W3OSpOYOo">The video</a> 
+is also available on YouTube.
+<p>
+    An <a href="minPeriAbs.pdf">extended abstract</a>
+    accompanying the video is <a href="minPeriAbs.pdf">here</a>.
+    </div>
+    <div id="footer">                
+      <p>[ <a href="http://www.cs.dartmouth.edu/">Computer Science</a> ]<br>
+      <p><i>September 3rd,&nbsp; 2010</i>
+    </div>
+  </body>
+</html>

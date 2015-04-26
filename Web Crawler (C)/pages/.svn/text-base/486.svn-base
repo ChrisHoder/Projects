@@ -1,0 +1,81 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/June30
+3
+<h1>June 30: Trickier Combinatorial Logic</h1>
+
+<p>Reading: P&amp;P 3.3.2, 3.3.3<br>
+      T pp 154-155
+<hr>
+<h2>0) Recap</h2>
+<ul>
+<li>electricity --> bits --> logic gates --> binary numbers
+<li>combinatorial logic -- 4 bit comparator:
+      <a href="../June28/compare.circ">compare.circ</a> -- bitwise logic
+</ul>
+<p>
+<b>Today:</b> trickier combinatorial logic
+
+<hr>
+<h2>1) Doin' Stuff with Binary Numbers</h2><p>
+<h3>Decoder</h3>
+<b>Input:</b> three-bit number A<br>
+<b>Goal:</b> Assert <b>k</b>th output line if A==k.<p>
+
+<p><a href="circuits/decoder-partial.circ"><b>decoder-partial.circ</b></a></p>
+
+Why decoders?
+<ul>
+<li>general way to detect a particular binary number.
+<li>useful if you want to do kth action.
+</ul>
+<p>
+<hr>
+<h3>Application: seven-segment LED display</h3>
+<p>
+seven-segment LED display
+<p>
+<img src="digits/0.jpg" alt="oops"></img>
+<img src="digits/1.jpg" alt="oops"></img>
+<img src="digits/2.jpg" alt="oops"></img>
+
+<img src="digits/3.jpg" alt="oops"></img>
+<img src="digits/4.jpg" alt="oops"></img>
+<img src="digits/5.jpg" alt="oops"></img>
+<img src="digits/6.jpg" alt="oops"></img>
+<img src="digits/7.jpg" alt="oops"></img>
+<img src="digits/8.jpg" alt="oops"></img>
+<img src="digits/9.jpg" alt="oops"></img>
+<p>
+
+<hr><h3>a seven-segment LED driver!</h3>
+<b>Input:</b> BCD digit<br>
+<b>Output:</b> turn on the correct segments
+<p><a href="circuits/7seg-partial.circ"><b>7seg-partial.circ</b></a></p>
+<p><!-- a href="circuits/7segfull.circ" <b>7segfull.circ</b> /a --></p>
+
+<hr>
+<h2>2) More Combinatorial Logic</h2>
+<h3>Multiplexer a.k.a. MUX</h3>
+<b>Input:</b> two inputs A0, A1; select bit S<br>
+<b>Output:</b> Ai if S==i<br>
+Generalize: 2^k input MUX
+<p><!-- a href="circuits/mux.circ" <b>2-input_mux.circ</b> /a -->
+
+<p>
+<h3>Demultiplexer a.k.a. DMUX</h3>
+<b>Input:</b> A; select bit  S<br>
+<b>Output:</b> C0, C1.  Set Ci := A if S==i
+
+<hr>
+<h2>3) More Advanced Logic</h2>
+Adding numbers<br>
+<b>Inputs:</b> A,B<br>
+<b>Outputs:</b> S(um), C(arry)
+
+<p><a href="circuits/half-add.circ"> <b>half-add.circ</b> </a><p>
+
+<b>Question:</b> What about next two bits?<br>
+
+<p>Generalize: <b>4-bit adder</b>
+
+
+

@@ -1,0 +1,63 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug03
+3
+<html><head><title>August 3: Homework Solutions, Data Types,
+Operations</title></head>
+
+<body>
+
+<h1>August 3: Homework Solutions, Data Types, Operations</h1>
+
+<hr><h2>0) Recap</h2><hr>
+
+<hr><h2>1) Homework Solutions</h2><hr>
+<p>The ARAM: Andrew's <a href="AndrewARAM.circ"><b>solution</b></a>.
+
+<p>A Microsequencer for the traffic light: <a href="TrafficLights2.circ"><b>TrafficLights2.circ</b></a>.
+<br>The Microsequener approach: Rather than driving the ROM via a
+counter, store extra control bits to tell you precisely which state to
+go to next.
+
+<p>Assembly code for multiplication:
+<ul>
+<li>The naive way: <a href="mult1.asm"><b>mult1.asm</b></a>
+<li>Better: make sure we're constantly adding the <i>bigger</i>
+number: <a href="mult2.asm"><b>mult2.asm</b></a>
+<li>Even better: add two at a time instead of one at a
+time: <a href="mult3.asm"><b>mult3.asm</b></a>
+<li>Even betterer:  ??? that's for homework this week.  A hint:  the improvement in mult3.asm can be exploited much more than it is.
+</ul>
+
+<hr><h2>2) More on C</h2><hr> 
+
+Today, we'll start delving more into C by talking about data types and
+operators.  Wednesday and Friday, we'll look deeply into how C gets
+turned into LC-3 assembly code.
+
+<p><b>Reminder</b> The C we'll go over in class is a <i>subset</i> of C.
+Our primary goal is to see the C-->assembly transformation process and
+see how some features of C get turned into assembly code.
+
+<hr><h3>Data Types</h3><hr>
+<b>int</b> 
+<ul>
+<li>an integer
+<li>typically 2's complement
+<li>usually native word size  (constrast with Java)
+</ul>
+<p>
+<b>char</b>
+<ul>
+<li> a "character"
+<li> binary encoding of said character
+<li> one <a href="http://www.cs.dartmouth.edu/~cs37/resources/ascii.html"><b>ASCII</b></a> byte.  (again, different than <a href="http://en.wikipedia.org/wiki/Unicode"><b>Java</b></a>)
+<li> chars as constants: use single quotes e.g.,  'F'
+</ul>
+<p>
+<b>character string</b>
+<ul>
+<li>sequence of characters, terminated by x00
+<li>character strings as constants:  use double quotes e.g., "I view the landslide of C use in education as something of a calamity. (Niklaus Wirth, 1993)"
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_6
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Assignment 6" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Assignment 6 - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Assignment_6";
+		var wgTitle = "Assignment 6";
+		var wgAction = "view";
+		var wgArticleId = "72";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1121;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Assignment_6 skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Assignment_6" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Assignment_6" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Assignment_6&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Assignment_6&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Assignment_6&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Assignment 6</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>This assignment is due Tuesday, February 10, at 11:59 pm.  
+</p><p>For extra-credit problem 4 you'll need to install PyOpenGL to draw the arm for your simulator.  You'll also need to learn some basic OpenGL if you don't know it already.  Perhaps Weifu or I can lend a hand if these parts of the problem are challenging.     
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Problem_1:__working_with_frames"><span class="tocnumber">1</span> <span class="toctext">Problem 1:  working with frames</span></a></li>
+<li class="toclevel-1"><a href="#Problem_2:__planar_arm_kinematics"><span class="tocnumber">2</span> <span class="toctext">Problem 2:  planar arm kinematics</span></a></li>
+<li class="toclevel-1"><a href="#Problem_3:__using_point_location_sensors_to_sense_the_orientation_of_a_rigid_body"><span class="tocnumber">3</span> <span class="toctext">Problem 3:  using point location sensors to sense the orientation of a rigid body</span></a></li>
+<li class="toclevel-1"><a href="#Extra_credit_problem_4:__forward_kinematics_for_serial_arms_using_homogeneous_transforms"><span class="tocnumber">4</span> <span class="toctext">Extra credit problem 4:  forward kinematics for serial arms using homogeneous transforms</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Problem_1:__working_with_frames" id="Problem_1:__working_with_frames"></a><h2> <span class="mw-headline">Problem 1:  working with frames</span></h2>
+<p>Problem 1 will refer to this figure, which you will probably want to print out.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Three_planar_frames.png" class="image" title="Three planar frames.png"><img alt="" src="/~robotics/cs54/images/d/db/Three_planar_frames.png" width="518" height="210" border="0" /></a></div></div>
+<p><br />
+a)  Use a ruler to find the homogeneous transform matrix <span class="texhtml"><sup>0</sup><i>T</i><sub>1</sub></span> which describes the position and orientation of frame 1 with respect to frame 0 in the following picture.  (Tell me what units you are using for the translation component.  Remember to normalize the columns of the rotational component of the matrix!)  Your matrix should have only numbers in it (no symbols like <span class="texhtml"><i>l</i><sub>1</sub></span> or <span class="texhtml">&theta;</span>.
+</p><p>b)  Repeat a similar process to find the matrices <span class="texhtml"><sup>1</sup><i>T</i><sub>2</sub></span> and <span class="texhtml"><sup>0</sup><i>T</i><sub>2</sub></span>.  Do not compute anything, just draw lines and use the ruler!
+</p><p>c) Multiply matrices <img class="tex" alt="^0T_1 ^1T_2" src="/~robotics/cs54/images/math/2/e/b/2eb1ce1965bae4e3bca5a61abd4f76fc.png" /> to show that for your measurements <img class="tex" alt="^0T_2 \approx ^0T_1 ^1T_2" src="/~robotics/cs54/images/math/a/9/d/a9d61d13ff0c8d393099d74d4353214b.png" />. (It won't be exact, because of measurement error.)
+</p>
+<a name="Problem_2:__planar_arm_kinematics" id="Problem_2:__planar_arm_kinematics"></a><h2> <span class="mw-headline">Problem 2:  planar arm kinematics</span></h2>
+<p>Consider a 6R planar arm (a planar serial arm with six revolute joints), with link lengths <span class="texhtml"><i>l</i><sub>1</sub>...<i>l</i><sub>6</sub></span>.  Write out the forward kinematics for the arm that compute the vector <span class="texhtml">(<i>x</i>,<i>y</i>)</span> in terms of the link lengths and the angles <span class="texhtml">&theta;<sub>1</sub>...&theta;<sub>6</sub></span>, which measure the angle of link i with respect to link i-1 (or in the case of the first link, relative to the line parallel to the ground).  Write your answer as a product of homogeneous transform matrices with sines and cosines; do <b>not</b> multiply out the matrices.
+</p>
+<a name="Problem_3:__using_point_location_sensors_to_sense_the_orientation_of_a_rigid_body" id="Problem_3:__using_point_location_sensors_to_sense_the_orientation_of_a_rigid_body"></a><h2> <span class="mw-headline">Problem 3:  using point location sensors to sense the orientation of a rigid body </span></h2>
+<p>Here is a common problem in robotic manipulation with an industrial arm.  You program the arm to do some sequence of motions to achieve some cool, necessary, or lucrative task.  Let's take a specific example.  Imagine that you program a six-degree-of-freedom arm to solve rubik's cubes.  Maybe like this <a href="http://www.youtube.com/watch?v=i25cfdcum7U" class="external text" title="http://www.youtube.com/watch?v=i25cfdcum7U" rel="nofollow">rubot</a>.  
+</p><p>Imagine that version 1.0 of your robot assumes the rubik's cube is in some known configuration, with faces initially parallel or orthogonal to the floor.  Imagine that you program some motions to solve the cube.  But now you would like to build version 2.0, which allows the rubiks cube to be in some orientation other than the original.  
+</p><p>To do this, you'll obviously need to sense the orientation of the cube.  In this problem, we'll figure out some ways to do that, assume you can sense the locations of a few points on the cube.  
+</p><p>Let the vertices of the bottom face of the cube be 
+</p><p>D   C
+</p><p>A   B
+</p><p>with A as the first vertex, and on the top of the cube be
+</p><p>H   G
+</p><p>E   F
+</p><p>The edges of the cube are AB BC CD DA EF FG GH HE AE BF CG DH.
+</p><p>a)  If you could sense the locations of four of the vertices of the cube, you could immediately write down the rotation matrix that describes the orientation of the cube.  Describe which points you might pick.  Write the rotation matrix in terms of the locations of these points.  (For example, E-A would be the vector from A to E).
+</p><p>b)  Let the coordinates of point P be (1, 2, 1) in the rubiks cube frame.  In terms of the coordinates of the four vertices you chose in problem 1a, what are the coordinates of p in the world frame?  Use a homogeneous transform to do the computation.  Either show your work or write a short python fragment to do the computation.  
+</p><p>c)  Now assume that you are given only the location of the points A, B, and an arbitrary point U on the bottom face of the cube.  Let A = (1, 2, 1), B = (4, 2, 1), and U=(2, 3, 2).  
+</p><p>Write a python program to compute the transformation matrix T given only the coordinates of these three points.  Hint:  use a cross product to compute the third columns of T, and then use a cross product to compute the second column.  Don't forget to normalize the columns (make them of length 1).  
+</p><p>Further hint.  Three non-colinear points in space define a plane.  The plane has normals, and it's convenient to choose a convention to describe the positive direction for those normals.  If the order of the points is A, B, U, we'll use the right-hand rule to describe the positive normal direction:  wrap your fingers counterclockwise from A to B to U, and your thumb points roughly in the positive direction.
+</p>
+<a name="Extra_credit_problem_4:__forward_kinematics_for_serial_arms_using_homogeneous_transforms" id="Extra_credit_problem_4:__forward_kinematics_for_serial_arms_using_homogeneous_transforms"></a><h2> <span class="mw-headline">Extra credit problem 4:  forward kinematics for serial arms using homogeneous transforms</span></h2>
+<p>In this problem, you will write a simulator for multilink robot arms, using homogeneous transformation matrices and <a href="http://en.wikipedia.org/wiki/Denavit-Hartenberg_Parameters" class="external text" title="http://en.wikipedia.org/wiki/Denavit-Hartenberg_Parameters" rel="nofollow">Denavit-Hartenberg parameters</a>.  
+</p><p>Before D-H conventions, it was quite difficult to describe a robot arm to someone else.  The kinematics are straightforward (just attach a frame to each joint, give the homoegenous transform that represents frame i with respect to frame i-1, and multiply out the matrices), but there was no convention as to how to attach the frames to the robot.
+</p><p>The first observation is that every revolute joint has an axis of rotation.  We can choose a direction for this axis that is consistent with the right-hand rule, so link i rotates clockwise around link i-1 at joint i.  So let's let frame i have z axis along the axis of rotation.
+</p><p>So now we have z axes for frames i, i-1, and i+1.  Now we need a way to figure out the x axis.  Here's the idea:  any two non-coplanar lines have a unique shortest line segment between them.  This line segment, called the <b>common normal</b> is orthogonal to both of the lines, right?  So we can figure out the direction of this line segment by taking the cross product of the vectors along these lines.    The x axis of frame i will be parallel to the common normal between z axes i-1 and i.
+</p><p>What's the direction of the y axis?  Just take the cross product <img class="tex" alt="z \times x" src="/~robotics/cs54/images/math/e/8/2/e82c5b0a48de3ec7642f6c6b0c4ebc03.png" />, to give a right-handed coordinate frame.
+</p><p>Ok, that give the directions of all of the vectors in the frames, but how do you describe the translation between the frames?  Well, take the common normal from axis i-1 to axis i.  Let the endpoint of the common normal on axis i be the base of frame i.  
+</p><p>With all the i's and (i-1)'s the book-keeping is a bit tricky, but fortunately the wiki page gives you the result, written out nicely in matrix form:
+</p>
+<dl><dd> <img class="tex" alt="\operatorname{}^{n - 1}T_n&#10;  = \begin{pmatrix}&#10;    \cos\theta_n &amp; -\sin\theta_n \cos\alpha_n &amp; \sin\theta_n \sin\alpha_n &amp; r_n \cos\theta_n \\&#10;    \sin\theta_n &amp; \cos\theta_n \cos\alpha_n &amp; -\cos\theta_n \sin\alpha_n &amp; r_n \sin\theta_n \\&#10;    0 &amp; \sin\alpha_n &amp; \cos\alpha_n &amp; d_n \\&#10;    0 &amp; 0 &amp; 0 &amp; 1 \\&#10;  \end{pmatrix}" src="/~robotics/cs54/images/math/6/e/3/6e3a9d7ad118c01e0e8b06cdc6d0205f.png" />.
+</dd></dl>
+<p>Your task:  write an open GL simulator and some functions that simulate a spatial arm with revolute joints, using this matrix as the transform matrix between frames.  Notice that <span class="texhtml"><i>r</i></span>, <span class="texhtml">&alpha;</span> and <span class="texhtml"><i>d</i></span> are all constants, so you won't change them while the simulation is running.  You can hard-code them as constants in the beginning of your code (in some place where it's easy for you or me to change them) and assume all the <span class="texhtml">&theta;</span> values start at zero, so no keyboard input is required when you run the program.
+</p><p>So your code to compute the individual frame transforms might look something like this:
+</p>
+<pre>
+
+rs = [30, 20, 25]
+alphas = [0, 0, 0]
+ds = [0, 0, 0]
+
+def compute_Tij(r, alpha, d, theta):
+  # compute and return the matrix here
+
+</pre>
+<p>The case I showed would be a three-link planar arm with link lengths 30, 20, 25.  This would be a good test case to start with -- you could make sure it works with these, then modify your code to allow changes in d, then alpha.  Notice that r_0=alpha_0=d_0 = 0 by convention, although you don't have to type those in.
+</p><p>But what should your code do?  It should
+</p>
+<ul><li> Given rs, alphas, ds, and alphas, compute every homogeneous transform matrix between successive frames
+</li><li> Draw the frames using openGL.  Put a little cube or something at the origin of each frame, and draw the first axis of the frame in red, the second in blue, and the third in green.  
+</li><li> Let the user change the joint angles theta.  Use keys 1-9 on the keyboard to select the active joint and + and - to change the values of the thetas.  Use glutKeyboardFunc() for this.
+</li></ul>
+<p>Write a few script files with different choices of rs, alphas, and ds, and explain in the comments what the arm looks like.  A simple first example would be a planar arm like that I described above.  A more complicated example might be the arm in the lab.  A really interesting example might be the space-shuttle arm (not required).
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Shuttle_arm.png" class="image" title="Shuttle arm.png"><img alt="" src="/~robotics/cs54/images/6/67/Shuttle_arm.png" width="466" height="295" border="0" /></a></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 56/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:72-0!1!0!!en!2!edit=0 and timestamp 20110220141912 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_6">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_6</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Assignment_6" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Assignment_6" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Assignment_6&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Assignment_6&amp;oldid=1121" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 4 February 2011, at 20:45.</li>
+					<li id="viewcount">This page has been accessed 347 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.235 secs. --></body></html>

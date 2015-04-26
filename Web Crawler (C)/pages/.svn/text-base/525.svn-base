@@ -1,0 +1,244 @@
+http://www.cs.dartmouth.edu/~cs38/logistics
+3
+<html> <head>
+<title>CS38: Basic Logistics</title>
+</head>
+ 
+<body>
+
+
+<h2>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+
+Basic Logistics
+<br>
+ CS38, Security and Privacy, Spring 2007
+</h2>
+<i> www.cs.dartmouth.edu/~cs38/logistics/index.shtml</i>
+ &nbsp;&nbsp;&nbsp;
+
+<i> Last modified: 03/26/07 02:20:19 PM</i>
+
+<hr>
+
+<p>
+
+<p>
+
+
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Instructor:</b>
+</big><br>
+
+
+<p>
+Sean Smith<br>
+<em> Email:</em> 
+<a href="mailto:sws@cs.dartmouth.edu"><b>sws@cs.dartmouth.edu</b></a>.
+(My blitzmail forwards to here.)
+I read my email often.  During the term
+(except when I'm on travel), I will
+almost always reply within a day, and usually within a few hours.<br>
+<em> Office:</em> Sudikoff 064 <br>
+<em> Office hours:</em> TBA
+
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Lectures:</b>
+</big><br>
+<p>
+Meeting times:
+<ul>
+<li> MWF: 1:45-2:50
+<li> X-hour: Th, 1-1:50
+</ul>
+Location: 110 Moore.
+<p>
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Syllabus and Notes:</b>
+</big><br>
+<p>
+
+Please note two things about the <a href="../lectures/"><b>syllabus page:</b></a>
+<ul>
+<li> It is a living document, and may be updated frequently
+<li> To compensate for my poor penmanship, I will provide <b>online class notes</b>, linked from that page, by lunch
+</ul>
+<p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Prequisites:</b>
+</big><br>
+<p>
+
+Completion of Computer Science 23 and completion of (or
+oncurrent enrollment in) Computer Science 37; or instructor's
+permission.
+
+<p>
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Graduate Credit:</b>
+</big><br>
+<p>
+This course has been approved for graduate credit.  Like other
+CS undergrad courses that can be taken for graduate credit, students
+will need to complete extra work beyond the undergrad requirements.
+Please let me know if you are doing this.
+<p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Help:</b>
+</big><br>
+<p>
+To get help, stop by or send email. You can also
+set up an appointment for other times. I will try to respond to mail
+messages within 24 hours.
+<p>
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Public Lab Space:</b>
+</big><br>
+<p>
+There is public lab space available in Sudikoff Room 001 and 003 for students
+enrolled in computer science courses. 
+You will need to arrange ID-card access to get 
+into these labs and to get into the building in the evenings
+and on weekends. If you don't have that already, you should see
+Kelly Clark in 101 Sudikoff.  <b>Don't dawdle; it can take 24 hours
+to turn access on.</b>
+<p>
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Late Assignments:</b>
+</big><br>
+<p>
+We have conflicting issues here:
+<ul>
+<li> Assigments are due when they are due; 
+extensions are not fair to the students sufficiently 
+diligent to complete their assignments on time.
+<li> However, particularly for seniors, many 
+students have interviews and off-campus grad school visits.
+</ul>
+To balance these issues, here's the policy:
+<ul>
+<li> Each student has two (virtual) "one-day late" coupons.
+Each coupon is good for a 1-day extension on one project.
+</ul>
+Plan accordingly.
+<p>
+We may otherwise apply 
+a "5% off per hour" late policy both to 
+the written homework and to the programming projects.
+<p>
+
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Exams:</b>
+</big><br>
+<p>
+<ul>
+<li> In-class midterm
+<li> In-class final
+</ul>
+See syllabus page for current schedule.
+<p>
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Honor Code:</b>
+</big><br>
+<p>
+The Dartmouth Honor
+Code applies to your conduct in this course.  In particular, all
+work submitted for credit must be your own.
+You may discuss your
+homework assignments and programming projects with your classmates, the
+TA and with me. 
+However, you should write up your own written homework solutions
+and should not read or copy the solutions written by others (in
+this or previous terms, at Dartmouth or elsewhere). 
+<p>
+
+The Dartmouth College policy on sources also applies to
+this course, which means that all sources must be acknowledged,
+whether allowed by the instructor or not.  For example, software
+given to you by us must be acknowledged 
+when incorporated into your work.<br>
+<p>
+(Whether you go into industry or academia or elsewhere,
+it would be good to get in the habit of keeping track of and citing
+all your sources anyway!)
+<p>
+<B>If you have any questions about the
+honor code as it relates to CS 38, please come speak with me. 
+Violations of the honor code will be treated seriously.</B>
+
+<p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<b>Students with Disabilities:</b>
+</big><br>
+<p>
+I encourage students
+with disabilities, including &quot;invisible&quot; disabilities
+such as chronic diseases and learning disabilities, to discuss with
+me any appropriate accommodations that I might make on their
+behalf.
+<p>
+(If this may apply to you, I also urge you to discuss things with the
+<a href="http://www.dartmouth.edu/~acskills/"><b>Academic Skills Center</b></a>,
+if you haven't already.  They've set up a system where they keep
+the "appropriate accommodations" on file---so you don't have to
+discuss details with each new instructor!)
+
+
+
+<p>
+
+<hr>
+<b>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/icons/back.gif">
+
+<A HREF="/~cs38/"><b>Back to Home Page</b></A>
+</b>
+&nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.dartmouth.edu/~sws/"><b>Sean Smith</b></a>
+&nbsp;&nbsp;&nbsp;
+&lt; <a href="mailto:sws@cs.dartmouth.edu"><b>sws@cs.dartmouth.edu</b></a>&gt;
+
+
+
+
+</body> </html>
+                                                                                     

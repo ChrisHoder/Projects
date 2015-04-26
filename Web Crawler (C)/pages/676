@@ -1,0 +1,350 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Article_5:_Kinematics
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Kinematics" />
+		<link rel="canonical" href="/~robotics/cs54/index.php/Kinematics" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Kinematics - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Kinematics";
+		var wgTitle = "Kinematics";
+		var wgAction = "view";
+		var wgArticleId = "33";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1108;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Kinematics skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Kinematics" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Kinematics" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Kinematics&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Kinematics&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Kinematics&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Kinematics</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub">(Redirected from <a href="/~robotics/cs54/index.php?title=Article_5:_Kinematics&amp;redirect=no" title="Article 5: Kinematics">Article 5: Kinematics</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Forward_Kinematics"><span class="tocnumber">1</span> <span class="toctext">Forward Kinematics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example:__planar_2R_arm"><span class="tocnumber">1.1</span> <span class="toctext">Example:  planar 2R arm</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Forward_kinematics_using_homogeneous_coordinates"><span class="tocnumber">2</span> <span class="toctext">Forward kinematics using homogeneous coordinates</span></a></li>
+<li class="toclevel-1"><a href="#Inverse_Kinematics"><span class="tocnumber">3</span> <span class="toctext">Inverse Kinematics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Inverse_kinematics_for_planar_2R_arm.2C_geometric_approach"><span class="tocnumber">3.1</span> <span class="toctext">Inverse kinematics for planar 2R arm, geometric approach</span></a></li>
+<li class="toclevel-2"><a href="#Solving_transcendental_equations_by_reduction_to_polynomial"><span class="tocnumber">3.2</span> <span class="toctext">Solving transcendental equations by reduction to polynomial</span></a></li>
+<li class="toclevel-2"><a href="#Inverse_kinematics_for_more_complicated_arms"><span class="tocnumber">3.3</span> <span class="toctext">Inverse kinematics for more complicated arms</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Parallel_manipulators"><span class="tocnumber">4</span> <span class="toctext">Parallel manipulators</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Forward_Kinematics" id="Forward_Kinematics"></a><h2> <span class="mw-headline"> Forward Kinematics </span></h2>
+<p>Given a configuration of the robot, expressed as coordinates in the parameterized configuration space, we need to be able to compute the locations of points on the robot in the physical world.
+</p>
+<a name="Example:__planar_2R_arm" id="Example:__planar_2R_arm"></a><h3> <span class="mw-headline"> Example:  planar 2R arm </span></h3>
+<p>Consider a simple planar 2R arm.  The configuration is given by <img class="tex" alt="(\theta_1, \theta_2) \in S \times S" src="/~robotics/cs54/images/math/c/6/a/c6a8b5dc4984ffdbceba4654771fea5e.png" />.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:PlanarArm.png" class="image" title="PlanarArm.png"><img alt="" src="/~robotics/cs54/images/b/ba/PlanarArm.png" width="198" height="205" border="0" /></a></div></div>
+<p>What is the location of the end effector?  The location of the first joint is:
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;x_1 \\ y_1&#10;\end{array}&#10;\right) &#10;= &#10;\left(&#10;\begin{array}{c}&#10;l_1 \cos \theta_1 \\&#10;l_1 \sin \theta_1&#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/e/5/2/e527a3b52655e083a005a30d74d5215e.png" /> 
+</dd></dl>
+<p>The location of the end effector is
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;x \\ y&#10;\end{array}&#10;\right) &#10;= &#10;\left(&#10;\begin{array}{c}&#10;l_1 \cos \theta_1 + l_2 \cos (\theta_1 + \theta_2) \\&#10;l_1 \sin \theta_1 + l_2 \sin(\theta_1 + \theta_2)&#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/7/a/2/7a2b4ab5e29a47174a54205c886569d5.png" /> 
+</dd></dl>
+<p>It's annoying to write <span class="texhtml">sin(&theta;<sub>1</sub> + &theta;<sub>2</sub>)</span>, and what if we have five links?  
+We use a notational shorthand for sine  
+</p>
+<dl><dd><span class="texhtml"><i>s</i><sub>12...<i>n</i></sub> = sin(&theta;<sub>1</sub> + &theta;<sub>2</sub> + ... + &theta;<sub><i>n</i></sub>)</span>
+</dd></dl>
+<p>and have a similar notation for cosine.
+</p><p>With this notation, the location of the effector is:
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;x \\ y&#10;\end{array}&#10;\right) &#10; = &#10;\left(&#10;\begin{array}{c}&#10;l_1 c_1 + l_2 c_{12} \\&#10;l_1 s_1 + l_2 c_{12}&#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/a/e/b/aeb79c59a57e57e24d0676797c503ba4.png" />
+</dd></dl>
+<p>In general, we write the forward kinematics in the form
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;x_1 \\ x_2 \\ \vdots \\ x_n&#10;\end{array}&#10;\right) &#10;= f(q)&#10;" src="/~robotics/cs54/images/math/0/5/9/059f5f8481990189f513ddc241a68ad0.png" />
+</dd></dl>
+<p><span class="texhtml"><i>f</i>(<i>q</i>)</span> is a vector-valued function of a vector:  it takes <span class="texhtml"><i>d</i></span> arguments (where <span class="texhtml"><i>d</i></span> is the dimension of the configuration space), and gives <span class="texhtml"><i>n</i></span> values (where <span class="texhtml"><i>n</i></span> is the dimension of the point whose location we would like to know.)  
+</p><p>Sometimes,  a forward kinematics map might give information other than just the locations of points.  Let's say we want to know the angle of the end effector, as well as its position.  (The angle is probably important, since you can't pick something up with the back of your hand!)  Write <span class="texhtml"><i>q</i><sub><i>e</i></sub> = (<i>x</i><sub><i>e</i></sub>,<i>y</i><sub><i>e</i></sub>,&theta;<sub><i>e</i></sub>)</span> to be the configuration of the end-effector system.  (The end-effector system is a subset of the robot system!)
+</p>
+<dl><dd><img class="tex" alt="&#10;q_e =&#10;\left(&#10;\begin{array}{c} &#10;l_1 c_1 + l_2 c_{12} \\&#10;l_1 s_1 + l_2 s_{12} \\&#10;\theta_1 + \theta_2&#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/f/d/1/fd176c7141bd44c34ec3fd0951ea3e48.png" />
+</dd></dl>
+<a name="Forward_kinematics_using_homogeneous_coordinates" id="Forward_kinematics_using_homogeneous_coordinates"></a><h2> <span class="mw-headline">  Forward kinematics using homogeneous coordinates </span></h2>
+<p>Consider the following example:
+</p><p><br />
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Framekinematics.png" class="image" title="Framekinematics.png"><img alt="" src="/~robotics/cs54/images/4/48/Framekinematics.png" width="254" height="158" border="0" /></a></div></div>
+<p><br />
+We know that frame 1 is rotated by some angle <span class="texhtml">&theta;<sub>1</sub></span> from frame 0, frame 2 is displaced by a distance of <span class="texhtml"><i>l</i><sub>1</sub></span> from frame 1, and rotated by an angle of <span class="texhtml">&theta;<sub>2</sub></span>.  We know that the red point is located at the coordinates <span class="texhtml">(<i>l</i><sub>2</sub>,0)</span> in frame 2.  The forward kinematics problem can therefore be described as:  given a sequence of frames and a point described with respect to one of those frames, find the location of that point with respect to the world frame (frame 0).  
+</p><p>Let's say you have a world frame, called frame 0, and some other frame, called frame 1, that is rotated from the world frame by 30 degrees, translated a distance of 1 along the x axis, and a distance of .5 along the y axis.  We could write a matrix using homogeneous coordinates that describes the location of frame 1 with respect to frame 0:
+</p>
+<dl><dd><img class="tex" alt="&#10;^0T_1 = &#10;\left[&#10;\begin{array}{ccc}&#10;\cos 30 &amp; -\sin 30 &amp; 1 \\&#10;\sin 30 &amp; \cos 30 &amp; .5 \\&#10;0 &amp; 0 &amp; 1  &#10;\end{array}&#10;\right].&#10;" src="/~robotics/cs54/images/math/b/c/1/bc14da015bf75b0cca815810500dd751.png" />
+</dd></dl>
+<p>Let's say you have a point <span class="texhtml"><sup>1</sup><i>a</i></span> described with respect to frame 1.  Where is the point with respect to frame 0?  The superscript before the vector or matrix means "described with respect to frame".  That is, given the matrix and <span class="texhtml"><sup>1</sup><i>a</i></span>, we want to solve for <span class="texhtml"><sup>0</sup><i>a</i></span>.
+</p>
+<dl><dd><img class="tex" alt="&#10;^0T_1~^1a = ^0a&#10;" src="/~robotics/cs54/images/math/e/d/9/ed910104a40c0bff4643d74961b84785.png" />
+</dd></dl>
+<p>Now let's say you have a point <span class="texhtml"><sup>3</sup><i>b</i></span>, frame 1 is described with respect to frame 0, frame 2 is described with respect to frame 1, and frame 3 is described with respect to frame 2.  What is <span class="texhtml"><sup>0</sup><i>b</i></span>, the location of the point in the world frame?  Let's first find the location of the point with respect to frame 2:
+</p>
+<dl><dd><img class="tex" alt="&#10;^2T_3~^3b = ^2b&#10;" src="/~robotics/cs54/images/math/5/f/c/5fc53884b76b04f44e9583e7b6890866.png" />
+</dd></dl>
+<p>Once we have the point with respect to frame 2, we premultiply to move to frame 1, and then again to move to frame 0:
+</p>
+<dl><dd><img class="tex" alt="&#10;^0T_1~^1T_2~^2T_3~^3b = ^0b&#10;" src="/~robotics/cs54/images/math/d/0/a/d0af6ad6b01de2d6f093bddf3ab9e4a7.png" />
+</dd></dl>
+<p>Notice how we can "cancel" superscripts and subscripts, and because matrix multiplication is associative (though not commutative!) we can premultiply matrices.  So for example, the matrix that describes frame 3 with respect to frame 1 is
+</p>
+<dl><dd><img class="tex" alt="&#10;^1T_3 = ^1T_2 ^2T_3.&#10;" src="/~robotics/cs54/images/math/5/3/8/5381c6d8c4c3f08adcfb611b57c8d8b2.png" />
+</dd></dl>
+<a name="Inverse_Kinematics" id="Inverse_Kinematics"></a><h2> <span class="mw-headline"> Inverse Kinematics </span></h2>
+<p>Forward kinematics tells us where a point on a robot arm is, assuming we know the angles at all the joints.  This can be useful (especially for checking for things like collisions), but what we probably really want to know is what joint angles to set to reach some given point in space.  The mapping from locations in the workspace to points in configuration space is called the "inverse kinematics" of the arm. 
+</p><p>For serial manipulators, the inverse kinematics problem is typically much more challenging than the forward kinematics problem.  Given a chain of homogeneous transform matrices, and the location of the point, we need to solve for the <span class="texhtml">&theta;</span> values, and they are //inside// the sine and cosines.
+</p><p>Even for our simple 2R planar arm example, solving for <span class="texhtml">&theta;<sub>1</sub></span> and <span class="texhtml">&theta;<sub>2</sub></span> is going to take a little work:
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;x \\ y&#10;\end{array}&#10;\right) &#10;= &#10;\left(&#10;\begin{array}{c}&#10;l_1 \cos \theta_1 + l_2 \cos (\theta_1 + \theta_2) \\&#10;l_1 \sin \theta_1 + l_2 \sin(\theta_1 + \theta_2)&#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/7/a/2/7a2b4ab5e29a47174a54205c886569d5.png" /> 
+</dd></dl>
+<a name="Inverse_kinematics_for_planar_2R_arm.2C_geometric_approach" id="Inverse_kinematics_for_planar_2R_arm.2C_geometric_approach"></a><h3> <span class="mw-headline"> Inverse kinematics for planar 2R arm, geometric approach </span></h3>
+<p>The trick is to draw a right triangle inscribing the arm as shown.  Then compute the length of the hypotenuse for that triangle:  <span class="texhtml"><i>c</i><sup>2</sup> = <i>x</i><sup>2</sup> + <i>y</i><sup>2</sup></span>.  Now we can use the law of cosines to compute the angle capital <span class="texhtml"><i>C</i></span>, by looking at the triangle formed by the hypotenuse and the two links of the arm.  We have
+<img class="tex" alt="&#10;c^2 = l_1^2 + l_2^2 - 2 l_1 l_2 \cos C&#10;" src="/~robotics/cs54/images/math/2/1/8/21894fbd3821e65f57907e188c382728.png" />
+Solve for C using an inverse cosine, making sure to get the correct solution for the inverse cosine by inspection.  Then <span class="texhtml">&theta;<sub>2</sub> = &pi; &minus; <i>C</i></span>.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Inverse2r.png" class="image" title="Inverse2r.png"><img alt="" src="/~robotics/cs54/images/1/16/Inverse2r.png" width="175" height="202" border="0" /></a></div></div>
+<p>Now notice that we can solve for the angle B using the law of sines on the same triangle.  Once we have <span class="texhtml"><i>B</i></span>, notice that <span class="texhtml">&theta;<sub>1</sub> + <i>B</i> = tan<sup> &minus; 1</sup>(<i>y</i>,<i>x</i>)</span>, the two-argument arctangent of the initial point.
+</p>
+<a name="Solving_transcendental_equations_by_reduction_to_polynomial" id="Solving_transcendental_equations_by_reduction_to_polynomial"></a><h3> <span class="mw-headline"> Solving transcendental equations by reduction to polynomial </span></h3>
+<p>How would you solve the inverse kinematics of a more complicated arm using the law of cosines approach?  I would not want to.  You could also take an algebraic approach and attempt to directly solve the kinematic equations, and for the 2R arm, such a solution requires only a fair amount of cleverness.  
+</p><p>However, there is a nice systematic way to solve problems of this sort.  The difficulty with solving transcendental equations is that for each variable <span class="texhtml">&theta;<sub><i>i</i></sub></span>, both a sine and a cosine term may appear.  There's also some issue with the summations inside the sines and cosines.
+</p><p>The summation issue is solved easily for planar arms:  measure the angles from the horizontal, rather than with respect to the previous frame -- at the end, we can just subtract to get the actual joint angles.
+</p><p>The sines and cosines can be eliminated by observing that if we let <span class="texhtml"><i>u</i> = tan(&theta; / 2)</span>, then
+</p>
+<dl><dd><img class="tex" alt="&#10;\cos \theta = \frac{1 - u^2}{1 + u^2}&#10;" src="/~robotics/cs54/images/math/b/b/7/bb75943b2ab4c36f4af65b63ed66fd9e.png" />
+</dd></dl>
+<p>and 
+</p>
+<dl><dd><img class="tex" alt="&#10;\sin \theta = \frac{2u}{1 + u^2}.&#10;" src="/~robotics/cs54/images/math/1/0/7/107c6ced257bb4f4b5a59fd34a741556.png" />
+</dd></dl>
+<p>Craig's "Introduction to Robotics" text gives the example of solving the equation 
+<span class="texhtml"><i>a</i>cos&theta; + <i>b</i>sin&theta; = <i>c</i>.</span>  
+Making the substitution and multiplying through by <span class="texhtml">1 + <i>u</i><sup>2</sup></span>, we get
+<span class="texhtml"><i>a</i>(1 &minus; <i>u</i><sup>2</sup>) + 2<i>b</i><i>u</i> = <i>c</i>(1 + <i>u</i><sup>2</sup>)</span> 
+which after collecting powers of u is
+<span class="texhtml">(<i>a</i> + <i>c</i>)<i>u</i><sup>2</sup> &minus; 2<i>b</i><i>u</i> + (<i>c</i> &minus; <i>a</i>) = 0.</span>
+Solve for <span class="texhtml"><i>u</i></span> with the quadratic formula, and take the inverse tangent to solve for <span class="texhtml">&theta; / 2</span>.
+</p>
+<a name="Inverse_kinematics_for_more_complicated_arms" id="Inverse_kinematics_for_more_complicated_arms"></a><h3> <span class="mw-headline"> Inverse kinematics for more complicated arms </span></h3>
+<p>Inverse kinematics of complicated arms may need to be solved numerically, since general closed-form solutions are not known to find the roots of polynomials of greater than degree 4.  However, certain special cases are known.  For example, six-DOF arms are common, since six degrees of freedom allows full control over the pose of a rigid body in space.  Work by Pieper solves the inverse kinematics in the special case where three of the joint axes intersect at a point, and in fact, this has influenced the design of real robot arms.
+</p>
+<a name="Parallel_manipulators" id="Parallel_manipulators"></a><h2> <span class="mw-headline"> Parallel manipulators</span></h2>
+<p>In some sense, the forward kinematics for a serial manipulator are "easy", and the inverse kinematics are "hard".  For a parallel manipulator, we expect the opposite to be true.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 153/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:33-0!1!0!!en!2!edit=0 and timestamp 20110220202728 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Kinematics">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Kinematics</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Kinematics" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Kinematics" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Kinematics&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Kinematics&amp;oldid=1108" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 27 January 2011, at 18:56.</li>
+					<li id="viewcount">This page has been accessed 2,750 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.248 secs. --></body></html>

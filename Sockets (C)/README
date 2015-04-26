@@ -1,0 +1,41 @@
+// FILE README
+
+***************
+LAB 7 SOCKETS
+***************
+
+
+*********
+Client.c
+*********
+
+	This program takes the addr of the of the server as an input. it will then connect to the server and for 20 seconds (in 1 second intervals) will request the temperature, humidity and light data sequentially and prints the responses to the stdout before exiting.
+	the request is made using a for loop and a array of of the 3 string variables being requested. The majority of the connection code was modified from the lecture notes.
+
+
+***********
+server.c
+***********
+
+	On start up this program will open all the variable data and read in each line of data into a 3 dimmensional array: data[variable][data number][data characters]. Additionally, the number of each variables data points are kept to allow for easy modulation later on and are stored in a an array, modifier.
+	When a client connects, a child fork is created and the time of connection is saved. For each packet recieved, an elapsed time from connection is determined. Depending on the variable requested the modulus of the elapsed time and the number of data points for the variable is taken and that data point is printed to the server display and returned to the client.
+
+
+
+************
+Makefile
+************
+
+	will compile the programes. type "make client" to make client. type "make server" to make server. type "make server_debug" to make the server with debug options. type "make client_debug" to get the client with debug options. make clean will delete temps and object files
+
+
+
+************
+data
+************
+
+file of retrieved data by the client program. Obtained by issuing the following bash command:
+client 127.0.0.1 >> data
+
+
+

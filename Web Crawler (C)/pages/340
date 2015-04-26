@@ -1,0 +1,130 @@
+http://www.cs.dartmouth.edu/~afra/teaching.html
+3
+<html>
+<head>
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+<title>Afra's Teaching</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body bgcolor=#ffffff >
+
+<hr align=center noshade>
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+
+<!-- ----- Left-hand side navbar ----- -->
+<td align=right>
+<font size="+1" align=right>
+afra<br>
+zomorodian<br>
+<br>
+</font>
+<a href="./">home</a><br>
+<a href="personal.html">personal</a><br>
+<a href="book.html">book</a><br>
+<a href="papers.html">papers</a><br>
+<b>teaching</b><br>
+<a href="goodies.html">goodies</a><br>
+<br><br>
+</td>
+
+<!-- ----- Interior left margin ----- -->
+<td width=25>&nbsp;</td> 
+
+<!-- ----- Page body ----- -->
+<td>
+
+<!-- ----- Interior table for content ---- -->
+<table cellspacing=0 cellpadding=0 border=0>
+<tr valign=top>
+
+<!-- ----- Eye candy ---- -->
+<td>
+<table cellspacing=0 cellpadding=0 border=0>
+<tr><td align = center valign = top><br></td></tr>
+<tr><td align = center valign = top><img  src="images/2.png" width=90></td></tr>
+<tr><td align = center valign = top><br></td></tr>
+<tr><td align = center valign = top><img  src="images/3hole.png"
+					  width=100></td></tr>
+<tr><td align = center valign = top><br></td></tr>
+<tr><td align = center valign = top><img  src="images/5.png" width=100></td></tr>
+<tr><td align = center valign = top><br></td></tr>
+</table>
+</td> 
+
+<!-- ----- Margin ----- -->
+<td width=25>&nbsp;</td> 
+
+
+<!-- ----- Content, finally ----- -->
+<td>
+
+<!-- <h4>Winter 2008 Courses</h4>
+<ul>
+</ul>
+-->
+
+<h4>Courses Taught</h4>
+<p>
+All courses at 
+<a href = "http://www.cs.dartmouth.edu">Dartmouth College</a>, 
+unless noted otherwise.
+<ul>
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/19/w11">Discrete
+    Mathematics in Computer Science (COSC 19)</a>, Winter 2011.</li>
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/ct/w11">Introduction to 
+Computational Topology (COSC 85/185)</a>, Winter 2011.</li>
+</ul>
+<ul>
+<li><a href =
+"http://www.cs.dartmouth.edu/~afra/courses/4/x10/index.html">Concepts in Computing (COSC
+    4)</a>, Summer 2010.</li>
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/19/w10">Discrete
+    Mathematics in Computer Science (COSC 19)</a>, Winter 2010.
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/ct/s09">Introduction to 
+Computational Topology (COSC 85/185)</a>, Spring 2009.
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/19/w09">Discrete
+    Mathematics in Computer Science (COSC 19)</a>, Winter 2009.
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/44/w09">Artificial Intelligence (COSC 44)</a>,
+  Winter 2009.
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/19/w08/">Discrete
+    Mathematics in Computer Science (COSC 19)</a>, Winter 2008.
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/44/w08">Artificial Intelligence (COSC 44)</a>,
+  Winter 2008.
+<li><a href = 
+"http://www.cs.dartmouth.edu/~afra/courses/ct/s07/">Introduction to 
+Computational Topology (COSC 85/185)</a>, Spring 2007.
+<li><a href =
+"http://www.cs.dartmouth.edu/~afra/courses/19/w07/">Discrete
+Mathematics in Computer Science (COSC 19)</a>, Winter 2007.
+<li><a href =
+"http://graphics.stanford.edu/courses/cs468-04-winter/">Introduction to
+Computational Topology (CS 468)</a>, 
+<a href = "http://www.cs.stanford.edu">Stanford University</a>, Winter 2004.
+<li><em>Mini-Kurse:  Topology for Computing</em>, 
+<a href = "http://www.mpi-inf.mpg.de/">Max-Planck-Institut f&uuml;r 
+Informatik</a>, Winter 2003.
+<li><a href =
+"http://graphics.stanford.edu/courses/cs468-02-fall/">Introduction to
+Computational Topology (CS 468)</a>, 
+<a href = "http://www.cs.stanford.edu">Stanford University</a>, Fall 2002.
+</ul>
+</td>
+</table>
+<!-- ----- Right-hand margin ----- -->
+<td width=32>&nbsp;</td>
+</tr> 
+</table>
+<hr align=center noshade>
+</body>
+</html>

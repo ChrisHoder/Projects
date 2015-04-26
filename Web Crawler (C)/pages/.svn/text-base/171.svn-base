@@ -1,0 +1,172 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July30
+3
+<html><head><title>July 30: The Stack</title></head>
+
+<body>
+
+<h1>July 30: The Stack</h1>
+
+<hr><h2>0) Recap</h2><hr>
+
+Electricity->bits->...->architecture.
+<br>ISA, assembly language.
+<br>Subroutines
+
+<p>On Wednesday, we saw a couple of programs that nested subroutines, and
+we saw the dangers of overwriting registers.  Our solution was to
+carve out some memory that we could save register values to, and
+reload those register values after returning from the subroutine.
+
+<hr><h2>1) Recursive Subroutines</h2><hr>
+What happens when the subroutine we're nesting is another call to the
+subroutine we're in though?
+
+<hr>
+<pre>
+	.ORIG x3000
+
+	
+	LD R1,ARG1
+	JSR FUN
+	HALT
+
+ARG1	.FILL	x000F
+
+
+
+FUN	ST R7, SAVER7	        ;  R0 <- FUN(R1), recursively...
+	ADD R1,R1,#0   		;  get flags to reflect R1
+	BRnp RECURSE
+	AND R0,R0,#0            ;  it's zero. return zero
+	BRnzp EXIT
+RECURSE ADD R2,R1,#0		;  save R1
+	ADD R1,R1,#-1
+	ST R2, SAVER2	
+	JSR FUN
+	LD R2, SAVER2
+	ADD R0,R0,R2	        ;  FUN(R1 in) <- R1in + FUN(R1in - 1)
+EXIT	LD R7, SAVER7
+	RET		
+
+SAVER7  .BLKW 1	
+SAVER2  .BLKW 1	
+
+
+	
+	.END		
+</pre>
+<p>
+<a href="r0.asm"><b>r0.asm</b></a>
+<p>
+
+<hr>
+<p>Recall: Does this work?  Why or why not?</p> 
+
+
+<hr><h2>2) What's a Stack?</h2><hr>
+
+A <b>stack</b> is an abstract data type that stores a collection of
+elements and lets users access these items in LIFO order, i.e., the
+last item we insert into the stack is the first item that gets
+removed.
+
+<p>Basic Stack Operations:
+<ul>
+<li><b>Push(x):</b> add x to the stack.
+<li><b>Pop():</b> remove and return the top element from the stack.
+</ul>
+
+<p>Stack implementations at the architecture level:
+<ul>
+<li>reserve area of memory for the stack
+<li>by convention, this grows downwards from some specific location (start of stack)
+<li>the <b>SP</b> (stack pointer) stores address of <i>last inserted item</i>
+<li>In the LC-3, <b>R6</b> is the stack pointer.
+</ul>
+
+<hr>The basic idea:
+
+<pre>
+	.ORIG x3000
+
+
+DEMO    LD R6, BASE
+
+	LD R0, ARG1
+	JSR PUSH
+	LD R0, ARG2
+	JSR PUSH
+	LD R0, ARG3
+	JSR PUSH
+	AND R0,R0,#0 ; clear R0
+	JSR POP
+	JSR POP 
+	JSR POP
+	HALT	
+
+ARG1    .FILL xDEAD
+ARG2    .FILL xBEEF
+ARG3	.FILL xFEED		
+
+PUSH	ADD R6, R6, #-1 ; decrement stack pointer
+	STR R0, R6, #0	; push R0 onto stack
+	RET
+
+POP	LDR R0, R6, #0	; pop R0 off of stack
+	ADD R6, R6, #1 	; increment stack
+	RET
+
+BASE    .FILL x3000    	;  initial stack base (here, so we can see it)
+
+	.END
+		
+</pre>	
+<p>
+
+(<a href="s0.asm"><b>s0.asm</b></a>)
+<p>
+
+<hr><h2>3) Stacks:  The Solution to All of Our Problems?</h2><hr>
+
+As noted in class, the code above solves our problem of registers
+getting stomped on, but creates some thornier issues.  
+
+<p>
+Stack issues:
+<ul>
+<li><b>Overflow</b> If we only save a certain amount of memory for the
+stack, what happens when we keep pushing?  This is called overflow.
+The solution: keep track of the <i>top</i> of the stack.  When
+pushing, check to make sure you're not at the top yet.
+<li><b>Underflow</b> In the same way, we can end up <i>popping</i> too
+many times.  This is called <i>underflow</i>.  The solution is also
+similar---keep track of the bottom of the stack, and fail the pop
+routine if we try to pop too many times.
+</ul>
+<p>
+Even after we solve these problems, we end up creating new problems --
+to check whether the stack is empty or full, we need to use up some
+registers, and we might end up trampling what was there before
+calling.  It's not a <i>huge</i> problem though, because we're writing
+the stack functions, and we can make sure that we don't keep jumping
+to more subroutines (or at least that we don't jump to <i>too many
+more</i> subroutines.  In this case, we're free to save registers as
+we did last class.  
+
+<p><a href="s1.asm"><b>s1.asm</b></a> -- reruns the basic stack demo, but
+with overflow/underflow problems fixed.
+
+<p><a href="r1x.asm"><b>r1.asm</b></a> -- correctly handles the f(x) =
+x+f(x-1) recursive subroutine.
+
+<hr><h2>Stacks in the Real World</h2><hr>
+
+At the end of class, some of you expressed desire for nice, easy,
+PUSH/POP operations as official instructions, especially since the
+Push/Pop subroutines above only ever push R0 onto the stack or return
+the popped item to R0.  In the real world, these are often supported.
+But how to specify them?  If <b>you</b> were designing the ISA, what
+stack instructions would you want to support, and how would you define
+them?  We'll discuss more on Monday.
+</body>
+</html>

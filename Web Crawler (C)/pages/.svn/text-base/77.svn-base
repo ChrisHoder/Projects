@@ -1,0 +1,88 @@
+http://www.cs.dartmouth.edu/~sinclair
+2
+<html><head><title>S. Sinclair</title>
+
+<style type="text/css" media="all">
+  @import "sitewide.css";
+
+<!--body{
+  background-image:url(scout-experiment.gif);
+  background-repeat:repeat;
+}
+--->
+
+</style>
+
+</head>
+<body>
+
+<div class="outer">
+<div class="container">
+
+<div class="header">scout</div>
+
+<div class="contact">
+
+    <img src="scoutbw.jpg" class="right-bordered-blue"></img>
+
+<script type="text/javascript">
+
+keywords =  
+[ 
+ "<i>Research is what I'm doing when I don't know what I'm doing.</i> <br>(W. Von Braun)",  
+ "<i>Perfection is reached not when there is no longer anything to add, but when there is no longer anything to take away.</i><br>(A. Saint-Exup&eacute;ry)",  
+ "<i>On two occasions I have been asked [by members of Parliament!], 'Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?' I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.</i><br> (C. Babbage)",  
+ "<i>Simplicity is prerequisite for reliability.</i><br> (E.W. Dykstra)",  
+ "<i>A mathematician is a device for turning coffee into theorems.</i><br> (P. Erd&ouml;s)",  
+ "<i>Email is a wonderful thing for people whose role in life is to be on top of things. But not for me; my role is to be on the bottom of things. What I do takes long hours of studying and uninterruptible concentration.</i><br>  (D. Knuth)",  
+ "You can't build a reputation on what you are going to do.</i><br> (H. Ford)",
+ "Caffeine is not a substitute for sleep.</i><br> (A. Hillegass)",
+"<i>I like an escalator because an escalator can never break, it can only become stairs. There would never be an escalator temporarily out of order sign, only an escalator temporarily stairs. Sorry for the convenience.</i><br> (M. Hedberg)",
+"<i>It's easier to ask forgiveness than it is to get permission.</i><br>(G. Hopper)",
+"<i>Life was simple before World War II. After that, we had systems.</i><br>(G. Hopper)",
+"<i>From then on, when anything went wrong with a computer, we said it had bugs in it.</i><br>(G. Hopper)",
+"<i>Elegance is not a dispensable luxury but a quality that decides between success and failure.</i><br>(E. W. Dijkstra)",
+"<i>A timely no beats a hasty yes.</i><br>(Brazilian Proverb)",
+"<i>It is a bad idea to take a thorn out of someone else's foot and put it into your own.</i><br>(Danish Proverb)",
+"<i>A human being should be able to change a diaper, plan an invasion, butcher a hog, cone a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyze a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly.</i><br>(R. A. Heinlein)",
+"<i>I didn't fight to get women out from behind vacuum cleaners but to get them onto the board of Hoover.</i><br>(G. Greer)",
+"<i>When I feel difficulty coming on, I switch to another book I'm writing. When I get back to the problem, my unconscious has solved it.</i><br>(A. Asimov)",
+"<i>Almost anything carried to a logical extreme becomes depressing.</i><br>(U. K. Le Guin)",
+"<i>Love does not just sit there, like a stone; it had to be made, like bread, remade all the time, made new.</i><br>(U. K. Le Guin)",
+"<i>To oppose something is to maintain it.</i><br>(U. K. Le Guin)",
+"<i>Don't compromise yourself.You're all you've got.</i><br>(J. Joplin)",
+"<i>I'm not a genius. I'm just a tremendous bundle of experience.</i><br>(R. B. Fuller.)"
+] 
+var keyword = keywords[Math.floor(Math.random()*keywords.length)] 
+
+  document.write(keyword);
+
+</script>
+
+</div>
+
+<div class="content">
+         
+  <p> My given name is Sara Sinclair, but I informally go by "Scout Sinclair" (largely because |<i>Sara</i>s|&raquo;|<i>Scout</i>s|). 
+	
+	<p>I am an <i>n</i><sup>th</sup> year PhD student with <a href="http://www.cs.dartmouth.edu/~sws">Sean W. Smith</a> in the Dartmouth College Computer Science Department. 
+
+
+    <ul>
+      <li>My email address is of the form lastname [at] cs [dot] dartmouth [dot] edu. <p>
+    
+      <li> Here is a latest version of my <a href="http://www.cs.dartmouth.edu/~sinclair/cvdoc.pdf">C.V.</a>. <p>
+      <li> You've certainly heard of <a
+  href="http://www.chucknorrisfacts.com/">Chuck Norris</a>.  You may
+  have even heard of <a href="http://geekz.co.uk/schneierfacts/">Bruce
+  Schneier</a>.  But: have you heard of <a
+  href="http://www.cs.dartmouth.edu/~sinclair/doug">Doug McIlroy</a>?
+
+    </ul>
+
+</div>     
+
+</div>
+</div>
+
+</body></html>

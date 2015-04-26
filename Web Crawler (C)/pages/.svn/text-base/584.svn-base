@@ -1,0 +1,341 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_2
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Assignment 2" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Assignment 2 - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Assignment_2";
+		var wgTitle = "Assignment 2";
+		var wgAction = "view";
+		var wgArticleId = "64";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1044;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Assignment_2 skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Assignment_2" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Assignment_2" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Assignment_2&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Assignment_2&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Assignment_2&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Assignment 2</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>The goal of this assignment is to write a program that searches a 2D grid maze for a path between a start and goal location, and animates a robot following that path.  I expect your code will be well-organized and well-commented.  If you struggle with anything (especially how to do something in Python) please email both me and Weifu (firstname.lastname@dartmouth.edu) and we'll lend a hand.  Submit your code to me by e-mail attachment by 11:59 pm Tuesday, with a subject line "cs54 assignment 2 submit".
+</p>
+<a name="Part_1" id="Part_1"></a><h2> <span class="mw-headline"> Part 1 </span></h2>
+<p>Note that you may wish to do part 2 first; this part of the assignment is written first so that you can see what the objective is.
+</p><p>Write a breadth-first graph search function in Python with the following header:
+</p>
+<pre>
+def breadth_first_graph_search(start_state, goal_test_fn, successor_fn):
+</pre>
+<p>Notice that two of the parameters that will be passed to your function are themselves functions.  If your main programming experience is in Java, this will look odd to you, but it's a nice way to make your breadth-first-search function completely general, so that you can use it to solve not just the maze, but also many other interesting search problems.  
+</p><p>Here's an example of how passing functions to other functions works:
+</p>
+<pre>
+def squared(fn, x):
+  value = fn(x)
+  return value * value
+
+print squared(sin, 1)
+print squared(cos, 1)
+</pre>
+<ul><li> goal_test_fn should be a function that takes one parameter, a state, and returns True or False.
+</li><li> successor_fn should be a function that takes one parameter, a state, and returns a list of states
+</li></ul>
+<p>You may of course write other helper functions if you wish.  
+</p><p><br />
+</p>
+<a name="Part_2" id="Part_2"></a><h2> <span class="mw-headline"> Part 2 </span></h2>
+<p>Write a goal_test_fn and successor_fn for the mazeworld we described in class.  You should also create an interesting maze, described as a list of walls.  If you like, you may use the following Maze class written by TA Weifu Wang for your convenience.
+</p>
+<pre>
+from turtle import *
+from math import fabs
+
+class Maze:
+    def _build_blocked_table(self):
+        dic = {}
+        for ((x1,y1),(x2,y2)) in self._wall_list:
+            if x1 == x2:
+                length = int(fabs(y2-y1))
+                if y1 &gt; y2:
+                    temp = y2
+                    y2 = y1
+                    y1 = temp
+                for j in range(length):
+                    dic[((x1+0.5,j+y1+0.5),(-1,0))] = True
+                    dic[((x1-0.5,j+y1+0.5),( 1,0))] = True
+            if y1 == y2:
+                length = int(fabs(x2 - x1))
+                if x1 &gt; x2:
+                    temp = x2
+                    x2 = x1
+                    x1 = temp
+                for j in range(length):
+                    dic[((j+x1+0.5,y1-0.5),(0, 1))] = True
+                    dic[((j+x1+0.5,y1+0.5),(0,-1))] = True
+        
+        return dic
+    
+    def __init__(self, wall_list):
+        self._wall_list = list(wall_list)
+        self._blocked_hashtable = self._build_blocked_table()
+
+    def is_blocked(self, state, action):
+        return self._blocked_hashtable.has_key((state,action))
+
+    def draw(self, action_list):
+        setworldcoordinates(-1, -1, 11, 11)
+        
+        hideturtle()
+        for ((x1,y1),(x2,y2)) in self._wall_list:
+            self._draw_wall((x1,y1),(x2,y2))
+        pu()
+        goto(0.5,0.5)
+        showturtle()
+        speed(1)
+        pd()
+        left(90)
+        for (a_x, a_y) in action_list:
+            fd(a_y)
+            right(90)
+            fd(a_x)
+            left(90)
+        
+    
+    def _draw_wall(self, (x1,y1),(x2,y2)):
+        pu()
+        goto(x1,y1)
+        pd()
+        goto(x2,y2)
+        
+        
+
+if __name__ == &quot;__main__&quot;:
+    maze = Maze( [
+            ((1, 0), (2, 0)),
+            ((2, 0), (2, 1)) 
+            ])
+    
+    #print maze.is_blocked((1,0),(1,0))
+    #print maze.table
+    action_list = [(1,0),(0,1),(-1,0),(0,-1)]
+    maze.draw(action_list)
+    exitonclick()
+
+
+</pre>
+<p>In Weifu's code, an "action" is a tuple of integers; one of (0, 1), (1, 0), (0, -1), or (-1, 0) describing a direction.  A state is also a tuple of two integers.  The maze is constructed using a list of walls.  Each wall is a tuple of 2-tuples.  For example, ((1, 0), (2, 0)) indicates a wall from coordinates (1, 0) to (2, 0).  
+</p><p>Notice that the robot's state is a floating point number, since the robot is in the center of a cell.  (.5, .5) is the state corresponding to the bottom leftmost cell.  A wall on the east side of this cell would have the coordinates.
+</p>
+<a name="Part_3" id="Part_3"></a><h2> <span class="mw-headline"> Part 3 </span></h2>
+<p>Animate the path you found (using Weifu's code if you like).
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 13/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:64-0!1!0!!en!2!edit=0 and timestamp 20110220172604 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_2">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_2</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Assignment_2" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Assignment_2" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Assignment_2&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Assignment_2&amp;oldid=1044" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 11 January 2011, at 15:00.</li>
+					<li id="viewcount">This page has been accessed 472 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.201 secs. --></body></html>

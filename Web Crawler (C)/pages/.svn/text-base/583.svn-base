@@ -1,0 +1,407 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Bioloid_control
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Bioloid control" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Bioloid control - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Bioloid_control";
+		var wgTitle = "Bioloid control";
+		var wgAction = "view";
+		var wgArticleId = "75";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1141;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Bioloid_control skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Bioloid_control" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Bioloid_control" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Bioloid_control&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Bioloid_control&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Bioloid_control&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Bioloid control</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#The_bioloid_software"><span class="tocnumber">1</span> <span class="toctext">The bioloid software</span></a></li>
+<li class="toclevel-1"><a href="#Bioloid_Code_Tutorial"><span class="tocnumber">2</span> <span class="toctext">Bioloid Code Tutorial</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Basic_Library_Functions"><span class="tocnumber">2.1</span> <span class="toctext">Basic Library Functions</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Beginning_Code"><span class="tocnumber">2.1.1</span> <span class="toctext">Beginning Code</span></a></li>
+<li class="toclevel-3"><a href="#Read_Commands"><span class="tocnumber">2.1.2</span> <span class="toctext">Read Commands</span></a></li>
+<li class="toclevel-3"><a href="#Write_Commands"><span class="tocnumber">2.1.3</span> <span class="toctext">Write Commands</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Advanced_Library_Functions"><span class="tocnumber">2.2</span> <span class="toctext">Advanced Library Functions</span></a>
+<ul>
+<li class="toclevel-3"><a href="#enable_rotation_.2F_disable_rotation"><span class="tocnumber">2.2.1</span> <span class="toctext">enable_rotation / disable_rotation</span></a></li>
+<li class="toclevel-3"><a href="#set_speed"><span class="tocnumber">2.2.2</span> <span class="toctext">set_speed</span></a></li>
+<li class="toclevel-3"><a href="#enable_torque_.2F_disable_torque"><span class="tocnumber">2.2.3</span> <span class="toctext">enable_torque / disable_torque</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Inverse_Kinematics"><span class="tocnumber">2.3</span> <span class="toctext">Inverse Kinematics</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Initial_Usage"><span class="tocnumber">2.3.1</span> <span class="toctext">Initial Usage</span></a></li>
+<li class="toclevel-3"><a href="#PenUp.2FPenDown"><span class="tocnumber">2.3.2</span> <span class="toctext">PenUp/PenDown</span></a></li>
+<li class="toclevel-3"><a href="#toPoint"><span class="tocnumber">2.3.3</span> <span class="toctext">toPoint</span></a></li>
+<li class="toclevel-3"><a href="#drawLine"><span class="tocnumber">2.3.4</span> <span class="toctext">drawLine</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="The_bioloid_software" id="The_bioloid_software"></a><h1> <span class="mw-headline">The bioloid software</span></h1>
+<p>You can download the software we'll be using for the bioloids here:
+</p><p><a href="http://www.cs.dartmouth.edu/~robotics/Bioloids.zip" class="external text" title="http://www.cs.dartmouth.edu/~robotics/Bioloids.zip" rel="nofollow">Bioloid software</a>
+</p>
+<a name="Bioloid_Code_Tutorial" id="Bioloid_Code_Tutorial"></a><h1> <span class="mw-headline">Bioloid Code Tutorial</span></h1>
+<p>Since you've already had some introduction to Python, this tutorial will skip over some of the basics, and focus mainly on examples of how to use the supplied Python library.
+</p>
+<a name="Basic_Library_Functions" id="Basic_Library_Functions"></a><h2> <span class="mw-headline">Basic Library Functions</span></h2>
+<p>Most basic functions for controlling the AX-12+ servos exist in two files, lib_robotis.py and its helper file, servo_config.py. lib_robotis.py contains the functions themselves, translating commands into a string of hexadecimal numbers that the servo itself can understand. You needn't worry about those numbers, as the library will take care of them for you. servo_config.py is merely a list of the Bioloid servos that you could use, and allows you to set such variables as the maximum and minimum angles that the servos are allowed to rotate to, and the "home position" of the servo. The servo physically cannot go past -148 or 148 degrees, and its standard "home position" is 512.
+</p><p>(In case you're curious, the "home position" value comes from the 9-bit internal encoder used by the servo, which goes from 0 to 1023. 512 happens to fall right in the middle, and makes a great 0-degree position.)
+</p>
+<a name="Beginning_Code" id="Beginning_Code"></a><h3> <span class="mw-headline">Beginning Code</span></h3>
+<p>Every code you will write with the Bioloids will begin with the same few lines:
+</p>
+<pre>
+from lib_robotis import *
+from time import sleep, time
+
+dev_name = /dev/tty.AGJAFSF
+dyn = USB2Dynamixel_Device(dev_name)
+</pre>
+<p>Very much like the Creates, the first two lines directly import the Bioloid library and part of the Python time library, allowing us to use all their functions as if they were within our code itself. (It's one of the great strengths, as far as I can tell, of the Python language.)
+The next line, dev_name, is where you set the name of your USB2Dynamixel device, conveniently labeled on it. Just change it to whatever your device says. The fourth line creates a new USB2Dynamixel object in Python, allowing us to communicate with it and see the servos connected to it.
+</p><p>The next lines you'll put in any Bioloid-related program are to establish servo objects. Just like we established a USB2Dynamixel object so that the computer can communicate with it, so do we make objects in order to talk to the servos. That code looks like this:
+</p>
+<pre>
+servo = Robotis_Servo( dyn, 5 )
+</pre>
+<p>That creates an object called "servo" that can talk to servo number five. Check the back of all your servos: you'll notice they all have numbers. Convenient, eh? Go ahead and make three lines, one for each. Be careful, though: you can't name all three objects "servo" or you'll only be able to control the last one you specified. I'd recommend something like "servo1," "servo2," etc.
+</p><p>Example Boilerplate:
+</p>
+<pre>
+from lib_robotis import *
+from time import sleep, time
+
+dev_name = /dev/tty.AGJAFSF
+dyn = USB2Dynamixel_Device(dev_name)
+
+servo1 = Robotis_Servo( dyn, 1 )
+servo2 = Robotis_Servo( dyn, 2 )
+servo3 = Robotis_Servo( dyn, 3 )
+</pre>
+<a name="Read_Commands" id="Read_Commands"></a><h3> <span class="mw-headline">Read Commands</span></h3>
+<p>There are an awful lot of things that each servo, since they have they own dedicated electronics inside themselves, keeps track of. The servo knows where it's located according to its encoder, the voltage it is receiving from the power supply, its own internal temperature (Surprisingly important! Under too much load, a servo could overheat and fail. They have fail-safes in place to shut them down well in advance of those kind of temperatures.), whether or not it is moving at any given time...
+</p><p>So before we start telling the servo to do things, why don't we look at what the servo can tell us? For this we'll use some read commands. The lib_robotis library includes a number of 'em, which are all used in the same format:
+</p>
+<pre>
+servo.function()
+</pre>
+<p>What this means, syntactically, is that we're calling the function on that particular object; in this case, reading that particular value from the servo. The parenthesis are used to hold syntax for the function, but since it's a read function, we don't need to give the function any more information.
+</p><p>The library defines a few read functions:
+</p>
+<pre>
+is_moving()
+read_voltage()
+read_temperature()
+read_load()
+read_encoder()
+read_angle()
+</pre>
+<p>Feel free to give these a try using the syntax you saw above. The functions won't work unless you call them on a servo object: after all, you can't just expect Python to know which of the servos you're talking about.
+</p>
+<a name="Write_Commands" id="Write_Commands"></a><h3> <span class="mw-headline">Write Commands</span></h3>
+<p>For the purposes of this tutorial, any function that tells the servo something is considered a "write" command, since it will write to a certain address in the servo's memory. The one we'll use most is the move_angle function, which moves the servo to a specified angle (as long as it falls within the servo's physical range). There's only one piece of information that you have to supply the function in order for it to work: the angle. There are other pieces to this function, if you're interested: instead of just moving to an angle, move to an angle at a certain speed, and then there's an option called "blocking." See if you can figure out what blocking does by looking at the library; it's enabled by default in the function. So, to sum that up:
+</p>
+<ul><li> Simplest form (moves at one-half maximum speed):
+</li></ul>
+<pre>
+servo.move_angle(angle)
+</pre>
+<ul><li> With a specified velocity:
+</li></ul>
+<pre>
+servo.move_angle(angle, angular_velocity)
+</pre>
+<ul><li> Full syntax:
+</li></ul>
+<pre>
+servo.move_angle(angle, angular_velocity, blocking)
+</pre>
+<p>Just take note that there is a defined range of values for each variable.
+</p>
+<dl><dd> Angle: -148 to 148 degrees
+</dd><dd> Angular Velocity: 0 to 50 radians/second (default: Half of maximum speed, so 25 rad/s)
+</dd><dd> Blocking: a boolean value, it can only be True or False (default: True)
+</dd></dl>
+<p>Additionally, there is the much simpler "move_to_encoder" command that will move to an actual encoder click (range from 0-1023). Most addresses of the servo won't be written to, as there is either no need or are slightly more advanced.
+</p>
+<a name="Advanced_Library_Functions" id="Advanced_Library_Functions"></a><h2> <span class="mw-headline">Advanced Library Functions</span></h2>
+<p>There are a small number of considerably more advanced functions available in the lib_robotis library.
+</p>
+<a name="enable_rotation_.2F_disable_rotation" id="enable_rotation_.2F_disable_rotation"></a><h3> <span class="mw-headline">enable_rotation / disable_rotation</span></h3>
+<pre>
+servo.enable_rotation()
+servo.disable_rotation()
+</pre>
+<p>Please note that this function should ONLY be used when the Bioloids are in the Omniwheel configuration. This function alters two addresses of the Bioloid servo's memory in order to enable or disable the continuous rotation mode.
+</p>
+<a name="set_speed" id="set_speed"></a><h3> <span class="mw-headline">set_speed</span></h3>
+<pre>
+servo.set_speed(velocity)
+</pre>
+<p>When in continuous rotation mode, allows you to specify the speed at which the servos rotate. Possible speeds range from 0 to 1023. A positive speed will cause the motor to rotate clockwise while a negative speed will cause the motor to rotate counterclockwise.
+</p>
+<a name="enable_torque_.2F_disable_torque" id="enable_torque_.2F_disable_torque"></a><h3> <span class="mw-headline">enable_torque / disable_torque</span></h3>
+<pre>
+servo.enable_torque()
+servo.disable_torque()
+</pre>
+<p>Initially, it's possible to move the servo's position by hand. When the servo is first told to move to a position, its torque is enabled. This makes the servo hold its position. Conversely, disabling the torque essentially turns off the servo and allows it to be moved by hand again.
+</p><p>There are also a number of low-level functions that are directly used to send/receive hexadecimal commands from the servos themselves.
+</p>
+<a name="Inverse_Kinematics" id="Inverse_Kinematics"></a><h2> <span class="mw-headline">Inverse Kinematics</span></h2>
+<p>The library planarIK.py is an add-on for the standard lib_robotis library to enable inverse kinematics for the 3-DOF arm. The third degree of freedom is only used to raise or lower the pen, so all inverse kinematics are planar with two joints. 
+</p>
+<a name="Initial_Usage" id="Initial_Usage"></a><h3> <span class="mw-headline">Initial Usage</span></h3>
+<p>Since this library already incorporates lib_robotis within it, the usage is slightly different:
+</p>
+<pre>
+from PlanarIK import *
+p = PlanarIK()
+</pre>
+<a name="PenUp.2FPenDown" id="PenUp.2FPenDown"></a><h3> <span class="mw-headline">PenUp/PenDown</span></h3>
+<p>These functions manipulate the pen height, but have to be calibrated first. Run "PenDown" and make sure the pen is contacting the paper. When you use "PenUp," that should no longer be true.
+<br />Syntax:
+</p>
+<pre>
+p.PenUp()
+p.PenDown()
+</pre>
+<a name="toPoint" id="toPoint"></a><h3> <span class="mw-headline">toPoint</span></h3>
+<p>The toPoint function is the most basic function of the inverse kinematics defined by this engine. It takes a point, supplied in x,y coordinates (the origin being defined as the first planar joint; basically, where the second servo connects to the PenUp/PenDown servo), calls the inverse kinematics engine to generate the angles necessary for moving the arm into that position (taking into account the max/min angles physically possible), and then calls the appropriate function (move_angle) to move the servo into place. 
+<br />Syntax:
+</p>
+<pre>
+p.toPoint(x,y)
+</pre>
+<a name="drawLine" id="drawLine"></a><h3> <span class="mw-headline">drawLine</span></h3>
+<p>This function, using multiple calls to the above toPoint, is able to draw a line. When given two sets of coordinates (a start and an end point), it will raise the pen, move to the first point, put the pen down, and move in small steps to the final point. Step size is adjustable with proper syntax; if not given, the step size is set to a default value.
+<br />
+Syntax:
+</p>
+<pre>
+p.drawLine(x1, y1, x2, y2)
+p.drawLine(x1, y1, x2, y2, step_size)
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 61/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:75-0!1!0!!en!2!edit=0 and timestamp 20110220172603 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Bioloid_control">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Bioloid_control</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Bioloid_control" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Bioloid_control" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Bioloid_control&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Bioloid_control&amp;oldid=1141" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 15 February 2011, at 01:35.</li>
+					<li id="viewcount">This page has been accessed 186 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.202 secs. --></body></html>

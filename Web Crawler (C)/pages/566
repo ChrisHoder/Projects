@@ -1,0 +1,331 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_13
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Lecture 13" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Lecture 13 - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Lecture_13";
+		var wgTitle = "Lecture 13";
+		var wgAction = "view";
+		var wgArticleId = "25";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 326;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lecture_13 skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Lecture 13</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Propositional_logic.2C_continued"><span class="tocnumber">1</span> <span class="toctext">Propositional logic, continued</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Conjunctive_normal_form.2C_example"><span class="tocnumber">1.1</span> <span class="toctext">Conjunctive normal form, example</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Eliminate_double_implications"><span class="tocnumber">1.1.1</span> <span class="toctext">Eliminate double implications</span></a></li>
+<li class="toclevel-3"><a href="#Replace_implications_with"><span class="tocnumber">1.1.2</span> <span class="toctext">Replace implications with</span></a></li>
+<li class="toclevel-3"><a href="#Move__inwards"><span class="tocnumber">1.1.3</span> <span class="toctext">Move  inwards</span></a></li>
+<li class="toclevel-3"><a href="#Distribute__over"><span class="tocnumber">1.1.4</span> <span class="toctext">Distribute  over</span></a></li>
+<li class="toclevel-3"><a href="#Sanity_check_on_the_first_proposition"><span class="tocnumber">1.1.5</span> <span class="toctext">Sanity check on the first proposition</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Validity_and_satisfiability"><span class="tocnumber">1.2</span> <span class="toctext">Validity and satisfiability</span></a></li>
+<li class="toclevel-2"><a href="#The_deduction_theorem"><span class="tocnumber">1.3</span> <span class="toctext">The deduction theorem</span></a></li>
+<li class="toclevel-2"><a href="#Reasoning_patterns_.28inference_rules.29"><span class="tocnumber">1.4</span> <span class="toctext">Reasoning patterns (inference rules)</span></a></li>
+<li class="toclevel-2"><a href="#Resolution"><span class="tocnumber">1.5</span> <span class="toctext">Resolution</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Propositional_logic.2C_continued" id="Propositional_logic.2C_continued"></a><h2> <span class="mw-headline">Propositional logic, continued</span></h2>
+<a name="Conjunctive_normal_form.2C_example" id="Conjunctive_normal_form.2C_example"></a><h3> <span class="mw-headline">Conjunctive normal form, example</span></h3>
+<p>We'll start with the college-life example from last lecture.  
+</p>
+<dl><dd><img class="tex" alt=" \neg D \Leftrightarrow F \or (A \and P) " src="/~robotics/cs44/images/math/4/1/5/415b3a7532cecb98991d8eed2d6d5229.png" />
+</dd><dd><img class="tex" alt=" W \and N \Rightarrow P" src="/~robotics/cs44/images/math/e/9/6/e96c4324b2db9e244e0bbe5fcae3514d.png" />
+</dd><dd><img class="tex" alt=" F \Rightarrow H" src="/~robotics/cs44/images/math/b/c/a/bca5479c91bb734c1a68fa3f8f91134e.png" />
+</dd></dl>
+<a name="Eliminate_double_implications" id="Eliminate_double_implications"></a><h4> <span class="mw-headline">Eliminate double implications</span></h4>
+<dl><dd><img class="tex" alt=" \neg D \Rightarrow F \or (A \and P) " src="/~robotics/cs44/images/math/c/6/f/c6f4740707d4109087227dcea070ae5c.png" />
+</dd><dd><img class="tex" alt=" F \or (A \and P) \Rightarrow \neg D   " src="/~robotics/cs44/images/math/0/a/e/0ae5a8f665ab5c58d7a8156a5dfb5865.png" />
+</dd><dd><img class="tex" alt=" W \and N \Rightarrow P" src="/~robotics/cs44/images/math/e/9/6/e96c4324b2db9e244e0bbe5fcae3514d.png" />
+</dd><dd><img class="tex" alt=" F \Rightarrow H" src="/~robotics/cs44/images/math/b/c/a/bca5479c91bb734c1a68fa3f8f91134e.png" />
+</dd></dl>
+<a name="Replace_implications_with" id="Replace_implications_with"></a><h4> <span class="mw-headline">Replace implications with <img class="tex" alt="\neg \alpha \or \beta" src="/~robotics/cs44/images/math/0/7/4/074d437226219691ba3357efe7effdfc.png" /></span></h4>
+<dl><dd><img class="tex" alt=" \neg (\neg D) \or (F \or (A \and P)) " src="/~robotics/cs44/images/math/4/7/f/47f1d6c0f01b5bdc3944c6cb6a0f0cd4.png" />
+</dd><dd><img class="tex" alt=" \neg (F \or (A \and P)) \or \neg D " src="/~robotics/cs44/images/math/0/b/7/0b78e3e3e7d6f686202d0a2edd07d92e.png" />
+</dd><dd><img class="tex" alt=" \neg (W \and N) \or P" src="/~robotics/cs44/images/math/6/1/4/6148ffc80b57ba93145d3ef78377a8d6.png" />
+</dd><dd><img class="tex" alt=" \neg F \or H" src="/~robotics/cs44/images/math/3/b/0/3b0932e4ba689206c3b07f2b4257ea50.png" />
+</dd></dl>
+<a name="Move__inwards" id="Move__inwards"></a><h4> <span class="mw-headline">Move <img class="tex" alt="\neg" src="/~robotics/cs44/images/math/a/0/c/a0c4c2ce7f9c78efeedd2bfb53ab9f3e.png" /> inwards</span></h4>
+<dl><dd><img class="tex" alt="  D \or (F \or (A \and P)) " src="/~robotics/cs44/images/math/e/6/0/e6029076309e6a65e327eb29001bd3d1.png" />
+</dd></dl>
+<p><br />
+</p>
+<dl><dd><img class="tex" alt=" (\neg F \and (A \or P)) \or \neg D " src="/~robotics/cs44/images/math/4/b/c/4bc5d48f0caaab46e3103784efdb426d.png" />
+</dd><dd><img class="tex" alt=" (\neg F \and (\neg A \and \neg P)) \or \neg D " src="/~robotics/cs44/images/math/c/8/3/c835ae97bde99d1acd1b515e37ca288f.png" />
+</dd></dl>
+<p><br />
+</p>
+<dl><dd><img class="tex" alt=" \neg W \or \neg N \or P" src="/~robotics/cs44/images/math/7/c/2/7c2f6d9b461f70e1a28d1791b92aa12a.png" />
+</dd><dd><img class="tex" alt=" \neg F \or H" src="/~robotics/cs44/images/math/3/b/0/3b0932e4ba689206c3b07f2b4257ea50.png" />
+</dd></dl>
+<a name="Distribute__over" id="Distribute__over"></a><h4> <span class="mw-headline">Distribute <img class="tex" alt="\or" src="/~robotics/cs44/images/math/5/a/d/5addb134385e47a2efa484f6306e75a1.png" /> over <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" /></span></h4>
+<dl><dd><img class="tex" alt="  D \or ((F \or A) \and (F \or P)) " src="/~robotics/cs44/images/math/2/6/e/26e6c4c66565b0364f36325bc823cb4b.png" />
+</dd><dd><img class="tex" alt="  (D \or F \or A) \and ( D \or F \or P)) " src="/~robotics/cs44/images/math/6/3/6/636112669354bf98044ff75e0d5a21c2.png" />
+</dd></dl>
+<p><br />
+</p>
+<dl><dd><img class="tex" alt=" (\neg D \or \neg F) \and (\neg D \or (\neg A \and \neg P))" src="/~robotics/cs44/images/math/7/b/e/7bebe2bd2c487364728d84849d979c3c.png" />
+</dd><dd><img class="tex" alt=" (\neg D \or \neg F) \and (\neg D \or (\neg A \and \neg P))" src="/~robotics/cs44/images/math/7/b/e/7bebe2bd2c487364728d84849d979c3c.png" />
+</dd></dl>
+<p><br />
+</p>
+<dl><dd><img class="tex" alt=" \neg W \or \neg N \or P" src="/~robotics/cs44/images/math/7/c/2/7c2f6d9b461f70e1a28d1791b92aa12a.png" />
+</dd><dd><img class="tex" alt=" \neg F \or H" src="/~robotics/cs44/images/math/3/b/0/3b0932e4ba689206c3b07f2b4257ea50.png" />
+</dd></dl>
+<p>It's in CNF.  We're done!
+</p>
+<a name="Sanity_check_on_the_first_proposition" id="Sanity_check_on_the_first_proposition"></a><h4> <span class="mw-headline">Sanity check on the first proposition</span></h4>
+<p>Are 
+</p>
+<dl><dd><img class="tex" alt=" \neg D \Leftrightarrow F \or (A \and P) " src="/~robotics/cs44/images/math/4/1/5/415b3a7532cecb98991d8eed2d6d5229.png" />
+</dd></dl>
+<p>and
+</p>
+<dl><dd><img class="tex" alt="  (D \or F \or A) \and ( D \or F \or P)) " src="/~robotics/cs44/images/math/6/3/6/636112669354bf98044ff75e0d5a21c2.png" />
+</dd></dl>
+<p>equivalent?
+</p><p>Let's assume <img class="tex" alt="\neg D" src="/~robotics/cs44/images/math/e/2/d/e2db30e9bf7e693d7acaf8f603c5f762.png" />.  Then <img class="tex" alt="F \or (A \and P)" src="/~robotics/cs44/images/math/d/c/5/dc549390cccdb1078a090543e16cd80a.png" /> is true, from the double implication.  Now looking at the CNF form, we have
+</p>
+<dl><dd><img class="tex" alt="  (False \or F \or A) \and ( False \or F \or P)) " src="/~robotics/cs44/images/math/a/f/1/af1a1dc6cde511b747b6073375503146.png" />
+</dd><dd><img class="tex" alt="  (F \or A) \and (F \or P)) " src="/~robotics/cs44/images/math/d/9/3/d9325a6cf8b2f9bd15a990a668571b59.png" />
+</dd></dl>
+<p>Notice that this means that either F is true, or both A and P are true, which is the same result we got from the original form.  Looks sane.
+</p>
+<a name="Validity_and_satisfiability" id="Validity_and_satisfiability"></a><h3> <span class="mw-headline"> Validity and satisfiability</span></h3>
+<p>We say a sentence is <b>valid</b> if it is true for all models.  An example would be <img class="tex" alt="A \or \neg A" src="/~robotics/cs44/images/math/8/e/c/8ec37b764b22bad537cb6c614f9e65b3.png" />.  We say a sentence is <b>satisfiable</b> if it is true for at least one model.  An example of a sentence that is not satisfiable is <img class="tex" alt="A \and \neg A" src="/~robotics/cs44/images/math/e/0/a/e0a24ead084dfc93768268945e45546e.png" />.
+</p><p>Notice that sentence <span class="texhtml">&alpha;</span> is valid iff <img class="tex" alt="\neg \alpha" src="/~robotics/cs44/images/math/5/8/1/581bf0077c810067701d58658d7a943f.png" /> is unsatisfiable.
+</p><p>The book points out that satisfiability of propositional logic was one of the first problems shown to be NP-complete -- thus, in the worst case, we expect an algorithm to have runtime exponential in the number of propositions.  And we have such an algorithm already:  enumerate all models, check if the sentence is satisfied (<i>model-checking</i>).  
+</p>
+<a name="The_deduction_theorem" id="The_deduction_theorem"></a><h3> <span class="mw-headline"> The deduction theorem</span></h3>
+<p>For any sentences <img class="tex" alt="\alpha, \beta, \alpha \models \beta" src="/~robotics/cs44/images/math/4/5/f/45f5408f086fd8dc3f86eec5321b0fa7.png" /> iff <img class="tex" alt="(\alpha \Rightarrow \beta)" src="/~robotics/cs44/images/math/e/5/7/e579c4a08fb044b6594a5277e1bdccd2.png" /> is valid.  
+</p><p>To prove that <img class="tex" alt="(\alpha \Rightarrow \beta)" src="/~robotics/cs44/images/math/e/5/7/e579c4a08fb044b6594a5277e1bdccd2.png" /> is valid, we could just run through the KB doing model checking.  Every time the KB evaluates to true, we would check if <img class="tex" alt="(\alpha \Rightarrow \beta)" src="/~robotics/cs44/images/math/e/5/7/e579c4a08fb044b6594a5277e1bdccd2.png" /> was also true.  If so, we have proven that KB <img class="tex" alt=" \and \alpha \models \beta " src="/~robotics/cs44/images/math/2/6/7/267af24fba7e693f9f11188c1b865f4b.png" />.
+</p><p>But here's the observation.  What if we added hundreds more symbols, none of which appeared in the previous KB, or in <span class="texhtml">&alpha;</span> or <span class="texhtml"> / <i>b</i><i>e</i><i>t</i><i>a</i></span>?  The model-checking algorithm would take much more time.  It seems like we could come up with some better way.  
+</p><p>The key idea is that it may be easy to prove that a sentence is unsatisfiable.  For example, the sentence <img class="tex" alt="A \and \not A" src="/~robotics/cs44/images/math/a/f/4/af42bf589730a5339da064526548f537.png" /> is unsatisfiable in every model, regardless of what other sentences there might be, due to the property of monotonicity.
+</p><p>To prove that <img class="tex" alt="(\alpha \Rightarrow \beta)" src="/~robotics/cs44/images/math/e/5/7/e579c4a08fb044b6594a5277e1bdccd2.png" /> is valid, we could instead prove that <img class="tex" alt="\neg (\alpha \Rightarrow \beta)" src="/~robotics/cs44/images/math/4/e/a/4ea108233e840cae56c9fdf0ffcb2295.png" /> is unsatisfiable.  Or, putting this sentence into conjunctive normal form, this is equivalent to showing that 
+</p>
+<dl><dd> <img class="tex" alt="\neg (\neg \alpha \or \beta)" src="/~robotics/cs44/images/math/d/2/8/d2846d4c34a28bae87801b580b6517ee.png" />
+</dd><dd> <img class="tex" alt="\alpha \and \neg \beta" src="/~robotics/cs44/images/math/b/7/0/b70c129afead5d4015ccbc02ecdd29d7.png" />
+</dd></dl>
+<p>is unsatisfiable.  So if we want to show that <img class="tex" alt="KB \models \beta" src="/~robotics/cs44/images/math/f/d/4/fd45a205a0bc706c588987b1df62a7d4.png" />, we add <img class="tex" alt="\neg \beta" src="/~robotics/cs44/images/math/2/3/7/23737d945807239d7ce04f71ea386e67.png" /> to the KB, and show that there are no models for which this is true.  
+</p><p>Of course, we could do this by checking every model.  But maybe there is a better way.
+</p>
+<a name="Reasoning_patterns_.28inference_rules.29" id="Reasoning_patterns_.28inference_rules.29"></a><h3> <span class="mw-headline">Reasoning patterns (inference rules)</span></h3>
+<p>We have set the goal of showing that some set of sentences (possibly the KB and the negation of the sentence we would like to show is entailed) is unsatisfiable, without checking every model.  Let's take an example:
+</p>
+<dl><dd><img class="tex" alt="\alpha \Rightarrow \beta" src="/~robotics/cs44/images/math/f/4/3/f439b9b93b9bd07936e8d48069492f3a.png" />
+</dd><dd><img class="tex" alt="\alpha \Rightarrow \neg \beta" src="/~robotics/cs44/images/math/7/7/b/77b44cf1ced20260ed8690d23bd756b6.png" />
+</dd><dd><span class="texhtml">&alpha;</span>
+</dd></dl>
+<p>We could prove that this set of sentences is unsatisfiable by checking all models.  But maybe sentences <span class="texhtml">&alpha;</span> and <span class="texhtml">&beta;</span> each contain many symbols, and model checking is therefore hard.  But we could perhaps combine some sentences to form new sentences.  The new sentences are 'weaker' in some sense, in that the set of models for which the new sentences are true must be at least as large as the set for which the original sentences are true.
+</p><p>In this case, since <span class="texhtml">&alpha;</span> is true, we can use a rule called <b>modus ponens</b> to infer, together with the first implication, that <span class="texhtml">&beta;</span> is true.  By "is true" we mean in this case that in all models such that <span class="texhtml">&alpha;</span> and&nbsp;:<img class="tex" alt="\alpha \Rightarrow \beta" src="/~robotics/cs44/images/math/f/4/3/f439b9b93b9bd07936e8d48069492f3a.png" /> are true, <span class="texhtml">&beta;</span> is true.  
+</p><p>By applying modus ponens to the second proposition, we can also infer that the sentence <img class="tex" alt="\neg \beta" src="/~robotics/cs44/images/math/2/3/7/23737d945807239d7ce04f71ea386e67.png" /> <i>also</i> does not further constrain the set of models, and thus may be added to the set of sentences.
+</p><p>But now we have the sentences <span class="texhtml">&beta;</span> and <img class="tex" alt="\neg \beta" src="/~robotics/cs44/images/math/2/3/7/23737d945807239d7ce04f71ea386e67.png" />.  We know that the set of models for which these two sentences are both true is empty.  Thus, the models for which the original three sentences are true must be the empty set.  
+</p><p><br />
+The first inference rule we applied to write this proof was called modus ponens, and is written like this:
+</p>
+<dl><dd><img class="tex" alt="\frac{\alpha \Rightarrow \beta, \alpha}{\beta}" src="/~robotics/cs44/images/math/2/8/5/285832b768f22311ae9da3c9ccd72447.png" />     <b>Modus Ponens</b>.
+</dd></dl>
+<p>Another convenient reasoning pattern is and-elimination:
+</p>
+<dl><dd><img class="tex" alt="\frac{\alpha \and \beta}{\alpha}" src="/~robotics/cs44/images/math/2/7/b/27beaa69bf8f2c691c0136445cc30925.png" />
+</dd></dl>
+<p>A proof proceeds using a sequence of applications of inference rules.
+</p><p>I find it interesting that there are these two very different approaches to a proof:  model-checking, and inference.  Imagine proving the Pythagorean theorem using something like model-checking.  You would draw very many different right triangles, measure a, b, and c, and show that the equation was always satisfied.  The only difficulty is that unlike in propositional logic, there are an infinity of models to consider!
+</p>
+<a name="Resolution" id="Resolution"></a><h3> <span class="mw-headline">Resolution</span></h3>
+<p>How many inference rules do we need?  Just one, it turns out.  The rule is called <b>resolution</b>, and it takes two disjunctions, one of which includes literals that are negations of literals in the other clause.  We look first at a simple case, unit resolution:
+</p>
+<dl><dd><img class="tex" alt="&#10;\frac{l_1 \or l_2 ... \or l_k,  \neg l_i}{l_1... l_{i-1} \or l_{i+1} \or ... l_k}&#10;" src="/~robotics/cs44/images/math/7/4/b/74b9203b6f0c6c3ab4e8948e6a95b8b9.png" />
+</dd></dl>
+<p>In words -- one of the first literals must be true, and we know which one it's not.  So it must be one of the others.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 210/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:25-0!1!0!!en!2!edit=0 and timestamp 20110220172528 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_13">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_13</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Lecture_13" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Lecture_13&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Lecture_13&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Lecture_13&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Lecture_13" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Lecture_13" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Lecture_13" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Lecture_13&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Lecture_13&amp;oldid=326" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 3 February 2010, at 20:15.</li>
+					<li id="viewcount">This page has been accessed 1,992 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.222 secs. --></body></html>

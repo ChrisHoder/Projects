@@ -1,0 +1,89 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July23
+3
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>July 23: I/O</title></head><body>           
+
+
+<body bgcolor=#ffffff>
+
+<h1>July 23: I/O </h1>
+
+<p> Reading: P&amp;P 8 <br><p>
+<hr>
+<h1>Trap</h1>
+<hr>
+
+<p>Basic idea: a "special" kind of subroutine.</p>
+<hr><h2>In the LC-3 world:</h2><hr>
+
+<p>TRAP "vector number"</p>
+<hr><p>The CPU then goes in looks up that entry in a pre-defined "trap vector," a table of addresses</p>
+
+<p>In the LC-3, these live at x0000 to 0x00FF</p>
+
+<p>Then moves the address at that entry into the PC... and saves the incremented PC in R7</p>
+<ul><li>How do you return from a TRAP?</li></ul>
+
+
+<hr><p>The LC-3 design defines some special traps</p>
+
+<p>Table A.2</p>
+<p><img src="img/tableA2.jpg" alt="too bad" width="100%"></p>
+
+
+
+
+<h1>I/O Examples :</h1> 
+
+A simple assembly program that reads a digit, increments it and
+prints it on console.
+<br/>
+<a href="code/Increment.asm">Increment.asm</a>
+<br/>
+<br/>
+<br/>
+
+A assembly program that prints two input digits in reverse order.
+<br/><a href="code/ReverseDigits.asm">ReverseDigits.asm </a>
+<br/>
+<br/>
+<hr/><h1>Some theory:</h1>
+<br/>
+<hr><h1>1. I/O Overview</h1><hr>
+
+<p>Examples:</p>
+
+<ul><li>keyboard input</li></ul>
+
+
+<ul><li>monitor output</li></ul>
+
+
+<ul><li>D/A converter</li></ul>
+
+
+<ul><li>Voltage sensor</li></ul>
+
+
+
+<hr><h1>2. Devices</h1><hr>
+
+<p>Generic model of a device</p>
+<p>data register</p>
+<p>status register</p>
+
+
+<hr><p>Memory-mapping vs special instructions</p>
+<p>table A.3</p>
+<p><img src="img/tableA3.jpg" width="70%"></p>
+
+<hr><h1>3. Synchronous I/O</h1><hr>
+
+
+<hr><h1>4. Asynchronous I/O</h1><hr>
+
+
+</body>
+</html>
+
+
+

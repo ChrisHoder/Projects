@@ -1,0 +1,160 @@
+// README
+
+
+
+Included in this solution
+
+Folders:
+
+1) crawler
+2) index
+3) query
+4) utl
+5) pages
+README -- this file
+
+*******
+crawler
+*******
+
+ -- contains:
+     - Makefile
+     - test script
+     - test log
+     - FOLDER: Functions
+     ************
+     Functions
+     ************
+     - This contains the functions for the crawler
+     - cleanup.c, crawler.c, crawler.h, extractURLs.c, getAddressFromTheLinksToBeVisited.c, getPage.c, inputCheck.c, setURLasVisited.c, updateListLinkToBeVisited.c
+
+
+*******
+indexer
+*******
+
+ -- contains:
+    --index.c, getFiles.c saveFile.c, List.c, index.h
+    --Makefile
+    --test script
+    --testlog
+
+
+*******
+query
+*******
+
+
+ -- contains:
+    -- getDocList.c, getList.c, getWord.c, printList.c, sortList.c
+       - The sortList function uses and optimized bubblesort to sort
+         the lists, adapted from the pseudocode on wikipedia's bubble
+         sort page
+       - the getList function generates an unsorted list of Document Nodes
+         based on the query input. The speed of which could be optimized by
+         keeping a sorted list and adapting the AND and OR functions
+         but optimization not considered.
+
+    -- Makefile
+       - make command will make Query_Engine
+       - make test command will make the query_test
+      
+    -- unit test script -- query_test.c
+       - This will unit test the system
+       - this is not an exhaustive unit test
+         several dictionary functions are included in this to
+         allow the util library to not be compiled with the test script
+         and allow dummy functions to be used more easily.
+         the getList function is probably the least tested because of the necesity of all the dictionary functions to use and would have made the other
+         test really complicated.
+    -- make_test_run_tinysearch.sh -- test entire system
+
+
+******
+utl
+******
+  --contains:
+    - dictionary.c, dictionary.h, file.c, file.h, hash.c, hash.h, header.h, html.c, html.h, libtseutl.a
+    - Makefile -- make - creates the library for the utl (libtseutl.a)
+    - this folder contains the functions used by more than one of the programs and is needed
+      by all to be present in this folder relative to the others
+
+
+*******
+pages
+*******
+  -- contains: crawled html pages, temp file
+
+
+
+
+
+results for hash extra credit:
+ -- crawler ran successfully in both cases
+ --  hash 10 - crawled 675 files
+ --  hash 10000 - crawled 778 files
+
+Below are the time percentages
+
+ Hash table size: 10000
+
+Each sample counts as 0.01 seconds.
+% cumulative self self total
+time seconds seconds calls us/call us/call name
+62.57 0.15 0.15 778 193.00 193.00 removeWhiteSpace
+16.68 0.19 0.04 30419 1.32 6.25 GetNextURL
+12.51 0.22 0.03 73138 0.41 0.41 hash1
+8.34 0.24 0.02 860 23.28 23.28 getAddressFromTheLinksToBeVisited
+0.00 0.24 0.00 29641 0.00 0.00 NormalizeURL
+0.00 0.24 0.00 21680 0.00 0.83 getWordNodeWithKey
+0.00 0.24 0.00 20820 0.00 1.41 checkDNODES
+0.00 0.24 0.00 11431 0.00 0.25 addElement
+0.00 0.24 0.00 11430 0.00 0.81 getlastNodeInCluster
+0.00 0.24 0.00 860 0.00 0.00 getPage
+0.00 0.24 0.00 860 0.00 0.83 setURLasVisited
+0.00 0.24 0.00 778 0.00 244.47 extractURLs
+0.00 0.24 0.00 778 0.00 0.00 getHTMLFromFile
+0.00 0.24 0.00 778 0.00 37.69 updateListLinkToBeVisited
+0.00 0.24 0.00 1 0.00 0.00 cleanup
+0.00 0.24 0.00 1 0.00 0.00 initLists
+0.00 0.24 0.00 1 0.00 0.00 inputCheck
+
+
+
+
+Hash table size : 10
+
+Each sample counts as 0.01 seconds.
+% cumulative self self total
+time seconds seconds calls ms/call ms/call name
+92.84 8.19 8.19 15561301 0.00 0.00 hash1
+2.72 8.43 0.24 752 0.32 0.32 getAddressFromTheLinksToBeVisited
+1.70 8.58 0.15 675 0.22 0.22 removeWhiteSpace
+1.08 8.67 0.10 19647 0.00 0.24 getWordNodeWithKey
+1.02 8.76 0.09 11021 0.01 0.33 getlastNodeInCluster
+0.68 8.82 0.06 26647 0.00 0.01 GetNextURL
+0.00 8.82 0.00 25972 0.00 0.00 NormalizeURL
+0.00 8.82 0.00 18895 0.00 0.43 checkDNODES
+0.00 8.82 0.00 11022 0.00 0.00 addElement
+0.00 8.82 0.00 752 0.00 0.00 getPage
+0.00 8.82 0.00 752 0.00 0.24 setURLasVisited
+0.00 8.82 0.00 675 0.00 0.31 extractURLs
+0.00 8.82 0.00 675 0.00 0.00 getHTMLFromFile
+0.00 8.82 0.00 675 0.00 12.14 updateListLinkToBeVisited
+0.00 8.82 0.00 1 0.00 0.00 cleanup
+0.00 8.82 0.00 1 0.00 0.00 initLists
+0.00 8.82 0.00 1 0.00 0.00 inputCheck
+
+
+
+The function order makes sense given that with a hash 10 table there are more collisions. 
+The hash function would need to get called each time the program progresses down a cluster based on the way i wrote the
+code. And if there are lots of collisions (as in hash 10) the hash function will get
+called much more than in a run with a hash table of 10000. by almost a ten thousand
+times more Also since the hash function runs through every character in a string and
+urls tend to be very long, this can add up to a lot of computing time.
+I would have guessed that updateListLinkToBevisited would have been higher on the list
+for both runs. We can also see that getAddressFromTheLinksToBeVisited is taking a decent
+amount of computing time also because it is just searching down the list of DNODES for
+an unvisited url
+

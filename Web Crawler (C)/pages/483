@@ -1,0 +1,103 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/June25/index.html
+3
+<h1>June 25: Introduction, Electricity to Gates</h1>
+
+<p>Reading: P&amp;P 1, 2.6, 3.1, 3.2
+<hr>
+<h2>1) Introduction</h2>
+<p>
+Administrative stuff
+<ul>
+<li> Instructor: Joshua Brody
+<li> TA's: Ranganath Kondapally, James Hughes
+<li> cs37staff@cs.dartmouth.edu
+<li> books: Patt&amp;Patel, Tanenbaum
+<li> circuit software: Logisim
+<li> honor code
+<li> (all this information and more can be found <a href=../../logistics.html>here</a>).
+</ul>
+<p>
+Motivation
+<ul>
+<li> What you've seen before -- cs5, cs8, cs23
+<li> Why study computer architecture? (<a href="i.c">i.c</a>, <a href="j.c">j.c</a>)
+</ul>
+<p>
+The Big Picture (P&amp;P Figure 1.6)
+<hr>
+<h2>2) Two Important Ideas</h2>
+<ul>
+<li>Abstraction
+<li>Do not separate hardware from software
+</ul>
+<hr>
+<h2>3) Electricity &amp; Bits</h2>
+<ul>
+<li>Voltage and Current
+<li>switches
+<li>What's a bit and how do you get it from electrical circuits?
+<li>diodes
+<li>vacuum tubes
+<li>transistors
+</ul>
+<p>
+For more details on electrical circuits, check out <a href="www.allaboutcircuits.com">allaboutcircuits.com</a>.
+<hr>
+<h2>4) Logic Gates</h2>
+<hr>
+<p>
+1 and 0
+<p>
+<a href="demo/boole.gif"><b>Boolean</b></a> logic
+<p>
+NOT.  (AKA "inverter").   Inverts the input.
+<p>
+<img src="gates/not.jpg" alt="too bad"></img>
+<p>
+<hr>
+<p>
+OR.  Outputs a 1 if A is one <b>OR</b> B is one.  (Or both.)
+<p>
+<img src="gates/or.jpg" alt="too bad"></img>
+<p>
+<hr>
+<p>
+NOR. NOT OR. An OR, with the output inverted.   Outputs a 0 if A is one OR B is one. (Or both.)
+<p>
+<img src="gates/nor.jpg" alt="too bad"></img>
+<p>
+<img src="gates/nor2.jpg" alt="too bad"></img>
+<p>
+<hr>
+<p>
+AND. Outputs a 1 only when A is one <b>AND</b> B is one.  
+<p>
+<img src="gates/and.jpg" alt="too bad"></img>
+<p>
+<hr>
+<p>
+NAND. NOT AND.  An AND, with the output inverted.  Outputs a 0 only when A is one AND B is one.
+<p>
+<img src="gates/nand.jpg" alt="too bad"></img>
+<p>
+<img src="gates/nand2.jpg" alt="too bad"></img>
+<p>
+<hr>
+<p>
+XOR.  "Exclusive OR."   Outputs a 1 if A is one <b>OR</b> B is one (but <b>not both</b>)
+<p>
+<img src="gates/xor.jpg" alt="too bad"></img>
+<p>
+<hr>
+<hr>
+<p>
+Note:
+<ul>
+<li> except for NOT, fan-in can be greater than two.  
+<li> truth tables
+</ul>
+<p>
+<hr>
+<h2>5) From Electricity to Gates</h2>
+<hr>
+<p>

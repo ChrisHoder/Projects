@@ -1,0 +1,110 @@
+http://www.cs.dartmouth.edu/~miluzzo/contact.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Title      : Puzzled
+Version    : 1.0
+Released   : 20080706
+Description: A wide two-column design suitable for blogs and small websites.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Emiliano Miluzzo :: contact</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<!-- Google  analytics stuff start -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19440560-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google  analytics stuff end -->
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1>Emiliano Miluzzo</h1>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+			<li class="current_page_item"><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<div id="headerbg">
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<!-- start latest-post -->
+		<div id="latest-post-2" class="post">
+			<h1 class="title">contact</h1>
+			
+			<div class="entry">
+				<p> <i>email</i>: miluzzo &lt;at&gt; cs &lt;dot&gt; dartmouth &lt;dot&gt; edu </p>	
+				
+				<p> <i>office</i>:  Sudikoff 249  </p>
+				<p> <i>lab</i>: Sudikoff 147 </p>
+
+				<p> <i>address</i>: Computer Science Department, Dartmouth College <br>                  
+				              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6211 Sudikoff Laboratory  <br>                                                    
+				              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hanover, NH 03755-3510, USA
+				</p>
+
+
+				<p> <i>phone</i>: (+1) 603-646-8738</p>
+				<p> <i>fax</i>:       (+1) 603-646-1672</p>
+								
+
+			</div>
+		</div>
+		<!-- end latest-post -->
+		<!-- start recent-posts -->
+		
+		<!-- end recent-posts -->
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+
+<div id="footer">
+	<!-- empty footer -->
+</div>
+
+<div style="font-size: 0.8em; text-align: center;">
+<br />
+Based on template from <a href="http://www.zeroweb.org">Zeroweb.org</a><br />
+<br />
+</div>
+</body>
+</html>

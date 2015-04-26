@@ -1,0 +1,70 @@
+http://www.cs.dartmouth.edu/~cs52/homeworks.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<title>CS52 - Computer Graphics - Fall 2010</title>
+	<meta name="author" content="Fabio Pellacini" />
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+<div class="pagebackground">
+
+<div class="pagedecorationbefore"></div>
+<div class="pagedecoration">
+
+<div class="page">
+
+<div class="header">
+<div class="title">Computer Graphics</div>
+<div class="subtitle">CS52 - Fall 2010</div>
+<div class="subtitle">Instructor: William Kerr</div>
+</div>
+
+<div class="navigation">
+<span class="navigationitem"><a href="index.html">About</a></span>
+<span class="navigationitem"><a href="schedule.html">Schedule</a></span>
+<span class="navigationitem"><a href="homeworks.html">Homeworks</a></span>
+<span class="navigationitem"><a href="assignments.html">Assignments</a></span>
+</div>
+
+<div class="content">
+<h1>Homeworks</h1>
+
+<h2 id="Hw1">Homework 1</h2>
+<p><a href="homeworks/hw1.pdf">Assignment</a> | <a href="homeworks/hw1-solutions.pdf">Solution</a></p>
+
+<h2 id="Hw2">Homework 2</h2>
+<p><a href="homeworks/hw2.pdf">Assignment</a> | <a href="homeworks/hw2-solutions.pdf">Solution</a></p>
+
+<h2 id="Hw3">Homework 3</h2>
+<p><a href="homeworks/hw3.pdf">Assignment</a> | <a href="homeworks/hw3-solutions.pdf">Solution</a></p>
+
+<h2 id="Hw4">Homework 4</h2>
+<p><a href="homeworks/hw4.pdf">Assignment</a> | <a href="homeworks/hw4-solutions.pdf">Solution</a></p>
+
+<h2 id="Hw5">Homework 5</h2>
+<p><a href="homeworks/hw5.pdf">Assignment</a> | <!--a href="homeworks/hw5-solutions.pdf"-->Solution<!--/a--></p>
+
+</div>
+
+<div class="footer">
+<table align="center">
+<tr><td align="right">Page Administrator:</td><td>William Kerr (wkerr -at- cs -dot- dartmouth -dot- edu)</td></tr>
+<tr><td align="right">Page Template Author:</td><td>Fabio Pellacini (fabio -at- cs -dot- dartmouth -dot- edu)</td></tr>
+</table>
+</div>
+
+</div>
+
+</div>
+<div class="pagedecorationafter"></div>
+
+</div>
+
+</body>
+</html>

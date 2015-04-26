@@ -1,0 +1,431 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Schedule
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Schedule,Circuit-board layout,Connect four,Internet search and multi-robot mazeworld,Missionaries and Cannibals" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Schedule - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Schedule";
+		var wgTitle = "Schedule";
+		var wgAction = "view";
+		var wgArticleId = "4";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 419;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Schedule skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Schedule</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table class="ruledtable" cellpadding="5">
+
+<tr>
+<th> Date
+</th><th> Day
+</th><th>  #
+</th><th>  Topic
+</th><th> Reading
+</th><th>  Notes
+</th></tr>
+<tr>
+<td>  Jan 4
+</td><td> M
+</td><td> 1
+</td><td>  Overview.  Agents.
+</td><td>  1 &amp; 2
+</td><td>
+</td></tr>
+<tr>
+<td>  Jan 6
+</td><td>  W
+</td><td>  2
+</td><td> Blind Search:  BFS, DFS, IDS
+</td><td> 3.1 - 3.4
+</td><td> <a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals" title="Missionaries and Cannibals">Assignment #1</a> out
+</td></tr>
+<tr>
+<td>  Jan 8
+</td><td>  F
+</td><td>  3
+</td><td> UCS.  Informed search:  Greedy, A*
+</td><td> 3.5, 3.6
+</td><td>
+</td></tr>
+<tr>
+<td> Jan 11
+</td><td>  M
+</td><td>  4
+</td><td> Continuous spaces; robot path planning
+</td><td> 4.1, 4.2
+</td><td>
+</td></tr>
+<tr>
+<td> Jan 13
+</td><td>  W
+</td><td>  5
+</td><td>  Local search
+</td><td> 4.3, 4.4
+</td><td> Assignment #1 due <br /> <a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld" title="Internet search and multi-robot mazeworld">Assignment #2</a> out
+</td></tr>
+<tr>
+<td> Jan 15
+</td><td>  F
+</td><td>  6
+</td><td>  Non-deterministic actions; partial observations
+</td><td> 5.1 - 5.3
+</td><td>
+</td></tr>
+<tr>
+<td> Jan 18
+</td><td> M
+</td><td>
+</td><td style="color:red"> No class -- Martin Luther King, Jr. day
+</td><td>
+</td><td>
+</td></tr>
+<tr>
+<td> Jan 20
+</td><td>  W
+</td><td>  7
+</td><td>  Adversarial search; alpha-beta pruning
+</td><td> 5.4, 5.5, 5.7
+</td><td>
+</td></tr>
+<tr>
+<td> Jan 22
+</td><td>  F
+</td><td>  8
+</td><td>  Imperfect games; practical game AI
+</td><td>
+</td><td>
+</td></tr>
+<tr>
+<td> Jan 25
+</td><td>  M
+</td><td>  9
+</td><td> Non-zero sum games over time
+</td><td> 6.1 - 6.3
+</td><td>
+</td></tr>
+<tr>
+<td> Jan 27
+</td><td>  W
+</td><td>  10
+</td><td> Constraint satisfaction; Arc consistency.  Local search
+</td><td> 6.4 - 6.6
+</td><td> Assignment #2 due. <br /> <a href="/~robotics/cs44/index.php/Connect_four" title="Connect four">Assignment #3</a> out
+</td></tr>
+<tr>
+<td> Jan 29
+</td><td>  F
+</td><td>  11
+</td><td>  CSPs continued
+</td><td>  7.1 - 7.4
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 1
+</td><td>  M
+</td><td>  12
+</td><td> Logic systems
+</td><td> 7.5, 7.6
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 3
+</td><td>  W
+</td><td>  13
+</td><td> Propositional logic; resolution
+</td><td>
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 5
+</td><td>  F
+</td><td>  14
+</td><td> SAT problems
+</td><td> 8
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 8
+</td><td>  M
+</td><td>  15
+</td><td> First-order logic
+</td><td> 9.1-9.3
+</td><td> Assignment #3 due.
+</td></tr>
+<tr>
+<td> Feb 10
+</td><td>  W
+</td><td>  16
+</td><td>  Inference in FOL
+</td><td>  9.3-9.6
+</td><td style="color:red"> MIDTERM EXAM distributed.
+</td></tr>
+<tr>
+<td>  Feb 12
+</td><td>  F
+</td><td>
+</td><td style="color:red">  No class -- Winter carnival
+</td><td>
+</td><td>MIDTERM EXAM due 10 am.
+</td></tr>
+<tr>
+<td> Feb 15
+</td><td>  M
+</td><td>  17
+</td><td> First-order logic, cont'd
+</td><td> 13.1 - 13.5
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 17
+</td><td>  W
+</td><td>  18
+</td><td> Probability
+</td><td> 14.1 - 14.4
+</td><td> <a href="/~robotics/cs44/index.php/Circuit-board_layout" title="Circuit-board layout">Assignment #4</a> out
+</td></tr>
+<tr>
+<td> Feb 19
+</td><td>  F
+</td><td>  19
+</td><td> Bayesian networks
+</td><td>
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 22
+</td><td>  M
+</td><td>  20
+</td><td>  Probabilistic reasoning over time
+</td><td>  15.1, 15.2
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 24
+</td><td>  W
+</td><td>  20
+</td><td>  Probabilistic reasoning, cont'd
+</td><td> 15.3
+</td><td>
+</td></tr>
+<tr>
+<td> Feb 26
+</td><td>  F
+</td><td>  21
+</td><td>  Filtering, smoothing, prediction
+</td><td>  15.3
+</td><td>  Assignment #4 due
+</td></tr>
+<tr>
+<td> Mar 1
+</td><td>  M
+</td><td>  22
+</td><td>  Viterbi algorithm; HMMs
+</td><td>
+</td><td>
+</td></tr>
+<tr>
+<td> Mar 3
+</td><td>  W
+</td><td>  23
+</td><td>  HMM example, Kalman filters
+</td><td> 15.4
+</td><td>
+</td></tr>
+<tr>
+<td> Mar 5
+</td><td>  F
+</td><td>  24
+</td><td>  Exam review
+</td><td>
+</td><td>  Assignment #5 due Sunday.
+</td></tr>
+<tr>
+<td> Mar 8
+</td><td>  M
+</td><td>  25
+</td><td>  Concluding discussion
+</td><td>
+</td><td>  Final exam distributed.
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:4-0!1!0!!en!2!edit=0 and timestamp 20110221003112 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Schedule">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Schedule</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Schedule" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk"><a href="/~robotics/cs44/index.php/Talk:Schedule" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Schedule&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Schedule&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Schedule" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Schedule" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Schedule" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Schedule&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Schedule&amp;oldid=419" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 4 March 2010, at 11:53.</li>
+					<li id="viewcount">This page has been accessed 3,482 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.214 secs. --></body></html>

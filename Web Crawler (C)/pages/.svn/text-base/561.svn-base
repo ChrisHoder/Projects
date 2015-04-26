@@ -1,0 +1,273 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_9
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Lecture 9" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Lecture 9 - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Lecture_9";
+		var wgTitle = "Lecture 9";
+		var wgAction = "view";
+		var wgArticleId = "19";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 360;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lecture_9 skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Lecture 9</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Topics"><span class="tocnumber">1</span> <span class="toctext">Topics</span></a></li>
+<li class="toclevel-1"><a href="#Games_of_chance:__dice"><span class="tocnumber">2</span> <span class="toctext">Games of chance:  dice</span></a></li>
+<li class="toclevel-1"><a href="#Games_of_chance:_cards"><span class="tocnumber">3</span> <span class="toctext">Games of chance: cards</span></a></li>
+<li class="toclevel-1"><a href="#Game_theory:__non-zero_sum_games"><span class="tocnumber">4</span> <span class="toctext">Game theory:  non-zero sum games</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Normal_form_representation"><span class="tocnumber">4.1</span> <span class="toctext">Normal form representation</span></a></li>
+<li class="toclevel-2"><a href="#Strict_domination"><span class="tocnumber">4.2</span> <span class="toctext">Strict domination</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Topics" id="Topics"></a><h2> <span class="mw-headline">Topics</span></h2>
+<p>Covered today:  Games of chance (dice, cards) from 5.5, 5.6.2.  Basic game theory (class notes).
+</p>
+<a name="Games_of_chance:__dice" id="Games_of_chance:__dice"></a><h2> <span class="mw-headline">Games of chance:  dice</span></h2>
+<p>In some games of chance, after each of max or mins moves, there is a chance node that selects the outcome.  The book uses a slightly different example, backgammon, in which the dice are rolled before the turn, giving the available moves. 
+</p><p>In this case, we might use the "expectiminimax" algorithm to compute the "expected" value of the game, or of any node.  For a chance node leading to several terminal states, we compute the value as a sum of the (known) values for the terminal states, weighted by the probability of each outcome.  The value for the chance node is then pushed up through the tree just as it would be in minimax.
+</p><p>There are two potential issues to be concerned about.  First, there are many many possible states, since the branching factor of the chance node layers of the tree is equal to the number of possible outcomes of the chance event.  If two dice are rolled as the chance event, we have 6 x 6 possible outcomes, but half of those are symmetric (6, 1 is the same as 1, 6) so the branching factor is 18.  If we only care about the sum of the two dice, the branching factor is still 10.
+</p><p>The second potential issue is that the utility function has to be correct, if we can't go all the way to terminal nodes.  For deterministic games, scaling the utility function had no effect on the outcome of the game, as long as the preference order of the outcomes remained the same.  Page 179 in the book has a nice figure as an example.  
+</p><p>The final issue is computational.  Alpha-beta pruning is tricky, because instead of choosing a single outcome, a player has to look at all possible outcomes to compute a probability.  However, if the value function is bounded, we can still keep estimates on upper and lower bounds for the value of a node, and use this to prune using an alpha-beta strategy.
+</p>
+<a name="Games_of_chance:_cards" id="Games_of_chance:_cards"></a><h2> <span class="mw-headline">Games of chance: cards</span></h2>
+<p>In a card game, the cards are handed out randomly at the start of the match.  Sort of like a dice roll, but you only do it once.  However, there's a second difference.  You don't get to see the outcome of the dice roll.
+</p><p>The book suggests one (fallible) way of thinking about such games.  For each possible state after the deal, compute an optimal strategy.  Then value each move based on its relative value over all possible states.  There are two problems with this:
+</p>
+<ul><li> There are a lot of start states, and we still have to do minimax/alpha-beta over each start state.
+</li><li> You don't know which state you are in, and information matters!
+</li></ul>
+<p>First the first issue, the book suggests that you might do a monte-carlo simulation.  Pick some start states, play them out.  The more start states you sample randomly, the closer you get to the true value.
+</p><p>The second issue is trickier.  The book gives this example.  
+</p><p>Day 1:  Road a leads to gold.  Road b leads to a fork.  Go left from the fork and get a bigger pile of gold, go right and die.  (Optimal strategy, b)
+</p><p>Day 2:  Road a leads to gold.  Road b leads to a fork.  Go left from fork and die.  Go right and get a bigger pile of gold. (Optimal strategy, b)
+</p><p>Day 3:  It's either like day 1, or day 2, but you don't know which.
+</p><p>You might reason that b was the right choice for both of days 1 and 2, and day 3 is just like that, so choose b.  But the problem is that even when you get to the fork on day 3, you still don't know which outcome leads to death, and which to wealth.  Whoops!  You should probably be reasoning over belief states.
+</p>
+<a name="Game_theory:__non-zero_sum_games" id="Game_theory:__non-zero_sum_games"></a><h2> <span class="mw-headline">Game theory:  non-zero sum games</span></h2>
+<p>Quote:  "Oderint dum metuant", Lucius Accius.  (Let them hate, so long as they fear).
+</p><p>Prisoner's dilemma.  Two players, A, B.  Each either cooperates (C) or defects (D).  Scores look like this:  
+</p>
+<pre>
+            B Coop       B Defect
+
+A Coop       (-1, -1)     (-9, 0)
+ 
+A Defect     (0, -9)      (-6, -6)
+</pre>
+<p>payoff(A) + payoff(B) is different for each possible outcome, so it's a non-constant sum game.  For (confusing) historical reasons, we say it's a non-zero sum game.   
+</p><p>Is it possible to cooperate to raise payoff(A) + payoff(B)?  
+</p>
+<a name="Normal_form_representation" id="Normal_form_representation"></a><h3> <span class="mw-headline">Normal form representation</span></h3>
+<ul><li> n players, each of whom has a strategy space S_i.  
+</li><li> n payoff functions (one for each player) that take n strategies and returns a value.
+</li></ul>
+<p>Formally, a payoff function u is a mapping
+</p>
+<dl><dd><img class="tex" alt="&#10;u: S_1 \times S_2 \times S_3 \times ... S_n \rightarrow R&#10;" src="/~robotics/cs44/images/math/a/7/c/a7cbfab917055126e2ca394e32c2fa57.png" />
+</dd></dl>
+<p>Example, player A is player 1, player B is player 2:
+</p>
+<pre>
+n = 2
+S_1 = {c, d}
+S_2 = {c, d}
+
+u_1(c, c) = -1
+u_1(c, d) = -9
+u_1(d, c) = 0
+u_1(d, d) = -6
+u_2(c, c) = -1
+etc...
+</pre>
+<p>What would you do if you were player 1?
+</p>
+<a name="Strict_domination" id="Strict_domination"></a><h3> <span class="mw-headline">Strict domination</span></h3>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 16/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:19-0!1!0!!en!2!edit=0 and timestamp 20110220172323 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_9">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_9</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Lecture_9" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Lecture_9&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Lecture_9&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Lecture_9&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Lecture_9" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Lecture_9" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Lecture_9" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Lecture_9&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Lecture_9&amp;oldid=360" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 8 February 2010, at 23:56.</li>
+					<li id="viewcount">This page has been accessed 1,280 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.199 secs. --></body></html>

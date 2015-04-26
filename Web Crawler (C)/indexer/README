@@ -1,0 +1,13 @@
+
+
+indexer
+    - this folder contains functions specific to the indexer
+    - the make file for the indexer
+    - the test script for this solution
+    - test log
+
+All files should be kept in this arrangement inorder to work.
+
+A general note: while many functions are gropued into files some are in separate files so different files may rely on the same header file in the utl folder and the indexer folder. Also, since the header section of the HTML is not skipped, the indexer will catch javascript functions in a page which do not necessarily need to be within tags. This will allow some HTML tags to be in the indexer because they were win the javascript function. This could be avoided in almost all cases by skipping the header HTML.
+
+

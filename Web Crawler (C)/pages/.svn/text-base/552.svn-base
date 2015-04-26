@@ -1,0 +1,379 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Connect_four
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Connect four" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Connect four - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Connect_four";
+		var wgTitle = "Connect four";
+		var wgAction = "view";
+		var wgArticleId = "14";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 235;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Connect_four skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Connect four</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>Due Monday, February 8, before class.  Please see the front page of the course for instructions for submitting your homework.  
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Acknowledgments"><span class="tocnumber">1.1</span> <span class="toctext">Acknowledgments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Encoding_the_state"><span class="tocnumber">2</span> <span class="toctext">Encoding the state</span></a></li>
+<li class="toclevel-1"><a href="#Successor_function"><span class="tocnumber">3</span> <span class="toctext">Successor function</span></a></li>
+<li class="toclevel-1"><a href="#The_Interface"><span class="tocnumber">4</span> <span class="toctext">The Interface</span></a></li>
+<li class="toclevel-1"><a href="#Terminal_states:__Tie_State"><span class="tocnumber">5</span> <span class="toctext">Terminal states:  Tie State</span></a></li>
+<li class="toclevel-1"><a href="#Terminal_states:_Win_States"><span class="tocnumber">6</span> <span class="toctext">Terminal states: Win States</span></a></li>
+<li class="toclevel-1"><a href="#Minimax_and_Cutoff_Test"><span class="tocnumber">7</span> <span class="toctext">Minimax and Cutoff Test</span></a></li>
+<li class="toclevel-1"><a href="#Utility_function"><span class="tocnumber">8</span> <span class="toctext">Utility function</span></a></li>
+<li class="toclevel-1"><a href="#Evaluation_function"><span class="tocnumber">9</span> <span class="toctext">Evaluation function</span></a></li>
+<li class="toclevel-1"><a href="#Alpha-Beta_Pruning"><span class="tocnumber">10</span> <span class="toctext">Alpha-Beta Pruning</span></a></li>
+<li class="toclevel-1"><a href="#Extra_credit"><span class="tocnumber">11</span> <span class="toctext">Extra credit</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Introduction" id="Introduction"></a><h2> <span class="mw-headline">Introduction</span></h2>
+<p>In this project, you will write a program for playing Connect Four.  If you don't know the rules, go check out the <a href="http://en.wikipedia.org/wiki/Connect_Four" class="external text" title="http://en.wikipedia.org/wiki/Connect_Four" rel="nofollow">Connect Four wikipedia page</a>.  We'll start with the standard rules, with a seven-column, six-row grid.  Yellow plays first.  In the following picture, yellow played first, but red won with a diagonal connect-four.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs44/index.php/File:Connectfour.png" class="image" title="Connectfour.png"><img alt="" src="/~robotics/cs44/images/d/db/Connectfour.png" width="264" height="264" border="0" /></a></div></div>
+<a name="Acknowledgments" id="Acknowledgments"></a><h4> <span class="mw-headline">Acknowledgments</span></h4>
+<p>This assignment is a slight modification of a Connect-4 assignment by Afra Zomorodian.
+</p>
+<a name="Encoding_the_state" id="Encoding_the_state"></a><h2> <span class="mw-headline">Encoding the state</span></h2>
+<p>The first task is to write an abstract data type that will hold the state of the system, and allow for loading or saving states.  The design is up to you, but we suggest that the state be stored in a simple 2D array.  For initial input, as well as printing, we will use the following encoding:
+</p>
+<pre>
+-1234567-
+|.......|
+|.......|
+|.......|
+|.......|
+|..O....|
+|.OXXXO.|
+-1234567-
+</pre>
+<p>Here, a dot indicates an empty slot, and X and O correspond to the piece for the corresponding player.  Now write functions that <i>encode</i> and <i>decode</i> from this input into your encoding scheme.  In java, a <i>toString</i> method would be sufficient as your encoding method, and the decode method would take a reference to a String as input.
+</p><p>You will not use this data type directly as a node in your search tree -- instead, you'll have a search node that contains a reference to a state object.
+</p>
+<a name="Successor_function" id="Successor_function"></a><h2> <span class="mw-headline">Successor function</span></h2>
+<p>Write a function <i>legal_moves(s)</i> that returns a sorted list of legal moves, given state s.  A legal move is an integer from 1-7 that specifies a column that is not full.  
+</p><p>Now write a program called <i>legal-c4</i> that has a single argument, a file that contains the state, and prints a list of legal moves.  For example, suppose we have the following state in a file called <i>foo</i>.
+</p>
+<pre>
+-1234567-
+|X....O.|
+|X....O.|
+|X....O.|
+|X....O.|
+|X....O.|
+|X....O.|
+-1234567-
+</pre>
+<p>Then we would have:
+</p>
+<pre>
+~&gt; legal-c4 foo
+2 3 4 5 7
+</pre>
+<p>Next, implement a function called <i>do-move(s, m)</i> that takes a state <i>s</i> and a move <i>m</i> as input and applies the move <i>m</i> to the state <i>s</i>.  In this case, we will be using the approach of generating the successor by modifying the current state directly without copying it.  This will save us a lot of memory in the minimax search you will write later in the assignment.
+</p><p>If the move is not legal, the function should behave appropriately (it is your choice what this behavior is, as long as it is not "crash the program").  
+</p><p>Now, write another function <i>undo-move(s, m)</i> that takes a state <i>s</i> and a move <i>m</i> and undoes the move <i>m</i> returning the state to it's predecessor state.  This function should also behave gracefully if the move cannot be undone.  
+</p>
+<a name="The_Interface" id="The_Interface"></a><h2> <span class="mw-headline"> The Interface</span></h2>
+<p>For simplicity, assume player <i>X</i> always begins the game.  Write a program c4 that has an optional parameter, which is the initial state in a file.  For example,
+</p>
+<pre>
+~&gt; c4 foo
+</pre>
+<p>loads the initial state from a file <i>foo</i> and proceeds.  Otherwise,
+</p>
+<pre>
+~&gt; c4
+</pre>
+<p>starts with the initial state with no markers played.
+</p><p>When the program starts, it should give the user the following options:
+</p><p>1)  Human vs. Human.  In this case, the computer immediately allows the two players to start playing, starting with player X.
+</p><p>2)  Human vs. Computer.  In this case the computer asks the human if the human wishes to go first and be Player X, or second and be player O.  
+</p><p>3)  Computer vs. Computer.  In this case, the computer plays both sides, but asks the user to press enter to see the next move.
+</p><p>4)  Quit.  The player may quit the program.
+</p><p>After giving the options, the program should then play a game of Connect-4.  For now, the program should respond to options 2 and 3 with a message saying it is not implemented yet.
+</p>
+<a name="Terminal_states:__Tie_State" id="Terminal_states:__Tie_State"></a><h2> <span class="mw-headline">Terminal states:  Tie State</span></h2>
+<p>We begin by making a Human vs. Human game possible.  Before each move, the program draws the current state.  It then checks to see if any more moves are possible using the successor function.  If the function returns no moves, the program should print a message that declares a tie and end the game.  Otherwise the program asks the human player(s) to enter a legal move, the number of a non-empty column.  
+</p><p>Example move from the middle of a human vs. human game:
+</p>
+<pre>
+-1234567- 
+|.......| 
+|.......| 
+|.......| 
+|.......| 
+|..O....| 
+|.OXXXO.| 
+-1234567-
+
+Please enter Player X’s next move (1-7): 0 (enter) 
+0 is not a legal move! Please enter Player X’s next move (1-7): 4 (enter)
+
+-1234567- 
+|.......| 
+|.......| 
+|.......| 
+|.......| 
+|..OX...| 
+|.OXXXO.| 
+-1234567-
+
+Please enter Player O’s next move (1-7): 4 (enter)
+
+-1234567- 
+|.......| 
+|.......| 
+|.......| 
+|...O...| 
+|..OX...| 
+|.OXXXO.| 
+|1234567-
+</pre>
+<p>Notice that the program obtains a legal move by insisting on it, printing an error message whenever the user inputs a non-legal move.
+</p>
+<ul><li> After you are done with this portion of the project, you should be able to play a Human vs. Human game exactly as you would with a Milton-Bradley set.
+</li></ul>
+<a name="Terminal_states:_Win_States" id="Terminal_states:_Win_States"></a><h2> <span class="mw-headline">Terminal states: Win States</span></h2>
+<p>Above, we checked for one type of terminal state:  a draw state.  The program does not recognize when one of the players wins.  You will add this check.
+</p><p>Let a <i>segment</i> be a contiguous set of four board cells, vertically, horizontally, or diagonally.  A <i>win</i> is a segment that contains four disks of the same color.  Write a boolean function <i>isWin(s)</i> that returns whether a board state is a win for one of the players.  
+</p><p>For minimax, we only require that your program detect a win, but it may be easier to debug your program if IsWin returns additional information, such as who is winning or where the win is on the board.  
+</p>
+<ul><li> You should now be able to play a Human vs. Human game, where the program checks to see if the game has ended in a win or a draw, stops the game, and announces the result.
+</li></ul>
+<a name="Minimax_and_Cutoff_Test" id="Minimax_and_Cutoff_Test"></a><h2> <span class="mw-headline">Minimax and Cutoff Test</span></h2>
+<p>For the computer player, you will implement iterative deepeing minimax search with alpha-beta pruning.  Begin with implementing depth-limited minimax search.  The code should look like the pseudo-code for minimax in the book.  The minimax search should stop searching provided the <i>cutoff-test</i> returns true:
+</p>
+<dl><dd>1. We have reached a terminal state (a win or a draw)
+</dd></dl>
+<dl><dd>2. We have reached the specified <i>maximum depth</i>.
+</dd></dl>
+<dl><dd>3. We have visited the specified <i>maximum number of states</i>.  
+</dd></dl>
+<p>We count each state visited by min or max in any run of the depth-limited search.  That is, we will count a state multiple times if it is multiply generated.  This is one way to limit the amount of time the computer will spend discovering the next move.  
+</p><p>Once you have depth-limited minimax working, you just need to put a loop around it for iterative deepening.
+</p>
+<a name="Utility_function" id="Utility_function"></a><h2> <span class="mw-headline">Utility function</span></h2>
+<p>Since we are cutting off the search, we will not always reach a terminal state, so we need to take care of what we return as utility.  For now, you should return the correct values for terminal states:  a large positive utility for a win for MAX (such as Integer.MAX_VALUE in Java), its negative for a win for MIN,and zero for a draw.  For other states, return a <i>random</i> value r, where r is smaller than the value of MAX and larger than the value for MIN. 
+</p><p>Play with different values for the two parameters: vary maximum depth and the maximum number of states (1000 to a few million) to get a feeling of the speed of the algorithm. Record your observations in your document. Also, have the program print the number of states it visited as well as the maximum depth it reached before making its move.
+</p>
+<ul><li> You should now be able to play the computer, although the computer will usually play a random move. You should also be able to have the computer play itself, although both computer players will play randomly. All the options of your program are now playable. You should be able to play a game with human players, human versus computer, and computer versus computer. Make sure your program correctly detects wins by either player and all draws.
+</li></ul>
+<a name="Evaluation_function" id="Evaluation_function"></a><h2> <span class="mw-headline">Evaluation function</span></h2>
+<p>We need to have a smarter evaluation function to guide our Minimax search, given that we are cutting off search early. Below, we describe one such function, due to Ronald Rivest. Recall the definition of a segment from Section 2.6. For any segment s, we define the evaluation function e(s) to be:
+</p>
+<ul><li> 0, if s contains no disks or disks from both players, 
+</li><li> 1 if s contains one X,	
+</li><li> 10 if s contains two X’s, 
+</li><li> 100 if s contains three X’s.
+</li></ul>
+<p>If the tokens are O, the function is defined similarly but with negative values. For instance, a segment containing two O’s and no X’s will have value −10.  Write a function eval(s) that returns the evaluation function for state s as follows:
+</p>
+<ul><li> For a non-win state, it returns the sum, over all segments s on the board, of e(s). Note that this evaluation function is a weighted linear sum of a set of features, such as the number of segments containing only two X’s with weight 10, or three O’s with weight −100.
+</li><li> For a win state, it should return the utility value as in the previous section.
+</li></ul>
+<p>There are two ways of computing the evaluation function: We may compute it at each state, or we may maintain the set of features as we make the moves. Describe your implementation in your document. Write a program called eval-c4 that takes a state and returns the evaluation function for the X player. Use this function to debug your evaluation function before moving on.
+</p>
+<ul><li> After testing your evaluation function using eval-c4 and multiple boards, replace the random evaluation function with the new evaluator. Also, print the evaluation function value for the winning move on the screen, in addition to the maximum depth reached as well as the number of visited states. Now, play the computer again for signs of intelligence. With sufficient depth or number of visited states, the program should not lose stupidly and should always take a win. It should also be not easy to beat. Use the fact that you may input any initial state to check for this:  The computer should try to block wins and also take wins.
+</li></ul>
+<a name="Alpha-Beta_Pruning" id="Alpha-Beta_Pruning"></a><h2> <span class="mw-headline">Alpha-Beta Pruning</span></h2>
+<p>Make a copy of your minimax functions (don't destroy the original functions!) and use the copy to extend your minimax program to include alpha-beta pruning.  Now, play with the maximum depth and number of states to see if you are able to search deeper. In the best case, you should be able to search twice as deep.  Record your observations in your document.
+</p><p>Now you have written two different AIs.  Extend your Connect-4 program to have a selectable AI opponent.  Play minimax against alpha-beta.  Record your observations.
+</p>
+<ul><li> You have now completed the assignment. Your should have the following programs: c4, legal-c4, win-c4, and eval-c4.
+</li></ul>
+<a name="Extra_credit" id="Extra_credit"></a><h2> <span class="mw-headline">Extra credit</span></h2>
+<p>Extend the problem or your solution in an interesting way.  For example, you might
+</p>
+<ul><li> Write an AI that can consistently beat the "vanilla" alpha-beta approach described above.  Some ideas might be to add a transition table (using a hash set), or to improve the evaluation function to re-order the moves tried in alpha-beta pruning.
+</li><li> Write an AI for the <i>push-out</i> variant of Connect-4.  Discuss how deep your AI is able to search for push-out, in some reasonable amount of time.
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 31/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:14-0!1!0!!en!2!edit=0 and timestamp 20110220172254 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Connect_four">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Connect_four</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Connect_four" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Connect_four&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Connect_four&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Connect_four&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Connect_four" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Connect_four" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Connect_four" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Connect_four&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Connect_four&amp;oldid=235" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 28 January 2010, at 14:05.</li>
+					<li id="viewcount">This page has been accessed 2,518 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.213 secs. --></body></html>

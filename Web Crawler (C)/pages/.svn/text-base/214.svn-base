@@ -1,0 +1,90 @@
+http://www.cs.dartmouth.edu/~cbk/projects.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="abs.php#proteins09"><img src="img/pub/proteins09.png" alt="Proteins09" /></a><div><a href="abs.php#proteins09">Pubs | Proteins-09</a>: protein-protein graphical models</div></div></div>
+<div id="projbody"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php" class="navhere" >projects</a></span><span><a href="classes.php"  >classes</a></span><span><a href="pubs.php"  >pubs</a></span><span><a href="news.php"  >news</a></span>
+</div>
+	<div id="projcontent">	
+	<p>In general, my lab's research focuses on integrated
+computational-experimental approaches to the structural and functional
+understanding of and control over the molecular machinery of the cell.
+We are developing algorithms and systems to automatically plan
+experiments, predict outcomes, interpret data, revise models, and so
+forth.  The figures below point to pages with high-level descriptions
+of some of our current projects.</p>
+
+<p>This work is funded in part by the following:</p>
+<ul>
+<li>An NSF III grant "Analysis of multi-dimensional protein design spaces with Pareto optimization of experimental designs", Collaborative with Alan Friedman (Purdue), 2010-2013.</li>
+<li>An NSF CCF grant "Algorithmic problems in protein structure studies", collaborative with Gopal Pandurangan (NTU Singapore), 2009-2012.</li>
+<li>An NSF III grant "Integration, prediction, and generation of
+  mixed mode information using graphical models, with applications to
+  protein-protein interactions", collaborative with Naren Ramakrishnan (Va. Tech),
+  Chris Langmead (CMU), and Alan Friedman (Purdue), 2009-2012.</li>
+<li>An NIH R01: "Automated NMR assignment and protein structure determination" to B.R. Donald (Duke), 2007-2011.</li>
+</ul>
+
+<p>We gratefully acknowledge previous support from the following:</p>
+<ul>
+<li>A Comp-X grant from the Neukom Institute, to C. Bailey-Kellogg and K. Griswold (Engineering, Dartmouth), 2009-2010.</li>
+<li>An Alfred P. Sloan Research Fellowship, to C. Bailey-Kellogg, 2005-2009.</li>
+<li>An NSF SEIII grant: "Integration of multimodal
+experiments for protein structure", to C. Bailey-Kellogg, B.A. Craig
+(Statistics, Purdue) and A.M. Friedman (Biological Sciences,
+Purdue), 2004-2008.</li> 
+<li>An NSF CAREER award: "Sparse spatial reasoning for
+high-throughput protein structure determination", to C. Bailey-Kellogg, 2003-2008.</li>
+<li>An award from the Showalter Foundation: "Distribution functions of
+standard free energies of protein-protein association", to
+C. Bailey-Kellogg and M. Laskowski (Chemistry, Purdue), 2003-2004.</li>
+<li>A grant from Purdue's Computing Research Institute, through the
+PRF-SIRG program: "Multimodal discrimination of protein fold", 
+to C. Bailey-Kellogg and A. Friedman (Biological Sciences, Purdue), 2003-2004.</li>
+</ul>
+
+	</div>
+	</div>
+
+	<div id="projnav">
+	<h4>Current projects</h4>
+	<ul class="pix">
+		<li><a href="multimodal.php"><img src="img/proj/multimodal-small.png" alt="multimodal" title="Multimodal protein structure"  /></a></li>
+		<li><a href="nmr.php"><img src="img/proj/nmr-graph-small.png" alt="nmr" title="NMR assignment"  /></a></li>
+		<li><a href="oligomer.php"><img src="img/proj/2hyn-small.jpg" alt="oligomer" title="Protein complexes"  /></a></li>
+		<li><a href="mrf.php"><img src="img/proj/mrf-small.png" alt="graphical models" title="Protein graphical models"  /></a></li>
+		<li><a href="recombination.php"><img src="img/proj/recomb-small.png" alt="recombination" title="Protein recombination"  /></a></li>
+		<li><a href="deimmunization.php"><img src="img/proj/deimm-small.png" alt="deimmunization" title="Protein therapeutic deimmunization"  /></a></li>
+	</ul>
+	</div>
+
+<div id="footer"></div>
+</div>
+</body>
+</html>
+	

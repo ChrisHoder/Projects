@@ -1,0 +1,251 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug02
+3
+<html><head><title>August 2: High Level Languages</title></head>
+
+<body>
+
+<h1>August 2: High Level Languages</h1>
+
+<hr><h2>0) Recap</h2><hr>
+
+Last Friday we developed the niotion of a stack.  We saw that at the
+archutecture level, we implement a stack by reserving space in memory
+for the stack and keeping a <b>stack pointer</b> that points to the
+top of the stack.  (We'll use <b>R6</b> for the stack pointer.)  
+
+<p>Finally, we talked about <i>overflow</i> and <i> underflow</i> and
+saw hot to implement our Push/Pop operations to avoid these problems.
+
+<p>In the real world, stack operations are often handled for you by
+the architecture.  It's a great example of <i>software driving
+hardware development.</i>
+
+<p>Student suggestions for LC-3 stack ops.
+
+<hr><h2>1) Handling Interrupts</h2> Last week we also talked about how
+to generate interrupts, and we said we'd handle the interrupts by:
+<ul>
+<li>saving relavent state
+<li>loading interrupt vector
+<li>running interrupt subroutine
+<li>restoring relevant state
+</ul>
+
+The state we're saving gets saved on a stack, but since we're handling
+the I/O routine (which we'd like to keep separate from user code) the
+LC-3 saves interrupt state on a separate stack called
+the <b>supervisor stack</b>.  The space for this stack lives in the OS
+code.
+
+<p>What do we need to save?
+<ul>
+<li>PC
+<li>PSR (Process Status Register) 
+<li>maybe GP registers...
+</ul>
+
+And wait!  2 stacks?
+<ul>
+<li>better have registers to save user, supervisor stack pointers.
+</ul>
+
+<hr>
+<h3>The Full Picture on Interrupts (at least for the LC-3)</h3>
+<hr>
+<ol>
+<li>Check priority
+<li>If in user mode:
+  <ul>
+    <li>change to supervisor mode
+    <li>save SP to saved_usp
+    <li>load SP from saved_ssp
+  </ul>
+<li>Push PC,PSR onto (supervisor) stack
+<li>look up interrupt vector, execute interrupt subroutine.
+<li><b>RTI</b> -- return from interrupt  (LC-3 ISA instruction)
+</ol>
+
+<hr>
+Now you have enough to grok the full LC-3 memory map (Fig A.1):<p>
+<centerline><img src="figA-1.jpg" alt="oops"></imb></centerline>
+
+<p>
+<hr><h2>2) High-level languages</h2><hr> Assembly is nice since it
+gives us an intuitive way of expressing instructions without having to
+program in 0's and 1's; however, it still leaves a lot to be desired.
+
+<p>(discuss desired high-level language features)
+
+<p>Section 11.2 of the P&amp;P book talks about several nice features
+of high-level languages.
+
+<p>
+<hr><h2>3) Introduction to C</h2><hr>
+
+C was developed in 1972 by Dennis Ritchie at Bell Labs for writing
+compilers and operating systems.  (Apparently he got frustrated and
+annoyed at writing the OS in assembly code)
+
+<p>
+Where it's still used:
+<ul>
+<li>operating systems
+<li>network code
+<li>anywhere you need something fast
+</ul>
+
+
+We'll be using (a simple subset of) it in this class, because for a
+high-level language, it's still fairly close to the metal so it's good
+illustrating the hardware/software interface.
+
+<hr><h2>4) Compiling C Programs</h2><hr>
+
+<p>The tool chain, in theory</p>
+<ul><li>Pre-processor</li></ul>
+
+
+<ul><li>Compilation</li></ul>
+
+
+<ul><li>Linking (including to library code that provides useful services---and may even trap down to the OS)</li></ul>
+
+
+
+<p>Fig 11.2:</p>
+<p><img src="fig11-2.jpg" alt="oops" width="50%"></p>
+
+
+
+<hr><p>The tool chain, in practice (in general)</p>
+
+<ul><li>typically, a syntax-aware editor, like emacs</li></ul>
+
+
+<ul><li>gcc (preproc/compiler/linker all rolled into one)</li></ul>
+
+
+<ul><li>some type of debugger, such as gdb</li></ul>
+
+
+<ul><li>or maybe a nifty IDE that packages all this functionality together</li></ul>
+
+
+
+<hr><p>The tool chain, for us</p>
+
+<ul><li>"lcc": compiles subset of C to LC-3 assembler</li></ul>
+
+
+<ul><li>no OS (except for the basic trap handlers)</li></ul>
+
+
+<ul><li>some library code</li></ul>
+
+
+
+
+<hr><h2>5) C Program Structure</h2><hr>
+
+<p>Fig 11-3</p>
+<hr>
+<pre>
+/*  
+ *
+ *  Program Name : countdown, our first C program             
+ *                                                           
+ *  Description  : This program prompts the user to type in 
+ *  a positive number and counts down from that number to 0,
+ *  displaying each number along the way.                      
+ *
+ */
+
+/* The next two lines are preprocessor directives */
+#include &lt;stdio.h&gt;  
+#define STOP 0      
+
+/* Function    : main                                     */
+/* Description : prompt for input, then display countdown */
+int main()
+{
+  /* Variable declarations */
+  int counter;         /* Holds intermediate count values */
+  int startPoint;      /* Starting point for count down   */
+  
+  /* Prompt the user for input */
+  printf("===== Countdown Program =====\n");
+  printf("Enter a positive integer: ");  
+  scanf("%d", &startPoint);
+  
+  /* Count down from the input number to 0 */
+  for (counter = startPoint; counter >= STOP; counter--)
+    printf("%d\n", counter);
+}
+</pre>
+<hr>
+<p>talk through basic pieces....</p>
+<ul>
+<li>comments -- start with "/*", end with "*/".  In between are
+comments.  Comments can be across multiple lines.
+<li>preprocessor directives.  start with "#".  The "#include" incudes
+the entire contents of stdio.h.  In this case, this includes
+definitions for all the I/O functionality.  "#define" replaces each occurence of STOP with 0.
+<li>main() -- the main (i.e. starting) function for your executable.  When your program runs, it will start in this function (after preprocessing and other behind-the-scenes stuff).  main must return an int.
+<li>curly braces -- {...} denote blocks of code, for functions, if statements, for loops, etc.  (Similar to Java)
+<li>keywords (e.g. "int", "main", "for", ...) words the C language reserves for itself and can't be used for e.g. variable names.
+<li> function calls -- similar to Java methods  (without the object-oriented part)
+</ul>
+
+
+<hr>
+<p>Where we're going:  In the next couple of classes, we'll see all of the following: 
+
+<ul>
+<li>local, global variables
+<li>simple I/O
+<li>integer data types
+<li>arithmetic operators
+<li>control statements -- if,else, for, while
+<li>subroutines
+<li>pointers
+<li>recursion
+<li>basic data structures
+</ul>
+
+In short: many (but not all) of the features of C.  More importantly,
+we'll see how the LC-3 handles it!
+
+<hr><h2>6) Some Simple Examples</h2><hr>
+
+<p>Two programs that do nothing.</p>
+<p><a href="code/null1.c"><b>code/null1.c</b></a></p>
+
+
+<p><a href="code/null1.asm"><b>code/null1.asm</b></a></p>
+
+
+<p><a href="code/null2.c"><b>code/null2.c</b></a></p>
+
+
+<p><a href="code/null2.asm"><b>code/null2.asm</b></a></p>
+
+
+
+<hr><p>Data types we'll care about</p>
+
+<ul><li>int</li></ul>
+
+
+<ul><li>char</li></ul>
+
+
+<ul><li>character string</li></ul>
+
+<p><a href="code/null3.c"><b>code/null3.c</b></a></p>
+
+
+<p><a href="code/null3.asm"><b>code/null3.asm</b></a></p>
+
+
+</body>
+</html>

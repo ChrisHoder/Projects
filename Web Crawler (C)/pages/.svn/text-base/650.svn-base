@@ -1,0 +1,86 @@
+http://www.cs.dartmouth.edu/~cs110/ScribeNotes
+3
+<html> <head>
+<title>CS 110 Scribe Notes</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<h1><a href="index.html">CS 110</a><br>
+Winter 2010<br>
+Writing, Presenting, and Evaluating Technical Papers in Computer Science<br>
+<i>Scribe Notes</i></h1>
+
+<hr>
+
+Click <a href="cs110-mac.tex">here</a> for the LaTeX macro file
+cs110-mac.tex.  Download it and copy it into your directory.  Start
+your .tex file with
+<xmp>
+\documentclass[11pt]{article}
+\input{cs110-mac}
+
+\begin{document}
+
+\lecture{X}{Y}{X}
+</xmp>
+where X is the lecture number, Y is the date of the lecture, and Z is
+your name.
+
+<hr>
+
+<ul>
+
+  <li> Lecture 1, January 4, scribed by Jon Denning: <a
+       href="0104.txt">LaTeX source</a> | <a href="0104.pdf">PDF</a>
+
+  <li> Lecture 2, January 6, scribed by Andrew Cherne: <a
+       href="0106.txt">LaTeX source</a> | <a href="0106.pdf">PDF</a>
+
+  <li> Lecture 3, January 8, scribed by Gabriel A. Weaver: <a
+       href="0108.txt">LaTeX source</a> | <a href="0108.pdf">PDF</a>
+
+  <li> Lecture 4, January 11, scribed by Priya Natarajan: <a
+       href="0111.txt">LaTeX source</a> | <a href="0111.pdf">PDF</a>
+
+  <li> Lecture 5, January 13, scribed by Jason Reeves: <a
+       href="0113.txt">LaTeX source</a> | <a href="0113.pdf">PDF</a>
+
+  <li> Lecture 6, January 14, scribed by Ranganath Kondapally: <a
+       href="0114.txt">LaTeX source</a> | <a href="0114.pdf">PDF</a>
+
+  <li> Lecture 7, January 15, scribed by Robin Chhetri: <a
+       href="0115.txt">LaTeX source</a> | <a href="0115.pdf">PDF</a>
+
+  <li> Lecture 8, January 20, scribed by Joshua Brody: <a
+       href="0120.txt">LaTeX source</a> | <a href="0120.pdf">PDF</a>
+
+  <li> Lecture 9, January 21, scribed by Umang Bhaskar: <a
+       href="0121.txt">LaTeX source</a> | <a href="0121.pdf">PDF</a>
+
+  <li> Lecture 10, January 22, scribed by Brandon Kerr: <a
+       href="0122.txt">LaTeX source</a> | <a href="0122.pdf">PDF</a>
+
+  <li> Lecture 11, January 27, scribed by Rouslan Solomahkin: <a
+       href="0127.txt">LaTeX source</a> | <a href="0127.pdf">PDF</a>
+
+  <li> Lecture 12, January 28, scribed by Joe Cooley: <a
+       href="0128.txt">LaTeX source</a> | <a href="0128.pdf">PDF</a>
+
+  <li> Lecture 13, January 29, scribed by Nimit Dhulekar: <a
+       href="0129.txt">LaTeX source</a> | <a href="0129.pdf">PDF</a>
+
+  <li> Lecture 16, February 5, scribed by Geethmala Sridaran: <a
+       href="0205.txt">LaTeX source</a> | <a href="0205.pdf">PDF</a>
+
+  <li> Lecture 17, February 8, scribed by Daniel Peebles: <a
+       href="0208.txt">LaTeX source</a> | <a href="0208.pdf">PDF</a>
+
+</ul>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Wed Mar  3 22:47:32 2010
+<!-- hhmts end -->
+</body> </html>

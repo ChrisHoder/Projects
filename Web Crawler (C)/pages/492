@@ -1,0 +1,282 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July14
+3
+<html><head><title>July 14: Traffic Lights and ROM</title></head>
+
+<body>           
+<h1>July 14: Traffic Lights and ROM</h1>
+<h2>0) Recap</h2>
+<ul>
+<li><b>Combinatorial Logic:</b> outputs are function only of inputs.
+<li><b>Sequential Logic:</b> output is function of input, stored information.
+<li><b>Finite State Machines</b> give us a systematic way of describing what should happen in a circuit.
+</ul>
+Finite State Machines consist of:
+<ul>
+<li>directed graph (not just a DAG -- cycles are ok)
+<li><b>states</b> represent <i>everything</i> about system
+<li><b>transitions</b> tell you how to get from one state to another
+</ul>
+
+<hr>
+<h2>1) Traffic Lights</h2> 
+
+We'd like to implement circuitry for a simple set of traffic lights at
+a regular ol' intersection.  (i.e. the north and south bound lanes
+travel at the same time, as do East-West traffic.  no left-hand turn
+lanes, etc.)
+
+<center>
+<img src="light-demo.jpg" alt="oops"></img>
+</center>
+<p>
+
+Ideally, we'd have it so if the EW light is green, the NS light is red.  In this way, we cause no car crashes, which is a desirable thing. <p>
+Last time, we broke the problem down into the following states:
+<ul>
+<li> Red-Red, EW was green last
+<li> Red-Green
+<li> Red-Yellow
+<li> Red-Red NS was green last
+<li> Green-Red
+<li> Yellow-Red
+</ul>
+where the colors represent state of the the EW and NS lights
+respectively.  (So, e.g. Red-Yellow means "EW light red, NS light yellow")
+
+
+We also saw that the state machine should transition from one state to
+the next, and then back to the beginning.
+<p>
+<hr><h2>2. The State Machine Approach</h2><hr>
+<h3>OK, how to build as a circuit?</h3><hr>
+Vipul's  <a href="circuits/vipul.circ"><b>solution.</b></a>
+<hr>
+The textbook approach:
+<ul><li>encode the state as some type of binary string</li></ul>
+
+
+<ul><li>store it in a storage element</li></ul>
+
+
+<ul><li>for each state, have a subcircuit that drives the outputs</li></ul>
+
+
+<ul><li>...and drives the "next state"</li></ul>
+
+
+
+<hr><p>Uh-oh.  How and when do we go to the next state?</p>
+
+
+<hr><p>Example: a traffic light, FSM version:</p>
+
+
+<p><img src="FSM_start.jpeg" alt="oops" width="90%"></p>
+
+
+<p><a href="circuits/light-fill.circ"><b>light-full.circ</b></a>  (this
+contains several traffic light circuits.)</p>
+
+<hr><h2>3) Some tricks</h2><hr>
+<p>
+For this circuit, it will be helpful to be able to play around a lot with open lines.
+
+Real logic (and LogicWorks) lets you do things such as diodes (which
+pass zeros through, but turn ones into floating):
+<center>
+<img src="diode-lw.jpg">
+</center>
+<p>
+<a href="circuits/diode-lw.cct"><b>diode-lw.cct</b></a>
+<p>
+<hr>
+<p>
+We can simulate this behavior in LogiSim:
+<center>
+<img src="diode.jpg">
+</center>
+<a href="circuits/diode-lw.circ"><b>diode-lw.circ</b></a>
+<p>
+<hr>
+<hr>
+<p>
+In real logic (and LogicWorks), we can use a pull-up resistor to turn a floating back to a 1, but leave zeros as zeros.
+<center>
+<img src="pull-up-lw.jpg">
+</center>
+<p>
+<a href="circuits/pull-up-lw.cct"><b>pull-up-lw.cct</b></a>
+<p>
+<hr>
+<p>
+We can (sort of) simulate this behavior in LogiSim:
+<center>
+<img src="pull-up.jpg">
+</center>
+<a href="circuits/pull-up.circ"><b>pull-up.circ</b></a>
+<p>
+(But unlike a pull-up resistor, this doesn't change the floating line....)
+
+<hr><h2>4) The Microcode Approach</h2><hr>
+
+<p>As computer scientists, we like to write programs.</p>
+<hr><p>How would you write a PROGRAM that drove the traffic light?</p>
+
+
+<hr><p>First, we need to think about the "instructions."  </p>
+
+<p>Since it's easier to think about "turning a light on" than "keeping it on," we'll add a latch</p>
+<p><a href="circuits/light-demo2.circ"><b>light-demo2.circ</b></a></p>
+<center>
+<img src="light-demo2.jpg">
+</center>
+<p>
+
+
+
+<hr><p>Maybe we can add dual instructions.  "Do this AND do that."</p>
+
+
+<hr><p>Work through a program for the traffic light</p>
+
+
+<hr><h2>OK, how to build as a circuit?</h2><hr>
+
+<p>We need the part that executes the "instructions"</p>
+
+<center>
+<img src="bottom.jpg">
+</center>
+
+
+<hr><p>We need to strobe a set of lines, one for each in the program.  How can we do that?</p>
+
+<center>
+<img src="top.jpg">
+</center>
+
+
+
+<hr><p>Then, we need to wire in the program</p>
+
+<p><a href="circuits/light-state2A.circ"><b>light-state2A.circ</b></a></p>
+
+
+<p><img src="light-state2A.jpg" alt="too bad" width="90%"></p>
+
+
+
+<hr><p>Oops, how are we going to "go to line 0"?</p>
+
+
+<hr><p></p>
+
+
+<p><a href="circuits/light-full.circ"><b>light-full.circ</b></a>  (full-lights2)</p>
+
+
+<hr><h2>5) The Program</h2><hr>
+
+<p>What is the program?</p>
+<p>We could think of the instruction code as the bit-sequence across the the control lines.</p>
+
+
+
+<hr><p>How could we write our program out?</p>
+
+<p>The hard way: figure out by hand what each instruction word is.</p>
+<p>The easy way: take the circuit we built and READ the words off of it!</p>
+
+
+<p><a href="circuits/light-full.circ"><b>light-full.circ</b></a> (full-lights3)</p>
+
+
+
+<hr><h2>6) ROM</h2><hr>
+
+<p>We "played the program" by:</p>
+<ul><li>feeding the address into an active-low decoder</li></ul>
+
+
+<ul><li>for each line coming out of the decoder, we wired in the instruction word....</li></ul>
+
+<ul><li>...using diodes, to get rid of OR gates and also to keep from creating short circuits between the various lines!</li></ul>
+
+
+<hr><p>but we could look at this again, as a box that takes an address in on one side and spits out a control word on the other</p>
+
+
+<hr><p>Suppose we had a magic box to DO this sort of thing....</p>
+
+<p><img width="90%" src="rom.jpg" alt="too bad"></p>
+
+
+<p>Actually, we do.  "ROM"---read-only memory.    There are a variety of technologies out there now, some with various ways of programming and then perhaps reprogramming it, thus leading to more complicated acronyms. ("PROM."  "EPROM". "EEPROM"  Etc.)</p>
+<p>...and LogiSim has a "ROM" component...</p>
+<hr>
+Tying things together.  Think of the traffic light as:
+<ul>
+<li>system run by a set of 13 control lines.
+<li>one instruction == a specific configuration of the 13 lines
+<li>one program == a sequence of instructions.
+</ul>
+It's possible to wrap this sequence of instructions into a ROM...and
+replace deocder/diodes/gates with it!
+
+<p><h3>It's starting to look like computation, eh?</h3></p>
+
+<p>
+<hr><h2>7) Abstracting RAM</h2><hr>
+
+<p>We built "big" RAM modules out of flip-flops (and noted how they
+can also be built from capacitors)</p>
+<p>You also probably played with one for homework 2 when you tested your RAM.</p>
+<hr><p>Here's one from LogiSim</p>
+
+<p><a href="circuits/ramchip.circ"><b>ramchip.circ</b></a></p>
+<center>
+<img src="ramchip.jpg" width="90%" alt="oops"></img>
+</center>
+<p>
+
+<p>(Work through the idea of writing to it and reading from it.)</p>
+<hr>
+<p>But suppose we want the abstraction of an "address space" even
+bigger than a single RAM chip.  </p>
+
+
+<p>And we also want to do this in a nice, scalable, pluggable way:
+just insert more RAM modules into some common lines</p>
+<hr>
+
+<p>These common lines are called "buses."  In a "textbook" level, we call them things like</p>
+
+<ul><li>address bus (send out the address)</li></ul>
+<ul><li>data bus (receive the data, or send it out, if it's a write)</li></ul>
+<ul><li>control bus (e.g., are we reading or writing now?)</li></ul>
+
+<p>But as we'll see later in a Tanenbaum reality check, there are many
+specific formats of buses (you've probably heard the acronyms) and
+various implementation tricks</p>
+<hr>
+<p>
+Let's try extending to a 16-bit address bus.  
+<p>
+<a href="circuits/ramchip2.circ"><b>ramchip2.circ</b></a>
+<p>
+			   
+
+<p>So, let's try making some buses and throwing in some RAM chips.  Will this work?</p>
+
+<p><a href="circuits/ramfull0.circ"><b>ramfull0.circ</b></a></p>
+
+
+<center>
+<img src="ramfull0.jpg" width="90%" alt="oops"></img>
+</center>
+
+
+</body>
+</html>
+
+

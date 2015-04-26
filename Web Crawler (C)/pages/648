@@ -1,0 +1,39 @@
+http://www.cs.dartmouth.edu/~cs105/Homework/hw.08.html
+3
+<html><head>
+<title>CS105 02F: Homework 8</title>
+</head><body>
+
+<h1>
+<a href="index.html">CS105 02F</a>: Homework 08
+</h1>
+<strong>Assigned:</strong>
+Saturday, Feb. 27, 2010<br>
+<strong>Due:</strong>
+Monday, March 8, 2010<br>
+
+<ol>
+<li> KT 11.1. For part (a) explain how to get examples that 
+     are arbitrarily close to 2 times optimal.
+<li> KT 11.4.  Give an example that achieves a factor of 
+     b times optimal.
+<li> KT 11.5
+<li> KT 11.8
+<li> KT 11.10
+<li> KT 11.11
+<li> KT 12.2
+</ol> 
+
+<strong>Extra Credit</strong>
+<ol>
+<li> Do problem 1 with the following modification to the algorithm:
+All of the trucks are lined up at the loading dock, and you put the 
+next item into the first truck into which it will fit.  All of the 
+trucks leave at the end.  For part (a) give an example that is 5/3 times
+optimal.  For lots more extra credit give an example that is 17/10 times 
+optimal.
+</ol> 
+
+</body>
+</html>
+

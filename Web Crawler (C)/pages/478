@@ -1,0 +1,101 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw4
+3
+<html> <head>
+<title>CS37: Homework 4</title>
+</head>
+ 
+<body>
+
+<h1>Homework 4</h1>
+
+Published: Tuesday, July 20<br>
+Due: <strong>11:59PM</strong>, Monday, July 26<br>
+<p>
+<hr>
+<h2>Microcode</h2>
+<p>
+<hr>
+<b> Q1 (15 pts)</b>
+<hr>
+<p>
+In class last week, we implemented circuitry for a set of traffic
+lights at a simple intersection.  Take the implementation we did in
+class (<a href="trafficlights.circ"><b>trafficlights.circ</b></a>) and
+reimplement it in ROM using the microcode approach.  Make your circuit
+as simple as possible.  (although using the 3-alow-sr subcircuit is
+100% ok)
+<hr>
+<h1>Reasoning about Machine Language</h1>
+<hr>
+<p>
+<hr>
+<b>Q2 (10 pts)</b>
+<hr>
+<p>
+P&amp;P, 5.9
+<p>
+<hr>
+<b>Q3 (10 pts) </b>
+<hr>
+<p>
+P&amp;P, 5.10
+<p>
+<hr>
+<b>Q4 (10 pts) </b>
+<hr>
+<p>
+P&amp;P, 5.14
+<p>
+<hr>
+<b>Q5 (10 pts) </b>
+<hr>
+<p>
+P&amp;P, 5.22
+<p>
+<hr>
+<h1>Programming!</h1>
+<hr>
+<p>
+We've been learning about machine language and assembler.  You have access
+to assembly and simulation tools.  We've been demonstrating these tools in class
+<p>
+Now, it's time to use them!
+<p>
+<hr>
+<b>Q6: Calender (45 pts) </b> (Via Prof. Yale Patt himself)
+<hr>
+<p>
+Write a program in LC-3 assembly language that provides the day of the week for any date between January 1, 1901 and the present day.
+<p>
+Your program should start at address x3000, but will look these addresses for its arguments:
+<ul>
+<li> x31F0: the day of the month (a number from 1 to 31, decimal)
+<li> x31F1: the month (a number from 1 to 12, corresponding to Jan to Dec),
+<li> x31F2: the year (a four digit number)
+</ul>
+E.g., for today, that might be #4, #20, #2010
+<p>
+Your program should figure out the day of the week corresponding to this input date, 
+and write the output (Sunday, Monday, ...,Saturday) on the console.
+<p>
+<b>Things to Note:</b>
+<ul>
+<li> <b>Minimize</b> memory accesses and make optimal use of the registers R1-5.
+<li> Avoid using special purpose registers like R0, R6 and R7 in your code.
+<li> Try to modularize your code by using subroutines (<a href=divide-2.asm>Sample assembly language program for division by 2</a>).
+<li> Annotate your code with comments so that it is easy to understand.
+</ul>
+</p>
+To assemble the file, do "lc3as divide-2.asm"; this will create divide-2.obj.
+One can feed this obj file to the simulator by issuing "lc3sim-tk divide-2.obj".
+<p>
+<hr>
+<h2>Submission</h2>
+<hr>
+<p>
+ Send email to cs37staff@cs with the subject line "Homework 4
+ Submitted".  Attach all relevant files.  If you use multiple files,
+ packing the assignment into a single zip file is preferred.
+<p>
+</body> </html>
+

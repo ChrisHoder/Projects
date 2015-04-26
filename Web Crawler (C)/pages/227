@@ -1,0 +1,2124 @@
+http://www.cs.dartmouth.edu/~cbk/abs.php#bmc10
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Abstracts </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="abs.php#csb09a"><img src="img/pub/csb09a.png" alt="CSB09a" /></a><div><a href="abs.php#csb09a">Pubs | CSB-09a</a>: sequence+structure graphical models</div></div></div>
+<div id="body"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php"  >projects</a></span><span><a href="classes.php"  >classes</a></span><span><a href="pubs.php" class="navhere" >pubs</a></span><span><a href="news.php"  >news</a></span>
+</div>
+	<div id="content"><h3>Abstracts</h3>
+	
+<ul> 
+
+<li><a name="recomb11">A.S. Parker, K.E. Griswold, and C. Bailey-Kellogg,
+"Optimization of combinatorial mutagenesis",
+Proc. RECOMB, 2011, to appear.</a>
+<p>
+	  Protein engineering by combinatorial site-directed mutagenesis evaluates a portion of the sequence space near a target protein, seeking variants with improved properties (stability, activity, immunogenicity, etc.).  In order to improve the hit-rate of beneficial variants in such mutagenesis libraries, we develop methods to select optimal positions and corresponding sets of the mutations that will be used, in all combinations, in constructing a library for experimental evaluation.  Our approach, OCoM (<u>O</u>ptimization of <u>Co</u>mbinatorial <u>M</u>utagenesis), encompasses both degenerate oligonucleotides and specified point mutations, and can be directed accordingly by requirements of experimental cost and library size.  It evaluates the quality of the resulting library by one- and two-body sequence potentials, averaged over the variants.  To ensure that it is not simply recapitulating extant sequences, it balances the quality of a library with an explicit evaluation of the novelty of its members.  We show that, despite dealing with a combinatorial set of variants, in our approach the resulting library optimization problem is actually isomorphic to single-variant optimization.  By the same token, this means that the two-body sequence potential results in an NP-hard optimization problem.  We present an efficient dynamic programming algorithm for the one-body case and a practically-efficient integer programming approach for the general two-body case.  We demonstrate the effectiveness of our approach in designing libraries for three different case study proteins targeted by previous combinatorial libraries&mdash;a green fluorescent protein, a cytochrome P450, and a beta lactamase.  We found that OCoM worked quite efficiently in practice, requiring only 1 hour even for the massive design problem of selecting 18 mutations to generate 10<sup>7</sup> variants of a 443-residue P450.  We demonstrate the general ability of OCoM in enabling the protein engineer to explore and evaluate trade-offs between quality and novelty as well as library construction technique, and identify optimal libraries for experimental evaluation.
+
+</p>
+
+<p><a href="papers/recomb11.pdf">preprint</a>.</p>
+</li>
+
+<li><a name="proteins11">H. Kamisetty, A. Ramanathan, C. Bailey-Kellogg, and C.J. Langmead,
+"Accounting for conformational entropy in predicting binding free energies of
+protein-protein interactions", <i>Proteins</i>, 2011, 79:444-462.</a>
+<p>
+Protein-protein interactions are governed by the change in free energy
+	  upon binding, &Delta;&Delta; G<sub>bind</sub>=&Delta; H - T &Delta; S.  These interactions are
+often marginally stable, so one must examine the balance between the
+									 change in enthalpy, &Delta; H, and the change in entropy, &Delta; S,
+when investigating known complexes, characterizing the effects of
+mutations, or designing optimized variants.  In order to perform a large-scale study into the
+contribution of conformational entropy to binding free energy, we
+developed a technique called Goblin (<em>Graphical mOdel for
+BiomoLecular INteractions</em>) that performs physics-based free energy
+calculations for protein-protein complexes under both side-chain and
+backbone flexibility.  Goblin uses a probabilistic graphical model that exploits conditional independencies in the Boltzmann
+distribution and employs variational inference techniques that approximate
+the free energy of binding in only a few minutes.  We examined the
+role of conformational entropy on a benchmark set of more than 700
+mutants in eight large, well-studied complexes. Our findings suggest
+that conformational entropy is important in protein-protein
+interactions&mdash;the root mean square error (RMSE) between calculated
+and experimentally measured &Delta;&Delta; G<sub>bind</sub>s decreases by 12%
+when explicit entropic contributions were incorporated. Goblin models all atoms of the protein
+complex and detects  changes to the binding entropy along the interface as well as positions distal to the binding interface.
+Our results also suggest that a variational approach to entropy
+calculations may be quantitatively more accurate than the
+knowledge-based approaches used by the well-known programs Fold-X
+and Rosetta&mdash;Goblin's RMSEs are 10% and 36% lower than
+these programs, respectively.
+</p>
+
+<p><a href="http://dx.doi.org/10.1002/prot.22894">paper</a>.</p>
+
+</li>
+
+<li><a name="csb10">A.S. Parker, K.E. Griswold, and C. Bailey-Kellogg,
+"Optimization of therapeutic proteins to delete T-cell epitopes
+while maintaining beneficial residue interactions",
+Proc. CSB, 2010, pp. 100-113.</a>
+<p>
+Exogenous enzymes, signaling peptides, and
+other classes of non-human proteins represent a potentially massive
+but largely untapped pool of biotherapeutic agents.  Adapting a
+foreign protein for therapeutic use poses numerous design
+challenges.  We focus here on one significant problem: modifying the
+protein to mitigate the immune response mounted against "non-self"
+proteins, while not adversely affecting the protein's stability or
+therapeutic activity.  In order to propose such variants suitable
+for experimental evaluation, this paper develops a computational
+method to select sets of mutations predicted to delete immunogenic
+T-cell epitopes, as evaluated by a 9-mer potential, while
+simultaneously maintaining important residues and residue
+interactions, as evaluated by one- and two-body potentials.  While
+this design problem is NP-hard, we develop an integer programming
+approach that works very well in practice.  We demonstrate the
+effectiveness of our approach by developing plans for biotherapeutic
+proteins that, in previous studies, have been partially deimmunized
+via extensive experimental characterization and modification of
+limited segments.  In contrast, our global optimization technique
+considers an entire protein and accounts for all residues, residue
+interactions, and epitopes in proposing candidates worth subjecting
+to experimental evaluation.
+</p>
+
+<p><a href="http://www.lifesciencessociety.org/CSB2010/toc/100.2010.html">paper</a>. <a href="deimm/ipip/">demo</a>.</p>
+</li>
+
+<li><a name="jcb10">W. Zheng, K.E. Griswold, and C. Bailey-Kellogg, "Protein
+fragment swapping: A method for asymmetric, selective site-directed
+recombination", <i>J. Comp. Biol.</i>, 2010, 17:459-475.</a>
+
+<p>This paper presents a new approach to site-directed recombination,
+swapping combinations of selected discontiguous fragments from a
+source protein in place of corresponding fragments of a target
+protein.  By being both asymmetric (differentiating source and
+target) and selective (swapping discontiguous fragments), our method
+focuses experimental effort on a more restricted portion of sequence
+space, constructing hybrids that are more likely to have the
+properties that are the objective of the experiment.  Furthermore,
+since the source and target need to be structurally homologous only
+locally (rather than overall), our method supports swapping
+fragments from functionally important regions of a source into a
+target "scaffold"; e.g., to humanize an exogenous therapeutic
+protein.  A protein fragment swapping plan is defined by the residue
+position boundaries of the fragments to be swapped; it is assessed
+by an average potential score over the resulting hybrid library,
+with singleton and pairwise terms evaluating the importance and fit
+of the swapped residues.  While we prove that it is NP-hard to
+choose an optimal set of fragments under such a potential score, we
+develop an integer programming approach, which we call SWAGMER,
+that works very well in practice.  We demonstrate the effectiveness
+of our method in three swapping problems: selective
+recombination between beta-lactamases, activity swapping between
+glutathione transferases, and activity swapping between carboxylases and
+mutases in the purE family.  We show that the selective recombination
+approach generates better plan (in terms of resulting potential
+score) than traditional site-directed recombination approaches.  We
+also show that in all cases the optimized experiments are
+significantly better than ones that would result from stochastic
+methods.</p>
+
+<p><a href="http://www.liebertonline.com/doi/abs/10.1089/cmb.2009.0189">paper</a>.</p>
+</li>
+
+<li><a name="biokdd10">F. Xiong, A.M. Friedman, and C. Bailey-Kellogg,
+"Planning combinatorial disulfide cross-links for protein fold determination",
+9th International Workshop on Data Mining in Bioinformatics (BIOKDD), 2010.</a>
+
+<p>
+This paper presents an integrated computational-experimental method
+to determine the fold of a target protein by probing it with a set
+of planned disulfide cross-links.  We start with predicted
+structural models obtained by standard fold recognition techniques.
+In a first stage, we characterize the fold-level differences between
+the models in terms of topological (contact) patterns of secondary
+structure elements (SSEs), and select a small set of SSE pairs that
+differentiate the folds.  In a second stage, we determine a set of
+residue-level cross-links to probe the selected SSE pairs.  Each
+stage employs an information-theoretic planning algorithm to
+maximize information gain while minimizing experimental complexity,
+along with a Bayes error plan assessment framework to characterize
+the probability of making a correct decision once data for the plan
+are collected.  By focusing on overall topological differences and
+planning cross-linking experiments to probe them, our <em>fold
+determination</em> approach is robust to noise and uncertainty in the
+models (e.g., threading misalignment) and in the actual structure
+(e.g., flexibility).  We demonstrate the effectiveness of our
+approach in case studies for a number of CASP targets, showing that
+the optimized plans have low risk of error while testing only a
+small portion of the quadratic number of possible cross-link
+candidates.  Simulation studies with these plans further show that
+they do a very good job of selecting the correct model, according to
+cross-links simulated from the actual crystal structures.  Fold
+determination can overcome scoring limitations in purely
+computational fold recognition methods, while requiring less
+experimental effort than traditional protein structure determination
+approaches.</p>
+
+<p><a href="papers/biokdd10.pdf">paper</a>.</p>
+</li>																		      
+<li><a name="bmc10">A.S. Parker, W. Zheng, K.E. Griswold, and C. Bailey-Kellogg,
+"Optimization algorithms for functional deimmunization of
+therapeutic proteins", <i>BMC Bioinf.</i>, 2010, 11:180.</a>
+<p><b>Background:</b> To develop protein therapeutics from exogenous
+  sources, it is necessary to mitigate the risks of eliciting an
+  anti-biotherapeutic immune response.  A key aspect of the response
+  is the recognition and surface display by antigen-presenting cells
+  of epitopes, short peptide fragments derived from the foreign
+  protein.  Thus, developing minimal-epitope variants represents a
+  powerful approach to deimmunizing protein therapeutics.  Critically,
+  mutations selected to reduce immunogenicity must not interfere with
+  the protein's therapeutic activity. </p>
+      
+  <p><b>Results:</b> This paper develops methods to improve the
+  likelihood of simultaneously reducing the anti-biotherapeutic immune response while
+  maintaining therapeutic activity.  A dynamic programming approach
+  identifies optimal and near-optimal sets of conservative point
+  mutations to minimize the occurrence of predicted T-cell epitopes in
+  a target protein.  In contrast with existing methods, those
+  described here integrate analysis of immunogenicity and
+  stability/activity, are broadly applicable to any protein class,
+  guarantee global optimality, and provide sufficient flexibility for
+  users to limit the total number of mutations and target MHC alleles
+  of interest.  The input is simply the primary amino acid
+  sequence of the therapeutic candidate, although crystal structures
+  and protein family sequence alignments may also be input when
+  available. The output is a scored list of sets of point mutations
+  predicted to reduce the protein's immunogenicity while maintaining
+  structure and function.  We demonstrate the effectiveness of our approach in a
+  number of case study applications, showing that, in general, our best
+  variants are predicted to be better than those produced by previous
+  deimmunization efforts in terms of either immunogenicity or
+  stability, or both factors. </p>
+  
+  <p><b>Conclusions:</b> By developing global optimization
+  algorithms leveraging well-established immunogenicity and stability
+  prediction techniques, we provide the protein engineer with a
+  mechanism for exploring the favorable sequence space near a targeted
+  protein therapeutic.  Our mechanism not only helps identify designs
+  more likely to be effective, but also provides insights into the
+  interrelated implications of design choices.
+</p>
+<p><a href="http://www.biomedcentral.com/1471-2105/11/180/abstract">paper</a>.
+<a href="deimm/dpdp/">demo</a>. </p>
+</li>
+
+<li><a name="jcb09">W. Zheng, A.M. Friedman, and C. Bailey-Kellogg, "Algorithms
+for joint optimization of stability and diversity in planning
+combinatorial libraries of chimeric proteins", <i>J. Comp.
+Biol</i>, 2009, 16:1151-1168.</a>
+<p>
+  In engineering protein variants by constructing and screening
+  combinatorial libraries of chimeric proteins, two complementary and
+  competing goals are desired: the new proteins must be similar enough
+  to the evolutionarily-selected wild-type proteins to be stably
+  folded, and they must be different enough to display functional
+  variation.  We present here the first method, STAVERSITY, to
+  simultaneously optimize stability and diversity in selecting sets of
+  breakpoint locations for site-directed recombination.  Our goal is
+  to uncover all "undominated" breakpoint sets, for which no other
+  breakpoint set is better in both factors.  Our first algorithm finds
+  the undominated sets serving as the vertices of the lower envelope
+  of the two-dimensional (stability and diversity) convex hull
+  containing all possible breakpoint sets.  Our second algorithm
+  identifies additional breakpoint sets in the concavities that are
+  either undominated or dominated only by undiscovered breakpoint sets
+  within a distance bound computed by the algorithm.  Both algorithms
+  are efficient, requiring only time polynomial in the numbers of
+  residues and breakpoints, while characterizing a space defined by an
+  exponential number of possible breakpoint sets.  We applied
+  STAVERSITY to identify 2-10 breakpoint plans for different sets
+  of parent proteins taken from the purE family, as well as for parent
+  proteins TEM-1 and PSE-4 from the beta-lactamase family.  The
+  average normalized distance between our plans and the lower bound
+  for optimal plans is around 2 percent.  Our plans dominate most
+  (60-90% on average for each parent set) of the plans found by
+  other possible approaches, random sampling or explicit optimization
+  for stability with implicit optimization for diversity.  The
+  identified breakpoint sets provide a compact representation of good
+  plans, enabling a protein engineer to understand and account for the
+  trade-offs between two key considerations in combinatorial
+  chimeragenesis.
+</p>
+<p><a href="http://www.liebertonline.com/doi/abs/10.1089/cmb.2009.0090">paper</a>.</p>
+</li>
+
+<li><a name="csb09a">H. Kamisetty, B. Ghosh, C. Bailey-Kellogg, and C.J. Langmead, "Modeling
+and inference of sequence-structure specificity", Proc. CSB, 2009.</a>
+
+<p>
+	In order to evaluate protein sequences for
+  simultaneous satisfaction of evolutionary and physical constraints,
+  this paper develops a graphical model approach integrating sequence
+  information from the evolutionary record of a protein family with
+  structural information based on a molecular mechanics force field.
+  Nodes in the graphical model represent choices for the backbone
+  (native vs. non-native), amino acids (conservation analysis), and
+  side-chain conformations (rotamer library).  Edges capture
+  dependence relationships, in both the sequence (correlated
+  mutations) and the structure (direct physical interactions).  The
+  sequence and structure components of the model are complementary, in
+  that the structure component may support choices that were not
+  present in the sequence record due to bias and artifacts, while the
+  sequence component may capture other constraints on protein
+  viability, such as permitting an efficient folding pathway.
+  Inferential procedures enable computation of the joint probability
+  of a sequence-structure pair, thereby assessing the quality of the
+  sequence with respect to both the protein family and the specificity of
+  its energetic preference for the native structure against alternate backbone
+  structures.  In a case study of WW domains, we show that by using
+  the joint model and evaluating specificity, we obtain better
+  prediction of foldedness of designed proteins (AUC of 0.85) than
+  either a sequence-only or a structure-only model, and gain insights
+  into how, where, and why the sequence and structure components
+  complement each other.
+</p>
+
+<p><a href="papers/csb09a.pdf">paper</a>.</p>
+</li>
+
+<li><a name="csb09b">P. Kavethekar, B. Craig, A.M. Friedman, C. Bailey-Kellogg, and
+D. Balkcom, "Characterizing the space of interatomic distance
+distribution functions consistent with solution scattering data",
+Proc. CSB, 2009.</a>
+
+<p>Scattering of neutrons and x-rays from molecules in solution offers
+alternative approaches to the studying of a wide range of
+macromolecular structures in their solution state without the need of
+crystallization.  In this paper, we study one part of the problem of
+elucidating three-dimensional structure from solution scattering data,
+determining the distribution of interatomic distances, P(r).  This
+problem is known to be ill-conditioned; for a single observed
+diffraction pattern, there may be many consistent distance
+distribution functions.  Due to the ill conditioning, there is a risk
+of overfitting the observed scattering data.  We propose a new
+approach to avoiding this problem, accepting the validity of multiple
+alternative P(r) curves rather than seeking a single "best".</p>
+
+<p>We show that there are linear constraints that ensure that a computed
+P(r) is consistent with the experimental data.  The constraints
+enforce smoothness in the P(r) curve, ensure that the P(r) curve is a
+probability distribution, and allow for experimental error.  We use
+these constraints to precisely describe the space of all consistent
+P(r) curves as a polytope of histogram values or Fourier coefficients.
+This description can then be used to sample the space of potential
+alternative P(r) curves. We use this description to develop a linear
+programming approach to sampling the space of consistent, realistic
+P(r) curves.  In tests on both experimental and simulated scattering
+data, our approach efficiently generates ensembles of such curves that
+display substantial diversity.  In particular, we show that the
+ensemble of P(r) curves generated for a given protein includes members
+that are more different from a reference curve for that protein than
+are reference curves for proteins of other structural topologies.
+Thus subsequent reconstruction steps must properly account for this
+P(r) diversity in optimizing structural models.</p>
+
+<p><a href="papers/csb09b.pdf">paper</a>.</p>
+</li>
+
+<li><a name="proteins09">J. Thomas, N. Ramakrishnan, and
+C. Bailey-Kellogg, "Graphical models of protein-protein interaction
+specificity from correlated mutations and interaction data",
+<i>Proteins</i>, 2009, 76:911-929.</a>
+
+<p> Protein-protein interactions are mediated by complementary amino
+acids defining complementary surfaces.  Typically not all members of a
+family of related proteins interact equally well with all members of a
+partner family; thus analysis of the sequence record can reveal the
+complementary amino acid partners that confer interaction specificity.
+This paper develops methods for learning and using probabilistic
+graphical models of such residue "cross-coupling" constraints between
+interacting protein families, based on multiple sequence alignments
+and information about which pairs of proteins are known to interact.
+Our models generalize traditional consensus sequence binding motifs,
+and provide a probabilistic semantics enabling sound evaluation of the
+plausibility of new possible interactions.  Furthermore, predictions
+made by the models can be explained in terms of the underlying residue
+interactions.  Our approach supports different levels of prior
+knowledge regarding interactions, including both one-to-one (e.g.,
+pairs of proteins from the same organism) and many-to-many (e.g.,
+experimentally identified interactions), and we present a technique to
+account for possible bias in the represented interactions.  We apply
+our approach in studies of PDZ domains and their ligands, fundamental
+building blocks in a number of protein assemblies.  Our algorithms are
+able to identify biologically interesting cross-coupling constraints,
+to successfully identify known interactions, and to make explainable
+predictions about novel interactions.  </p>
+
+<p><a href="http://www3.interscience.wiley.com/cgi-bin/abstract/121675902/ABSTRACT">paper</a>.</p>
+</li>
+
+<li><a name="tcbb09">J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Protein design by sampling an undirected graphical model of residue constraints", 
+<i>IEEE/ACM Transactions on Computational Biology and Bioinformatics</i>,
+2009, 6:505-516.</a>
+
+<p>
+This paper develops an approach for designing protein variants by
+sampling sequences that satisfy residue constraints encoded in an
+undirected probabilistic graphical model.  Due to evolutionary
+pressures on proteins to maintain structure and function, the sequence
+record of a protein family contains valuable information regarding
+position-specific residue conservation and coupling (or
+covariation) constraints.  Representing these constraints with a
+graphical model provides two key benefits for protein design: a
+probabilistic semantics enabling evaluation of possible sequences for
+consistency with the constraints, and an explicit factorization of
+residue dependence and independence supporting efficient exploration
+of the constrained sequence space.  We leverage these benefits in
+developing two complementary MCMC algorithms for protein design:
+constrained shuffling mixes wild-type sequences
+position-wise and evaluates graphical model likelihood, while
+component sampling directly generates sequences by sampling clique
+values and propagating to other cliques.  We apply our methods to
+design WW domains.  We demonstrate that likelihood under a model of
+wild-type WWs is highly predictive of foldedness of new WWs.  We then
+show both theoretical and rapid empirical convergence of our
+algorithms in generating high-likelihood, diverse new sequences.  We
+further show that these sequences capture the original sequence
+constraints, yielding a model as predictive of foldedness as the
+original one.
+</p>
+  
+<p><a href="papers/tcbb09.pdf">preprint</a>.
+<a href="http://doi.ieeecomputersociety.org/10.1109/TCBB.2008.124">paper</a>.</p>
+
+</li>
+
+<li><a name="recomb09">W. Zheng, K.E. Griswold, and C. Bailey-Kellogg, "Protein fragment
+swapping: a method for asymmetric, selective site-directed
+recombination", Proc. RECOMB, 2009, pp. 321-338.</a>
+
+<p>This paper presents a new approach to site-directed recombination,
+swapping combinations of selected discontiguous fragments from a
+source protein in place of corresponding fragments of a target
+protein. By being both asymmetric (differentiating source and target)
+and selective (swapping discontiguous fragments), our method focuses
+experimental effort on a more restricted portion of sequence space,
+constructing hybrids that are more likely to have the properties that
+are the objective of the experiment. Furthermore, since the source and
+target need to be structurally homologous only locally (rather than
+overall), our method supports swapping fragments from functionally
+important regions of a source into a target "scaffold"; e.g., to
+humanize an exogenous therapeutic protein. A protein fragment swapping
+plan is defined by the residue position boundaries of the fragments to
+be swapped; it is assessed by an average potential score over the
+resulting hybrid library, with singleton and pairwise terms evaluating
+the importance and fit of the swapped residues. While we prove that it
+is NP-hard to choose an optimal set of fragments under such a
+potential score, we develop an integer programming approach, which we
+call Swagmer, that works very well in practice. We demonstrate the
+effectiveness of our method in two types of swapping problem:
+selective recombination between beta-lactamases and activity swapping
+between glutathione transferases. We show that the selective
+recombination approach generates a better plan (in terms of resulting
+potential score) than a traditional site-directed recombination
+approach. We also show that in both cases the optimized experiment is
+significantly better than one that would result from stochastic
+methods.</p>
+
+<p><a href="papers/recomb09.pdf">preprint</a>.
+<a href="http://www.springerlink.com/content/78g2m58566121706">official version</a>.</p>
+
+</li>
+
+<li><a name="csb08">X. Ye, A.M. Friedman, and C. Bailey-Kellogg,
+  "Optimizing Bayes error for protein structure model selection by
+  stability mutagenesis", Proc. CSB, 2008, pp. 99-108.</a>
+
+<p>Site-directed mutagenesis affects protein stability in a manner
+dependent on the local structural environment of the mutated residue;
+e.g., a hydrophobic to polar substitution would behave differently in
+the core vs. on the surface of the protein.  Thus site-directed
+mutagenesis followed by stability measurement enables evaluation of
+and selection among predicted structure models, based on consistency
+between predicted and experimental stability changes (&Delta;&Delta;G
+values).  This paper develops a method for planning a set of
+individual site-directed mutations for protein structure model
+selection, so as to minimize the Bayes error, i.e., the probability of
+choosing the wrong model.  While in general it is hard to calculate
+exactly the multi-dimensional Bayes error defined by a set of
+mutations, we leverage the structure of "&Delta;&Delta;G space" to
+develop tight upper and lower bounds.  We further develop a lower
+bound on the Bayes error of any plan that uses a fixed number of
+mutations from a set of candidates.  We use this bound in a
+branch-and-bound planning algorithm to find optimal and near-optimal
+plans.  We demonstrate the significance and effectiveness of this
+approach in planning mutations for elucidating the structure of the
+pTfa chaperone protein from bacteriophage lambda.</p>
+
+<p><a href="papers/csb08.pdf">paper</a>.</p>
+</li>
+
+<li><a name="ismb08">F. Xiong, G. Pandurangan, and C. Bailey-Kellogg,
+"Contact replacement for NMR resonance assignment", Proc. ISMB, 2008, 
+published in <i>Bioinformatics</i>, 2008, 24:i105-i213.</a>
+
+<p><b>Motivation:</b> Complementing its traditional role in
+<em>structural</em> studies of proteins, nuclear magnetic resonance
+(NMR) spectroscopy is playing an increasingly important role in
+<em>functional</em> studies. NMR dynamics experiments characterize
+motions involved in target recognition, ligand binding, etc., while
+NMR chemical shift perturbation experiments identify and localize
+protein-protein and protein-ligand interactions. The key bottleneck in
+these studies is to determine the backbone resonance assignment, which
+allows spectral peaks to be mapped to specific atoms. This paper
+develops a novel approach to address that bottleneck, exploiting an
+available x-ray structure or homology model to assign the entire
+backbone from a set of relatively fast and cheap NMR experiments.</p>
+
+<p><b>Results:</b> We formulate <em>contact replacement</em>
+for resonance assignment as the problem of computing correspondences
+between a contact graph representing the structure and an NMR graph
+representing the data; the NMR graph is a significantly corrupted,
+ambiguous version of the contact graph. We first show that by
+combining connectivity and amino acid type information, and exploiting
+the random structure of the noise, one can provably determine unique
+correspondences in polynomial time with high probability, even in the
+presence of significant noise (a constant number of noisy edges per
+vertex). We then detail an efficient randomized algorithm and show
+that, over a variety of experimental and synthetic datasets, it is
+robust to typical levels of structural variation (1-2 Angstrom),
+noise (250-600%) and missings (10-40%).  Our algorithm
+achieves very good overall assignment accuracy, above 80% in
+alpha helices, 70% in beta sheets, and 60% in loop regions.</p>
+
+<p><a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/24/13/i205">official version</a>.
+<a href="papers/ismb08.pdf">preprint</a>.</p>
+</li>
+
+<li><a name="recomb08">W. Zheng, A.M. Friedman, and C. Bailey-Kellogg,
+"Algorithms for joint optimization of stability and diversity in planning
+combinatorial libraries of chimeric proteins", Proc. RECOMB, 2008,
+pp. 300-314.</a>
+
+<p>
+  In engineering protein variants by constructing and screening
+  combinatorial libraries of chimeric proteins, two complementary and
+  competing goals are desired: the new proteins must be similar enough
+  to the evolutionarily-selected wild-type proteins to be stably
+  folded, and they must be different enough to display functional
+  variation.  We present here the first method, Staversity, to
+  simultaneously optimize stability and diversity in selecting sets of
+  breakpoint locations for site-directed recombination.  Our goal is
+  to uncover all "undominated" breakpoint sets, for which no other
+  breakpoint set is better in both factors.  Our first algorithm finds
+  the undominated sets serving as the vertices of the lower envelope
+  of the two-dimensional (stability and diversity) convex hull
+  containing all possible breakpoint sets.  Our second algorithm
+  identifies additional breakpoint sets in the concavities that are
+  either undominated or dominated only by undiscovered breakpoint sets
+  within a distance bound computed by the algorithm.  Both algorithms
+  are efficient, requiring only time polynomial in the numbers of
+  residues and breakpoints, while characterizing a space defined by an
+  exponential number of possible breakpoint sets.  We applied
+  Staversity to identify 2-10 breakpoint sets for three different
+  sets of parent proteins from the purE family of biosynthetic
+  enzymes.  The average normalized distance between our plans and the
+  lower bound for optimal plans is around 1 percent.  Our plans
+  dominate most 60-90% on average for each parent set) of the plans
+  found by other possible approaches, random sampling or explicit
+  optimization for stability with implicit optimization for diversity.
+  The identified breakpoint sets provide a compact representation of
+  good plans, enabling a protein engineer to understand and account
+  for the trade-offs between two key considerations in combinatorial
+  chimeragenesis.
+</p>
+  
+<p><a href="http://dx.doi.org/10.1007/978-3-540-78839-3_26">official
+version</a>.  <a href="papers/recomb08.pdf">preprint</a>.</p></li>
+
+<li><a name="tcbb08">J. Thomas, N. Ramakrishnan, and
+C. Bailey-Kellogg, "Graphical Models of Residue Coupling in Protein
+Families", <i>IEEE/ACM Transactions on Computational Biology and
+Bioinformatics</i>, 2008, 5:183-197. </a>
+
+<p>Many statistical measures and algorithmic techniques have been
+proposed for studying residue coupling in protein families.  Generally
+speaking, two residue positions are considered coupled if, in the
+sequence record, some of their amino acid type combinations are
+significantly more common than others.  While the proposed approaches
+have proven useful in finding and describing coupling, a significant
+missing component is a formal probabilistic model that explicates and
+compactly represents the coupling, integrates information about
+sequence, structure, and function, and supports inferential procedures
+for analysis, diagnosis, and prediction.</p>
+
+<p>We present an approach to learning and using probabilistic graphical
+models of residue coupling.  These models capture significant
+conservation and coupling constraints observable in a multiply-aligned
+set of sequences.  Our approach can place a structural prior on
+considered couplings, so that all identified relationships have direct
+mechanistic explanations.  It can also incorporate information about
+functional classes, and thereby learn a differential graphical model
+that distinguishes constraints common to all classes from those unique
+to individual classes.  Such differential models separately account
+for class-specific conservation and family-wide coupling, two
+different sources of sequence covariation.  They are then able to
+perform interpretable functional classification of new sequences,
+explaining classification decisions in terms of the underlying
+conservation and coupling constraints.  We apply our approach
+in studies of both G protein-coupled receptors and PDZ
+domains, identifying and analyzing family-wide and class-specific
+constraints, and performing functional classification.  The results
+demonstrate that graphical models of residue coupling provide a
+powerful tool for uncovering, representing, and utilizing significant
+sequence-structure-function relationships in protein families.</p>
+
+<p><a href="http://www2.computer.org/portal/web/csdl/doi/10.1109/TCBB.2007.70225">official version</a>.
+<a href="papers/tcbb08.pdf">preprint</a>.</p>
+  </li>
+
+<li><a name="biophysj07">T.E. Williamson, B.A. Craig, E. Kondrashkina, C.
+Bailey-Kellogg, and A.M. Friedman, "Analysis of self-associating
+proteins by singular value decomposition of solution scattering
+data", <i>Biophys. J.</i>, 2008, 94:4906-4923.</a>
+
+<p> We describe a method by which a single experiment can reveal both
+association model (pathway and constants) and low-resolution
+structures of a self-associating system.  Small angle scattering data
+are collected from solutions at a range of concentrations.  These
+scattering curves are mass-weighted linear combinations of the
+scattering from each oligomer.  Singular value decomposition of the
+data yields a set of basis vectors, from which the scattering curve
+for each oligomer is reconstructed using coefficients that depend on
+the association model.  A search identifies the association pathway
+and constants that provide the best agreement between reconstructed
+and observed data.  Using simulated data with realistic noise, our
+method finds the correct pathway and association constants.  Depending
+on the simulation parameters reconstructed curves for each oligomer
+differ from the ideal by 0.05-0.99% in median absolute relative
+deviation.  The reconstructed scattering curves are fundamental to
+further analysis, including interatomic distance distribution
+calculation and low-resolution ab initio shape reconstruction of each
+oligomer in solution.  This method can be applied to x-ray or neutron
+scattering data from small angles to modest (or higher) resolution.
+Data can be taken under physiological conditions or particular
+conditions (e.g. temperature) can be varied to extract fundamental
+association parameters (&Delta;H<sub>ass</sub>, &Delta;S<sub>ass</sub>).</p> 
+
+<p><a href="http://www.biophysj.org/cgi/content/full/94/12/4906">official version</a>.</p>
+</li>
+
+<li><a name="jcc07">L.V. Avramova, J. Desai, S. Weaver, A.M. Friedman, and C.
+Bailey-Kellogg, "Robotic hierarchical mixing for the production of
+combinatorial libraries of proteins and small molecules", <i>J.
+Comb. Chem.</i>, 10:63-68, 2008.</a>
+
+<p>We present a method to automatically plan a robotic process to mix
+individual combinations of reactants in individual reaction vessels
+(vials or wells in a multi-well plate), mixing any number of
+reactants in any desired stoichiometry and ordering the mixing steps
+according to an arbitrarily complex tree-like assembly protocol.
+This process enables the combinatorial generation of complete or
+partial product libraries in individual reaction vessels from
+intermediates formed in the presence of different sets of reactants.
+It can produce either libraries of chimeric genes constructed by
+ligation of fragments from different parent genes, or libraries of
+chemical compounds constructed by convergent synthesis.  Given
+concentrations of the input reactants and desired amounts or volumes
+of the products, our algorithm, RoboMix, computes the required
+reactant volumes and the resulting product concentrations, along
+with volumes and concentrations for all intermediate combinations.
+It outputs a sequence of robotic liquid transfer steps that ensures
+that each combination is correctly mixed even when individualized
+stoichiometries are employed and with any fractional yield for a
+product.  It can also account for waste in robotic liquid handling
+and residual volume needed to ensure accurate aspiration.  We
+demonstrate the effectiveness of the method in a test mixing dyes
+with different UV-Vis absorption spectra, verifying the desired
+combinations spectroscopically.</p>
+
+<p><a href="http://pubs.acs.org/cgi-bin/abstract.cgi/jcchff/2008/10/i01/abs/cc700106e.html">paper</a>.</p>
+</li>
+
+<li><a name="bibe07">F. Xiong and C. Bailey-Kellogg, "A hierarchical
+grow-and-match algorithm for backbone resonance assignments
+given 3D structure", Proc. IEEE BIBE, 2007, pp. 403-410.</a>
+
+<p>This paper develops an algorithm for NMR backbone resonance
+  assignment given a 3D structure and a set of relatively sparse
+  <sup>15</sup>N-edited NMR data, with the through-space
+  <sup>15</sup>N-edited NOESY as the primary source of information.
+  Our approach supports high-throughput solution studies of dynamics
+  and interactions (e.g., ligand binding), when the structure has
+  previously been determined by crystallography or modeled
+  computationally.  We employ a graph matching approach, identifying
+  correspondence between a given contact graph and a corrupted version
+  representing the NMR data.  Our hierarchical grow-and-match
+  algorithm decomposes the contact graph into sequential fragments
+  with relatively dense interactions, and then combines possible
+  assignments for the fragments, searching over the combinations with
+  effective but conservative pruning.  Our algorithm is complete,
+  guaranteed to identify all solutions consistent with the data within
+  a likelihood threshold of the optimal solution.  It also deals
+  correctly and uniformly with missing edges, which are quite common
+  under this formulation.  Tests on a number of experimental datasets
+  and simulations with varying noise and sparsity demonstrate that our
+  algorithm can handle significant data corruption (2.5-6.0 noisy
+  edges per correct one) and sparsity (10-40% of the correct edges
+  missing).  In addition to the reference solution, the complete
+  ensembles include a number (up to 30) of alternatives.  We use these
+  complete ensembles to characterize confidence in parts of an
+  assignment.</p>
+  
+<p><a href="papers/bibe07.pdf">preprint</a>.</p></li>
+
+<li><a name="csb07">W. Zheng, X. Ye, A.M. Friedman, and
+C. Bailey-Kellogg, "Algorithms for selecting breakpoint locations to
+optimize diversity in protein engineering by site-directed protein
+recombination", Proc. CSB, 2007, pp. 31-40.</a>  
+
+<p>Protein engineering by site-directed recombination seeks to develop
+proteins with new or improved function, by accumulating multiple
+mutations from a set of homologous parent proteins.  A library of
+hybrid proteins is created by recombining the parent proteins at
+specified breakpoint locations; subsequent screening/selection
+identifies hybrids with desirable functional characteristics.  In
+order to improve the frequency of generating novel hybrids, this paper
+develops the first approach to explicitly plan for diversity in
+site-directed recombination, including metrics for characterizing the
+diversity of a planned hybrid library and efficient algorithms for
+optimizing experiments accordingly.  The goal is to choose breakpoint
+locations to sample sequence space as uniformly as possible (which we
+argue maximizes diversity), under the constraints imposed by the
+recombination process and the given set of parents.  A dynamic
+programming approach selects optimal breakpoint locations in
+polynomial time.  Application of our method to optimizing breakpoints
+for an example biosynthetic enzyme, purE, demonstrates the
+significance of diversity optimization and the effectiveness of our
+algorithms.</p>
+  
+<p><a href="papers/csb07.pdf">preprint</a>.</p></li>
+
+<li><a name="jcb07">X. Ye, A.M. Friedman, and C. Bailey-Kellogg,
+"Hypergraph model of multi-residue interactions in proteins:
+sequentially-constrained partitioning algorithms for optimization of
+site-directed protein recombination", <i>J. Computational Biology</i>,
+2007, 14:777-790.</a>
+
+<p>Relationships among amino acids determine stability and
+function and are also constrained by evolutionary history. We develop
+a probabilistic hypergraph model of residue relationships that generalizes 
+traditional pairwise contact potentials to account for the statistics
+of multi-residue interactions. Using this model, we detected non-random
+associations in protein families and in the protein database. We also
+use this model in optimizing site-directed recombination experiments
+to preserve significant interactions and thereby increase the frequency
+of generating useful recombinants. We formulate the optimization as a
+sequentially-constrained hypergraph partitioning problem; the quality of
+recombinant libraries with respect to a set of breakpoints is characterized
+by the total perturbation to edge weights. We prove this problem to be NP-hard
+in general, but develop exact and heuristic polynomial-time algorithms
+for a number of important cases. Application to the beta-lactamase 
+family demonstrates the utility of our algorithms in planning site-directed
+recombination.</p>
+ 
+<p><a href="http://www.liebertonline.com/doi/abs/10.1089/cmb.2007.R016">official version</a>.
+<a href="papers/jcb07.pdf">preprint</a>.</p>
+ </li>
+
+<li><a name="prosci07">S. Potluri, A.K. Yan, B.R. Donald, and C.
+Bailey-Kellogg, "A complete algorithm to resolve ambiguity for
+inter-subunit NOE assignment in structure determination of symmetric
+homo-oligomers", <i>Protein Science</i>, 2007, 16:69-81.</a>
+
+<p>Assignment of nuclear Overhauser effect (NOE) data is a key
+bottleneck in structure determination by nuclear magnetic resonance
+spectroscopy.  NOE assignment resolves the ambiguity as to which pairs
+of protons generated the observed NOE peaks, and thus should be
+restrained in structure determination.  In the case of inter-subunit
+NOEs in symmetric homo-oligomers, the ambiguity includes both the
+identities of the protons within a subunit, and the identities of the
+subunits to which they belong.  This paper develops an algorithm to
+resolve ambiguity in inter-subunit NOE assignment and determine
+symmetric homo-oligomeric structures.  Our algorithm is
+<i>complete</i>, in that it identifies structures representing, to
+within a user-defined similarity level, every structure consistent
+with the available data (ambiguous or not).  However, while our
+approach is complete, it avoids explicit enumeration of the
+exponential number of combinations of possible assignments.</p>
+
+<p>In order to be complete yet efficient, we employ a configuration
+space framework.  This allows us to represent the set of all possible
+structures in terms of symmetry axis parameters and all possible
+assignments of the NOEs in terms of atom and subunit identities.  Our
+algorithm considers NOEs sequentially, i.e., one after the other,
+pruning regions of the symmetry axis configuration space and
+assignments that are mutually inconsistent.  Pruning occurs only due
+to provable inconsistency and thereby avoids the pitfall of local
+minima that could arise from best-first sampling-based approaches.
+Ultimately, we return a mutually-consistent set of conformations and
+NOE assignments. Our algorithm can draw two types of conclusions not
+possible under existing methods: (a) that different assignments for an
+NOE would lead to different structural classes, or (b) that it is not
+necessary to assign an NOE since the choice of assignment would have
+little impact on structural precision.  We demonstrate the
+effectiveness of our algorithm on two test cases: the homo-dimeric
+topological specificity domain of <i>E. coli</i> MinE and the
+homo-trimeric coiled-coil domain of chicken cartilage matrix protein
+(CCMP).  Our method reduces the average number of possible assignments
+per NOE by a factor of 2.6 for MinE and 4.2 for CCMP.  It results in
+high structural precision, reducing the average variance in atomic
+positions by a factor of 1.5 for MinE and 3.6 for CCMP.</p>
+
+<p>
+<a href="http://www.proteinscience.org/cgi/content/full/16/1/69">official version</a>.
+<a href="papers/prosci07.pdf">preprint</a>.</p>
+</li>
+
+<li><a name="proteins06c">S. Potluri, A.K. Yan,
+J.J. Chou, B.R. Donald, and C.  Bailey-Kellogg, "Structure
+determination of symmetric homo-oligomers by a complete search of
+symmetry configuration space using NMR restraints and van der Waals
+packing", <i>Proteins</i>, 2006, 65:203-219.</a>
+
+<p>
+Structural studies of symmetric homo-oligomers provide mechanistic
+insights into their roles in essential biological processes including
+cell signaling and cellular regulation.  This paper presents a novel
+algorithm for homo-oligomeric structure determination, given the
+subunit structure, that is both <i>complete</i>, in that it evaluates all
+possible conformations and <i>data-driven</i>, in that it evaluates
+conformations separately for consistency with experimental data and
+for quality of packing.  Completeness ensures that the algorithm does
+not miss the native conformation, and being data-driven enables it to
+assess the structural precision possible from data alone. Our
+algorithm performs a branch-and-bound search in the symmetry
+configuration space, the space of symmetry axis parameters (positions
+and orientations) defining all possible C_n homo-oligomeric complexes
+for a given subunit structure.  It eliminates those symmetry axes
+inconsistent with inter-subunit nuclear Overhauser effect (NOE)
+distance restraints and then identifies conformations representing any
+consistent, well-packed structure to within a user-defined similarity
+level.</p>
+
+<p>For the human phospholamban pentamer in dodecylphosphocholine
+micelles, using the structure of one subunit determined from a subset
+of the experimental NMR data, our algorithm identifies a diverse set
+of complex structures consistent with the nine inter-subunit NOE
+restraints.  The distribution of determined structures provides an
+objective characterization of structural uncertainty: backbone RMSD to
+the previously determined structure ranges from 1.07 Angstroms to 8.85
+Angstroms, and variance in backbone atomic coordinates is an average
+of 12.32 Angstroms^2.  Incorporating vdW packing reduces structural
+diversity to a maximum backbone RMSD of 6.24 Angstroms and an average
+backbone variance of 6.80 Angstroms^2.  By comparing data consistency
+and packing quality under different assumptions of oligomeric number,
+our algorithm identifies the pentamer as the most likely oligomeric
+state of phospholamban, demonstrating that it is possible to determine
+the oligomeric number directly from NMR data.  Additional tests on a
+number of homo-oligomers, from dimer to heptamer, similarly
+demonstrate the power of our method to provide unbiased determination
+and evaluation of homo-oligomeric complex structures.</p>
+
+<p><a
+href="http://www3.interscience.wiley.com/cgi-bin/abstract/112749452/ABSTRACT">official
+version</a>.
+<a href="papers/proteins06c.pdf">preprint</a>.</p>
+
+</li>
+
+<li><a name="jbnmr06">O. Vitek, C. Bailey-Kellogg, B. Craig, and
+J. Vitek, "Inferential backbone assignment for sparse data",
+<i>J. Biomolecular NMR</i>, 2006, 35:187-208.</a>
+
+<p>
+This paper develops an approach to protein backbone NMR assignment
+that effectively assigns large proteins while using limited sets of
+triple-resonance experiments.  Our approach handles proteins with
+large fractions of missing data and many ambiguous pairs of
+pseudoresidues, and provides a statistical assessment of confidence in
+global and position-specific assignments. The approach is tested on an
+extensive set of experimental and synthetic data of up to 723
+residues, with match tolerances of up to 0.5 ppm for CA and CB
+resonance types. The tests show that that the approach is particularly
+helpful when data contain experimental noise and require large match
+tolerances. The keys to the approach are an empirical Bayesian
+probability model that rigorously accounts for uncertainty in the data
+at all stages in the analysis, and a hybrid stochastic tree-based
+search algorithm that effectively explores the large space of possible
+assignments.
+</p>
+
+<p><a href="http://www.springerlink.com/openurl.asp?genre=article&id=doi:10.1007/s10858-006-9027-8">official version</a>.
+</p>
+
+</li>
+
+<li><a name="proteins06b">L. Saftalov, P.A. Smith, A.M. Friedman, and
+C. Bailey-Kellogg, "Site-Directed Combinatorial Construction of
+Chimaeric Genes: General Method for Optimizing Assembly of Gene
+Fragments", <i>Proteins</i>, in press.</a>
+
+<p>Site-directed construction of chimaeric genes by <i>in vitro</i>
+recombination "mixes-and-matches" precise building blocks from
+multiple parent proteins, generating libraries of hybrids to be tested
+for structure-function relationships and/or screened for favorable
+properties and novel enzymatic activities.  A direct annealing and
+ligation method can construct chimaeric genes without
+requiring sequence identity between parents, except for the short
+(approximately 3 nt) sequences of the fragment overhangs used for specific
+ligation.  Careful planning of the assembly process is necessary,
+though, in order to ensure effective construction of desired fragment
+assemblies and to avoid undesired assemblies (e.g., repetition of
+fragments, fragments out of order).</p>
+
+<p>We develop algorithms for specific planned ligation (SPLISO) that
+efficiently explore possible assembly plans, varying the fragment
+overhangs and the order of ligation steps in the assembly pathway.
+While there is a combinatorial explosion in the number of possible
+assembly plans as the number of breakpoints and parent genes
+increases, we employ a dynamic programming approach to find
+globally optimal ones in low-order polynomial time (in practice,
+taking only seconds for basic assembly plans).  We demonstrate the
+effectiveness of our algorithms in planning the assembly of hybrid
+libraries, under a variety of experimental options and restrictions,
+including flexibility in the position and amino acid sequence of
+breakpoints.  Our method promises to enable more effective application
+of site-directed recombination to protein investigation and
+engineering.</p>
+
+<p><a href="http://www3.interscience.wiley.com/cgi-bin/abstract/112656549/ABSTRACT">official version</a>.
+<a href="papers/proteins06b.pdf">preprint</a>.</p>
+
+</li>
+
+<li><a name="wafr06">S. Potluri, A.K. Yan, J.J. Chou, B.R. Donald, and
+C.  Bailey-Kellogg, "Extended Abstract: Structure determination of
+symmetric protein complexes by a complete search of symmetry
+configuration space using NMR distance restraints", Proc. WAFR, 2006.</a>
+
+<p>Structural studies of symmetric homo-oligomers (protein complexes
+with similar subunits arranged symmetrically) provide mechanistic
+insights into their roles in essential biological processes.  We have
+developed a novel algorithm for homo-oligomeric structure
+determination that is both <i>complete</i>, in that it evaluates all
+possible conformations and <i>data-driven</i>, in that it evaluates
+conformations separately for consistency with experimental data and
+for quality of packing.  Our algorithm determines homo-oligomeric
+structures by performing a branch-and-bound search in the symmetry
+configuration space, the space of symmetry axis parameters (positions
+and orientations) defining all possible C_n homo-oligomeric complexes
+for a fixed subunit structure.  It eliminates those symmetry axes
+inconsistent with experimental inter-subunit distance restraints, and
+then identifies conformations representing any consistent, well-packed
+structure to within a user-defined similarity level.  Our tests
+demonstrate the power of our method to provide an unbiased
+determination and evaluation of homo-oligomeric complex
+structures.</p>
+
+<p><a href="papers/wafr06.pdf">preprint</a>.</p>
+
+</li>
+
+<li><a name="recomb06">X. Ye, A.M. Friedman, and C. Bailey-Kellogg,
+"Hypergraph model of multi-residue interactions in proteins:
+sequentially-constrained partitioning algorithms for optimization of
+site-directed protein recombination", Proc. RECOMB, 2006, 15-29.</a>
+
+<p>Relationships among amino acids determine stability and function and
+are also constrained by evolutionary history.  We develop a
+probabilistic hypergraph model of residue relationships that
+generalizes traditional pairwise contact potentials to account for the
+statistics of multi-residue interactions.  Using this model, we
+detected non-random associations in protein families and in the
+protein database.  We also use this model in optimizing site-directed
+recombination experiments to preserve significant interactions and
+thereby increase the frequency of generating useful recombinants.  We
+formulate the optimization as a sequentially-constrained hypergraph
+partitioning problem; the quality of recombinant libraries wrt a set
+of breakpoints is characterized by the total perturbation to edge
+weights.  We prove this problem to be NP-hard in general, but develop
+exact and heuristic polynomial-time algorithms for a number of
+important cases.  Application to the beta-lactamase family
+demonstrates the utility of our algorithms in planning site-directed
+recombination.</p>
+
+<p><a href="http://dx.doi.org/10.1007/11732990_2">official version</a>. </p>
+
+</li>
+
+<li><a name="proteins06">Z. Yi, O. Vitek, M. A. Qasim, S.M. Lu, W. Lu,
+M. Ranjbar, J. Li, M.C. Laskowski, C. Bailey-Kellogg, and
+M. Laskowski, Jr., "Functional evolution within a protein
+superfamily", <i>Proteins</i>, 2006, 63:697-708.</a>
+
+<p>
+The ability to predict and characterize distributions of reactivities
+over families and even superfamilies of proteins opens the door to an
+array of analyses regarding functional evolution.  In this paper,
+insights into functional evolution in the Kazal inhibitor superfamily
+are gained by analyzing and comparing predicted association free
+energy distributions against six serine proteinases, over a number of
+groups of inhibitors: all possible Kazal inhibitors, natural avian
+ovomucoid first and third domains, and sets of Kazal inhibitors with
+statistically-weighted combinations of residues.  The results indicate
+that, despite the great hypervariability of residues in the ten
+proteinase-binding positions, avian ovomucoid third domains evolved to
+inhibit enzymes similar to the six enzymes selected, while the
+orthologous first domains are not inhibitors of these enzymes on
+purpose.  Hypervariability arises due to similarity in energetic
+contribution from multiple residue types; conservation is in terms of
+functionality, with "good" residues, which make positive or less
+deleterious contributions to the binding, selected more frequently and
+yielding overall the same distributional characteristics. Further
+analysis of the distributions indicates that while nature did optimize
+inhibitor strength, the objective may not have been the strongest
+possible inhibitor against one enzyme but rather an inhibitor that is
+relatively strong against a number of enzymes.
+</p>
+
+<p><a href="papers/proteins06.pdf">preprint</a>.
+<a href="http://www3.interscience.wiley.com/cgi-bin/abstract/112396167/ABSTRACT">official version</a>.
+</p>
+
+</li>
+
+<li><a name="bioinformatics06">H. Kamisetty, C. Bailey-Kellogg, and
+G. Pandurangan, "An efficient randomized algorithm for contact-based
+NMR backbone resonance assignment", <i>Bioinformatics</i>, 2006, 22:172-80.</a>
+
+<p><b>Motivation:</b> Backbone resonance assignment is a critical
+bottleneck in studies of protein structure, dynamics, and interactions
+by nuclear magnetic resonance (NMR) spectroscopy.  A minimalist
+approach to assignment, which we call "contact-based," seeks to
+dramatically reduce experimental time and expense by replacing the
+standard suite of through-bond experiments with the through-space
+(NOESY) experiment.  In the contact-based approach, spectral data are
+represented in a graph with vertices for putative residues (of unknown
+relation to the primary sequence) and edges for hypothesized NOESY
+interactions, such that observed spectral peaks could be explained if
+the residues were "close enough."  Due to experimental ambiguity,
+several incorrect edges can be hypothesized for each spectral peak.
+An assignment is derived by identifying consistent patterns of edges
+(e.g., for alpha-helices and beta-sheets) within a graph, and mapping
+the vertices to the primary sequence.  The key algorithmic challenge
+is to be able to uncover these patterns even when they are obscured by
+significant noise.</p>
+
+<p><b>Results:</b>
+This paper develops, analyzes, and applies a novel algorithm for the
+identification of polytopes representing consistent patterns of edges
+in a corrupted NOESY graph.  Our randomized algorithm aggregates
+simplices into polytopes and fixes inconsistencies with simple local
+modifications, called rotations, that maintain most of the structure
+already uncovered.  In characterizing the effects of experimental
+noise, we employ an NMR-specific random graph model in proving that
+our algorithm gives optimal performance in expected polynomial time,
+even when the input graph is significantly corrupted.  We confirm this
+analysis in simulation studies with graphs corrupted by up to 500
+percent noise. Finally, we demonstrate the practical application of
+the algorithm on several experimental beta-sheet data sets.  Our
+approach is able to eliminate a large majority of noise edges and
+uncover large consistent sets of interactions.</p>
+
+<p><a href="http://bioinformatics.oxfordjournals.org/cgi/reprint/bti786?ijkey=j9Hh0m4DczPaHmu&keytype=ref">paper</a>.</p>
+
+</li>
+
+<li><a name="biokdd05">J. Thomas, N. Ramakrishnan, and
+C. Bailey-Kellogg, "Graphical models of residue coupling in protein
+families", Proc. BioKDD, 2005.</a>
+
+<p>
+Identifying residue coupling relationships within a protein family can
+provide important insights into the family's evolutionary record, and
+has significant applications in analyzing and optimizing
+sequence-structure-function relationships.  We present the first
+algorithm to infer an undirected graphical model representing residue
+coupling in protein families.  Such a model serves as a compact
+description of the joint amino acid distribution, focused on the
+independences among residues.  This stands in contrast to current
+methods, which manipulate dense representations of co-variation and
+are focused on assessing dependence, which can conflate direct and
+indirect relationships.  Our graphical model provides a sound basis
+for predictive (will this newly designed protein be folded and
+functional?), diagnostic (why is this protein not stable or
+functional?), and abductive reasoning (what if I attempt to graft
+features of one protein family onto another?).  Further, our algorithm
+can readily incorporate, as priors, hypotheses regarding possible
+underlying mechanistic/energetic explanations for coupling.  The
+resulting approach constitutes a powerful and discriminatory mechanism
+to identify residue coupling from protein sequences and structures.
+Analysis results on the G-protein coupled receptor (GPCR) and PDZ
+domain families demonstrate the ability of our approach to effectively
+uncover and exploit models of residue coupling.
+</p>
+
+<p><a href="papers/biokdd05.pdf">pdf</a> (Copyright 2005, ACM).</p>
+
+</li>
+
+<li><a name="eccb05">O. Vitek, C. Bailey-Kellogg, B. Craig,
+P. Kuliniewicz, and J. Vitek, "Reconsidering complete search
+algorithms for protein backbone NMR assignment," Proc. ECCB, published
+in <i>Bioinformatics</i>, 2005, 21:ii230-236.</a>
+
+<p><b>Motivation:</b> Nuclear magnetic resonance (NMR) spectroscopy is
+widely used to determine and analyze protein structures.  An essential
+step in NMR studies is determining the backbone resonance assignment,
+which maps individual atoms to experimentally measured resonance
+frequencies.  Performing assignment is challenging due to the noise
+and ambiguity in NMR spectra. While automated procedures have been
+investigated, by-and-large they are still struggling to gain
+acceptance due to inherent limits in scalability and/or unacceptable
+levels of assignment error.</p> <p>To have confidence in the results,
+an algorithm should be <i>complete</i>, i.e., able to identify all
+solutions consistent with the data, including all arbitrary
+configurations of extra and missing peaks. The ensuing combinatorial
+explosion in the space of possible assignments has led to the
+perception that complete search is hopelessly inefficient and cannot
+scale to realistic data sets.</p>
+
+<p><b>Results:</b> This paper presents a complete
+<i>branch-contract-and-bound</i> search algorithm for backbone
+resonance assignment. The algorithm controls the search space by
+hierarchically agglomerating partial assignments and employing
+statistically sound pruning criteria. It considers <i>all</i>
+solutions consistent with the data, and uniformly treats all
+combinations of extra and missing data.</p>
+
+<p>We demonstrate our approach on experimental data from 5 proteins
+ranging in size from 70 to 154 residues. The algorithm assigns over
+95% of the positions with over 98% accuracy.  We also present
+results on simulated data from 259 proteins from the RefDB database,
+ranging in size from 25 to 257 residues. The median computation time
+for these cases is 1 minute, and the assignment accuracy is over 99%.</p>
+  
+<p>These results demonstrate that complete search not only has the
+advantage of guaranteeing fair treatment of all feasible solutions,
+but is efficient enough to be employed effectively in practice.</p>
+
+<p><a href="papers/eccb05.pdf">pdf</a>.</p>
+</li>
+
+<li><a name="sdm05">N. Ramakrishnan, C. Bailey-Kellogg, S. Tadepalli,
+and V.N. Pandey, "Gaussian Processes for Active Data Mining of Spatial
+Aggregates", Proc. SIAM Data Mining Conference, 2005.</a>
+
+<p>
+Active data mining is becoming prevalent in applications requiring
+focused sampling of data relevant to a high-level mining objective. It
+is especially pertinent in scientific and engineering applications
+where we seek to characterize a configuration space or design space in
+terms of spatial aggregates, and where data collection can become
+costly. Examples abound in domains such as aircraft design, wireless
+system simulation, fluid dynamics, and sensor networks.  This paper
+develops an active mining mechanism, using Gaussian processes, for
+uncovering spatial aggregates from only a sparse set of targeted
+samples. Gaussian processes provide a unifying framework for building
+surrogate models from sparse data, reasoning about the uncertainty of
+estimation at unsampled points, and formulating objective criteria for
+closing-the-loop between data collection and data mining. Our
+mechanism optimizes sample selection using entropy-based functionals
+defined over spatial aggregates instead of the traditional approach of
+sampling to minimize estimated variance. We apply this mechanism on a
+global optimization benchmark comprising a testbank of 2D functions,
+as well as on data from wireless system simulations. The results
+reveal that the proposed sampling strategy makes more judicious use of
+data points by selecting locations that clarify high-level structures
+in data, rather than choosing points that merely improve quality of
+function approximation.
+</p>
+
+<p><a href="papers/sdm05.pdf">pdf</a>.</p>
+</li>
+
+
+<li><a name="proteins05">J. Li, Z.-P. Yi, M.C. Laskowski, M. Laskowski
+Jr., and C. Bailey-Kellogg, "Analysis of sequence-reactivity space for
+protein-protein interactions", <i>Proteins</i>, 2005, 58:661-671.</a>
+
+<p>Sequence-reactivity space is defined by the relationships between
+amino acid type choices at some residue positions in a protein and the
+reactivities of the resulting variants.  We are studying Kazal
+superfamily serine proteinase inhibitors, under substitution of any
+combination of residue types at ten binding-region positions.
+Reactivities are defined by the standard free energy of association
+for an inhibitor against an enzyme, and we are interested in both the
+strength (the free energy value) and specificity (relative free energy
+values for one inhibitor against different enzymes).  Characterizing
+the structure of such a space poses several interesting questions: (1)
+how many sequences achieve particular strength and specificity
+characteristics?  (2) what is the best such sequence?  (3) what are
+some nearly-as-good alternatives?  (4) what are their common residue
+type characteristics (e.g. conservation and correlation)?  Although
+these problems are all highly combinatorial in nature, this paper
+develops an efficient, integrated mechanism to address them under a
+data-driven model that predicts reactivity for given sequences.  We
+employ sampling and a novel deterministic distribution propagation
+algorithm, in order to determine both the reactivity distribution and
+sequence composition statistics; integer programming and a novel
+branch-and-bound search algorithm, in order to optimize sequences and
+enumerate near-optimal sequences; and correlation-based sequence
+decomposition, in order to identify sequence motifs.  We demonstrate
+the value of our mechanism in analyzing the Kazal superfamily
+sequence-reactivity space, providing insights into the underlying
+biochemistry and suggesting hypotheses for further experimental
+consideration.  In general, our mechanism offers a valuable tool for
+investigating the available degrees of freedom in protein design
+within a combined computational-experimental framework.</p>
+
+<p><a href="http://www3.interscience.wiley.com/cgi-bin/fulltext/109860671/HTMLSTART">paper</a>.</p>
+</li>
+
+<li><a name="prosci04">X. Ye, P.K. O'Neil, A.N. Foster, M.J. Gajda,
+J. Kosinski, M.A. Kurowski, A.M. Friedman, and C. Bailey-Kellogg,
+"Probabilistic cross-link analysis and experiment planning for
+high-throughput elucidation of protein structure", <i>Protein
+Sci.</i>, 2004, 13:3298-3313.</a>
+
+<p>Emerging high-throughput techniques for the characterization of
+protein and protein complex structures yield noisy data with sparse
+information content, placing a significant burden on computation to
+properly interpret the experimental data.  One such technique employs
+cross-linking (chemical or by cysteine oxidation) to confirm or select
+among proposed structural models (e.g. from fold recognition, <i>ab
+initio</i> prediction, or docking) by testing the consistency between
+cross-linking data and model geometry.  This paper develops a
+probabilistic framework for analyzing the information content in
+cross-linking experiments, accounting for anticipated experimental
+error.  This framework supports a mechanism for planning experiments
+to optimize the information gained.  We evaluate potential experiment
+plans using explicit trade-offs among key properties of practical
+importance --- discriminability, coverage, balance, ambiguity, and
+cost.  We devise a greedy algorithm that considers those properties
+and, from a large number of combinatorial possibilities, rapidly
+selects sets of experiments expected to efficiently discriminate pairs
+of models.  In an application to residue-specific chemical
+cross-linking, we demonstrate the ability of our approach to
+effectively plan experiments involving combinations of cross-linkers
+and introduced mutations.  We also describe an experiment plan for the
+bacteriophage lambda Tfa chaperone protein in which we plan dicysteine
+mutants for discriminating threading models by disulfide formation.
+Preliminary results from a subset of the planned experiments are
+consistent and demonstrate the practicality of planning.  Our methods
+provide the experimenter with a valuable tool (available from the
+authors) for understanding and optimizing cross-linking experiments.
+</p>
+
+<p><a href="http://www.proteinscience.org/cgi/content/full/13/12/3298">paper</a>.</p>
+</li>
+
+<li><a name="geom04">A. Kuzminykh and C. Bailey-Kellogg, "Polyhedral
+approximations of the sphere with unusual geometric and topological
+properties", <i>Geombinatorics</i>, 2004, 14(2):55-61.</a>
+
+<p>In the present paper we would like to draw attention to some
+unusual geometric and topological properties that polyhedral
+approximations of even so simple a surface as a 2-dimensional sphere
+may have.  We prove the existence of infinitely many polyhedral
+surfaces (with vertices belonging to the sphere) such that the
+polytopes bounded by them are mutually disjoint and, for each epsilon
+> 0, one can find, among these surfaces, any number of congruent
+surfaces of any genus, each of which is an epsilon-approximation of
+the sphere and has area less than epsilon.  Such approximations may be
+interesting not only from a geometric point of view but also as an
+illustration of possible geometric and topological difficulties for
+surface polyhedral approximation algorithms.</p>
+
+</li>
+
+<li><a name="qr04">N. Ramakrishnan, C. Bailey-Kellogg, S. Tadepalli,
+and V.N. Pandey, "Gaussian Processes for Active Data Mining of Spatial
+Aggregates", Proc. 18th International Workshop on Qualitative
+Reasoning, Chicago, 2004.</a>
+
+<p>
+We present an active data mining mechanism for qualitative analysis of
+spatial datasets, integrating identification and analysis of
+structures in spatial data with targeted collection of additional
+samples.  The mechanism is designed around the spatial aggregation
+language (SAL) for qualitative spatial reasoning, and seeks to uncover
+high-level spatial structures from only a sparse set of samples.  This
+approach is important for applications in domains such as aircraft
+design, wireless system simulation, fluid dynamics, and sensor
+networks.  The mechanism employs Gaussian processes, a formal
+mathematical model for reasoning about spatial data, in order to build
+surrogate models from sparse data, reason about the uncertainty of
+estimation at unsampled points, and formulate objective criteria for
+closing-the-loop between data collection and data analysis. It 
+optimizes sample selection using entropy-based functionals
+defined over spatial aggregates instead of the traditional approach of
+sampling to minimize estimated variance.  We apply this mechanism on a
+global optimization benchmark comprising a testbank of 2D functions,
+as well as on data from wireless system simulations.  The results
+reveal that the proposed sampling strategy makes more judicious use of
+data points by selecting locations that clarify high-level structures
+in data, rather than choosing points that merely improve quality of
+function approximation.</p>
+
+<p><a href="papers/qr04.pdf">pdf</a></p>
+</li>
+
+
+<li><a name="aaai04">C. Bailey-Kellogg and N. Ramakrishnan, "Spatial
+Aggregation for Qualitative Assessment of Scientific Computations", Proc. AAAI,
+2004.</a>
+
+<p>
+Qualitative assessment of scientific computations is an emerging
+application area that applies a data-driven approach to characterize,
+at a high level, phenomena including conditioning of matrices,
+sensitivity to various types of error propagation, and algorithmic
+convergence behavior.  This paper develops a spatial aggregation
+approach that formalizes such analysis in terms of model selection
+utilizing spatial structures extracted from matrix perturbation
+datasets.  We focus in particular on the characterization of matrix
+eigenstructure, both analyzing sensitivity of computations with
+spectral portraits and determining eigenvalue multiplicity with Jordan
+portraits.  Our approach employs spatial reasoning to overcome noise
+and sparsity by detecting mutually reinforcing interpretations, and to
+guide subsequent data sampling.  It enables quantitative evaluation of
+properties of a scientific computation in terms of confidence in a
+model, explainable in terms of the sampled data and domain knowledge
+about the underlying mathematical structure.  Not only is our
+methodology more rigorous than the common approach of visual
+inspection, but it also is often substantially more efficient, due to
+well-defined stopping criteria.  Results show that the mechanism
+efficiently samples perturbation space and successfully uncovers
+high-level properties of matrices.
+</p>
+
+<p><a href="papers/aaai04.pdf">pdf</a>
+(Copyright 2004, <a href="http://www.aaai.org">
+American Association for Artificial Intelligence (www.aaai.org)</a>).</p>
+</li>
+
+<li><a name="acta04">R.H. Lilien, C. Bailey-Kellogg, A.A. Anderson,
+and B.R. Donald, "A subgroup algorithm to identify cross-rotation peaks
+consistent with non-crystallographic symmetry", <i>Acta
+Crystallographica D: Biological Crystallography</i>, 2004, D60:1057-1067.</a>
+
+<p>Molecular replacement (MR) often plays a prominent role in determining
+initial phase angles for structure determination by X-ray
+crystallography. In this paper, an efficient quaternion-based
+algorithm is presented for analyzing peaks from a cross-rotation
+function to identify model orientations consistent with
+non-crystallographic symmetry (NCS), and to generate NCS-consistent
+orientations missing from the list of cross-rotation peaks. Our
+algorithm, CRANS, analyzes the rotation differences between each pair
+of cross-rotation peaks to identify finite subgroups of NCS. Sets of
+rotation differences satisfying the subgroup axioms correspond to
+orientations compatible with the correct NCS. The CRANS algorithm was
+first tested using cross-rotation peaks computed from structure factor
+data for three test systems, and then used to assist in the de novo
+structure determination of dihydrofolate reductase-thymidylate
+synthase (DHFR-TS) from Cryptosporidium hominis. In every case, the
+CRANS algorithm runs in seconds to identify orientations consistent
+with the observed NCS and to generate missing orientations not present
+in the cross-rotation peak list. The CRANS algorithm has application
+in every molecular replacement phasing effort with NCS.</p>
+
+<p><a href="http://www.iucr.org/cgi-bin/paper?ol5284">paper</a> or
+<a href="papers/acta04.pdf">local pdf</a>
+(Copyright &copy; International Union of Crystallography).</p>
+</li>
+
+<li> <a name="sagmb04">O. Vitek, J. Vitek, B. Craig, and
+C. Bailey-Kellogg, "Model-based assignment and inference of protein
+backbone nuclear magnetic resonances", <i>Statistical Applications in
+Genetics and Molecular Biology</i>, 2004, 3(1), article 6, 1-33.</a> 
+
+<p>Nuclear Magnetic Resonance (NMR) spectroscopy is a key experimental
+technique used to study protein structure, dynamics, and interactions.
+NMR methods face the bottleneck of spectral analysis, in particular
+determining the resonance assignments, which help define the mapping
+between atoms in the protein and peaks in the spectra.  A substantial
+amount of noise in spectral data, along with ambiguities in
+interpretation, make this analysis a daunting task, and there exists
+no generally accepted measure of uncertainty associated with the
+resulting solutions.  This paper develops a model-based inference
+approach that addresses the problem of characterizing uncertainty in
+backbone resonance assignment.  We argue that NMR spectra are subject
+to random variation, and ignoring this stochasticity can lead to false
+optimism and erroneous conclusions.  We propose a Bayesian statistical
+model that accounts for various sources of uncertainty and provides an
+automatable framework for inference.  While assignment has previously
+been viewed as a deterministic optimization problem, we demonstrate
+the importance of considering all solutions consistent with the data,
+and develop an algorithm to search this space within our statistical
+framework.  Our approach is able to characterize the uncertainty
+associated with backbone resonance assignment in several ways: 1) it
+quantifies of uncertainty in the individually assigned resonances in
+terms of their posterior standard deviations; 2) it assesses the
+information content in the data with a posterior distribution of
+plausible assignments; and 3) it provides a measure of the overall
+plausibility of assignments.  We demonstrate the value of our approach
+in a study of experimental data from two proteins, Human Ubiquitin and
+Cold-shock protein A from E. coli. In addition, we provide simulations
+showing the impact of experimental conditions on uncertainty in the
+assignments.</p>
+
+<p><a href="http://www.bepress.com/sagmb/vol3/iss1/art6">paper</a>.  
+<a href="papers/sagmb04.pdf">local pdf</a>.</p>
+</li>
+
+<li> <a name="recomb04">C. Bailey-Kellogg, S. Chainraj, and
+G. Pandurangan, "A Random Graph Approach to NMR Sequential
+Assignment", Proc. RECOMB, 2004, pp. 58-67.</a>
+
+<p>Nuclear magnetic resonance (NMR) spectroscopy allows scientists to
+study protein structure, dynamics, and interactions in solution.  A
+necessary first step for such applications is determining the
+resonance assignment, mapping spectral data to atoms and residues in
+the primary sequence.  Automated resonance assignment algorithms rely
+on information regarding connectivity (e.g. through-bond atomic
+interactions) and amino acid type, typically using the former to
+determine strings of connected residues and the latter to map those
+strings to positions in the primary sequence.  Significant ambiguity
+exists in both connectivity and amino acid type, and different
+algorithms have combined the information in two phases (find short
+unambiguous strings then align) or simultaneously (align while
+extending strings).  This paper focuses on the information content
+available in connectivity alone, allowing for ambiguity rather than
+handling only unambiguous strings, and complements existing work on
+the information content in amino acid type.</p>
+
+<p>In this paper, we develop a novel random-graph theoretic framework for
+algorithmic analysis of NMR sequential assignment. Our random graph
+model captures the structure of chemical shift degeneracy (a key
+source of connectivity ambiguity).  We then give a simple and natural
+randomized algorithm for finding an optimum sequential cover.  The
+algorithm naturally and efficiently reuses substrings while exploring
+connectivity choices; it overcomes local ambiguity by enforcing global
+consistency of all choices.  We employ our random graph model to
+analyze our algorithm, and show that it can provably tolerate a
+relatively large ambiguity while still giving expected optimal
+performance in polynomial time.  To study the algorithm's performance
+in practice, we tested it on experimental data sets from a variety of
+proteins and experimental set-ups.  The algorithm was able to overcome
+significant noise and local ambiguity and consistently identify
+significant sequential fragments.</p>
+
+<p><a href="papers/recomb04.pdf">pdf</a> (Copyright 2004, ACM).</p>
+
+</li>
+
+<li> <a name="aimag04">C. Bailey-Kellogg and F. Zhao, "Qualitative
+spatial reasoning: extracting and reasoning with spatial aggregates",
+<i>AI Magazine</i>, 2004, 24:47-60.</a>
+
+<p>Reasoning about spatial data is a key task in many applications,
+including geographic information systems, meteorological and fluid
+flow analysis, computer-aided design, and protein structure databases.
+Such applications often require the identification and manipulation of
+<i>qualitative</i> spatial representations, for example, to detect
+whether one "object" will soon occlude another in a digital image, or
+to efficiently determine relationships between a proposed road and
+wetland regions in a geographic data set.  Qualitative spatial
+reasoning (QSR) provides representational primitives (a spatial
+"vocabulary") and inference mechanisms for these tasks.  This paper
+first reviews representative work on QSR for <i>data-poor</i>
+scenarios, where the goal is to <i>design</i> representations that can
+answer qualitative queries without much numerical information.  It
+then turns to the <i>data-rich</i> case, where the goal is to 
+<i>derive</i> and manipulate qualitative spatial representations that
+efficiently and correctly abstract important spatial aspects of the
+underlying data, for use in subsequent tasks.  This paper focuses on
+how a particular QSR system, Spatial Aggregation (SA), can help answer
+spatial queries for scientific and engineering data sets.  A case
+study application of weather analysis illustrates the effective
+representation and reasoning supported by both data-poor and data-rich
+forms of QSR.</p>
+
+<p><a href="papers/aimag04.pdf">pdf</a> (Copyright 2004, <a
+href="http://www.aaai.org">American Association for Artificial
+Intelligence (www.aaai.org)</a>).</p>
+</li>
+ 
+<li><a name="psb04">S. Potluri, A.A. Khan, A. Kuzminykh,
+J.M. Bujnicki, A.M. Friedman, and C. Bailey-Kellogg, "Geometric
+analysis of cross-linkability for protein fold discrimination",
+Proc. Pacific Symposium on Biocomputing (PSB), 2004.</a>
+
+<p>Protein structure provides insight into the evolutionary origins,
+functions, and mechanisms of proteins.  We are pursuing a minimalist
+approach to protein fold identification that characterizes possible
+folds in terms of consistency of their geometric features with
+restraints derived from relatively cheap, high-throughput experiments.
+One such experiment is residue-specific cross-linking analyzed by mass
+spectrometry.  This paper presents a suite of novel lower- and
+upper-bounding algorithms for analyzing the distance between surface
+cross-link sites and thereby validating predicted models against
+experimental cross-linking results.  Through analysis and
+computational experiments, using simulated and published experimental
+data, we demonstrate that our algorithms enable effective model
+discrimination.</p>
+
+<p><a href="papers/psb04.pdf">pdf</a></p>
+</li>
+
+<li> <a name="qr03">C. Bailey-Kellogg and N. Ramakrishnan, "Active
+data mining of correspondence for qualitative assessment of scientific
+computations," Proc. 17th International Workshop on Qualitative Reasoning,
+Brasilia, 2003, pp. 23-30.</a>
+
+<p>Active data mining constructs and evaluates possible models
+explaining a dataset, and reasons about the cost and impact of
+additional samples on refining and selecting among the models.  It is
+particularly appropriate for applications characterized by expensive
+data collection, from either experiment or simulation.  This paper
+develops an active mining mechanism based on a multi-level,
+qualitative analysis of correspondence.  Correspondence operators
+presented here leverage domain knowledge to establish relationships
+among objects, evaluate implications for model selection, and leverage
+identified weaknesses to focus additional data collection.  The
+utility of the qualitative framework is demonstrated in two scientific
+computing applications -- matrix spectral portrait analysis and
+graphical assessment of Jordan forms of matrices.  Results show that
+the mechanism efficiently samples computational experiments and
+successfully uncovers high-level properties of data. The framework
+helps overcome noise and sparsity by leveraging domain knowledge to
+detect mutually reinforcing interpretations of spatial data.</p>
+
+<p><a href="papers/qr03.pdf">pdf</a></p>
+</li>
+
+<li> <a name="ijcai03">N. Ramakrishan and C. Bailey-Kellogg, "Gaussian
+process models of spatial aggregation algorithms", Proc. Int'l Joint
+Conf. on Artificial Intelligence (IJCAI), 2003, pp. 1045-1051.</a>
+
+<p>Multi-level spatial aggregates are important for data mining in a
+variety of scientific and engineering applications, from analysis of
+weather data (aggregating temperature and pressure data into ridges
+and fronts) to performance analysis of wireless systems (aggregating
+simulation results into configuration space regions exhibiting
+particular performance characteristics).  In many of these
+applications, data collection is expensive and time consuming, so
+effort must be focused on gathering samples at locations that will be
+most important for the analysis.  This requires that we be able to
+functionally model a data mining algorithm in order to assess the
+impact of potential samples on the mining of suitable spatial
+aggregates.  This paper describes a novel Gaussian process approach to
+modeling multi-layer spatial aggregation algorithms, and demonstrates
+the ability of the resulting models to capture the essential
+underlying qualitative behaviors of the algorithms.  By helping cast
+classical spatial aggregation algorithms in a rigorous quantitative
+framework, the Gaussian process models support diverse uses such as
+directed sampling, characterizing the sensitivity of a mining
+algorithm to particular parameters, and understanding how variations
+in input data fields percolate up through a spatial aggregation
+hierarchy.</p>
+
+<p><a href="papers/ijcai03.pdf">pdf</a> (Copyright 2003, <a
+href="http://www.ijcai.org">IJCAI (www.ijcai.org)</a>).</p>
+</li>
+
+<li> <a name="ieee03">F. Zhao, C. Bailey-Kellogg, and M. Fromherz,
+"Physics-based encapsulation in embedded software for distributed
+sensing and control applications," <i>Proceedings of the IEEE</i>,
+2003, 91:40-63.</a>
+
+<p>Spatial Aggregation abstracts data arising from distributed
+embedded sensing and control applications as a set of so-called
+"spatio-temporal objects."  Locality and continuity in the underlying
+physics of a problem domain give rise to spatially coherent and
+temporally contiguous objects in an appropriate metric space. Once
+parameterized by physical properties such as location, intensity
+(e.g., light, temperature, pressure), and motion (e.g., velocity),
+these objects can be aggregated and abstracted into more abstract
+descriptions.  Applications are written as the creation and
+transformation of these abstract objects.</p>
+
+<p>We illustrate how these objects naturally arise from applications such
+as distributed sensing and actuation and use an air-jet table system
+to demonstrate how such a physics-based encapsulation modularizes the
+design of sensing and control software.  Unlike in traditional
+software design, where objects and operations are defined
+mathematically and possess a semantics independent of possible
+implementations, the objects in distributed embedded software are
+defined by the physics of the application, algorithmic considerations,
+task requirements, as well as optimization criteria. The air-jet table
+example demonstrates that the grouping and abstraction of actuation
+devices are determined by laws of motion, the type of force allocation
+algorithms used, and the desired performance of the controller; this
+encapsulation greatly simplifies the design and implementation of a
+force allocation algorithm for the system and improves software
+modularity.  Based on our practical experiences in designing several
+massively distributed sensing and actuation systems, we present a set
+of recommendations for distributed embedded software modeling and
+design.</p>
+
+<p><a href="papers/ieee03.ps.pg">postscript</a></p>
+</li>
+
+<li> <a name="#cise02">N. Ramakrishnan and C. Bailey-Kellogg, "Using
+physical properties for mining in data-scarce domains," <i>IEEE
+Computing in Science &amp; Engineering</i>, 2002, 4:31-43.</a>
+
+<p>Data mining has traditionally been motivated by the desire to make
+inferences from vast repositories of data. However, many scientific
+domains are characterized by a scarcity of data, rather than
+abundance. This is especially true when data is being generated from
+costly computer simulations. In such data-scarce domains, it is
+advantageous to use a data collection and sampling strategy that
+focuses on only the most interesting regions, from a data mining
+perspective.  In this paper, we describe how to design sampling
+strategies for data-scarce domains by exploiting knowledge of physical
+properties. The physical properties we concentrate on include
+continuity, correspondence, and locality and are especially relevant
+in spatial data interpretation applications. The methodology resulting
+from this approach is demonstrated in two diverse applications --
+mining pockets in spatial data, and qualitative determination of
+Jordan forms of matrices.</p>
+
+<p><a href="papers/cise02.pdf">pdf</a></p>
+</li>
+
+<li> <a name="aij01">C. Bailey-Kellogg and F. Zhao, "Influence-based
+model decomposition," <i>Artificial Intelligence</i>, 2001,
+130:125-166.</a>
+
+<p>Many important science and engineering applications, such as
+regulating the temperature distribution over a semiconductor wafer and
+controlling the noise from a photocopy machine, require interpreting
+distributed data and designing decentralized controllers for spatially
+distributed systems.  Developing effective computational techniques
+for representing and reasoning about these systems, which are usually
+modeled with partial differential equations (PDEs), is one of the
+major challenge problems for qualitative and spatial reasoning
+research.</p>
+<p>This paper introduces a novel approach to decentralized control
+design, influence-based model decomposition, and applies it in the
+context of thermal regulation.  Influence-based model decomposition
+uses a decentralized model, called an influence graph, as a key data
+abstraction representing influences of controls on distributed
+physical fields.  It serves as the basis for novel algorithms for
+control placement and parameter design for distributed systems with
+large numbers of coupled variables.  These algorithms exploit physical
+knowledge of locality, linear superposability, and continuity,
+encapsulated in influence graphs representing dependencies of field
+nodes on control nodes.  The control placement design algorithms
+utilize influence graphs to decompose a problem domain so as to
+decouple the resulting regions.  The decentralized control parameter
+optimization algorithms utilize influence graphs to efficiently
+evaluate thermal fields and to explicitly trade off computation,
+communication, and control quality.  By leveraging the physical
+knowledge encapsulated in influence graphs, these control design
+algorithms are more efficient than standard techniques, and produce
+designs explainable in terms of problem structures.</p>
+
+<p><a href="papers/aij01.pdf">pdf</a></p>
+</li>
+
+<li> <a name="ijcai01">C. Bailey-Kellogg and N. Ramakrishnan,
+"Ambiguity-directed sampling for qualitative analysis of sparse data
+from spatially-distributed physical systems," Proc. Int'l Joint
+Conf. on Artificial Intelligence (IJCAI), 2001, pp. 43-50.</a>
+
+<p>A number of important scientific and engineering applications, such
+as fluid dynamics simulation and aircraft design, require analysis of
+spatially-distributed data from expensive experiments and complex
+simulations.  In such data-scarce applications, it is advantageous to
+use models of given sparse data to identify promising regions for
+additional data collection.  This paper presents a principled
+mechanism for applying domain-specific knowledge to design focused
+sampling strategies.  In particular, our approach uses ambiguities
+identified in a multi-level qualitative analysis of sparse data to
+guide iterative data collection.  Two case studies demonstrate that
+this approach leads to highly effective sampling decisions that are
+also explainable in terms of problem structures and domain knowledge.</p>
+
+<p><a href="papers/ijcai01.pdf">pdf</a> (Copyright 2001, <a
+href="http://www.ijcai.org">IJCAI (www.ijcai.org)</a>).</p>
+</li>
+
+<li> <a name="icra01">C. Bailey-Kellogg, J.J. Kelley, III, R. Lilien,
+and B.R. Donald, "Physical geometric algorithms for structural
+molecular biology," invited paper at the Special Session on
+Computational Biology and Chemistry, International Conference on
+Robotics and Automation (ICRA), 2001.</a>
+
+<p>A wealth of interesting computational problems arises in proposed
+methods for discovering new pharmaceuticals.  This paper surveys our
+recent work in three key areas, using a Physical Geometric Algorithm
+(PGA) approach to data interpretation, experiment planning, and drug
+design:</p>
+<ol>
+<li><i>Data-directed computational protocols for high-throughput
+protein structure determination</i>.  A key component of structure
+determination through nuclear magnetic resonance (NMR) is that of
+assigning spectral peaks.  We are developing a novel approach, called
+Jigsaw, to automated secondary structure determination and main-chain
+assignment.  Jigsaw consists of two main components: graph-based
+secondary structure pattern identification in unassigned heteronuclear
+(N15-labeled) NMR data, and assignment of spectral peaks by
+probabilistic alignment of identified secondary structure elements
+against the primary sequence.</li>
+<li><i>Experiment planning and data interpretation algorithms for
+reducing mass degeneracy in mass spectrometry (MS)</i>.  MS offers many
+advantages for high-throughput assays (e.g. small sample size and
+large mass limits), but it faces the potential problem of mass
+degeneracy -- indistinguishable masses for multiple biopolymer
+fragments (e.g. from a limited proteolytic digest).  We are studying
+the use of selective isotopic labeling to substantially reduce
+potential mass degeneracy, especially in the context of structural
+determination of protein-protein and protein-DNA complexes.</li>
+<li><i>Computer-aided drug design (CADD)</i>.  We are developing new
+CADD tools and applying them to the design of an inhibitor for the
+Core-Binding Factor-Beta oncoprotein (CBF-Beta-MYH11), a fusion
+protein involved in some forms of Acute Myelomonocytic Leukemia
+(AMML). Computational-structural studies of CBF help determine the
+molecular basis for its function and assist in the development of
+therapeutic strategies.  A key issue in such studies is geometric
+modeling of protein flexibility; our approach attempts to account for
+flexibility by using an ensemble of structures representing low-energy
+conformations as determined by solution NMR.</li>
+</ol>
+<p>Our long-range goal is the structural and functional understanding of
+biopolymer interactions in systems of significant biochemical as well
+as pharmacological interest.  The research overviewed here represents
+a set of important steps towards that goal.</p>
+
+<p><a href="papers/icra01.pdf">pdf</a></p>
+</li>
+
+<li> <a name="jcb01">C. Bailey-Kellogg, J.J. Kelley, III, C. Stein,
+and B.R. Donald, "Reducing Mass Degeneracy in SAR by MS by Stable
+Isotopic Labeling," <i>J. Computational Biology</i>, 2001,
+8:19-36.</a>
+
+<p>Mass spectrometry (MS) promises to be an invaluable tool for
+functional genomics, by supporting low-cost, high-throughput
+experiments.  However, large-scale MS faces the potential problem of
+<i>mass degeneracy</i> -- indistinguishable masses for multiple
+biopolymer fragments (e.g. from a limited proteolytic digest).  This
+paper studies the tasks of planning and interpreting MS experiments
+that use selective isotopic labeling, thereby substantially reducing
+potential mass degeneracy.  Our algorithms support an
+experimental-computational protocol called <i>Structure-Activity
+Relation by Mass Spectrometry (SAR by MS)</i>, for elucidating the
+function of protein-DNA and protein-protein complexes.  SAR by MS
+enzymatically cleaves a crosslinked complex and analyzes the resulting
+mass spectrum for mass peaks of hypothesized fragments.  Depending on
+binding mode, some cleavage sites will be shielded; the absence of
+anticipated peaks implicates corresponding fragments as either part of
+the interaction region or inaccessible due to conformational change
+upon binding.  Thus different mass spectra provide evidence for
+different structure-activity relations.  We address combinatorial and
+algorithmic questions in the areas of <i>data analysis</i>
+(constraining binding mode based on mass signature) and <i>experiment
+planning</i> (determining an isotopic labeling strategy to reduce mass
+degeneracy and aid data analysis).  We explore the computational
+complexity of these problems, obtaining upper and lower bounds.  We
+report experimental results from implementations of our algorithms.</p>
+
+<p><a href="papers/jcb01.pdf">pdf</a></p>
+</li>
+
+<li> <a name="jcb00">C. Bailey-Kellogg, A. Widge, M.J. Berardi,
+J.H. Bushweller, and B.R. Donald, "The NOESY Jigsaw: automated protein
+secondary structure and main-chain assignment from sparse, unassigned
+NMR data," <i>J. Computational Biology</i>, 2000, 7:537-558.</a>
+
+<p>High-throughput, data-directed computational protocols for
+<i>Structural Genomics</i> (or <i>Proteomics</i>) are required in
+order to evaluate the protein products of genes for structure and
+function at rates comparable to current gene-sequencing technology.
+This paper presents the Jigsaw algorithm, a novel high-throughput,
+automated approach to protein structure characterization with nuclear
+magnetic resonance (NMR).  Jigsaw applies graph algorithms and
+probabilistic reasoning techniques, enforcing first-principles
+consistency rules in order to overcome a 5-10% signal-to-noise ratio.
+It consists of two main components: (1) graph-based secondary
+structure pattern identification in <i>unassigned</i> heteronuclear
+NMR data, and (2) assignment of spectral peaks by probabilistic
+alignment of identified secondary structure elements against the
+primary sequence.  Deferring assignment eliminates the bottleneck
+faced by traditional approaches, which begin by correlating peaks
+among dozens of experiments.  Jigsaw utilizes only four experiments,
+none of which requires 13C-labeled protein, thus dramatically reducing
+both the amount and expense of wet lab molecular biology and the total
+spectrometer time.  Results for three test proteins demonstrate that
+Jigsaw correctly identifies 79-100% of alpha-helical and 46-65% of
+beta-sheet NOE connectivities, and correctly aligns 33-100% of
+secondary structure elements.  Jigsaw is very fast, running in minutes
+on a Pentium-class Linux workstation.  This approach yields quick and
+reasonably accurate (as opposed to the traditional slow and extremely
+accurate) structure calculations.  It could be useful for quick
+structural assays to speed data to the biologist early in an
+investigation, and could in principle be applied in an automation-like
+fashion to a large fraction of the proteome.</p>
+
+<p><a href="papers/jcb00.pdf">pdf</a></p>
+</li>
+
+<li> <a name="ismb00">C. Bailey-Kellogg, J.J. Kelley, III, C. Stein,
+and B.R. Donald, "Reducing Mass Degeneracy in SAR by MS by Stable
+Isotopic Labeling," Proc. ISMB, 2000, pp. 13-24.</a>
+
+<p>Mass spectrometry (MS) promises to be an invaluable tool for
+functional genomics, by supporting low-cost, high-throughput
+experiments.  However, large-scale MS faces the potential problem of
+<i>mass degeneracy</i> -- indistinguishable masses for multiple
+biopolymer fragments (e.g. from a limited proteolytic digest).  This
+paper studies the tasks of planning and interpreting MS experiments
+that use selective isotopic labeling, thereby substantially reducing
+potential mass degeneracy.  Our algorithms support an
+experimental-computational protocol called <i>Structure-Activity
+Relation by Mass Spectrometry (SAR by MS)</i>, for elucidating the
+function of protein-DNA and protein-protein complexes.  SAR by MS
+enzymatically cleaves a crosslinked complex and analyzes the resulting
+mass spectrum for mass peaks of hypothesized fragments.  Depending on
+binding mode, some cleavage sites will be shielded; the absence of
+anticipated peaks implicates corresponding fragments as either part of
+the interaction region or inaccessible due to conformational change
+upon binding.  Thus different mass spectra provide evidence for
+different structure-activity relations.  We address combinatorial and
+algorithmic questions in the areas of <i>data analysis</i>
+(constraining binding mode based on mass signature) and <i>experiment
+planning</i> (determining an isotopic labeling strategy to reduce mass
+degeneracy and aid data analysis).  We explore the computational
+complexity of these problems, obtaining upper and lower bounds.  We
+report experimental results from implementations of our
+algorithms.</p>
+
+<p><a href="papers/ismb00.ps.gz">postscript</a></p>
+</li>
+
+<li> <a name="recomb00">C. Bailey-Kellogg, A. Widge, M.J. Berardi,
+J.H. Bushweller, and B.R. Donald, "The NOESY Jigsaw: automated protein
+secondary structure and main-chain assignment from sparse, unassigned
+NMR data," Proc. RECOMB, 2000, pp. 33-44.</a>
+		  
+<p>High-throughput, data-directed computational protocols for
+<i>Structural Genomics</i> (or <i>Proteomics</i>) are required in
+order to evaluate the protein products of genes for structure and
+function at rates comparable to current gene-sequencing technology.
+This paper presents the Jigsaw algorithm, a novel high-throughput,
+automated approach to protein structure characterization with nuclear
+magnetic resonance (NMR).  Jigsaw applies graph algorithms and
+probabilistic reasoning techniques, enforcing first-principles
+consistency rules in order to overcome a 5-10% signal-to-noise ratio.
+It consists of two main components: (1) graph-based secondary
+structure pattern identification in <i>unassigned</i> heteronuclear
+NMR data, and (2) assignment of spectral peaks by probabilistic
+alignment of identified secondary structure elements against the
+primary sequence.  Deferring assignment eliminates the bottleneck
+faced by traditional approaches, which begin by correlating peaks
+among dozens of experiments.  Jigsaw utilizes only four experiments,
+none of which requires cthir-labeled protein, thus dramatically
+reducing both the amount and expense of wet lab molecular biology and
+the total spectrometer time.  Results for three test proteins
+demonstrate that Jigsaw correctly identifies 79-100% of ahelical and
+46-65% of bsheet NOE connectivities, and correctly aligns 33-100% of
+secondary structure elements.  Jigsaw is very fast, running in minutes
+on a Pentium-class Linux workstation.  This approach yields quick and
+reasonably accurate (as opposed to the traditional slow and extremely
+accurate) structure calculations.  It could be useful for quick
+structural assays to speed data to the biologist early in an
+investigation, and could in principle be applied in an automation-like
+fashion to a large fraction of the proteome.</p>
+
+<p><a href="papers/recomb00.ps.gz">postscript</a></p>
+</li>
+
+<li> <a name="aaai-99">C. Bailey-Kellogg and F. Zhao, "Influence-based
+model decomposition," Proc. AAAI, 1999, pp. 402-409.</a>
+
+<p>Recent rapid advances in MEMS and information processing technology
+have enabled a new generation of AI robotic systems -- so-called Smart
+Matter systems -- that are sensor rich and physically embedded.  These
+systems range from decentralized control systems that regulate
+building temperature (smart buildings) to vehicle on-board diagnostic
+and control systems that interrogate large amounts of sensor data.
+One of the core tasks in the construction and operation of these Smart
+Matter systems is to synthesize optimal control policies using data
+rich models for the systems and environment.  Unfortunately, these
+models may contain thousands of coupled real-valued variables and are
+prohibitively expensive to reason about using traditional optimization
+techniques such as neural nets and genetic algorithms.  This paper
+introduces a general mechanism for automatically decomposing a large
+model into smaller subparts so that these subparts can be separately
+optimized and then combined.  The mechanism decomposes a model using
+an influence graph that records the coupling strengths among
+constituents of the model.  This paper demonstrates the mechanism in
+an application of decentralized optimization for a temperature
+regulation problem.  Performance data has shown that the approach is
+much more efficient than the standard discrete optimization algorithms
+and achieves comparable accuracy.</p>
+
+<p><a href="papers/aaai99.ps.gz">postscript</a> (Copyright 1999, <a
+href="http://www.aaai.org">American Association for Artificial
+Intelligence (www.aaai.org)</a>).</p>
+</li>
+
+<li> <a name="thesis">C. Bailey-Kellogg, "The spatial aggregation
+language for modeling and controlling distributed physical systems,"
+PhD thesis, Ohio State University, 1999.</a>
+
+<p>Many important science and engineering applications, such as
+predicting weather patterns, controlling the temperature distribution
+over a semiconductor wafer, and controlling the noise of a photocopy
+machine, require interpreting data and designing decentralized
+controllers for spatially distributed systems.  This thesis describes
+the Spatial Aggregation Language (SAL), a novel programming language
+and environment supporting data interpretation and control tasks for
+distributed physical systems.  SAL provides a set of powerful,
+high-level components that make explicit use of domain-specific
+physical knowledge, such as metrics, adjacency relations, and
+equivalence predicates, in order to uncover and exploit structures in
+distributed physical data at multiple levels of abstraction.  The
+language data types and operators manipulate structured
+representations of spatial objects in distributed physical systems at
+multiple levels of abstraction.  The programming environment supports
+rapid prototyping of application programs and interactive manipulation
+of the resulting structures.  In comparison with existing tools, the
+Spatial Aggregation Language offers high level programming
+abstractions explicitly encoding physical knowledge; this approach
+supports a variety of inference, explanation, tutoring, and design
+tasks.</p>
+
+<p>This thesis presents as a case study novel approaches to
+decentralized control design, in the context of thermal regulation.
+This case study develops novel algorithms for control placement and
+parameter design for systems with large numbers of coupled variables.
+These algorithms exploit physical knowledge of locality, linear
+superposability, and continuity, encapsulated in influence graphs
+representing dependencies of field nodes on control nodes.  The
+control placement design algorithms utilize influence graphs to
+decompose a problem domain so as to decouple the resulting regions.
+The decentralized control parameter optimization algorithms utilize
+influence graphs to efficiently evaluate thermal fields and to
+explicitly trade off computation, communication, and control quality.
+By leveraging the physical knowledge encapsulated in influence graphs,
+these control design algorithms are more efficient than standard
+techniques, and produce designs explainable in terms of problem
+structures.  This case study demonstrates the utility of the Spatial
+Aggregation Language operators in supporting the programming of these
+computations in a vocabulary natural for the domain.</p>
+
+<p><a href="papers/thesis-2s.ps.gz">thesis document</a></p>
+</li>
+
+<li> <a name="cacsd-99">C. Bailey-Kellogg and F. Zhao, "The SAL
+Interpreter for Large-Scale Optimization in Distributed Control
+Systems," Proc.  IEEE Symposium on Computer-Aided Control Systems
+Design, 1999.</a>
+
+<p>Many sensor-rich control systems interact with spatially distributed
+physical environments.  This paper describes the Spatial Aggregation
+Language (SAL) interpreter, a programming environment to support data
+interpretation and control tasks for distributed physical systems.
+SAL provides a set of powerful, abstract components to represent and
+exploit spatial structures in distributed physical data at multiple
+levels of abstraction.  The programming environment supports rapid
+prototyping of application programs and interactive manipulation of
+spatial structures.  In comparison with existing tools, the SAL
+environment is centered on geometric and topological representations
+that encode and utilize domain-specific knowledge, such as metrics,
+adjacency relations, and equivalence predicates.  We illustrate the
+use of SAL in decentralized control design for thermal regulation.</p>
+
+<p><a href="papers/cacsd99.ps.gz">postscript</a></p>
+</li>
+
+<li> <a name="aaai-98-tut">F. Zhao and C. Bailey-Kellogg, "Intelligent
+simulation."  AAAI Tutorial Forum, 1998.</a>
+
+<p>Intelligent simulation is a new problem-solving paradigm for data
+interpretation and control tasks in science and engineering. Because
+of rapid advances in information processing and microelectronics, many
+practical applications require real-time interpretation of information
+in order to effectively interact with the environment. The information
+is often in a data-rich form such as images, videos, or spatially
+distributed measurements of physical processes. For example, a network
+of computational agents embedded in a "smart building" must stitch
+together local measurements in order to ensure occupant comfort while
+minimizing energy consumption.</p>
+
+<p>This tutorial introduces a body of computational theories,
+techniques, and languages collectively called intelligent
+simulation. We will develop imagistic reasoning techniques for finding
+structures in large scientific and engineering data sets and the
+spatial aggregation (SA) language for rapid prototyping of imagistic
+problem solvers. SA draws upon the experience gained in developing
+applications in a number of challenging domains such as data analysis
+and visualization (KAM), control (MAPS), and mechanical design
+(HIPAIR); it incorporates techniques from computer vision, qualitative
+reasoning, scientific computing, and computational geometry. We will
+demonstrate how new applications can be prototyped with the SA
+language, using case studies including weather data interpretation,
+fluid simulation, and nonlinear maglev control design. No previous
+knowledge of intelligent simulation is required.</p>
+
+<p><a href="papers/aaai98-tutorial-handout.ps.gz">slides
+handout (2 per page)</a></p>
+</li>
+
+<li> <a name="ngc99">F. Zhao, C. Bailey-Kellogg, X. Huang, and
+I. Ordonez, "Intelligent simulation for mining large scientific data
+sets," <i>New Generation Computing</i>, 1999, 17:333-347.</a>
+
+<p>This paper describes problems, challenges, and opportunities for
+<i>intelligent simulation</i> of physical systems.  Prototype
+intelligent simulation tools have been constructed for interpreting
+massive data sets from physical fields and for designing engineering
+systems.  We identify the characteristics of intelligent simulation
+and describe several concrete application examples.  These
+applications, which include weather data interpretation, distributed
+control optimization, and spatio-temporal diffusion-reaction pattern
+analysis, demonstrate that intelligent simulation tools are
+indispensable for the rapid prototyping of application programs in
+many challenging scientific and engineering domains.</p>
+
+<p><a href="papers/ngc99.ps.gz">postscript</a></p>
+</li>
+
+<li> <a name="aaai-98"> C. Bailey-Kellogg and F. Zhao, "Qualitative
+analysis of distributed physical systems with applications to control
+synthesis," Proc. AAAI, 1998, pp. 232-239.</a>
+ 
+<p>Many important physical phenomena, such as temperature
+distribution, air flow, and acoustic waves, are described as
+continuous, distributed parameter fields. Analyzing and controlling
+these physical processes and systems are common tasks in many
+scientific and engineering domains. However, the challenges are
+multifold: distributed fields are conceptually harder to reason about
+than lumped parameter models; computational methods are prohibitively
+expensive for complex spatial domains; the underlying physics imposes
+severe constraints on observability and controllability.</p>
+
+<p>This paper develops an ontological abstraction and a
+structure-based design mechanism, in a framework collectively known as
+<i>spatial aggregation</i> (SA), for reasoning about and synthesizing
+distributed control schemes for physical fields. The ontological
+abstraction models a physical field as a hierarchy of networks of
+spatial objects.  SA applies a small number of generic operators to a
+field to compute concise structural descriptions such as iso-contours,
+gradient trajectories, and influence graphs.  The design mechanism
+uses these representations to find feasible control configurations. We
+illustrate the mechanism using a thermal control problem from
+industrial heat treatment and demonstrate that the active exploitation
+of structural knowledge in physical fields yields a significant
+computational advantage.</p>
+
+<p><a href="papers/aaai98.ps.gz">postscript</a> (Copyright 1998, <a
+href="http://www.aaai.org">American Association for Artificial
+Intelligence (www.aaai.org)</a>).</p>
+</li>
+
+<li> <a name="qr-98">C. Bailey-Kellogg and F. Zhao, "Reasoning about
+and optimizing distributed parameter physical systems using influence
+graphs," Proc. 12th International Workshop on Qualitative Reasoning,
+Cape Cod, 1998.</a>
+ 
+<p>We develop the <i>influence graph</i> mechanism for reasoning about
+and optimizing decentralized controls for distributed parameter
+physical systems.  Distributed parameter systems, such as air flow
+around an airplane wing, temperature over a semiconductor wafer, and
+noise from a photocopy machine, are common physical phenomena.  The
+influence graph mechanism encodes the structural dependency
+information in a distributed parameter system and exploits the
+information to (1) alleviate redundant computation and (2) reduce
+communication and support cooperation among local control processes.
+Using the mechanism, we obtained a dramatic computational speed-up in
+optimizing control design for a distributed temperature field.</p>
+
+<p><a href="papers/qr98.ps.gz">postscript</a></p>
+</li>
+
+<li> <a name="qr-97">C. Bailey-Kellogg and F. Zhao, "Spatial
+aggregation: modeling and controlling physical fields," Proc.  11th
+International Workshop on Qualitative Reasoning, Italy, 1997.</a>
+
+<p>Many important physical phenomena, such as temperature
+distribution, air flow, and acoustic waves, are described as
+continuous, distributed parameter fields. Controlling and optimizing
+these physical processes and systems are common design tasks in many
+scientific and engineering domains. However, the challenges are
+multifold: distributed fields are conceptually harder to reason about
+than lumped parameter models; computational methods are prohibitively
+expensive for complex spatial domains; the underlying physics imposes
+severe constraints on observability and controllability.</p>
+
+<p>This paper develops an ontological abstraction and an
+aggregation-disaggregation mechanism, in a framework collectively
+known as spatial aggregation (SA), for reasoning about and
+synthesizing distributed control schemes for physical fields. The
+ontological abstraction models physical fields as networks of spatial
+objects.  The aggregation-disaggregation mechanism employs a set of
+data types and generic operators to find a feasible control structure,
+specifying control placement and associated actions that satisfy given
+constraints.  SA abstracts common computational patterns of control
+design and optimization in a small number of operators to support
+modular programming; it builds concise and articulable structural
+descriptions for physical fields.  We illustrate the use of the SA
+ontological abstraction and operators in an example of regulating a
+thermal field in industrial heat treatment.</p>
+
+<p><a href="papers/qr97.ps.gz">postscript</a></p>
+</li>
+
+<li> <a name="aaai-96"> C. Bailey-Kellogg, F. Zhao, and K. Yip,
+"Spatial aggregation: language and applications," Proc. AAAI, 1996,
+pp. 517-522.</a>
+ 
+<p>Spatial aggregation is a framework for organizing computations
+around image-like, analogue representations of physical processes in
+data interpretation and control tasks.  It conceptualizes common
+computational structures in a class of implemented problem solvers for
+difficult scientific and engineering problems.  It comprises a
+mechanism, a language, and a programming style.  The spatial
+aggregation mechanism transforms a numerical input field to
+successively higher-level descriptions by applying a small, identical
+set of operators to each layer given a metric, neighborhood relation
+and equivalence relation.  This paper describes the spatial
+aggregation language and its applications.</p>
+
+<p>The spatial aggregation language provides two abstract data types
+-- neighborhood graph and field -- and a set of interface operators
+for constructing the transformations of the field, together with a
+library of component implementations from which a user can
+mix-and-match and specialize for a particular application.  The
+language allows users to isolate and express important computational
+ideas in different problem domains while hiding low-level details.  We
+illustrate the use of the language with examples ranging from
+trajectory grouping in dynamics interpretation to region growing in
+image analysis.  Programs for these different task domains can be
+written in a modular, concise fashion in the spatial aggregation
+language.</p>
+
+<p><a href="papers/aaai96.ps.gz">postscript</a> (Copyright 1996, <a
+href="http://www.aaai.org">American Association for Artificial
+Intelligence (www.aaai.org)</a>).</p>
+</li>
+
+</ul>
+	
+</div>
+</div>
+<div id="footer"></div>
+</div>
+</body>
+</html>
+

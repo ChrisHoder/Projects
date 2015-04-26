@@ -1,0 +1,55 @@
+http://www.cs.dartmouth.edu/~sergey/cs108
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~sergey/cs108</title>
+ </head>
+ <body>
+<h1>Index of /~sergey/cs108</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/~sergey/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="2009/">2009/</a></td><td align="right">13-Jan-2010 16:45  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="A%20Tiny%20Guide%20to%20Programming%20in%2032-bit%20x86%20Assembly%20Language.pdf">A Tiny Guide to Programming in 32-bit x86 Assembly Language.pdf</a></td><td align="right">01-Feb-1999 12:54  </td><td align="right"> 80K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="D2T1%20-%20Kris%20Kaspersky%20-%20Remote%20Code%20Execution%20Through%20Intel%20CPU%20Bugs.pdf">D2T1 - Kris Kaspersky - Remote Code Execution Through Intel CPU Bugs.pdf</a></td><td align="right">14-Jan-2010 23:24  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="DTrace-User-Guide.pdf">DTrace-User-Guide.pdf</a></td><td align="right">27-Jan-2009 08:19  </td><td align="right">532K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="Debugging%20using%20DWARF.pdf">Debugging using DWARF.pdf</a></td><td align="right">19-Jan-2010 16:52  </td><td align="right">332K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="KCA1_Sonnenschein_Drivers.pdf">KCA1_Sonnenschein_Drivers.pdf</a></td><td align="right">06-Mar-2010 18:56  </td><td align="right">365K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="KCA3_Bruning_USB.pdf">KCA3_Bruning_USB.pdf</a></td><td align="right">06-Mar-2010 18:56  </td><td align="right"> 92K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="bonwick-slab-allocator-usenix.pdf">bonwick-slab-allocator-usenix.pdf</a></td><td align="right">02-Feb-2010 02:49  </td><td align="right"> 55K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="bonwick01.pdf">bonwick01.pdf</a></td><td align="right">03-Jan-2002 18:38  </td><td align="right">131K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="bonwick94.pdf">bonwick94.pdf</a></td><td align="right">02-Feb-2010 02:49  </td><td align="right"> 55K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/a.gif" alt="[   ]"></td><td><a href="bonwick94.ps">bonwick94.ps</a></td><td align="right">02-Feb-2010 02:49  </td><td align="right"> 99K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="bookpages/">bookpages/</a></td><td align="right">06-Mar-2010 18:17  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="bpf-usenix93.pdf">bpf-usenix93.pdf</a></td><td align="right">11-Jun-2000 13:33  </td><td align="right">133K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="cliff-click-on-x86-url.txt">cliff-click-on-x86-url.txt</a></td><td align="right">15-Jan-2010 18:10  </td><td align="right">102 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="doug-mcilroy-guest-lecture.txt">doug-mcilroy-guest-lecture.txt</a></td><td align="right">06-Mar-2010 22:15  </td><td align="right"> 80 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="dtrace-internals-x86.pdf">dtrace-internals-x86.pdf</a></td><td align="right">28-Jan-2009 03:25  </td><td align="right">240K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="gallery-of-processor-cache-effects.txt">gallery-of-processor-cache-effects.txt</a></td><td align="right">13-Feb-2010 14:41  </td><td align="right"> 61 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="kernel-vulns/">kernel-vulns/</a></td><td align="right">06-Mar-2010 18:20  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="kris_kaspersky.jpg">kris_kaspersky.jpg</a></td><td align="right">14-Jul-2008 23:21  </td><td align="right"> 67K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l1.txt">l1.txt</a></td><td align="right">07-Jan-2010 18:50  </td><td align="right">3.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l2.txt">l2.txt</a></td><td align="right">07-Jan-2010 18:01  </td><td align="right">4.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l3.txt">l3.txt</a></td><td align="right">13-Jan-2010 00:39  </td><td align="right">7.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l4.txt">l4.txt</a></td><td align="right">14-Jan-2010 23:27  </td><td align="right">7.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l5.txt">l5.txt</a></td><td align="right">20-Jan-2010 22:03  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l6.txt">l6.txt</a></td><td align="right">21-Jan-2010 21:19  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l7-8.txt">l7-8.txt</a></td><td align="right">02-Feb-2010 02:51  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l9-10.txt">l9-10.txt</a></td><td align="right">05-Feb-2010 00:03  </td><td align="right"> 13K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l11-12.txt">l11-12.txt</a></td><td align="right">12-Feb-2010 01:08  </td><td align="right">7.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="l15.txt">l15.txt</a></td><td align="right">05-Mar-2010 13:24  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="linux-kernel-vulnerabilities.txt">linux-kernel-vulnerabilities.txt</a></td><td align="right">06-Mar-2010 18:01  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="midterm1.pdf">midterm1.pdf</a></td><td align="right">18-Feb-2010 18:44  </td><td align="right"> 65K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="opensol-projects-at-gmu.txt">opensol-projects-at-gmu.txt</a></td><td align="right">07-Mar-2010 17:04  </td><td align="right"> 60 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="preemtable-kernel.txt">preemtable-kernel.txt</a></td><td align="right">21-Jan-2010 12:15  </td><td align="right">156 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="procdents.d">procdents.d</a></td><td align="right">14-Jan-2009 18:27  </td><td align="right">458 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="sdtprobes.pdf">sdtprobes.pdf</a></td><td align="right">19-Jan-2010 16:53  </td><td align="right">205K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="solaris-on-x86.pdf">solaris-on-x86.pdf</a></td><td align="right">09-Jan-2009 00:38  </td><td align="right">3.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="spainhower_DT.pdf">spainhower_DT.pdf</a></td><td align="right">19-May-2008 22:08  </td><td align="right">146K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="ssh-key-howto.html">ssh-key-howto.html</a></td><td align="right">08-Feb-2010 11:12  </td><td align="right">3.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="subversiveld.pdf">subversiveld.pdf</a></td><td align="right">19-Jan-2010 16:52  </td><td align="right">240K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="syllabus.pdf">syllabus.pdf</a></td><td align="right">24-Mar-2010 19:48  </td><td align="right"> 57K</td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.17 (Fedora) Server at www.cs.dartmouth.edu Port 80</address>
+</body></html>

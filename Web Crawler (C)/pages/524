@@ -1,0 +1,379 @@
+http://www.cs.dartmouth.edu/~cs38/lectures
+3
+
+
+<title>CS38: Lectures</title>
+</head>
+ 
+<body>
+
+<h2>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+
+Lectures
+<br>
+ CS38, Security and Privacy, Spring 2007
+</h2>
+<i> www.cs.dartmouth.edu/~cs38/lectures/index.shtml</i>
+ &nbsp;&nbsp;&nbsp;
+
+<i> Last modified: 05/30/07 03:17:47 PM</i>
+
+<hr>
+
+<p>
+
+<p>
+
+
+<p>
+
+<p>
+For the lectures, each topic 
+will link to detailed lecture notes, which should be up by lunch the day of the lecture.
+<p>
+These notes will complement what's presented in class.
+(The notes are also there to compensate for my poor handwriting! :)
+<p>
+It should go without saying (but i'll say it anyway :) that you will be responsible for both: the notes
+and the class material.
+<p>
+<hr>
+<p>
+<strong>Warning: subject to change!</strong>
+
+<p>
+
+<h3>Jump to <a href="#week9">the current section</a></h3>  <hr>
+
+
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+ 
+<a name="week0"><b>0: Overture</b> 
+</big><br>
+
+
+<p>
+Reading:
+<ul>
+<li> <a href="../resources/index.shtml#risks">Neumann</a>, 1.1-1.4, 3.  
+(Nice overview of the breadth of issues, with many real examples.)
+<li> <a href="../resources/index.shtml#craft">S&amp;M</a>, Chapter 1.
+<li> <a href="../resources/index.shtml#craft">S&amp;M</a>, 6.0-6.3.
+<li> <a href="../resources/index.shtml#aleph1">Aleph One</a>. The classic stack-smashing paper.
+</ul>
+
+<p>
+Lecture notes:
+<ul>
+<li> <a href="mar28/index.shtml"><b>Wed, March 28: Introduction.</b></a>
+<li> Thu, March 29 (X-hour). <i>(Open)</i>
+<li> <a href="mar30/index.shtml"><b>Fri, March 30: Blunders.</b></a>
+</ul>
+
+
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week1"><b>1.  The Old Testament </b>
+</big><br>
+<p>
+
+Reading, everyone:
+<ul>
+<li> <a href="../resources/index.shtml#craft">S&amp;M</a>, Chapters 2 and 3
+<li> <a href="../resources/index.shtml#orange">The Orange Book</a>.
+Read the preface, intro, Sec 5, Sec 6, Sec 8, Sec 10,
+the Appendices, and Glossary are all worth reading.
+Skim the rest.  
+<li> Read <a href="../resources/index.shtml#saltzer">Saltzer and Schroeder,</a> 
+Section 1.  (1A is more important than 1B)
+<li> Read <a href="../resources/index.shtml#schell">Schell.</a> 
+</ul>
+<p>
+Additional reading, grad credit:
+<ul>
+<li> <a href="../resources/index.shtml#mclean">Mclean.</a> (a critique of the lattice approach.)
+<li> In <a href="../resources/index.shtml#karger">Karger et al.</a>,
+read
+ Sections I-III. V, VI, IX and onward are good.
+<li> <a href="../resources/index.shtml#bell">Bell and LaPadula.</a> (the
+seminal lattice model for secrecy).
+</ul>
+<P>
+
+Lecture notes:
+<ul>
+<li> <a href="apr02/index.shtml"><b>Mon, April 2: Information Flow.</b></a>
+<li> <a href="apr04/index.shtml"><b>Wed, April 4: The Orange Book.</b></a>
+<li> <a href="apr05/index.shtml"><b>Thu, April 5 (X-hour): Old Principles, New World.</b></a>
+</ul>
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week2"><b>2. The Cryptographic Toolkit</b>
+</big><br>
+<p>
+Reading:
+<ul>
+<li> <a href="../resources/index.shtml#craft">S&amp;M</a>, Chapters 7, 10
+</ul>
+<p>
+Graduate reading:
+<ul>
+<li> R. Kohlas and U. Mauerer.
+<a href="http://www.springerlink.com/index/HMLL31Q2J5542C73.pdf"><b>"Reasoning About Public-Key Certification: On Bindings Between Entities and Public Keys."</b></a>.  IEEE Journal on Selected Areas in Communications, 2000.
+(You can find more, including the one in which he fumes about PGP,
+<a href="http://www.cs.dartmouth.edu/~sws/private/maurer/"><b>here</b></a>.)
+<li> J. Marchesini, S.W. Smith. 
+<a href="http://www.cs.dartmouth.edu/~sws/pubs/ms05a.pdf"><b>"Modeling Public Key Infrastructure in the Real World."</b></a> Public Key Infrastructure: EuroPKI 2005.  (our follow-up)
+<li> 
+S. Garfinkel and R. Miller.
+<a href="http://cups.cs.cmu.edu/soups/2005/2005proceedings/p13-garfinkel.pdf"><b>"Johnny 2: A User Test of Key Continuity Management with S/MIME and Outlook Express"</b></a>. Symposium on Usable Privacy and Security.
+2005.
+</ul>
+<p>
+Lecture notes:
+<ul>
+<li> <a href="apr06/index.shtml"><b>Fri, April 6: Symmetric Cryptography.</b></a>
+<li> <a href="apr09/index.shtml"><b>Mon, April 9: Public Key Cryptography.</b></a>
+<li> <a href="apr11/index.shtml"><b>Wed, April 11: In Practice.</b></a>
+<li> <a href="apr12/index.shtml"><b>Thu, April 12 (X-hour): PKI.</b></a>
+</ul>
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week3"><b>3. Breaking Cryptography</b>
+</big><br>
+<p>
+Reading:
+<ul>
+<li> <a href="../resources/index.shtml#craft">S&amp;M</a>, Chapter 8.
+<li> <a href="http://cryptome.org/cracking-des/cracking-des.htm"><b>Cracking DES</b></a>, Chapters 1 and 2.
+<li> The   <a href="../resources/index.shtml#kv4"><b>Dole</b></a> and 
+<a href="../resources/index.shtml#gowa">Goldberg/Wagner</b></a> papers 
+<li> <a href="../resources/index.shtml#timing">Kocher's timing paper</a>
+<li> Graduates might be interested in 
+<a href="../resources/index.shtml#hastad"><b>Hastad's
+"On Using RSA with Low-Exponent in a Public Key Network"</b></a>
+<li> as well as in <a href="../resources/index/shtml#boneh1998"><b>the
+Boneh/Venktasen paper</b></a>
+</ul>
+<p>
+
+Lecture notes:
+<ul>
+<li> <a href="apr13/index.shtml"><b>Fri, April 13: Subverting Cryptography (Part 1).</b></a>
+<li> Mon, April 16: <i>No class: Sean at NSF</i>
+<li> Wed, April 18:  <i>No class: Sean at NIST</i>
+<li> Thu, April 19 (X-hour): <i>No class: Sean at NIST</i>
+<li> <a href="apr20/index.shtml"><b>Fri, April 20: Subverting Cryptography (Part 2).</b></a>
+</ul>
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week4"><b>4. The Modern Platform Landscape</b>
+</big><br>
+<p>
+Reading:
+<ul>
+<li> <a href="../resources/index.shtml#craft">S&amp;M</a>, Chapter 4; Chapter 5; Chapter 6.4-6.6;
+<li> <a href="../resources/index.shtml#spafford">Spafford's paper</a> on the Morris Worm
+<li> <a href="../resources/index.shtml#appel">Govindavajhala and Appel's paper</a> on light bulbs
+<li> D'Cunha et. al. 
+<a href="../resources/local/plsec.pdf"><b><cite>Programming Language Security: A Survey for Practioners.</cite></b></a>. DRAFT.
+<li> <a href="../resources/index.shtml#thompson">Thompson</a>
+<li> Grad reading: <a href="../resources/local/myers.pdf">Sabelfield and Myer's paper on information flow</a>
+</ul>
+<p>
+Lecture notes: 
+<ul>
+<li> <a href="apr23/index.shtml"><b>Mon, April 23: Operating Systems and Security.</b></a>
+<li> <a href="apr25/index.shtml"><b>Wed, April 25: Networks and Security.</b></a>
+<li> Thu, April 26 (X-hour): <i>(Open)</i>
+<li> <a href="apr27/index.shtml"><b>Fri, April 27: Implementation Security, Malware.</b></a>
+</ul>
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week5"><b>5. Authentication</b>
+</big><br>
+<p>
+Reading:
+<ul>
+<li> <a href="../resources/index.shtml#craft"><b>S&amp;M</b></a>, Chapter 9.
+<li> <a href="../resouces/local/sasseDRAFT.doc"><b>Sasse draft on the Bendy Shuffle</b></a>
+<li> Grad reading: <a href="../resources/index.shtml#bird"><b>Bird</b></a>
+</ul>
+<p>
+
+Lecture notes:
+<ul>
+<li> <a href="apr30/index.shtml"><b>Mon, April 30: Authenticating Humans.</b></a>
+<li> <a href="may02/index.shtml"><b>Wed, May 2: Authentication and Cryptography.</b></a>
+<li> Thu, May 3 (X-hour): <i>(Open)</i>
+<li> <a href="may04/index.shtml"><b>Fri, May 4: Case Studies.</b></a>
+</ul>
+
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week6"><b>6. The Modern Application Landscape</b>
+</big><br>
+<p>
+
+Reading:
+<ul><li> <a href="../resources/index.shtml#craft"><b>S&amp;M</b></a>, Chapter 12, 13.
+<li> <a href="../resources/index.shtml#cache"><b>Felten and Schneider</b></a>
+<li> <a href="../resources/index.shtml#bugnosis"><b>Bugnosis paper</b></a>
+<li> <a href="../resources/index.shtml#keyjack"><b>our keyjacking paper</b></a>
+</ul>
+
+<p>
+
+Lecture notes:
+<ul>
+<li> <a href="may07/index.shtml"><b>Mon, May 7: The Web.</b></a>
+<li> <a href="may09/index.shtml"><b>Wed, May 9: SSL.</b></a>
+<li> Thu, May 10 (X-hour): <i>(Open)</i>
+<li> <a href="may11/index.shtml"><b>Fri, May 11: Fun with Office Tools.</b></a>
+</ul>
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week7"><b>7. Meatspace</b>
+</big><br>
+<p>
+
+Reading:
+<ul><li> <a href="../resources/index.shtml#craft"><b>S&amp;M</b></a>, Chapter 14, 18; 11.1-11.2.
+<li> <a href="../resources/index.shtml#pak"><b>Petitcolas et al</b></a>
+<li><a href="../resources/local/econ.pdf"><b>"Why Information Security is Hard---an Economic Perspective."</b></a>
+<li><a href="../resources/local/DGF.pdf"><b>"CRITICAL INFRASTRUCTURE CYBER SECURITY:ARE ECONOMIC INCENTIVES ADEQUATE?"</b></a>
+<li> Grad: the <a href="../resources/local/joux.pdf"><b>Joux paper</b></a> on hash concatenation
+</ul>
+<p>
+Lecture notes:
+<ul>
+<li> <a href="may14/index.shtml"><b>Mon, May 14: Money, Time, and Property.</b></a>
+<li> Wed, May 16: Economic Aspects of Security 
+<i>(Guest lecture by Dr. Scott Dynes, Tuck)</i>
+<li> <a href="may17/index.shtml"><b>Thu, May 17 (X-hour): Hash Concatenation, and Property.</b></a>
+<li> <a href="may18/index.shtml"><b>Fri, May 18: Legal and Social Aspects.</b></a>
+</ul>
+
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week8"><b>8. Emerging Tools</b>
+</big><br>
+<p>
+
+Reading:
+<ul><li> <a href="../resources/index.shtml#craft"><b>S&amp;M</b></a>, Chapter 18, 11.3, 15, 16, 17.
+<li> <a href="../resources/index.shtml#johnny"><b>Why Johnny Can't Encrypt</b></a>
+<li> Grad reading: <a href="../resources/index.shtml#perrig1"><b>Perrig's paper on automatic protocol generation</b></a>
+</ul>
+<p>
+
+Lecture notes:
+<ul>
+<li> <a href="may21/index.shtml"><b>Mon, May 21: HCISEC and Testing</b></a>
+<li> <a href="may23/index.shtml"><b>Wed, May 23: AI and Formal Methods</b></a>
+<li> <a href="may24/index.shtml"><b>Thu, May 24 (X-hour): AI (leftover)</b></a>
+<li> <a href="may25/index.shtml"><b>Fri, May 25: Hardware-based Security</b></a>
+</ul>
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="week9"><b>9. Wrap-up</b>
+</big><br>
+<p>
+
+<p>
+
+<p>
+<ul>
+<li> Grad reading: Rich Uhlig et. al.
+<a href="../resources/local/intel-vt.pdf"><b>"Intel Virtualization Technology."</b></a>
+</ul>
+<p>
+
+Lecture notes:
+<ul>
+<li> Mon, May 28: <i>No class: "First Day of Pre-Examination Break."</i>
+<li> <a href="may30/index.shtml"><b>Wed, May 30: Course Wrap-Up.</b></a>
+</ul>
+<p><hr><p>
+
+<p>
+
+<big><IMG ALIGN="bottom" SRC="http://www.cs.dartmouth.edu/images/greenball.gif" ALT=""> 
+
+<a name="final"><b>Endgame</b>
+</big><br>
+<p>
+<ul>
+<li><b>Review Session.</b> <br>
+Thu, May 31.  10AM.  Moore 150.
+<p>
+<li> 
+<b> Final.</b>
+Sunday, June 3, 3:00-6:00.
+Moore 110.
+</ul>
+
+<p>
+
+</dl>
+
+
+
+<p>
+
+<hr>
+<b>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/icons/back.gif">
+
+<A HREF="../index.shtml"><b>Back to CS38 Home Page</b></A>
+</b>
+&nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.dartmouth.edu/~sws/"><b>Sean Smith</b></a>
+&nbsp;&nbsp;&nbsp;
+&lt; <a href="mailto:sws@cs.dartmouth.edu"><b>sws@cs.dartmouth.edu</b></a>&gt;
+
+
+
+
+</body> </html>
+              

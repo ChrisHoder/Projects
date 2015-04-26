@@ -1,0 +1,11 @@
+Final end states for single pulse with following input parameters 
+ nMax: 10
+ eta: 0.1 
+  wA:1 
+ phiNot: 0 
+ wm: 2*pi/10000 
+ whf: 2*pi 
+ Tp: 0.125 
+ alpha: pi/4 
+ mMax: 50 
+ pulseArea: pi/2

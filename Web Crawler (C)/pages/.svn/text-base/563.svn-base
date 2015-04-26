@@ -1,0 +1,260 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_11
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Lecture 11" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Lecture 11 - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Lecture_11";
+		var wgTitle = "Lecture 11";
+		var wgAction = "view";
+		var wgArticleId = "20";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 248;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lecture_11 skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Lecture 11</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Generalized_arc_consistency"><span class="tocnumber">1</span> <span class="toctext">Generalized arc consistency</span></a></li>
+<li class="toclevel-1"><a href="#Global_constraints.3B_alldiff"><span class="tocnumber">2</span> <span class="toctext">Global constraints; alldiff</span></a></li>
+<li class="toclevel-1"><a href="#Backtracking_search"><span class="tocnumber">3</span> <span class="toctext">Backtracking search</span></a></li>
+<li class="toclevel-1"><a href="#Variable_and_value_ordering"><span class="tocnumber">4</span> <span class="toctext">Variable and value ordering</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Next_variable:__minimum-remaining_values_heuristic"><span class="tocnumber">4.1</span> <span class="toctext">Next variable:  minimum-remaining values heuristic</span></a></li>
+<li class="toclevel-2"><a href="#Next_variable:__degree_heuristic"><span class="tocnumber">4.2</span> <span class="toctext">Next variable:  degree heuristic</span></a></li>
+<li class="toclevel-2"><a href="#Next_value:__least-constraining-value"><span class="tocnumber">4.3</span> <span class="toctext">Next value:  least-constraining-value</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Interleaving_search_and_inference"><span class="tocnumber">5</span> <span class="toctext">Interleaving search and inference</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Forward_checking"><span class="tocnumber">5.1</span> <span class="toctext">Forward checking</span></a></li>
+<li class="toclevel-2"><a href="#MAC:__Maintaining_arc_consistency"><span class="tocnumber">5.2</span> <span class="toctext">MAC:  Maintaining arc consistency</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Another_approach:_local_search"><span class="tocnumber">6</span> <span class="toctext">Another approach: local search</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Min-conflicts"><span class="tocnumber">6.1</span> <span class="toctext">Min-conflicts</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Generalized_arc_consistency" id="Generalized_arc_consistency"></a><h2> <span class="mw-headline"> Generalized arc consistency </span></h2>
+<p>January 29 lecture outline
+</p><p>In general, to make constraints consistent, we delete values from domains.  Are there stronger versions of constraint checking?  One idea is to consisder pairs of variables, and see if they are consistent with respect to a third variable's domain.  For example, assume the domains of SA, V, and NSW are all {red, blue}.  Every variable is arc consistent with respect to every other variable.
+</p><p>But let's consider pairs of variables, and the partial assignments to those variables.  Is (SA, V) 3-consistent with NSW?  Possible assignements for (SA, V) are (red, blue) and (blue, red), assuming we check the binary constraints and delete (red, red) and (blue, red).  Now, is (red, blue) for (SA, V) consistent with NSW, for any choice of value from NSW's domain?  No, so (SA, V) is not 3-consistent with NSW.  
+</p><p>We check (blue, red), and find that it also does not allow an assignment to NSW.  Therefore we delete both combinations of values for (SA, V).  Since this leaves no possible assignment for (SA, V), the CSP does not have a solution.
+</p>
+<a name="Global_constraints.3B_alldiff" id="Global_constraints.3B_alldiff"></a><h2> <span class="mw-headline"> Global constraints; alldiff</span></h2>
+<p>The <i>all different</i> constraint is not a binary constraint, though it could be expressed as a collection of binary constraints.  However, it is more efficient to keep 'alldiff' as a global constraint, with a special rule for checking consistency.  The book suggests the simple strategy of checking if an assingment of values to a set of variables 'covers' a number of values that is equal to the number of variables in the set.  This check can be run in linear time.  
+</p><p>In fact, this approach can be used even when we only have a partial assignment.  If we take the union of the domains, and the cardinality of the set is less than the number of variables, then we know alldiff cannot be satisfied.
+</p>
+<a name="Backtracking_search" id="Backtracking_search"></a><h2> <span class="mw-headline"> Backtracking search</span></h2>
+<p>Sometimes propagating the constraints is enough to solve a constraint satisfaction problem.  But ensuring that a problem is strongly n-consistent is an exponential process:  we'd have to check that for every assingment to an n-1 tuple of variables, the final variable has a legal assignment, and looping over these assignment will take an exponential amount of time.
+</p><p>So, sometimes you have to search.  The simplest approach to searching would be to choose a variable, assign a value.  Then choose another variable and value.  If you get into trouble (ie, no assignments are possible without violating a constraint) backtrack by unassigning the last variable chosen, and make a different choice.  This is a basic depth first search.  The branching vactor at the top level is nd, if n is the number of variables and d is the size of the domain.  At the next level, the branching factor is (n-1)d, since one variable has been assigned.  We generate a tree with <span class="texhtml"><i>n</i>!<i>d</i><sup><i>n</i></sup></span> leaves.  This should worry us, since there are only <span class="texhtml"><i>d</i><sup><i>n</i></sup></span> possible assignments.  
+</p><p>The thing we missed is that it doesn't matter what order we assign the variables values.  Exploiting this symmetry, we only need to consider a single variable at each node in the search tree.  This gives a number of leaves <span class="texhtml"><i>d</i><sup><i>n</i></sup></span>.
+</p>
+<a name="Variable_and_value_ordering" id="Variable_and_value_ordering"></a><h2> <span class="mw-headline"> Variable and value ordering</span></h2>
+<a name="Next_variable:__minimum-remaining_values_heuristic" id="Next_variable:__minimum-remaining_values_heuristic"></a><h3> <span class="mw-headline">Next variable:  minimum-remaining values heuristic</span></h3>
+<p>Idea:  choose the variable with the fewest remaining values.  If you can force a failure, you can prune that section of the search tree.
+</p>
+<a name="Next_variable:__degree_heuristic" id="Next_variable:__degree_heuristic"></a><h3> <span class="mw-headline">Next variable:  degree heuristic</span></h3>
+<p>Idea:  choose the variable that is most connected to other variables by constraints.  Choosing a value for this variable in a partial assignment will give you the "most" information about connected variables.  Usually this is seen as less strong than MRV, but is used to break ties.
+</p>
+<a name="Next_value:__least-constraining-value" id="Next_value:__least-constraining-value"></a><h3> <span class="mw-headline"> Next value:  least-constraining-value</span></h3>
+<p>Choose the value for the variable such that the value rules out the least possible number of choices in the adjacent variables.  Idea:  we only want one solution, and choosing a 'good' value allows us to make progress towards that solution.  
+</p><p>It may seem odd that we choose the variable to cause a search failure early, but choose a value to cause a search failure late.  The idea is that we have to assign all variables in a solution, so dealing with tricky variables early may help speed things up by pruning out bad assignments for those variables.  But there may be many solutions, and we only need one of them, so picking a 'good' value at each level may allow us to make progress towards one of those solutions.
+</p>
+<a name="Interleaving_search_and_inference" id="Interleaving_search_and_inference"></a><h2> <span class="mw-headline"> Interleaving search and inference </span></h2>
+<a name="Forward_checking" id="Forward_checking"></a><h3> <span class="mw-headline">Forward checking</span></h3>
+<a name="MAC:__Maintaining_arc_consistency" id="MAC:__Maintaining_arc_consistency"></a><h3> <span class="mw-headline">MAC:  Maintaining arc consistency</span></h3>
+<a name="Another_approach:_local_search" id="Another_approach:_local_search"></a><h2> <span class="mw-headline"> Another approach: local search</span></h2>
+<p>We've seen an incremental approach.  What if we just pick a complete state assignment?  It will be bogus, but maybe we can patch it up.
+</p>
+<a name="Min-conflicts" id="Min-conflicts"></a><h4> <span class="mw-headline">Min-conflicts</span></h4>
+<ul><li>  Choose a random conflicted variable
+</li><li>  Choose a value that violates the least number of constraints
+</li><li>  Loop
+</li></ul>
+<p>This works suprisingly well, particularly if there are many densely distributed solutions.  A variant of this is walksat, used for logical satisfiability problmes.  Which leads us to the next lecture, logic.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 22/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:20-0!1!0!!en!2!edit=0 and timestamp 20110220225359 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_11">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_11</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Lecture_11" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Lecture_11&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Lecture_11&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Lecture_11&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Lecture_11" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Lecture_11" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Lecture_11" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Lecture_11&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Lecture_11&amp;oldid=248" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 29 January 2010, at 20:38.</li>
+					<li id="viewcount">This page has been accessed 1,192 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.208 secs. --></body></html>

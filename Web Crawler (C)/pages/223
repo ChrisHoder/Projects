@@ -1,0 +1,203 @@
+http://www.cs.dartmouth.edu/~cbk/design
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>CS 88/188 | Computational methods in protein, drug, and vaccine
+design | Spring 2011</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="page">
+<div id="header">
+  <div id="title">CS 88/188, Spring 2011</div>
+  <div id="subtitle">Computational methods in protein, drug, and vaccine
+design</div>
+</div>
+
+<div id="navigation">
+  <a href="index.html" class="navhere">About</a>
+  <a href="schedule.html" class="navthere">Schedule</a>
+</div>
+
+<div id="content">
+
+<table id="pix">
+<tr>
+  <td><a href="http://www.pnas.org/content/106/10/3764.abstract">
+    <img src="img/nrps.jpg" alt="NRPS design" /></a></td>
+  <td><a href="http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=1HPV">
+    <img src="img/1hpv.png" alt="1hpv structure" /></a></td>
+  <td><a href="http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=1RUZ">
+    <img src="img/1ruz.png" alt="influenza hemagglutinin" /></a></td>
+</tr>
+<tr>
+  <td><a href="http://www.pnas.org/content/106/10/3764.abstract">
+    redesigned GrsA-PheA active site</a></td>
+  <td><a href="http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=1HPV">
+    HIV-1 protease + drug</a></td>
+  <td><a href="http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=1RUZ">
+    influenza hemagglutinin</a></td>
+</tr>
+</table>
+
+<h2>Course description</h2> 
+
+<p>This course will explore how computer science can help in the
+rational design of proteins, drugs, and vaccines.  For example, in
+protein design we will look at approaches for optimizing mutations, or
+even entirely new proteins, to be harnessed in applications ranging
+from biofuels to biosensors.  In drug design, we will study algorithms
+for discovering new lead compounds, and for mining the relationships
+between properties of molecules and their activities.  In vaccine
+design, we will see how to train immunogenicity predictors and use
+them to develop specifically targeted vaccines.  We will find that
+these and other such applications raise numerous interesting and
+challenging problems requiring the development of appropriate models
+and algorithms.</p>
+
+<p><strong>Prereqs</strong>: none.  In particular, a background in
+biology / biochemistry is not required, and the basics will be
+introduced in context.  At the same time, no specific CS courses are
+required as prereqs, though readings and discussions will often assume
+familiarity with core concepts (as in CS 5 and 8).</p>
+
+<a name="admin"></a>
+<h2>Administrative info</h2>
+
+<dl>
+<dt>Instructor</dt>
+<dd><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a> | 250 Sudikoff | office hours: by appointment</dd>
+
+<dt>Class meetings</dt>
+<dd>2A | TuTh 2:00-3:50 | room TBD</dd>
+
+<dt>Textbook</dt> 
+<dd>None; we'll be reading papers.</dd>
+</dl>
+
+<a name="coursework"></a>
+<h2>Coursework</h2>
+
+<p>This seminar course will introduce and study topics by way of
+primary literature, from seminal papers to results hot off the
+presses. All students will present papers and participate in
+discussions; graduate students will also do paper critiques
+(undergraduates are welcome to, since it's good practice). The seminar
+will culminate in final projects offering the opportunity to dive more
+deeply into topics of interest.</p>
+
+<dl>
+  <dt>Presentations (30% undergrad; 25% grad)</dt>
+
+  <dd><em>Critically</em> present the material in and underlying the
+  reading, addressing the following:
+  <ul>
+  <li>The core problem and its context, including why other methods
+  (computational and/or experimental) are insufficient.</li>
+  <li>The approach, including how the computational methodology
+  captures and helps address the problem.</li>
+  <li>The validation of the approach, including how it is demonstrated
+  to improve the state of the art.</li>
+  <li>Strengths and weaknesses of the approach and the paper, and
+  possible next steps.</li>
+  </ul>
+  <p>Help everyone get the big picture and background (since much of
+  the material will be new and challenging), and then provide your
+  insights into the contribution. Try to engage everyone else in a
+  discussion (see class participation below).</p>
+
+  <p>Follow general advice on how to give a good talk (e.g., by <a href="http://www.cs.duke.edu/brd/Teaching/Giving-a-talk/giving-a-talk.html">Bruce
+  Donald</a>, <a
+  href="http://www.cs.dartmouth.edu/farid/tutorials/goodtalk.html">Hany
+  Farid</a>, and <a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/giving-a-talk.htm">Simon
+  Peyton-Jones</a>).</p>
+
+  <p>I will set up a queue of papers and solicit your preferences for
+  when and what to present. I'm also glad to take your suggestions for
+  specific papers on these topics that you would like to present (or
+  would like to add to the queue).  In some cases, additional reading
+  will be required to prepare a presentation; I'm glad to help
+  identify materials.</p>
+  </dd>
+  
+  <dt>Participation (20% undergrad; 15% grad)</dt>
+
+  <dd>Don't leave the presenter dangling up there!  Read the paper(s)
+  thoroughly before class, so that you also can have critical
+  insights into the material.  Give your perspectives, ask and respond
+  to questions, raise additional points, etc.</dd>
+
+  <dt>Project (50% undergrad; 45% grad)</dt>
+
+  <dd>Do an in-depth exploration of a relevant topic, worthy of
+  (about) half the grade for the course.  The project may be done
+  individually or in a group (recommended), and may include a project-
+  &amp; student-appropriate mixture of research, implementation, and
+  application.  A project proposal and a project update will ensure
+  that we are on the same page as to the project's suitability; a
+  project presentation will make for a fun class-wide exchange; a
+  project report will document what was done and what was
+  learned.</dd>
+  
+  <dt>Critiques (extra credit undergrad; 15% grad)</dt>
+
+  <dd>For six different papers (two each from protein, drug, and
+  vaccine design), not including what you present, write a
+  <em>short</em> (at most a page) critique, including the points
+  discussed above for presentations. Don't just repeat what you read
+  in the abstract, introduction, and conclusion, but instead use your
+  own background and experience for a unique critical perspective.
+  Don't be overwhelmed by jargon and details, but try to cut through
+  all that to the essence of the contribution.
+
+  <p>This is essentially a short review, and there's also plenty of
+  general advice out there for reviewing papers (e.g., by <a
+  href="http://www.computer.org/portal/web/csdl/doi/10.1109/2.55470">Alan
+  Jay Smith</a> and
+  <a href="http://portal.acm.org/citation.cfm?id=74090">Ian Parberry</a>).</p>
+  </dd>
+</dl>
+
+<a name="honor"></a>
+<h2>Honor code</h2>
+
+<p>Dartmouth's honor code applies to this course, and academic
+misconduct policies will be strictly enforced.  If you have questions,
+ask!</p>
+
+<p>As this is a seminar course, you are encouraged and expected to
+discuss the material with others.  You are also encouraged to work in
+teams for the project.  So the only real pitfalls are attribution: the
+work you present as your own must in fact be your own.  In particular,
+you must write your critiques yourself, in your own words.  You must
+also create your own presentation slides, though you may incorporate
+others' images and text, with citation.  And in your project, while
+you certainly may use and build upon others' code, you must clearly
+indicate what part is your contribution.</p>
+
+<a name="access"></a>
+<h2>Disabilities</h2>
+
+<p>Students with disabilities enrolled in this course and who may need
+disability-related classroom accommodations are encouraged to make an
+appointment to see the instructor before the end of the second week of
+the term. All discussions will remain confidential, although the <a
+href="http://www.dartmouth.edu/~accessibility/">Student Accessibility
+Services</a> office may be consulted to discuss appropriate
+implementation of any accommodation requested.</p>
+
+</div>
+
+<div id="footer">
+</div>
+
+</div>
+
+</body>
+</html>

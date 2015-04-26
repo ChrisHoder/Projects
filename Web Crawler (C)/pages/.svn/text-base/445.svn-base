@@ -1,0 +1,39 @@
+http://www.cs.dartmouth.edu/~priya/publications.html
+3
+<html>
+  <head>
+    <title> Priya Natarajan - Publications </title>
+  </head>
+  <body style="background-color:cornsilk">
+    <p><span style="color:Darkorange;font-size:115%"><b>Articles in Refereed Conferences</b></span>
+  	<ul>
+  	<li> Priya Natarajan, Thomas H. Cormen, and Elena Riccio Strange <br/>
+  	    <a href="http://www.cs.dartmouth.edu/~priya/MTAAP2010_final_IEEE_certified.pdf">Out-of-core Distribution Sort in the FG Programming Environment</a><br/>
+  	    Workshop on Multithreaded Architectures and Applications (MTAAP), Proceedings of the 24th IEEE International Parallel and Distributed Processing Symposium (IPDPS 2010), Atlanta, GA, April 2010.
+  	</li>
+  	</ul>
+  	</p>
+
+  	<p><span style="color:Darkorange;font-size:115%"><b>Unrefereed Articles</b></span>
+  	<ul>
+  	<li> Priya Natarajan, Thomas H. Cormen, and Elena Riccio Davidson <br/>
+  	    <a href="http://www.cs.dartmouth.edu/reports/TR2007-596.pdf ">When One Pipeline Is Not Enough</a><br/>
+  	    Dartmouth College Computer Science Technical Report TR2007-596
+  	</li>
+  	</ul>
+  	</p>
+
+	<p><span style="color:Darkorange;font-size:115%"><b>Posters</b></span>
+	<ul>
+	<li> Priya Natarajan, Thomas H. Cormen, and Elena Riccio Davidson <br/>
+	<span style="color:Darkblue">Out-of-core Sorting: Oblivious vs. Distribution-based</span> <br/>
+	Computer Science Research Symposium, Dartmouth College, September 2006.
+	</li>
+	<li>Priya Natarajan, Thomas H. Cormen, and Elena Riccio Davidson <br/>
+	<span style="color:Darkblue">FG vs. TBB: a Comparison </span><br/>
+	Computer Science Research Symposium, Dartmouth College, September 2006.
+	</li>
+	</ul>
+	</p>
+  </body>
+</html>

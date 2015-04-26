@@ -1,0 +1,299 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug09
+3
+<html><head><title>August 9: Stack Frames, Functions, a Recursion
+example</title></head>
+
+<body>
+
+<h1>August 9: Stack Frames, Functions, a Recursion Example</h1>
+
+<hr><h2>0) Recap</h2><hr>
+<b>P vs NP</b>: Remember way back in the beginning of the course when
+we talked about complexity classes?  I mentioned the
+famous <a href="http://en.wikipedia.org/wiki/P_vs_NP"><b>P vs
+NP</b></a> problem and said that you could win a cool million dollars for
+solving it.
+
+<p>A paper came out just this morning that claims to have proved once
+and for all that P != NP.  Now, normally, this wouldn't be a big deal,
+because there's a large correlation between people who submit P vs. NP
+papers and crackpots.  But several respected theoretical computer
+scientists on the blogosphere are at least taking it seriously.  The
+paper is over 100 pages, so there won't be any definitive
+answer yet, but take a look
+at <a href="http://scottaaronson.com/blog/"> <b>these</b></a> 
+ <a href="http://rjlipton.wordpress.com/"> <b>blogs</b> </a> for more
+information.  
+
+<hr>
+<p>So we've gone all the way from electricity up to the instruction
+set architecture.  Last week we started discussing C, our
+representative high level language, and more importantly, we've been
+looking at a lot of features in C and how they get implemented in an
+assembly language.
+
+On Friday, we were looking at control structures in C, and we walked
+through the implementation of a switch statement:<p>
+
+<centerline>
+<img src="img/switch.jpg" alt="oops" width="90%"></img>
+</centerline>
+
+<p>The LC-3 compiler implemented the switch by first determining which
+case statemnet we should execute, and then branching to the code for
+that case statement.  Other comilers might implement this differently.
+
+<p>Today we'll complete Friday's discussion of how control passes from
+one function to another (e.g., how main might set things up to call
+some function fun() )  
+
+<p>First, we'll discuss the general technique for managing the stack
+through (possibly many, possibly recursive) function invocations.
+
+<hr><h2>1) Stack Frames</h2><hr> 
+
+We've seen that we use the stack to store local variables, and that
+we'd like to use it to store the information that needs to get passed
+between functions.  <b>Stack frames</b> are the general, uniform way
+of packaging up the information a function needs to operate.
+
+<p>Stack Frame Basics
+<ul>
+<li>also known as an <i>activation record</i>
+<li>stores local variables, function parameters from caller, bookkeeping
+<li>use arguments like local variables
+<li>send return value back with return.
+<li>caller specifies arguments, uses return value
+</ul>
+
+The high-level stack frame view:
+<centerline>
+<img src="img/fig14-5.jpg" alt="oops" width="90%"></img>
+</centerline>
+
+Walk through this example:  (<a href="code/watt.c"><b>watt.c</b></a>)
+
+<pre>
+/* transcribed from Fig 14-4
+ * we'll put the functions first, so that the compiler knows
+ * what we're talking about when we use them.
+ */
+
+int Volta(int q, int r) {
+  int k;
+  int m;
+
+  k = q + r;   /* make up something */
+  return k;
+}
+
+int Watt(int a) {
+  int w;
+
+  w = Volta(a,10);
+  return w;
+}
+
+int main() {
+  int a;
+  int b;
+  
+  a = 23;
+  b = Watt(a);
+  b = Volta(a,b);
+  return 42;
+}
+</pre>
+  
+<p>...and the resulting <a href="code/watt.asm"><b>assembly
+code</b></a>...
+
+<p>From the example, it appears that the LC-3 compiler uses a stores
+the following in each stack frame:
+
+<ol>
+<li>local variables
+<li>old frame pointer (R5)
+<li>old return address (R7)
+<li>function return value
+<li>function arguments
+</ol>
+
+The example as gone over in class discussed what happens during the
+main routine.  We saw that main first pushes space for the return
+value onto the stack.  Then, it saves R7 and R5 before allocating
+space for local variables.  It then pushed watt's local variables onto
+the stack.  In turn, watt() is responsible for allocating space in its
+stack frome for the return value, old R5/R7, and local variables.  <p>
+When control passes back to main(), main pops the return value off the
+stack and uses it.
+
+<p>In short, the responsabilities for populating a stack frame are:
+<ul>
+<li>Caller pushes function arguments onto stack.
+<li>Callee pushes the rest, pops local vars, old frame pointer, old
+return address.
+<li>Caller then pops return value from stack.
+</ul>
+
+<b>Question:</b>Who's job is it to pop function arguments from the
+stack?
+<p><b>Answer:</b>It <i>should</i> be the caller, since it's the one
+that pushes function arguments onto the stack.  But the LC-3 compiler
+doesn't seem to do this!
+
+<p><b>Question:</b>What happens then?  Isn't this a bad thing?
+<p><b>Answer:</b>Let's see.
+
+<p><a href="code/fun1.c"><b>fun1.c</b></a> prints out addresses for
+local variables.
+
+<pre>
+#define MASK(X)  ( ((int)(X)) & 0x7FFF)
+
+
+int global1;
+int global2;
+
+
+int fun(int x) {
+
+  int f_local;
+
+  f_local = x + 42;
+  
+  printf("f_local lives at %x\n", MASK(&f_local));
+
+  return f_local;
+
+}
+
+main() {
+
+  int local1;
+  int local2;
+
+  local2 = fun(local1);
+
+
+  printf("local1 lives at %x\n",MASK(&local1));
+  printf("local2 lives at %x\n",MASK(&local2));
+  printf("global1 lives at %x\n",MASK(&global1));
+  printf("global2 lives at %x\n",MASK(&global2));
+
+}
+</pre>
+(and the resulting <a href="code/fun1.asm"><b>assembly code</b></a>)
+
+<p><a href="code/fun3.c"><b>fun3.c</b></a> calls the function many
+times.
+<pre>
+#define MASK(X)  ( ((int)(X)) & 0x7FFF)
+
+
+int global1;
+int global2;
+
+
+int fun(int x) {
+
+  int f_local;
+
+  f_local = x + 42;
+  
+  printf("f_local lives at %x\n", MASK(&f_local));
+
+  return f_local;
+
+}
+
+main() {
+
+  int local1;
+  int local2;
+
+  local2 = fun(local1);
+
+  local2 = fun(local1);
+
+  printf("local1 lives at %x\n", MASK(&local1));
+  printf("local2 lives at %x\n", MASK(&local2));
+  printf("global1 lives at %x\n",MASK(&global1));
+  printf("global2 lives at %x\n",MASK(&global2));
+
+}
+
+</pre>
+
+(and the resulting <a href="code/fun3.asm"><b>assembly code</b></a>)
+
+<hr>Taking another big-picture look at memory:<p>
+<centerline>
+<img src="img/fig12-7.jpg" alt="oops" width="50%"></img>
+</centerline>
+
+<p>
+<hr><h2>A Recursion example</h2><hr> 
+
+Remember way back when we started looking at stacks?  One of the big issues
+was implementing <b>recursive functions</b> in a way that didn't stomp
+on registers.  
+
+<hr>Here's the f(x) = f(x-1) + x example, written in C (with some
+printouts of the memory so see where things end up.
+
+(<a href="code/rec1.c"><b>rec1.c</b></a>)
+
+<p><pre>
+#define MASK(X)  ( ((int)(X)) & 0x7FFF)
+
+
+int f(int x) {
+  
+  int f_local;
+
+  printf("f(%d) enter; f_local lives at %x\n", x, MASK(&f_local));
+
+  if (x == 0) {
+
+    printf("f(%d) returning 0\n\n", x);
+    return 0;
+  }
+
+  printf("f(%d) calling f(%d)\n\n", x, x-1);
+  f_local = f(x-1);
+  printf("f(%d) returning %d\n\n", x, f_local);
+
+
+  return f_local + x;
+
+}
+
+main() {
+
+  int x = 15;
+  int y;
+
+  y = f(x);
+
+  printf("f(%d) = %d\n", x ,y);
+}
+</pre>
+
+(...and the resulting <a href="code/rec1.asm"><b>assembly code</b></a>)
+
+<p>
+Take a look at this on the LC-3, or compile+run it using gcc.  Notice
+how:
+
+<ul>
+<li>The "f(x) returning..." lines come after all the "f(x)
+entering..." lines, and in the opposite order.
+<li>The location of f_local changes at every function invocation.
+Each function invocation, we open up a new stack frame without closing
+the others.  The new frame gets put on the stack <i>on top</i> of the others.
+</ul>
+
+<hr>
+</body>
+</html>

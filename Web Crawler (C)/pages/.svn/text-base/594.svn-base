@@ -1,0 +1,313 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Differential_kinematics
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Differential kinematics" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Differential kinematics - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Differential_kinematics";
+		var wgTitle = "Differential kinematics";
+		var wgAction = "view";
+		var wgArticleId = "73";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1127;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Differential_kinematics skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Differential_kinematics" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Differential_kinematics" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Differential_kinematics&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Differential_kinematics&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Differential_kinematics&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Differential kinematics</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>In this lecture we will look at the relationship between velocities at joints and velocities of points attached to the robot.
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Trajectories"><span class="tocnumber">1</span> <span class="toctext">Trajectories</span></a></li>
+<li class="toclevel-1"><a href="#The_tangent_space"><span class="tocnumber">2</span> <span class="toctext">The tangent space</span></a></li>
+<li class="toclevel-1"><a href="#The_Jacobian"><span class="tocnumber">3</span> <span class="toctext">The Jacobian</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_multivariable_chain_rule"><span class="tocnumber">3.1</span> <span class="toctext">The multivariable chain rule</span></a></li>
+<li class="toclevel-2"><a href="#Geometric_interpretation_of_the_Jacobian"><span class="tocnumber">3.2</span> <span class="toctext">Geometric interpretation of the Jacobian</span></a></li>
+<li class="toclevel-2"><a href="#The_cross-product_method_of_computing_the_Jacobian_for_serial_revolute_arms"><span class="tocnumber">3.3</span> <span class="toctext">The cross-product method of computing the Jacobian for serial revolute arms</span></a></li>
+<li class="toclevel-2"><a href="#Singularities_of_the_Jacobian"><span class="tocnumber">3.4</span> <span class="toctext">Singularities of the Jacobian</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Trajectories" id="Trajectories"></a><h2> <span class="mw-headline"> Trajectories</span></h2>
+<p>Assume the configuration space is parameterized by some vector <i>q</i>.  For example, for a planar rigid body, we might have <span class="texhtml"><i>q</i> = (<i>x</i>,<i>y</i>,&theta;)</span>, and for a 3R planar arm we might have <span class="texhtml"><i>q</i> = (&theta;<sub>1</sub>,&theta;<sub>2</sub>,&theta;<sub>3</sub>)</span>.  
+</p><p>At each instant in time, <span class="texhtml"><i>t</i></span>, the system has some configuration <span class="texhtml"><i>q</i>(<i>t</i>)</span>.  For the planar rigid body, we have <span class="texhtml"><i>q</i>(<i>t</i>) = (<i>x</i>(<i>t</i>),<i>y</i>(<i>t</i>),&theta;(<i>t</i>))</span>.  The configuration is thus a <i>vector-valued function of time</i>.  The trajectory describes a curve in the configuration space, and we say that the curve is <i>parameterized by time</i>.  We can start the clock whenever we like, so often we will consider a trajectory with time in some interval, <img class="tex" alt="t \in [0, T]" src="/~robotics/cs54/images/math/e/6/6/e66a2b7fedcba80ccb192b87440f8d9c.png" />, such that the start time of the trajectory is zero and the end time is T.
+</p><p>We typically expect the trajectory to be a continuous function of time, except for "rollovers" of angles from <span class="texhtml">0</span> to <span class="texhtml">2&pi;</span> or vice versa.  (In fact, the trajectories <i>are</i> continuous even at these points, if we view them correctly in the configuration space.  Remember, for example, that the topology of the configuration space for a 2R arm is a torus.)
+</p>
+<a name="The_tangent_space" id="The_tangent_space"></a><h2> <span class="mw-headline"> The tangent space</span></h2>
+<p>A formal mathematical framework allows us to leverage existing techniques and theorems from the mathematics community to solve robotics problems.  We will use some terminology from differential geometry.
+</p><p>First, there is the idea of a <b>tangent</b> to a parameterized curve at at point <i>t</i>:  
+</p>
+<dl><dd><img class="tex" alt="&#10;\frac {d{x}}{dt}&#10;=&#10;\lim_{h \rightarrow 0} \frac{1}{h}({x}(t + h) - {x}(t)), &#10;" src="/~robotics/cs54/images/math/2/3/4/2346e39dde9924d67f7d8a55d0fe35b2.png" />
+</dd></dl>
+<p>where <b>x</b> is the vector of coordinates describing a configuration.  The tangent has a physical interpretation:  it describes the //velocity// of the elements of the system. 
+</p><p>There are problems with how you define the tangent to the trajectory at the boundary between <span class="texhtml">0</span> and  <span class="texhtml">2&pi;</span> angles, but these problems disappear if we remember that the system is defined as a collection of particles, and the configuration gives the location of every particle.  Each particle, if following a smooth trajectory, has a well-defined tangent vector, even if our parameterization of the configuration space has some inconvenient sharp edges.
+</p><p>Since every trajectory is embedded in the configuration space surface, the constraints on the motion of the system constrain the possible tangents to a trajectory at a point.  We define the 
+</p><p><b>tangent space:</b>  The tangent space at a point on a surface is set of all possible tangents through that point.  We denote the tangent space at a point <b>x</b> with the notation <span class="texhtml"><i>T</i><sup> * </sup>(<i>x</i>)</span>.
+</p><p>It is important to remember that the tangent space is defined at points in the configuration space; i.e., for a single configuration space, there are many tangent spaces -- one tangent space corresponding to each point in the configuration space.  There is a term for the collection of tangent spaces for a surface; this is called the //tangent bundle//.  Wikipedia has some nice pictures of <a href="http://en.wikipedia.org/wiki/Tangent_bundle" class="external text" title="http://en.wikipedia.org/wiki/Tangent_bundle" rel="nofollow">tangent bundles</a> for one-dimensional surfaces.
+</p>
+<a name="The_Jacobian" id="The_Jacobian"></a><h2> <span class="mw-headline"> The Jacobian</span></h2>
+<p>Let's look at an example, a 2R planar arm.  We have 
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;x(t) \\ y(t) &#10;\end{array}&#10;\right) &#10;= &#10;\left(&#10;\begin{array}{c}&#10;l_1 \cos \theta_1(t) + l_2 \cos (\theta_1(t) + \theta_2(t)) \\&#10;l_1 \sin \theta_1(t) + l_2 \sin(\theta_1(t) + \theta_2(t))&#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/a/2/3/a23652143935652f21fe3aca9059806d.png" /> 
+</dd></dl>
+<p>What is the relationship between how fast the joints are moving (<img class="tex" alt="\dot \theta" src="/~robotics/cs54/images/math/6/1/d/61d466d6e64e3af7b8e8f4499a274986.png" />s), and how fast the point <span class="texhtml">(<i>x</i>,<i>y</i>)</span> is moving?  We'll start by taking a time derivative of each side.  We have to use the chain rule, since the angles are functions of time.  Remember that
+</p>
+<dl><dd><img class="tex" alt="&#10;\frac{d}{dt} f (\theta (t)) = \frac{df}{d\theta} \frac{d\theta}{dt}.&#10;" src="/~robotics/cs54/images/math/2/6/4/2648c5cf1d99db434fa607b9786f493d.png" />
+</dd></dl>
+<p>The chain rule has a simple physical explanation:  we want to know how fast f changes with time; we know how fast f changes with <span class="texhtml">&theta;</span>, and we know how fast <span class="texhtml">&theta;</span> changes with time.    
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;\dot x(t) \\ \dot y(t) &#10;\end{array}&#10;\right) &#10;= &#10;\left(&#10;\begin{array}{c}&#10;-l_1 \sin \theta_1(t) \dot \theta_1(t) - l_2 \sin (\theta_1(t) + \theta_2(t)) (\dot \theta_1(t) + \dot \theta_2(t)) \\&#10;l_1 \cos \theta_1(t) \dot \theta_1(t) + l_2 \cos(\theta_1(t) + \theta_2(t)) (\dot \theta_1(t) + \dot \theta_2(t)) &#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/0/f/7/0f72d0565754d8670b9c9d78d363fe06.png" /> 
+</dd></dl>
+<p><img class="tex" alt="\dot \theta_1" src="/~robotics/cs54/images/math/7/1/f/71f9fd4f3121dd2c9a506ffecda40914.png" /> and <img class="tex" alt="\dot \theta_2" src="/~robotics/cs54/images/math/c/f/b/cfbe5f0f8c7c2bb83638041f6eb334cd.png" /> are the joint velocities, while the other terms describe the geometry of the robot at a particular configuration.  Let's collect the velocity terms:
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;\dot x(t) \\ \dot y(t)&#10;\end{array}&#10;\right) &#10;= &#10;\left(&#10;\begin{array}{c}&#10;\dot \theta_1(t) (-l_1 s_1 - l_2 s_{12}  ) - \dot \theta_2(t)) l_2 s_{12} \\&#10;\dot \theta_1(t) ( l_1 c_1 + l_2c_{12})   +  \dot \theta_2(t) l_2 c_{12}  &#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/3/0/c/30ce34527a938d08f2ef32befc2a9290.png" /> 
+</dd></dl>
+<p>We could write this in vector form:
+</p>
+<dl><dd><img class="tex" alt="&#10;\left(&#10;\begin{array}{c}&#10;\dot x(t) \\ \dot y(t) &#10;\end{array}&#10;\right) &#10;= &#10;\left[&#10;\begin{array}{cc}&#10; (-l_1 s_1 - l_2 s_{12}  ) &amp;  - l_2 s_{12} \\&#10;( l_1 c_1 + l_2c_{12})   &amp; l_2 c_{12}  &#10;\end{array}&#10;\right] &#10;\left(&#10;\begin{array}{c}&#10;\dot \theta_1(t) \\ \dot \theta_2(t)&#10;\end{array}&#10;\right) &#10;" src="/~robotics/cs54/images/math/8/5/1/8513c221152a8e590d6fece1743f7e3c.png" /> 
+</dd></dl>
+<p>The matrix is called the <b>Jacobian</b> matrix, and it transforms between velocities in joint space and velocities in the workspace.  Notice that it is only a function of the configuration:  so, given a configuration, the workspace velocity is related <i>linearly</i> to the joint space velocity.  
+</p><p>Also notice that for our example, upper left element of the Jacobian happens to be the partial derivative of <span class="texhtml"><i>l</i><sub>1</sub>cos&theta;<sub>1</sub>(<i>t</i>) + <i>l</i><sub>2</sub>cos(&theta;<sub>1</sub>(<i>t</i>) + &theta;<sub>2</sub>(<i>t</i>))</span>, the expression for x as a function of //q//, with respect to <span class="texhtml">&theta;<sub>1</sub></span>.  In fact, observation tells us that the Jacobian for this system has the form
+</p>
+<dl><dd><img class="tex" alt="&#10;J(q) = &#10;\left[&#10;\begin{array}{cc}&#10; \partial x / \partial \theta_1   &amp;  \partial x / \partial \theta_2 \\&#10;\partial y / \partial \theta_1   &amp;  \partial y / \partial \theta_2&#10;\end{array}&#10;\right] &#10;" src="/~robotics/cs54/images/math/d/2/3/d23fecec7db62118ec1a849bcfb2522f.png" />
+</dd></dl>
+<a name="The_multivariable_chain_rule" id="The_multivariable_chain_rule"></a><h3> <span class="mw-headline"> The multivariable chain rule</span></h3>
+<p>If we could compute the elements of the Jacobian by just computing partial derivatives of the forwards kinematics, that would be much easier than using the chain rule and factoring out <img class="tex" alt="\dot \theta" src="/~robotics/cs54/images/math/6/1/d/61d466d6e64e3af7b8e8f4499a274986.png" />s!  In fact we can, and this is a consequence of the multivariable chain rule from vector calculus:
+</p><p>Let <span class="texhtml"><i>f</i>(&theta;<sub>1</sub>(<i>t</i>),&theta;<sub>2</sub>(<i>t</i>),&theta;<sub>3</sub>(<i>t</i>),...)</span> be a function of n variables <span class="texhtml">&theta;<sub><i>i</i></sub></span>, each of which is a function of some other variable <span class="texhtml"><i>t</i></span>.  Then 
+</p>
+<dl><dd><img class="tex" alt="&#10;\frac{df}{dt} = \frac{\partial f}{\partial \theta_1} \frac{d \theta_1}{dt} + \frac{\partial f}{\partial\theta_2} \frac{d \theta_2}{dt} +\frac{\partial f}{\partial \theta_3} \frac{d \theta_3}{dt} + \ldots&#10;" src="/~robotics/cs54/images/math/2/1/3/213aff1cbeff65030e29a8658a044083.png" />
+</dd></dl>
+<p>The multivariable chain rule is easy to remember if we think about some examples.  For example, let f be a function of x, y, z.  Maybe f is the air temperature at different points in a room.  Then let x(t), y(t), z(t) be a trajectory through that room.  How fast does the temperature change (df/dt) at some point on that trajectory?  The first thing we do is compute a vector tangent to the trajectory:  (dx/dt, dy/dt, dz/dt).  Then we compute a vector that describes how much the temperature changes in each of the coordinate directions x, y, z:  <img class="tex" alt="(\partial f / \partial x, \partial f / \partial y, \partial f / \partial z)" src="/~robotics/cs54/images/math/f/e/2/fe2c454322b43f57a8a77ff317b76211.png" /> -- this vector is known as the <b>gradient</b> of the temperature.  So how fast does the temperature change?  It's the dot product (or projection) of the tangent vector with the gradient.   
+</p><p>For our system, the <i>x</i> coordinate of the arm is a function of several variables, <span class="texhtml">&theta;<sub>1</sub>,&theta;<sub>2</sub></span>, each of which is a function of time.  So <img class="tex" alt="\dot x" src="/~robotics/cs54/images/math/e/2/3/e2321048711c1f746adc74bc70952114.png" /> can be computed by taking the partial derivative of the forward kinematics for <i>x</i> with respect to <span class="texhtml">&theta;<sub>1</sub>,&theta;<sub>2</sub></span>, and taking a dot product with the joint velocities.  This is the effect of multiplying first row of the Jacobian times the joint velocity vector!  The second row of the Jacobian corresponds to the <i>y</i> coordinate.
+</p><p>So, the Jacobian is a generalization of the multivariable chain rule to vector-valued functions.  That may sound intimidating, but in practice it's easy to remember:  you have one vector (the position of the end effector) whose elements are functions of another vector (the configuration of the robot), and the configuration of the robot is changing with time.  To compute the relationship between the time derivative of each vector, just multiply by a matrix of partials.  
+</p>
+<a name="Geometric_interpretation_of_the_Jacobian" id="Geometric_interpretation_of_the_Jacobian"></a><h3> <span class="mw-headline">Geometric interpretation of the Jacobian</span></h3>
+<p>Matrix multiplication is linear: <span class="texhtml"><i>A</i>(<i>u</i> + <i>v</i>) = <i>A</i><i>u</i> + <i>A</i><i>v</i></span>.  If we fix the robot arm at a particular configuration, the Jacobian can be computed explicitly, and is just a constant matrix.  We have
+</p>
+<dl><dd><img class="tex" alt="&#10;\dot x = J\dot q&#10;" src="/~robotics/cs54/images/math/b/d/0/bd035916bc290f099d1a62d9eca4e0e3.png" />  
+</dd></dl>
+<p>where <i>x</i> is the vector describing the location of the end effector.  It follows that the effect of moving joint one with <span class="texhtml">&theta;<sub>1</sub> = 3</span> and moving (at the same time) joint two with <span class="texhtml">&theta;<sub>2</sub> = 4</span> is the sum of the effects of the independent motions.
+</p><p>This means that you can (approximately) measure the Jacobian experimentally, at least at a fixed configuration!  Lock joint 2, and move joint 1 slightly.  Measure the motion of the end effector.  This is the first column of the Jacobian.  Lock joint 1, and move joint 2 slightly.  This is the second column of the Jacobian.
+</p>
+<a name="The_cross-product_method_of_computing_the_Jacobian_for_serial_revolute_arms" id="The_cross-product_method_of_computing_the_Jacobian_for_serial_revolute_arms"></a><h3> <span class="mw-headline">The cross-product method of computing the Jacobian for serial revolute arms</span></h3>
+<p>The idea of moving joints independently to determine columns of the Jacobian gives an idea about how to compute the Jacobian for serial revolute arms without computing any partial derivatives!  The first column of the Jacobian tells how the velocity of the end effector depends on the motion of the first joint.  Lock all of the joints except the first.  Draw the line from the first joint to the end effector.  Rotating the joint will move the effector in a direction that is 1) perpendicular to the joint axis, 2) perpendicular to the line you just drew, and 3) has magnitude proportional to the length of that line.  If you take the cross product of the joint axis and the vector from joint 1 to the effector, you'll get a vector with exactly that property, and this will be the first column of the Jacobian!
+</p><p>How about the second column?  Fix all joints except the second, draw the line from the second joint to the effector, and take the cross product with the second joint.      
+</p>
+<a name="Singularities_of_the_Jacobian" id="Singularities_of_the_Jacobian"></a><h3> <span class="mw-headline">Singularities of the Jacobian</span></h3>
+<p>Sometimes columns of the Jacobian are linearly independent, and sometimes they are not.  The <b>rank</b> of the Jacobian is the number of linearly independent columns.  Each column describes a direction in the workspace that the robot can move by changing one configuration variable.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 125/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:73-0!1!0!!en!2!edit=0 and timestamp 20110220202731 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Differential_kinematics">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Differential_kinematics</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Differential_kinematics" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Differential_kinematics" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Differential_kinematics&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Differential_kinematics&amp;oldid=1127" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 8 February 2011, at 21:19.</li>
+					<li id="viewcount">This page has been accessed 224 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.212 secs. --></body></html>

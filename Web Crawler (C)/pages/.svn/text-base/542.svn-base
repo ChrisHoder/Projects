@@ -1,0 +1,423 @@
+http://www.cs.dartmouth.edu/~cs52/schedule.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<title>CS52 - Computer Graphics - Fall 2010</title>
+	<meta name="author" content="Fabio Pellacini" />
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+<div class="pagebackground">
+
+<div class="pagedecorationbefore"></div>
+<div class="pagedecoration">
+
+<div class="page">
+
+<div class="header">
+<div class="title">Computer Graphics</div>
+<div class="subtitle">CS52 - Fall 2010</div>
+<div class="subtitle">Instructor: William Kerr</div>
+</div>
+
+<div class="navigation">
+<span class="navigationitem"><a href="index.html">About</a></span>
+<span class="navigationitem"><a href="schedule.html">Schedule</a></span>
+<span class="navigationitem"><a href="homeworks.html">Homeworks</a></span>
+<span class="navigationitem"><a href="assignments.html">Assignments</a></span>
+</div>
+
+<div class="content">
+<h1>Schedule</h1>
+
+<p>The following schedule will be updated frequently with reference material and 
+a more precise indication of what has been covered in class. 
+Please note that the slides available for this website are slightly different from
+the ones used in class since the latter have more explanatory material.
+The topics for future lectures are here only as indication and may change as the course progresses. </p>
+
+<table class="scheduletable">
+
+<tr class="scheduleheader">
+<th class="scheduleheaderitem" id="scheduleheaderdate">date</th>
+<th class="scheduleheaderitem" id="scheduleheadertopic">topic</th>
+<th class="scheduleheaderitem" id="scheduleheaderreference">readings</th>
+<th class="scheduleheaderitem" id="scheduleheaderout">out</th>
+<th class="scheduleheaderitem" id="scheduleheaderdue">due</th>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Sep 23</td>
+<td class="scheduleitem"><a href="lectures/01_Introduction.pdf">Introduction</a> | <a href="lectures/02_Images.pdf">Images</a></td>
+<td class="scheduleitemref">introduction | images</td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Sep 28</td>
+<td class="scheduleitem"><a href="lectures/03_RayTracing.pdf">Raytracing I</a></td>
+<td class="scheduleitemref">raytracing I | shading I</td>
+<td class="scheduleitem"><a href="homeworks.html#Hw1">Hw1</a></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Sep 30</td>
+<td class="scheduleitem"><a href="lectures/03_RayTracing.pdf">Raytracing I</a></td>
+<td class="scheduleitemref">raytracing I | shading I</td>
+<td class="scheduleitem"><a href="assignments.html#RayI">Ray I</a></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Oct 5</td>
+<td class="scheduleitem"><a href="lectures/04_Transforms.pdf">Transformations</a></td>
+<td class="scheduleitemref">linear alg. | transforms </td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Oct 7</td>
+<td class="scheduleitem"><a href="lectures/04_Transforms.pdf">Transformations</a> | <a href="lectures/05_Viewing.pdf">Viewing</a></td>
+<td class="scheduleitemref">transforms | viewing</td>
+<td class="scheduleitem"><a href="homeworks.html#Hw2">Hw2</a></td>
+<td class="scheduleitem">Hw1</td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Oct 12</td>
+<td class="scheduleitem"><a href="lectures/06_IntroToModeling.pdf">Modeling</a> | <a href="lectures/07_PolygonMeshes.pdf">Meshes</a></td>
+<td class="scheduleitemref">meshes</td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Oct 14</td>
+<td class="scheduleitem"><a href="lectures/08_ParametricCurves.pdf">Curves</a></td>
+<td class="scheduleitemref">curves</td>
+<td class="scheduleitem"><a href="assignments.html#Model">Model</a></td>
+<td class="scheduleitem">Ray I</td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Oct 19</td>
+<td class="scheduleitem"><a href="lectures/09_ParametricSurfaces.pdf"-->Surfaces</a> | <a href="lectures/10_SubdivisionSurfaces.pdf">Subdiv</a></td>
+<td class="scheduleitemref">surfaces | subdivision </td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Oct 21</td>
+<td class="scheduleitem"><a href="lectures/11_Animation.pdf">Animation</a></td>
+<td class="scheduleitemref">animation</td>
+<td class="scheduleitem"><a href="homeworks.html#Hw3">Hw3</a></td>
+<td class="scheduleitem">Hw2</td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Oct 26</td>
+<td class="scheduleitem"><a href="lectures/11_Animation.pdf">Animation</a></td>
+<td class="scheduleitemref">animation</td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Oct 28</td>
+<td class="scheduleitem"><a href="lectures/12_Pipeline.pdf">Graphics Pipeline</a> | <a href="lectures/13_Texturing.pdf">Texturing</a></td>
+<td class="scheduleitemref">pipeline | texturing</td>
+<td class="scheduleitem"><a href="assignments.html#Anim">Anim</a></td>
+<td class="scheduleitem">Model</td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Nov 2</td>
+<td class="scheduleitem"><a href="lectures/13_Texturing.pdf">Texturing</a> | <a href="lectures/14_RayTracingII.pdf">Raytracing II</a></td>
+<td class="scheduleitemref">raytracing II</td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Nov 4</td>
+<td class="scheduleitem"><a href="lectures/15_MonteCarloIntegration.pdf">Monte Carlo Integration<!--/a--> </td>
+<td class="scheduleitemref"> montecarlo </td>
+<td class="scheduleitem"><a href="homeworks.html#Hw4">Hw4</a></td>
+<td class="scheduleitem">Hw3</td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Nov 9</td>
+<td class="scheduleitem"><a href="lectures/16_DistributionRayTracing.pdf">Distribution Ray Tracing</a> </td>
+<td class="scheduleitemref">dist. raytracing</td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Nov 11</td>
+<td class="scheduleitem"><a href="lectures/17_RenderingEquation.pdf">Rendering Equation</a></td>
+<td class="scheduleitemref">rendering equation</td>
+<td class="scheduleitem"><a href="assignments.html#RayII">Ray II</a></td>
+<td class="scheduleitem">Anim</td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Nov 16</td>
+<td class="scheduleitem"><a href="lectures/18_PathTracing.pdf">Path Tracing</a></td>
+<td class="scheduleitemref">path tracing</td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Nov 18</td>
+<td class="scheduleitem"><a href="lectures/19_ColorToneMapping.pdf">Color, Tone Mapping</a></td>
+<td class="scheduleitemref"></td>
+<td class="scheduleitem"><a href="homeworks.html#Hw5">Hw5</a></td>
+<td class="scheduleitem">Hw4</td>
+</tr>
+
+<tr class="scheduleline2">
+<td class="scheduleitem">Nov 23</td>
+<td class="scheduleitem">TBD</td>
+<td class="scheduleitemref"></td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline2dis">
+<td class="scheduleitem">Nov 25</td>
+<td class="scheduleitem">--- Thanksgiving ---</td>
+<td class="scheduleitemref"></td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem"></td>
+</tr>
+
+<tr class="scheduleline1">
+<td class="scheduleitem">Nov 30</td>
+<td class="scheduleitem">Wrapup</td>
+<td class="scheduleitemref"></td>
+<td class="scheduleitem"></td>
+<td class="scheduleitem">Ray II, Hw5</td>
+</tr>
+
+</table>
+
+<h1>Readings</h1>
+
+<table class="readginstable">
+
+<tr class="readingsline">
+<td class="readingsitemtitle">background</td>
+<td class="readingsitemref">Shirley, Ch. 2, Ch. 5</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">A review of mathematical concepts we will be 
+using in class. We will not be covering this in detail in class, but
+I will quickly review some topics as they come up. 
+You might want to read this carefully if this material is new to you
+since we will be using it quite a bit during the course.<br />
+Topics range from trigonometry, parametric representations, 
+points and vectors and linear algebra.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">introduction</td>
+<td class="readingsitemref">Shirley, Ch. 1</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">A basic introduction to computer graphics and
+some practicalities for implementing the algorithms.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">images</td>
+<td class="readingsitemref">Shirley, Ch. 3</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">A very basic introduction to digital images
+and compositing.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">raytracing I</td>
+<td class="readingsitemref">Shirley, Ch. 4.1-4.4, 4.6, 4.7</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Basic raytracing: generation of viewing rays,
+ray-object intersection (sphere, triangle and polygon), shadows, and core rendering framework. We will not cover in detail the ray-polygon intersection.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">shading I</td>
+<td class="readingsitemref">Shirley, Ch. 4.5, 4.8, 10.1, 10.2, 13.1</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Basic surface material shading and how this is achieved with reflectance models (Lambert, Blinn-Phong). Shading often calls for additional ray tracing, so I have included reading for how to compute reflection and refraction rays.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">linear algebra</td>
+<td class="readingsitemref">Shirley, Ch. 5.1, 5.2</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Linear algebra review. This was a part of our background reading, but now I would like you to read a bit more deeply.  You don't need to cover inverse computation, eigenvalues and SVD in sections 5.3 and 5.4, but they might be of interest to you.  We briefly touched on 5.3.2 in our discussion of ray-primitive intersections. </td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">transforms</td>
+<td class="readingsitemref">Shirley, Ch. 6</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">2D and 3D geometric transformations.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">viewing</td>
+<td class="readingsitemref">Shirley, Ch. 7</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Viewing transformations. Do not try to memorize the matrices given,
+but concentrate on the concepts introduced. We will be looking at a simpler version of the matrices
+in class, so this chapter is good to look at the full formulation.  The equation at the bottom of page 152 has an extra factor of (1/n) thrown in that is not explicitly indicated.  The result is the same in homogeneous coordintes, but don't let it confuse you.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">meshes</td>
+<td class="readingsitemref">Shirley, Ch. 12.1</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">A quick introduction to some of the common mesh data structures.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">curves and surfaces</td>
+<td class="readingsitemref">Shirley, Ch. 15</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">A fairly in-depth review of curves, but not much on surfaces.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">subdivision</td>
+<td class="readingsitemref">Zorin and Schroder, Ch. 1-3</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">A very in-depth course on subdivision surfaces.
+You sould only skim though the course notes quickly, and only the first three chapters. A full copy of the document can be found at
+<a href="http://mrl.nyu.edu/publications/subdiv-course2000/">http://mrl.nyu.edu/publications/subdiv-course2000/</a></td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">animation</td>
+<td class="readingsitemref">Shirley, Ch. 17</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">A non-technical introduction to animation. A bit lacking in mathematical details.</td>
+</tr>
+
+<!tr class="readingsline">
+<td class="readingsitemtitle">pipeline</td>
+<td class="readingsitemref">Shirley, Ch. 8, Ch. 12.4</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">An introduction to the various algorithms used in the graphics pipeline.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">texturing</td>
+<td class="readingsitemref">Shirley, Ch. 11</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">An introduction to texturing; covers more details on 3d textures than we have done in class.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">raytracing II</td>
+<td class="readingsitemref">Shirley, Ch. 12.3, 12.4, 13.2</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Support for hierarchies and sub-linear intersection for raytracing.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">montecarlo</td>
+<td class="readingsitemref">Shirley, Ch. 14</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Introduction to Monte Carlo integration.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">distribution ray tracing</td>
+<td class="readingsitemref">Shirley, Ch. 13.4</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Distribution ray tracing.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">rendering equation</td>
+<td class="readingsitemref">Shirley, Ch. 20, Ch. 25</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Introduction to the rendering equation and reflection models. Uses a notation very different than ours that might be a bit confusing in some places.</td>
+</tr>
+
+<tr class="readingsline">
+<td class="readingsitemtitle">path tracing</td>
+<td class="readingsitemref">Shirley, Ch. 24</td>
+</tr>
+<tr class="readingsline">
+<td class="readingsitemdesc"></td>
+<td class="readingsitemdesc">Introduction to global illumination methods. Goes into more details on how to accurately compute direct lighting.</td>
+</tr>
+
+
+</table>
+
+</div>
+
+<div class="footer">
+<table align="center">
+<tr><td align="right">Page Administrator:</td><td>William Kerr (wkerr -at- cs -dot- dartmouth -dot- edu)</td></tr>
+<tr><td align="right">Page Template Author:</td><td>Fabio Pellacini (fabio -at- cs -dot- dartmouth -dot- edu)</td></tr>
+</table>
+</div>
+
+</div>
+</div>
+<div class="pagedecorationafter"></div>
+
+</div>
+
+</body>
+</html>

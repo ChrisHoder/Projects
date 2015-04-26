@@ -1,0 +1,157 @@
+http://www.cs.dartmouth.edu/~pete/x09-37/index.html
+3
+<html>
+<head><title>COSC 37: Computer Architecture, Summer 2009</title></head>
+<body>
+
+<h2>COSC 37: Computer Architecture, Summer 2009</h2>
+
+<p>
+<b>Staff</b><br>
+Instructor: Peter Johnson, pete@cs<br>
+TAs: Gabriel Weaver, gweave01@cs; Jing Chen, jingchen@cs; Rong Yang, sharon@cs<br>
+(mail sent to cs37@cs will reach all of us, and is the best place to send questions)<br>
+</p>
+
+<p>
+<b>Where &amp; When</b><br>
+Lectures MWF 12:30-1:35, Tu 1:00-1:50 in Kemeny 006<br>
+Lab hours Su 6pm-8pm, M 6pm-8pm, Tu 8pm-10pm in Sudikoff 005<br>
+</p>
+
+<p>
+<b>Homeworks</b>
+<ul>
+    <li><a href="hw/01/index.html">01, due 02 July</a></li>
+    <li><a href="hw/02/index.html">02, due 09 July</a></li>
+    <li><a href="hw/03/index.html">03, due 16 July</a></li>
+    <li><a href="hw/04/index.html">04, due 23 July</a></li>
+    <li><a href="hw/05/index.html">05, due 30 July</a></li>
+    <li><a href="hw/06/index.html">06, due 06 August</a></li>
+    <li><a href="hw/07/index.html">07, due 13 August</a></li>
+    <li><a href="hw/08/index.html">08, due 22 August</a></li>
+    <li><a href="hw/09/index.html">09, due 26 August</a></li>
+</ul>
+</p>
+
+<p>
+<b>Syllabus</b><br>
+(heavily inspired by/stolen from <a href="http://www.cs.dartmouth.edu/~sws">Sean Smith</a>)<br>
+
+<table width="100%">
+    <tr><td>26 Jun</td><td><a href="lectures/01/index.html">Introduction; Physics to Gates</a></td></tr>
+    <tr><td>27 Jun</td><td><a href="lectures/02/index.html">Binary</a></td></tr>
+    <tr><td>29 Jun</td><td><a href="lectures/03/index.html">Combinatorial Logic</a></td></tr>
+    <tr><td>30 Jul</td><td><a href="lectures/04/index.html">Reality Check: Logic Design</a></td></tr>
+    <tr><td>01 Jul</td><td><a href="lectures/05/index.html">Latches and Flip-flops</a></td></tr>
+    <tr><td>03 Jul</td><td>no class</td></tr>
+    <tr><td>06 Jul</td><td><a href="lectures/06/index.html">RAM</a></td></tr>
+    <tr><td>07 Jul</td><td><a href="lectures/07/index.html">Clocks</a></td></tr>
+    <tr><td>08 Jul</td><td><a href="lectures/08/index.html">I Like Traffic Lights</a></td></tr>
+    <tr><td>10 Jul</td><td><a href="lectures/09/index.html">The Magic Bus</a></td></tr>
+    <tr><td>13 Jul</td><td><a href="lectures/10/index.html">Computer Architecture</a></td></tr>
+    <tr><td>14 Jul</td><td><a href="lectures/11/index.html">The ISA; Addressing Modes; Hints of Assembly</a></td></tr>
+    <tr><td>15 Jul</td><td><a href="lectures/12/index.html">More ISA</a></td></tr>
+    <tr><td>17 Jul</td><td><a href="lectures/13/index.html">Assembly Language</a></td></tr>
+    <tr><td>20 Jul</td><td><a href="lectures/14/index.html">I/O</a></td></tr>
+    <tr><td>21 Jul</td><td><a href="lectures/15/index.html">Interrupts, Traps, and Subroutines</a></td></tr>
+    <tr><td>22 Jul</td><td><a href="lectures/16/index.html">The Stack</a></td></tr>
+    <tr><td>24 Jul</td><td><a href="lectures/17/index.html">The Stack, part deux</a></td></tr>
+    <tr><td>27 Jul</td><td>no class</td></tr>
+    <tr><td>28 Jul</td><td><a href="lectures/18/index.html">High-Level Languages</a></td></tr>
+    <tr><td>29 Jul</td><td><a href="lectures/19/index.html">Data Types, Operations, and Variables</a> (midterm review afternoon/evening, time TBA)</td></tr>
+    <tr><td>31 Jul</td><td>midterm exam</td></tr>
+    <tr><td>03 Aug</td><td><a href="lectures/20/index.html">Control Flow</a></td></tr>
+    <tr><td>04 Aug</td><td><a href="lectures/21/index.html">Functions and Stack Frames</a></td></tr>
+    <tr><td>05 Aug</td><td><a href="lectures/22/index.html">Recursion and Data Structures</a></td></tr>
+    <tr><td>07 Aug</td><td><a href="lectures/23/index.html">Microarchitecture, part I</a></td></tr>
+    <tr><td>10 Aug</td><td><a href="lectures/24/index.html">Microarchitecture, part II</a></td></tr>
+    <tr><td>11 Aug</td><td><a href="lectures/25/index.html">Reality Check: What's <i>really</i> in a computer?</a></td></tr>
+    <tr><td>12 Aug</td><td><a href="lectures/26/index.html">Implementing the ISA; Parallelism</a></td></tr>
+    <tr><td>14 Aug</td><td><a href="lectures/27/index.html">A Fictional Microarchitecture</a></td></tr>
+    <tr><td>17 Aug</td><td><a href="lectures/28/index.html">Dirty Tricks: Caching</a></td></tr>
+    <tr><td>18 Aug</td><td><a href="lectures/29/index.html">Dirty Tricks: Pipelining</a></td></tr>
+    <tr><td>19 Aug</td><td><a href="lectures/30/index.html">Dirty Tricks: Branch Prediction, Out-of-order Execution, Speculative Execution</a></td></tr>
+    <tr><td>21 Aug</td><td><a href="lectures/31/index.html">Multicore and Multiprocessing</a></td></tr>
+    <tr><td>24 Aug</td><td>no class<td></tr>
+    <tr><td>25 Aug</td><td><a href="lectures/32/index.html">Virtualization and Security</a></td></tr>
+    <tr><td>26 Aug</td><td>LC-3 Olympics in Sudikoff 005</td></tr>
+    <tr><td>29 Aug</td><td>3pm: final exam in Moore B03</td></tr>
+</table>
+</p>
+
+<p>
+<b>Textbooks</b><br>
+<i>Introduction to Computer Systems: From Bits and Gates to C and Beyond, Second Edition</i>, Yale N. Patt, Sanjay J. Patel<br>
+<i>Structured Computer Organization, Fifth Edition</I>, Andrew S. Tanenbaum<br>
+</p>
+
+<p>
+<b>Resources</b><br>
+<a href="logicworks/index.html">LogicWorks</a><br>
+<a href="lc-3/index.html">LC-3</a><br>
+</p>
+
+<p>
+<b>Grading</b><br>
+Coursework will consist of lab assignments, one midterm exam, and one final exam.  Term grade will be determined as follows:<br>
+Assignments: 60%<br>
+Midterm: 15%<br>
+Final: 25%<br>
+</p>
+
+<p>
+<b>Late Assignment Policy</b><br>
+Following Sean's philosophy, each student will have two (virtual) "one-day
+late" coupons.  Each is good for a 1-day extension on one assignment.  You may
+use more than one coupon on a single assignment.  Plan accordingly.
+</p>
+
+<p>
+Late assignments will be penalized 5% per hour.
+</p>
+
+<p>
+<b>Honor Code</b><br>
+The Dartmouth Honor Code applies to your conduct in this course. In
+particular, all work submitted for credit must be your own. You may discuss
+your homework assignments and programming projects with your classmates and
+the course staff. However, you should write up your own written homework
+solutions and should not read or copy the solutions written by others (in this
+or previous terms, at Dartmouth or elsewhere). 
+</p>
+
+<p>
+You should also write your own code and not read code written by classmates.
+</p>
+
+<p>
+The Dartmouth College policy on sources also applies to this course, which
+means that all sources must be acknowledged, whether allowed by the instructor
+or not. For example, software given to you by us must be acknowledged when
+incorporated into your work.
+</p>
+
+<p>
+<b>If you have any questions about the honor code as it relates to CS 37,
+please come speak with me. Violations of the honor code will be treated
+seriously.</b>
+</p>
+
+<p>
+<b>Students with disabilities</b><br>
+I encourage students with disabilities, including "invisible" disabilities
+such as chronic diseases and learning disabilities, to discuss with me any
+appropriate accommodations that I might make on their behalf.
+</p>
+
+<p>
+(If this may apply to you, I also urge you to discuss things with the <a
+href="http://www.dartmouth.edu/~accessibility/">Student Accessibility
+Services</a> office, if you haven't already. They've set up a system where
+they keep the "appropriate accommodations" on file---so you don't have to
+discuss details with each new instructor!)
+</p>
+
+</body>
+</html>

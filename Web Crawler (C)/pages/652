@@ -1,0 +1,131 @@
+http://www.cs.dartmouth.edu/~cs110/paper.html
+3
+<html> <head>
+<title>CS 110 Research Paper</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1>CS 110 Research Paper<br>
+Draft due in class, Friday, February 19<br>
+Final version due Friday, March 12
+</h1>
+
+The paper you write will form a substantial part of your final grade
+in the course.  Normally, it should be a research paper, written in
+the style of a conference paper, but other types of papers are
+possible.
+
+<p>
+
+You should discuss with me in advance what you intend to write about.
+
+<p>
+
+The purpose of the draft is to get you feedback before you submit the
+final version.  To make sure that you take it seriously, I will grade
+the draft.  I will try to get the draft back to you by March 1, if not
+before.
+
+<h3>Requirements</h3>
+
+Your paper must adhere to the following requirements:
+<ul>
+  
+  <li> The paper need not be written just for this course.  It can be
+       something that you're writing for some other purpose, such as a
+       conference submission or a part of your thesis.  But it must
+       represent new writing.  Merely submitting something that you
+       wrote in the past is not allowed.  I want you to be able to put
+       into practice what you've learned in this course.
+       
+       <p>
+  
+  <li> For a research paper, you are limited to 12 pages.  You might
+       want to write more, but you have to learn how to adhere to page
+       limits.  For other types of papers, we will have to agree in
+       advance on your maximum allowed length.
+
+       <p>
+
+  <li> Your paper must be produced using LaTeX.  If it contains
+       figures&mdash;and it probably should&mdash;they must be
+       computer generated and included in the LaTeX source.
+
+       <p>
+
+  <li> I recognize that you might be compelled to reuse text from a
+       previous paper that you wrote, either alone or with others.
+       <em>You must limit text that you have taken from previous
+       papers, even those that you have authored or coauthored, to be
+       at most 20% of the paper that you submit for CS 110.  Moreover,
+       you are required to indicate on your hardcopy submission which
+       passages you have taken from your previous papers.</em>
+       
+       <p>
+
+  <li> I will want electronic read access to the LaTeX source of your
+       paper.  You can send me a URL or file name so that I can see
+       the LaTeX source.  If you send a file name, please make sure
+       that I have read access to the files and directory.
+
+       <p>
+
+  <li> I will need a hardcopy of your paper.  You can give me a
+       hardcopy, <em>printed double sided</em>, or you can send me a
+       PDF, which I am happy to print.  If you need to annotate which
+       passages of your paper came from previous papers, you may do so
+       either by giving me hardcopy that you mark up by hand, or you
+       may include marginal notes that I'll see in the PDF.
+
+</ul>
+
+<h3>Grading</h3>
+
+I will grade your paper based on the following criteria:
+<dl>
+  <dt> Organization
+       
+  <dd> How well organized is your paper?  Does it tell a story?  Can I
+       determine easily the important points?  Have you chosen a good
+       order in which to present information?  Have you broken it into
+       sections in a logical manner?
+
+       <p>
+       
+  <dt> Style and usage
+ 
+  <dd> Are your paragraphs well formed?  Does each section and
+       subsection (even if unnumbered) have a topic paragraph?  Does
+       each paragraph have a topic sentence?  Are your sentences well
+       written?  Do they follow the style ideas and usage rules that
+       we've gone over in class?
+
+       <p>
+
+  <dt> Formatting
+  <dd> Have you used LaTeX correctly?
+
+       <p>
+
+  <dt> Overall
+  <dd> My overall impression of your paper.
+
+</dl>
+
+<i>Along with the final version, you must submit a discussion of how your
+final version takes into account the comments you received from me on
+your draft.</i>  Submit this discussion as a separate document.  (Either
+a PDF or hardcopy is fine.  I don't need to see the LaTeX source of the
+discussion document.)
+
+<p>
+
+The grade for the final version grade will count twice as much as the
+grade for the draft.
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Tue Feb 23 12:45:33 2010
+<!-- hhmts end -->
+</body> </html>

@@ -1,0 +1,315 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Article_1:_Introduction
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Article 1: Introduction" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Article 1: Introduction - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Article_1:_Introduction";
+		var wgTitle = "Article 1: Introduction";
+		var wgAction = "view";
+		var wgArticleId = "19";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 517;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Article_1_Introduction skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Article_1:_Introduction" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Article_1:_Introduction" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Article_1:_Introduction&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Article_1:_Introduction&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Article_1:_Introduction&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Article 1: Introduction</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#What_is_a_robot.3F"><span class="tocnumber">1</span> <span class="toctext">What is a robot?</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Robots_as_technology"><span class="tocnumber">1.1</span> <span class="toctext">Robots as technology</span></a></li>
+<li class="toclevel-2"><a href="#Robots_as_science"><span class="tocnumber">1.2</span> <span class="toctext">Robots as science</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Robot_programming_paradigms"><span class="tocnumber">2</span> <span class="toctext">Robot programming paradigms</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Which_programming_language.3F"><span class="tocnumber">2.1</span> <span class="toctext">Which programming language?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Other_resources"><span class="tocnumber">3</span> <span class="toctext">Other resources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Robotics_texts"><span class="tocnumber">3.1</span> <span class="toctext">Robotics texts</span></a></li>
+<li class="toclevel-2"><a href="#Mathematics_texts"><span class="tocnumber">3.2</span> <span class="toctext">Mathematics texts</span></a></li>
+<li class="toclevel-2"><a href="#Software_free_for_Academic_use"><span class="tocnumber">3.3</span> <span class="toctext">Software free for Academic use</span></a></li>
+<li class="toclevel-2"><a href="#Robot_supply_companies"><span class="tocnumber">3.4</span> <span class="toctext">Robot supply companies</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Conferences_and_journals"><span class="tocnumber">4</span> <span class="toctext">Conferences and journals</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="What_is_a_robot.3F" id="What_is_a_robot.3F"></a><h2> <span class="mw-headline">What is a robot?</span></h2>
+<p>Robotics researchers are interested in the interaction of physical systems and computers.  There are controlled mechanical systems, like microwaves, cars, or dishwashers, that we do not tend to think of as robots.  There are also traditional robotics applications where the robot follows fixed trajectories, and has little interaction with the environment.  We should keep open minds about what constitutes an interesting problem in robotics.
+</p>
+<a name="Robots_as_technology" id="Robots_as_technology"></a><h3> <span class="mw-headline">Robots as technology</span></h3>
+<p>Robots scale human abilities.  Robots can precisely manipulate small objects, forcefully manipulate large objects, move quickly, repeatably, or at a distance.  Example applications include  
+</p>
+<ul><li> Factory automation
+</li><li> Field robotics
+</li><li> Service and entertainment
+</li><li> Medical and scientific devices
+</li></ul>
+<p>The most widespread application of robotics has been industrial automation.  Some of the challenges include removing uncertainty in part orientation, repeatable motion, avoiding jamming due to friction during assembly, and designing the product for ease of assembly or disassembly.  
+</p><p>The ability to move precisely and operate hygienically at a distance has motivated the use of robots for scientific experiments and medicine.  For example, here is a movie about <a href="http://www.jhu.edu/news/audio-video/medical_robotics.html" class="external text" title="http://www.jhu.edu/news/audio-video/medical_robotics.html" rel="nofollow">medical robotics at Johns Hopkins</a>.  
+</p><p>Robots are also used for <a href="http://www-robotics.jpl.nasa.gov/" class="external text" title="http://www-robotics.jpl.nasa.gov/" rel="nofollow">space exploration</a>, hazardous waste cleanup, and to deliver medicine in hospitals.  There are current projects to build autonomous cars, and personal assistants for the elderly or disabled.
+</p>
+<a name="Robots_as_science" id="Robots_as_science"></a><h3> <span class="mw-headline">Robots as science</span></h3>
+<p>Programmable mechanisms also allow exploration of fundamental scientific questions.  What information is needed about the environment to complete a manipulation task, and how should that information be represented or stored?  How do biological systems manage complicated manipulation so effectively?  What can we learn about social interaction from our reactions to robotic mechanisms?  Robots allow hands-on (or grippers-on!) experiments that are very suitable for education. 
+</p>
+<ul><li> Mechanics of manipulation and locomotion
+</li><li> Biologically-inspired robots
+</li><li> Education
+</li></ul>
+<a name="Robot_programming_paradigms" id="Robot_programming_paradigms"></a><h2> <span class="mw-headline">Robot programming paradigms</span></h2>
+<p>A useful abstraction for robot programming divides systems into two parts: the robot, and the 
+world.  The robot is the part of the system that we can control.  The goal is to change the world.  The robot receives information about the state of the world through sensors, plans an action based on the history of sensor readings, (current belief about the state of the world), and executes the action.
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Senseplanact.png" class="image" title="Senseplanact.png"><img alt="" src="/~robotics/cs54/images/0/0e/Senseplanact.png" width="439" height="188" border="0" /></a></div></div>
+<p>This paradigm drives the high-level design of much robot control software:  the main loop senses the state, makes a plan, and then sends commands to the motors.  
+</p><p>Throughout much of the course, we will focus on planning and action.  However, the interaction between action and sensing can be interesting.  For example, sometimes action can reduce the effects of sensor error.  Consider dropping a marble into a funnel. We might not know the exact initial position of the the marble; there is much less uncertainty about the marble's position after it has fallen through the funnel.  
+</p>
+<a name="Which_programming_language.3F" id="Which_programming_language.3F"></a><h3> <span class="mw-headline">Which programming language?</span></h3>
+<p>What language should you write robotics software in?  I haven't found a best choice.
+</p><p>For quick simulators, mathematics packages like Matlab and Mathematica can't be beat.  I have often been excited about <a href="http://www.python.org/" class="external text" title="http://www.python.org/" rel="nofollow">Python</a> with <a href="http://sourceforge.net/projects/numpy/" class="external text" title="http://sourceforge.net/projects/numpy/" rel="nofollow">Numerical Python</a> as a free and well-designed replacement for MATLAB.  We'll use Python 2.5 for this class; there is a page with [Python_setup information about configuration and modules].
+</p><p>I often use Java for the applet option and the large supply of libraries to load, save, and organize information.  Java is unfortunately weak on scientific and geometric computing --  most existing libraries are written in C++.  LISP and Scheme are still quite popular in the AI community.
+</p>
+<a name="Other_resources" id="Other_resources"></a><h2> <span class="mw-headline">Other resources</span></h2>
+<p>As the course progresses, we will add links to various useful resources to the library page.  Some of the most interesting progress in robotics has happened when someone realized that related problems had already been tackled in the mathematics, control systems, computer science theory, artificial intelligence, or other communities.  To read robotics papers, it is really necessary to be a jack-of-all-trades.  If you come across some unfamiliar mathematics in a paper you'd like to understand, do not be intimidated.  This happens to everyone, and you might be surprised at how quickly you can pick up what you need.  
+</p><p>Please recommend your favorite books, software, or suppliers to me.  For books below, I've linked to Amazon, not because I recommend that you purchase from Amazon, but to make sure you see the most recent edition.  Most of the books can be found in the Dartmouth Library.
+</p>
+<a name="Robotics_texts" id="Robotics_texts"></a><h3> <span class="mw-headline">Robotics texts</span></h3>
+<p><a href="http://msl.cs.uiuc.edu/~lavalle/" class="external text" title="http://msl.cs.uiuc.edu/~lavalle/" rel="nofollow">LaValle's text on motion planning</a> is a great reference and freely available on the web.
+</p><p>There are a few introductory texts that cover material close to that from this course.  <a href="http://www.amazon.com/Principles-Robot-Motion-Implementations-Intelligent/dp/0262033275/ref=sr_1_7?ie=UTF8&amp;s=books&amp;qid=1227809824&amp;sr=1-7" class="external text" title="http://www.amazon.com/Principles-Robot-Motion-Implementations-Intelligent/dp/0262033275/ref=sr_1_7?ie=UTF8&amp;s=books&amp;qid=1227809824&amp;sr=1-7" rel="nofollow">Choset et al</a> aims to be a general reference, while <a href="http://www.amazon.com/Robot-Modeling-Control-Mark-Spong/dp/0471649902/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227810435&amp;sr=1-1" class="external text" title="http://www.amazon.com/Robot-Modeling-Control-Mark-Spong/dp/0471649902/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227810435&amp;sr=1-1" rel="nofollow">Spong</a> and <a href="http://www.amazon.com/Introduction-Robotics-Mechanics-Control-3rd/dp/0201543613/ref=pd_bxgy_b_img_c" class="external text" title="http://www.amazon.com/Introduction-Robotics-Mechanics-Control-3rd/dp/0201543613/ref=pd_bxgy_b_img_c" rel="nofollow">Craig</a> focus more strongly on manipulators.  There are more advanced texts in robot modelling and control, from a manipulation perspective.  <a href="http://www.amazon.com/Mechanics-Manipulation-Intelligent-Robotics-Autonomous/dp/0262133962/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227810749&amp;sr=1-1" class="external text" title="http://www.amazon.com/Mechanics-Manipulation-Intelligent-Robotics-Autonomous/dp/0262133962/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227810749&amp;sr=1-1" rel="nofollow">Mason</a> and  <a href="http://www.amazon.com/Mathematical-Introduction-Robotic-Manipulation/dp/0849379814/ref=sr_11_1?ie=UTF8&amp;qid=1227809403&amp;sr=11-1" class="external text" title="http://www.amazon.com/Mathematical-Introduction-Robotic-Manipulation/dp/0849379814/ref=sr_11_1?ie=UTF8&amp;qid=1227809403&amp;sr=11-1" rel="nofollow">Murray, Li, and Sastry</a> are both excellent.
+</p><p>We won't spend much time on mobile robot systems, but you might be interested in <a href="http://www.amazon.com/s?ie=UTF8&amp;search-type=ss&amp;index=books&amp;field-author=Illah%20R.%20Nourbakhsh&amp;page=1" class="external text" title="http://www.amazon.com/s?ie=UTF8&amp;search-type=ss&amp;index=books&amp;field-author=Illah%20R.%20Nourbakhsh&amp;page=1" rel="nofollow">Siegwart and Nourbahksh</a> and <a href="http://www.amazon.com/Mobile-Robots-Implementation-Joseph-Jones/dp/1568810970" class="external text" title="http://www.amazon.com/Mobile-Robots-Implementation-Joseph-Jones/dp/1568810970" rel="nofollow">Jones and Flynn</a>.  
+</p><p>The most-widely used Artificial Intelligence textbook is probably <a href="http://www.amazon.com/gp/product/0136042597/ref=pd_lpo_k2_dp_sr_2?pf_rd_p=486539851&amp;pf_rd_s=lpo-top-stripe-1&amp;pf_rd_t=201&amp;pf_rd_i=0131038052&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_r=13J3X40YFHWH1C43F8NC" class="external text" title="http://www.amazon.com/gp/product/0136042597/ref=pd_lpo_k2_dp_sr_2?pf_rd_p=486539851&amp;pf_rd_s=lpo-top-stripe-1&amp;pf_rd_t=201&amp;pf_rd_i=0131038052&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_r=13J3X40YFHWH1C43F8NC" rel="nofollow">Russel and Norvig</a>.  An introduction to modern control theory can be found in <a href="http://www.amazon.com/Fundamentals-Systems-McGraw-Hill-Electrical-Engineering/dp/0256246394/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227812698&amp;sr=1-1" class="external text" title="http://www.amazon.com/Fundamentals-Systems-McGraw-Hill-Electrical-Engineering/dp/0256246394/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227812698&amp;sr=1-1" rel="nofollow">Bay</a>.
+</p>
+<a name="Mathematics_texts" id="Mathematics_texts"></a><h3> <span class="mw-headline">Mathematics texts</span></h3>
+<p>These are just the texts I'm most familar with; most should be available from any university library.  For calculus, <a href="http://www.amazon.com/Calculus-Vol-One-Variable-Introduction-Algebra/dp/0471000051" class="external text" title="http://www.amazon.com/Calculus-Vol-One-Variable-Introduction-Algebra/dp/0471000051" rel="nofollow">Apostol's two-volume set</a>.  Linear algebra, <a href="http://www.amazon.com/Linear-Algebra-Applications-Gilbert-Strang/dp/0155510053" class="external text" title="http://www.amazon.com/Linear-Algebra-Applications-Gilbert-Strang/dp/0155510053" rel="nofollow">Strang</a>.  Differential geometry provides much of the framework for describing the spaces that robots move in.  I recommend <a href="http://www.amazon.com/Elementary-Differential-Geometry-Undergraduate-Mathematics/dp/0387903577/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227799222&amp;sr=1-1" class="external text" title="http://www.amazon.com/Elementary-Differential-Geometry-Undergraduate-Mathematics/dp/0387903577/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227799222&amp;sr=1-1" rel="nofollow">Thorpe</a>.  Proofs about existence and optimality of robot paths often rely on real analysis; the first few chapters of <a href="http://www.amazon.com/Real-Analysis-3rd-Halsey-Royden/dp/0024041513/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227799668&amp;sr=1-1" class="external text" title="http://www.amazon.com/Real-Analysis-3rd-Halsey-Royden/dp/0024041513/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227799668&amp;sr=1-1" rel="nofollow">Royden</a> cover the basics.  Some algebraic topology can be useful; the first few chapters of <a href="http://www.math.cornell.edu/~hatcher/" class="external text" title="http://www.math.cornell.edu/~hatcher/" rel="nofollow">Hatcher's book</a>, freely available on the web, are a good place to start.
+</p>
+<a name="Software_free_for_Academic_use" id="Software_free_for_Academic_use"></a><h3> <span class="mw-headline">Software free for Academic use</span></h3>
+<p><a href="http://msdn.microsoft.com/en-us/robotics/default.aspx" class="external text" title="http://msdn.microsoft.com/en-us/robotics/default.aspx" rel="nofollow">Microsoft Robotics Studio</a> is a very nice C# framework for simulation and control, and includes dynamics and rendering engines, collision detection, and a library of pre-built simulations.  Unfortunately, it will only run on Windows.
+</p><p>NASA JPL has a large framework for programming and simulating robots as well, <a href="http://claraty.jpl.nasa.gov/man/overview/index.php" class="external text" title="http://claraty.jpl.nasa.gov/man/overview/index.php" rel="nofollow">CLARAty</a>, written in C++.  
+</p><p><a href="http://www.algorithmic-solutions.com/leda/index.htm" class="external text" title="http://www.algorithmic-solutions.com/leda/index.htm" rel="nofollow">LEDA</a> and <a href="http://www.cgal.org/" class="external text" title="http://www.cgal.org/" rel="nofollow">CGAL</a> are large software libraries with implementations of geometric algorithms that are useful for writing simulation or path planning software.
+</p><p>Then there are special-purpose libraries.  <a href="http://www.ode.org/" class="external text" title="http://www.ode.org/" rel="nofollow">ODE</a> provides quick-and-dirty dynamic simulation, but may not be numerically robust enough for many robotics applications.  The <a href="http://www.robotics.cs.rpi.edu/dvc/" class="external text" title="http://www.robotics.cs.rpi.edu/dvc/" rel="nofollow">DaVinci</a> project aims to build a free dynamics library with a focus on precision, rather than speed.
+</p><p>A <a href="http://www.cs.unc.edu/~geom/collide/" class="external text" title="http://www.cs.unc.edu/~geom/collide/" rel="nofollow">group at UNC</a> has developed several software libraries for collsion detection.  
+</p>
+<a name="Robot_supply_companies" id="Robot_supply_companies"></a><h3> <span class="mw-headline">Robot supply companies</span></h3>
+<p>Materials and small parts are often best ordered from an industrial supply company like <a href="http://www.mcmaster.com/" class="external text" title="http://www.mcmaster.com/" rel="nofollow">McMaster-Carr</a> -- most parts can arrive the next day, with inexpensive or free shipping.  For more robotics-specific actuators and sensors, you might try <a href="http://www.acroname.com" class="external text" title="http://www.acroname.com" rel="nofollow">Acroname</a>, <a href="http://www.towerhobbies.com" class="external text" title="http://www.towerhobbies.com" rel="nofollow">Tower hobbies</a>,  <a href="http://www.tribotix.com/Products/Robotis/Bioloid/Bioloid.htm" class="external text" title="http://www.tribotix.com/Products/Robotis/Bioloid/Bioloid.htm" rel="nofollow">Bioloid</a>.  
+</p><p><a href="http://www.densorobotics.com/" class="external text" title="http://www.densorobotics.com/" rel="nofollow">Denso</a>, <a href="http://www.adept.com/" class="external text" title="http://www.adept.com/" rel="nofollow">Adept</a>, and <a href="http://www.barrett.com/robot/products.htm" class="external text" title="http://www.barrett.com/robot/products.htm" rel="nofollow">Barret</a> sell industrial arms.  <a href="http://www.irobot.com" class="external text" title="http://www.irobot.com" rel="nofollow">iRobot</a> has a version of the Roomba designed for research and educational use.  
+</p>
+<a name="Conferences_and_journals" id="Conferences_and_journals"></a><h2> <span class="mw-headline">Conferences and journals</span></h2>
+<p>There are many venues for publishing robotics research; here are a few to get you started.  IEEE ICRA and IROS are probably the largest robotics conferences.  RSS is a smaller but typically excellent general-interest conference.  WAFR and ISRR are more specialized workshops.  Journals include the <a href="http://www.ijrr.org" class="external text" title="http://www.ijrr.org" rel="nofollow">International Journal of Robotics Research</a> and  the <a href="http://www.ieee-ras.org/tase" class="external text" title="http://www.ieee-ras.org/tase" rel="nofollow">IEEE Transactions on Robotics and Automation.</a>
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 12/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:19-0!1!0!!en!2!edit=0 and timestamp 20110220215841 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Article_1:_Introduction">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Article_1:_Introduction</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Article_1:_Introduction" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Article_1:_Introduction" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Article_1:_Introduction&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Article_1:_Introduction&amp;oldid=517" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 2 March 2010, at 21:23.</li>
+					<li id="viewcount">This page has been accessed 1,472 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.205 secs. --></body></html>

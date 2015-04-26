@@ -1,0 +1,113 @@
+http://www.cs.dartmouth.edu/%7Ecsrs/faq.html#whenandwhere
+3
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Computer Science Research Symposium 2009-2010</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<table width=910 align=center>
+<tr><td><img src="banner.jpg"></td></tr>
+
+<tr height=20></tr>
+
+<tr><td>
+<table style="text-align: left;" width=100% align=center>
+<tr>
+<td valign="top">
+<table class="navbar">
+<tr><td><a href="index.html">Home</a></td></tr>
+<tr><td><a href="schedule.html">Program</a></td></tr>
+<tr><td><a href="pandd.html">Posters/Demos</a></td></tr>
+<tr><td><a href="history.html">History</a></td></tr>
+<tr><td><a href="faq.html">FAQ</a></td></tr>
+<tr><td><a href="contact.html">Contact Us</a></td></tr>
+</table>
+</td>
+
+<td style="width:20pt; border-left:dotted 1px #000;"><img src="blank.gif"></td>
+
+<td>
+<table>
+<tr><td><h2><font color="#000000">FAQ</font></h2></td></tr>
+<tr><td> <a href="#whatis">What is the CSRS?</a></td></tr>
+<tr><td> <a href="#whenandwhere">When and where will the symposium and the BBQ social event be held?</a></td></tr>
+<tr><td> <a href="#attend">Can I attend if I am not in the Computer Science department?</a></td></tr>
+<tr><td> <a href="#rsvp">Do I need to register for the symposium?</a></td></tr>
+<tr><td> <a href="#posters">How does one participate in the poster session?</a></td></tr>
+<tr><td> <a href="#previouscsrs">What were previous editions of the CSRS like?</a></td></tr>
+<tr><td> <a href="#contact">How can I contact the organisers?</a></td></tr>
+
+<tr><td><br><br></td></tr>
+
+<tr><td id="whatis"> <font color="#006600"><b>What is the CSRS?</b></font></td></tr>
+<tr>
+<td>The Dartmouth Computer Science Research Symposium is an annual exhibition
+conducted by the Department of Computer Science at Dartmouth College. The main objectives are to 
+provide a means of communicating research
+interests and goals to not only fellow department members, but to the greater
+Dartmouth community as well. Hence, we welcome participation by students and faculty members who are not part of the department but are interested in applications and research in computer science. Students and faculty are given an opportunity
+to present their research in a professional
+environment, either in the form of talks, or in a comprehensive poster session, or as demonstrations of working models.</td>
+</tr>
+
+<tr><td> <br> </td></tr>
+
+<tr><td id="whenandwhere"> <font color="#006600"><b>When and where will the symposium be held?</b> </font></td></tr>
+<tr>
+<td> This year, this event will be hosted on September 25th, 2010, in Kemeny Hall, Room 008.  Kemeny Hall is located on North Main Street, close to the Baker Berry Library, and is connected to Haldeman. For help in finding Kemeny, check out the maps of Dartmouth available at <a href="http://www.dartmouth.edu/~maps">http://www.dartmouth.edu/~maps</a>.
+<p>
+This Google map shows the location of Kemeny Hall:<br>
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=43.70634,-72.288854&amp;hl=en&amp;geocode=&amp;mra=mi&amp;mrsp=0&amp;sz=18&amp;sll=43.705732,-72.28755&amp;sspn=0.003304,0.008256&amp;ie=UTF8&amp;ll=43.705732,-72.28755&amp;spn=0.003304,0.008256&amp;t=h&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=43.70634,-72.288854&amp;hl=en&amp;geocode=&amp;mra=mi&amp;mrsp=0&amp;sz=18&amp;sll=43.705732,-72.28755&amp;sspn=0.003304,0.008256&amp;ie=UTF8&amp;ll=43.705732,-72.28755&amp;spn=0.003304,0.008256&amp;t=h" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+</td>
+</tr>
+
+<tr><td> <br> </td></tr>
+
+<tr><td id="attend"><font color="#006600"><b>Can I attend if I am not in the Computer Science department?</b></font></td></tr>
+<tr>
+<td>Yes! We encourage participation from people working in areas related to computer science, including mathematics, engineering, security, even areas as diverse as music and arts. If you think your work would benefit from exposure to computer scientists, or if you want to know more about active research in computer science at Dartmouth, we encourage you to attend.</td>
+</tr>
+
+<tr><td> <br> </td></tr>
+
+<tr><td id="rsvp"><font color="#006600"><b>Do I need to register for the event?</b></font></td></tr>
+<tr>
+<td>We don't require you to register for the event. If you do plan to attend, we'd appreciate an email, so we know how many people to expect.</td>
+</tr>
+
+<tr><td> <br> </td></tr>
+
+<tr><td id="posters"><font color="#006600"><b>How does one participate in the poster session?</b></font></td></tr>
+<tr>
+<td>If you want to present a poster, send an email to <a href="mailto:csrs2010@cs.dartmouth.edu">csrs2010@cs.dartmouth.edu</a> with "CSRS poster" as the subject line. Include the name of the presenter and the title of the poster. For more information on poster submission, check out the <a href="poster.html">poster guidelines</a>.</td>
+</tr>
+
+<tr><td> <br> </td></tr>
+
+<tr><td id="previouscsrs"><font color="#006600"><b>What were previous editions of the CSRS like?</b></font></td></tr>
+<tr>
+<td>To browse previous CSRS websites go <a href="history.html">here</a>.</font></td>
+</tr>
+
+<tr><td> <br> </td></tr>
+
+<tr><td id="contact"><font color="#006600"><b>How can I contact the organisers?</b></font></td></tr>
+<tr>
+<td>For suggestions, complaints, or for more information, you can email us at <a href="mailto:csrs2010@cs.dartmouth.edu">csrs2010@cs.dartmouth.edu</a>. </font></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+
+</table>
+
+</td></tr></table>
+
+</body></html>

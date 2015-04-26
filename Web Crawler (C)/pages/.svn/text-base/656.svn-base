@@ -1,0 +1,98 @@
+http://www.cs.dartmouth.edu/~cs110/writing-test.html
+3
+<html> <head>
+<title>CS 110 Writing Test</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1><a href="index.html">CS 110</a><br>
+Winter 2010<br>
+Writing, Presenting, and Evaluating Technical Papers in Computer Science<br>
+<i>Writing Test</i></h1>
+
+In order to gain admission to CS 110, you are required to complete the
+following assignment.  The purpose is to ensure that you already are a
+somewhat competent writer of expository prose in English.
+
+<p>
+
+Write a description of <em>how to do something</em> (chosen from the
+list of <a href="#topics"></a>topics below).  Your description must
+adhere to the following rules:
+
+<ol>
+  <li> It must be written in English.
+
+       <p>
+
+  <li> It should be about two pages in length.  (I give this length as
+       a guideline.  A little over or under is OK.)
+ 
+       <p>
+
+  <li> It should contain introductory material (at least one paragraph)
+       telling me what I'm about to read and why I should care, and it
+       should contain some concluding material (again, at least one
+       paragraph) telling me what I just read and possibly foreshadowing
+       related topics.  Between the introductory material and concluding
+       material should appear the main material telling me how to do
+       whatever it is you're telling me.
+
+       <p>
+
+  <li> The description should make no assumptions about my technical
+       knowledge in the topic.  For example, if you write about how to
+       change the oil in a car, do not assume that I know where the
+       drainplug is or even <em>what</em> a drainplug is.
+       
+       <p>
+
+  <li> It may be a PDF, a Microsoft Word file, or a plain text file.
+       If it's a plain text file, put one blank line between
+       paragraphs and create the file so that each paragraph takes one
+       line in the file.
+       
+       <p>
+
+  <li> To submit your description, email it to <a
+       href="mailto:thc@cs.dartmouth.edu">thc@cs.dartmouth.edu</a> by
+       5:00 pm on Tuesday, January 5.
+
+</ol>
+
+<h3><a name="topics"></a>Topics</h3>
+
+Here is a list of suggested topics.  Please choose one:
+
+<ol>
+  <li> How to change the oil in a car.
+  <li> How to select and buy a car.  (You may focus on either a new or
+       a used car.)
+  <li> How to make either fried chicken or kung-pao chicken.
+  <li> How to grow tomatoes.
+  <li> How to give a haircut.
+  <li> How to win at Scrabble.
+  <li> How to travel cheaply.
+  <li> How to train a dog.
+  <li> How to get a child to eat broccoli (or some other vegetable that
+       children typically dislike).
+  <li> How to drink substantial amounts of alcohol without the resulting
+       hangover.
+  <li> How to cure a hangover.
+  <li> How to break up with your boyfriend or girlfriend.
+  <li> How to get over it when your boyfriend or girlfriend breaks up
+       with you.
+</ol>
+
+<p>
+
+If you do not feel qualified to write about any of the above topics,
+please see me and we'll come up with something about which you can
+write.
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Sun Jan  3 00:18:47 2010
+<!-- hhmts end -->
+</body> </html>

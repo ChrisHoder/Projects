@@ -1,0 +1,717 @@
+http://www.cs.dartmouth.edu/~robotics/summercamp/index.php?title=Create_tutorial&amp;oldid=200
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Create tutorial" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/summercamp/opensearch_desc.php" title="Dartmouth summer robotics camp (en)" />
+		<link rel="alternate" type="application/rss+xml" title="Dartmouth summer robotics camp RSS Feed" href="/~robotics/summercamp/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="Dartmouth summer robotics camp Atom Feed" href="/~robotics/summercamp/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Create tutorial - Dartmouth summer robotics camp</title>
+		<link rel="stylesheet" href="/~robotics/summercamp/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/summercamp/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/summercamp/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/summercamp/skins";
+		var wgArticlePath = "/~robotics/summercamp/index.php/$1";
+		var wgScriptPath = "/~robotics/summercamp";
+		var wgScript = "/~robotics/summercamp/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Create_tutorial";
+		var wgTitle = "Create tutorial";
+		var wgAction = "view";
+		var wgArticleId = "17";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 200;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/summercamp/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/summercamp/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/summercamp/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Create_tutorial skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/summercamp/index.php?title=Special:UserLogin&amp;returnto=Create_tutorial" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Dartmouth summer robotics camp </div>
+<div id="site-subtitle">computer science department, summer 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/summercamp/index.php/Create_tutorial" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/summercamp/index.php?title=Talk:Create_tutorial&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/summercamp/index.php?title=Create_tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/summercamp/index.php?title=Create_tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Create tutorial</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Dartmouth summer robotics camp</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Terminal.2C_Aquamacs_and_Python"><span class="tocnumber">1</span> <span class="toctext">Terminal, Aquamacs and Python</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Terminal_and_Python"><span class="tocnumber">1.1</span> <span class="toctext">Terminal and Python</span></a></li>
+<li class="toclevel-2"><a href="#Aquamacs"><span class="tocnumber">1.2</span> <span class="toctext">Aquamacs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Controlling_the_robot.21"><span class="tocnumber">2</span> <span class="toctext">Controlling the robot!</span></a></li>
+<li class="toclevel-1"><a href="#More_python:__.22while_loops.22"><span class="tocnumber">3</span> <span class="toctext">More python:  "while loops"</span></a></li>
+<li class="toclevel-1"><a href="#Advanced_robot_control"><span class="tocnumber">4</span> <span class="toctext">Advanced robot control</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Problem"><span class="tocnumber">4.1</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution"><span class="tocnumber">4.1.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_2"><span class="tocnumber">4.2</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_2"><span class="tocnumber">4.2.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_3"><span class="tocnumber">4.3</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_3"><span class="tocnumber">4.3.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_4"><span class="tocnumber">4.4</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_4"><span class="tocnumber">4.4.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_5"><span class="tocnumber">4.5</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_5"><span class="tocnumber">4.5.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_6"><span class="tocnumber">4.6</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_6"><span class="tocnumber">4.6.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_7"><span class="tocnumber">4.7</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_7"><span class="tocnumber">4.7.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_8"><span class="tocnumber">4.8</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_8"><span class="tocnumber">4.8.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_9"><span class="tocnumber">4.9</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_9"><span class="tocnumber">4.9.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_10"><span class="tocnumber">4.10</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_10"><span class="tocnumber">4.10.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_11"><span class="tocnumber">4.11</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_11"><span class="tocnumber">4.11.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_12"><span class="tocnumber">4.12</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_12"><span class="tocnumber">4.12.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Problem_13"><span class="tocnumber">4.13</span> <span class="toctext">Problem</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_13"><span class="tocnumber">4.13.1</span> <span class="toctext">Solution</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Terminal.2C_Aquamacs_and_Python" id="Terminal.2C_Aquamacs_and_Python"></a><h1> <span class="mw-headline">Terminal, Aquamacs and Python</span></h1>
+<a name="Terminal_and_Python" id="Terminal_and_Python"></a><h2> <span class="mw-headline">Terminal and Python </span></h2>
+<p>1. Open a terminal window (It should be in your dock) <br />
+2. Type in terminal window (after each line hit enter):
+</p>
+<pre>
+  cd Desktop
+  cd Robotics_Camp
+  cd Camp[Camp Number]_[NAME OF YOUR ROBOT]
+  cd Create
+</pre>
+<p>	<b>cd</b> = change directory, this command moves you into the folder that you write after it. If that folder does not exist you will get an error.<br />
+	<b>ls</b> = list, lists the files in your directory (folder) <br />
+	<b>pwd</b> = print working directory, this command displays the path of the folder you are currently in.  The path is the the folders location on the computer.
+</p><p>Try printing the working directory, what do you notice?
+</p><p>You should see something like this:
+</p>
+<pre>
+       /Users/imac/Desktop/Robotics_Camp/Camp1_Europa/Create
+</pre>
+<p>First notice that the last folder name (<b>Create</b>) is actually the name of the folder you are in. Different folder names are separated by slashes(/).  <b>Camp1_Europa</b> is the parent folder of <b>Create</b> and <b>Robotics_Camp</b> is the parent folder of <b>Camp1_Europa</b>.  By using the cd command we were able to get from the Desktop folder to the Create folder.
+</p><p>3. Now let's get to python. Type in python in the terminal window. The following should show up:
+</p>
+<pre>
+[Macintosh-820:Camp1_Europa] 568) python
+Python 2.6.1 (r261:67515, Feb 11 2010, 00:51:29) 
+[GCC 4.2.1 (Apple Inc. build 5646)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+ &gt;&gt;&gt;
+</pre>
+<p>The three arrows (&gt;&gt;&gt;) tell you that you can type python commands right into the terminal.<br />
+</p><p>But first lets define some vocabulary. <br />
+</p><p><b>Functions:</b> Are a set of instructions that can either be built into the computer or written by programers. <br />
+<b>Parameters:</b> Can be numbers, letters, etc., that are given to the function so it can perform its task. <br />
+</p><p>function(parameter)<br />
+</p><p>Multiple parameters are separated by commas.<br />
+</p><p>function(parameter1, paramerter2)
+</p><p>Now that you see the three arrows. Type in 
+</p>
+<pre>
+&gt;&gt;&gt; print (&quot;hello&quot;)
+hello
+</pre>
+<p>The print function prints what it is given as a parameter, in this case "hello". The quotation marks let the computer know that what is between them is a set of characters or a string. In order to print the string, the print function knows that it should print exactly what is in between the quotation marks.
+</p>
+<pre>
+&gt;&gt;&gt; print (&quot;3*4&quot;)
+&quot;3*4&quot;
+</pre>
+<p>Because 3*4 is between quotation marks, the computer prints 3*4, it doesn't calculate it.
+</p>
+<pre>
+&gt;&gt;&gt; print (3*4)
+12
+</pre>
+<p>In this example, python calculates 3*4 and prints the result. The function does not print 3*4 because it isn't a string.
+</p>
+<pre>
+&gt;&gt;&gt; n = 10
+</pre>
+<p>This sets the variable n to equal the number 10.
+</p>
+<pre>
+&gt;&gt;&gt; print (n)
+10
+</pre>
+<p>This command printed the value of n, which is 10. Again, notice that the letter 'n' is no surrounded by quotation marks.
+</p>
+<pre>
+&gt;&gt;&gt; n * 10
+30
+</pre>
+<p>Like in algebra, you can use variables to do arithmetic. Since the computer knows that n = 10, it substitutes 10 for n when it does the math. Printing a final result of 30.
+</p>
+<a name="Aquamacs" id="Aquamacs"></a><h2> <span class="mw-headline">Aquamacs</span></h2>
+<p>For longer code its easiest to write it in a file and then run the file in 
+python. Now close out of python (Ctrl + D) and open aquamacs (orange icon) and
+open a new file. Type in the following:
+</p>
+<pre>
+	from time import sleep
+
+	print (&quot;hello&quot;)
+
+	sleep(3)
+
+	print &quot;Bye&quot;
+</pre>	
+<p>What do you think this program will do?
+</p><p>YES! You are correct the program is going to print hello and then sleep for three
+seconds before it prints "Bye".
+</p><p>To run the program save the program with the name hello.py in your folder which should be:
+</p>
+<pre>
+	~/Desktop/Robotics_Camp/Camp[Camp Number]_[NAME OF YOUR ROBOT]/Create
+	(remember this is where you changed directories to in the terminal)
+</pre>
+<p>Then go back to your terminal and type in:
+</p>
+<pre>
+	python hello.py
+</pre>
+<p>and hit enter. You should see this in your window:
+</p>
+<pre>
+$ python hello2.py
+hello
+Bye
+</pre>
+<p>The first line tells the computer that it should import the sleep function.  The sleep function takes a number as its parameter so that it knows how many seconds the program should sleep.
+</p>
+<a name="Controlling_the_robot.21" id="Controlling_the_robot.21"></a><h1> <span class="mw-headline"> Controlling the robot! </span></h1>
+<p>The latest version of createmanager.py is <a href="http://www.cs.dartmouth.edu/~robotics/summercamp/create/" class="external text" title="http://www.cs.dartmouth.edu/~robotics/summercamp/create/" rel="nofollow">here</a>. New commands: self.get_cliffL(), self.get_cliffR(), self.get_wall().
+</p><p>Every program you will write to control the robot will start with these three lines of code:
+</p>
+<pre>
+from time import sleep, time
+from createmanager import *
+
+robot = CreateManager()
+
+</pre>
+<p>The first line of code you are already familiar with.  It tells python that you will be using the sleep and time commands from the "time" module.  The second line tells python that you will be using <b>all</b> of the commands from the createmanager module.  The createmanager module contains commands you will need to control the robot.
+</p><p>The third line is something you haven't seen before.  It says "make an object of type CreateManager" and call it "robot".  In python, an "object" is a way of storing information.  In this case, the CreateManager object stores information that the computer needs in order to connect to the robot.  For now, let's not worry too much about objects.  
+</p><p>Some commands need an object -- just like in English, some verbs need an object.  All of the commands that apply directly to the robot need a CreateManager object.  We just created one, and we called it robot.  Now let's make the robot do something!
+</p>
+<pre>
+robot.straight(50)
+sleep(2)
+robot.stop()
+</pre>  
+<p>The first line says "run the command 'straight' on the robot object, and with the parameter 50".  Some commands (also called functions or methods) need additional information, and you give that information inside the parentheses.  For example, the print command needs to know what to print on the screen:
+</p>
+<pre>
+print(5)  
+</pre>
+<p>The five in the parenthesis gives the additional necessary information.  Since we don't want to say "additional necessary information" over and over again, we give the information a name:  we say the stuff inside the parentheses is are the <b>parameters</b> for the function.
+</p><p>The straight() function has a parameter that describes how fast to drive.  So our program first tells the robot to go forwards with speed 50.  What would happen if the program ended immediately after the straight command?  The robot would keep driving forever, at speed 50, or at least until it ran out of battery power.  That's not good.
+</p><p>The next command says "wait 2 seconds".  We've already seen this command.  (The <i>parameter</i> to the sleep function says how long the program should wait.)  Notice that this command is a command to the computer, not to the robot.  You can tell this because there's no "robot." before the command.
+</p><p>The final command, robot.stop(), tells the robot to stop driving.
+</p>
+<a name="More_python:__.22while_loops.22" id="More_python:__.22while_loops.22"></a><h1> <span class="mw-headline">More python:  "while loops"</span></h1>
+<p>Sometimes we want to repeat a sequence of commands. To do this, we will place the sequence inside a "while" loop. A simple example of a while loop is
+</p>
+<pre>
+from time import sleep
+
+while(1 == 1):
+    print &quot;This loop...&quot;
+    sleep(0.5)
+    print &quot;never ends.&quot;
+    sleep(1)
+</pre>
+<p>Use Ctrl-C to stop the program. Next, let's keep printing the time (number of seconds passed since Jan 1st, 1970).
+</p>
+<pre>
+from time import time, sleep
+
+while(1 == 1):
+    print &quot;The time is: &quot; + str(time())
+    sleep(1)
+</pre>
+<p>Infinite loops are not very useful. To make a non-infinite loop, we place a condition after the "while" keyword. When the condition becomes false, the program stops looping, and the commands after the loop are executed.
+</p>
+<pre>
+from time import time, sleep
+
+initial = time()
+while(time() - initial &lt; 10):
+        print str(time() - initial) + &quot; seconds have passed&quot;
+        sleep(0.25)
+print &quot;Done!&quot;
+</pre>
+<p>When this program starts, we store the time (at the moment the program starts) in the "initial" variable. Within the loop, we keep checking the difference between the current time and the "initial" time. This difference will start out being very small (almost zero), so the condition
+</p>
+<pre>
+time() - initial &lt; 10
+</pre>
+<p>will be true. The loop will keep executing until the condition becomes false - that is, until 10 or more seconds have passed. When this happens, the loop ends, and the command following the loop gets executed.
+</p>
+<a name="Advanced_robot_control" id="Advanced_robot_control"></a><h1> <span class="mw-headline">Advanced robot control</span></h1>
+<p>Each time we write a program to control the Create robot, we will have these lines at the beginning of the program:
+</p>
+<pre>
+import createmanager
+bot = createmanager.CreateManager()
+</pre>
+<p>These two lines import a Python module that allows us to communicate with the robot, and create an "object" named "bot" that represents the robot. We will use this object to send commands to the robot, for example
+</p>
+<pre>
+# Stop the motors
+bot.stop()
+# Drive straight at 100mm/second
+bot.straight(100)
+# Turn clockwise at a given speed
+bot.turnCW(100)
+# Turn counter-clockwise
+bot.turnCCW(100)
+# Move at the speed 100mm/sec on a circle of radius 300mm. The circle's center is 300mm to the right of the robot's center.
+bot.set_motion(100, 300)
+</pre>
+<p>We can also use the "bot" object to check the values of sensors on the robot.
+</p>
+<pre>
+# Print whether the left bumper is pressed
+print str(bot.bumpedLeft())
+# If the right bumper is pressed, stop the robot
+if(bot.bumpedRight()):
+    bot.stop()
+
+</pre>
+<a name="Problem" id="Problem"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program that makes the robot drive forward 500 millimeters.
+</p>
+<a name="Solution" id="Solution"></a><h3> <span class="mw-headline">Solution</span></h3>
+<pre>
+from  time import sleep
+import createmanager
+
+bot = createmanager.CreateManager()
+
+bot.set_dist(-500)
+bot.straight(100)
+while(bot.get_dist() &lt; 0): 
+    sleep(0.1)
+bot.stop()
+</pre>
+<p>When we start the program, we are 500mm short of our goal. We set our odometer to -500. As the robot drives forward, this value increases automatically. The "while" loop's task is to check the odometer every tenth of a second. As long as the odometer is in the negative values, we keep "sleeping" for a tenth of a second before checking the value again. When the odometer value becomes positive, we have achieved our goal and the "while" loop ends. All that remains to be done is to stop the robot.
+</p><p><br />
+</p>
+<a name="Problem_2" id="Problem_2"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to make the robot move backwards 100mm
+</p>
+<a name="Solution_2" id="Solution_2"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<pre>
+import createmanager as cm
+import time
+
+cr = cm.CreateManager()
+
+cr.set_dist(0) #Move back 100mm
+cr.straight(-100)
+
+while cr.get_dist() &gt; -100:
+    print cr.get_dist()
+    time.sleep(0.05)
+    
+cr.stop()
+</pre>
+<p>When we start the program, we are 100mm ahead of our goal. We set our odometer to 0. As the robot drives backwards, this value decreases automatically. The "while" loop's task is to check the odometer every tenth of a second. As long as the odometer is greater than -100, we keep "sleeping" for a tenth of a second before checking the value again. When the odometer value becomes less than -100, we have achieved our goal and the "while" loop ends. All that remains to be done is to stop the robot.
+</p><p><br />
+</p>
+<a name="Problem_3" id="Problem_3"></a><h2> <span class="mw-headline">Problem</span></h2>
+<p>Write a program to turn clockwise 180 degrees.
+</p>
+<a name="Solution_3" id="Solution_3"></a><h3> <span class="mw-headline">Solution</span></h3>
+<pre>
+from  time import sleep
+import createmanager
+
+bot = createmanager.CreateManager()
+
+bot.set_angle(180)
+bot.turnCW(50)
+while(bot.get_angle() &gt; 0): 
+    sleep(0.1)
+bot.stop()
+</pre>
+<p>Turning clockwise decreases the angle value. When we start, we are 180 degrees "above" our goal. We set the angle odometer to 180; it will decrease automatically as we set the robot to turn clockwise. While the angle remains positive, we keep checking the angle value each tenth of a second. As soon as the angle becomes negative, we the "while" loop ends and we stop the robot.
+</p>
+<a name="Problem_4" id="Problem_4"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program that makes the robot wiggle twice and stop. Wiggle means move ~40 degrees to one side and back.
+</p><p><br />
+</p>
+<a name="Solution_4" id="Solution_4"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<pre>
+import createmanager as cm
+import time
+
+cr = cm.CreateManager()
+
+count = 0
+while count &lt; 2: 
+    
+    cr.set_angle(40) 
+    cr.turnCW(100) 
+    
+    while cr.get_angle() &gt; 0:
+        print cr.get_angle()
+        time.sleep(0.05)
+    
+    cr.stop()
+    time.sleep(0.05)
+    
+    cr.set_angle(-40)
+    cr.turnCCW(100) 
+    
+    while cr.get_angle() &lt; 0:
+        print cr.get_angle()
+        time.sleep(0.05)
+        
+    cr.stop()
+    time.sleep(0.05)
+    
+    count = count + 1
+
+</pre>
+<p>We set the count to 0 initially. We need the bot to turn clockwise first. Turning clockwise decreases the angle. Hence we set the angle as 40 degrees initially. It sleeps as long as the angle remains positive. Once the angle becomes 0, it stops. Then it sets the angle as -40 degrees and turns counter-clockwise, which increases the angle. Now we want it to sleep till the angle becomes 0, at which point it stops and increases the count. This continues till count becomes 2.
+</p>
+<a name="Problem_5" id="Problem_5"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to spin 5 times and stop
+</p>
+<a name="Solution_5" id="Solution_5"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<pre>
+import time
+import createmanager
+
+cr = createmanager.CreateManager()
+
+count = 0
+
+while count &lt; 5:
+
+    cr.set_angle(-200)
+    cr.turnCCW(100)
+    
+    while cr.get_angle() &lt; 0&nbsp;:
+        time.sleep(0.05)
+        
+    cr.stop()
+    time.sleep(0.5)
+    
+    count = count + 1
+</pre>
+<p><br />
+We set the count to 0. For it to spin, we need the bot to turn at an angle of 200 degrees. Turning counter-clockwise increases the angle. Hence we set the angle as -200 degrees initially. As it turns, it increases. It sleeps until the angle becomes a positive value, at which point the bot stops and increases the count by 1. This continues till the count becomes 5.
+</p><p><br />
+</p>
+<a name="Problem_6" id="Problem_6"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to halve the speed after every 100mm. You could maybe start from 200, then make it 100 mm/s and then 50 mm/s and then stop.
+</p>
+<a name="Solution_6" id="Solution_6"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<pre>
+import createmanager as cm
+import time
+
+cr = cm.CreateManager()
+
+count = 0
+speed = 200
+
+while count &lt; 3:
+
+    cr.set_dist(0) #Move front 100mm
+    cr.straight(speed)
+    
+    while cr.get_dist() &lt; 100:
+        print cr.get_dist()
+        time.sleep(0.05)
+        
+    cr.stop()
+    time.sleep(0.5)
+    
+    speed = speed/2
+    
+    count = count + 1
+
+</pre>
+<p>We set the count to 0 and odometer to 200mm/s. Since we need to move 100mm forwards, we set distance to 0 initially. As the bot drives forward, the distance covered increases. It sleeps until it reaches the goal of 100mm. Once it reaches 100mm, it stops and sets the odometer to 100mm/s and the count to 1. The distance is again set to 0 and this continues till the count becomes 3, after which the robot stops.
+</p><p><br />
+</p>
+<a name="Problem_7" id="Problem_7"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to make the robot move in a square. Each side should be at least 500 mm.
+</p><p><br />
+</p>
+<a name="Solution_7" id="Solution_7"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<pre>
+import createmanager as cm
+import time
+
+cr = cm.CreateManager()
+
+for i in range(4)&nbsp;:
+
+    cr.set_dist(0) 
+    cr.straight(100)
+
+    while cr.get_dist() &lt; 500:
+        print cr.get_dist()
+        time.sleep(0.05)
+    
+    cr.stop()
+
+    cr.set_angle(87)
+    cr.turnCW(150)
+    
+    while cr.get_angle() &gt; 0&nbsp;:
+        time.sleep(0.05)
+        
+    cr.stop()
+    time.sleep(0.5)
+
+</pre>
+<p>First we set the odometer as 100mm/s and distance as 0. As the robot moves forward, it sleeps till it reaches 500mm. Once it reaches 500mm, it stops and sets angle as 87 degrees. Since it will turn clockwise, the angle decreases. It sleeps till it reaches an angle 0. Once it reaches 0, it should stop. This continues 3 more times to form a square.
+</p>
+<a name="Problem_8" id="Problem_8"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to make the robot move in a triangle (or in zigzag manner - First move 500mm, then turn clockwise 90, then 500mm, then turn counter-clockwise).
+</p><p><br />
+</p>
+<a name="Solution_8" id="Solution_8"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<a name="Problem_9" id="Problem_9"></a><h2> <span class="mw-headline">Problem </span></h2>
+<p>Write a program that makes a robot move from a starting point to an end point and back, and choose the best path ie the path with less bump and that covers less distance.
+</p>
+<a name="Solution_9" id="Solution_9"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<a name="Problem_10" id="Problem_10"></a><h2> <span class="mw-headline">Problem</span></h2>
+<p>Write a program that makes the robot drive forward until it hits a wall. The program then prints how far the wall was from the initial position.
+</p>
+<a name="Solution_10" id="Solution_10"></a><h3> <span class="mw-headline">Solution</span></h3>
+<pre>
+from  time import sleep
+import createmanager
+
+bot = createmanager.CreateManager()
+
+bot.set_distance(0)
+bot.straight(100)
+while((not bot.bumpedLeft()) and (not bot.bumpedRight())): 
+    sleep(0.1)
+bot.stop()
+print &quot;The wall was &quot; + str(bot.get_dist()) + &quot; mm away.&quot;
+</pre>
+<p>We set the odometer to 0 and start the robot driving straight. We keep checking the bump sensors; as long as neither is activated, we keep waiting. When one of the bump sensors gets pressed, we stop the robot and print the odometer value.
+</p>
+<a name="Problem_11" id="Problem_11"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to make the robot find its way out of a maze
+</p>
+<a name="Solution_11" id="Solution_11"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<a name="Problem_12" id="Problem_12"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to make the robot follow a line
+</p>
+<a name="Solution_12" id="Solution_12"></a><h3> <span class="mw-headline"> Solution </span></h3>
+<a name="Problem_13" id="Problem_13"></a><h2> <span class="mw-headline"> Problem </span></h2>
+<p>Write a program to make the robot follow a line backwards
+</p>
+<a name="Solution_13" id="Solution_13"></a><h3> <span class="mw-headline"> Solution </span></h3>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 126/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-summercamp_:pcache:idhash:17-0!1!0!!en!2!edit=0 and timestamp 20110220180921 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Create_tutorial">http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Create_tutorial</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Main-page"><a href="/~robotics/summercamp/index.php/Main_Page">Main page</a></li>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics">Robotics lab</a></li>
+				<li id="n-Application-form"><a href="http://www.cs.dartmouth.edu:/~robotics/summercamp/2010app.txt">Application form</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-resources'>
+		<h5>resources</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Create-Tutorial"><a href="/~robotics/summercamp/index.php/Create_tutorial">Create Tutorial</a></li>
+				<li id="n-Bioloid-Tutorial"><a href="/~robotics/summercamp/index.php/Bioloid_Tutorial">Bioloid Tutorial</a></li>
+				<li id="n-Bioloid-Assembly"><a href="/~robotics/summercamp/index.php/Bioloid_Assembly">Bioloid Assembly</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/summercamp/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search Dartmouth summer robotics camp [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/summercamp/index.php/Special:WhatLinksHere/Create_tutorial" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/summercamp/index.php/Special:RecentChangesLinked/Create_tutorial" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/summercamp/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/summercamp/index.php?title=Create_tutorial&amp;amp%3Boldid=200&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/summercamp/index.php?title=Create_tutorial&amp;oldid=200" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/summercamp/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 18 January 2011, at 15:46.</li>
+					<li id="viewcount">This page has been accessed 4,086 times.</li>
+					<li id="privacy"><a href="/~robotics/summercamp/index.php/Dartmouth_summer_robotics_camp:Privacy_policy" title="Dartmouth summer robotics camp:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/summercamp/index.php/Dartmouth_summer_robotics_camp:About" title="Dartmouth summer robotics camp:About">About Dartmouth summer robotics camp</a></li>
+					<li id="disclaimer"><a href="/~robotics/summercamp/index.php/Dartmouth_summer_robotics_camp:General_disclaimer" title="Dartmouth summer robotics camp:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.174 secs. --></body></html>

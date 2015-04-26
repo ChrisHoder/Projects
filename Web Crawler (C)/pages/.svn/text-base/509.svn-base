@@ -1,0 +1,230 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug16
+3
+<html><head><title>Into the Real World</title></head><body>           
+        
+<body bgcolor=#ffffff>
+
+<h1>August 16: Into the Real World</h1>
+
+<hr><h2>0) Recap</h2><hr> So far in this class, we've gone from
+electricity through up to the instruction set architecture.  We've
+seen a high-level language and how it gets implemented in assembly.
+Last week, we also revisited the microarchitecture.  In particular, we
+looked at the <b>JMP</b> instruction and saw some of the microcode
+that should get generated to get it to execute.
+
+<p>This week and next week, we'll take a look at some more real-world
+issues and concepts.
+
+<p>Note:
+<ul>
+<li>Next Wednesday is the <b>Olympics</b>.  We'll all meet in 005 over
+pizza and you'll all show off your awesome hacked LC-3 computers.
+<li>Next Monday, I'm going to try and get in a guest lecturer to talk
+about security.  We've touched on some things that Sean would say
+"causes a lot of fun."  Hopefully, we'll be able to see this from a
+real live security researcher.
+</ul>
+
+<hr><h2>1) Missing Features</h2><hr>
+
+Today, we'll start off with some features that are either missing in
+the LC-3, or that the LC-3 has but doesn't do very well.
+
+<hr><h3>Privilege Level</h3><hr>
+
+<p>Real CPUs have a notion of "current privilege."  We can:</p>
+<ul>
+<li>embed this as an explicit flip-flop in the data path, 
+<li>use this as input to the microsequencer, 
+<li>have it set/cleared at points.
+</ul>
+
+Traps and interrupts cause privilege level to go to supervisor mode.
+
+<p> Important things require privilege, ordinary software shouldn't.
+
+<hr><h3>Exceptions</h3><hr> 
+
+We've seen that interrupts are caused by special hardware inputs, and
+Traps explicitly cause the an "interrupt".
+
+<p>In the real world, other things can go wrong as well.
+
+<p><b>Exceptions</b> are essentially a CPU-driven interrupt.  When the
+CPU sees that something has gone wrong, it can trigger an exception.
+
+<p>LC-3 supports two exceptions:
+<ul>
+<li><b>RTI</b> called from <b>user mode</b>
+<li>illegal opcode
+</ul>
+
+<p>There are many many other possible exceptions to throw:
+<ul>
+<li>division by zero
+<li>mangled instruction
+<li>memory access that only OS should look at.
+</ul>
+
+<hr><p>See Section A.4.2.  (It's also in the state diagrams in App C)</p>
+
+
+<hr><h3>Memory Management</h3><hr>
+
+<p>We've talked about this in vague generalities earlier.  But since
+the MMU will play a big role in future courses, let's do a concrete
+example.</p>
+
+<p>A Memory Management Unit <b>(MMU)</b> is a hardware component
+responsible for handling memory accesses by the CPU.
+<p><img src="../Aug13/img/mmu.jpg" alt="too bad" width="95%"></p>
+
+<p>Suppose we boot into "privileged code".  How might this boot-time
+code set up these tables?</p>
+
+<hr><h2>2) Into the Real World</h2><hr>
+
+Next, we'll discuss some real-world trends and principles.  As part of
+that, we'll back into history some too.
+
+<hr><h3>Interpretation vs. "direct hardware execution"?</h3><hr>
+<p>Fig 2-3:</p>
+<p><img src="../Aug13/img/fig2-3.jpg" alt="too bad" width="75%"></p>
+
+Fig2-3 gives a Java program that fetches, examines, executes
+instructions of another program.  No need for hardware here.
+
+<p><b>Direct Hardware Execution</b> carries out instructions directly
+on the hardware (no interpretation)
+
+<p><b>Q:</b> Which is the LC-3?
+
+<hr><p>Early history: complex instructions get decoded, interpreted as
+a sequence of microinstructions kept in a control store.
+
+<p>Advantages:
+<ul>
+<li>can implement complex instructions on a simple machine
+<li>easier to add new instructions
+<li>easier to develop, test, document complex instructions
+<li>ROM <b>much</b> faster than memory
+</ul>
+
+The ROM vs. Memory speed gap made interpretation a huge advantage in
+the 60's and 70's.
+
+<p>"Closing the semantic gap": more complex instructions enable you to
+get closer to English-level commands.
+
+
+<hr><p>The RISC Revolution</p>
+
+<p>Patterson at Berkeley; Hennessy at Stanford</p>
+<p>keep it simple but fast</p>
+<ul>
+<li>quantitative argument: RAM speed "caught up" with ROM.
+"Interpretation penalty"
+<li>ISAs got <i>really</i> complicated -- the VAX had 300+
+instructions and 200 different ways of specifying operators.
+</ul>
+
+<p>Insight: the importance of ISSUING instructions quickly</p>
+<p>Life lesson: think about going against the stream</p>
+
+<hr><p>What won in the marketplace</p>
+
+<p>Intel "CISC".  </p>
+<ul>
+<li>economics of "code museum"
+<li>CISC/RISC hybrid since 486
+</ul>
+
+
+<p>Life lesson: victory through assimilation</p>
+
+<hr><b>RISC Design Principles</b>
+<ul>
+<li>All instructions directly executed by hardware
+<li>maximize rate at which instructions get <b>issued</b>
+<li>instructions should be easy to decode
+<li>only load and store instructions should access memory
+<li>have lots of registers (>= 32)
+</ul>
+
+<b>Question</b>:  How do you  maximize the number of instructions that get executed?
+
+<p>An early answer:  grab instructions ahead of time, store in <b>prefetch buffer</b>
+
+
+<hr><h3>Instruction-Level Parallelism</h3><hr>
+
+<p>Units for performance measurement:</p>
+<ul>
+<li><b>MIPS</b>: millions of instructions issued per second
+<li><b>FLOPS</b>: floating point operations per second
+</ul>
+
+<hr><p>How to improve performance?</p>
+
+
+<hr><p>Idea: trade latency for bandwidth</p>
+<ul>
+<li>In the spirit of the RISC school's idea of "starting insructions
+is more important than finishing them"
+</ul>
+
+
+<hr><p><b>Key idea:</b> the pipeline</p>
+
+<p>Fig 2-4</p>
+<p><img src="../Aug13/img/fig2-4.jpg" alt="too bad" width="100%"></p>
+
+
+<p>(More later)</p>
+<hr><p>Variations:</p>
+
+<ul><li>dual-pipeline</li></ul>
+
+
+<ul><li>superscalar</li></ul>
+
+<p>Figure 2-6</p>
+<p><img src="../Aug13/img/fig2-6.jpg" alt="too bad" width="100%"></p>
+
+
+
+<hr><h3>Processor-Level Parallelism</h3><hr>
+
+You can only speed up <i>so much</i> from pipelining or from faster
+CPUs.  After that, you'll need multiple CPUs.
+<p><b>SIMD</b> -- Single Instruction Multiple Datastream
+<ul>
+<li><b>Array Processor</b>: issue same instruction to multiple
+processors, each operating on their own data.
+<li><b>Vector Machine</b>: like Array processor, but one (pipelined) adder.
+<br><b>vector registers</b>: act like array of registers.  vector add: x_1+y_1,x_2+y_2,...
+</ul>
+
+<hr><p>multiprocessor</p>
+
+<p>Figure 2-8</p>
+<p><img src="../Aug13/img/fig2-8.jpg" alt="too bad" width="100%"></p>
+
+<hr><h3>Memory</h3><hr>
+We've talked about some of the real-world memory issues already:
+<ul>
+<li>byte vs word addressability.  Other machines have 12 or 27 or 1 bits per cell.
+<li>error correcting codes
+</ul>
+
+
+<p>Endianness</p>
+
+<hr><p>The Memory Pyramid</p>
+
+<p>Figure 2-18</p>
+<p><img src="../Aug13/img/fig2-18.jpg" alt="too bad" width="70%"></p>
+
+</body>
+</html>

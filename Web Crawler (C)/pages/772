@@ -1,0 +1,65 @@
+http://www.cs.dartmouth.edu/%7Ethc/thesis.html
+3
+<HTML>
+<HEAD><TITLE>Cormen Thesis</TITLE></HEAD>
+<BODY TEXT="#000068" LINK="#060FDF" VLINK="#060FDF" ALINK="#DC24C5" BGCOLOR="#FFFFFF">
+
+<H2>Virtual Memory for Data-Parallel Computing
+</H2>
+
+<H3>Thomas H. Cormen</H3>
+<H4>Massachussetts Institute of Technology, 1992</H3>
+<H4>MIT/LCS/TR-559</H3>
+
+Throughout the history of electronic computing, no matter how big and
+fast the top machines have been, there have always been applications
+that needed them to be bigger and faster.  We see this phenomenon
+today in parallel computing.<P>
+
+Almost thirty years ago, computer architects devised virtual memory to
+solve this problem for sequential machines, but data-parallel machines
+don't have it yet.  This thesis explores several issues that arise in
+the design and implementation of virtual-memory systems for
+data-parallel computing, with the following contributions:
+<UL>
+<LI> A system, VM-DP, for data-parallel computing with virtual
+memory.<P>
+
+<LI> Theoretical results for classes of bit-defined permutations (BPC
+and BMMC permutations in particular) on parallel disk systems.<P>
+
+<LI> Practical methods for performing permutations.  This thesis
+presents how VM-DP performs general permutations and lists several
+special permutations that can be performed faster: monotonic routes,
+mesh and torus permutations, BPC and BMMC permutations, and general
+matrix transpose.  Moreover, each of these special permutations can be
+detected efficiently at run time.<P>
+
+<LI> A study of how the layout of vectors on disk affects
+data-parallel operations.<P>
+
+<LI> A comparison of alternative demand paging strategies in VM-DP.<P>
+</UL>
+
+
+<HR SIZE=4>
+
+<a href="papers/thesis.pdf">Thesis</a> (PDF)
+
+<!-- <p> -->
+
+<!-- Thesis in PostScript -->
+<!-- <ul> -->
+<!--   <li> <a href="papers/thesis.ps">Uncompressed</a> -->
+<!--   <li> <a href="papers/thesis.ps.gz">Compressed with gzip</a> -->
+<!-- </ul> -->
+
+
+<P><HR SIZE=4>
+<H4> 
+<IMG ALIGN="MIDDLE" SRC="images/Dtree.gif" WIDTH=34 HEIGHT=39> 
+<A HREF="/">Back to Dartmouth CS Home Page</A> 
+</H4>
+
+</BODY>
+</HTML>

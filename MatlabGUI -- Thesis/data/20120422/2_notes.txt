@@ -1,0 +1,14 @@
+function of: omega_m 
+ nMax: 10
+ eta: 0.1 
+  wA:1 
+ phiNot: 0 
+ wm: 2*pi/10000 
+ whf: 2*pi 
+ Tp: 0.125 
+ alpha: pi/4 
+ mMax: 50 
+ pulseArea: 2*pi 
+ minValue: 2*pi/10000 
+ maxValue: 2*pi 
+ points: 80

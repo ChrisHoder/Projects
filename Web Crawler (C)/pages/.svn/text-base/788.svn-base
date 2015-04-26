@@ -1,0 +1,86 @@
+http://www.cs.dartmouth.edu/~csrs
+3
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Computer Science Research Symposium 2010</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<table width=910 align=center>
+<tr><td><img src="banner.jpg"></td></tr>
+
+<tr height=20></tr>
+
+<tr><td>
+
+<table style="text-align: left;" width=100%>
+
+<tr>
+<td valign="top">
+<table class="navbar">
+<tr><td><a href="index.html">Home</a></td></tr>
+<tr><td><a href="schedule.html">Program</a></td></tr>
+<tr><td><a href="pandd.html">Posters/Demos</a></td></tr>
+<tr><td><a href="history.html">History</a></td></tr>
+<tr><td><a href="faq.html">FAQ</a></td></tr>
+<tr><td><a href="contact.html">Contact Us</a></td></tr>
+</table>
+</td>
+
+<td style="width:20pt; border-left:dotted 1px #000;"><img src="blank.gif"></td>
+
+<td>
+<table class="inner"><tr><td>
+The 2010 CSRS will take place on <strong>Saturday, September 25th</strong> in <a href="faq.html#whenandwhere">Kemeny 008</a>.
+<p>
+
+<h4>About CSRS</h4>
+The Dartmouth Computer Science Research Symposium is an annual exhibition
+of the research being conducted in the field of Computer Science here
+at Dartmouth. It not only provides a means of communicating research
+interests and goals to fellow department members, but to the greater
+Dartmouth community as well. Students and faculty are given an opportunity
+to present their research either in the form of a presentation, in a 
+comprehensive poster session, or in the form of working demonstrations. 
+CSRS serves to strengthen the solidarity of our department, provide critical
+presentation experience, and widen perspectives of Computer Science
+among both students and faculty.
+<p>
+
+Every year, the symposium features a keynote talk given by a distinguished member of the
+field from outside Dartmouth College.  This year, our keynote speaker is <a href=http://pdos.csail.mit.edu/~kaashoek/>Frans Kaashoek</a> of MIT.&nbsp;&nbsp;Please see the <a href="schedule.html#keynote">Program</a> page for more details.
+
+<br><h4>Note</h4>
+We will be presenting the Patrick Tsang Best Student Talk award and the Patrick Tsang Best Student Poster award.  These awards will be determined by faculty committee and announced at the end of the day. 
+
+<p>
+
+<h4>Updates</h4>
+<ul>
+<li>Things get started promptly at 8:45 am.  Please see the <a href="schedule.html">Program</a> for more details. To see how to get to Kemeny, check out the <a href="faq.html#whenandwhere">FAQ page</a>.
+<!--<li>We now have <a href="pandd.html">working demos</a> as part of CSRS! If you're working on something cool and can demonstrate a working model, <a href="mailto:csrs@cs.dartmouth.edu">mail us</a>!-->
+<!--
+<li>The program is up. If you haven't sent in your talk/poster title and abstract, please do so.
+<li>We're still accepting entries for the poster session. For poster submission guidelines, <a href="poster.html">click here</a>.
+-->
+</ul>
+
+
+</tr></td></table>
+
+
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+</body></html>

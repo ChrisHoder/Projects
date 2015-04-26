@@ -1,0 +1,716 @@
+http://www.cs.dartmouth.edu/~cs38/resources
+3
+<html> <head>
+<base target="_parent">
+<title>CS38: Texts and Resources</title>
+</head>
+ 
+<body>
+
+
+<h2>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+
+Texts and Resources
+<br>
+ CS38, Security and Privacy, Spring 2007
+</h2>
+<i> www.cs.dartmouth.edu/~cs38/resources/index.shtml</i>
+ &nbsp;&nbsp;&nbsp;
+
+<i> Last modified: 05/24/07 11:17:45 AM</i>
+
+<hr>
+
+<p>
+
+<p>
+
+
+<h2><a name="craft">Textbook</a></h2>
+
+Sean Smith and <a href="/~carlox/">John Marchesini</a>.  <cite>The Guidebook for Security Craftsmen.</cite>
+Addison-Wesley, 2007.
+<p>
+This book arose from notes I wrote as I developed this course.  We'll be using draft chapters.
+
+
+<p>
+<hr>
+<h2><a name="risks">Highly Recommended</a></h2>
+
+Peter Neumann, <cite>Computer-Related Risks</cite>.
+Addison-Wesley, 1995.
+
+<p>
+Yes, 1995.  It's a darn shame this hasn't been updated.
+But... Neumann's been looking a long time at how computer technology
+can have seriously negative consequences in life and society.
+<p>
+
+<hr>
+<h2>Possibly Useful</h2>
+
+
+<a name="schneier">Many people swear by Bruce Schneier's
+<cite>Applied Cryptography.</cite></a>
+(It's up to the 2nd edition now.) 
+I swore by it too, when it first came out.
+Then I started swearing at it, since it's often incomplete,
+and has errors.
+But it still is often the first place I look up things,
+and has an excellent bibliography.    I have to keep buying new copies,
+because I end up lending them all out.
+<p>
+
+<hr>
+<h2>Other Resources</h2>
+
+<p>
+<a href="http://www.cacr.math.uwaterloo.ca/hac/"><b>Online
+version of the Handbook of Applied Cryptography</b></a>
+<p>
+
+<a href="local/rsalabs_faq41.pdf"><b>RSA's Crypto FAQ</b></a>
+is a reasonable crypto reference, and also free.
+<p>
+
+
+<p>
+<a href="http://catless.ncl.ac.uk/Risks/"><b>The Risks Digest</b></a>
+<p>
+<a href="http://www.securityfocus.com/"><b>SecurityFocus</b></a>
+(where BugTraq comes from)
+<p>
+<a href="http://www.cert.org/"><b>CERT</b></a>
+(US gov't-funded security response center at CMU)
+<p>
+ <a href="http://ciac.llnl.gov/ciac/"><b>CIAC</b></a>
+(US Department of Energy security center)
+
+<p>
+<a href="http://www.cs.wisc.edu/~bart/fuzz/fuzz.html"><b>Bart Miller's
+Fuzz Testing</b></a>
+
+<p>
+ <a href="/~sws/wazzu/"><b>my wazzu collection</b></a>
+<p>
+
+<a href="http://www.radium.ncsc.mil/tpep/library/rainbow/"><b>The Rainbow Series</b></a>
+
+<p>
+
+
+<p>
+<a name="spin" href="http://netlib.bell-labs.com/netlib/spin/whatispin.html">
+<b>The Spin Home Page (at Bell Labs)</b></a>
+(See also <a href="#holzmann"><b>Holzmann</b></a> below.)
+
+
+<p>
+<hr>
+<h2>Additional papers</h2>
+<p>
+<strong>Note:</strong>
+I've gathered electronic copies of many of these, to save paper.
+But to make Wayne happy, we should try to save bits as well:
+rather than downloading these to a permanent place in your own directory,
+please consider configuring your browser to invoke ghostview/acroread directly
+on a temporary copy.  For Netscape on Linux, you can do this by
+going to Edit-Preferences-Navigator-Applications, then:
+<ul>
+<li> find the "Postscript Document" line, click "edit", click
+"Handled By Application", and enter "/usr/bin/X11/gv %s"
+<li> find the "Portable Document Format" line, click "edit", click
+"Handled By Application", and enter "/usr/contrib/bin/acroread %s"
+</ul>
+
+
+<p>
+Papers...
+<ul>
+<p><hr><li>
+<a name="aleph1">Aleph One.
+"Smashing the Stack for Fun and Profit."
+<cite>Phrack</cite> Issue 49, November 1996.
+<a href="link/p49-14"><b>local copy</b></a>
+<p><hr><li>
+<a name="bugnosis">A. Alsaid and D. Martin.</a>
+"Detecting Web Bugs with Bugnosis: Privacy Advocacy through
+Education."
+<cite>Privacy-Enhancing Technology 2002.</cite> Springer-Verlag LNCS.
+<a href="local/bugnosis-pet2002.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="anderson">Ross Anderson.</a>
+"Why Cryptosystems Fail."
+<cite>ACM Conference on Computer and Communications Security.</cite>
+1993.  <a href="link/anderson.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="ak1">Ross Anderson and Markus Kuhn.</a>
+"Tamper Resistance---A Cautionary Note."
+<cite>2nd USENIX Workshop on Electronic Commerce.</cite>
+<a href="link/ak1.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="ak2">Ross Anderson and Markus Kuhn.</a>
+"Low Cost Attacks on Tamper Resistant Devices."
+<a href="link/ak2.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="becky">R.G. Bace.</a>
+<cite>Intrusion Detection.</cite>
+Macmillan, 2000.
+<p><hr><li>
+<a name="bell">Bell and LaPadula.</a>
+<cite>Secure Computer Systems: Unified Exposition and Multics Interpretation.</cite>
+ESD-TR-75-306, MTR 2997 Rev. 1, The MITRE Corporation, March 1976.
+<a href="link/bell76.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="oaep">Bellare and Rogaway.</a>
+"Optimal Asymmetric Encryption---How to Encrypt with RSA."
+<cite>EuroCRYPT 1994</cite>.
+Springer-Verlag LCNS 950.
+<a href="link/oae.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="bennett">Bennett et al.</a>
+"Experimental Quantum Cryptography."
+Extended version.
+(A preliminary version appeared in <cite>EUROCRYPT 90</cite>.)
+<a href="link/eqc.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="berman">Jerry Berman and Paula Bruening.
+"Is Privacy Still Possible in the Twenty-first Century?" 
+<cite>Social Research</cite>, Spring 2001.
+<a href=" http://www.cdt.org/publications/privacystill.shtml"><b>online
+version</b></a>
+<p><hr><li>
+<a name="bird">Bird, et al.</a>
+"Systematic Design of a Family of Attack-Resistant Authentication Protocols."
+<cite>IEEE Journal on Selected Areas in Communications.</cite>
+11: 679-693. 1993.
+<a href="link/bird.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="birrell">
+A. Birrell.</a>
+<cite>An Introduction to Programming with Threads.</cite>
+DEC SRC Technical Report 35, 1989.
+(<a href="/~sws/cs108/resources/birrell.ps"><b>postscript</b></a>)
+<p><hr><li>
+<a name="20years">Boneh.</a>
+"Twenty years of attacks on the RSA cryptosystem."
+<cite>Notices of the American Mathematical Society.</cite>
+ Vol. 46, No. 2, pp. 203--213.
+<a href="local/20years.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="boneh1998">Boneh and Venkatesan.</a>
+"Breaking RSA may not be equivalent to factoring."
+<cite>Eurocrypt '98.</cite>
+Springer-Verlag LNCS 1233.
+1998. 
+<a href="link/boneh.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="boneh2000">Boneh, Joux, Nguyen.</a>
+"Why Textbook ElGamal and RSA Encryption are Insecure."
+<cite>ASIACRYPT 2000</cite>
+Springer-Verlag LNCS 1976.
+<a href="link/boneh2000.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="brewer">Brewer and Nash.</a>
+"The Chinese Wall Security Policy."
+<cite>IEEE Symposium on Research in Security and Privacy.</cite>
+1989. <b><a href="http://www.gammassl.co.uk/topics/chinesewall.html">online
+version</a></b>
+<p><hr><li>
+<a name="broot">B-r00t.</a>
+<cite>PowerPC/OS X (Darwin) Shellcode Assembly:
+Smashing the Mac for Fun and Profit.</cite>
+2003.  <a href="local/broot.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="ban">Burrows, Abadi and Needham.</a>
+<cite>A Logic of Authentication.</cite>
+DEC SRC Research Report 39, revision of February 1990.
+<a href="link/abadi.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="camp">
+L.J. Camp, M. Sirbu, J.D. Tygar.
+"Token and Notational Money in Electronic Commerce."
+<cite>1st USENIX Workshop on Electronic Commerce.</cite>
+1996.
+<a href="link/camp.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="chari">Chari, Jutla, Rao, and Rohatgi.</a>
+"Towards Sound Approaches to Counteract Power-Analysis Attacks."
+<cite>CRYPTO '99</cite>.
+<a href="link/dpa.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="sdsi">Clarke et al</a>.
+"Certificate Chain Discovery in SPKI/SDSI".
+<a href="link/clarke.ps"><b>(ps)</b></a>
+<p><hr><li>
+<a name="brutus">Clarke, Jha, Marrero.</a>
+"Verifying Security Protocols with Brutus."
+<cite>ACM Transactions</cite>.
+<a href="link/brutus.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="clarke">
+Clarke and Wing.
+"Formal Methods: State of the Art and Future Directions."
+<cite>ACM Computing Surveys</cite>
+28: 626-643.
+1996.
+<a href="/~sws/cs108/resources/wing1.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="padding">
+Coron, Naccache, Stern.
+"On the Security of RSA Padding."
+<cite>CRYPTO '99</cite>.
+<a href="link/padding.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="cranor1">L. Cranor.</a>
+"Ten years of computers, freedom and privacy: a personal retrospective."
+<cite>Proceedings of the tenth conference on Computers, freedom and privacy</cite>, Toronto.
+<a href="local/p11-cranor.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="cranor2">L. Cranor.</a>
+"Designing a Privacy Preference Specification Interface: A Case Study."
+<cite>ACM/CHI2003 Workshop on Human-Computer Interaction and Security
+Systems.</cite> 2003.
+<a href="local/hcisec-workshop-cranor.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="craver">Craver, Wu, Liu, Stubblefield, Swartzlander, Wallach, Dean, Felten.</a> "Reading Between the Lines: Lessons from the SDMI Challenge."
+<cite>USENIX Security</cite> 2001.  <a href="link/craver.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="orange"><cite>Department of Defense
+Trusted Computer System Evaluation Criteria.</cite>
+DoD 5200.28-STD.  December 1985. <a href="link/orange.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="deutsch">Deutsch, Ekert, Lupacchini.</a>
+"Machines, Logic, and Quantum Physics."
+Novermber 1999.  
+<a href="link/deutsch.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="md5">Dobbertin.</a>
+<cite>Cryptanalysis of MD5 Compress.</cite>
+German Information Security Agency, 1996.
+<a href="link/dobbertin.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="kv4">Dole, Lodin, and Spafford.</a>
+"Misplaced Trust: Kerberos 4 Session Keys."
+<cite>NDSS</cite>, 1997.
+<a href="link/kv4.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="eichin">
+Eichin and Rochlis.
+"With Microscope and Tweezers: An Analysisof the Internet Virus
+of November 1998."
+<cite>Security and Privacy</cite>, 1988.
+<a href="local/tweezers.ps"><b>(postscript)</b></a>
+</a>
+<p><hr><li>
+<a name="eff">Electronic Frontier Foundation.</a>
+<cite>Cracking DES.</cite> O'Reilly, 1998.
+(but i'm not lending out my autographed first edition :)
+<a href="http://cryptome.org/cracking-des.htm"><b>(online copy)</b></a>
+<p><hr><li>
+<a name="nature">Carl Ellison.</a>
+"The Nature of a Useable PKI."
+<cite>Computer Networks</cite>. 31: 823-830. 1999.
+<a href="link/nature.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="wisdom">Carl Ellison.</a>
+"Improvements on Conventional PKI Wisdon."
+<cite>1st Annual PKI Research Workshop</cite>. 
+April 2002. Pp. 165-175.
+<a href="http://www.cs.dartmouth.edu/~pki02/Ellison/paper.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="attribute">Farrell and Housley.</a>
+<cite>An Internet Attribute Certificate Profile for Authorization.</cite>
+Internet Draft.
+<a href="link/draft-ietf-pkix-ac509prof-09.txt"><b>(local copy)</b></a>.
+<p><hr><li>
+<a name="spoofing">Felten, Balfanz, Dean, and Wallach.</a>
+"Web Spoofing: An Internet Con Game."
+<cite>20th National Information Systems Security Conference.</cite>
+1997.
+<a href="link/spoofing.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="cache">Felten and Schneider.</a>
+"Timing Attacks on Web Privacy."
+<cite>ACM Conference on Computer and Communications Security.</cite>
+2000.
+<a href="link/webtiming.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="Fu">Kevin Fu et al.</a>
+"Dos and Don'ts of Client Authentication on the Web."
+<cite>Proceedings of the 10th USENIX Security Symposium,</cite> Washington, DC, August 2001.
+<a href="local/fu.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="girault">Girault, Misarsky.</a>
+"Cryptanalysis of Countermeasures Proposed for Repairing ISO9796-1."
+<cite>Eurocrypt 2000</cite>
+Springer-Verlag LNCS 1807.
+<a href="link/forge2.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="gowa">Goldberg and Wagner.</a>
+"Randomness and the Netscape Browser."
+<cite>Dr. Dobb's Journal.</cite>
+January 1996.
+<a href="link/ddj-netscape.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="appel">S. Govindavajhala and A. Appel.</a>
+"Using Memory Errors to Attack a Virtual Machine."
+<cite>IEEE Symposium on Security and Privacy, May 2003. (to appear)</cite>
+<a href="local/memerr.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="grieu">Grieu.</a>
+"A Chosen Messages Attack on the ISO/IEC 9796-1 Signature Scheme."
+<cite>Eurocrypt 2000.</cite>
+Springer-Verlag LNCS 1807.
+<a href="link/grieu.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="gouda">Gouda.</a>
+"Authentication Using Symmetric Keys." (Section 18.3)
+<cite>Elements of Network Protocol Design.</cite>
+Wiley-Interscience.
+<p><hr><li>
+<a name="haber">Haber and Stornetta.</a>
+"How to Time-Stamp a Digital Document."
+<cite>Journal of Cryptology.</cite> 2:99-111. 1991.
+<a href="link/haber.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="hastad">Hastad.</a>
+"On Using RSA with Low-Exponent in a Public Key Network."
+<cite>CRYPTO 85</cite>.
+Springer-Verlag.
+<a href="link/hastad.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="holzmann">Holzmann.</a>
+<cite>Design and Validation of Computer Protocols</cite>.
+The bad news is: it's out of print.
+The good news is: it's been made available electronically.
+<a href="/~sws/cs108/resources/spinbook/"><b>Here's a local copy</b></a>.
+<p><hr><li>
+<a name="drm">A. Iliev, S.W. Smith.</a>
+"Prototyping an Armored Data Vault: Rights Management on Big Brother's Computer." 
+<cite>Privacy-Enhancing Technology 2002.</cite> Springer-Verlag LNCS, to appear.  <a href="/~sws/papers/pet02.pdf"><b>pdf</b></a>
+<p><hr><li>
+<a name="kafka">A. Iliev, S.W. Smith</a>
+"Privacy-Enhanced Credential Services."
+<cite>2nd Annual PKI Research Workshop.</cite>  April 2003.
+<a href="/~sws/papers/ilsm03.pdf"><b>pdf</b></a>
+<p><hr><li>
+<a name="jsm">S. Jiang, S.W. Smith, K. Minami.</a>
+"Securing Web Servers against Insider Attack."
+<cite>ACSA/ACM Annual Computer Security Applications Conference.</cite> 
+December 2001.
+<a href="/~sws/papers/jsm.pdf"><b>pdf</b></a>.
+<p><hr><li>
+<a name="jutla">Jutla.</a>
+"Encryption Modes with Almost Free Message Integrity."
+<cite>Eurocrypt 2001.</cite>
+<a href="link/jutla.pdf"><b>Here's a draft.</b></a>
+<p><hr><li>
+<a name="KSA">K. Kain, S.W. Smith, R. Asokan.</a><br>
+"Digital Signatures and Electronic Documents:
+A Cautionary Tale."<br>
+<cite>Advanced Communications and Multimedia Security</cite><br>
+Kluwer Academic Publihsers.  PP 293-307.  Sept 2002.
+<a href="/~sws/papers/cms02.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="karg74">Karger and Schell.</a>
+<cite>MULTICS Security Evaluation: Vulnerability Analysis.</cite>
+Technical REport EDS-TR-74-193, Vol II.
+Electronic Systems Division (AFSC), Hanscome AFB, June 1974.
+<a href="link/karg74.ps"><b>HUGE postscript---do not
+print!</b></a>
+<p><hr><li>
+<a name="karger">Karger, Zurko, Bonin, Mason, Kahn.</a>
+"A Retrospective on the VAX VMM Security Kernel."
+<cite>Transactions on Software Engineering.</cite>
+17: 1147-1165, 1991.
+<a href="link/vmm.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="katz">Katz and Schneier.</a>
+"A Chosen Ciphertext Attack Against Several E-Mail Encryption Protocols."
+<cite>USENIX Security.</cite> August 2000.
+<a href="link/katz.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="timing">Kocher.</a>
+"Timing Attacks on Implementations of Diffie-Hellman, RSA,
+DSS, and Other Systems."
+<cite>CRYPTO 96</cite>
+Springer-Verlag LNCS 1109.
+<a href="link/timing.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="dpa2">Kocher, Jaffe, Jun.</a>
+"Differential Power Analysis: Leaking Secrets."
+<cite>CRYPTO 99</cite>
+Springer-Verlag.
+<a href="link/dpaK2.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="dpa1">Kocher, Jaffe, Jun.</a>
+"Introduction fo Differential Power Analysis and Related Attacks."
+<a href="link/dpaK.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="latex">Leslie Lamport.</a>
+<cite>Latex: A Document Preparation System (2nd Edition).</cite>
+Addison-Wesley.
+<p><hr><li>
+<a name="wenke1">W. Lee et al.</a>
+"Adaptive Intrusion Detection: a Data Mining Approach."
+<cite>Artificial Intelligence Review.</cite> 14(6):533-567, December 2000 
+<a href="link/wenke1.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="vh">J. Marchesini and S.W. Smith.</a>
+<cite>Virtual Hierarchies: An Architecture for Building and Maintaining
+Efficient and Resilient Trust Chains.</cite>
+Submitted for publication.
+A preliminary version is available as 
+Technical Report TR2002-416,
+Department of Computer Science, Dartmouth College.
+February 2002.
+<a href="/~sws/papers/tr416.pdf"><b>pdf</b></a>
+<p><hr><li>
+<a name="keyjack">J. Marchesini, S.W. Smith, M. Zhao.</a>
+<a href="/~sws/pubs/msz05.pdf"><b>"Keyjacking: the Surprising Insecurity of Client-side SSL."</b></a>
+<cite>Computers and Security.</cite>
+4 (2): 109-123. March 2005. (A revised and extended version of our <cite>PKI03</cite> paper.)
+<p><hr><li>
+<a name="mclean">Mclean.</a>
+"A Comment on the Basic Security Theorem of Bell and LaPadula."
+<cite>Information Processing Letters.</cite>
+20. 1985.
+<a href="link/mclean.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="morris">Morris and Thompson.</a>
+"Password Security: A Case History."
+<cite>CACM</cite>, 22:594-597, 1979.
+<a href="mortom.ps"><b>(postcript version)</b></a>
+<p><hr><li>
+<a name="nielsen">Nielsen and Chuang.</a>
+<cite>Quantum Computation and Quantum Information.</cite>
+Cambridge University Press. 2000.
+<p><hr><li>
+<a name="perrig1">A. Perrig and D. Song.</a>
+"A First Step towards the Automatic Generation of Security Protocols."
+<cite>NDSS</cite>, 2000.
+<a href="local/perrig1.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="penrose">Penrose.</a>
+<cite>The Emperor's New Mind: Concerning Computers,
+Minds, and the Laws of Physics.</cite>
+Penguin, 1989
+<p><hr><li>
+<a name="pak">F. Petitcolas, R. Anderson, M. Kuhn.</a>
+"Information Hiding---A Survey."
+<cite> Proceedings of the IEEE.</cite>
+87: 1062-1078.  July 1999.
+<a href="link/pak.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="rao">Rao and Rohatgi.</a>
+"Can Pseudonymity Really Guarantee Privacy?"
+<cite>USENIX Security</cite> 2000.
+<a href="local/rao-rohatgi.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="intro">Eleanor Rieffel and Wolfgang Polak.</a>
+"An Introduction to Quantum Computing for Non-Physicists."
+<a href="link/intro.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="rsa">Rivest, Shamir and Adleman. </a>
+"A Method for Obtaining Digital Signatures and Public-Key
+ Cryptosystems." <cite>Communications of the ACM.</cite> 21: 120-126. 1978.
+<a href="/~sws/cs108/resources/rsapaper.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="rsamd5">Robshaw.</a>
+"On Recent Results for MD2,MD4, and MD5."
+<cite>RSA Laboratories' Bulletin.</cite>
+November 1996.
+<a href="link/rsamd5.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="rsafaq">
+RSA Laboratories.
+<cite>Frequently Asked Questions about Today's Cryptography.</cite>
+Version 4.1. May 2000.  
+<a href="/~sws/cs108/resources/rsafaq.pdf"><b>(pdf---with internal links)</b></a>
+</a>
+<p><hr><li>
+<a name="ryan">Ryan and Schneider.</a>
+<cite>Modelling and Analysis of Security Protocols.</cite>
+Addison-Wesley, 2001.
+<p><hr><li>
+<a name="saltzer">Jerome H. Saltzer and Michael D. Schroeder.</a>
+"The Protection of Information in Computer Systems."
+<cite>Proceedings of the IEEE</cite> 63, 9 (September 1975) pages 1278-1308.
+<a href="http://web.mit.edu/Saltzer/www/publications/protection/index.html"><b>web version</b></a>
+<p><hr><li>
+<a name="schell">Schell.</a>
+R. Schell.
+"Information Security: Science, Pseudoscience, and Flying Pigs."
+<cite>ACSA/ACM Annual Computer Security Applications Conference.</cite>
+December 2001. <a href="link/schell.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="schor">Schor.</a>
+"Polynomial-Time Algorithms for Prime Factorization and
+Discrete Logarithms on a Quantum Computer."
+Extended version.  (Preliminary version appeared in 
+<cite>35th FOCS</cite>, 1994.)
+<a href="link/schor.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="aaai">T. Senator et al.</a>
+"The Financial Crimes Enforcement Network AI System."
+<cite>AI Magazine.</cite> 16 (4): 21-39, 1995.
+<a href="link/aaai.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="poker">Shamir, Rivest, Adleman.
+"Mental Poker."
+In Klarner (ed.), <cite>The Mathematical Gardner.</cite>
+Wadsorth, 1981.  Pp 37-43.
+<p><hr><li>
+<a name="stacksmash">
+N. Smith.
+<cite>Stack Smashing Vulnerabilities in the UNIX Operating System.</cite>
+<a href="local/stack.pdf"><b>(pdf)</b></a>
+</a>
+<p><hr><li>
+<a name="fairy">Sean Smith.</a>
+"Secure Systems Department: Fairy Dust, Secrets, and the Real World. "
+<cite>IEEE Security and Privacy</cite>, 1: 89-93, Jan/Feb 2003.
+<a href="http://www.cs.dartmouth.edu/~sws/papers/fairydust.pdf"><b>(draft pdf)</b></a>
+<p><hr><li>
+<a name="humans">Sean Smith.</a>
+"Secure Systems Department: Humans in the Loop."
+<cite>IEEE Security and Privacy</cite>, May/June 2003, to appear.
+<a href="http://www.cs.dartmouth.edu/~sws/papers/hcidraft.pdf"><b>(draft pdf)</b></a>
+<p><hr><li>
+<a name="acm">S.W. Smith.
+"WebALPS: A Survey of E-Commerce Privacy and Security Applications."
+<cite>ACM SIGecom Exchanges.</cite>  
+Volume 2.3, September 2001.
+<a href="/~sws/papers/acm.pdf"><b>PDF</b></a>.
+<p><hr><li>
+<a name="pir"> S.W. Smith, D. Safford. </a>
+"Practical Server Privacy 
+with Secure Coprocessors."
+<cite>IBM Systems Journal</cite> (special issue on End-to-End Security).
+40: 683-695.  2001.<a href="/~sws/papers/sysj.pdf"><b>PDF</b></a>
+<p><hr><li>
+<a name="smwe"> S.W. Smith, S.H. Weingart.</a>
+"Building a High-Performance, Programmable Secure Coprocessor."
+<cite>Computer Networks
+(Special Issue on Computer Network Security)</cite>
+31: 831-860. April 1999.
+<a href="link/sw.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="webalps">S.W. Smith.</a>
+<cite>WebALPS: Using Trusted Co-Servers to Enhance Privacy and Security of Web In
+teractions.</cite>
+Research Report RC 21851, IBM TJ Watson Research Center.  October 2000.
+<a href="/~sws/papers/alps.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="fips"> S.W. Smith, R. Perez, S.H. Weingart, V. Austel.</a>
+"Validating a High-Performance, Programmable Secure Coprocessor." 
+<cite>22nd National Information Systems Security Conference.</cite> October 1999.
+<a href="/~sws/papers/nfips.pdf"><b>PDF (96K)</b></a>.
+<p><hr><li>
+<a name="spafworm">
+E. Spafford.
+"The Internet Worm: Crisis and Aftermath."
+<cite>Communications of the ACM</cite>
+32: 678-687, 1989.
+<a href="local/spafworm.pdf"><b>(pdf)</b></a>
+</a>
+<p><hr><li>
+<a name="stein">
+L. Stein.</a>
+<cite>Web Security.</cite>
+Addision-Wesley, 1998.
+<p><hr><li>
+<a name="swimmer">Morton Swimmer.</a>
+"You Know when you've been WAZZU'd."
+<cite>Antivirus Online</cite>, Volume 1, 1996.
+<a href="http://198.4.83.197/1-3/Features/Cover/"><b>link</b></a>
+<p><hr><li>
+<a name="mos">Tanenbaum. </a>
+<cite>Modern Operating Sytems (Second Edition).</cite>
+Prentice-Hall, 2001.
+<p><hr><li>
+<a name="thompson">Ken Thompson.</a>
+"Reflections on Trusting Trust."
+<cite>Communications of the ACM</cite> 27:761-763.  1984.
+<a href="http://cm.bell-labs.com/who/ken/trust.html"><b>Ken's html version</b></a>
+<p><hr><li>
+<a name="proxy">Tuecke et al.</a>
+<cite>Internet X.509 Public Key Infrastructure Proxy Certificate
+Profile.</cite> Internet Draft.  
+<a href="link/draft-ietf-pkix-proxy-01.txt"><b>(local copy)</b></a>
+<p><hr><li>
+<a name="tygar">J.D. Tygar.</a>
+"Atomicity in Electronic Commerce."
+<cite>15th ACM Symposium on the Principles of Distributed Computing.</cite>
+Keynote paper.  1996.
+<a href="link/tygar.ps"><b>(postscript)</b></a>
+<p><hr><li>
+<a name="steve">Steve Weingart.</a>
+"Phyisical Security Devices for Computer Subsystems:
+A Survey of Attacks and Defenses."
+<cite>CHES 2000.</cite> 
+<a href="link/weingart.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="johnny">Whitten and Tygar.</a>
+"Why Johnny Can't Encrypt: A Usability Evaluation of PGP 5.0."
+<cite>USENIX Security</cite>, 1999.
+<a href="http://www.usenix.org/publications/library/proceedings/sec99/full_papers/whitten/whitten_html/"><b>html version at usenix</b></a>,
+<a href="link/whitten.pdf"><b>(local pdf)</b></a>
+<p><hr><li>
+<a name="wing">
+Wing.
+"A Symbiotic Relationship Between Formal Methods and Security."
+<cite>Proceedings from Workshops on Computer
+Security, Fault Tolerance, and Software Assurance.</cite>
+1998. 
+<a href="/~sws/cs108/resources/wing2.ps"><b>(postscript)</b></a>
+</a>
+<P><hr><li>
+<a name="tpath">
+Zishuang (Eileen) Ye, Sean Smith.</a>
+"Trusted Paths for Browsers."
+<cite>USENIX Security</cite>, 2002.
+<a href="http://www.cs.dartmouth.edu/~sws/papers/usenix02.pdf"><b>(pdf)</b></a>
+<p><hr><li>
+<a name="sshuse">
+Ylonen et al </a>.
+<cite>SSH Authentication Protocol.</cite>
+IETF Internet-Draft. <a href="link/draft-ietf-secsh-userauth-13.txt">
+<b>(txt)</b></a>
+<p><hr><li>
+<a name="ssharch">
+Ylonen et al </a>.
+<cite>SSH Protocol Architecture.</cite>
+IETF Internet-Draft. <a href="link/draft-ietf-secsh-architecture-11.txt">
+<b>(txt)</b></a>
+<p><hr><li>
+<a name="sshport">
+Ylonen et al </a>.
+<cite>SSH Transport Layer Protocol.</cite>
+IETF Internet-Draft. <a href="link/draft-ietf-secsh-transport-11.txt">
+<b>(txt)</b></a>
+</ul>
+
+
+
+
+<p>
+
+<hr>
+<b>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/icons/back.gif">
+
+<A HREF="/~cs38/"><b>Back to CS38 Home Page</b></A>
+</b>
+&nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.dartmouth.edu/~sws/"><b>Sean Smith</b></a>
+&nbsp;&nbsp;&nbsp;
+&lt; <a href="mailto:sws@cs.dartmouth.edu"><b>sws@cs.dartmouth.edu</b></a>&gt;
+
+
+
+
+</body> </html>

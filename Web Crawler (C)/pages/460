@@ -1,0 +1,202 @@
+http://www.cs.dartmouth.edu/~cbk/4
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>CS 4 | Concepts in Computing | Summer 2009</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+<div id="header">
+  <div id="title">CS 4, Summer 2009</div>
+  <div id="subtitle">Concepts in Computing</div>
+</div>
+
+<div id="navigation">
+  <a href="index.html" class="navhere">About</a>
+  <a href="schedule.html" class="navthere">Schedule</a>
+</div>
+
+<div id="content">
+
+<img src="nun.jpg" alt="Concepts in Computing" style="float:left"/>
+<div id="quotes">
+<dl>
+<dt>"I think there is a world market for maybe five computers."</dt>
+<dd>-- Thomas Watson, IBM chairman, 1943</dd>
+<dt>"Computers in the future may weigh no more than 1.5 tons."</dt>
+<dd>-- Popular Mechanics, 1949</dd>
+<dt>"There is no reason anyone would want a computer in their home."</dt>
+<dd>-- Ken Olson, DEC chairman, 1977</dd>
+</dl>
+</div>
+<br style="clear:both"/>
+
+<h2>Course description</h2> 
+
+<p>This course provides an overview of computing and computer science.
+To get a taste of how computers represent and process information, we
+will learn to create static web pages using html, and to develop
+interactive and dynamic pages using javascript.  We will also cut a
+broad swath through topics in computer science, from how the
+world-wide web works all the way down to how a computer manipulates
+individual zeros and ones, along with how we can put computers to use
+in making movies, deciphering the genome, and so forth.</p>
+
+<a name="admin"></a>
+<h2>Administrative info</h2>
+
+<dl id="admin">
+  <dt>Instructor</dt>
+  <dd><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a> |
+  250 Sudikoff | office hour: Tue 1-2, Wed 3-4, Thu 3-4</dd>
+
+  <dt>Teaching assistants</dt>
+  <dd>
+    <a href="http://www.cs.dartmouth.edu/~furtuna/">Andrei Furtuna</a> (Th 3-4);
+    <a href="http://www.cs.dartmouth.edu/~luhe/">Lu He</a> (F 3-4);
+    <a href="http://www.cs.dartmouth.edu/~paritosh">Paritosh Kavathekar</a> (W 3-4); <br />
+    <a href="http://www.cs.dartmouth.edu/~rangak/">Ranganath Kondapally</a> (M 3-4);
+    <a href="http://www.cs.dartmouth.edu/~shu/">Shaohan Hu</a> (Tu 1-2);
+    <a href="http://www.cs.dartmouth.edu/~xiaoyu/">Xiaoyu (Sarah) Zhao</a> (W 1-2)<br />
+    (Office hours in parentheses.)
+  </dd>
+
+  <dt>Course staff email</dt>
+  <dd>cs4 -at- cs -dot- dartmouth -dot- edu</dd>
+
+  <dt>Lectures</dt>
+  <dd>11-hour | MWF 11:15-12:20 | 008 Kemeny</dd>
+
+  <dt>Lab</dt>
+  <dd>Sudikoff 005 (Mac lab).  TA available in lab: Sun 3-9; Tue 7-9; Thu
+  7-9 (subject to change).<br/>
+  To get your ID card enabled, complete and return the Sudikoff
+  Access form posted on the course <a
+  href="http://www.dartmouth.edu/~blackboard/">Blackboard</a>
+  site.</dd>
+
+  <dt>Textbook</dt>
+  <dd>None.  Course notes and pointers to on-line material will be
+  provided on the <a href="schedule.html">schedule page</a>.</dd>
+
+</dl>
+
+<a name="grading"></a>
+<h2>Coursework</h2>
+
+<p>Coursework will include homeworks (30% total), along with a midterm
+(35%) and final (35%).</p>
+
+<p>There will be weekly homeworks, assigned one Monday and due
+<em>before</em> class the following Monday.  Ample time is provided
+for each assignment, so in general, late submissions will not be
+accepted for credit.  Under extenuating circumstances (prolonged
+illness, death in the family, etc.), arrangements must be made with
+the instructor <em>before</em> the due date.</p>
+
+<p>Assignments are to be turned in via <a
+ href="http://www.dartmouth.edu/~blackboard/">Blackboard</a>.
+Acceptable formats for written questions are HTML, PDF, plain text,
+rich text format (RTF), and Word.  Some homework questions will
+require the creation of web pages; web pages are also acceptable for
+standard written questions.  For web pages, you must:</p>
+
+<ul>
+  <li>In each web page, include a time-stamp to prove that it was
+  completed on time.  Insert the following just before the closing
+  <tt>&lt;/body&gt;</tt> and <tt>&lt;/html&gt;</tt> tags at the end of
+  your file.  (<a href="timestamp.html">An example time-stamped
+  file.</a>)
+<pre>
+&lt;p&gt;Last modified: &lt;em&gt;
+&lt;script type="text/javascript"&gt;document.write(document.lastModified);&lt;/script&gt;
+&lt;/em&gt;&lt;/p&gt;
+</pre>
+  </li>
+
+  <li>Upload your web pages to a "hidden" folder in your <a
+  href="http://www.dartmouth.edu/%7Eapply">personal web
+  space</a>.  Name this hidden folder with a codeword of 6&mdash;8
+  different letters/numbers (e.g., 5yo3ee), so that nobody will
+  casually stumble upon it.</li>
+
+  <li>As part of your homework submission on Blackboard, provide in the text
+  area the <em>full</em> URL of each web page (e.g., <a
+   href="http://www.dartmouth.edu/~cbk/5yo3ee/test.html">http://www.dartmouth.edu/~cbk/5yo3ee/test.html</a>).
+  Be sure to include the name of the hidden folder.</li> 
+</ul>
+
+<p>Web pages will be graded according to how they work with the <a
+href="http://www.mozilla.com/en-US/firefox/personal.html">Firefox
+3</a> web browser.  Since there are differences between the various
+browsers, you should install Firefox or use a lab computer, in order
+to ensure that the TAs will see you what you want them to.  To help
+find errors in your pages, you might find the <a
+href="https://addons.mozilla.org/en-US/firefox/addon/1843">firebug add-on</a>
+quite helpful.</p>
+
+<p>The exams will test your comprehension of what you have done on the homeworks.
+They will be closed-book / closed-computer.</p>
+
+<a name="honor"></a>
+<h2>Honor code</h2>
+
+<p><strong>Please read this part carefully and make sure that you
+understand it. If there is even the remotest uncertainty of what does
+and does not constitute a violation of the honor code, ask
+me.</strong></p>
+
+<p>You cannot collaborate or copy in any way on exams.</p>
+
+<p>On the computer programming portion of homeworks, you may discuss
+general approaches with other students before you sit down at the
+computer to write code. Once you are writing code, however, your code
+must be written by you: any copying (electronic or otherwise) of
+another person's code or code fragments is a violation of the honor
+code &mdash; this includes code from any web page (other than our
+class web page) that you find on the web. In addition, you may not use
+software that generates web code for you (e.g., MS Word).</p>
+
+<p>On the written portion of homeworks, you may discuss general
+approaches with other students before you sit down to write out your
+solutions. Once you are writing your solutions, however, your work
+must be your own: any copying of another person's solution, or
+portions of their solution, is a violation of the honor code &mdash; this
+includes solutions from any web page (other than our class web page)
+that you find on the web.</p>
+
+<p>You must reference all sources of help and collaboration on each
+homework. For example, if you talked with Jane Smith about your
+homework (in any way), you must note this on your homework. If you
+used a source outside of one provided by me or the class web page, you
+must cite it on your homework. Not doing so is a violation of the
+honor code.</p>
+
+<a name="access"></a>
+<h2>Disabilities</h2>
+
+<p>Students with disabilities enrolled in this course and who may need
+disability-related classroom accommodations are encouraged to make an
+appointment to see the instructor before the end of the second week of
+the term. All discussions will remain confidential, although the <a
+href="http://www.dartmouth.edu/~accessibility/">Student Accessibility
+Services</a> office may be consulted to discuss appropriate
+implementation of any accommodation requested.</p>
+
+</div>
+
+<div id="footer">
+<!-- hhmts start --> Last modified: Tue Jul 21 13:04:34 EDT 2009 <!-- hhmts end -->
+</div>
+
+</div>
+
+</body>
+</html>

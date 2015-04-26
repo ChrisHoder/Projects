@@ -1,0 +1,257 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug11
+3
+<html><head><title>August 11: Microarchitecure Revisited</title></head>
+
+<body>
+
+<h1>August 11: Microarchitecture Revisited</h1>
+
+<hr><h2>0) Recap</h2><hr> 
+
+In the first half of this course, we went from electricity all the way
+up to the instruction set.  This past week or two, we've been looking
+at a representative high-level programming language (C), and how it
+interfaces with the architecture.  Today, we're going to finish up our
+discussion of (a subset of) C and revisit the <i>microarchitecture</i>
+
+<p>What does this program do?
+
+(<a href="code/sample1.c"><b>sample1.c</b></a>)
+<p><pre>
+#include <stdio.h>
+
+int square(int x) {
+  x = x*x;
+
+  printf("x^2 = %d\n",x);
+
+  return 1;
+}
+
+int main() {
+
+  int y = 5;
+
+  printf("y = %d\n", y);
+
+  if(square(y)) {
+    printf("y^2 = %d\n", y);
+  } else {
+    printf("failure during square function.\n");
+  }
+
+  return 42;
+}
+</pre><p>
+What do we mean when we pass arguments to a function?
+<ul>
+<li><b>Call-by-Value</b>: pass a <i>copy</i> of the variable to the
+function.  References to the argument will just change the <i>copy</i>
+<li><b>Call-by-Name</b>: pass a <i>"name"</i> of a variable to the
+function.  References to the argument will change the actual value.
+</ul>
+
+We've seen in assembly code in class that when we call a function, we
+push <b>copies</b> of the arguments onto the stack frame.  C
+uses <b>call-by-value</b>.
+
+<p>If C used Call-by-name, then after calling square, y would equal
+25.  We can get this affect by using pointers: (<a href="code/sample2.c"><b>sample2.c</b></a>)
+
+<p><pre>
+#include <stdio.h>
+
+int square(int *x) {
+  int z = *x;
+  *x = z*z;
+
+  printf("x^2 = %d\n",*x);
+  return 1;
+}
+
+int main() {
+
+  int y = 5;
+
+  printf("y = %d\n", y);
+
+  if(square(&y)) {
+    printf("y^2 = %d\n", y);
+  } else {
+    printf("failure during square function.\n");
+  }
+  return 42;
+}
+</pre>
+
+In this case, when we call square(), we put a copy of
+y's <i>address</i> onto the stack frame.  Within square, we change the
+value of (*x) -- i.e. we change whatever x points to to y^2.
+
+<p>When we return from the function, the pointer to y (i.e. x) is
+gone, but y is still squared.
+
+<p>Other people call this <b>call-by-name</b>.  I'd still call
+it <b>call-by-value</b>---you're passing along pointers instead of
+the actual data, and so the <i>pointers</i> get copied.  However, each
+copy of the pointer still points to y, so the value of y changes.
+<p>
+
+
+<hr><h2>1) Datapath Revisited</h2><hr> 
+
+In class, we looked at a representative solution to homework 5.  Some
+issues to consider:
+<ul>
+<li>rising edge triggers
+<li>the ready bit
+<li>probes to you can see registers
+<li>a memory interaction example.
+<li>where's the clock?
+</ul>
+
+Testing the datapath: it was probably pretty annoying because you had
+to wiggle all the control signals by hand.  We've talked a little bit
+before about what to do so you don't <i>have</i> to worry about all
+those bits.  We'll discuss more today.
+
+<hr><h2>2)The Abstraction of Memory</h2><hr>
+
+<h3>Thinking of the CPU as a Black Box</h3><hr>
+
+<p>address bus</p>
+<p>data bus</p>
+<p>bidirectional</p>
+
+<p>control bus</p>
+<p>in the LC-3...</p>
+<ul>
+<li>MIO.EN: "1" means Mem/IO better pay attention!</li>
+<li>R.W: "1" means writing</li></ul>
+
+
+<hr><p>Do you have 1-word registers living at each possible address?</p>
+
+<hr><p>Plugging in new modules is simply a matter of </p>
+<ul>
+<li>figuring out the address control logic</li>
+<li>figuring when which valves should get turned on</li>
+<li>plugging them in!</li>
+</ul>
+
+
+<hr><h3>What if memory is too slow?</h3><hr>
+
+<p>The "ready line". R.</p>
+<p>Asserted by memory when its output is ready, or when it has succesfully stored its input.</p>
+
+<hr>
+
+
+<hr>
+<h2>Lifting the Veil on the CPU</h2>
+<hr>
+<p>
+Remember the datapath!
+<p>
+<img src="img/hw4dpath.jpg"></src>
+<p>
+
+
+
+<hr><h2>The FSM (Hardware)</h2><hr>
+
+<p><a href="img/fsm.jpg"><b>img/fsm.jpg</b></a></p>
+
+
+<hr><p>What is a CPU supposed to do?</p>
+
+
+<hr><p>recall that, in the datapath, we have all these control lines, and we can set the valves various ways in order to do various things</p>
+
+
+<hr><p>we can work out a finite state machine</p>
+
+<ul><li>that carries out the action of the CPU</li></ul>
+
+
+<ul><li>but where each state is small enough that it can be done by some setting of the valves</li></ul>
+
+
+
+<hr><p>each state carries with it information about where it should go next</p>
+
+<ul><li>that can be thought of as a "setting of the valves" too</li></ul>
+
+
+<ul><li>but... it might have to depend also on inputs from the system.  (unlike the traffic light)</li></ul>
+
+<p>
+<hr>
+<h3>Remember how we built the traffic light?</h3>
+<hr>
+
+<p>
+We thought about 
+<ul>
+<li> an FSM
+<li> "how to wiggle the control lines" in each state
+<li> how to sequence through the states
+<li> how to change the sequence, when necessary
+<li> how we could replace all that wiggling with a giant ROM.
+</ul>
+<p>
+<a href="code/TrafficLights2.circ"><b>TrafficLights2.circ</b></a>
+
+<hr>
+<p>
+
+<p>Hence, new terms:</p>
+<ul>
+<li>microinstruction</li>
+<li>control store</li>
+<li>microsequencer</li>
+</ul>
+
+<p>
+<hr>
+<p>
+
+
+<p>Fig C.4</p>
+<p><img src="img/figC-4.jpg" alt="too bad" width="30%"></p>
+
+<hr><p>And a quick peek at what's inside the microsequencer (Fig C.5)</p>
+
+<p><img src="img/figC-5.jpg" alt="too bad" width="60%"></p>
+
+
+
+<hr><h2>The FSM ("Software")</h2><hr>
+
+<p>Fig C.2</p>
+<p>walk through the first few states</p>
+<p>think about 33, and the implications for the microsequencer</p>
+<p>do the operations make sense, to implement the operation of the CPU?</p>
+<p>OK... then what should the microinstructions be?</p>
+<p><img src="img/figC-2.jpg" alt="too bad" width="100%"></p>
+
+<p>
+<hr>
+<p>
+Note the following things about the state machine :
+<ul> 
+<li> The instruction cycle starts from state 18.
+<li> State 32 corresponds to <b>DECODE</b>; also the state folowing state 32 has the address same as its opcode.
+(For example ADD (0001) goes to 1, TRAP (1111) goes to 15 and so on.)
+<li> The instruction cycle starts at state 18 and goes through the path given by the opcode and comes back to state 18 again.
+<li> Note that there are some states which go to their next state unconditionally, while some other wait for the (Ready) <b>R</b> signal and then there are some which go to different state depending upon different input like BEN (branch enable) IR [11] (addressing mode). 
+</ul>
+<p>
+<b>How do we go from one state to another ?</b>
+<p>
+
+<hr>
+<hr>
+</body>
+</html>

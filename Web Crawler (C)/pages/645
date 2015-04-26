@@ -1,0 +1,33 @@
+http://www.cs.dartmouth.edu/~cs105/Homework/hw.05.html
+3
+<html><head>
+<title>CS105 W11: Homework 5</title>
+</head><body>
+
+<h1>
+<a href="../index.html">CS105 W11</a>:
+Homework 05
+</h1>
+<strong>Assigned:</strong>
+Friday February 4<br>
+<strong>Due:</strong>
+Friday, February 11, 2011 <br>
+(No class that day, but get to TA's box by class time.)<br>
+
+<ol>
+<li> KT 8.4
+<li> KT 8.19
+<li> Set Splitting<br>
+INSTANCE: Collection C of subsets of a finite set S.<br>
+QUESTION: Is there a partition of S into two subsets S1 and S2 such 
+that no subset of C is entirely contained in either S1 or S2?<br>
+Show that Set Splitting is NP hard using Component Design and 3SAT.
+<li> CLRS 29.3-5 (2nd Ed.) but use 5x<sub>1</sub> - 3x<sub>2</sub> as
+the function to maximize, 29.3-6 (3rd Ed.)
+<li> CLRS 29.5-5 (2nd Ed.), 29.5-7 (3rd Ed.)  (They really are the same problem.)
+<li> CLRS 29-1 a
+</ol> 
+
+</body>
+</html>
+

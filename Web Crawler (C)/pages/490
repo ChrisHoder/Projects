@@ -1,0 +1,63 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July12
+3
+<h1>July 12: Clocks</h1>
+
+<p>Reading: P&amp;P 3.6<br>
+<hr>
+<h2>0) Recap</h2>
+<ul>
+<li>RAM: <a href="circuits/ram.circ"><b>ram.circ</b></a>, <a href="circuits/ramcb.circ"><b>ramcb.circ</b></a>
+<li>DRAM: How does it <a href="http://micro.magnet.fsu.edu/electromag/java/capacitor">work?</a>
+<li>SRAM vs. DRAM
+<li>Flash Memory
+<li>Error Correction
+</ul>
+<b>Today:</b>more clocking, sequential logic<p>
+<hr>
+<h2>1) Clocks</h2>
+<a href="circuits/clock.circ"><b>clock.circ</b></a>
+<ul>
+<li>Logisim's clock 
+<li>What if we feed it to a D flip-flop?
+<li>What if we wire NOT-Q to D?
+<li>And attach more D flip-flops?
+</ul>
+<p>
+<hr>
+<h2>2) Sequential Logic</h2>
+With Combinatorial logic circuits, output is uniquely defined by inputs.
+<p>Sequential logic circuits both processes information and store
+information.  Stored information can be used both as <i>input</i> and
+as <i>output</i>.
+
+Next:  look at combination locks.
+<p>
+<hr>
+<h3>Using Storage as Input</h3>
+Bike lock:  compare stored input to fixed combination:  <b>bikelock.circ</b>
+
+<p>
+<hr>
+<h3>Using Storage as Output</h3> 
+Master Lock<p>
+Concept: <b>Finite State Machine</b><br>
+<ul>
+<li>directed graph
+<li><b>states</b> represent <i>everything</i> about system
+<li><b>transitions</b> tell you how to get from one state to another
+</ul>
+
+
+Potential Problems: Use a latch output -> lots of combinatorial logic
+-> input to the same latch.
+
+<p>A standard solution: the Master-Slave
+flip-flop: <a href="circuits/ms.circ"><b>ms.circ</b></a>
+
+<p>
+We also used storage as output in the <b>clock</b>.  Notice anything
+interesting about the circuit?
+
+<p>
+<hr>
+<h2>3) homework 2</h2>

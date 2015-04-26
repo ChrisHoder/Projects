@@ -1,0 +1,137 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July16
+3
+<html><head><title>July 16: Get On the Bus!</title></head>
+
+<body>           
+
+<h1>July 16: Get On the Bus!</h1>
+
+
+<hr><h2>0) Recap</h2><hr>
+So far this term, we've done:
+<ul>
+<li>electricity -> bits
+<li>bits -> gates
+<li>gates -> combinatorial logic
+<li>storage
+<li>storage + combinatorial logic -> sequential logic
+</ul>
+Last class, we saw how to implement circuitry to control a traffic
+light, both using a <b> state machine</b> approach and using
+a <b>microcode</b> approach.<p>
+
+Finally, we started talking about using multiple RAM chips and how we
+might be able to manage this.
+
+<hr><h2>1) Abstracting RAM</h2><hr>
+
+<p>We built "big" RAM modules out of flip-flops (and noted how they
+can also be built from capacitors)</p>
+<hr><p>Here's one from LogiSim (using "wire bundles")<p>
+
+<p><a href="circuits/ramchip.circ"><b>ramchip.circ</b></a></p>
+<center>
+<img src="ramchip.jpg" alt="oops" width="90%"></img>
+</center>
+<p>
+
+We'd like to be able to use multiple RAM chips at the same time.  Last
+time, we talked about having a larger <i> address space</i> i.e.,
+using more then just ten address bits to access a single 1024 word RAM
+module.
+
+We'd like to do this all in a uniform way, so we can just plug in more
+RAM modules into some common lines.
+
+<hr><h2>2) Getting BUS-y</h2><hr>
+<p>These common lines are called "buses." </p>
+At a high level, we can call them things like:
+<ul>
+<li>address bus (send out the address)</li>
+<li>data bus (receive the data, or send it out, if it's a write)</li>
+<li>control bus (e.g., are we reading or writing now?)</li>
+</ul>
+
+<p>We'll see later that there are many specific formats of buses
+(you've probably heard the acronyms) and various implementation
+tricks</p>
+<hr>
+<p>
+<p>So, let's try making some buses and throwing in some RAM chips.  Will this work?</p>
+
+<p><a href="circuits/ramfull0.circ"><b>ramfull0.circ</b></a></p>
+
+
+<center>
+<img src="ramfull0.jpg" alt="oops"  width="90%">
+</center>
+
+
+<p>Depending on how you count, there are at two to four significant
+problems in the above naive approach. </p>
+<p> So, let's try to fix it....(but, for now, WITHOUT using fancier
+options on the RAM component---the point is to discover what's
+inside)<p>
+<hr>
+<p>
+<a href="circuits/ramfull2.circ"><b>ramfull2.circ</b></a>
+<p>
+
+<hr>
+<h3>Adding registers</h3>
+
+<p>Suppose the data source and sink on the left was not really user
+I/O, but some complicated chip.</p>
+<p>For a number of reasons, we might like to have REGISTERS inside
+the chip.  (Places to store a few words.)  (Think: why might we want
+these?)</p>
+
+<p><a href="circuits/2regs.circ"><b>2regs.circ</b></a></p>
+
+<center>
+<img src="2regs.jpg" alt="oops"  width="50%">
+</center>
+
+<p>Here's the full package:</p>
+<p><a href="circuits/ramfull4x.circ"><b>ramfull4x.circ</b></a></p>
+
+<!-- <img src="ramregs.jpg" alt="too bad" width="100%"></p> -->
+
+<p>Think about how we might do things like:</p>
+
+<ul>
+<li>"Move a word from address X to register Y"</li>
+</ul>
+
+<p>How would we wiggle the control lines to do it?</p>
+<p>How could we make that automatic?</p>
+<p>What about things like...</p>
+
+<ul>
+<li>"Move a word from register Y to address X"</li>
+<li>"Move a word from register Y to register Z"</li>
+<li>"Add register Y and register Z, and store them in register A"</li>
+<li>"Add the contents of register Y to this address, and move the word at that address to register Z"</li>
+</ul>
+
+<hr>
+<h2>3) Key Concept: Hide the details</h2>
+<p>
+<hr><h3>Abstracting</h3><hr>
+<p>
+<p>memory</p>
+<ul><li>bus</li></ul>
+<ul><li>registers</li></ul>
+<ul><li>control lines</li></ul>
+
+<p>Loading a register from memory</p>
+<ul><li>steps</li></ul>
+<ul><li>hey, an FSM... or microcode!</li></ul>
+<p>
+
+<hr>
+Next class:  Architecture!  
+
+</body>
+</html>
+

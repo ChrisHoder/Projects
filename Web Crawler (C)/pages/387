@@ -1,0 +1,154 @@
+http://www.cs.dartmouth.edu/~tristan
+3
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Tristan Henderson
+ | Home         
+</title>
+<link rel="stylesheet" href="http://www.cs.st-andrews.ac.uk/~tristan/include/style.css" type="text/css" /><link rel="stylesheet" href="http://www.cs.st-andrews.ac.uk/~tristan/include/css/sidebar/hide.css" type="text/css" />
+<meta name="description" content="Homepage of Tristan Henderson, Lecturer in Computer Science at the University of St Andrews, Scotland. Research interests: wireless networking, multiplayer networked games." />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+<style type="text/css">
+/*<![CDATA[*/
+#pageHeader {
+height: 192px;
+background-image: url("http://www.cs.st-andrews.ac.uk/~tristan/include/images/banners/cathedral_east.jpg");
+}
+/*]]>*/
+</style>
+
+
+</head>
+
+<body>
+<div id="border">
+<div id="wrapper">
+<div id="navcontainer">
+<ul>
+<li><a href="http://www.cs.st-andrews.ac.uk/~tristan/index.php" >Home</a></li>
+<li><a href="http://www.cs.st-andrews.ac.uk/~tristan/research/" >Research</a></li>
+<li><a href="http://www.cs.st-andrews.ac.uk/~tristan/teaching/" >Teaching</a></li>
+<li><a href="http://www.cs.st-andrews.ac.uk/~tristan/photos/" >Photos</a></li>
+<li><a href="http://blogs.cs.st-andrews.ac.uk/tristan/" >Blog</a></li>
+<li><a href="http://www.cs.st-andrews.ac.uk/~tristan/misc/" >Misc</a></li>
+<li><a href="http://www.cs.st-andrews.ac.uk/~tristan/about/" >About</a></li>
+</ul>
+</div>
+<div id="pageHeader">
+<h1>Tristan Henderson</h1>
+<h2>Lecturer, <a href="http://www.cs.st-andrews.ac.uk">CompSci</a>,
+<a href="http://www.st-andrews.ac.uk">St Andrews</a></h2>
+</div>
+<div id="container">
+<div id="sidebarContainer">
+<div id="sidebar">
+<br /></div>
+</div>
+<div id="contentContainer">
+<div id="content">
+
+<p>Welcome to my website. As you may have guessed from the
+text above, I work in the <a href=
+"http://www.cs.st-andrews.ac.uk">School of Computer Science</a> at
+the <a href="http://www.st-andrews.ac.uk">University of St
+Andrews</a> in Scotland. Please browse the links to find out more
+about me and what I do, or take a look at my <a href=
+"research/pubs.php">papers</a>. Or here are some ways to <a href=
+"about/contact.php">contact me</a>.</p>
+
+<hr />
+
+<h3>Notices</h3>
+
+<ul>
+
+<li>My (now-graduated) Senior Honours student, Ali Scott, came second 
+in the <a
+href="http://www.scotlandis.com/ScotSoft2010/YoungSoftwareEngineeroftheYear">Young 
+Software Engineer of the Year</a> awards. <b>UPDATE</b>: photo <a 
+href="http://www.cs.st-andrews.ac.uk/?q=node/4295">here</a>.</li>
+
+<li>My student <a href="http://www.cs.st-andrews.ac.uk/~ip/">Iain</a> won the <a 
+href="http://cnd.iit.cnr.it/mobiopp2010/Award%20mobiopp%202010-PhD.pdf">PhD 
+award</a> at <a 
+href="http://cnd.iit.cnr.it/mobiopp2010/">MobiOpp</a>.</li>
+
+<li>We made it to the finals of the <a 
+href="http://www.scottishtechnologyprize.com/">Thales Scottish 
+Technology Prize</a>.</li>
+
+<li>St Andrews 600th Anniversary <a 
+href="http://timecapsule.cs.st-andrews.ac.uk/">Time Capsule</a> 
+launched.</li>
+
+<li>Some new <a 
+href="http://www.cs.st-andrews.ac.uk/~tristan/research/pubs.php">papers</a> 
+are coming out of our <a href="http://www.pvnets.org">Privacy
+Value Networks</a> research project.</li>
+
+<li>New funded PhD opportunities in <a 
+href="http://www.cs.st-andrews.ac.uk/stacc">Cloud Computing</a>.</li>
+
+<li>In general I am always on the lookout for good PhD students 
+&mdash; see my <a href=
+"research/">research page</a> for more. Funding is currently
+available for qualified students (including overseas students) &mdash; 
+see the <a href=
+"http://www.sicsa.ac.uk/graduate-academy/prize-studentships/sicsa-prize-studentships/">
+SICSA</a> pages. Note that I do <b>not</b> have funding
+for overseas undergraduate internships &mdash; the numerous 
+requests that I receive for these are ignored.</li>
+
+<li>We hold regular <a 
+href="http://scone.cs.st-andrews.ac.uk/">SCONE</a>
+(SCOttish Networking Event) meetings for anyone who is interested in 
+networking and systems. Our next meeting is at the University of 
+Aberdeen on <a 
+href="http://scone.cs.st-andrews.ac.uk/wiki/Meeting04032011">4 
+March</a> - please come!
+</li>
+
+<li>I am the School Admissions Officer.
+If you are thinking about studying Computer Science at St Andrews, 
+take a look at the relevant <a href=
+"http://www.cs.st-andrews.ac.uk/prospective-ug">School webpages</a>
+and please consider <a href=
+"http://www.st-andrews.ac.uk/admissions/VisitingtheUniversity/Undergraduatevisits/">visiting
+us</a>.</li>
+
+<li>I am currently involved with the following events. Please
+consider submitting something if you can.
+
+<ul>
+<li>Workshop Organiser, <a href="http://conferences.sigcomm.org/sigcomm/2011/workshops/Education/CFPSIGCOMMEducationWorkshop.pdf">SIGCOMM 2011 Education Workshop</a></li>
+<li>Workshop Organiser, <a href="http://di.ncl.ac.uk/bhci-securityprivacy/">Health, Wealth and Identity Theft: Designing and evaluating usable security and privacy mechanisms for online happiness</a></li>
+<li>Programme Committee, <a href="http://www.acmmm11.org/">ACM Multimedia 2011</a></li>
+<li>Steering Committee, <a href="http://www.discover.uottawa.ca/netgames2011/">NetGames 2011</a></li>
+<li>Steering Committee, <a href="http://www.hotplanetconf.net/11/">HotPlanet 2011</a></li>
+<li>Programme Committee, <a href="http://www.trust2011.org/">Trust 2011</a></li>
+<li>Programme Committee, <a href="http://www.iaria.org/conferences2011/SOTICS11.html">SOTICS 2011</a></li>
+<li>Programme Committee, <a href="http://www.stevens.edu/pmmps/">PMMPS '11</a></li>
+<li>Programme Committee, <a href="http://www.mmsys.org/">Multimedia Systems 2011</a></li>
+</ul>
+</li>
+
+</ul>
+
+</div>
+</div>
+<div class="clearer"></div>
+<div id="footer"></div>
+
+</div>
+<div id="crawdadfooter"><a href="http://crawdad.org/"></a></div>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+http://www.cs.dartmouth.edu/~cs105/Homework/hw.02.html
+3
+<html><head>
+<title>CS105 W11: Homework 2</title>
+</head><body>
+
+<h1>
+<a href="../index.html">CS105 W11</a>:
+Homework 02
+</h1>
+<strong>Assigned:</strong>
+Friday January 14, 2011<br>
+<strong>Due:</strong>
+Friday January 21, 2011<br>
+
+<ol>
+<li> CLRS Problem 19-2 (from the SECOND edition, on reserve in Baker)
+<li> CLRS Problem 19-1 (third edition) or 20-1 (second edition)
+<li> KT 5.1
+<li> KT 5.3, but solve in O(<i>n</i>) time
+<li> KT 5.6
+<li> KT 5.7
+<li> Show how to use the FFT to multiply two <i>n</i>-bit numbers in time 
+     O(<i>n</i> log <i>n</i>)
+</ol> 
+
+<strong>Extra Credit:</strong>
+<ol>
+<li> KT 5.4
+<li> KT 5.5
+</ol> 
+
+
+</body>
+</html>
+

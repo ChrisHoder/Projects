@@ -1,0 +1,81 @@
+http://www.cs.dartmouth.edu/~cbk/classes.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Classes </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="abs.php#proteins11"><img src="img/pub/proteins11.png" alt="Proteins11" /></a><div><a href="abs.php#proteins11">Pubs | Proteins-11</a> binding free energies</div></div></div>
+<div id="body"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php"  >projects</a></span><span><a href="classes.php" class="navhere" >classes</a></span><span><a href="pubs.php"  >pubs</a></span><span><a href="news.php"  >news</a></span>
+</div>
+	<div id="content">	
+<h3>Dartmouth</h3>
+
+<p>CS 2 (Programming for Interactive Digital Arts): <a
+href="2/">Winter 2009</a>, <a href="2/08w">Winter 2008</a>.</p>
+
+<p>CS 4 (Concepts in Computing): <a href="4/">Summer 2009</a>, <a
+href="4/06x">Summer 2006</a>.</p>
+
+<p class="currentclass">CS 8 (Problem Solving with Computer Science): <a href="8/">Winter 2011</a>, <a href="8/10w">Winter 2010</a>.</p>
+
+<p>CS 43/143 (Introduction to Bioinformatics, for undergraduate and
+graduate students): <a href="bio/">Fall 2009</a>, <a href="bio/08spring">Spring 2008</a>;<br/>formerly 88/188: <a
+<a href="bio/05fall">Fall 2005</a>, <a href="bio/05spring">Spring 2005</a>.</p>
+
+<p>CS 68 (Programming Languages): <a href="68/">Winter 2006</a>,
+<a href="68/05winter">Winter 2005</a>.</p>
+
+<p>CS 88/188 (Computational Methods in Protein, Drug, and Vaccine Design): <a href="design/">Spring 2011</a>.</p>
+
+<p>CS 98 (EPICS, engineering projects in community service, for
+undergraduate culminating experience): <a
+href="http://www.cs.dartmouth.edu/~epics/">EPICS site</a>.</p>
+
+<h3>Purdue</h3>
+
+<p>This section serves as an archive of my teaching while at Purdue,
+in case some of the web pages are still useful.</p>
+
+<p><a href="490B/">CS 490B</a> (undergraduate bioinformatics,
+team-taught and cross-listed in biology and statistics)</p>
+
+<p><a href="590B/">CS 590B</a> (graduate computational biology).</p>
+
+<p><a href="jclub/">Computational biology journal club</a>.</p>
+
+<p><a href="490E/">CS 490E</a> (<a
+href="http://epics.ecn.purdue.edu/">EPICS</a>, Engineering Projects in
+Community Service); advisor of <a
+href="http://epics.ecn.purdue.edu/vri/">VRI</a> (Volunteer Resource
+Infrastructure) team.</p> </td></tr>
+
+</div>
+</div>
+<div id="footer"></div>
+</div>
+</body>
+</html>
+

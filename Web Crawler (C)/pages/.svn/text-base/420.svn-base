@@ -1,0 +1,135 @@
+http://www.cs.dartmouth.edu/~erickee/publications.html#spie10
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><style type="text/css">
+<!--
+body {
+	background-color: #868686;
+	background-image: url(blackbg.gif);
+}
+body,td,th {
+	color: #E1D0B4;
+}
+a:link {
+	color: #E5B26A;
+}
+.style1 {font-family: Georgia, "Times New Roman", Times, serif}
+.style2 {
+	color: #E4C28D;
+	font-style: italic;
+}
+a:visited {
+	color: #E5B26A;
+}
+a:hover {
+	color: #FFC674;
+}
+a:active {
+	color: #EAE0D2;
+}
+.style3 {color: #E5B26A}
+-->
+</style>
+<body>
+<table width="90%" border="0" align="center" cellpadding="3">
+  <tr>
+    <td colspan="2"><h2><dfn>P u b l i c a t i o n s <hr> </dfn></h2></td>
+  </tr>
+  <tr>
+    <td colspan="2"><a name=iccp11></a><a href="papers/iccp11.pdf">Modeling and Removing Spatially-Varying Optical Blur</a><a href="papers/wifs10.pdf"></a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;E. Kee, S. Paris, S. Chen, J. Wang<br>
+    &nbsp;&nbsp;&nbsp;    IEEE International Conference on Computational Photography, 2011 </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Photo deblurring has been a major research topic in the past few years. So far, existing methods have focused on removing the blur due to camera shake and object motion. In this paper, we show that the optical system of the camera also generates significant blur, even with professional lenses. We introduce a method to estimate the blur kernel densely over the image and across multiple aperture and zoom settings. Our measures show that the blur kernel can have a non-negligible spread, even with top-of-the-line equipment, and that it varies nontrivially over this domain. In particular, the spatial variations are not radially symmetric and not even left-right symmetric. We develop and compare two models of the optical blur, each of them having its own advantages. We show that our models predict accurate blur kernels that can be used to restore photos. We demonstrate that we can produce images that are more uniformly sharp unlike those produced with spatially-invariant deblurring techniques.</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><a name=wifs10></a><a href="papers/wifs10.pdf">Exposing Digital Forgeries from 3-D Lighting Environments</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;E. Kee, H. Farid<br>
+&nbsp;&nbsp;&nbsp;    IEEE International Workshop on Information Forensics and Security, 2010</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>When creating a photographic composite, it can be difficult to match lighting conditions. We describe a technique for measuring lighting conditions in an image, and describe its use in detecting photographic composites. Specifically, we describe how to approximate a 3-D lighting environment with a low-dimensional model and how to estimate the model's parameters from a single image. Inconsistencies in the lighting model are then used as evidence of tampering.</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><a name=spie10></a><a href="papers/spie10.pdf">Digital Image Authentication from Thumbnails</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;E. Kee, H. Farid<br>
+&nbsp;&nbsp;&nbsp;    SPIE Symposium on Electronic Imaging, San Jose, CA, 2010</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+We describe how to exploit the formation and storage of an embedded image thumbnail for image authentication. The creation of a thumbnail is modeled with a series of filtering operations, contrast adjustment, and compression. We automatically estimate these model parameters and show that these parameters differ significantly between camera manufacturers and photo-editing software. We also describe how this signature can be combined with encoding information from the underlying full resolution image to further refine the signature's distinctiveness. </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><a name=tr09></a><a href="papers/tr09.pdf">Detecting Photographic Composites of Famous People</a><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;E. Kee, H. Farid<br>
+&nbsp;&nbsp;&nbsp;    Technical Report, TR2009-656, Dartmouth College, Computer Science</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Photos are commonly falsified by compositing two or more people into a single image. We describe how such composites can be detected by estimating a camera's intrinsic parameters. Differences in these parameters across the image are then used as evidence of tampering. Expanding on earlier work, this approach is more applicable to low-resolution images, but requires a reference image of each person in the photo as they are directly facing the camera. When considering composites of famous people, such a reference photo is easily obtained from an on-line image search. </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><a name=neuro10></a><span class="style3">A novel approach for semi-automated segmentation of MS lesions on FLAIR imaging: Reliability and clinical correlates</span><br>
+     &nbsp;&nbsp;&nbsp; Wishart, H., Kee, E.R., Ford, J.C., MacDonald, J.W.,  Aney, S., LoVerde, S. <br>
+&nbsp;&nbsp;&nbsp;    Annual Meeting of the International Neuropsychological Society, Acapulco, Mexico, February 3-6, 2010</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Rapid, reliable methods for segmenting and quantifying MS lesions on brain magnetic resonance imaging are important for monitoring patients over time. This work describes  a novel approach for semi-automated segmentation of MS lesions on fluid-attenuated inversion recovery (FLAIR) images. </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><a name=acm08></a><a href="papers/acm08.pdf">Printer Profiling for Forensics and Ballistics</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;E. Kee, H. Farid<br>
+&nbsp;&nbsp;&nbsp;    ACM Multimedia and Security Workshop, Oxford, UK, 2008 </td>
+  </tr>
+  <tr>
+    <td width="13">&nbsp;</td>
+    <td width="941">We describe a technique for authenticating printed and scanned text documents. This technique works by modeling the degradation in a document caused by printing. The resulting printer profile is then used to detect inconsistencies across a document, and for ballistic purposes -- that of linking a document to a printer. </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

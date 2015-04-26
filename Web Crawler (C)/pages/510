@@ -1,0 +1,195 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug18
+3
+<html><head><title>Dirty Tricks Part 1</title></head><body>           
+        
+<body bgcolor=#ffffff>
+
+<h1>August 18: Dirty Tricks Part 1</h1>
+
+<hr><h2>0) Recap</h2><hr> So far in this class, we've gone from
+electricity through up to the instruction set architecture.  We've
+seen a high-level language and how it gets implemented in assembly.
+
+<p>On Monday, we started looking into some more real-world features
+that the LC-3 either doesn't have, or has but doesn't do well.  Among
+other things, we talked about privelege, exceptions, and pipelining.
+
+<p>Note:
+<ul>
+<li>Next Wednesday is the <b>Olympics</b>.  We'll all meet in 005 over
+pizza and you'll all show off your awesome hacked LC-3 computers.
+<li>Next Monday, we'll have a guest lecturer to talk
+about security.  We've touched on some things that Sean would say
+"causes a lot of fun."  Hopefully, we'll be able to see this from a
+real live security researcher.
+</ul>
+
+<hr><h2>1) The Memory Pyramid</h2><hr>
+
+<p>The Memory Pyramid</p>
+
+<p>Figure 2-18</p>
+<p><img src="../Aug13/img/fig2-18.jpg" alt="too bad" width="70%"></p>
+
+<p>The memory pyramid is a reasonable abstraction of how memory gets
+structured.  As you go up the pyramid, things get faster, but smaller
+(so they store less memory).  Going down the pyramid, things get
+slower, but cheaper and larger.
+
+<p>More motivation: "Relative to CPU speed, memories have been getting
+slower for decades."</p>
+<p><img src="img/speed.jpg" alt="too bad" width="90%"></p>
+
+<p>We've talked a lot this term about how slow memory references are.
+Caches are smaller but sit closer to memory.  Instead of taking the
+time to go all the way out to memory, we can go to cache instead and
+save some time.
+
+<p>Potential cache <b>problems:</b>
+<ul>
+<li>cache miss -> have to go back to memory anyway
+<li>updating memory -> when should we write back to memory?
+</ul>
+
+<b>Question:</b> We want to minimize the number of memory references that
+have to go all the way to memory.  But the cache is so much smaller
+than memory.  How can we possibly make sure that memory references
+are <i>usually</i> in cache?
+
+<p>If memory references were more or less random, it would be very
+difficult to get a low percentage of cache misses.  Luckily, we have
+two principles on our side:
+<ul>
+<li><b>Spacial Locality</b>: memory location(s) <i>close</i> to recent
+accesses are likely to be accessed in the near future.
+<li><b>Temporal Locality</b>: memory locations that
+were <i>recently</i> used are likely to be accessed again in the near
+future.
+</ul>
+
+<hr><h2>2) Cache Basics</h2><hr>
+Big Picture Designs:
+<ul>
+<li><b>split-caches</b>: have a separate cache for instructions and
+data.  Advantages: the CPU can interact with both at the same time.
+Instructions/data tend to access different regions in memory, each
+independently following spatial/temporal locality.  Disadvantages: For
+data or instructions, the cache is half as big (since we're splitting
+it)
+<li><b>multi-level caches</b>: Sometimes, the cache itself is too
+slow, so we have another even smaller/faster cache in front of it.
+(and smaller cache(s) in front of that...)
+</ul>
+
+<hr><p>Fig 4-37</p>
+<p><img src="img/bigpic.jpg" alt="too bad" width="90%"></p>
+
+<b>Note:</b> for the rest of this class, imagine we're using 32-bit
+words, and that memory is <i>byte-addressable</i> (like it might be in
+the real-world)
+<ul>
+<li>cache line: block of 2^k bytes, aligned on a 2^k-byte boundary.
+Fetch an entire cache line at a time.
+<li>cache size: total # bytes stored in cache
+<li>block size: total # bytes stored in a block (i.e., a cache line)
+</ul>
+There's a tradeoff here in the block size.  We'd like to get more
+bytes at a time by having a larger block size.  This will help us take
+advantage of spatial locality, since the additional memory we're
+getting in the block is close to the memory the CPU is asking for.
+But if the block size is large, we end up having to boot a large
+amount of memory from cache.  What if we still wanted that memory?
+
+<p><img src="img/miss-block.jpg" alt="too bad" width="90%"></p>
+
+
+<hr><h2>3) Implementation Details</h2><hr> Now that you have a memory
+request, how do you know if it's in cache or not?  Where do you look
+for it in cache?
+<p>
+Direct mapped:
+<ul>
+<li> a given line can only be in one specific entry
+<li> store and look at remaining bits
+</ul>
+N-way set associative
+<ul>
+<li> a given line can only be in one specific entry... but an "entry" can store a
+set of lines
+<li> store and look at remaining bits across all lines in that entry
+</ul>
+<p>
+Fully associative:
+<ul>
+<li> any entry can contain any line.
+<li> store and look at the WHOLE prefix
+</ul>
+<p>
+
+
+<hr><h3>Direct-Mapped</h3><hr>
+
+<p>Sean's version Fig 4-38</p>
+<p>work through example!</p>
+<p>(think: how would we implement the address decoding into the cache?)</p>
+
+
+<p><img src="img/direct.jpg" alt="too bad" width="50%"></p>
+
+
+
+<hr><h3>N-Way Set Associative</h3><hr>
+
+<p>Sean's sketch of a 2-way set associative cache</p>
+<p>advantages</p>
+<p>complications</p>
+<p>(think: how would we implement the address decoding into the cache?)</p>
+
+<p><img src="img/setassoc.jpg" alt="too bad" width="90%"></p>
+
+common choices:
+<ul>
+<li> n = 2
+<li> n = 4
+<li> LRU
+</ul>
+<p>
+
+
+
+<hr><h3>Fully Associative</h3><hr>
+
+
+E.g.....
+<ul>
+<li> all entries in the cache are the same line number.
+</ul>
+
+
+<p>sound familiar? -- it's an ARAM!</p>
+<p>(think: how would we implement the address decoding into the cache?)</p>
+
+<hr><h3>Tradeoffs</h3><hr>
+
+<p><img src="img/miss-type.jpg" alt="too bad" width="90%"></p>
+
+
+<hr><h3>What happens during a write?</h3><hr>  We have a couple of
+different options when we want to <i>write</i> something to memory:
+
+<ul>
+<li><b>write-through:</b> make the write directly to memory.  We can
+write to cache at the same time, but with direct-mapped caches, the
+memory write can bypass the cache entirely and write directly to
+memory.
+<li><b>deferred-write:</b> write just to the cache.  Write to memory
+only when you <b>evict</b> the cache line from cache.  If you end up
+writing to this address many times before evicting the cache line,
+deferred-write can be an advantage, because you only write to memory
+once, when the line gets evicted.
+</ul>
+
+
+
+</body>
+</html>

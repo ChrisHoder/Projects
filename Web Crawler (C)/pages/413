@@ -1,0 +1,303 @@
+http://www.cs.dartmouth.edu/~miluzzo/publications.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Title      : Puzzled
+Version    : 1.0
+Released   : 20080706
+Description: A wide two-column design suitable for blogs and small websites.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Emiliano Miluzzo :: publications</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<!-- Google  analytics stuff start -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19440560-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google  analytics stuff end -->
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1>Emiliano Miluzzo</h1>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li class="current_page_item"><a href="#">Publications</a></li>
+			<li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<div id="headerbg">
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<!-- start latest-post -->
+		<div id="latest-post-2" class="post">
+			<h1 class="title">publications</h1>
+			
+			<div class="entry">
+				<p>My <a href="http://tinyurl.com/3azvt73">h-index</a> and Google Scholar <a href="http://scholar.google.com/scholar?q=e+miluzzo">citation count</a>.</p>
+				
+				<p>Emiliano Miluzzo, Michela Papandrea, Nicholas Lane, Hong Lu, Andrew T. Campbell. 
+				<strong>Pocket, Bag, Hand, etc. - Automatically Detecting Phone Context through Discovery</strong>, 
+				In Proc. of <i>First International Workshop on Sensing for App Phones (PhoneSense'10)</i>,
+				Zurich, Switzerland, November 2, 2010.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/miluzzo-phonesense10.pdf">pdf</a>]</p>
+
+				<p>Emiliano Miluzzo, Nicholas Lane, Hong Lu, Andrew T. Campbell. <strong>Research in the App 
+				Store Era: Experiences from the CenceMe App Deployment on the iPhone</strong>, In Proc. of 
+				<i>The First International Workshop Research in the Large: Using App Stores, Markets, and 
+				other wide distribution channels in UbiComp research</i>,September 26, 2010, Copenhagen, Denmark.
+				[<a  href="http://www.cs.dartmouth.edu/~miluzzo/papers/inthelarge10.pdf">pdf</a>]
+				</p>
+				
+				<p>
+				Nicholas D. Lane, Emiliano Miluzzo, Hong Lu, Daniel Peebles, Tanzeem Choudhury, Andrew T. Campbell. 
+				<strong>A Survey of Mobile Phone Sensing</strong>, In <i>IEEE Communications Magazine</i>, September, 2010.
+					[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/mobile-phone-survey.pdf">pdf</a>]	
+				</p>	
+				
+				<p>
+				Emiliano Miluzzo, Tianyu Wang, Andrew T. Campbell. <strong>EyePhone: Activating Mobile Phones With 
+				Your Eyes</strong>,In Proc. of <i>The Second ACM SIGCOMM Workshop on Networking, Systems, and 
+				Applications on Mobile Handhelds (MobiHeld'10)</i>, New Delhi, India, August 30, 2010.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/eyephone.pdf">pdf</a>]
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/EyePhone_MobiHeld10_talk.pptx">talk</a>]
+				[<a href="http://www.youtube.com/watch?v=lyBZgfAdNlg">video</a>]	
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/eyephone-press.html">press</a>]
+				</p>	
+				
+				<p>
+				Emiliano Miluzzo, Cory T. Cornelius, Ashwin Ramaswamy, Tanzeem Choudhury, Zhigang Liu, 
+				Andrew T. Campbell. <strong>Darwin Phones: The Evolution of Sensing and Inference on 
+					Mobile Phones</strong>, In Proc. of <i>Eighth International ACM Conference on 
+					Mobile Systems, Applications, and Services (MobiSys '10)</i>,
+					San Francisco, CA, USA, June 15-18, 2010.
+					[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/mobi040-miluzzo.pdf">pdf</a>]
+					[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/MobiSys10_talk.pptx">talk</a>]
+					[<a href="http://www.youtube.com/watch?v=j_eNaugILXM">video</a>]
+					[<a  href="http://www.newscientist.com/article/dn19104-share-information-to-boost-cellphone-performance.html">press</a>]	
+				</p>
+				
+				<p>
+				Shane Eisenman, Emiliano Miluzzo, Nicholas Lane, Ronald Peterson, Gahng Seop Ahn, and Andrew T. 
+				Campbell. <strong>BikeNet: A Mobile Sensing System for Cyclist Experience Mapping</strong>,
+				<i> ACM Transactions on Sensor Networks (TOSN)</i>, 
+				Vol. 6, n. 1, December 2009.
+				[<a href="http://sensorlab.cs.dartmouth.edu/pubs/a6-eisenman.pdf">pdf</a>]	
+				</p>		
+				
+				<p>
+				Emiliano Miluzzo, James M. H. Oakley, Hong Lu, Nicholas D. Lane, 
+				Ronald A. Peterson, Andrew T. Campbell, <strong>Evaluating the iPhone as a Mobile Platform 
+				for People-Centric Sensing Applications</strong>",
+				In Proc. of <i> Intl Workshop on Urban, Community, and Social Applications of Networked 
+				Sensing Systems (UrbanSense08)</i>.
+				Raleigh, NC, USA, Nov. 4, 2008.
+				[<a href="http://sensorlab.cs.dartmouth.edu/urbansensing/papers/miluzzo_urbansense08.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Emiliano Miluzzo, Nicholas D. Lane, Krist&#243f Fodor, Ronald A. Peterson,
+				Hong Lu, Mirco Musolesi, Shane. B. Eisenman, Xiao Zheng, Andrew T. Campbell, 
+				<strong>Sensing Meets Mobile Social Networks: The Design, 
+				Implementation and Evaluation of the CenceMe Application</strong>,
+				In Proc. of <i> 6th ACM Conference on Embedded Networked Sensor Systems (SenSys '08)</i>.
+				Raleigh, NC, USA, Nov. 5-7, 2008.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/cenceme_sensys08.pdf">pdf</a>]
+				[<a href="http://www.youtube.com/watch?v=8rDFbTF47PA">video</a>]	
+				</p>
+				
+				<p>
+				Andrew T. Campbell, Shane B. Eisenman, Kristof Fodor, Nicholas D. Lane, Hong Lu, 
+				Emiliano Miluzzo, Mirco Musolesi, Ronald A. Peterson and Xiao Zheng, <strong>
+				Transforming the Social Networking Experience with Sensing Presence from Mobile Phones</strong>,
+				(Demo Abstract) In Proc. of <i> 6th ACM Conference on Embedded Networked Sensor Systems (SenSys '08)</i>.
+				Raleigh, NC, USA, Nov. 5-7, 2008.
+				[<a href="http://www.cs.dartmouth.edu/~sensorlab/pubs/de09-eisenman.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Emiliano Miluzzo, Nicholas D. Lane, Andrew T. Campbell, Reza Olfati-Saber, <strong>
+				CaliBree: a Self-Calibration System for Mobile Sensor Networks</strong>,
+				In Proc. of <i> International Conference on Distributed Computing in Sensor Networks (DCOSS 2008)</i>.
+				Santorini Island, Greece, June 11-14, 2008.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/CaliBree-dcoss2008.pdf">pdf</a>] 
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/miluzzo_DCOSS08_talk.ppt">talk</a>]	
+				</p>
+				
+				<p>
+				Mirco Musolesi, Emiliano Miluzzo, Nicholas D. Lane, Shane B. Eisenman, Tanzeem Choudhury, 
+				Andrew T. Campbell, <strong>The Second Life of a Sensor: Integrating Real-world Experience in 
+				Virtual Worlds using Mobile Phones</strong>,
+				In Proc. of <i> Fifth Workshop on Embedded Networked Sensors (HotEmNets 2008)</i>. 
+				June 2008, Charlottesville, Virginia, USA.
+				[<a href="http://www.cs.dartmouth.edu/~sensorlab/pubs/SL-HotEmnets08.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Andrew T. Campbell, Shane B. Eisenman,
+				Nicholas D. Lane, Emiliano Miluzzo, Ronald Peterson, Hong Lu, Xiao Zheng,
+				Mirco Musolesi, Kristof Fodor, Gahng-Seop Ahn, <strong>The Rise of People-Centric Sensing</strong>,
+				In <i> IEEE Internet Computing Special Issue on Sensor Networks</i>, 2008. 
+				[<a href="http://www.cs.dartmouth.edu/~sensorlab/pubs/metrosense-ic.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Andrew T. Campbell, Shane B. Eisenman, Kristof Fodor, Nicholas D. Lane, Hong Lu, 
+				Emiliano Miluzzo, Mirco Musolesi, Ronald A. Peterson and Xiao Zheng, <strong>
+				CenceMe: Injecting Sensing Presence into Social Network Applications using Mobile Phones</strong>, 
+				(Demo Abstract) In Proc. of <i> Ninth ACM International Symposium on Mobile Ad Hoc Networking 
+			    and Computing (MobiHoc‘08)</i>. Hong Kong, May 27-30, 2008.
+				[<a href="http://www.cs.dartmouth.edu/~sensorlab/pubs/MobiHocDemo08.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Andrew T. Campbell, Shane B. Eisenman, Krist&#243f Fodor, Nicholas D. Lane, Hong Lu, 
+				Emiliano Miluzzo, Mirco Musolesi, Ronald A. Peterson, Xiao Zheng, <strong>CenceMe - Injecting Sensing
+				Presence into Social Networking Applications using Mobile Phones</strong>, (Demo abstract)
+				In Proc. of <i> Ninth Workshop on Mobile Computing Systems and Applications (HotMobile 2008)</i>,
+				Napa Valley, CA, USA, Feb. 25-26, 2008.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/cencemeDemo-HotMobile08.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Nicholas D. Lane, Shane B. Eisenman, Mirco Musolesi, Emiliano Miluzzo, Andrew T. Campbell, <strong>
+				Urban Sensing Systems: Opportunistic or Participatory?</strong>, In Proc. of <i> Ninth Workshop 
+				on Mobile Computing Systems and Applications (HotMobile 2008)</i>,
+				Napa Valley, CA, USA, Feb. 25-26, 2008.
+				[<a href="http://www.cs.dartmouth.edu/~niclane/pubs/hotmobile08.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Emiliano Miluzzo, Xiao Zheng, Krist&#243f Fodor, Andrew T. Campbell, <strong>Radio Characterization
+				of 802.15.4 and its Impact on the Design of Mobile Sensor Networks</strong>,
+				In Proc. of <i> Fifth European Conference on Wireless Sensor Networks (EWSN 2008)</i>, 
+				Bologna, Italy, Jan. 30/31 - Feb 1, 2008. 
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/miluzzo_EWSN08.pdf">pdf</a>]
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/miluzzo_EWSN-08_talk.ppt">talk</a>]
+				[<a chref="http://crawdad.cs.dartmouth.edu/dartmouth/zigbee_radio">CRAWDAD</a>]	
+				</p>
+				
+				<p>
+				Emiliano Miluzzo, Nicholas D. Lane, Shane B. Eisenman, Andrew T. Campbell, <strong>CenceMe - 
+				Injecting Sensing Presence into Social Networking Applications</strong>,
+				(Invited paper) In Proc. of<i>  Second European Conference on Smart Sensing and Context 
+				(EuroSSC 2007) </i>, Lake District, UK, October 23-25, 2007.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/cenceme_EuroSSC07.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Shane B. Eisenman, Emiliano Miluzzo, Nicholas D. Lane, Ronald A. Peterson,
+				Gahng-Seop Ahn, Andrew T. Campbell, <strong>The
+				BikeNet Mobile Sensing System for Cyclist Experience Mapping</strong>, 
+				In Proc. of <i> Fifth ACM Conference on Embedded Networked
+				Sensor Systems (SenSys 2007)</i>, Sydney, Australia, Nov. 6-9, 2007.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/BikeNet-SenSys07.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Nicholas D. Lane, Shane B. Eisenman, Emiliano Miluzzo, Mirco Musolesi, Andrew T. Campbell, <strong>
+				Urban Sensing: Opportunistic or Participatory?</strong>,
+				In Proc. of <i> First Workshop Sensing on Everyday Mobile Phones in Support of Participatory 
+				Research</i>, Sydney, Australia, Nov. 6, 2007.
+				[<a href="http://www.cs.dartmouth.edu/~sensorlab/pubs/participatory07.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Emiliano Miluzzo, Nicholas D. Lane, and Andrew T. Campbell, <strong>Virtual Sensing Range
+				</strong>, (Poster Abstract), In <i>Proc. of Fourth ACM Conference on Embedded Networked
+				Sensor Systems (SenSys 2006)</i>, Boulder, Colorado, USA, Nov. 1-3, 2006. 
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/VSR-sensys06.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Gahng-Seop Ahn, Emiliano Miluzzo, Andrew T. Campbell, Se Gi Hong and
+				Francesca Cuomo, <strong>Funneling-MAC: A
+				Localized, Sink-Oriented MAC For Boosting Fidelity in Sensor Networks</strong>,
+				In <i>Proc. of Fourth ACM Conference on Embedded Networked Sensor 
+				Systems (SenSys 2006)</i>, Boulder, Colorado, USA, Nov. 1-3, 2006. 
+				[<a href="http://www.cs.dartmouth.edu/~sensorlab/funneling-mac/">Project web page</a>]	
+				</p>
+				
+				<p>
+				Shane B. Eisenman, Nicholas D. Lane, Emiliano Miluzzo, Ronald A. Peterson, Gahng-Seop Ahn,
+			    and Andrew T. Campbell, <strong>Metrosense Project: People-Centric Sensing at Scale</strong>. 
+			    In <i>Proc. of First Workshop on World-Sensor-Web (WSW 2006)</i>, Boulder, Colorado,
+				USA, Oct. 31, 2006.
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/metrosense-wsw06.pdf">pdf</a>]	
+				</p>
+				
+				<p>
+				Gahng-Seop Ahn, Emiliano Miluzzo, Andrew T. Campbell, <strong>A
+				Funneling-MAC for High Performance Data Collection in Sensor Networks</strong>, 
+				(Demo Abstract). In <i>Proc. of Fourth ACM Conference on Embedded Networked Sensor 
+				Systems (SenSys 2006)</i>, Boulder, Colorado, USA, Nov. 1-3, 2006. 
+				[<a href="http://www.cs.dartmouth.edu/~sensorlab/funneling-mac/">Project web page</a>]	
+				</p>
+				
+				<p>
+				Andrew T. Campbell, Shane B. Eisenman, Nicholas D. Lane, Emiliano Miluzzo, Ronald Peterson, 
+				<strong>People-Centric Urban Sensing</strong>. (Invited Paper), In
+				<i>Proc. of Second ACM/IEEE Annual International Wireless Internet Conference (WICON 2006)</i>,
+				Boston, USA, August 2-5, 2006. 
+				[<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/metrosense06.pdf">pdf</a>]	
+				</p>
+
+			</div>
+		</div>
+		<!-- end latest-post -->
+		<!-- start recent-posts -->
+		
+		<!-- end recent-posts -->
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+
+<div id="footer">
+	<!-- empty footer -->
+</div>
+
+<div style="font-size: 0.8em; text-align: center;">
+<br />
+Based on template from <a href="http://www.zeroweb.org">Zeroweb.org</a><br />
+<br />
+</div>
+</body>
+</html>

@@ -1,0 +1,347 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Sampling_c-space
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Sampling c-space" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Sampling c-space - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Sampling_c-space";
+		var wgTitle = "Sampling c-space";
+		var wgAction = "view";
+		var wgArticleId = "76";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1143;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Sampling_c-space skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Sampling_c-space" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Sampling_c-space" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Sampling_c-space&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Sampling_c-space&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Sampling_c-space&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Sampling c-space</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Metrics_.28distance.29_in_configuration_space"><span class="tocnumber">2</span> <span class="toctext">Metrics (distance) in configuration space</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lp_metrics"><span class="tocnumber">2.1</span> <span class="toctext">L<sub>p</sub> metrics</span></a></li>
+<li class="toclevel-2"><a href="#Robot_displacement_metric"><span class="tocnumber">2.2</span> <span class="toctext">Robot displacement metric</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Measure_.28volume.29_on_configuration_space"><span class="tocnumber">3</span> <span class="toctext">Measure (volume) on configuration space</span></a></li>
+<li class="toclevel-1"><a href="#Van_der_Corput_sequence"><span class="tocnumber">4</span> <span class="toctext">Van der Corput sequence</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Halton_points"><span class="tocnumber">4.1</span> <span class="toctext">Halton points</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Dispersion"><span class="tocnumber">5</span> <span class="toctext">Dispersion</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Sukharev_grids"><span class="tocnumber">5.1</span> <span class="toctext">Sukharev grids</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Discrepancy"><span class="tocnumber">6</span> <span class="toctext">Discrepancy</span></a></li>
+<li class="toclevel-1"><a href="#Collision_detection"><span class="tocnumber">7</span> <span class="toctext">Collision detection</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Heirarchical_methods"><span class="tocnumber">7.1</span> <span class="toctext">Heirarchical methods</span></a></li>
+<li class="toclevel-2"><a href="#Incremental_methods"><span class="tocnumber">7.2</span> <span class="toctext">Incremental methods</span></a></li>
+<li class="toclevel-2"><a href="#Checking_a_path_segment"><span class="tocnumber">7.3</span> <span class="toctext">Checking a path segment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Grid_search"><span class="tocnumber">8</span> <span class="toctext">Grid search</span></a></li>
+<li class="toclevel-1"><a href="#Randomized_potential_fields"><span class="tocnumber">9</span> <span class="toctext">Randomized potential fields</span></a></li>
+<li class="toclevel-1"><a href="#Rapidly_exploring_dense_trees"><span class="tocnumber">10</span> <span class="toctext">Rapidly exploring dense trees</span></a></li>
+<li class="toclevel-1"><a href="#Path_planning_for_systems_with_differential_.28non-holonomic.29_constraints"><span class="tocnumber">11</span> <span class="toctext">Path planning for systems with differential (non-holonomic) constraints</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Introduction" id="Introduction"></a><h2> <span class="mw-headline">Introduction</span></h2>
+<p>The reading for this section is <a href="http://planning.cs.uiuc.edu/ch5.pdf" class="external text" title="http://planning.cs.uiuc.edu/ch5.pdf" rel="nofollow">Chapter 5</a> of Steven LaValle's <i>Planning Algorithms</i> textbook.  You should read it carefully.  These notes are just an outline of what we discussed in class.
+</p>
+<a name="Metrics_.28distance.29_in_configuration_space" id="Metrics_.28distance.29_in_configuration_space"></a><h2> <span class="mw-headline"> Metrics (distance) in configuration space </span></h2>
+<p>Metrics are functions that have the following four properties:
+</p>
+<ul><li> Non-negativity.  <img class="tex" alt="\rho(a, b) \ge 0 " src="/~robotics/cs54/images/math/a/3/b/a3bc5e8db792a737bb0783d78ed707cb.png" />
+</li><li> Reflexivity. <span class="texhtml">&rho;(<i>a</i>,<i>b</i>) = 0</span> iff a = b
+</li><li> Symmetry. <span class="texhtml">&rho;(<i>a</i>,<i>b</i>) = &rho;(<i>b</i>,<i>a</i>)</span>
+</li><li> Triangle inequality.  <img class="tex" alt="\rho(a, b) + \rho(b, c) \ge \rho (a, c)" src="/~robotics/cs54/images/math/d/6/b/d6b53fc80ae071ffaa5db5d62e1daf64.png" />
+</li></ul>
+<p>A <b>pseudometric</b> is a function that fails to have one or more of the above properties, but which may be useful anyway for motion planning problems.  For example, the optimal time required for a Dubins car to reach a configuration is asymmetric, but still quite useful.
+</p>
+<a name="Lp_metrics" id="Lp_metrics"></a><h3> <span class="mw-headline"><span class="texhtml"><i>L</i><sub><i>p</i></sub></span> metrics</span></h3>
+<dl><dd><img class="tex" alt="\rho(x, x&#39;) = \left( \sum_i^n |x_i - x_i&#39;|^p\right)^{1/p}" src="/~robotics/cs54/images/math/d/9/c/d9cd0f73199333e15e8f11b025ab8422.png" />
+</dd></dl>
+<ul><li> <span class="texhtml"><i>L</i><sub>2</sub></span>, Euclidean distance
+</li><li> <span class="texhtml"><i>L</i><sub>1</sub></span>, Manhattan distance
+</li><li> <img class="tex" alt="L_\infty" src="/~robotics/cs54/images/math/9/a/0/9a02f3369a6f6444d8189ceed4082383.png" />, "Maximum coordinate distance"
+</li></ul>
+<a name="Robot_displacement_metric" id="Robot_displacement_metric"></a><h3> <span class="mw-headline">Robot displacement metric</span></h3>
+<dl><dd><img class="tex" alt="\rho(q_1, q_2) = \max_{a \in A} ||a(q_2) - a(q_1)||" src="/~robotics/cs54/images/math/9/b/3/9b304c161e78d5a3021705fd7c55e5fd.png" />
+</dd></dl>
+<a name="Measure_.28volume.29_on_configuration_space" id="Measure_.28volume.29_on_configuration_space"></a><h2> <span class="mw-headline"> Measure (volume) on configuration space</span></h2>
+<p>Measure axioms:
+</p>
+<ul><li> for the empty set <img class="tex" alt="\mu(\empty) = 0" src="/~robotics/cs54/images/math/f/f/5/ff5047a6eda29c14578cedd262452a77.png" />
+</li><li> for any collection <span class="texhtml"><i>E</i><sub>1</sub>,<i>E</i><sub>2</sub>,...</span> of countable, pairwise disjoint measurable sets, let E denote the union.  The measure <span class="texhtml">&mu;</span> must satisfy
+</li></ul>
+<dl><dd><span class="texhtml">
+</dd></dl>
+<table>
+		<tr style='text-align: center;'><td>&mu;(<i>E</i>) = </td><td><span style='font-size: x-large; font-family: serif;'>&sum;</span></td><td>&mu;(<i>E</i><sub><i>i</i></sub>).</td></tr>
+		<tr style='text-align: center; vertical-align: top;'><td></td><td><i>i</i></td><td></td></tr>
+</table>
+<p></span>
+</p>
+<a name="Van_der_Corput_sequence" id="Van_der_Corput_sequence"></a><h2> <span class="mw-headline"> Van der Corput sequence</span></h2>
+<p>Consider placing 16 evenly-spaced real numbers on the interval <span class="texhtml">[0,1]</span>.  In binary, we could place them at .0000, .0001, .0100, .0010, .0011.  But if we stop early, some of the interval doesn't have samples yet.  Idea of the VDC sequence.  Reverse the order of the bits.  So we have .0000, .1000, .0010, .1100, etc.
+</p>
+<a name="Halton_points" id="Halton_points"></a><h3> <span class="mw-headline"> Halton points</span></h3>
+<p>We can extend the idea of the VDC sequence to higher dimensions.  Take <span class="texhtml"><i>n</i></span> relatively prime integers <span class="texhtml"><i>p</i><sub>1</sub>,<i>p</i><sub>2</sub>,...<i>p</i><sub><i>n</i></sub></span>.  To construct the ith sample, look at the base-p representation for i:  
+</p>
+<dl><dd><img class="tex" alt="r(i, p) = \frac{a_0}{p}+ \frac{a_1}{p^2} + \frac{a_2}{p^3}+\frac{a_3}{p^4}" src="/~robotics/cs54/images/math/5/f/0/5f0645db0e9d467ecd6bc78ee57177d4.png" />.
+</dd></dl>
+<p>To construct the sample, reverse the order of the bits and move the decimal point, as for the VDC.  For <span class="texhtml"><i>p</i> = 2</span> this gives the VDC sequence.  For higher dimensions, starting from 0, the ith sample in the Halton sequence is 
+</p>
+<dl><dd><span class="texhtml">(<i>r</i>(<i>i</i>,<i>p</i><sub>1</sub>),<i>r</i>(<i>i</i>,<i>p</i><sub>2</sub>),<i>r</i>(<i>i</i>,<i>p</i><sub>3</sub>)...,<i>r</i>(<i>i</i>,<i>p</i><sub><i>n</i></sub>))</span>
+</dd></dl>
+<p>You can get a somewhat better distribution of points if the number of points <span class="texhtml"><i>k</i></span> is known ahead of time.  The Hammersley point sequences is given by
+</p>
+<dl><dd><span class="texhtml">(<i>i</i> / <i>k</i>,<i>r</i>(<i>i</i>,<i>p</i><sub>1</sub>),<i>r</i>(<i>i</i>,<i>p</i><sub>2</sub>),<i>r</i>(<i>i</i>,<i>p</i><sub>3</sub>)...,<i>r</i>(<i>i</i>,<i>p</i><sub><i>n</i> &minus; 1</sub>))</span>
+</dd></dl>
+<a name="Dispersion" id="Dispersion"></a><h2> <span class="mw-headline">Dispersion</span></h2>
+<p>The dispersion of a set of points is defined in terms of a metric on the space.  The dispersion is the radius of the largest ball that can be placed in the space without colliding with a sample:
+</p>
+<dl><dd><img class="tex" alt="&#10;\delta(P) = \sup&#10;_{x \in X} &#10;  \min_{p \in P}  \rho(x, p)    &#10;" src="/~robotics/cs54/images/math/a/e/1/ae18dc93cc2ac5d9599a6f7deeda6c36.png" />
+</dd></dl>
+<p>The center of each ball is at a <i>Voronoi vertex</i> in the space.  Often, an <img class="tex" alt="L_\infty" src="/~robotics/cs54/images/math/9/a/0/9a02f3369a6f6444d8189ceed4082383.png" /> metric is used, because it is easy to compute, since you don't have to find the Voronoi vertices.  Of course, in this case, the ball is a hypercube!
+</p>
+<a name="Sukharev_grids" id="Sukharev_grids"></a><h3> <span class="mw-headline">Sukharev grids</span></h3>
+<p>A regular grid over a space minimizes dispersion, if the number of points is fixed.  Optimal dispersion is reached by dividing the space into cubes, and placing a point in the center of each cube:  a Sukharev grid.  Translating the Sukharev grid to the origin gives a <i>standard grid</i>. 
+</p>
+<a name="Discrepancy" id="Discrepancy"></a><h2> <span class="mw-headline">Discrepancy</span></h2>
+<p>Halton and Hammersley sequences can be used to place grids incrementally over a space. But many of the points in a random grid will be 'lined up', and this could be bad for some spaces, if the aligned grid points coincide with a feature of the configuration space, wasting some samples.
+</p><p>A different measure of the quality of sampling is based on whether the right number of samples fall into any box in the space.  Check the book for the precise definition.  There's a nice <a href="http://en.wikipedia.org/wiki/Low-discrepancy_sequence" class="external text" title="http://en.wikipedia.org/wiki/Low-discrepancy_sequence" rel="nofollow">Wikipedia page</a> for further reading.
+</p>
+<a name="Collision_detection" id="Collision_detection"></a><h2> <span class="mw-headline">Collision detection</span></h2>
+<a name="Heirarchical_methods" id="Heirarchical_methods"></a><h3> <span class="mw-headline">Heirarchical methods</span></h3>
+<a name="Incremental_methods" id="Incremental_methods"></a><h3> <span class="mw-headline">Incremental methods</span></h3>
+<a name="Checking_a_path_segment" id="Checking_a_path_segment"></a><h3> <span class="mw-headline">Checking a path segment</span></h3>
+<a name="Grid_search" id="Grid_search"></a><h2> <span class="mw-headline">Grid search</span></h2>
+<p>Idea:  iteratively refine the resolution, interleaving search and sampling.  If we do this too tightly, search takes up all the time.  If we do it too loosely, searching the new, large graph could take a lot of time.  One idea is to use the <i>union-find</i> algorithm to incrementally update the set of connected components after every 100 (or some other small number of) samples.
+</p>
+<a name="Randomized_potential_fields" id="Randomized_potential_fields"></a><h2> <span class="mw-headline">Randomized potential fields</span></h2>
+<p>Three states:  
+</p>
+<ul><li> Best first, using a potential field
+</li><li> Random walk
+</li><li> Backtrack
+</li></ul>
+<a name="Rapidly_exploring_dense_trees" id="Rapidly_exploring_dense_trees"></a><h2> <span class="mw-headline">Rapidly exploring dense trees</span></h2>
+<a name="Path_planning_for_systems_with_differential_.28non-holonomic.29_constraints" id="Path_planning_for_systems_with_differential_.28non-holonomic.29_constraints"></a><h2> <span class="mw-headline">Path planning for systems with differential (non-holonomic) constraints</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 91/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:76-0!1!0!!en!2!edit=0 and timestamp 20110220225449 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Sampling_c-space">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Sampling_c-space</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Sampling_c-space" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Sampling_c-space" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Sampling_c-space&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Sampling_c-space&amp;oldid=1143" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 15 February 2011, at 18:04.</li>
+					<li id="viewcount">This page has been accessed 127 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.200 secs. --></body></html>

@@ -1,0 +1,38 @@
+http://www.cs.dartmouth.edu/~cs110/TalkSchedule
+3
+<html> <head>
+<title>CS 110 Talk Schedule</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<h1><a href="index.html">CS 110</a><br>
+Winter 2010<br>
+Writing, Presenting, and Evaluating Technical Papers in Computer Science<br>
+<i>Talk Schedule</i></h1>
+
+<ul>
+
+  <li> Monday, February 22: Umang Bhaskar, Brandon Kerr
+
+  <li> Wednesday, February 24:  Jon Denning, Nimit Dhulekar
+
+  <li> Friday, February 26: Geethmala Sridaran, Andrew Cherne
+
+  <li> Monday, March 1: Jason Reeves, Robin Chhetri
+
+  <li> Wednesday, March 3: Ranganath Kondapally, Joshua Brody
+
+  <li> Friday, March 5: Gabriel Weaver, Joe Cooley
+
+  <li> Monday, March 8: Dan Peebles, Priya Natarajan
+
+</ul>
+
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Mon Feb  1 21:24:23 2010
+<!-- hhmts end -->
+</body> </html>

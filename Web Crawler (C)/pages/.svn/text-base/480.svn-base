@@ -1,0 +1,100 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw6
+3
+<html> <head>
+<title>CS37: Homework 6</title>
+</head>
+ 
+<body>
+<h1>Homework 6</h1>
+
+Published: Tuesday, August 3 <br>
+Due: <strong>11:59PM</strong>, Monday, August 9.<br>
+<p>
+<hr>
+<p>
+We'll continue our exploration of the hardware/software interface,
+but this time, look at C as well.
+<p>
+<hr>
+<h2>Q1</h2>(25 points)
+<hr>
+<p>
+As pointed out in class, the LC-3 has nothing in its
+ISA that's close to a "right shift."   How does the compiler
+get it to perform operation such as:
+<pre>
+int x = 0x000F;
+int z;
+
+main() {
+
+  z = x >> 1;
+
+}
+</pre>
+<p>
+
+<hr>
+<h2>Q2</h2>(25 points)
+<hr>
+<p>
+In class and on the midterm, we've seen an assembly routine for
+multiply that was rather inefficient, and we've discussed that more
+efficient schemes exist.  Implement one (but in C, not assembler, to
+make your life easier).
+<p>
+(No, you can't actually USE "*" in your solution. :)
+<p>
+<hr>
+<h2>Q3</h2>(25 points)
+<hr>
+<p>
+Re-do the calendar program from HW4... but do it in C (for the LC-3).
+<p>
+<hr>
+<h2>Q3.5</h2>(10 points)
+<hr>
+Compare and contrast:
+<ul>
+<li> the <i>process</i> of producing your program for Q3
+above with that of producing the assembler version
+<li> ...and the resulting assembler to your assembler
+</ul>
+<p>
+<hr>
+<h2>Q4</h2>(15 points)
+<hr>
+<p>
+We've seen how priority encoders could be used to select which
+interrupt request to forward to the CPU, and we've also seen how it
+might be useful if you want to implement some elegant Push/Pop
+instructions.  
+
+<p>For this question, you should implement a <b>priority encoder</b>
+in Logisim.  Here's what it should have:
+
+<p><b>Inputs:</b>
+<ul><li>Eight one-bit inputs P0,P1,...,P7</ul>
+
+<b>Outputs:</b>
+<ul>
+<li>a three bit line Q.  Q will equal the highest <i>set</i> input bit.  If no input bit is set, Q will be open.
+<li>one bit line group_select:  This is zero if all inputs are zero, and one otherwise.
+</ul>
+
+<p>For this problem, you can use anything from the Base and Gate
+libraries.  As always, provide a test harness so Ranga and James can
+see you've tested it.  Note that Logisim gives you a priority encoder
+component, so for this question testing should be easy.
+<p>
+<hr>
+<h2>Submission</h2>
+<hr>
+<p>
+ Send email to cs37staff@cs with the subject line "Homework 6
+ Submitted".  Attach all relevant files.  If you use multiple files,
+ packing the assignment into a single zip file is preferred.
+<p>
+</body> </html>
+</body> </html>
+

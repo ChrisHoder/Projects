@@ -1,0 +1,246 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Special:RecentChangesLinked/Main_Page
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="robots" content="noindex,nofollow" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="&quot;Special:RecentChangesLinked&quot; RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;feed=rss&amp;target=Main_Page" />
+		<link rel="alternate" type="application/atom+xml" title="&quot;Special:RecentChangesLinked&quot; Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;feed=atom&amp;target=Main_Page" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Changes related to &quot;Main Page&quot; - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "Special";
+		var wgCanonicalSpecialPageName = "Recentchangeslinked";
+		var wgNamespaceNumber = -1;
+		var wgPageName = "Special:RecentChangesLinked";
+		var wgTitle = "RecentChangesLinked";
+		var wgAction = "view";
+		var wgArticleId = 0;
+		var wgIsArticle = false;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 0;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns--1 ns-special page-Special_RecentChangesLinked skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Special:RecentChangesLinked" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-special" class="selected"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Main_Page" title="This is a special page, you cannot edit the page itself">Special page</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Changes related to &quot;Main Page&quot;</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub">← <a href="/~robotics/cs54/index.php?title=Main_Page&amp;redirect=no" title="Main Page">Main Page</a></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<div class="mw-specialpage-summary">
+<p>This is a list of changes made recently to pages linked from a specified page (or to members of a specified category).
+</p>
+Pages on <a href="/~robotics/cs54/index.php/Special:Watchlist" title="Special:Watchlist">your watchlist</a> are <b>bold</b>.</div>
+<fieldset class="rcoptions">
+<legend>Recent changes options</legend>
+Show last <a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;limit=50&amp;target=Main_Page" title="Special:RecentChangesLinked" style="font-weight: bold;">50</a>&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;limit=100&amp;target=Main_Page" title="Special:RecentChangesLinked">100</a>&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;limit=250&amp;target=Main_Page" title="Special:RecentChangesLinked">250</a>&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;limit=500&amp;target=Main_Page" title="Special:RecentChangesLinked">500</a> changes in last <a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;days=1&amp;target=Main_Page" title="Special:RecentChangesLinked">1</a>&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;days=3&amp;target=Main_Page" title="Special:RecentChangesLinked">3</a>&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;days=7&amp;target=Main_Page" title="Special:RecentChangesLinked" style="font-weight: bold;">7</a>&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;days=14&amp;target=Main_Page" title="Special:RecentChangesLinked">14</a>&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;days=30&amp;target=Main_Page" title="Special:RecentChangesLinked">30</a> days<br /><a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;hideminor=1&amp;target=Main_Page" title="Special:RecentChangesLinked">Hide</a> minor edits&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;hidebots=0&amp;target=Main_Page" title="Special:RecentChangesLinked">Show</a> bots&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;hideanons=1&amp;target=Main_Page" title="Special:RecentChangesLinked">Hide</a> anonymous users&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;hideliu=1&amp;target=Main_Page" title="Special:RecentChangesLinked">Hide</a> logged-in users&#32;|&#32;<a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;hidemyself=1&amp;target=Main_Page" title="Special:RecentChangesLinked">Hide</a> my edits<br />Show new changes starting from <a href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;from=20110221044502&amp;target=Main_Page" title="Special:RecentChangesLinked">04:45, 21 February 2011</a>
+<hr />
+<form action="/~robotics/cs54/index.php"><table class="mw-recentchanges-table"><tr><td class="mw-label"><label for="namespace">Namespace:</label></td><td class="mw-input"><select id="namespace" name="namespace" class="namespaceselector">
+<option value="" selected="selected">all</option>
+<option value="0">(Main)</option>
+<option value="1">Talk</option>
+<option value="2">User</option>
+<option value="3">User talk</option>
+<option value="4">cs54:  Introduction to Robotics</option>
+<option value="5">cs54:  Introduction to Robotics talk</option>
+<option value="6">File</option>
+<option value="7">File talk</option>
+<option value="8">MediaWiki</option>
+<option value="9">MediaWiki talk</option>
+<option value="10">Template</option>
+<option value="11">Template talk</option>
+<option value="12">Help</option>
+<option value="13">Help talk</option>
+<option value="14">Category</option>
+<option value="15">Category talk</option>
+</select> <input name="invert" type="checkbox" value="1" id="nsinvert" />&nbsp;<label for="nsinvert">Invert selection</label></td></tr><tr><td class="mw-label">Page name:</td><td class="mw-input"><input name="target" size="40" value="Main Page" /><input name="showlinkedto" type="checkbox" value="1" id="showlinkedto" /> <label for="showlinkedto">Show changes to pages linked to the given page instead</label> <input type="submit" value="Go" /></td></tr></table><input name="title" type="hidden" value="Special:RecentChangesLinked" /></form>
+</fieldset>
+<p>No changes on linked pages during the given period.
+</p><div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Special:RecentChangesLinked">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Special:RecentChangesLinked</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+			<li id="feedlinks"><a id="feed-rss" href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;feed=rss&amp;target=Main_Page" rel="alternate" type="application/rss+xml" class="feedlink" title="RSS feed for this page">RSS</a>&nbsp;
+					<a id="feed-atom" href="/~robotics/cs54/index.php?title=Special:RecentChangesLinked&amp;feed=atom&amp;target=Main_Page" rel="alternate" type="application/atom+xml" class="feedlink" title="Atom feed for this page">Atom</a>&nbsp;
+					</li><li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.187 secs. --></body></html>

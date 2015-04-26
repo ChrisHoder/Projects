@@ -1,0 +1,185 @@
+http://www.cs.dartmouth.edu/~pete
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Peter C. Johnson</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="js.js"> </script>
+</head>
+<body>
+
+<div id="page">
+
+<div id="top_matter">
+
+  <div id="identification">
+    <img id="picture_of_me" src="me1.jpg" alt="picture of me" title="this is me!"
+      onmouseover="switch_image(1);" onmouseout="switch_image(0);" />
+
+    <h3>Peter C. Johnson</h3>
+    <p>
+      I am a 4th-year Ph.D. student working with <a
+      href="http://www.cs.dartmouth.edu/~thc">Professor Tom Cormen</a>
+      at the <a href="http://www.cs.dartmouth.edu">Department of Computer
+      Science</a>, <a href="http://www.dartmouth.edu">Dartmouth College</a>.
+    </p>
+
+    <p>
+      Previously, I worked with <a href="http://www.cs.dartmouth.edu/~sws">
+      Professor Sean Smith</a>, also at Dartmouth.
+    </p>
+
+    <ul class="plain">
+      <li>Office: Sudikoff 203</li>
+      <li>Email: pete@cs</li>
+    </ul>
+
+    <p>
+      <a href="http://www.youtube.com/watch?v=MgbdMgyKvWE">How research gets
+      <em>done</em></a>.
+    </p>
+  </div> <!-- identification -->
+
+  <!-- this is necessary because otherwise the height of the 'identification'
+       div becomes the height of the *content*, even though the height of the
+       floating image may be greater. -->
+  <div class="clear"></div>
+
+</div> <!-- top_matter -->
+
+<div id="content" class="clear">
+
+  <div id="ed">
+    <h3>Education</h3>
+
+    <ul class="plain">
+      <li>Bachelor of Science,
+      <a href="http://www-cse.ucsd.edu">Computer Science</a>,</li>
+      <li><a href="http://revelle.ucsd.edu">Revelle College</a> (area of
+        focus: Theatre/Acting),</li>
+      <li><a href="http://www.ucsd.edu">University of California,
+        San Diego</a>, June 2001.</li>
+    </ul>
+  </div> <!-- ed -->
+
+  <div id="teaching">
+    <h3>Teaching</h3>
+
+    <div id="professor"> </div> <!-- professor -->
+
+    <div id="instructor">
+      <ul class="plain">
+        <li>
+          Instructor, CS 37, Computer Architecture, Dartmouth College,
+          summer 2009<br />
+          (<a href="x09-37/index.html">course website</a>, only accessible
+            within Dartmouth IP space; syllabus available upon request).
+        </li>
+      </ul>
+    </div> <!-- instructor -->
+
+    <div id="ta">
+      <ul class="plain">
+        <li>
+          Teaching Assistant, CS 8, Problem Solving with Computer Science,
+          Dartmouth College, winter 2011
+        </li>
+
+        <li>
+          Teaching Assistant, CS 48, Implementation of Programming Languages,
+          Dartmouth College, fall 2010
+        </li>
+
+        <li>
+          Teaching Assistant, CS 4, Concepts in Computing, Dartmouth College,
+          summer 2010
+        </li>
+
+        <li>
+          Teaching Assistant, CS 37, Computer Architecture, Dartmouth
+          College, spring 2009
+        </li>
+
+        <li>
+          Teaching Assistant, CS 8, Problem Solving with Computer Science,
+          Dartmouth College, fall 2008
+        </li>
+      </ul>
+    </div> <!-- ta -->
+  </div> <!-- teaching -->
+
+  <div id="pubs">
+
+    <!-- <h3>Fellowships and Awards</h3> -->
+    <div id="fellow"> </div> <!-- fellow -->
+
+    <!-- <h3>Refereed Articles and Journal Publications</h3> -->
+    <div id="articles"> </div> <!-- articles -->
+
+    <div id="conf">
+      <h3>Refereed Conference and Workshop Publications</h3>
+
+      <ul class="plain">
+        <li><a href="http://portal.acm.org/citation.cfm?id=1655154">
+          <span class="paper_title">The Cake is a Lie: Privilege Rings as a
+            Policy Resource</span></a></li>
+        <li>Sergey Bratus, Peter C. Johnson, Michael E. Locasto, Ashwin
+          Ramaswamy, Sean W. Smith</li>
+        <li>2nd Workshop on Virtual Machine Security (VMSec '09)</li>
+      </ul>
+
+      <ul class="plain">
+        <li><a href="http://portal.acm.org/citation.cfm?id=1779338">
+          <span class="paper_title"> Nymble: Anonymous IP-Address Blocking</span>
+          </a></li>
+        <li>Peter C. Johnson, Apu Kapadia, Patrick P. Tsang, Sean W. Smith</li>
+        <li>Privacy Enhancing Technologies, 7th International Symposium
+          (PET '07)</li>
+      </ul>
+
+    </div> <!-- conf -->
+
+    <!-- <h3>Invited Conference Papers</h3> -->
+    <div id="invited_papers"> </div> <!-- invited_papers -->
+
+    <!-- <h3>Refereed Poster Abstracts and Work-in-Progress Papers</h3> -->
+    <div id="posters"> </div> <!-- posters -->
+
+    <!-- <h3>Invited Magazine Articles</h3> -->
+    <div id="invited_mags"> </div> <!-- invited_mags -->
+
+    <!-- <h3>Theses</h3> -->
+    <div id="theses"> </div> <!-- theses -->
+
+    <div id="tr">
+      <h3>Technical Reports</h3>
+
+      <ul class="plain">
+        <li><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2007-586/">
+          <span class="paper_title">People-Centric Urban Sensing: Security
+            Challenges for the New Paradigm</span></a></li>
+        <li>Peter C. Johnson, Apu Kapadia, David Kotz, and Nikos Triandopoulos</li>
+        <li>Dartmouth Computer Science Technical Report TR2007-586, February
+          2007.</li>
+      </ul>
+    </div> <!-- tr -->
+
+  </div> <!-- pubs -->
+
+</div> <!-- content -->
+
+<div id="bottom_matter" class="clear">
+  <p id="last_modified">Last modified:
+    <script type="text/javascript">document.write(document.lastModified);</script>
+  </p>
+</div> <!-- bottom_matter -->
+
+</div> <!-- page -->
+
+</body>
+</html>
+

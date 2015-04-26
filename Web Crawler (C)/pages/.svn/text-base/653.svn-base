@@ -1,0 +1,77 @@
+http://www.cs.dartmouth.edu/~cs110/StudentWriting
+3
+<html> <head>
+<title>CS 110 Student Writing</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<h1><a href="index.html">CS 110</a><br>
+Winter 2010<br>
+Writing, Presenting, and Evaluating Technical Papers in Computer Science<br>
+<i>Student Writing</i></h1>
+
+<ul>
+
+  <li> <a href="brody.pdf">Joshua Brody</a>, "The maximum
+       communication complexity of multi-party pointer jumping."
+       
+       <p>
+
+  <li> <a href="cherne.pdf">Andrew Cherne</a>, untitled paper on
+       wireless networks.
+       
+       <p>
+
+  <li> <a href="chhetri.pdf">Robin Chhetri</a>, "Estimating frequency
+       moments," class notes for CS 188.
+
+       <p>
+
+  <li> <a href="cooley.pdf">Joe Cooley</a>, Timothy Shepard, and
+       Vineet Mehta, "Extending OSPFv3 to provide multi-class routing
+       using multiple dynamic link metrics."
+       
+       <p>
+
+  <li> <a href="dhulekar.pdf">Nimit Dhulekar</a> and Jyotishman Nag,
+       "Comparing the performance of a CPU vs. a GPU," CS 107 project
+       report.
+       
+       <p>
+
+  <li> <a href="kerr.pdf">Brandon Kerr</a> and Fabio Pellacini,
+       "Toward evaluating lighting design interface paradigms for
+       novice users."
+  
+       <p>
+
+  <li> Umang Bhaskar and <a href="kondapally.pdf">Ranganath
+       Kondapally</a>, "Project report on the influence of cache on
+       sorting algorithms," CS 107 project report.
+
+       <p>
+
+  <li> <a href="reeves.doc">Jason Reeves</a> and Senate Taka, "Not
+       Just For Pretty Pictures: General Processing on Graphics
+       Processors," CS 107 project report.
+       
+       <p>
+
+  <li> <a href="sridaran.pdf">Geethmala Sridaran</a>, "Security in
+       delay tolerant networks."
+       
+       <p>
+
+  <li> <a href="weaver.pdf">Gabriel Weaver</a> and anonymous
+       coauthors, "Computational techniques for increasing PKI policy
+       comprehension by human analysts."
+  
+</ul>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Mon Feb  1 21:24:43 2010
+<!-- hhmts end -->
+</body> </html>

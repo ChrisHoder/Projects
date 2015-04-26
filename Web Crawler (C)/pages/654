@@ -1,0 +1,21 @@
+http://www.cs.dartmouth.edu/~cs110/Assignments
+3
+<html> <head>
+<title>CS 110 Assignments</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<h1><a href="index.html">CS 110</a><br>
+Winter 2010<br>
+Assignments</h1>
+
+<a href="assign1.html">Assignment 1</a>, due Monday, January 18<br>
+<a href="assign2.html">Assignment 2</a>, due Friday, January 22
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Sun Jan 17 15:20:45 2010
+<!-- hhmts end -->
+</body> </html>

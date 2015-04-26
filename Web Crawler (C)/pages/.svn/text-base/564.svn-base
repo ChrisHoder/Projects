@@ -1,0 +1,435 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_12
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Lecture 12" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Lecture 12 - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Lecture_12";
+		var wgTitle = "Lecture 12";
+		var wgAction = "view";
+		var wgArticleId = "24";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 355;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lecture_12 skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Lecture 12</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Logical_agents"><span class="tocnumber">1</span> <span class="toctext">Logical agents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Syntax"><span class="tocnumber">1.1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-2"><a href="#Semantics"><span class="tocnumber">1.2</span> <span class="toctext">Semantics</span></a></li>
+<li class="toclevel-2"><a href="#Entailment"><span class="tocnumber">1.3</span> <span class="toctext">Entailment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Propositional_logic"><span class="tocnumber">2</span> <span class="toctext">Propositional logic</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Syntax.2C_Backus-Naur_form_.28BNF.29"><span class="tocnumber">2.1</span> <span class="toctext">Syntax, Backus-Naur form (BNF)</span></a></li>
+<li class="toclevel-2"><a href="#Model"><span class="tocnumber">2.2</span> <span class="toctext">Model</span></a></li>
+<li class="toclevel-2"><a href="#Semantics_2"><span class="tocnumber">2.3</span> <span class="toctext">Semantics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#An_example_of_propositional_logic_.28college_life.29"><span class="tocnumber">3</span> <span class="toctext">An example of propositional logic (college life)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Method_one:__model_checking"><span class="tocnumber">3.1</span> <span class="toctext">Method one:  model checking</span></a></li>
+<li class="toclevel-2"><a href="#Method_two:__proof_.28by_contradiction.29"><span class="tocnumber">3.2</span> <span class="toctext">Method two:  proof (by contradiction)</span></a></li>
+<li class="toclevel-2"><a href="#Conjunctive_normal_form"><span class="tocnumber">3.3</span> <span class="toctext">Conjunctive normal form</span></a></li>
+<li class="toclevel-2"><a href="#Logical_equivalence"><span class="tocnumber">3.4</span> <span class="toctext">Logical equivalence</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Logical_agents" id="Logical_agents"></a><h2> <span class="mw-headline">Logical agents</span></h2>
+<p>This lecture is based roughly on chapter 7 of the text, and you should read the entire chapter carefully.  These notes provide a short synopsis and a few alternate examples.
+</p><p>The central idea is that so far, we have allowed agents to reason about the world only by using the idea of "belief states".  A belief state explicitly represents the set of possible worlds that the agent might be in, but if there are many possible worlds, the belief state (and belief space) might be very large.  
+</p><p>In this section, we talk about more compact representations of knowledge, that allow agents to reason and draw conclusions.  The basic representation of knowledge that we will use is a <i>sentence</i>.  A sentence restricts the space of all possible worlds.  A knowledge base is a set of sentences that we use to to describe the things the agent knows.  
+</p><p>We have two operations on knowledge bases, <i>tell</i> and <i>ask</i>.  Tell adds a sentence to the knowledge base.  Ask asks if, for every possible world for which the sentences in the knowledge base are all true, some other sentence is also true.    
+</p><p>tell --&gt; knowledge base --&gt; ask 
+</p><p>The book points out that new sensor knowledge might be added to the knowledge base at a time step, whereas we might ask information like "given past sensor information, is there a wall in front of me?"  Both <i>tell</i> and <i>ask</i> may involve inference; combining old sentences to find new sentences.  Example:
+</p>
+<dl><dd>1. You have iocane powder.
+</dd></dl>
+<dl><dd>2. Iocane powder comes (only) from Australia.
+</dd></dl>
+<dl><dd>3. Australia is entirely peopled by criminals.
+</dd></dl>
+<p>From this set of sentences in the knowledge base, can we infer the new sentence "You are a criminal"?  Maybe, maybe not.  We need some precise rules.
+</p>
+<a name="Syntax" id="Syntax"></a><h3> <span class="mw-headline">Syntax</span></h3>
+<p>Syntax is a set of rules describing well-formed sentences.  We're familiar with this from computer programming.  For example, the code
+</p>
+<pre>
+System.print.outln[My name&quot;):
+</pre>
+<p>would give a syntax error in Java:  the "sentence" (in this case, line of code) is not a member of the set of legal Java "sentences".  Syntax gives the <i>domain</i> of all possible sentences.
+</p>
+<a name="Semantics" id="Semantics"></a><h3> <span class="mw-headline"> Semantics </span></h3>
+<p>The semantics defines the truth of a sentence with respect to each possible world.  We call a possible world a model.  Typically, sentences involve some variables, and these varaibles have domains.  A <b>model</b> is an assignment of values to those variables.
+</p><p>As an example, consider the sentence x + y = 4.  It satisfies the syntax rules for arithmetic expressions.  But is it "true"?  We could imagine a world where 1+6 = 4 (after all, they are just symbols on the page), but we expect that the meaning of the sentence is that there are some values for x and y for which the sentence is true, and some values of x and y for which the sentence is not true.  
+</p><p>In fact, we use the semantics to <i>define</i> this situation.  
+</p>
+<table border="1">
+<tr>
+<td> <b>x</b>
+</td><td> <b>y</b>
+</td><td> <b>x + y = 4</b>
+</td></tr>
+<tr>
+<td>0
+</td><td>0
+</td><td>false
+</td></tr>
+<tr>
+<td>1
+</td><td>0
+</td><td>false
+</td></tr>
+<tr>
+<td>3
+</td><td>1
+</td><td>true
+</td></tr>
+<tr>
+<td>1
+</td><td>3
+</td><td>true
+</td></tr>
+<tr>
+<td>2
+</td><td>2
+</td><td>true
+</td></tr></table>
+<p><br />
+Of course, this table is incomplete.  For every possible model (assignment of values to x, y), we need to know if the sentence is true or false.  Since in this case there are an infinity of models, it is impractical to write out the full truth table semantics, and we might have some set of rules to take a model, and a syntax, and output a true/false value.  
+</p>
+<pre>
+sentence---&gt;   |-----------|
+               | semantics |   ----&gt;  true/false
+Model------&gt;   |-----------|
+</pre>
+<a name="Entailment" id="Entailment"></a><h3> <span class="mw-headline">Entailment</span></h3>
+<p>Let <span class="texhtml">&alpha;</span> and <span class="texhtml">&beta;</span> be sentences.  
+</p><p>We say that <img class="tex" alt="\alpha \models \beta" src="/~robotics/cs44/images/math/1/d/1/1d150a0fc515bf89ae49f1ff004e7cfe.png" /> iff for every model in which <span class="texhtml">&alpha;</span> is true, <span class="texhtml">&beta;</span> is true.  The book gives the following example.  In arithmetic, we say that <img class="tex" alt=" x = 0 \models x y = 0" src="/~robotics/cs44/images/math/5/0/4/5049eb049b335d9e2817a700c5c88917.png" />.  If you choose a model (say x = 0, y = 6) such that x= 0 is true, then the sentence x y = 0 is also true.
+</p><p>We let <span class="texhtml"><i>M</i>(&alpha;)</span> be the set of models for which a sentence is true.  Then <img class="tex" alt="\alpha \models \beta" src="/~robotics/cs44/images/math/1/d/1/1d150a0fc515bf89ae49f1ff004e7cfe.png" /> means <img class="tex" alt="M(\alpha) \subset M(\beta)" src="/~robotics/cs44/images/math/0/2/f/02f2a74b910af04ceb8c61b966ebe9fa.png" />.
+</p><p>Notice that the sentence <span class="texhtml">&alpha;</span> is the <b>stronger</b> sentence, in that it constrains the space of possible models more.  If we have a set of sentences in the knowledge base, and we ask if these sentences entail some other sentence, it might seem like we are creating a 'new more powerful' assertion.  This is not the case.  Any new sentence that is entailed is less constraining, but that does not mean it is useless, because it might be in a different format that we find more usable.   
+</p><p>For example, we might have sentences "It is either sunny outside, or raining.  If it is raining, no-one is skiing.  It is raining."  The set of possible models of the world for which this sentence is true is smaller than the set of models of the world for which no-one is skiing.  (For example, it could be sunny, and no-one is skiing.)  But we might still want to ask the knowledge base the question "is anyone skiing?"  
+</p><p>Each new sentence added to the knowledge base further constrains the set of models that holds.  This property is called <b>monotonicity</b>.  This means that if we can prove that some sentence is entailed by a set of sentences in the knowledge base, then adding new sentences to the knowledge base will never invalidate that proof.
+</p>
+<a name="Propositional_logic" id="Propositional_logic"></a><h2> <span class="mw-headline">Propositional logic</span></h2>
+<ul><li> Atomic sentence:  a symbol that can take on the value true or false.  
+</li><li> Literal:  atomic sentence, or negated atomic sentence
+</li><li> Logical connectives:  <img class="tex" alt="\neg \or \and \Rightarrow \Leftrightarrow" src="/~robotics/cs44/images/math/9/1/5/9151b81a6d3c13c536c69eaf76d428e1.png" />
+</li></ul>
+<a name="Syntax.2C_Backus-Naur_form_.28BNF.29" id="Syntax.2C_Backus-Naur_form_.28BNF.29"></a><h3> <span class="mw-headline">Syntax, Backus-Naur form (BNF)</span></h3>
+<p>Backus-Naur form gives a recursive definition of syntax, the set of all legal sentences.  The BNF representation of propositional logic is very simple:
+</p>
+<dl><dd>Sentence <img class="tex" alt="\rightarrow" src="/~robotics/cs44/images/math/8/3/e/83e37b7246fdfcb99b2754210ebeae27.png" /> AtomicSentence | ComplexSentence
+</dd></dl>
+<dl><dd>AtomicSentence <img class="tex" alt="\rightarrow" src="/~robotics/cs44/images/math/8/3/e/83e37b7246fdfcb99b2754210ebeae27.png" /> True | False | Symbol
+</dd></dl>
+<dl><dd>Symbol <img class="tex" alt="\rightarrow" src="/~robotics/cs44/images/math/8/3/e/83e37b7246fdfcb99b2754210ebeae27.png" /> P, Q, R, snowing, ...
+</dd></dl>
+<dl><dd>ComplexSentence <img class="tex" alt="\rightarrow" src="/~robotics/cs44/images/math/8/3/e/83e37b7246fdfcb99b2754210ebeae27.png" /> <br />
+<dl><dd><img class="tex" alt="\neg" src="/~robotics/cs44/images/math/a/0/c/a0c4c2ce7f9c78efeedd2bfb53ab9f3e.png" />Sentence<br />
+</dd><dd>| (Sentence <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" /> Sentence)<br />
+</dd><dd>| (Sentence <img class="tex" alt="\or " src="/~robotics/cs44/images/math/5/a/d/5addb134385e47a2efa484f6306e75a1.png" /> Sentence)<br />
+</dd><dd>| (Sentence <img class="tex" alt="\Rightarrow" src="/~robotics/cs44/images/math/d/f/0/df09aea884019cb88a2957126faba316.png" /> Sentence)<br />
+</dd><dd>| (Sentence <img class="tex" alt="\Leftrightarrow" src="/~robotics/cs44/images/math/0/1/4/014cced2b73c22eb88cdc6901afb0c9d.png" /> Sentence)<br />
+</dd></dl>
+</dd></dl>
+<a name="Model" id="Model"></a><h3> <span class="mw-headline">Model</span></h3>
+<p>In propositional logic, a model is an assignment of true/false values to every atomic sentence.  Thus, a world with the symbols isSnowing and isSunny would have the four models (true, true), (true, false), (false, true), and (false, false).  
+</p>
+<a name="Semantics_2" id="Semantics_2"></a><h3> <span class="mw-headline">Semantics</span></h3>
+<p>Recall that the semantics takes a model and a sentence, and evaluates the sentence to true or false.  It is easy to write the semantics for atomic sentences.  We just need to write rules for complex sentences. We can use truth tables to write these rules recursively.  The complex sentence <img class="tex" alt="P \and Q" src="/~robotics/cs44/images/math/b/5/9/b593d845b846f264e74098fd126f539a.png" /> evaluates to true if P and Q are both true:
+</p>
+<table border="1">
+<tr>
+<td> <b>P</b>
+</td><td> <b>Q</b>
+</td><td> <img class="tex" alt="P \and Q" src="/~robotics/cs44/images/math/b/5/9/b593d845b846f264e74098fd126f539a.png" />
+</td></tr>
+<tr>
+<td>false
+</td><td>false
+</td><td>false
+</td></tr>
+<tr>
+<td>false
+</td><td>true
+</td><td>false
+</td></tr>
+<tr>
+<td>true
+</td><td>false
+</td><td>false
+</td></tr>
+<tr>
+<td>true
+</td><td>true
+</td><td>true
+</td></tr></table>
+<p>And for the implies symbol:
+</p>
+<table border="1">
+<tr>
+<td> <b>P</b>
+</td><td> <b>Q</b>
+</td><td> <img class="tex" alt="P \Leftrightarrow Q" src="/~robotics/cs44/images/math/b/e/d/bed2ae53f6ef854ccc3a769011283f73.png" />
+</td></tr>
+<tr>
+<td>false
+</td><td>false
+</td><td>true
+</td></tr>
+<tr>
+<td>false
+</td><td>true
+</td><td>true
+</td></tr>
+<tr>
+<td>true
+</td><td>false
+</td><td>false
+</td></tr>
+<tr>
+<td>true
+</td><td>true
+</td><td>true
+</td></tr></table>
+<a name="An_example_of_propositional_logic_.28college_life.29" id="An_example_of_propositional_logic_.28college_life.29"></a><h2> <span class="mw-headline">An example of propositional logic (college life)</span></h2>
+<p>Let's tell the knowledge base three sentences.  Then ask if some other sentence is entailed.
+</p>
+<dl><dd><dl><dd><img class="tex" alt="\neg" src="/~robotics/cs44/images/math/a/0/c/a0c4c2ce7f9c78efeedd2bfb53ab9f3e.png" /> Dinner <img class="tex" alt="\Leftrightarrow" src="/~robotics/cs44/images/math/0/1/4/014cced2b73c22eb88cdc6901afb0c9d.png" /> FridgeEmpty <img class="tex" alt="\or" src="/~robotics/cs44/images/math/5/a/d/5addb134385e47a2efa484f6306e75a1.png" /> (AssignmentDue <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" /> Procrastinated)
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> Winter <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" /> NiceWeatherSunday <img class="tex" alt="\Rightarrow" src="/~robotics/cs44/images/math/d/f/0/df09aea884019cb88a2957126faba316.png" /> Procrastinated
+</dd></dl>
+</dd></dl>
+<dl><dd><dl><dd> FridgeEmpty <img class="tex" alt="\Rightarrow" src="/~robotics/cs44/images/math/d/f/0/df09aea884019cb88a2957126faba316.png" /> HousemateMad
+</dd></dl>
+</dd></dl>
+<p>The question we might like to ask the knowledge base is, "If it is not winter, and I didn't eat dinner, does that imply that my housemate is mad?"  In other words, if for all true/false assignments to the symbols, such that the knowledge base is true, does
+</p>
+<dl><dd><dl><dd>KnowledgeBase<img class="tex" alt=" \and \neg W \neg D \models H" src="/~robotics/cs44/images/math/e/8/0/e802be37f8044b54d158652469973c54.png" />?
+</dd></dl>
+</dd></dl>
+<a name="Method_one:__model_checking" id="Method_one:__model_checking"></a><h3> <span class="mw-headline">Method one:  model checking</span></h3>
+<p>There is an obvious simple approach.  There are six symbols, D, F, A, W, H, N.  Each symbol can take the value true or false.  Consider all <span class="texhtml">2<sup>6</sup> = 64</span> possible assignments of true/false values.  (Each assignment is a model.)  Check each sentence in the knowledge base, as well as <img class="tex" alt="\neg W \neg D" src="/~robotics/cs44/images/math/a/5/c/a5ca412732c27e470b95f5db02ebe435.png" />, for truth.  If all sentences evaluate to true, then we need to check if HouseMateMad=true as well.  If this holds for all models, then the result HousemateMad is entailed.
+</p>
+<a name="Method_two:__proof_.28by_contradiction.29" id="Method_two:__proof_.28by_contradiction.29"></a><h3> <span class="mw-headline">Method two:  proof (by contradiction)</span></h3>
+<ul><li> Add <img class="tex" alt="\neg H" src="/~robotics/cs44/images/math/6/0/2/602285795c91e4c13f1c754b25615968.png" /> to the knowledge base
+</li><li> Show that this induces a contradiction:  an entailed sentence that must both evaluate to true and to false.
+</li></ul>
+<p>We'll come back to the details of this later.
+</p>
+<a name="Conjunctive_normal_form" id="Conjunctive_normal_form"></a><h3> <span class="mw-headline"> Conjunctive normal form</span></h3>
+<p>First thing to do:  simplify into a standard form.  For example, <img class="tex" alt="A \Rightarrow B" src="/~robotics/cs44/images/math/f/b/e/fbe20c1511144660282f4de5126d5237.png" /> could be written as <img class="tex" alt="\neg A \or B" src="/~robotics/cs44/images/math/7/b/e/7be5a0af2f4280d0dbb88ae971eafdb1.png" />.  This is easy to prove!  (But I'll leave it to you to figure out how.)
+</p>
+<ul><li> Eliminate <img class="tex" alt="\Leftrightarrow" src="/~robotics/cs44/images/math/0/1/4/014cced2b73c22eb88cdc6901afb0c9d.png" />, replace with <img class="tex" alt="(\alpha \Rightarrow \beta) \and (\beta \Rightarrow \alpha)" src="/~robotics/cs44/images/math/d/2/1/d210c0e450c2abe96d5d694cdfd1b6eb.png" />.
+</li><li> Eliminate <img class="tex" alt="\Rightarrow" src="/~robotics/cs44/images/math/d/f/0/df09aea884019cb88a2957126faba316.png" />, replace with <img class="tex" alt="\neg \alpha \or \beta " src="/~robotics/cs44/images/math/0/7/4/074d437226219691ba3357efe7effdfc.png" />
+</li><li> Move <img class="tex" alt="\neg" src="/~robotics/cs44/images/math/a/0/c/a0c4c2ce7f9c78efeedd2bfb53ab9f3e.png" /> inwards:
+<ul><li> <img class="tex" alt="\neg(\neg \alpha)&nbsp;: \alpha" src="/~robotics/cs44/images/math/6/c/6/6c63de97ce66b49799dfe4bf8956b1c2.png" />
+</li><li> <img class="tex" alt="\neg(\alpha \and \beta): \neg \alpha \or \neg \beta" src="/~robotics/cs44/images/math/7/9/8/798e5fc21701bac9b8cdc8b71d26598e.png" /> (DeMorgan)
+</li><li> <img class="tex" alt="\neg(\alpha \or \beta): \neg \alpha \and \neg \beta" src="/~robotics/cs44/images/math/f/2/d/f2dd2d82b8bd753326c2b5d3f812c282.png" /> (DeMorgan)
+</li></ul>
+</li><li> Distribute <img class="tex" alt="\or" src="/~robotics/cs44/images/math/5/a/d/5addb134385e47a2efa484f6306e75a1.png" /> over <img class="tex" alt="\and" src="/~robotics/cs44/images/math/9/c/a/9cae4437756a15b8e44ec23e07fb1f65.png" />:  
+<ul><li> <img class="tex" alt="\alpha \or (\beta \and \gamma) \rightarrow (\alpha \or \beta) \and (\alpha \or \gamma) " src="/~robotics/cs44/images/math/5/d/f/5df1785723b2e0a3f4eeed325c07d982.png" />
+</li></ul>
+</li></ul>
+<p>When we're done, we have a conjunction of disjunctions of literals:
+</p>
+<dl><dd><img class="tex" alt="(A \or \neg B \or C) \and " src="/~robotics/cs44/images/math/0/1/d/01d79c0a82f446bb37835538753e88d5.png" />
+</dd><dd><img class="tex" alt="(C \or \neg D) \and " src="/~robotics/cs44/images/math/c/5/e/c5eaeba76ff1b8fc36601d54c598a6a4.png" />
+</dd><dd><img class="tex" alt="(A \or E)" src="/~robotics/cs44/images/math/c/5/0/c50cbb99a1f4f1a1ad68d06bddc37948.png" />
+</dd></dl>
+<p>Essentially, we've gotten rid of all the recursive nastiness.  
+</p>
+<a name="Logical_equivalence" id="Logical_equivalence"></a><h3> <span class="mw-headline">Logical equivalence</span></h3>
+<p>CNF conversion relies on <b>logical equivalences</b>.  For example, commutativity tells us that for all models and sentences, 
+</p>
+<dl><dd><img class="tex" alt="(\alpha \and \beta) \models (\beta \and \alpha)" src="/~robotics/cs44/images/math/5/2/7/5278752157bf0acd1ce2d43e4528ba72.png" />
+</dd></dl>
+<p>We write <img class="tex" alt="(\alpha \and \beta) \equiv (\beta \and \alpha)" src="/~robotics/cs44/images/math/b/b/e/bbec897ff6abefe567f7aaeb8f751d44.png" />
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 176/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:24-0!1!0!!en!2!edit=0 and timestamp 20110220141850 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_12">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_12</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Lecture_12" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Lecture_12&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Lecture_12&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Lecture_12&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Lecture_12" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Lecture_12" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Lecture_12" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Lecture_12&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Lecture_12&amp;oldid=355" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 6 February 2010, at 14:00.</li>
+					<li id="viewcount">This page has been accessed 2,369 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.223 secs. --></body></html>

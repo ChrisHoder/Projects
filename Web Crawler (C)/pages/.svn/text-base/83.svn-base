@@ -1,0 +1,24 @@
+http://www.cs.dartmouth.edu/~xiaoyu
+2
+<html>
+<head>
+<title>Xiaoyu's homepage</title>
+</head>
+<h1>Xiaoyu(Sarah) Zhao</h1>
+<body>
+
+<select name="state">
+<option value="Alabama">Alabama</option>
+<option value="Alaska">Alaska</option>
+<option value="Arizona">Arizona</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+</select>
+
+
+<p>My email: <a href="mailto: xiaoyu.zhao@dartmouth.edu">Xiaoyu.Zhao@dartmouth.edu</a><br>
+</html>
+
+
+
+

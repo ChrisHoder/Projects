@@ -1,0 +1,55 @@
+http://www.cs.dartmouth.edu/~cs110
+2
+<html> <head>
+<title>CS 110</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<center>
+<h1>CS 110<br>
+Winter 2010<br>
+Writing, Presenting, and Evaluating Technical Papers in Computer Science</h1>
+</center>
+
+<h2><a href="syllabus.html">Syllabus</a></h2>
+
+<h2><a href="ScribeNotes">Scribe Notes</a></h2>
+
+<h2><a href="LaTeX">LaTeX Examples</a></h2>
+
+<h2><a href="paper.html">Research Paper</a></h2>
+
+<h2><a href="StudentWriting">Student Writing Samples</a></h2>
+
+<h2><a href="Assignments">Assignments</a></h2>
+
+<h2><a href="TalkSchedule">Talk Schedule</a></h2>
+
+<!-- <h2><a href="Questionnaire.doc">Questionnaire</a></h2> -->
+
+<!-- <h2><a href="writing-test.html">Writing test for gaining admission to -->
+<!-- this course</a></h2> -->
+
+<h2><a href="Stupid Columnsort Tricks.pdf">Stupid Columnsort Tricks</a></h2>
+
+<h2><a href="dorky.html">Exceedingly dorky quotation marks</a></h2>
+
+<h2>A whole <a href="http://www.unnecessaryquotes.com/">blog</a> of
+dorky quotation marks</h2>
+
+<h2>ps2eps</h2>
+<ul>
+  <li> Mac OS X: <a href="ps2eps/MacOSX/ps2eps">ps2eps</a>,
+       <a href="ps2eps/MacOSX/bbox">bbox</a>
+  <li> Linux: <a href="ps2eps/Linux/ps2eps">ps2eps</a>,
+       <a href="ps2eps/Linux/bbox">bbox</a>
+</ul>
+
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Mon Feb 15 21:58:53 2010
+<!-- hhmts end -->
+</body> </html>

@@ -1,0 +1,101 @@
+http://www.cs.dartmouth.edu/~weibel/hirsch.php
+3
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+      Christophe Weibel at Dartmouth
+    </title>
+    <meta name="author" content="Christophe Weibel">
+    <link rel="stylesheet" href="style.css" type=" ">
+  </head>
+  <body>
+    <div id="pagetitle">
+      Christophe Weibel at Dartmouth
+    </div>
+    <div id="sidebar">
+      <!-- menu -->
+      <div class="topmenu">
+        <a href="index.php">Main page</a>
+      </div>
+      <div class="box_title blue">
+        Research
+      </div>
+      <div class="box grey">
+        <a href="publications.php">Publications</a><br>
+        <a href="research.php">Research interests</a><br>
+        &nbsp;&nbsp;<a href="hirsch.php">Hirsch conjecture</a><br>
+        &nbsp;&nbsp;<a href="minksum.php">MinkSum</a><br>
+        &nbsp;&nbsp;<a href="minperi.php">Min perimeter convex hull</a>
+      </div>
+      <div class="box_title blue">
+        Links
+      </div>
+      <div class="box grey">
+        <a href="http://www.cs.dartmouth.edu">Computer Science</a><br>
+        <a href="http://www.dartmouth.edu">Dartmouth College</a><br>
+        <a href="http://www.math.mcgill.ca/~vetta/DiscreteGroup/">McGill Discrete Math Group</a><br>
+        <a href="http://roso.epfl.ch">ROSO</a>
+      </div>
+      <div class="box_title blue">
+        Personal
+      </div>
+      <div class="box grey">
+        <a href="http://picasaweb.google.com/anthony.weibel">Pictures</a><br>
+        <a href=cv.php>Curriculum Vitae</a> <a href=cvWeibel.pdf>(PDF)</a>
+      </div>
+    </div>
+    <div id="content">
+<h1>Counter-examples to the Hirsch conjecture</h1>
+
+<dl>
+<dt> <a href=posterHirsch.pdf><b>Poster</b></a></dt>
+  <dd> This is a poster I made for the IPAM workshop
+    <a href="http://www.ipam.ucla.edu/programs/sm2011/">"Efficiency of the
+Simplex Method: Quo vadis Hirsch conjecture?"</a>, presenting my
+discovery of a 20-dimensional counter-example to the Hirsch conjecture.</dd>
+<dt> <a href=25prismatoid.poly><b>25-vertex prismatoid</b></a></dt>
+  <dd> This is a Polymake file of the 25-vertices
+    prismatoid which leads to my counter-example in 20 dimensions.</dd>
+</dl>
+<p>
+The Hirsch conjecture stated that for any <i>d</i>-dimensional polytope
+defined by <i>n</i> inequalities, there would be a path of length
+    no more than <i>(n-d)</i> edges between any two vertices
+    of the polytope.
+</p>
+<p>
+    The Hirsch conjecture was disproven in 2009 by Paco Santos, who
+    proved that there exists a 43-dimensional polytope defined by
+    86 inequalities, such that a particular pair of vertices could
+    only be connected by paths of length at least 44.
+</p>
+<p>
+    The counter-example of Paco Santos was based on the very particular
+    properties of a Minkowski sum of two 4-dimensional polytopes.
+    I undertook the task to find other sums with the same properties,
+    but leading
+    to simpler counter-examples. Starting from another sum of Paco
+    leading to a counter-example in 23 dimensions, I managed to find
+    a sum leading to a counter-example in 20 dimensions. This is currently
+    the lowest dimension for which a counter-example is known.
+</p>
+<p>
+    Once we have a Minkowski sum with the required property, we create
+    a 5-dimensional prismatoid, which is the convex hull of the two
+    summands placed on parallel planes. The prismatoid has the
+    property that any path connecting the two opposite facets
+    has length 6. It can then be modified into a counter-example to
+    the Hirsch conjecture, using the same method as with the original
+    counter-example of Paco Santos.
+</p>
+    </div>
+    <div id="footer">                
+      <p>[ <a href="http://www.cs.dartmouth.edu/">Computer Science</a> ]<br>
+      <p><i>September 3rd,&nbsp; 2010</i>
+    </div>
+  </body>
+</html>

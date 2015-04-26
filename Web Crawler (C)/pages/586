@@ -1,0 +1,326 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_4
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Assignment 4" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Assignment 4 - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Assignment_4";
+		var wgTitle = "Assignment 4";
+		var wgAction = "view";
+		var wgArticleId = "66";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1099;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Assignment_4 skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Assignment_4" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Assignment_4" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Assignment_4&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Assignment_4&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Assignment_4&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Assignment 4</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>The goal of this assignment is to implement A* search, and apply it to a few search problems.  There are a few questions to answer and discuss in the readme file, and an optional problem at the end.  The quality of your discussion, interesting variations you try, and the optional problem are all factors that might contribute to a score greater than 10.  
+</p><p>I expect your code will be well-organized and well-commented. If you struggle with anything (especially how to do something in Python) please email both me and Weifu (firstname.lastname@dartmouth.edu) and we'll lend a hand. 
+</p><p>Submit your code by e-mail attachment by 11:59 pm Thursday, January 20, with a subject line "cs54 assignment 4 submit".  You should address your e-mail to Weifu, with me cc'd.
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Part_1:__A.2A_search"><span class="tocnumber">1</span> <span class="toctext">Part 1:  A* search</span></a></li>
+<li class="toclevel-1"><a href="#Part_2:_A.2A.2C_single_robot.2C_large_maze"><span class="tocnumber">2</span> <span class="toctext">Part 2: A*, single robot, large maze</span></a></li>
+<li class="toclevel-1"><a href="#Part_3:__A.2A_search.2C_three_robots.2C_small_maze"><span class="tocnumber">3</span> <span class="toctext">Part 3:  A* search, three robots, small maze</span></a></li>
+<li class="toclevel-1"><a href="#Part_4:__The_blind_kidnapped_robot_problem"><span class="tocnumber">4</span> <span class="toctext">Part 4:  The blind kidnapped robot problem</span></a></li>
+<li class="toclevel-1"><a href="#Optional_.28tricky.29_problem"><span class="tocnumber">5</span> <span class="toctext">Optional (tricky) problem</span></a></li>
+<li class="toclevel-1"><a href="#Random_Maze"><span class="tocnumber">6</span> <span class="toctext">Random Maze</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Part_1:__A.2A_search" id="Part_1:__A.2A_search"></a><h2> <span class="mw-headline"> Part 1:  A* search</span></h2>
+<p>Implement A* search.  
+</p>
+<pre>
+def astar_search(start_state, goal_test_fn, successor_fn, heuristic_fn):
+</pre>
+<p><br />
+This should be fairly similar to your implementation of bfs from the previous assignment, with a few changes.  (Pseudo-code for a uniform-cost search on page 84 of Russel and Norvig may also provide a guide.)
+</p>
+<ul><li> Instead of a queue, you'll use a priority queue for the fringe.  Python has a built-in heapq that will work nicely.
+</li></ul>
+<ul><li> Each node must maintain the cost so far to get to that node, the value g(n) in Russel and Norvig (and the same as the cost for the depth-first search above).  
+</li></ul>
+<ul><li> When you add a node to the priority queue, you'll need to compute the cost of the node. Take the cost-so-far to the node g(n), compute the heuristic cost h(n), and add them together.  
+</li></ul>
+<p>There's one tricky part, unfortunately.  As pointed out in the caption of figure 3.14 (page 84) of R &amp; N, you want to be able to check if a successor you are considering adding to the priority queue is cheaper than a node already in the priority queue.  This requires that you be able to check membership in the priority queue easily, and easily remove items from places in the priority queue other than the smallest element.  The heapq data structure that Python provides is not great for this -- Russell and Norvig suggest an implementation of the fringe that "has both the properties of a priority queue and a hash table".
+</p><p>You are welcome to try to figure out such a data structure, but I do not require it -- it's likely to be slower than the heapq Python provides, and somewhat complex.
+</p><p>Instead, simply do not check if an element is on the frontier before adding it.  (Do, of course, check if it's on the explored list.)  This will certainly make your algorithm less efficient, but perhaps only by a constant factor bounded by the number of ways to reach each location from points on the frontier.  When you expand a new node (pop it off the priority queue), you can check if that node is already in the explored list.
+</p>
+<a name="Part_2:_A.2A.2C_single_robot.2C_large_maze" id="Part_2:_A.2A.2C_single_robot.2C_large_maze"></a><h2> <span class="mw-headline"> Part 2: A*, single robot, large maze </span></h2>
+<p>Apply A* to solve the mazes of the type you solved last week, with a maze size of 100x100.  
+</p><p>You'll need an optimistic heuristic.  A good choice is the manhattan distance from start to goal, ignoring obstacles.  If you've written a random maze generator, you can use that to generate your 100x100 mazes.  Weifu will also provide some code to load mazes from a file, as well as a few randomly generated mazes.
+</p><p>Also apply BFS to the large maze.  Write a short discussion in a readme.txt file of a comparison between the results from BFS and A*.  A good measure of time taken is the number of nodes explored.
+</p>
+<a name="Part_3:__A.2A_search.2C_three_robots.2C_small_maze" id="Part_3:__A.2A_search.2C_three_robots.2C_small_maze"></a><h2> <span class="mw-headline"> Part 3:  A* search, three robots, small maze </span></h2>
+<pre>
+#####
+#   ########################
+#      cml              LMC#
+#   ########################
+#####
+</pre>
+<p>Three robots start in the above maze.  # represents a wall.  l, m, and c represent the starting locations of the robots, and L, M, and C represent the goal locations of the robots.
+</p><p>The state of the system is a six-vector representing the locations of all three robots.  There are 124 possible actions from each state, corresponding to moving one, two, or three of three robots simultaneously in each of the four cardinal directions.  (An example action would be 1, 0, 0, 0, 0, -1, corresponding to moving the first robot "west" and the third robot "south" simultaneously.)  
+</p><p>Use your a* search to solve this problem.  As long as the state is represented as a tuple, you should not have to make any changes to the algorithm itself.
+</p><p>In your readme.txt, discuss how many nodes were explored, what heuristic you chose (and why).  Is your heuristic optimistic?  
+</p><p>Further work (optional).  It would be interesting to design and explore some other multirobot mazes.  Are there other heuristics to try?  What mazes work well with your heuristic?
+</p>
+<a name="Part_4:__The_blind_kidnapped_robot_problem" id="Part_4:__The_blind_kidnapped_robot_problem"></a><h2> <span class="mw-headline">Part 4:  The blind kidnapped robot problem</span></h2>
+<p>Assume a single robot is dropped blindfolded into a small maze (perhaps 4x3 -- you can design your own maze).  The robot has a compass, so it can tell which direction is north, but has no other sensors.  When the robot moves in a direction, it either succeeds, or it bumps into the wall, in which case its location remains the same.
+</p><p>Set up a search problem to come up with a sequence of robot motions that will enable the robot to figure out where it is. Use your A* search algorithm to solve the search problem.
+</p><p>Here are some hints.  The state of the system is the "belief state" -- the set of all possible locations that the robot thinks it might be in.  Initially, the robot could be anywhere in the maze.  If the maze is 4x3, that means the initial state is a set of 12 locations.  
+</p><p>The actions are the same four actions you've been using -- move north, south, east, and west.  But notice how the belief state changes as you take an action.  Moving north moves every robot that doesn't have a wall blocking it, but does not move robots that are blocked by a northern wall.  In this way, locations may be removed from the belief state.  When a belief state has only a single element, the problem has been solved.
+</p><p>How should you represent one of these belief states?  A python frozenset of tuples would work -- keys into dictionaries (like the dictionary of explored states) need to be immutable, and frozensets are immutable.  But it seems to me that this is very inefficient in terms of memory.  Perhaps a better representation of the belief state is to use a (possibly very large) integer, such that the ith bit represents the possibility that the robot is in the ith cell.
+</p><p>Maybe the belief state at some point looks like the following:
+</p>
+<pre>
+xxxx
+xxxx 
+xx 
+</pre>
+<p>The robot could be anywhere but in the bottom right two locations.  The state would then be represented compactly by the binary number:
+</p><p>111111110011 
+</p><p>You can use bitwise AND and OR operators to build such a number from a set of locations, or to generate a set of locations from an integer state like this.  There's also a bitwise "shift left" operator &lt;&lt; that you might find useful.
+</p><p>1&lt;&lt;2 shifts the bit 1 left 2 spots, giving the binary number 100, or 4.  
+</p><p>So to test if the above state contained the fifth location (counted from the bottom left on the maze, indexing from 0, and the fifth bit from the right in the binary representation of the belief state) you would do something like:
+</p>
+<pre>
+belief_state = 0b111111110011
+print belief_state &amp; (1&lt;&lt;5)&nbsp;!= 0  # prints True, since the fifth bit from the right is in the belief state
+print belief_state &amp; (1&lt;&lt;0)&nbsp;!= 0  # prints True, since the 0th bit from the right is in the belief state
+print belief_state &amp; (1&lt;&lt;2)&nbsp;!= 0  # prints False, since the 2nd bit from the right is NOT in the belief state
+</pre>
+<p>To add a location to the belief state you'd do something like:  
+</p>
+<pre>
+belief_state = 0
+belief_state = belief_state | (1&lt;&lt;state_index) 
+</pre>
+<p><br />
+How about the goal test?  If the binary representation of the state is exactly a power of two, you have reached the goal.  You could use a base two logarithm to compute this simply.
+</p><p>What's a good heuristic for the A* search?  Well, one observation is that the fewer non-zero bits in the binary representation of the state the better.  Of course, a heuristic that counts the number of ones isn't optimistic.  (Why not?  Discuss in your readme.)  You can still use it, but you will give up optimality of solutions.  Can you think of a heuristic that is optimistic?
+</p>
+<a name="Optional_.28tricky.29_problem" id="Optional_.28tricky.29_problem"></a><h2> <span class="mw-headline">Optional (tricky) problem</span></h2>
+<p>Find a polynomial-time algorithm to solve the blind-robot problem.  I'll give you one hint.  Consider a simplified (relaxed) version of this problem where the robot knows that it is one of two states.  Can you come up with a strategy to compute a solution for this problem that runs in polynomial time?  Can you extend this to the case that the initial belief state contains all robot locations?
+</p><p>You do not need to implement this algorithm -- a discussion in the readme is sufficient.
+</p><p><br />
+</p>
+<a name="Random_Maze" id="Random_Maze"></a><h2> <span class="mw-headline">Random Maze</span></h2>
+<p>We will provide you with a random maze generator. You can use it, or modify it as you want. The link is&nbsp;: <a href="http://www.cs.dartmouth.edu/~robotics/cs54_provided/" class="external text" title="http://www.cs.dartmouth.edu/~robotics/cs54_provided/" rel="nofollow">Random maze</a>
+</p><p>The key idea for the generator is that we can save generated maze into file and read maze (wall_list) from the file such that we can have a unified maze database. You can run your searching algorithm on the same maze over and over again to debug and share "favorite" mazes. I already generated 100 random maze with size 30 by 30. The random maze generator could accpets the size of the maze you want to generate; the initial and the goal configurations. The default setting for these parameters are: size=[30, 30]; initial = (0.5, 0.5); goal = (24.5, 24.5).
+</p><p>Both the read_in_maze and write_out_maze function accepts two parameters. The first is the path of your current workspace; the second is the number of the file you want to read (or write). For different operating system, the path could be different. If you got any problem with read or write the maze file or using this maze generator, please email Weifu.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 22/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:66-0!1!0!!en!2!edit=0 and timestamp 20110220074016 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_4">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Assignment_4</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Assignment_4" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Assignment_4" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Assignment_4&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Assignment_4&amp;oldid=1099" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 21 January 2011, at 13:55.</li>
+					<li id="viewcount">This page has been accessed 685 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.209 secs. --></body></html>

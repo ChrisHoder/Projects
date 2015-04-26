@@ -1,0 +1,42 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw0
+3
+<html> <head>
+<title>CS37: Homework 0</title>
+</head>
+ 
+<body>
+
+
+<H1>Homework 0</H1>
+
+<br>
+Published: Friday, June 25<br>
+Due: <strong>11:59PM</strong>, Monday, June 28<br>
+Submission: email <b>cs37staff@cs.dartmouth.edu.</b><br>
+Attach all relevant files.
+<p>
+<hr>
+Objective: to become familiar with the elements of combinatorial logic... by seeing it for yourself!
+<p>
+Platforms: Use LogiSim.  It is installed in 003 and 005.  To install it on your machine, see the <a href="../../../resources/index.shtml#LS">resources</a> page.
+<p>
+Some ground rules (for this and future homeworks):
+<ul>
+<li> Get to know the  LogiSim "Help" menu.  The documentation is pretty good, and we like it when you try to debug circuits on your own before asking for help.
+</ul>
+<p>
+<hr>
+<h3>Q1</h3>  (This is the only question for homework 0)
+<hr>
+<p>
+Using only 2-input NAND gates, build:
+<ul>
+<li> a NOT gate
+<li> a 2-input AND gate
+<li> a 2-input OR gate
+<li> a 2-input XOR gate
+<li> a 2-input NOR gate
+</ul>
+Try to use the <b>fewest</b> NAND gates possible.
+<p>
+</body> </html>

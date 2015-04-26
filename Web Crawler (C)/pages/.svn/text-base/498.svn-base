@@ -1,0 +1,110 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July26
+3
+<html><head><title>July 26: Loose Ends, Traps</title></head>
+
+<body>
+
+<h1>July 26: Loose Ends, Traps</h1>
+
+
+<hr><h2>1) Instruction Cycle Redux</h2><hr>
+
+Recall the instruction cycle, which we briefly mentioned last week.
+In the LC-3 architecture, each instruction goes through six phases:
+
+<ul>
+<li><b>FETCH</b>: get next instruction from memory, load into IR
+<li><b>DECODE</b>: figure out which instruction we're working with
+<li><b>EVALUATE ADDRESS</b>: determine memory address needed to process instruction
+<li><b>FETCH OPERANDS</b>: obtain source operands needed to process instruction
+<li><b>EXECUTE</b>: well, execute the function
+<li><b>STORE RESULT</b>: write result to final destination.
+</ul>
+
+This six-phase instruction cycle is just for the LC-3.  Other
+architectures may have a different number of phases.
+However, <i>every</i> architecture has some instruction cycle.  The
+LC-3 instruction cycle is a good representative example.<p>
+
+To better understand what's going on with the instruction cycle, lets
+take a representative instruction and carry it through the cycle.<p>
+
+<hr>Instruction: <b>LDR R3 R2 #4</b>   ; R3 <-- M[R2 + 4]<p>
+
+Q:  What is the hex value of this instruction?<p>
+
+Next, look at the data path and see what needs to be done in each
+phase of the instruction cycle to execute this instruction.
+<ul>
+<li><b>Fetch</b> #1:  
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAR <- PC
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PC <- PC + 1       
+<li><b>Fetch</b> #2:  MDR <- M[MAR]
+<li><b>Fetch</b> #3:  IR <- MDR
+<li><b>Decode</b>: IR[15:12] == 0110.  We have an LDR instruction!
+<li><b>Evaluate Address</b>:  MAR <- R2 + SEXT(IR[5:0])
+<li><b>Fetch Operands</b>:  MDR <- M[MAR]
+<li><b>Execute</b>:  nothing.
+<li><b>Store Result</b>:  R3 <- MDR
+</ul>
+We discussed some questions in class and noted that:
+<ul>
+<li> We need to spend three clock cycles during <b>FETCH</b> to load
+the next instruction into the instruction register because MAR and MDR
+are how we interface with memory.
+<li> In the meantime, we're able to increment the PC.  We do this because we often progress through a program sequentially, one instruction after the other.
+<li> The <b>DECODE</b> phase doesn't do much more than decode the opcode.  But we need to do this before we can decide what to do with the rest of the instruction.
+</ul>
+
+We also discussed how this takes seven clock cycles <i>at minimum</i>,
+but it might be more precise to describe this as five clock
+cycles <i>plus</i> two memory references, since we don't know exactly
+how long it will take to load memory.
+
+<p> We also noted several of the control flags that need to be set in
+order to make all of this happen.  While not exhaustive, it gives a
+picture of what goes into actually executing an LC-3 instruction.
+
+<p>
+<hr><h2>2) Traps!</h2><hr>
+It's a <a href="http://www.youtube.com/watch?v=piVnArp9ZE0&feature=related"><b>TRAP!</b></a><p>
+
+Recap from Friday:
+<ul>
+<li>Traps give control to the OS to perform tasks via a special form of subroutine.
+<li>Pointers to each different subroutine are stored in the trap vector table.  The contents of each memory slot in the table contain starting addresses for each trap subroutine.  
+<li>The location of each entry in the trap vector table is passed to the system as an argument to the TRAP ISA instruction.
+<li>The trap vector table lives in memory addresses x0000 through x00FF.  The subroutines are part of the operating system, which lives at x0200-x2FFF.  (<b>Note:</b>  the lc-3 simulator on windows appears to place the OS code elsewhere.  This isn't wrong, since it's not part of the <i>architecture</i>) 
+</ul>
+
+<hr><h3>Executing a TRAP instruction</h3>
+
+<ul>
+<li>...the first few phases are similar to the LDR example...
+<li><b>Evaluate Addresses</b>: MAR <- ZEXT(IR[7:0])
+<li><b>Fetch Operands</b>: MDR<- M[MAR]; R7 <- PC
+<li><b>EXECUTE</b>:  PC <- MDR
+</ul>
+
+Note that the TRAP instruction automatically saves the (incremented)
+PC into R7.  Luckily, we've incremented it during the FETCH phase.
+This might cause problems for us, if we've been using R7 for something
+else (like, if we're in the middle of a subroutine).  How would we fix this?
+
+<hr>
+We looked at the six TRAP subroutines that are currently supported in the LC-3:
+
+<center><img src="tableA2.jpg" alt="oops" width="90%"></img></center>
+
+
+Question:  Why would you want to use TRAPs to implement I/O?<p>
+Answer:
+<ul>
+<li>ease of use.  Don't need to remember how I/O is implemented, since the TRAP does it for you.
+<li>security.  I/O is a very low-level thing.  You might have many processes using I/O.  Do you really want application programmers to be messing with it (intentionally or unintentionally)?  TRAPS make sure the I/O is accessed in a uniform way.
+</ul>
+<hr>
+<h1>That's as far as we got.</h1>
+
+</body>
+</html>

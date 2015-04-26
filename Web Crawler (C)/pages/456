@@ -1,0 +1,77 @@
+http://www.cs.dartmouth.edu/~an/publications.html
+3
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Xiaobo An's Homepage</title>
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+    <h1>Xiaobo An</h1>
+            <h2>
+            <a href="index.html">Homepage</a>  |  <a href="publications.html">Publications</a>  |  <a href="resume.pdf">Resume</a>  |  <a href="contact.html">Contact</a>
+            </h2>            
+</div>
+<!-- end header -->
+<div id="wrapper">
+	<!-- start page -->
+	<div id="page">
+        <!-- start content -->
+		<div id="fullpage">
+            <div class ="post">
+                <h2 class="title">"AppProp: All-Pairs Appearance Space Edit Propagation", Xiaobo An, Fabio Pellacini, ACM Transactions on Graphics  (Siggraph), 2008</h2>
+                <div style="clear: both;">&nbsp;</div>
+                <div class="entry"><img src="images/appprop.png" alt="" width="200" height="231" class="alignleft" />
+                <p><strong>We present an intuitive and efﬁcient method for editing the ap- 
+pearance of complex spatially-varying datasets, such as images 
+and measured materials. In our framework, users specify rough 
+adjustments that are reﬁned interactively by enforcing the policy 
+that similar edits are applied to spatially-close regions of similar 
+appearance. Rather than proposing a speciﬁc user interface, our 
+method allows artists to quickly and imprecisely specify the initial 
+edits with any method or workﬂow they feel most comfortable with. 
+An energy optimization formulation is used to propagate the initial 
+rough adjustments to the ﬁnal reﬁned ones by enforcing the editing 
+policy over all pairs of points in the dataset. We show that this for- 
+mulation is equivalent to solving a large linear system deﬁned by 
+a dense matrix. We derive an approximate algorithm to compute 
+such a solution interactively by taking advantage of the inherent 
+structure of the matrix. We demonstrate our approach by editing 
+images, HDR radiance maps, and measured materials. Finally, we 
+show that our framework generalizes prior methods while providing 
+signiﬁcant improvements in generality, robustness and efﬁciency. [<a href="http://www.cs.dartmouth.edu/~fabio/publication.php?id=appprop08">pdf/video</a>] 
+
+</strong></p>
+                </div>
+            </div>
+            <div class ="post">
+                <h2 class="title">"User-Controllable Color Transfer", Xiaobo An, Fabio Pellacini, Computer Graphics Forum (Eurographics), 2010</h2>
+                <div style="clear: both;">&nbsp;</div>
+                <div class="entry"><img src="images/ucct.png" alt="" width="680" height="194" class="alignleft" />
+                <p><strong>This paper presents an image editing framework where users use reference images to indicate desired color edits. 
+In our approach, users specify pairs of strokes to indicate corresponding regions in both the original and the 
+reference image that should have the same color “style”. Within each stroke pair, a nonlinear constrained para- 
+metric transfer model is used to transfer the reference colors to the original. We estimate the model parameters by 
+matching color distributions, under constraints that ensure no visual artifacts are present in the transfer result. To 
+perform transfer on the whole image, we employ optimization methods to propagate the model parameters deﬁned 
+at each stroke location to spatially-close regions of similar appearance. This stroke-based formulation requires 
+minimal user effort while retaining the high degree of user control necessary to allow artistic interpretations. We 
+demonstrate our approach by performing color transfer on a number of image pairs varying in content and style, 
+and show that our algorithm outperforms state-of-the-art color transfer methods on both user-controllability and 
+visual qualities of the transfer results. [<a href="http://www.cs.dartmouth.edu/~fabio/publication.php?id=ucct10">pdf</a>]</strong></p>
+                </div>
+            </div>
+		</div>
+		<!-- end content -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end page -->
+</div>
+<div id="footer">
+	<p class="copyright">&copy;&nbsp;&nbsp;2009 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+	<p class="link"><a href="#">Privacy Policy</a>&nbsp;&#8226;&nbsp;<a href="#">Terms of Use</a></p>
+</div>
+</body>
+</html>

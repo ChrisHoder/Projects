@@ -1,0 +1,53 @@
+
+
+
+
+output of make command
+gcc -Wall -pedantic -std=c99 -c indexer.c List.c saveFile.c
+gcc -ggdb -Wall -c getFiles.c
+gcc -Wall -pedantic -std=c99 -o indexer getFiles.o indexer.o List.o saveFile.o -L../utl/ -ltseutl
+
+
+
+
+Test with no Inputs
+indexer
+Usage: indexer [TARGET_DIRECTORY] [RESULTS FILENAME] [RESULTS FILENAME] [REWRITTEN FILENAME]
+
+
+
+
+Test with one input
+indexer ../pages
+Usage: indexer [TARGET_DIRECTORY] [RESULTS FILENAME] [RESULTS FILENAME] [REWRITTEN FILENAME]
+
+
+
+
+Test with 3 inputs
+indexer ../pages index.dat index.dat
+Usage: indexer [TARGET_DIRECTORY] [RESULTS FILENAME] [RESULTS FILENAME] [REWRITTEN FILENAME]
+
+
+
+
+Test with bad directory
+indexer ./asdfkjasf index.dat
+
+
+
+
+Test of indexer in regular mode
+indexer ../pages index.dat
+
+
+
+
+Test of indexer in test mode
+indexer ../pages index.dat index.dat new_index.dat
+
+
+
+
+Test of the difference
+diff index.dat new_index.dat

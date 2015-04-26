@@ -1,0 +1,161 @@
+http://www.cs.dartmouth.edu/~weibel/minksum.php
+3
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+      Christophe Weibel at Dartmouth
+    </title>
+    <meta name="author" content="Christophe Weibel">
+    <link rel="stylesheet" href="style.css" type=" ">
+  </head>
+  <body>
+    <div id="pagetitle">
+      Christophe Weibel at Dartmouth
+    </div>
+    <div id="sidebar">
+      <!-- menu -->
+      <div class="topmenu">
+        <a href="index.php">Main page</a>
+      </div>
+      <div class="box_title blue">
+        Research
+      </div>
+      <div class="box grey">
+        <a href="publications.php">Publications</a><br>
+        <a href="research.php">Research interests</a><br>
+        &nbsp;&nbsp;<a href="hirsch.php">Hirsch conjecture</a><br>
+        &nbsp;&nbsp;<a href="minksum.php">MinkSum</a><br>
+        &nbsp;&nbsp;<a href="minperi.php">Min perimeter convex hull</a>
+      </div>
+      <div class="box_title blue">
+        Links
+      </div>
+      <div class="box grey">
+        <a href="http://www.cs.dartmouth.edu">Computer Science</a><br>
+        <a href="http://www.dartmouth.edu">Dartmouth College</a><br>
+        <a href="http://www.math.mcgill.ca/~vetta/DiscreteGroup/">McGill Discrete Math Group</a><br>
+        <a href="http://roso.epfl.ch">ROSO</a>
+      </div>
+      <div class="box_title blue">
+        Personal
+      </div>
+      <div class="box grey">
+        <a href="http://picasaweb.google.com/anthony.weibel">Pictures</a><br>
+        <a href=cv.php>Curriculum Vitae</a> <a href=cvWeibel.pdf>(PDF)</a>
+      </div>
+    </div>
+    <div id="content">
+<script type="text/javascript">
+<!--
+
+function openWindow(text) {
+  fenetre = window.open("", "", "width=500,height=400");
+  fenetre.document.write(text+"<table width='100%'><tr><td align='center'><input type='button' value='close' onclick='window.close()'><\/td><\/tr><\/table><br>");
+  fenetre.document.close();
+}
+
+//-->
+</script>
+<h1>The MinkSum Program</h1>
+<p>
+   The MinkSum program takes as input the vertices of a set
+   of polytopes and outputs the vertices of their
+   <a href="mink.php">Minkowski sum</a>.
+   It is based on an algorithm of <a href="http://www.ifor.math.ethz.ch/~fukuda/fukuda.html">Komei Fukuda</a>.
+</p>
+<p>
+    I have published a conference paper on the implementation:
+<div class="box grey">
+    Weibel, C. "Implementation & parallelization of a reverse-search algorithm for Minkowski sums".<br>
+    In <i>Proceedings of the 12th Workshop on Algorithm Engineering and Experiments  (ALENEX 2010)</i>, pp. 34-42.<br>
+[<a href='javascript:nothing()' onclick='openWindow("@InProceedings{Weibel09,<br>affiliation = {McGill},<br>author = {Weibel, Christophe},<br>booktitle = {Proceedings of 12th Workshop on Algorithm Engineering and Experiments (ALENEX 2010)},<br>keywords = {Minkowski Sums; Polytopes; Implementation},<br>location = {Austin, Texas},<br>pages = {34--42},<br>review = {REVIEWED},<br>status = {PUBLISHED},<br>title = {Implementation and parallelization of a reverse-search algorithm for {M}inkowski sums},<br>year = {2010}<br>}<br>")'>Bibtex</a>]
+</div>
+    David Eppstein praised the talk <a href="http://11011110.livejournal.com/189421.html">in his blog</a>!
+</p>
+<h2>Download</h2>
+<p>
+    <a href="MINKSUM_1.6.2.tar.gz">Download the latest version (1.6.2)</a>
+</p>
+<p>
+    The most recent versions offer the possiblity
+    to use parallel processing to compute the solution faster
+    if you have a computer with multiple cores.
+    So far, the implementation cannot be run on clusters.
+</p>
+<p>
+    <a href="MINKSUM_1.6.2f.tar.gz">Download the floating-point version (1.6.2f)</a>
+</p>
+<p>
+      Normally, MINKSUM uses GMP to execute computations in exact precision.
+      This ensures a stable program and exact results. The disadvantages
+      of using floating-points for computations is that the program might
+      crash, loop infinitely or even give wrong results. The advantage
+      is that it is a lot faster (about 20 times). It seems rather
+    stable, however. If your instances are relatively simple, you might
+    be interested by this version.
+</p>
+<h3>
+   Release notes
+</h3>
+<p>
+<ul>
+    <li> 1.6.2f: Uses floating-point numbers. Its seems stable,
+	and is much faster, but it could well have stability issues.
+    <li> 1.6.2: Fixed a compilation issue with recent versions of gcc.
+Many thanks go to Benjamin Kern and Johannes Rauh for their help with this.
+     Also the configuration script now attempts to detect if GMP and CDD are
+     already installed before compiling them
+    <li> 1.6.1: Fixed a memory leak which could cause your computer to
+     run out of memory on large computations
+    <li> 1.6.0: Added parallel implementations
+</ul>
+</p>
+<h3>
+   Python Numpy interface
+</h3>
+<p>
+Benjamin Kern has written a python interface to the library!
+</p>
+<p>
+It is available on <a href="http://ifatwww.et.uni-magdeburg.de/syst/about_us/people/kern/index.shtml">his web page</a>.
+</p>
+<h3>
+How to use the program
+</h3>
+<p>
+The program should be compiled by typing "./configure" and "make" in the main directory of the archive.
+The executables are then found in the src/ directory. The program is run by typing
+
+<div class="box grey">./minkSum [options] &lt; input-file &gt; output-file</div>
+
+so that the input is read from stdin and the output is written to stdout.<br>
+
+Here are the options:
+<dl>
+<dt>-h or --help</dt>
+<dd>print this help message</dd>
+<dt>-c</dt>
+<dd>write also the normal cone of vertices of the solution. Slower.</dd>
+<dt>-s</dt>
+<dd>write only vertices coordinates of the solution.</dd>
+<dt>-n N</dt>
+<dd>for minkSumFork and minkSumForkGrid, compute the sum in parallel using N processes</dd>
+<dt>-d</dt>
+<dd>write debug information to stderr.</dd>
+<dt>-m</dt>
+<dd>mute. Don't write anything to stderr</dd>
+<dt>-p</dt>
+<dd>ignore vertices who don't have a positive maximizer</dd>
+</dl>
+
+    </div>
+    <div id="footer">                
+      <p>[ <a href="http://www.cs.dartmouth.edu/">Computer Science</a> ]<br>
+      <p><i>September 3rd,&nbsp; 2010</i>
+    </div>
+  </body>
+</html>

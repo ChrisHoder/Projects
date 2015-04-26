@@ -1,0 +1,71 @@
+http://www.cs.dartmouth.edu/~lkf/cosc106.html
+3
+<!DOCTYPE HTML SYSTEM "html.dtd">
+<HTML><HEAD><TITLE> COSC 106: Home Page </TITLE></HEAD>
+<BODY BGCOLOR="#FFFFee" TEXT="000000" LINK="0000C1" VLINK="FF0000" 
+ALINK="FF6CF8">
+<H2>COSC 106: Numerical Linear Algebra</H2>
+Fall 2009 <br>
+MWF 1:45-2:50, Sudikoff 115
+<p>
+
+<li> <b> Course Outline </b>
+<p>
+This course is about how to solve, computationally,
+linear algebra problems.  It is not a course to introduce
+linear algebra (you are expected to already have some background
+in this - see prerequisites), although we will review this material 
+as needed and you might be asked to demonstrate understanding of this.
+It is also not a course on the applications of linear algebra.
+(For that, you could take COSC 36/136, for example.)
+Rather, it is on how to solve those linear algebra problems that
+you get in your applications: we will study the <i> algorithms </i> of 
+linear algebra.  Or, to quote one of the authors of our textbook (see
+the Appendix)
+<p>
+ ``Numerical analysis is the study of algorithms for the problems
+of continuous mathematics.''  
+<p>
+Please read the Appendix of the text book before the second class for a
+much more insightful and thorough discussion about what this course is about.  
+
+<li> <b> Topics </b>
+<p> 
+This is a rough and tentative syllabus, that I have essentially copied
+from the textbook we are using.
+<ul>
+<li> orthogonal vectors, norms, singular value decomposition
+<li> QR factorization, Gram-Schmidt orthogonalization, 
+and least squares problems
+<li> conditioning and stability
+<li> Gaussian elimination and Cholesky factorization
+<li> eigenvalue problems, Raleigh quotient, QR algorithm
+<li> iterative methods: Arnoldi, Lanczos, conjugate gradient
+<li> preconditioning
+</li> </ul> <p>
+
+<li> <b> Textbook </b>
+<p>
+This is the main text book.  We will also use supplementary material.
+<p>
+L. N. Trefethen and D. Bau. 
+<i>Numerical Linear Algebra</i>, SIAM, 1997.
+<p>
+
+<li> <b> Prerequisites </b>
+<p> Familiarity with linear algebra and with computers; 
+"mathematical maturity" <p>
+
+<li> <b> Additional Information </b>
+<p>
+There will be weekly homeworks, and two exams in this course.  
+The homeworks will involve a mix of problem solving, proving, and 
+programming in Matlab.
+<HR>
+<ADDRESS> 
+Further information can be obtained from the instructor the first
+day of class.
+<HR></ADDRESS> 
+
+<ADDRESS>Last updated September 2009.</ADDRESS>
+</BODY></HTML>

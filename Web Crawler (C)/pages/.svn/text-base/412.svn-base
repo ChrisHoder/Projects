@@ -1,0 +1,129 @@
+http://www.cs.dartmouth.edu/~miluzzo/research.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Title      : Puzzled
+Version    : 1.0
+Released   : 20080706
+Description: A wide two-column design suitable for blogs and small websites.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Emiliano Miluzzo :: research</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<!-- Google  analytics stuff start -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19440560-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google  analytics stuff end -->
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1>Emiliano Miluzzo</h1>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="current_page_item"><a href="#">Research</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<div id="headerbg">
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<!-- start latest-post -->
+		<div id="latest-post-2" class="post">
+			<h1 class="title">my research</h1>
+			
+			<div class="entry">
+				<p>My work as a PhD student is focused on spearheading a new area of research on mobile phone sensing. As an experimental computer scientist, I have designed, built, and evaluated new mobile sensing applications, algorithms, and systems for a number of smartphone platforms, published results in top conferences (e.g., ACM SenSys, ACM MobiSys) and workshops (e.g., ACM MobiHeld, ACM HotMobile, EWSN), and had systems I built used by 1000s of people (e.g., CenceMe on the Apple App Store for the iPhone) across the globe. I believe that the mobile phone will become even more central to people's lives across a wide set of applications domains including social networks, green applications, global environmental monitoring, personal, and community healthcare, sensor augmented gaming, virtual reality, and smart transportation systems.</p>
+
+				<p>Selected papers and number of citations from Google Scholar:</p> 
+
+				<p><a href="http://www.cs.dartmouth.edu/~miluzzo/papers/cenceme_sensys08.pdf">CenceMe</a> (SenSys 08) cited by 142<br>
+				<a href="http://www.cs.dartmouth.edu/~sensorlab/funneling-mac">Funneling-MAC</a> (SenSys 06) cited by 112<br>
+				<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/metrosense06.pdf">MetroSense</a> (Wicon 06) cited by 104<br> 
+				<a href="http://sensorlab.cs.dartmouth.edu/pubs/a6-eisenman.pdf">BikeNet</a> (SenSys 07) cited by 106<br> 
+				<a href="http://www.cs.dartmouth.edu/~sensorlab/pubs/metrosense-ic.pdf">The Rise of People-Centric Sensing</a> (IEEE Internet Computing 08) cited by 87 <br>
+				<a href="http://www.cs.dartmouth.edu/~miluzzo/papers/miluzzo_EWSN08.pdf">Mobile radio characterization</a> (EWSN 08) cited by 21 <br>
+				<a href="http://www.cs.dartmouth.edu/~sensorlab/pubs/SL-HotEmnets08.pdf">Mobile sensing and second life</a> (HotEmnets 08) cited by 16 </p>
+
+				<p>Some <a href="press.html">press</a> about my work.</p>
+
+				<p>The full list of my publications can be found <a href="publications.html">here</a>.</p>
+
+				<p>Two applications I'm currently working on that will revolutionize the way social networks 
+				and web search work.</p>
+				<p>
+				<img src="images/vibnicon-rounded.png" alt="" width="40" height="40" class="left" /> 
+				<a href="http://www.vibn.cenceme.org">VibN</a> and YouTube <a href="http://www.youtube.com/watch?v=U37G6uzTu5k">video</a>.
+				</p>
+				<br>
+				<p>
+				<img src="images/cencemeicon-rounded.png" alt="" width="40" height="40" class="left" /> 
+				<a href="http://www.cenceme.org">CenceMe</a> and YouTube <a href="http://www.youtube.com/watch?v=8rDFbTF47PA">video</a>.
+				</p>
+
+				<br>
+				<p>Patents: Emiliano Miluzzo, Nicholas D. Lane, Shane Eisenman and 
+				Andrew T. Campbell, <strong>System and Method for Injecting 
+				Sensed Presence into Social Networking Applications</strong>, 
+				U.S. Provisional Patent Application 60/976,371, September 28, 2007. </p>				
+
+			</div>
+		</div>
+		<!-- end latest-post -->
+		<!-- start recent-posts -->
+		
+		<!-- end recent-posts -->
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+
+<div id="footer">
+	<!-- empty footer -->
+</div>
+
+<div style="font-size: 0.8em; text-align: center;">
+<br />
+Based on template from <a href="http://www.zeroweb.org">Zeroweb.org</a><br />
+<br />
+</div>
+</body>
+</html>

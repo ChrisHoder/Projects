@@ -1,0 +1,35 @@
+http://www.cs.dartmouth.edu/%7Enfoti
+3
+<html>
+<head>
+<!-- This section is for the title and technical info of the page. -->
+</head>
+<body>
+
+<br>
+<h2>Nick Foti</h2>
+<p>
+I am a fourth year PhD student in the Computer Science Department at Dartmouth College.
+</p>
+
+<p>
+My research interests include machine learning and statistical methods 
+and applying them to time-evolving complex systems.<br>
+I am currently 
+interested in applying Bayesian methods (parametric and nonparametric) 
+to dynamic networks and data from <br>
+finance and econometrics. Additionally, 
+I study efficient learning and inference algorithms for these methods. 
+</p>
+
+
+<br>
+<b>Contact Information:</b><br>
+e-mail:  nick dot foti at dartmouth dot edu <br>
+Office:  157 Sudikoff <br>
+Phone: 603 646 8743 <br>
+<br>
+<br>
+
+</body>
+</html> 

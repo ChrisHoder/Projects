@@ -1,0 +1,414 @@
+http://www.cs.dartmouth.edu/~weibel/cv.php
+3
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+      Christophe Weibel at Dartmouth
+    </title>
+    <meta name="author" content="Christophe Weibel">
+    <link rel="stylesheet" href="style.css" type=" ">
+  </head>
+  <body>
+    <div id="pagetitle">
+      Christophe Weibel at Dartmouth
+    </div>
+    <div id="sidebar">
+      <!-- menu -->
+      <div class="topmenu">
+        <a href="index.php">Main page</a>
+      </div>
+      <div class="box_title blue">
+        Research
+      </div>
+      <div class="box grey">
+        <a href="publications.php">Publications</a><br>
+        <a href="research.php">Research interests</a><br>
+        &nbsp;&nbsp;<a href="hirsch.php">Hirsch conjecture</a><br>
+        &nbsp;&nbsp;<a href="minksum.php">MinkSum</a><br>
+        &nbsp;&nbsp;<a href="minperi.php">Min perimeter convex hull</a>
+      </div>
+      <div class="box_title blue">
+        Links
+      </div>
+      <div class="box grey">
+        <a href="http://www.cs.dartmouth.edu">Computer Science</a><br>
+        <a href="http://www.dartmouth.edu">Dartmouth College</a><br>
+        <a href="http://www.math.mcgill.ca/~vetta/DiscreteGroup/">McGill Discrete Math Group</a><br>
+        <a href="http://roso.epfl.ch">ROSO</a>
+      </div>
+      <div class="box_title blue">
+        Personal
+      </div>
+      <div class="box grey">
+        <a href="http://picasaweb.google.com/anthony.weibel">Pictures</a><br>
+        <a href=cv.php>Curriculum Vitae</a> <a href=cvWeibel.pdf>(PDF)</a>
+      </div>
+    </div>
+    <div id="content">
+          <h1>Christophe Weibel</h1>
+
+         <center><a href="cvWeibel.pdf">This Curriculum Vitae in PDF</a>
+         </center>
+
+        <table width="100%">
+
+          <tr>
+            <td>Dartmouth College</td>
+            <td align=right>office: +1 603 646 8871</td>
+          </tr>
+          <tr>
+            <td>Sudikoﬀ Lab: HB 6211 Room 208</td>
+            <td align=right>cell phone: +1 603 306 4132</td>
+          </tr>
+          <tr>
+            <td>Hanover, NH 03755 USA</td>
+            <td align=right>fax: +1 603 646 1672</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td align=right>e-mail: christophe.weibel@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Swiss and Swedish citizen</td>
+            <td></td>
+          </tr>
+
+        </table>
+        <h2>
+          Education and Employment
+        </h2>
+        <p>
+    <b>Research Associate</b>, from 2010<br>
+          Dartmouth College<br>
+            <i>Supervisor:</i> Prof. Lisa Fleischer
+        </p>
+        <p>
+          <b>Postdoctoral Fellow</b> from 2007 to 2010,<br>
+          McGill University, Montreal, Canada<br>
+              <i>Supervisor:</i> Prof. Bruce Shepherd
+        </p>
+        <p>
+          <b>Doctorate of Philosophy in Mathematics</b>, July 2007<br>
+              Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland<br>
+              <i>Dissertation:</i> <a href="papers/thesis.pdf">Minkowski sums of polytopes: Combinatorics and Computation</a><br>
+              <i>Supervisor:</i> Prof. Thomas M. Liebling and Prof. Komei Fukuda<br>
+              <i>Jury:</i> Prof. Peter Gritzmann and Prof. G&uuml;nter M. Ziegler
+        </p>
+        <p>
+          <b>IT Consultant</b> from 2000 to 2002,<br>
+
+              ELCA Informatique, Lausanne, Switzerland
+        </p>
+        <p>
+          <b>Master in Mathematics</b>, April 2000<br>
+              Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland<br>
+              <i>Dissertation:</i> Parallel implementation of a distinct elements simulation of a granular media
+<br>
+              <i>Supervisor:</i> Prof. Thomas M. Liebling and Jean-Albert Ferrez<br>
+              <i>Jury:</i> Didier M&uuml;ller
+        </p>
+
+        <h2>
+          Research Interests
+        </h2>
+        <ul>
+          <li>Discrete optimization
+          <li>Combinatorial and computational geometry
+          <li>Graph theory
+        </ul>
+        <h2>
+          Journal papers
+        </h2>
+        <dl>
+          <dt>Sylvain Lazard, Christophe Weibel, Sue Whitesides, Linqiao Zhang, 2010</dt>
+          <dd><b>A Succinct 3D Visibility Skeleton</b>
+    <br>Accepted in <i>Discrete Mathematics, Algorithms and Applications</i></dd>
+
+          <dt>Komei Fukuda, Christophe Weibel, 2010</dt>
+          <dd><b><a href="papers/ejc.pdf">Minkowski Sums of polytopes relatively in general position</a></b>
+    <br><i>European Journal of Combinatorics</i>, vol. 31 (2010), pp. 565-573</dd>
+
+	  <dt>Efi Fogel, Dan Halperin, Christophe Weibel, 2009</dt>
+          <dd><b>On the exact maximum complexity of Minkowski sums of convex polyhedra</b>
+								    <br><i>Discrete &amp; Computational Geometry</i>, vol. 42 (2009), pp. 654-669</dd>
+
+          <dt>Komei Fukuda, Christophe Weibel, 2007</dt>
+          <dd><b><a href="http://infoscience.epfl.ch/getfile.py?docid=12032&amp;name=FukWei%20on%20f-vectors&amp;format=pdf&amp;version=1">f-vectors of Minkowski additions of convex polytopes</a></b>
+            <br><i>Discrete &amp; Computational Geometry</i> vol. 37 (2007), pp. 503-516</dd>
+
+          <dt>Carolina Osorio et al., 2006</dt>
+          <dd>Carolina Osorio, Christophe Weibel, Pau Perez, Michel Bierlaire and Philippe Garnerin
+            <br><b><a href="http://infoscience.epfl.ch/getfile.py?docid=10319&amp;name=OsorWeibPereBierGarn06&amp;format=pdf&amp;version=1">Patient flow simulation as a tool for estimating policy impact</a></b>
+            <br><i>Swiss Medical Informatics</i>, vol. 58 (2006), pp. 33-36</dd>
+        </dl>
+
+        <h2>
+          Conference proceedings
+        </h2>
+        <dl>
+          <dt>Erin Chambers et al., 2010</dt>
+          <dd>Erin Chambers, Alejandro Erickson, Sandor Fekete, Jon Lenchner, Jeff Sember,
+            Venkatesh Srinivasan, Ulrike Stege, Svetlana Stolpner, Christophe Weibel, Sue Whitesides
+            <br><b><a href="http://arxiv.org/abs/1009.3469">Connectivity graphs of uncertainty regions</a></b>
+            <br>Accepted by the <i>International Symposium on Algorithms and Computation (ISAAC 2010)</i>
+</dd>
+	   <dt>Vida Dujmovic, William Evans, Stephen Kobourov, Giuseppe Liotta, Christophe Weibel, Stephen Wismath, 2010</dt>
+           <dd><b>On Graphs Supported by Line Sets</b>
+             <br>Accepted by the <i>18th International Symposium on Graph Drawing (GD 2010)</i> Konstanz, Germany</dd>
+
+	   <dt>Linqiao Zhang, Sylvain Lazard, Christophe Weibel, Sue Whitesides, 2010</dt>
+           <dd><b>On the Computation of the 3D Visibility Skeleton</b>
+             <br><i>Proceedings of the 16th Annual International Computing and Combinatorics Conference (COCOON 2010)</i> pp. 469-478, Nha Trang, Vietnam</dd>
+
+          <dt>Chandra Chekuri, Bruce Shepherd, Christophe Weibel, 2010</dt>
+          <dd><b><a href="http://arxiv.org/abs/1008.2136">Flow-Cut Gaps for Integer and Fractional Multiﬂows</a></b>
+            <br><i>Proceedings of the 21st Annual ACM-SIAM Symposium on
+    Discrete Algorithms (SoDA 2010)</i> pp. 1198-1208,
+       Austin, Texas</dd>
+
+          <dt>Christophe Weibel, 2010</dt>
+          <dd><b>Implementation and parallelization of a reverse-search algorithm for Minkowski sums</b>
+            <br><i>Proceedings of the 12th Workshop on Algorithm Engineering and Experiments (ALENEX 2010)</i> pp. 34-42, Austin, Texas</dd>
+
+          <dt>Linqiao Zhang, Hazel Everett, Sylvain Lazard, Christophe Weibel, Sue Whitesides, 2008</dt>
+          <dd><b>On the size of the 3D visibility skeleton: experimental results</b>
+            <br><i>Proceedings of the 16th Annual European Symposium on Algorithms (ESA 2008)</i>, Karlsruhe, 2008</dd>
+
+          <dt>Efi Fogel, Dan Halperin, Christophe Weibel, 2007</dt>
+          <dd><b>On the Exact
+          Maximum Complexity of Minkowski Sums of Convex Polyhedra</b>
+         <br><i>Proc. 23rd ACM Symposium on Computational Geometry</i>: pp. 319-326,
+Gyeongju, South Korea, 2007</dd>
+
+          <dt>Komei Fukuda, Christophe Weibel, 2005</dt>
+          <dd><b>Computing faces up to <i>k</i> dimensions
+of a Minkowski Sum of Polytopes</b>
+            <br><i>Proceedings of the 17th Canadian Conference on Computational Geometry (CCCG 05)</i>, pages 256-259</dd>
+        </dl>
+        <h2>
+          Preprint
+        </h2>
+        <dl>
+
+          <dt>Christophe Weibel, 2011</dt>
+          <dd><b><a href="http://arxiv.org/abs/1002.0155">Maximal f-vectors of Minkowski sums of large numbers of polytopes</a></b>
+            <br>Submitted to <i>Discrete &amp; Computational Geometry</i>
+</dd>
+
+          <dt>Guyslain Naves, Christophe Weibel, 2010</dt>
+          <dd><b><a href="http://arxiv.org/abs/1008.3653">Congestion in planar graphs with demands on faces</a></b>
+            <br>Manuscript
+</dd>
+
+</dd>
+
+          <dt>Komei Fukuda, Christophe Weibel, 2009</dt>
+          <dd><b>Facet computation for Minkowski sums of polytopes</b>
+           <br>Manuscript
+</dd>
+        </dl>
+
+
+        <h2>
+          Software
+        </h2>
+
+        <dl>
+          <dt><a href="minksum.php">MINKSUM</a></dt>
+          <dd>Computational geometry software in C++ based on an algorithm of Komei Fukuda for the 
+              computation of Minkowski sums of polytopes.
+              Sequential and parallel implementations.
+          </dd>
+        </dl>
+
+        <h2>
+          Talks
+        </h2>
+        <dl>
+        <dt>2010</dt>
+        <dd>
+	   <p>16th Annual International Computing and Combinatorics Conference (COCOON 2010), Nha Trang (Vietnam)
+	   <p>Invited talk at the CMS Summer Meeting, Fredericton (Canada)
+	   <p>Invited talk at Dartmouth College, Hanover (USA)
+	   <p><i>ACM-SIAM Symposium on Discrete Algorithms (SoDA 10)</i>, Austin (USA)
+	   <p><i>SIAM Workshop on Algorithm Engineering & Experiments (ALENEX 10)</i>, Austin (USA)
+        </dd>
+        <dt>2009</dt>
+        <dd>
+          <p>Discrete &amp; Mathematical Optimization Seminar, McGill University, Montréal (Canada)
+	  <p><i>20th International Symposium for Mathematical Programming (ISMP 09)</i>, Chicago (USA)
+	  <p><i>Canada-Japan Workshop on Discrete and Computational Geometry</i>, Tokyo (Japan)
+          <p>Invited talk at the Max Planck Institute, Saarbrücken (Germany)
+          <p>Combinatorial Geometry &amp; Optimization Seminar, EPF Lausannne (Switzerland)
+	  <p>Optimization &amp; Applications Seminar, ETH Zürich (Switzerland)
+          <p>Invited talk at Victoria University</i>, Victoria (Canada)
+        </dd>
+        <dt>2008</dt>
+        <dd>
+          <p>Discrete &amp; Mathematical Optimization Seminar, McGill University, Montréal (Canada)
+        </dd>
+        <dt>2007</dt>
+        <dd>
+          <p><i>European Workshop on Combinatorial Geometry</i>, Gratz (Austria)
+          <p><i>3ème cycle romand de recherche opérationnelle</i>, Zinal (Switzerland)
+        </dd>
+        <dt>2006</dt>
+        <dd>
+          <p><i>Joint Operations Research Days</i>, Lausanne (Switzerland)
+          <p><i>ADONET Meeting</i>, Lausanne (Switzerland)
+          <p><i>3ème cycle romand de recherche opérationnelle</i>, Zinal (Switzerland)
+        </dd>
+        <dt>2005</dt>
+        <dd>
+          <p>UC Berkeley Combinatorics Seminar, Berkeley (USA)
+          <p><i>Canadian Conference on Computational Geoemetry</i>, Windsor (Canada)
+          <p><i>Educational Workshop on Geometric Inequalities</i>, Firenze (Italy)
+        </dd>
+        </dl>
+        <h2>
+          Research Grants
+        </h2>
+        <ul>
+           <li>SNF Postdoctoral Fellowship<br>
+               Awarded by the Swiss National Fund<br>
+               40'000 CAD for one year (07-08) in McGill University
+           <li>SNF Doctoral Fellowship<br>
+               Awarded by the Swiss National Fund<br>
+               150'000 CHF over three years (04-07) in EPFL
+           <li>Research Fellowship<br>
+               Awarded by the Hospitals of the University of Geneva<br>
+               90'000 CHF over one year and a half (02-04) in EPFL
+        </ul>
+        <h2>
+          Invited Research Workshops
+        </h2>
+
+        <ul>
+           <li><i>January 2009 &amp; 2010</i>: International
+INRIA-McGill Workshop on Problems in Computational Geometry, Bellairs
+Research Institute of McGill University, Barbados, organized by Hazel
+Everett, Sylvain Lazard and Sue Whitesides
+
+           <li><i>November 2008</i>: Bonn Workshop on Combinatorial
+Optimization, Research Institute for Discrete Mathematics, University
+of Bonn, Germany, organized by William Cook, Bernhard Korte, László Lovász and Jens Vygen
+
+           <li><i>April 2008</i>: Workshop on Integer Programming,
+Bellairs Research Institute of McGill University, Barbados, organized
+by William Cook, Fritz Eisenbrand and Bruce Shepherd
+        </ul>
+
+
+        <h2>
+          Related Experience
+        </h2>
+        <h3>
+          Research
+        </h3>
+        <p>
+          <i>Reviewer</i>
+        </p>
+        <ul>
+          <li>IEEE Symposium on Foundations of Computer Science
+          <li>ACM Symposium on Computational Geometry
+          <li>SIAM Journal on Computing
+          <li>Discrete &amp; Computational Geometry
+          <li>Computational Geometry: Theory and Applications
+          <li>Operations Research
+          <li>Annals of Combinatorics
+          <li>Statistica Sinica
+          <li>Computer-Aided Design
+        </ul>
+        <p>
+          <i>Research Assistant</i>, Institute of Mathematics, EPFL, 2002-2004
+        </p>
+        <ul>
+
+          <li>Design and implementation of a hospital patient flow simulator
+          <li>Statistical analysis of patients surgery and recovery time
+        </ul>
+        <h3>
+          Teaching
+        </h3>
+        <p>
+          <i>Student project supervision</i>, McGill University, 2008
+        </p>
+        <ul>
+          <li> Yang Li: <i>Netflix Prize Competition</i>, supported by an ISM-CRM scolarship
+        </ul>
+        <p>
+          <i>Lecturer</i>, McGill University, 2007-2008
+        </p>
+        <ul>
+          <li> Linear Algebra (2009, 60 undergrad students)
+          <li> Polyhedral combinatorics for discrete optimization (2008, with Bruce Shepherd, 8 grad students)
+          <li> Honour Algorithm Design (2007, 12 undergrad students)
+        </ul>
+        <p>
+          <i>Teaching Assistant</i>, weekly exercise sessions and
+             exam redaction, Institute of Mathematics, EPFL, 2002-2007
+        </p>
+        <ul>
+           <li> Game Theory (2005 &amp; 2007, 20 grad students)
+           <li> Decision Models (2004 &amp; 2006, 30 grad students)
+           <li> Discrete and algorithmic geometry (2005, 25 grad students)
+           <li> Operations Research (2002 - 2004, 40 undergrad students)
+           <li> Linear Algebra (2003 - 2004, 200 undergrad students)
+        </ul>
+        <p>
+
+          <i>Student project supervision</i>, Institute of Mathematics, EPFL, 2002-2007
+        </p>
+        <ul>
+           <li><i>Modelisation of the compressive behavior of a fiber lacing</i> (Master Thesis)
+           <li><i>Sudoku Resolution</i>
+           <li><i>Size of production and purchasing lots</i>
+           <li><i>Strategy optimization for Mah-Jong</i>
+           <li><i>Simulator for the Hospitals of the University of Geneva</i>
+        </ul>
+        <h3>
+          Private Sector
+        </h3>
+        <p>
+          <i>IT Consultant</i>, ELCA, Lausanne, 2000-2002
+        </p>
+        <ul>
+
+          <li>Specification and implementation of components for a banking application
+          <li>Implementation of a database application for operational events
+        </ul>
+
+        <h3>
+          Duties
+        </h3>
+           <p><i>Webmaster</i>, ROSO lab, 2004-2007</p>
+           <p><i>Webmaster</i>, Association of Mathematicians from EPFL, 2000-2007</p>
+
+        <h3>
+          Competitions
+        </h3>
+        <ul>
+           <li>ACM Programming Contest<br>
+               EPFL team, Ulm 1997-1999
+           <li>Championnat de Jeux Mathématiques et Logiques<br>
+               4th place, Paris 1995
+           <li>International Mathematics Olympiad<br>
+               Swiss national team, Hong-Kong 1994
+        </ul>
+
+        <h3>
+          Languages
+        </h3>
+          <p><i>English, French</i>: fluent</p>
+          <p><i>German, Japanese</i>: working knowledge</p>
+    </div>
+    <div id="footer">                
+      <p>[ <a href="http://www.cs.dartmouth.edu/">Computer Science</a> ]<br>
+      <p><i>September 3rd,&nbsp; 2010</i>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+http://www.cs.dartmouth.edu/~cja/camp1
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Camp 1: Building Robots</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+
+<h2><a href="http://www.cs.dartmouth.edu/robotcamp">Summer Robotics Program, 2009</a></h2>
+<h2>Camp 1: Building Robots (<a href="iweb/index.html">Pictures!</a>)</h2>
+
+<b>When</b>:
+June 22 (Monday) - June 26 (Friday). 9am-noon Mon-Thu, and Friday will be
+a field trip.
+
+<br />
+
+<b>Where</b>:
+<a href="http://engineering.dartmouth.edu/">Thayer School of Engineering,</a>
+<a href="http://www.dartmouth.edu/">Dartmouth College</a>
+
+<br />
+<br />
+
+In this camp we will apply engineering principles while building a robot.
+See our
+<a href="poster.pdf">poster</a> for the Summer Robotics program this year.
+
+<h4>Schedule</h4>
+<ul>
+    <li><bf>Day 1</bf>. Assemble a robot:  We will build a line-crawler robot
+    from pre-built parts.
+    </li>
+    <li><bf>Day 2</bf>. Breadboarding: Build the circuit for the line-crawler
+    on a breadboard.</li>
+    <li><bf>Day 3</bf>. Printed Circuit Boards: Build the circuit by soldering
+    components onto a circuit board.</li>
+    <li><bf>Day 4</bf>. Fabrication: Assemble all components and make them run.
+    </li>
+    <li><bf>Day 5</bf>. Field trip to the
+    <a href="http://www.americanprecision.org/">American Precision Museum.</a>
+    </li>
+</ul>
+
+<h4>Reference Text</h4>
+<a href="http://www.robotroom.com/RBFB.html">"Robot Building for Beginners,"</a>
+David Cook.
+
+<br />
+<br />
+<br />
+Special thanks to Kevin Baron, Manager and Instructor,  The Thayer School of Engineering Machine Shop.
+
+<br />
+<br />
+<br />
+<em>Sponsored by
+The Office of the Provost, Thayer School of Engineering, 
+The Neukom Institute, Department of Computer Science, 
+of Dartmouth College
+</em>
+<hr />
+
+<div class="footer">
+	Last modified:
+<script type="text/javascript">
+document.write(document.lastModified);
+</script> ET
+
+</div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+http://www.cs.dartmouth.edu/~cbk/multimodal.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects | Multimodal protein structure </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="multimodal.php"><img src="img/proj/multimodal.png" alt="multimodal" /></a><div><a href="multimodal.php">Projects | Multimodal</a>: planned experimental investigation of structure</div></div></div>
+<div id="projbody"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php" class="navhere" >projects</a></span><span><a href="classes.php"  >classes</a></span><span><a href="pubs.php"  >pubs</a></span><span><a href="news.php"  >news</a></span>
+</div>
+	<div id="projcontent"><h3>Multimodal protein structure</h3>
+
+<p>With the extensive development of genomic sequencing and rapid
+protein expression, there are now many more targets available for
+protein structure determination than can be completed by even the most
+advanced automated methods.  Many of these targets also present
+well-known experimental difficulties for the traditional methods of
+crystallography and NMR.  However, help in interpreting the genomic
+data is available from computational techniques that use knowledge
+extracted from the database of experimentally determined structures,
+in order to predict structures for proteins with different sequences.
+The effective use of these computational techniques would be greatly
+enhanced by the ability to rapidly discriminate among and confirm
+predictions with experimental data that can be acquired rapidly and
+easily.  For example, appropriate experimental methods can provide
+measurements of distance (e.g. by chemical cross-linking of specific
+residues), assays of residue accessibility (e.g. by chemical
+modification of surface residues), and low-resolution
+characterizations of shape (e.g. by solution scattering).</p>
+
+<p>We are developing a comprehensive computational-experimental
+protocol for the rapid discrimination of predicted protein structure
+via multiple modes of experimental data.  The multimodal
+discrimination approach poses challenging computational problems in
+combining rather sparse, noisy information from different experimental
+methods and describing quantitatively the extent of discrimination
+provided.  Associated reasoning algorithms overcome problems of noise
+and sparsity by uncovering consistent sets of features, targeting
+clarifying queries in response to conflicts, and planning additional
+experiments.</p>
+
+<h4>Papers</h4>
+<ul>
+<li>T.E. Williamson, B.A. Craig, E. Kondrashkina, C.
+Bailey-Kellogg, and A.M. Friedman, "Analysis of self-associating
+proteins by singular value decomposition of solution scattering
+data", <i>Biophys. J.</i>, 2008, 94:4906-4923.
+<a href="abs.html#biophysj07">abstract</a>.
+<a href="http://www.biophysj.org/cgi/content/full/94/12/4906">official version</a>.
+</li>
+
+<li>X. Ye, A.M. Friedman, and C. Bailey-Kellogg,
+"Optimizing Bayes error for protein structure model selection by
+stability mutagenesis", Proc. CSB, 2008, pp. 99-108.
+<a href="abs.html#csb08">abstract</a>.
+<a href="papers/csb08.pdf">paper</a>.</li>
+
+<li>X. Ye, P.K. O'Neil, A.N. Foster, M.J. Gajda, J. Kosinski,
+M.A. Kurowski, A.M. Friedman, and C. Bailey-Kellogg, "Probabilistic
+cross-link analysis and experiment planning for high-throughput
+elucidation of protein structure", <i>Protein Sci.</i>, 2004, 13:3298-3313.
+<a href="abs.html#prosci04">abstract</a>.  
+<a href="http://www.proteinscience.org/cgi/content/full/13/12/3298">paper</a>.
+</li>
+
+<li>S. Potluri, A.A. Khan, A. Kuzminykh, J.M. Bujnicki, A.M. Friedman,
+and C. Bailey-Kellogg, "Geometric analysis of cross-linkability for
+protein fold discrimination", Proc. Pacific Symposium on Biocomputing
+(PSB), 2004.
+<a href="abs.html#psb04">abstract</a>.
+<a href="papers/psb04.pdf">pdf</a>.
+</li>
+
+</ul>
+
+	</div>
+	</div>
+
+	<div id="projnav">
+	<h4>Current projects</h4>
+	<ul class="pix">
+		<li><a href="multimodal.php"><img src="img/proj/multimodal-small.png" alt="multimodal" title="Multimodal protein structure" class="thisproj" /></a></li>
+		<li><a href="nmr.php"><img src="img/proj/nmr-graph-small.png" alt="nmr" title="NMR assignment"  /></a></li>
+		<li><a href="oligomer.php"><img src="img/proj/2hyn-small.jpg" alt="oligomer" title="Protein complexes"  /></a></li>
+		<li><a href="mrf.php"><img src="img/proj/mrf-small.png" alt="graphical models" title="Protein graphical models"  /></a></li>
+		<li><a href="recombination.php"><img src="img/proj/recomb-small.png" alt="recombination" title="Protein recombination"  /></a></li>
+		<li><a href="deimmunization.php"><img src="img/proj/deimm-small.png" alt="deimmunization" title="Protein therapeutic deimmunization"  /></a></li>
+	</ul>
+	</div>
+
+<div id="footer"></div>
+</div>
+</body>
+</html>
+	

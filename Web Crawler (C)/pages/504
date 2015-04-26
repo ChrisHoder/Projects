@@ -1,0 +1,468 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug06
+3
+<html><head><title>August 6: Variables, Control Flow, Functions</title></head>
+
+<body>
+
+<h1>August 6: Variables, Control Flow, Functions</h1>
+
+<hr><h2>0) Recap</h2><hr>
+
+
+<hr><h2>1) Variables</h2><hr>
+
+<h3>Two flavors:</h3>
+
+<p>(That is, in our simplification)</p>
+<hr><p>Global variables</p>
+<ul>
+<li>As we've seen so far...
+<li>Declared at the beginning
+<li>Pre-initialized to 0, unless we specify otherwise
+<li>Visible throught the program file
+</ul>
+
+
+<hr><p>Local variables</p>
+
+<ul>
+<li>Declared within a {...} code block
+<li>Visible only within that block, after declaration
+<li>Typically, declared at the start of a function, and visible only within that.
+</ul>
+
+<p><hr><b>Unitialized Local Variables</b>
+If we don't explicitly initialize a local variable,
+<ul>
+<li>it <i>will</i> have an initial value
+<li>we won't necessarily know what it is
+<li>and it could change.
+</ul>
+
+<p><b>Variable Names</b>
+<ul>
+<li>a.k.a. identifiers
+<li>letters, numbers, underscore '_'
+<li>identifiers must start with a letter or underscore.
+</ul>
+<hr>
+Where do local/global variables end up in assembly?
+<p><b>Global variables:</b>
+<ul>
+<li>all together in one region beginning with GLOBAL_DATA_START
+<li>use R4 + offset to reference each global variable
+<li>R4 points to the bottom of the global variable region
+<li>ADD R3, R4, #0<br>ldr R3, R3, #0
+</ul>
+<p><b>Local variables:</b>
+<ul>
+<li>also keep locals together in one region
+<li>store locals on the stack
+<li>use R5 (the "frame pointer") + offset to access each local variable
+<li>R5 points to <i>top</i> of local variable region.
+</ul>
+
+<p>
+<hr><p>Let's see the assembly code</p>
+
+<p><a href="code/not2.c"><b>not2.c</b></a>:
+<pre>
+int global_1 = 0x000F;
+int global_2;
+
+main() {
+
+  int local_1 = 0x00F0;
+  int local_2;
+
+  global_2 = ~global_1;
+  local_2 = ~local_1;
+
+  return 42;
+}
+
+</pre>
+<p><a href="code/not2.asm"><b>not2.asm</b></a>
+<pre>
+GLOBAL_DATA_POINTER .FILL GLOBAL_DATA_START
+GLOBAL_MAIN_POINTER .FILL main
+;main() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;main;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+main
+ADD R6, R6, #-2
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #-1
+
+ADD R6, R6, #-2
+;  int local_1 = 0x00F0;
+ADD R7, R4, #4
+ldr R7, R7, #0
+str R7, R5, #0
+;  global_2 = ~global_1;
+ADD R7, R4, #2
+ADD R3, R4, #0
+ldr R3, R3, #0
+not R3,R3
+str R3, R7, #0
+;  local_2 = ~local_1;
+ldr R7, R5, #0
+not R7,R7
+str R7, R5, #-1
+ADD R7, R4, #3
+ldr R7, R7, #0
+;}
+lc3_L1_not2
+STR R7, R5, #3
+ADD R6, R5, #1
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+
+
+GLOBAL_DATA_START
+global_1 .FILL #15
+L1_not2 .FILL lc3_L1_not2
+global_2 .BLKW 1
+L3_not2 .FILL #42
+L2_not2 .FILL #240
+.END
+</pre>
+
+<hr><h2>2) Control Flow</h2><hr>
+
+<hr><p>if-else</p>
+
+<pre>
+int x;
+int y;
+
+main() {
+
+  if (x > 3) 
+    y = 23;
+  else
+    y = 42;
+}
+</pre>
+
+<p> (<a href="code/if.c"><b>if.c</b></a>)
+
+<p><img src="img/if.jpg" alt="too bad" width="90%"></p>
+
+
+
+<hr><p>while</p>
+
+<pre>
+int x;
+int y;
+
+main() {
+
+  while (x < 23) {
+    x = x + 1;
+    y = y - 1;
+  }
+}
+</pre>
+
+<p> (<a href="code/while.c"><b>while.c</b></a>)
+
+<p><img src="img/while.jpg" alt="too bad" width="100%"></p>
+
+
+
+<hr><p>for</p>
+
+<pre>
+int x;
+int y;
+
+main() {
+
+  for (y = 0; x < 10; x++) {
+    y = y + 1;
+  }
+}
+
+</pre>
+equivalent to:
+<pre>
+int x;
+int y;
+
+main() {
+
+  y = 0;
+  while (x < 10) {
+    y = y + 1;
+    x++;
+  }
+}
+
+</pre>
+
+<p> (<a href="code/for.c"><b>for.c</b></a>)
+
+<p><img src="img/for.jpg" alt="too bad" width="100%"></p>
+
+
+
+<hr><p>switch...case</p>
+
+<p>
+<pre>
+int x;
+int y;
+
+main() {
+
+  switch (x) {
+  case 0:
+    y = 100;
+    break;
+  case 1:
+    y = 101;
+    break;
+  case 2:
+    y = 102;
+  default:
+    y = 103;
+  }
+
+}
+</pre>
+
+<p> (<a href="code/switch.c"><b>switch.c</b></a>)
+<p><img src="img/switch.jpg" alt="too bad" width="90%"></p>
+
+
+<hr><h2>3) Functions</h2><hr>
+
+<b>Basics</b>
+<ul>
+<li>function name, return type, parameters (i.e., arguments)
+<li>function uses arguments like local variables
+<li>sends a return value back with "return"
+<li><i>Caller</i> specifies arguments, uses return value
+</ul>
+
+<hr><p>Example: Fig 14.4</p>
+
+<p>
+<pre>
+/* transcribed from Fig 14-4
+
+ * we'll put the functions first, so that the compiler knows
+ * what we're talking about when we use them.
+ */
+
+int Volta(int q, int r) {
+  int k;
+  int m;
+
+  k = q + r;   /* make up something */
+
+  return k;
+}
+
+int Watt(int a) {
+  int w;
+
+  w = Volta(w,10);
+  
+  return w;
+}
+
+
+
+int main() {
+  int a;
+  int b;
+  
+  a = 23;
+  b = Watt(a);
+  b = Volta(a,b);
+
+}
+</pre>
+<p>
+(<a href="code/fig4.c"><b>fig4.c</b></a>)
+
+
+
+
+<hr><h3>Where do local variables live?</h3><hr>
+
+<p>In the "stack frame"  (a.k.a. "activation record") for that function's invocation</p>
+<p>When we enter a function...</p>
+<ul>
+<li>compiler reserves space on the stack for locals (and some other stuff)
+<li>compiler also sets frame pointer (i.e., R5) to point to highest
+address in frame being held for locals.
+</ul>
+
+<p>For example, take a look at the beginning of main.</p>
+<p><img src="img/main2.jpg" alt="too bad" width="70%">
+<p>(<a href="code/fig4.asm"><b>fig4.asm</b></a>)
+
+<p>(but note that this assembler was generated by lccx... which may differ from the book's code)</p>
+
+
+<hr><h3>How does the caller load/run function?</h3><hr>
+
+(continue with above example)
+
+<p>The caller:
+<ul>
+<li>pushes function argument(s) onto stack
+<li>jsr 
+<li>upon return, caller pops return value off stack.
+</ul>
+
+
+<hr><h2>4) The Stack Frame</h2><hr>
+<p>
+Looking at the big picture...
+<p>
+
+<p>Each function invocation gets some space reserved on the stack</p>
+<p><img src="img/fig14-5.jpg" alt="too bad" width="60%"></p>
+
+
+<hr><p>Within that stack frame, there's a region for local variables.</p>
+
+
+<hr><p>R5 (the "frame pointer") points to the highest address in that region.   We access local variables by using an offset from R5.</p>
+
+<p>
+<pre>
+#define MASK(X)  ( ((int)(X)) & 0x7FFF)
+
+
+int global1;
+int global2;
+
+
+main() {
+
+  int local1;
+  int local2;
+
+
+  printf("local1 lives at %x\n", MASK(&local1));
+  printf("local2 lives at %x\n", MASK(&local2));
+  printf("global1 lives at %x\n",MASK(&global1));
+  printf("global2 lives at %x\n",MASK(&global2));
+
+}
+</pre>
+(<a href="code/fun0.c"><b>fun0.c</b></a>)
+
+<hr><p>The big memory picture: fig12-7</p>
+
+<p><img src="img/fig12-7.jpg" alt="too bad" width="50%"></p>
+
+
+<hr><p>When we make a function call, the caller pushes its arguments onto the stack and jumps to the subroutine</p>
+
+
+<p>When it returns, it pops the return value off the stack.</p>
+<pre>
+#define MASK(X)  ( ((int)(X)) & 0x7FFF)
+
+
+int global1;
+int global2;
+
+
+int fun(int x) {
+
+  int f_local;
+
+  f_local = x + 42;
+  
+  printf("f_local lives at %x\n", MASK(&f_local));
+
+  return f_local;
+
+}
+
+main() {
+
+  int local1;
+  int local2;
+
+  local2 = fun(local1);
+
+
+  printf("local1 lives at %x\n", MASK(&local1));
+  printf("local2 lives at %x\n", MASK(&local2));
+  printf("global1 lives at %x\n",MASK(&global1));
+  printf("global2 lives at %x\n",MASK(&global2));
+
+}
+
+</pre>
+(<a href="code/fun1.c"><b>fun1.c</b></a>)
+<p>
+
+<hr>
+<p>
+One might wonder...
+<ul>
+<li>"Is the SP the same when it returns?"
+<li>"If not, do you just accumulate the arguments?"
+<li>"What happens on other architectures and compilers?"
+</ul>
+
+
+<p>So, let's try it...</p>
+<pre>
+#define MASK(X)  ( ((int)(X)) & 0x7FFF)
+
+
+int global1;
+int global2;
+
+
+int fun(int x) {
+
+  int f_local;
+
+  f_local = x + 42;
+  
+  printf("f_local lives at %x\n", MASK(&f_local));
+
+  return f_local;
+
+}
+
+main() {
+
+  int local1;
+  int local2;
+
+  local2 = fun(local1);
+
+  local2 = fun(local1);
+
+  printf("local1 lives at %x\n", MASK(&local1));
+  printf("local2 lives at %x\n", MASK(&local2));
+  printf("global1 lives at %x\n",MASK(&global1));
+  printf("global2 lives at %x\n",MASK(&global2));
+
+}
+
+</pre>
+
+(<a href="code/fun2.c"><b>fun2.c</b></a>)
+
+<p>
+
+</body>
+</html>

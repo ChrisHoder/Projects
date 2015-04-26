@@ -1,0 +1,187 @@
+http://www.cs.dartmouth.edu/~cbk/bio/schedule.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>CS 43/143 | Intro to Bioinformatics | Fall 2009</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+<div id="header">
+  <div id="title">CS 43/143, Fall 2009</div>
+  <div id="subtitle">Intro to Bioinformatics</div>
+</div>
+
+<div id="navigation">
+  <a href="index.html" class="navthere">About</a>
+  <a href="schedule.html" class="navhere">Schedule</a>
+</div>
+
+<div id="content">
+
+<p>This page will be updated regularly with current/upcoming
+topics. Notes will be provided for each class, linked from the date.
+Notes and some materials are password-restricted with your Dartmouth
+login (DND).  Feedback is appreciated&mdash;typos and broken links,
+suggestions for more detailed explanations, pointers to supporting
+materials on the web, etc.</p>
+
+<table id="schedule">
+
+<tr><th id="date">Date</th><th id="topics">Topics</th><th id="refs">References</th><th id="out">Out</th><th id="due">Due</th></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/09-23-intro.pdf">Sept 23</a></td><td>Introduction</td><td>
+<ul class="refs">
+<li>Hunter, <a href="http://compbio.uchsc.edu/Hunter/01-Hunter.pdf">Intro to molecular biology for the computer scientist</a></li>
+<li>Python <a href="http://www.python.org/doc/">docs</a> (including tutorial)</li>
+<li>Cormen et al., <a href="http://mitpress.mit.edu/algorithms/">Intro to Algorithms</a>, Ch. 15</li>
+</ul>
+</td><td>HW 0</td><td></td></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/09-25-pair.pdf">Sept 25</a></td><td>Pairwise sequence alignment</td><td>
+<ul class="refs">
+<li>Site: <a href="http://www.ebi.ac.uk/Tools/emboss/align/index.html">EMBOSS tool</a></li>
+<li>Tutorials: <a href="http://www.people.virginia.edu/~wrp/papers/ismb2000.pdf">Pearson</a>; <a href="http://www.ibm.com/developerworks/java/library/j-seqalign/index.html">Reiners</a></li>
+<li>Literature: <a href="https://ssl.cs.dartmouth.edu/~cbk/bio/papers/needleman-wunsch-1970.pdf">Needleman &amp; Wunsch</a> and <a href="https://ssl.cs.dartmouth.edu/~cbk/bio/papers/gotoh-1982.pdf">Gotoh</a>; <a href="https://ssl.cs.dartmouth.edu/~cbk/bio/papers/smith-waterman-1981.pdf">Smith &amp; Waterman</a></li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="off"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/09-28-search.pdf">Sept 28</a></td><td>Sequence search</td><td>
+<ul class="refs">
+<li>Sites: <a href="http://www.ncbi.nlm.nih.gov/BLAST/">BLAST</a>; <a href="http://fasta.bioch.virginia.edu/">FASTA</a></li>
+<li>Tutorials: <a href="http://www.people.virginia.edu/~wrp/papers/ismb2000.pdf">Pearson</a> (more); <a href="http://www.ncbi.nlm.nih.gov/BLAST/tutorial/">BLAST</a></li>
+<li>Literature: <a href="http://links.jstor.org/sici?sici=0027-8424%2819880415%2985%3A8%3C2444%3AITFBSC%3E2.0.CO%3B2-4">Pearson &amp; Lipman</a> (FASTA); <a href="https://ssl.cs.dartmouth.edu/~cbk/bio/papers/altschul-et-al-1990.pdf">Altschul et al.</a> and <a href="http://nar.oupjournals.org/cgi/reprint/25/17/3389.pdf">Altschul et al.</a> (BLAST)</li>
+</ul>
+</td><td>HW 1</td><td>HW 0</td></tr>
+
+<tr class="off"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/09-30-msa.pdf">Sept 30</a></td><td>Multiple sequence alignment</td><td>
+<ul class="refs">
+<li>Site: <a href="http://www.ebi.ac.uk/clustalw/">ClustalW</a></li>
+<li>Survey: <a href="http://dx.doi.org/10.1016/j.sbi.2006.04.004">Edgar &amp; Batzoglou</a></li>
+<li>Literature: <a href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&pubmedid=7984417">Thompson et al.</a> (ClustalW)</li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="off"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-02-struct-align.pdf">Oct 2</a></td><td>Structure alignment</td><td>
+<ul class="refs">
+<li>Protein structure: <a href="http://www.pdb.org">PDB</a> (see education, molecule of month); <a href="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mboc4.section.388">chapter</a> from <a href="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mboc4">MBOC</a></li>
+<li>Sites: <a href="http://www.cathdb.info/">CATH</a>; <a href="http://scop.mrc-lmb.cam.ac.uk/scop/">SCOP</a>; <a href="http://ekhidna.biocenter.helsinki.fi/dali_server/">DALI</a>; <a href="http://cl.sdsc.edu/ce.html">CE</a></li>
+<li>Literature: <a href="http://links.jstor.org/sici?sici=0036-8075%2819960802%293%3A273%3A5275%3C595%3AMTPU%3E2.0.CO%3B2-I">Holm &amp; Sander</a> (DALI); <a href="http://peds.oxfordjournals.org/cgi/content/abstract/11/9/739">Shindyalov &amp; Bourne</a> (CE)</li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="on"><td class="date">Oct 5</td><td>Continued</td><td></td><td>HW 2</td><td>HW 1</td></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-07-struct-predict.pdf">Oct 7</a></td><td>Structure prediction</td><td>
+<ul class="refs">
+<li>Sites: <a href="http://predictioncenter.org/">CASP</a>; <a href="http://www.salilab.org/modeller/modeller.html">MODELLER</a> and <a href="http://modbase.compbio.ucsf.edu/">ModBase</a>; <a href="https://genesilico.pl/meta2/">fold prediction metaserver</a>; <a href="http://robetta.bakerlab.org/">Robetta</a> and <a href="http://boinc.bakerlab.org/rosetta/">Rosetta @ home</a></li>
+<li>Literature: <a href="http://www.sciencedirect.com/science/article/B6WK7-45PKK87-P/1/ad6ea9267e6e06347d1b08711b24a3cc">Sali &amp; Blundell</a> (MODELLER); <a href="http://dx.doi.org/10.1006/jmbi.1996.0053">Lathrop &amp; Smith</a> (threading); <a href="http://www.sciencedirect.com/science/article/B6WK7-45VGF7T-N/1/797a5607c574d397f14b45fa4a0e8bdd">Simons et al.</a> (Rosetta)</li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-09-array-cluster.pdf">Oct 9</a></td><td>Microarray clustering</td><td>
+<ul class="refs">
+<li><a href="http://www.bio.davidson.edu/courses/genomics/chip/chip.html">Microarray</a> (flash animation)</li>
+<li>Sites: <a href="http://smd.stanford.edu/">Stanford microarray db</a>, <a href="http://www.bioinf.ebc.ee/EP/EP/EPCLUST/">EPCLUST</a></li>
+<li>Literature: <a href="http://www.pnas.org/cgi/content/abstract/95/25/14863">Eisen et al.</a> (hierarchical); <a href="http://www.pnas.org/cgi/content/abstract/96/6/2907">Tamayo et al.</a> (SOM); <a href="http://www.pnas.org/cgi/content/abstract/97/18/10101">Alter et al.</a> (SVD)</li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="off"><td class="date">Oct 12</td><td>Continued</td><td></td><td></td><td></td></tr>
+
+<tr class="off"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-14-array-classify.pdf">Oct 14</a></td><td>Microarray classification</td><td>
+<ul class="refs">
+<li>Literature: <a href="http://www.sciencemag.org/cgi/content/full/286/5439/531">Golub et al.</a> (voting); <a href="http://www.pnas.org/cgi/content/abstract/97/1/262">Brown et al.</a> (SVM)</li>
+<li>Surveys: <a href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&pubmedid=17981580">Ressom et al.</a> (phenotype classification); <a href="http://www.springerlink.com/link.asp?id=q87856173126771q">Burges</a> (SVM)</li>
+</ul>
+</td><td>HW 3</td><td>HW 2</td></tr>
+
+<tr class="off"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-16-hmm.pdf">Oct 16</a></td><td>Hidden Markov models</td><td>
+<ul class="refs">
+<li>HMMs: <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=18626&isnumber=698">Rabiner</a></li>
+<li>Profile HMMs: <a href="http://bioinformatics.oupjournals.org/cgi/content/abstract/14/9/755">Eddy</a>; <a href="http://people.binf.ku.dk/krogh/publications/ps/Krogh98a.pdf">Krogh</a>; <a href="http://www.soe.ucsc.edu/research/compbio/ismb99.tutorial.html">Cline et al.</a></li>
+<li>Sites: <a href="http://hmmer.janelia.org/">HMMER</a>; <a href="http://compbio.soe.ucsc.edu/HMM-apps/HMM-applications.html">SAM</a></li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="on"><td class="date">Oct 19</td><td>Continued</td><td></td><td></td><td></td></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-21-motif.pdf">Oct 21</a></td><td>Sequence motifs</td><td>
+<ul class="refs">
+<li>Literature: <a href="http://www.sdsc.edu/~tbailey/papers/meme.ml.pdf">Bailey &amp; Elkan, ML</a> (MEME); <a href="http://www.sdsc.edu/~tbailey/papers/ismb94.pdf">Bailey &amp; Elkan, ISMB</a> (MEME); <a href="http://links.jstor.org/sici?sici=0035-9246%281977%2939%3A1%3C1%3AMLFIDV%3E2.0.CO%3B2-Z">Dempster et al.</a> (EM)</li>
+<li>Sites: <a href="http://ca.expasy.org/prosite/">PROSITE</a>; <a href="http://meme.sdsc.edu/">MEME</a></li>
+</ul>
+</td><td>HW 4</td><td>HW 3</td></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-23-design.pdf">Oct 23</a></td><td>Protein design<td>
+<ul class="refs">
+<li><a href="http://www.sciencemag.org/cgi/content/abstract/278/5335/82">Dahiyat &amp; Mayo</a> (DEE-based); <a href="http://www3.interscience.wiley.com/cgi-bin/abstract/72506396/START">Pierce et al.</a> (DEE extension); <a href="http://www.sciencemag.org/cgi/content/abstract/302/5649/1364">Kuhlman et al.</a> (Rosetta-based)</li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="off"><td class="date">Oct 26</td><td class="cancel">No class</td><td></td><td></td><td></td></tr>
+
+<tr class="off"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/10-28-dock.pdf">Oct 28</a></td><td>Docking</td><td>
+<ul class="refs">
+<li>Literature: <a href="http://www3.interscience.wiley.com/journal/112726585/abstract">Sousa et al.</a> (survey); <a href="http://www.sciencedirect.com/science/article/B6WK7-45N4X8G-5C/1/58e09569da53675c1f1c51a1975c41c3">Gabb et al.</a> (FTDock); <a href="http://www3.interscience.wiley.com/journal/66000929/abstract">Norel et al.</a> (geom hashing)</li>
+<li>Sites: <a href="http://dock.compbio.ucsf.edu/">DOCK</a>;
+<a href="http://autodock.scripps.edu/">AutoDock</a>;
+<a href="http://www.sbg.bio.ic.ac.uk/docking/">FT Dock</a>;
+<a href="http://zdock.bu.edu">ZDock</a>;
+<a href="http://capri.ebi.ac.uk/">CAPRI</a></li>
+</ul>
+</td><td>Project</td><td>HW 4</td></tr>
+
+<tr class="off"><td class="date">Oct 30</td><td>Continued</td><td></td><td></td><td></td></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/11-02-ppi.pdf">Nov 2</a></td><td>Protein interaction networks</td><td>
+<ul class="refs">
+<li>Signaling: <a href="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mboc4.section.2743">chapter</a> from <a href="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mboc4">MBOC</a></li>
+<li>Literature: <a href="http://www.nature.com/nrg/journal/v5/n2/abs/nrg1272.html">Barabasi &amp; Oltvai</a> (network analysis review); <a href="http://www.sciencemag.org/cgi/content/full/295/5553/321">Tong et al.</a> (SH3 analysis); <a href="http://www.pnas.org/cgi/content/full/100/20/11394">Kelley et al.</a> (PathBlast)</li>
+<li>Sites: <a href="http://dip.doe-mbi.ucla.edu/">DIP</a></li>
+</ul>
+</td><td></td><td></td></tr>
+
+<tr class="on"><td class="date"><a href="https://ssl.cs.dartmouth.edu/~cbk/bio/09fall/11-04-reg.pdf">Nov 4</a></td><td>Gene regulatory networks</td><td>
+<ul class="refs">
+<li>Regulation: <a href="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mboc4.section.1269">chapter</a> from <a href="http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid=mboc4">MBOC</a></li>
+<li>Bayes nets: <a href="http://citeseer.ist.psu.edu/heckerman96tutorial.html">Heckerman</a>; <a href="http://ai.stanford.edu/~koller/Papers/Koller+al:SRL07.pdf">Koller et al.</a>; <a href="http://www.ai.mit.edu/~murphyk/Bayes/bayes.html">Murphy</a></li>
+<li>Literature: <a href="http://www.nature.com/cgi-taf/DynaPage.taf?file=/ng/journal/v22/n3/abs/ng0799_281.html&dynoptions=doi1035895836">Tavazoie et al.</a>; <a href="http://bioinformatics.oupjournals.org/cgi/reprint/19/suppl_1/i273">Segal et al.</a> and <a href="http://www.nature.com/cgi-taf/DynaPage.taf?file=/ng/journal/v34/n2/abs/ng1165.html&dynoptions=doi1067522722">Segal et al.</a></li>
+</ul>
+</td><td></td><td>Proposal</td></tr>
+
+<tr class="on"><td class="date">Nov 6</td><td class="cancel">No class</td><td></td><td></td><td></td></tr>
+
+<tr class="off"><td class="date">Nov 9</td><td>Continued</td><td></td><td></td><td></td></tr>
+
+<tr class="off"><td class="date">Nov 11</td><td class="cancel">Colloquium</td><td><a href="http://northstar-www.dartmouth.edu/~adk/index.shtml">Andy Kern</a> speaking at 4:30 in Steele 006: "The tortoise and the hare: finding the targets of selection in genomes"</td><td></td><td></td></tr>
+
+<tr class="off"><td class="date">Nov 13</td><td>Systems biology</td><td>Discussing <a href="http://www.sciencemag.org/cgi/content/full/292/5518/929">Ideker et al.</a>, "Integrated genomic and proteomic analyses of a systematically perturbed metabolic network", <i>Science</i> 2001</td><td></td><td></td></tr>
+
+<tr class="on"><td class="date">Nov 16</td><td>Next-gen sequencing</td><td>Discussing <a href="http://genomebiology.com/2009/10/3/R25/abstract/">Langmead et al.</a>, "Ultrafast and memory-efficient alignment of short DNA sequences to the human genome", <i>Genome Biology</i> 2009 (be sure to read additional file; see also <a href="http://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform">BWT background</a>) </td><td></td><td>Update</td></tr>
+
+<tr class="on"><td class="date">Nov 18</td><td>Enzyme design</td><td>Discussing <a href="http://www.sciencemag.org/cgi/content/abstract/319/5868/1387">Jiang et al.</a>, "De novo computational design of retro-aldol enzymes", <i>Science</i> 2008 and <a href="http://www3.interscience.wiley.com/journal/121602986/abstract">Zanghellini et al.</a>, "New algorithms and an in silico benchmark for computational enzyme design", <i>Protein Science</i> 2006</td><td></td><td></td></tr>
+<tr class="on"><td class="date">Nov 20</td><td>Phosphorlyation networks</td><td>Discussing <a href="http://stke.sciencemag.org/cgi/content/abstract/sigtrans;2/81/ra39">Tan et al.</a>, "Comparative analysis reveals conserved protein phosphorylation networks implicated in multiple diseases", <i>Science Signaling</i> 2009</td><td></td><td></td></tr>
+
+<tr class="off"><td class="date">Nov 30</td><td>Project presentations</td><td>Dan; Hao/Lei/Wenyu; Richard; Rui/Zhifei</td><td></td><td></td></tr>
+<tr class="off"><td class="date">Dec 1 <span class="xhour">[x]</span></td><td>Project presentations</td><td>Dan/Dov/Igor; Jen/John/Morgon; John/Jyo</td><td></td><td></td></tr>
+<tr class="off"><td class="date">Dec 2</td><td>Project presentations</td><td>Hannah; Jingzhou/Xiaoyu; Lu/Tuobin; Rouslan; Senate</td><td></td><td></td></tr>
+
+</table>
+
+</div>
+
+<div id="footer">
+<!-- hhmts start --> Last modified: Wed Nov 18 15:01:27 EST 2009 <!-- hhmts end -->
+</div>
+
+</div>
+
+</body>
+</html>

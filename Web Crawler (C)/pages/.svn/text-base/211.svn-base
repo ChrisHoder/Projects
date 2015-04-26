@@ -1,0 +1,58 @@
+http://www.cs.dartmouth.edu/~cbk/cbk.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Me </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="cbk.php"><img src="img/lab/cbk.jpg" alt="Mug shot" /></a><div></div></div></div>
+<div id="body"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php"  >projects</a></span><span><a href="classes.php"  >classes</a></span><span><a href="pubs.php"  >pubs</a></span><span><a href="news.php"  >news</a></span>
+</div>
+	<div id="content">
+<h3>Professional</h3>
+
+<p>I earned a BS/MS with <a href="http://www.media.mit.edu/~sandy/">Sandy Pentland</a> at <a href="http://web.mit.edu">MIT</a> and Bruce Flinchbaugh at Texas Instruments; earned a
+PhD with <a href="http://research.microsoft.com/en-us/um/people/zhao/">Feng Zhao</a> at <a href="http://www.cse.ohio-state.edu/">Ohio State</a> and <a href="http://www.parc.com/">Xerox PARC</a>; and conducted
+postdoctoral research with <a href="http://www.cs.duke.edu/~brd/">Bruce Donald</a> at <a href="http://www.cs.dartmouth.edu/">Dartmouth</a>.  I was an
+assistant professor at <a href="http://www.cs.purdue.edu/">Purdue</a> before I was recruited back to
+Dartmouth.  I have received an NSF Career award and an Alfred P. Sloan
+Foundation fellowship, along with regular grants from the NIH, NSF,
+and other organizations.</p>
+
+<h3>Personal</h3>
+
+<p>I grew up in Emory, VA, son of <a href="http://www.ehcweb.ehc.edu/faculty/fkellogg/">Fred</a> and Jeannette Kellogg.  I have a younger brother <a href="http://cetilia.org/">Mark</a>.  I met my wife Christine in college; she attended <a href="http://www.wellesley.edu">Wellesley</a>.  We live in the woods in Vermont with our daughter Amelia and cat Dorrie.</p>
+</p>
+
+<img src="img/cbk/amelia+christine.jpg" alt="amelia and christine" />
+<img src="img/cbk/amelia+chris.jpg" alt="amelia and chris" />
+<img src="img/cbk/dorrie.jpg" alt="dorrie" />
+
+</div>
+</div>
+<div id="footer"></div>
+</div>
+</body>
+</html>

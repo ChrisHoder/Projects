@@ -1,0 +1,68 @@
+http://www.cs.dartmouth.edu/~rangak/index.html
+3
+<html><head>
+<title>Home page of Ranganath Kondapally</title>
+<link type="text/css" href="index.css" rel="stylesheet" title="default"></head><body>
+
+<div id="pageHeader">
+					<h1>
+					<br>Ranganath Kondapally
+				</h1>
+				</div>
+
+
+	<div id="direct">
+		<h1>
+
+
+				<a href="index.html">Home</a>
+				<a href="Research.html">Research</a>
+				<a href="Resume.html">Resume</a>
+				<a href="Personal.html">Personal</a>
+				<a href="Contact.html">Contact</a>
+		</h1>	
+	</div>
+						<div id="central">
+	<div id="content">
+		<div id="Notes">
+		<!--	<div id="StickyNoteImg" >
+				<img src="StickyNote.png" width="100%" height="100%" align="left">
+			</div> -->
+			<div id="StickyNoteTxt" >
+				<b>CS4 students:</b><br/><br/> 
+				Office hrs:<br/>Sudikoff 112<br/>
+				Mon 3-4pm<br/><br/>Lab hrs:<br/>
+				Sun 7-9pm<br/>
+				<a href="mailto:&#114;&#097;&#110;&#103;&#097;&#107;&#064;&#099;&#115;&#046;&#100;&#97;&#114;&#116;&#109;&#111;&#117;&#116;&#104;&#046;&#101;&#100;&#117;">&#114;&#097;&#110;&#103;&#097;&#107;&#064;&#099;&#115;&#046;<i>&#068;</i>&#046;&#101;&#100;&#117;</a>
+			</div>
+		</div>
+		<div id="mesg">
+		<p id="intro">
+				I am a PhD student in Computer Science Department, Dartmouth College. 
+Previously, I worked with Microsoft India Development Center at Hyderabad. I was with the Microsoft Windows Terminal Services team and
+ was part of Windows Vista and Windows Server 2008  releases. Prior to that I completed my BTech(honors) in CS from IIIT-Hyderabad.
+		</p>
+<p id="PHeader">
+My research interests:</p>
+<p id="PBody">
+</p>
+<li>Algorithms</li>
+<li>Theoritical aspects of computer science - communication complexity, lower bounds etc</li>
+<p></p>
+
+
+				</div>
+				</div>
+				</div>
+
+				<div id="end">
+				<br>
+				</div>
+				<div id="bottom">
+				Designed &amp; maintained by K.Ranganath . Any queries/problems mail to 
+rangak AT cs [.] dartmouth [.] edu
+				<br>
+Microsoft Windows Terminal Services, Windows Vista and Windows Server 2008 are trademarks of Microsoft. <br>Acknowledgements to www.mezzoblue.com/zengarden for css resources and help
+				
+				</div>
+			</body></html>

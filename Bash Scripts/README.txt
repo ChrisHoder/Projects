@@ -1,0 +1,22 @@
+Lab 2 Scripts
+
+1. Birthday_match.sh
+   This script does not check to make sure that the date is of the form
+   MM/DD/YYYY it only checks that there are two inputs.
+
+2. leap_year.sh
+   This script only checks that there was only one input and does
+   not make sure that the input is a number. If a word is input
+   an incorrect output will be given.
+
+3. count_linesinfiles.sh
+
+4. wget_search.sh
+   Does not make sure that the data within the text file are correct
+   URLS. Only makes sure that the first input is a file that exists.
+   Also the wordss it searchs for can be numbers. this script will create
+   an html file in the folder for each URL in the text file.
+
+5. spy.sh
+   The extra credit part is included in this script. It will create a text file
+   for each user it is spying on to log the log in/log out times.

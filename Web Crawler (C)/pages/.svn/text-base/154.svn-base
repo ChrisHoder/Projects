@@ -1,0 +1,535 @@
+http://www.cs.dartmouth.edu/%7Efabio/publications.php
+3
+
+
+
+
+
+
+
+
+
+    
+
+
+<html>
+<head>
+  <link rel="stylesheet" href="style/fp-reset.css" type="text/css">
+    <link rel="stylesheet" href="style/fp-style-vertical.css" type="text/css"> 
+  </head>
+<body>
+<div class="wrapper">
+    <div class="header">
+    	<div class="logo">
+        	<div class="sitetitle"><a href="about.php">Fabio Pellacini</a></div>
+          	<div class="sitesubtitle">Associate Professor / Computer Science / Dartmouth</div>
+          </div>
+        <div class="nav">
+            <a href="about.php" class="navitem">About</a>
+            <a href="research.php" class="navitem">Research</a>
+            <a href="teaching.php" class="navitem">Teaching</a>
+            <a href="publications.php" class="navitem">Publications</a>
+            <a href="courses.php" class="navitem">Courses</a>
+            <a href="cv.pdf" class="navitem">CV</a>
+        </div>
+    </div>
+
+
+    <div class="content">
+<h1>Publications in SIGGRAPH&TOG</h1><div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=envylight10">
+			<img class="listthumbimg" src="publications/envylight10/envylight10-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=envylight10">EnvyLight: An Interface for Editing Natural Illumination</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>SIGGRAPH 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=matstudy10">
+			<img class="listthumbimg" src="publications/matstudy10/matstudy10-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=matstudy10">Toward Evaluating Material Design Interface Paradigms for Novice Users</a>
+		</h3>
+		<p>
+			W. B. Kerr, F. Pellacini<br/>SIGGRAPH 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=bssrdfprint10">
+			<img class="listthumbimg" src="publications/bssrdfprint10/bssrdfprint10-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=bssrdfprint10">Fabricating Spatially-Varying Subsurface Scattering</a>
+		</h3>
+		<p>
+			Y. Dong, J. Wang, F. Pellacini, X. Tong, B. Guo<br/>SIGGRAPH 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=brdfprint09">
+			<img class="listthumbimg" src="publications/brdfprint09/brdfprint09-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=brdfprint09">Printing Spatially-Varying Reflectance</a>
+		</h3>
+		<p>
+			W. Matusik, B. Ajdin, J. Gu, J. Lawrence, H. Lensch, F. Pellacini, S. Rusinkiewicz<br/>SIGGRAPH Asia 2009		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=lightstudy09">
+			<img class="listthumbimg" src="publications/lightstudy09/lightstudy09-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=lightstudy09">Toward Evaluating Lighting Design Interface Paradigms for Novice Users</a>
+		</h3>
+		<p>
+			W. Kerr, F. Pellacini<br/>SIGGRAPH 2009		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=subedit09">
+			<img class="listthumbimg" src="publications/subedit09/subedit09-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=subedit09">SubEdit: A Representation for Editing Measured Heterogeneous Subsurface Scattering</a>
+		</h3>
+		<p>
+			Y. Song, X. Tong, F. Pellacini, P. Peers<br/>SIGGRAPH 2009		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=cuts08">
+			<img class="listthumbimg" src="publications/cuts08/cuts08-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=cuts08">Fast, Realistic Lighting and Material Design using Nonlinear Cut Approximation</a>
+		</h3>
+		<p>
+			E. Cheslack-Postava, R. Wang, O. Akerlund, F. Pellacini<br/>SIGGRAPH Asia 2009		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=appprop08">
+			<img class="listthumbimg" src="publications/appprop08/appprop08-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=appprop08">AppProp: All-Pairs Appearance-Space Edit Propagation</a>
+		</h3>
+		<p>
+			X. An, F. Pellacini<br/>SIGGRAPH 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=appwand07">
+			<img class="listthumbimg" src="publications/appwand07/appwand07-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=appwand07">AppWand: Editing Measured Materials using Appearance-Driven Optimization</a>
+		</h3>
+		<p>
+			F. Pellacini, J. Lawrence<br/>SIGGRAPH 2007		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=mxsmp07">
+			<img class="listthumbimg" src="publications/mxsmp07/mxsmp07-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=mxsmp07">Matrix Row-Column Sampling for the Many Light Problem</a>
+		</h3>
+		<p>
+			M. Hasan, F. Pellacini, K. Bala<br/>SIGGRAPH 2007		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=lpaint07">
+			<img class="listthumbimg" src="publications/lpaint07/lpaint07-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=lpaint07">Lighting with Paint</a>
+		</h3>
+		<p>
+			F. Pellacini, F. Battaglia, K. Morley, A. Finkelstein<br/>TOG 2007		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=dti06">
+			<img class="listthumbimg" src="publications/dti06/dti06-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=dti06">Direct-to-Indirect Transfer for Cinematic Relighting</a>
+		</h3>
+		<p>
+			M. Hasan, F. Pellacini, K. Bala<br/>SIGGRAPH 2006		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=lod05">
+			<img class="listthumbimg" src="publications/lod05/lod05-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=lod05">User-Configurable Automatic Shader Simplification</a>
+		</h3>
+		<p>
+			F. Pellacini<br/>SIGGRAPH 2005		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=lpics05">
+			<img class="listthumbimg" src="publications/lpics05/lpics05-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=lpics05">Lpics: a Hybrid Hardware-Accelerated Relighting Engine for Computer Cinematography</a>
+		</h3>
+		<p>
+			F. Pellacini, K. Vidimce, A. Lefohn, A. Mohr, M. Leone, J. Warren<br/>SIGGRAPH 2005		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=decisiontheory03">
+			<img class="listthumbimg" src="publications/decisiontheory03/decisiontheory03-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=decisiontheory03">Perceptually-Driven Decision Theory for Interactive Realistic Rendering</a>
+		</h3>
+		<p>
+			R. Dumont, F. Pellacini, J. Ferwerda<br/>TOG 2003		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=shadowui02">
+			<img class="listthumbimg" src="publications/shadowui02/shadowui02-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=shadowui02">A User Interface for Interactive Cinematic Shadow Design</a>
+		</h3>
+		<p>
+			F. Pellacini, P. Tole, D. Greenberg<br/>SIGGRAPH 2002		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=igids02">
+			<img class="listthumbimg" src="publications/igids02/igids02-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=igids02">Interactive Global Illumination in Dynamic Scenes</a>
+		</h3>
+		<p>
+			P. Tole, F. Pellacini, B. Walter, D. Greenberg<br/>SIGGRAPH 2002		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=jim02">
+			<img class="listthumbimg" src="publications/jim02/jim02-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=jim02">Jigsaw Image Mosaics</a>
+		</h3>
+		<p>
+			Junhwan Kim, F. Pellacini<br/>SIGGRAPH 2002		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=gloss00">
+			<img class="listthumbimg" src="publications/gloss00/gloss00-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=gloss00">Toward a Psychophysically-based Light Reflection model for Image Synthesis</a>
+		</h3>
+		<p>
+			F. Pellacini, J. Ferwerda, D. Greenberg<br/>SIGGRAPH 2000		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+	</div>
+    <div class="content">
+<h1>Publications in Other Journals</h1><div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=safegi10">
+			<img class="listthumbimg" src="publications/safegi10/safegi10-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=safegi10">SafeGI: Type Checking to Improve Correctness in Rendering System Implementation</a>
+		</h3>
+		<p>
+			J. Ou, F. Pellacini<br/>EGSR 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=bendylight10">
+			<img class="listthumbimg" src="publications/bendylight10/bendylight10-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=bendylight10">BendyLights: Artistic Control of Direct Illumination by Curving Light Rays</a>
+		</h3>
+		<p>
+			W. B. Kerr, F. Pellacini, J. Denning<br/>EGSR 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=scheat10">
+			<img class="listthumbimg" src="publications/scheat10/scheat10-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=scheat10">Visibility Editing For All-Frequency Shadow Design</a>
+		</h3>
+		<p>
+			J. Obert, F. Pellacini, S. Pattanaik<br/>EGSR 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=ucct10">
+			<img class="listthumbimg" src="publications/ucct10/ucct10-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=ucct10">User Controllable Color Transfer</a>
+		</h3>
+		<p>
+			X. An, F. Pellacini<br/>EG 2010		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=temporal08">
+			<img class="listthumbimg" src="publications/temporal08/temporal08-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=temporal08">Tensor Clustering for Rendering Many-Light Animations</a>
+		</h3>
+		<p>
+			M. Hasan, E. Velazquez-Armendariz, F. Pellacini, K. Bala<br/>EGSR 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=icheat08">
+			<img class="listthumbimg" src="publications/icheat08/icheat08-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=icheat08">iCheat: A Representation for Artistic Control of Indirect Cinematic Lighting</a>
+		</h3>
+		<p>
+			J. Obert, J. Krivanec, F. Pellacini, D. Sykora, S. Pattanaik<br/>EGSR 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=eyetrack08">
+			<img class="listthumbimg" src="publications/eyetrack08/eyetrack08-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=eyetrack08">Eye Tracking and Online Search: Lessons Learned and Challenges Ahead</a>
+		</h3>
+		<p>
+			L. Lorigo, M. Haridasan, H. Brynjarsd&#209;ttir, L. Xia, L. Granka, F. Pellacini, B. Pan, T. Joachims, G. Gay<br/>JASIST 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=collabvis07">
+			<img class="listthumbimg" src="publications/collabvis07/collabvis07-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=collabvis07">Frequency and Structure of Long Distance Scholarly Collaborations in a Physics Community</a>
+		</h3>
+		<p>
+			L. Lorigo, F. Pellacini<br/>JASIST 2007		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+	</div>
+    <div class="content">
+<h1>Publications in Conferences</h1><div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=secvis08">
+			<img class="listthumbimg" src="publications/secvis08/secvis08-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=secvis08">Backhoe, a Packet Trace and Log Browser</a>
+		</h3>
+		<p>
+			S. Bratus, A. Hansen, F. Pellacini, A. Shubina<br/>VizSEC 2008		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=hybrid05">
+			<img class="listthumbimg" src="publications/hybrid05/hybrid05-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=hybrid05">A Hybrid Monte Carlo Method for Accurate and Efficient Subsurface Scattering</a>
+		</h3>
+		<p>
+			H. Li, F. Pellacini, K. Torrance<br/>EGSR 2005		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=fdp03">
+			<img class="listthumbimg" src="publications/fdp03/fdp03-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=fdp03">Functional Difference Predictors (FDPs): measuring meaningful image differences</a>
+		</h3>
+		<p>
+			J. Ferwerda, F. Pellacini<br/>ACSSC 2003		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=textures01">
+			<img class="listthumbimg" src="publications/textures01/textures01-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=textures01">Perceptually-based texture caching for hardware rendering</a>
+		</h3>
+		<p>
+			R. Dumont, F. Pellacini, J. Ferwerda<br/>EGWR 2001		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+<div class="listitem">
+	<span class="listthumb">
+		<a href="publication.php?id=gloss01">
+			<img class="listthumbimg" src="publications/gloss01/gloss01-paper-thumb.png">
+		</a>
+	</span>
+	<span class="listtext">
+		<h3>
+				<a href="publication.php?id=gloss01">A Psychophysically-Based Model of Surface Gloss Perception</a>
+		</h3>
+		<p>
+			J. Ferwerda, F. Pellacini, D. Greenberg<br/>HVEI 2001		</p>
+	</span>
+</div>
+<div style="clear: both"></div>
+	</div>
+
+      <div class="footer">
+    	email: fabio-at-cs-dot-dartmouth-dot-edu <br/>
+    	address: 6211 Sudikoff Lab, Hanover, NH, 03755 <br/>
+    	tel: (603) 646 - 8710 | fax: (603) 646 - 1672 <br/>
+    	credits: Design inspired by <a href="http://vostoktheme.com/white/?p=1818">Vostok Theme</a></div>
+   </div>
+<!-- google analytics -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> </script>
+<script type="text/javascript"> _uacct = "UA-787336-1"; urchinTracker(); </script>
+</body>
+</html>

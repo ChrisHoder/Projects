@@ -1,0 +1,94 @@
+http://www.cs.dartmouth.edu/~cs38/power
+3
+<html> <head>
+<title>CS38: Power Resources</title>
+</head>
+ 
+<body bgcolor=#ffffff>
+
+<h2>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+
+Power Resources
+<br>
+ CS38, Security and Privacy, Spring 2007
+</h2>
+<i> www.cs.dartmouth.edu/~cs38/power/index.shtml</i>
+ &nbsp;&nbsp;&nbsp;
+
+<i> Last modified: 04/24/06 10:51:08 AM</i>
+
+<hr>
+
+<p>
+
+<p>
+
+
+<p>
+<hr>
+<p>
+As I've mentioned, I'm helping run a five-year project 
+(based at the University of Illinois) examining
+"Trustworthy Cyber Infrastructure for the Power Grid" (TCIP).
+<p>
+<a href="http://tcip.iti.uiuc.edu/tcip/"><b>Here is our homepage</b></a>
+<p>
+<a href="ABRIDGED-2005-CYBERTRUST-PROPOSAL.pdf"><b>Here</b></a>
+is the NSF proposal we wrote.
+<p>
+<a href="TCIP-Overview-External.pdf"><b>Here are some overview slides.</b></a>
+<p>
+<a href="ArchitectureDiscussion.ppt"><b>Here are some architecture discussions.</b></a>
+<p>
+<hr>
+<p>
+Two grad students analyzed Intelligrid material for relevance to our project.
+You shouldn't necessarily believe their taxonomy, but it's a great gateway into the material.
+<ul>
+<li> <a href="usage_cases.ppt"><b>their slides</b></a>
+<li> <a href="usage.html"><b>gateway into usage cases</b></a>
+<li> <a href="environment.html"><b>gateway into environment classifications</b></a>
+</ul>
+<p>
+<hr>
+<p>
+<a href="http://www.cs.dartmouth.edu/~cs38/resources/local/wu.pdf"><b>The Wu paper</b></a>
+<p>
+<a href="NextGenerationControl.pdf"><b>another paper on next generation control centers</b></a>
+<p>
+<hr>
+<p>
+<h1>External Consultants</h1>
+<p>
+Prof. Pete Sauer, senior and famous (and friendly) expert on power systems.
+<ul>
+<li> <a href="http://www.ece.uiuc.edu/faculty/faculty.asp?p-sauer"><b>home page</b></a>
+<li> <a href="mailto:sauer@ece.uiuc.edu"><b>email</b></a>
+</ul>
+<p>
+Dr. Zbigniew Kalbarczyk, research scientist leading the education mission of our TCIP project.
+<ul>
+<li><a href="mailto:kalbar@crhc.uiuc.edu"><b>email</b></a>
+</ul>
+<p>
+<hr>
+
+<p>
+
+<hr>
+<b>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/icons/back.gif">
+
+<A HREF="/~cs38/lectures/"><b>Back to syllabus </b></A>
+</b>
+&nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.dartmouth.edu/~sws/"><b>Sean Smith</b></a>
+&nbsp;&nbsp;&nbsp;
+&lt; <a href="mailto:sws@cs.dartmouth.edu"><b>sws@cs.dartmouth.edu</b></a>&gt;
+
+
+
+
+</body> </html>
+

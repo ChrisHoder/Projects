@@ -1,0 +1,158 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July7
+3
+<h1>July 7: Storage</h1>
+
+<p>Reading: P&amp;P 3.4, 3.5<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;T 3.3.1-3.3.3
+<hr>
+<h2>0) Administrative stuff</h2>
+<ul>
+<li>Use the office hours!  We (the TA's and I) hold hours five days a
+week and love having visitors.  Information on when/where office hours
+are held can be found on the <a href="../../logistics.html">logistics</a>
+page.
+<li>Homework 2 is <a href="../../work/hw2/index.html">out</a>.  Start early.
+<li>I will most likely be out of town for work on Friday, July 16.
+We'll have office hours at least the next two Tuesdays to catch up.
+</ul>
+<hr>
+<h2>1) Recap</h2>
+So far, we've seen:
+<ul>
+<li>electricity -> bits
+<li>bits -> logic gates
+<li>logic gates -> logical components
+</ul>
+and last week, we saw how reality sometimes intrudes into our cozy
+world of ones and zeros.  Today we'll start looking into how bits
+get <b>stored</b>.  First though, an aside: circuit complexity.
+<hr>
+<h2>2) Circuit Complexity</h2><p>
+A quick review of complexity theory (or an introduction or sketch...)<br>
+
+<b>Complexity Theory</b> is the study of computational problems and
+the classification of such problems by their inherent difficulty.  Some complexity classes:
+<ul>
+<li><b>P</b> -- polynomial time.  The class of all decision problems solved
+in polynomial time.
+<li><b>NP</b> -- nondeterministic polynomial time.  The class of all
+decision problems where if I give you a solution, you can verify that
+it's true in polynomial time.
+</ul>
+<b>Open Problem</b>: Prove that <b>P != NP</b>. If you solve this,
+you'll get an automatic A for this class.  You can also
+win <a href="http://www.claymath.org/millennium">this prize</a>.
+<p>
+<b>Big-Oh Notation</b>: f(n) = O(g(n)) if there are constants c, n_0
+such that f(n) <= c*g(n) for all n > n_0.  What this means: f(n) is
+O(g(n)) if f grows no faster than g for large values of n.<p>
+
+<b>Circuit Complexity</b>: is the study of classes of circuits by
+their inherent computational power.  Note that each circuit has a
+fixed number of inputs, so when we talk about a circuit to compute
+e.g. the Majority on n bits, we're really talking about a family of
+circuits that compute Majority, one for each value of n.
+Some questions:
+<ul>
+<li>What can you compute using a polynomial number of gates?
+<li>What if the depth of the circuit is constant or (log n) or (log
+n)^k?  (The <b>depth</b> of a circuit is the maximal number of gates on)
+a path from an input to the output.
+<li>What if the fan-in of a gate is restricted e.g. to 2?  (the <b>fan-in</b> of a gate is the number of inputs it has)
+</ul>
+Examples of circuit classes:
+<ul>
+<li><b>AC0</b>: the class of all constant depth, polynomial sized circuits using only AND and OR gates, and also NOT gates at the inputs.
+<li><b>AC0[m]</b> like above, but you also have MOD_m gates, which
+output 1 iff the number of set bits in your input is divisible by m.
+</ul>
+Each of these classes has limitations (at least when m is prime):
+Majority is not in AC0, and for primes p, q, MOD_p is not in AC0[q].<p>
+
+Why study circuit complexity?  by looking at circuits, we abstract
+away many of the details of computation.  Making restrictions (e.g. on
+what gates can be in the circuits) makes it easier to understand
+the <i>limitations</i> of such circuits.  Even with such restrictions,
+many circuit classes remain hard to analyze (it's also hard to analyze
+more general models of computation).<p>
+
+Another reason to study circuit complexity: you might use it to solve
+P vs. NP.
+
+<hr>
+<h2>3) Storage!</h2>  So far, all the circuits we've seen have
+been <b>combinatorial logic circuits</b>:the output(s) are uniquely
+determined by the inputs.  Today we discuss circuits that don't fit
+this, because they contain <i>cycles</i> -- outputs to some gates are
+inputs to other gates whose outputs are then inputs to the original
+gates.<p>
+
+<img src="rs.jpg" alt="oops"></img><p>
+<b>The SR Latch</b> --
+<a href="circuits/rs.circ">rs.circ</a><br>
+Inputs:
+<ul>
+<li><b>S</b> -- Set: when S=0, set Q:=1
+<li><b>R</b> -- Reset: when R=0, set (Not Q) := 1
+<li>Note: these inputs are <b>active low</b>.
+</ul>
+Outputs:
+<ul>
+<li><b>Q</b>
+<li><b>Not Q</b> <-- we want this to always be the inverse of Q.
+</ul>
+We saw in class that if we let S,R go to zero at the same time, then
+Q, (Not Q) will be set simultaneously.  Even worse, setting S,R again
+causes <b>oscillation</b>.<p>
+
+From Logicworks example <a href="circuits/rs2.cct">rs2.cct</a>:<br>
+<img src="rs2.jpg" alt="oops"></img>
+
+<hr>
+To avoid setting S,R at the same time, we tied them together into a
+single input D, with an inverter on the R line.  This just gave
+us <a href="circuits/d0BB.circ"> a fancy inverter</a>.  What we need
+is another input that allows us to <i>enable</i> writing (i.e.,
+saving) D when we want to, but <i>disable</i> saving when we don't
+want to.  This gave us the <p><b>D
+Latch</b>-- <a href="circuits/DLatch.circ">DLatch.circ</a>.<br>
+Inputs:
+<ul>
+<li>D -- the data we want to save
+<li>WE (Write Enable) -- set when we want to save
+<li>Note:  WE also sometimes called <i>clock</i>
+</ul>
+Outputs: 
+<ul><li>Q, (Not Q) as before.</ul>
+<b>Warning:</b> Logisim calls this a D Flip-flop instead of a D-Latch.
+<hr>
+<p><h3>Applications</h3>
+<ul>
+<li>4-bit register (<a href="circuits/4bitR.circ">4bitR.circ</a>).  
+A <b>register</b> is a structure that stores a number of bits as
+self-contained units.  (Ours is implemented using D Flip-flops)
+<li>Look-up Table (<a href="circuits/lut.circ">lut.circ</a>)<br>
+<img src="lut.jpg" alt="oops"></img> <br>The custom gate inputs let you
+select an entry in the table.  Entries are <i>programmable</i>.  Note:
+some FGPAs are implemented this way.
+</ul>
+<hr><h3>Edginess</h3><p> The D Flip-Flop lets you change the data as
+long as Clock is set.  It would be nice if we could save D at a
+specific discrete time step.  We can do this by capturing a signal on
+a rising edge -- and we saw how to do
+that <a href="circuits/edge.cct">last week!</a>
+
+<p> Now we can clock the data-change to a rising edge.  What we get is
+a D Flip-Flop: <a href="circuits/DFF.circ">DFF.circ</a>
+
+<hr>
+<h3>Recap:</h3><p>
+<ul>
+<li>RS Latch
+<li>turning data bit into S/R signals
+<li>using rising edge of clock as a short pulse
+</ul>
+
+Precise people call the <i>edge-sensitive</i> version a flip-flop and
+the <i>high-level trigger</i> a latch.  This is used inconsistently
+though.  Be warned.

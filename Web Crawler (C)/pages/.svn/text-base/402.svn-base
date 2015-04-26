@@ -1,0 +1,198 @@
+http://www.cs.dartmouth.edu/~weibel/publications.php
+3
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>
+      Christophe Weibel at Dartmouth
+    </title>
+    <meta name="author" content="Christophe Weibel">
+    <link rel="stylesheet" href="style.css" type=" ">
+  </head>
+  <body>
+    <div id="pagetitle">
+      Christophe Weibel at Dartmouth
+    </div>
+    <div id="sidebar">
+      <!-- menu -->
+      <div class="topmenu">
+        <a href="index.php">Main page</a>
+      </div>
+      <div class="box_title blue">
+        Research
+      </div>
+      <div class="box grey">
+        <a href="publications.php">Publications</a><br>
+        <a href="research.php">Research interests</a><br>
+        &nbsp;&nbsp;<a href="hirsch.php">Hirsch conjecture</a><br>
+        &nbsp;&nbsp;<a href="minksum.php">MinkSum</a><br>
+        &nbsp;&nbsp;<a href="minperi.php">Min perimeter convex hull</a>
+      </div>
+      <div class="box_title blue">
+        Links
+      </div>
+      <div class="box grey">
+        <a href="http://www.cs.dartmouth.edu">Computer Science</a><br>
+        <a href="http://www.dartmouth.edu">Dartmouth College</a><br>
+        <a href="http://www.math.mcgill.ca/~vetta/DiscreteGroup/">McGill Discrete Math Group</a><br>
+        <a href="http://roso.epfl.ch">ROSO</a>
+      </div>
+      <div class="box_title blue">
+        Personal
+      </div>
+      <div class="box grey">
+        <a href="http://picasaweb.google.com/anthony.weibel">Pictures</a><br>
+        <a href=cv.php>Curriculum Vitae</a> <a href=cvWeibel.pdf>(PDF)</a>
+      </div>
+    </div>
+    <div id="content">
+
+<script type="text/javascript">
+<!--
+
+function openWindow(text) {
+  fenetre = window.open("", "", "width=500,height=400");
+  fenetre.document.write(text+"<table width='100%'><tr><td align='center'><input type='button' value='close' onclick='window.close()'><\/td><\/tr><\/table><br>");
+  fenetre.document.close();
+}
+
+//-->
+</script>
+<h1>
+Publications
+</h1>
+<h3>
+Theses
+</h3>
+<dl>
+<dt>Ph.D. Thesis, 2007</dt>
+<dd><b>Minkowski Sums of Polytopes: Combinatorics and Computation</b><br>
+Institution: Ecole Polytechnique Fédérale de Lausanne<br>
+Supervisors: Prof. Thomas Liebling and Prof. Komei Fukuda<br>
+Experts: Prof. Peter Gritzmann and Prof. Günter Ziegler<br>
+[<a href='javascript:nothing()' onclick='openWindow("<p><b>Christophe Weibel</b></p><p><b>Minkowski Sums of Polytopes: Combinatorics and Computation</b></p><p> Minkowski sums are a very simple geometrical operation, with applications in many different fields. In particular, Minkowski sums of polytopes have shown to be of interest to both industry and the academic world. This thesis presents a study of these sums, both on combinatorial properties and on computational aspects.<br>In particular, we give an unexpected linear relation between the f-vectors of a Minkowski sum and that of its summands, provided these are relatively in general position. We further establish some bounds on the maximum number of faces of Minkowski sums with relation to the summands, depending on the dimension and the number of summands. We then study a particular family of Minkowski sums, which consists in summing polytopes we call perfectly centered with their own duals. We show that the face lattice of the result can be completely deduced from that of the summands.<br>Finally, we present an algorithm for efficiently computing the vertices of a Minkowski sum of polytopes. We show that the time complexity is linear in terms of the output for fixed size of the input, and that the required memory size is independent of the size of the output. We also review various algorithms computing different faces of the sum, comparing their strong and weak points.</p>")'>Abstract</a>]
+[<a href="papers/thesis.pdf">Full text</a>]
+[<a href='javascript:nothing()'
+onclick='openWindow("@PhDThesis{3883/THESES,<br>address = {Lausanne},<br>affiliation = {EPFL},<br>author = {Weibel, Christophe},<br>details = {http://infoscience.epfl.ch/search.py?recid=109334},<br>oai-id = {oai:infoscience.epfl.ch:thesis-3883},<br>oai-set = {thesis},<br>publisher = {EPFL},<br>title = {Minkowski sums of polytopes: Combinatorics and Computation},<br>unit = {ROSO},<br>url = {http://library.epfl.ch/theses/?nr=3883},<br>year = 2007<br>}<br>")'>Bibtex</a>]
+</dd>
+
+<dt>Master Thesis, 2000</dt>
+<dd><b>Parallel implementation of a distinct elements simulation of a granular media</b><br>
+Institution: Ecole Polytechnique Fédérale de Lausanne<br>
+Supervisors: Prof. Thomas Liebling and Jean-Albert Ferrez<br>
+Expert: Didier Müller</dd>
+</dl>
+<h3>
+Articles
+</h3>
+<dl>
+  <dt>Sylvain Lazard, Christophe Weibel, Sue Whitesides, Linqiao Zhang, 2010</dt>
+  <dd><b>A Succinct 3D Visibility Skeleton</b>
+    <br>Accepted in <i>Discrete Mathematics, Algorithms and Applications</i> [<a href='javascript:nothing()' onclick='openWindow("<p><b>Sylvain Lazard, Christophe Weibel, Sue Whitesides, Linqiao Zhang</b></p><p><b>A Succinct 3D Visibility Skeleton</b></p><p>The 3D visibility skeleton is a data structure that encodes the global visibility information of a set of 3D objects. While it is useful in answering global visibility queries, its large size often limits its practical use. In this paper, we address this issue by proposing a subset of the visibility skeleton, which is empirically about 25% to 50% of the whole set. We show that the rest of the data structure can be recovered from the subset as needed, partially or completely. The running time complexity, which we analyze in terms of output size, is efficient. We also prove that the subset is minimal in the sense that the complexity bound ceases to hold if the subset is restricted further.")'>Abstract</a>]
+
+  <dt>Komei Fukuda, Christophe Weibel, 2010</dt>
+  <dd><b>Minkowski Sums of polytopes
+relatively in general position</b>
+    <br><i>European Journal of Combinatorics</i>, vol. 31 (2010), pp. 565-573 [<a href='javascript:nothing()' onclick='openWindow("<p><b>Komei Fukuda, Christophe Weibel</b></p><p><b>Minkowski Sums of polytopes relatively in general position</b></p><p>The objective of this paper is to study a special family of Minkowski sums, that is of polytopes said to be relatively in general position. We show that maximal number of faces in the sum can be attained by this family. We present a new linear relation that is satisfied by f-vectors of the sum and the summands. We study some of the implications of this relation.")'>Abstract</a>]
+[<a href="papers/ejc.pdf">Full text</a>]
+[<a href='javascript:nothing()' onclick='openWindow("@Unpublished{MSRGP08,<br>author = {Fukuda, K. and Weibel, Ch.},<br>title = {Minkowski sums of polytopes relatively in general position},<br>note = {Accepted by {\em European {J}ournal of {C}ombinatorics}},<br>year = {2008},<br>}<br>")'>Bibtex</a>]</dd>
+
+  <dt>Efi Fogel, Dan Halperin, Christophe Weibel, 2009</dt>
+  <dd><b>On the exact maximum complexity of Minkowski sums of convex polyhedra</b>
+    <br><i>Discrete &amp; Computational Geometry</i>, vol. 42 (2009), pp. 654-669  [<a href='javascript:nothing()' onclick='openWindow("<p><b>Efi Fogel, Dan Halperin, Christophe Weibel</b></p><p><b>On the exact maximum complexity of Minkowski sums of convex polyhedra</b></p><p>We present a tight bound on the exact maximum complexity of Minkowski sums of polytopes in R<sup>3</sup>. In particular, we prove that the maximum number of facets of the Minkowski sum of k polytopes with m1, m2 ... mk facets respectively is bounded from above by $\\sum_{1≤i&amp;lt;j≤k} (2mi − 5)(2mj − 5) +\\sum_{1≤i≤k} mi + \\binom{k}{2}$. Given k positive integers m1, m2 ... mk, we describe how to construct k polytopes with corresponding number of facets, such that the number of facets of their Minkowski sum is exactly that bound. Snapshots of several pre-constructed polytopes, the Minkowski sum of which is maximal, are available at http://www.cs.tau.ac.il/~efif/Mink. The polyhedra models and an interactive program that computes their Minkowski sums and visualizes them can be downloaded as well.</p>")'>Abstract</a>]
+[<a href='javascript:nothing()' onclick='openWindow("@article{Fogel09,<br>	Author = {Fogel, Efi and Halperin, Dan and Weibel, Christophe},<br>	Date-Added = {2009-11-04 14:18:44 -0500},<br>	Date-Modified = {2009-11-04 14:18:44 -0500},<br>	Journal = {Discrete \& Computational Geometry},<br>	M3 = {10.1007/s00454-009-9159-1},<br>	Number = {4},<br>	Pages = {654--669},<br>	Title = {On the Exact Maximum Complexity of Minkowski Sums of Polytopes},<br>	Ty = {JOUR},<br>	Url = {http://dx.doi.org/10.1007/s00454-009-9159-1},<br>	Volume = {42},<br>	Year = {2009}<br>}")'>Bibtex</a>]</dd>
+
+  <dt>Komei Fukuda, Christophe Weibel, 2007</dt>
+  <dd><b>f-vectors of Minkowski
+additions of convex polytopes</b>
+  <br><i>Discrete &amp; Computational Geometry</i>, vol. 37 (2007), pp. 503-516
+[<a href='javascript:nothing()' onclick='openWindow("<p><b>Komei Fukuda, Christophe Weibel</b></p><p><b>f-vectors of Minkowski additions of convex polytopes</b></p><p>The objective of this paper is to present two types of results on Minkowski sums of convex polytopes. The first is about a special class of polytopes we call <i>perfectly centered</i> and the combinatorial properties of the Minkowski sum with their own dual. In particular, we have a characterization of face lattice of the sum in terms of the face lattice of a given perfectly centered polytope. Exact face counting formulas are then obtained for perfectly centered simplices and hypercubes. The second type of results concerns <i>tight upper bounds</i> for the f-vectors of Minkowski sums of several polytopes.")'>Abstract</a>]
+[<a href="http://infoscience.epfl.ch/getfile.py?docid=12032&amp;name=FukWei%20on%20f-vectors&amp;format=pdf&amp;version=1">Full text</a>]
+[<a href='javascript:nothing()' onclick='openWindow("@article {MR2321738,<br>AUTHOR = {Fukuda, Komei and Weibel, Christophe},<br>TITLE = {{$f$}-vectors of {M}inkowski additions of convex polytopes},<br>JOURNAL = {Discrete Comput. Geom.},<br>FJOURNAL = {Discrete \& Computational Geometry. An International Journal<br>of Mathematics and Computer Science},<br>VOLUME = {37},<br>YEAR = {2007},<br>NUMBER = {4},<br>PAGES = {503--516},<br>ISSN = {0179-5376},<br>CODEN = {DCGEER},<br>MRCLASS = {52Axx},<br>MRNUMBER = {MR2321738},<br>}<br>")'>Bibtex</a>]</dd>
+  <dt>Carolina Osorio et al., 2006</dt>
+  <dd>Carolina Osorio, Christophe Weibel, Pau Perez, Michel Bierlaire,
+Philippe Garnerin
+  <br><b>Patient flow simulation as a tool for estimating policy
+impact</b>
+  <br><i>Swiss Medical Informatics</i>, vol. 58 (2006), pp. 33-36
+[<a href='javascript:nothing()' onclick='openWindow("<p><b>Carolina Osorio, Christophe Weibel, Pau Perez, Michel Bierlaire, Philippe Garnerin</b></p><p><b>Patient flow simulation as a tool for estimating policy impact</b></p><p>Patient safety in operative and postoperative structures is closely linked to adequate resource allocation and patient flow organisation. New policies concerning working hours or resource allcation are designed to improve patient safety. However, it is necessary to measure their impact before taking action. In this paper we describe a simulation tool which makes it possible to measure the impact of various organisational policies in a hospital operating theatre and postoperative structures. We illustrate its use by an example assessing the impact of a new training policy for operating room personnel upon recovery room utilisation and the attendant staffing requirements at the Geneva University Hospitals.</p>")'>Abstract</a>]
+[<a href="http://infoscience.epfl.ch/getfile.py?docid=10319&amp;name=OsorWeibPereBierGarn06&amp;format=pdf&amp;version=1">Full text</a>]
+[<a href='javascript:nothing()' onclick='openWindow("@Article{IJ-OsorWeibPereBierGarn06/TRANSP-OR,<br>affiliation = {EPFL},<br>author = {Osorio, Carolina and Weibel, Christophe and Perez, Pao<br>and Bierlaire, Michel and Garnerin, Philippe},<br>details = {http://infoscience.epfl.ch/search.py?recid=88140},<br>documenturl = {http://infoscience.epfl.ch/getfile.py?recid=88140&amp;mode=best},<br>doi = {NA},<br>journal = {Swiss {M}edical {I}nformatics},<br>oai-id = {oai:infoscience.epfl.ch:88140},<br>oai-set = {article},<br>pages = {33--36},<br>status = {PUBLISHED},<br>title = {Patient flow simulation as a tool for estimating policy impact},<br>unit = {TRANSP-OR ROSO},<br>volume = {58},<br>year = 2006<br>}<br>")'>Bibtex</a>]</dd>
+</dl>
+<h3>
+Conference proceedings
+</h3>
+<dl>
+    <dt>Erin Chambers, Alejandro Erickson, Sandor Fekete, Jon Lenchner, John Sember, Venkatesh Srinivasan, Ulrike Stege, Svetlana Stolpner, Christophe Weibel, Sue Whitesides, 2010</dt>
+   <dd><b>Connectivity graphs of uncertainty regions</b>
+  <br>Accepted by the <i>International Symposium on Algorithms and Computation (ISAAC 2010)</i> Jeju Island, KOREA
+  [<a href='javascript:nothing()' onclick='openWindow("<b>Erin Chambers, Alejandro Erickson, Sandor Fekete, Jon Lenchner, John Sember, Venkatesh Srinivasan, Ulrike Stege, Svetlana Stolpner, Christophe Weibel, Sue Whitesides</b></p><p><b>Connectivity graphs of uncertainty regions</b></p><p>We study a generalization of the well known bottleneck spanning tree problem called Best <i>Case Connectivity with Uncertainty</i>: Given a family of geometric regions, choose one point per region, such that the length of the longest edge in a spanning tree of a disc intersection graph is minimized. We show that this problem is NP-hard even for very simple scenarios such as line segments and squares. We also give exact and approximation algorithms for the case of line segments and unit discs respectively.</p>")'>Abstract</a>]
+[<a href="http://arxiv.org/abs/1009.3469">Full text</a>]
+  </dd>
+  <dt>Vida Dujmovic, William Evans, Stephen Kobourov, Giuseppe Liotta, Christophe Weibel, Stephen Wismath, 2010</dt>
+  <dd><b>On Graphs Supported by Line Sets</b>
+  <br>Accepted by the <i>18th International Symposium on Graph Drawing (GD 2010)</i> Konstanz, Germany
+       [<a href='javascript:nothing()' onclick='openWindow("<p><b>Vida Dujmovic, William Evans, Stephen Kobourov, Giuseppe Liotta, Christophe Weibel, Stephen Wismath</b></p><p><b>On Graphs Supported by Line Sets</b></p><p>For a set S of n lines labeled from 1 to n, we say that S supports an n-vertex planar graph G if for every labeling from 1 to n of its vertices, G has a straight-line crossing-free drawing with each vertex drawn as a point on its associated line. It is known from previous work that no set of n parallel lines supports all n-vertex planar graphs. We show that intersecting lines, even if they intersect at a common point, are more &ldquo;powerful&rdquo; than a set of parallel lines. In particular, we prove that every such set of lines supports outerpaths, lobsters, and squids, none of which are supported by any set of parallel lines. On the negative side, we prove that no set of n lines that intersect in a common point supports all n-vertex planar graphs. Finally, we show that there exists a set of n lines in general position that does not support all n-vertex planar graphs.</p>")'>Abstract</a>]
+</dd>
+    <dt>Sylvain Lazard, Christophe Weibel, Sue Whitesides, Linqiao Zhang, 2010</dt>
+  <dd><b>On the Computation of the 3D Visibility Skeleton</b>
+  <br><i>Proceedings of the 16th Annual International Computing and Combinatorics Conference (COCOON 2010)</i> pp. 469-478,
+    Nha Trang, Vietnam
+       [<a href='javascript:nothing()' onclick='openWindow("<p><b>Sylvain Lazard, Christophe Weibel, Sue Whitesides, Linqiao Zhang</b></p><p><b>On the Computation of the 3D Visibility Skeleton</b></p><p>The 3D visibility skeleton is a data structure that encodes the global visibility information of a set of 3D objects. While it is useful in answering global visibility queries, its large size often limits its practical use. In this paper, we address this issue by proposing a subset of the visibility skeleton, which is empirically about 25% to 50% of the whole set. We show that the rest of the data structure can be recovered from the subset as needed, partially or completely. The running time complexity, which we analyze in terms of output size, is efficient. We also prove that the subset is minimal in the sense that the complexity bound ceases to hold if the subset is restricted further.</p>")'>Abstract</a>]
+[<a href='javascript:nothing()' onclick='openWindow("@inproceedings{COCOON10,<br>author = {Lazard, Sylvain and Weibel, Christophe and Whitesides, Sue and Zhang, Linqiao},<br>location = {Nha Trang, Vietnam}<br>title = {On the Computation of the 3D Visibility Skeleton},<br>booktitle = {Proceedings of the 16th Annual International Computing and Combinatorics Conference (COCOON 2010)},<br>pages = {469--478},<br>year = {2010}<br>}<br>")'>Bibtex</a>]
+</dd>
+  <dt>Chandra Chekuri, Bruce Shepherd, Christophe Weibel, 2010</dt>
+  <dd><b>Flow-Cut Gaps for Integer and Fractional Multiﬂows</b>
+  <br><i>Proceedings of the 21st Annual ACM-SIAM Symposium on
+    Discrete Algorithms (SoDA 2010)</i> pp. 1198-1208,
+       Austin, Texas
+       [<a href='javascript:nothing()' onclick='openWindow("<p><b>Chandra Chekuri, Bruce Shepherd, Christophe Weibel</b></p><p><b>Flow-Cut Gaps for Integer and Fractional Multiﬂows</b></p><p> Consider a <i>routing problem</i> instance consisting of a <i>demand graph</i> H=(V,E(H)) and a <i>supply graph</i> G=(V,E(G)). If the pair obeys the cut condition, then the <i>flow-cut gap</i> for this instance is the minimum value C such that there exists a feasible multiflow for H if each edge of G is given capacity C. It is well-known that the flow-cut gap may be greater than 1 even in the case where G is the (series-parallel) graph K_{2,3}. In this paper we are primarily interested in the integer flow-cut gap. What is the minimum value C such that there exists a feasible integer valued multiflow for H if each edge of G is given capacity C? We formulate a conjecture that states that the integer flow-cut gap is quantitatively related to the fractional flow-cut gap. In particular this strengthens the well-known conjecture that the flow-cut gap in planar and minor-free graphs is O(1) to suggest that the integer flow-cut gap is O(1). We give several technical tools and results on non-trivial special classes of graphs to give evidence for the conjecture and further explore the primal method for understanding flow-cut gaps; this is in contrast to and orthogonal to the highly successful metric embeddings approach. Our results include the following:<br><ul> <li> Let G be obtained by series-parallel operations starting from an edge st, and consider orienting all edges in G in the direction from s to t. A demand is <i>semi-compliant</i> if its endpoints are joined by a directed path in the resulting oriented graph. We show that if the cut condition holds for a semi-compliant instance and G+H is Eulerian, then an integral routing of H exists. This result includes as a special case, routing on a ring but is not a special case of the Okamura-Seymour theorem. <li> Using the above result, we show that the integer flow-cut gap in series-parallel graphs is 5. We also give an explicit class of routing instances that shows via elementary calculations that the flow-cut gap in series-parallel graphs is at least 2; this is motivated by and simplifies the proof by Lee and Raghavendra. <li> The integer flow-cut gap in k-Outerplanar graphs is c^{O(k)} for some fixed constant c. <li> A very simple proof that the flow-cut gap is O(\log k^*) where k^* is the size of a vertex cover in H; this was previously shown by Günlük via a more intricate proof.</p>")'>Abstract</a>]
+[<a href="http://arxiv.org/abs/1008.2136">Full text</a>]
+[<a href='javascript:nothing()' onclick='openWindow("@inproceedings{FCGIFM,<br>affiliation = {McGill},<br>author = {Chekuri, Chandra and Shepherd, Bruce and Weibel, Christophe},<br>location = {Austin, Texas}<br>title = {Flow-Cut Gaps for Integer and Fractional Multiflows},<br>booktitle = {Proceedings of the 21st Annual ACM-SIAM Symposium on Discrete Algorithm (SoDA 2010)},<br>pages = {1198--1208},<br>review = {REVIEWED},<br>status = {PUBLISHED},<br>year = {2010}<br>}<br>")'>Bibtex</a>]
+</dd>
+  <dt>Christophe Weibel, 2010</dt>
+  <dd><b>Implementation and parallelization of a reverse-search algorithm for Minkowski sums</b>
+      <br><i>Proceedings of the 12th Workshop on Algorithm Engineering and Experiments (ALENEX 2010)</i> pp. 34-42, Austin, Texas
+[<a href='javascript:nothing()' onclick='openWindow("@InProceedings{Weibel09,<br>affiliation = {McGill},<br>author = {Weibel, Christophe},<br>booktitle = {Proceedings of 12th Workshop on Algorithm Engineering and Experiments (ALENEX 2010)},<br>keywords = {Minkowski Sums; Polytopes; Implementation},<br>location = {Austin, Texas},<br>pages = {34--42},<br>review = {REVIEWED},<br>status = {PUBLISHED},<br>title = {Implementation and parallelization of a reverse-search algorithm for {M}inkowski sums},<br>year = {2010}<br>}<br>")'>Bibtex</a>]
+</dd>
+  <dt>Linqiao Zhang, Hazel Everett, Sylvain Lazard, Christophe Weibel, Sue Whitesides, 2008</dt>
+  <dd><b>On the size of the 3D visibility skeleton: experimental results</b>
+  <br><i>Proceedings of the 16th Annual European Symposium on Algorithms (ESA 2008)</i>, Karlsruhe, 2008</dd>
+  <dt>Efi Fogel, Dan Halperin, Christophe Weibel, 2007</dt>
+  <dd><b>On the Exact Maximum Complexity of Minkowski Sums of Convex Polyhedra</b>
+  <br><i>Proc. 23rd ACM Symposium on Computational Geometry (SoCG 07)</i> pp. 319-326,
+Gyeongju, South Korea, 2007</dd>
+  <dt>Komei Fukuda, Christophe Weibel, 2005</dt>
+  <dd><b>Computing faces up to
+  <i>k</i> dimensions of a Minkowski Sum of Polytopes</b>
+  <br><i>Proceedings
+of the 17th Canadian Conference on Computational Geometry
+(CCCG 05)</i>, pp. 256-259</dd>
+</dl>
+<h3>
+Preprints
+</h3>
+<dl>
+  <dt>Christophe Weibel, 2010</dt>
+  <dd><b>Maximal f-vectors of Minkowski sums of large numbers of polytopes</b>
+    <br>Submitted to <i>Discrete &amp; Computational Geometry</i>, 2011
+[<a href="http://arxiv.org/abs/1002.0155">Full text</a>]
+</dd>
+  <dt>Guyslain Naves, Christophe Weibel, 2010</dt>
+  <dd><b>Congestion in planar graphs with demands on faces</b>
+[<a href="http://arxiv.org/abs/1008.3653">Full text</a>]
+</dd>
+  <dt>Komei Fukuda, Christophe Weibel, 2009</dt>
+  <dd><b>Facet computation for Minkowski sums of polytopes</b>
+</dd>
+</dl>
+    </div>
+    <div id="footer">                
+      <p>[ <a href="http://www.cs.dartmouth.edu/">Computer Science</a> ]<br>
+      <p><i>September 3rd,&nbsp; 2010</i>
+    </div>
+  </body>
+</html>

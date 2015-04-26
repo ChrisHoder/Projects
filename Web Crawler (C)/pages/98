@@ -1,0 +1,361 @@
+http://www.cs.dartmouth.edu/~cs37
+2
+<html> <head>
+<title>CS37: Home Page</title>
+</head>
+ 
+<body bgcolor=#ffffff>
+
+<h1> CS37: Computer Architecture, Summer 2010 </h1>
+
+<hr>
+<h3>What's New:</h3>
+<ul>
+<li> The <b>Final</b> is at 3PM, Saturday, August 28, in Kemeny 006.
+</ul>
+<hr>
+
+<b><a href="summer10/logistics.html">Logistics</a></b>
+<p>
+<b><a href="resources">Textbook and Resources</a></b>
+<p>
+<b>Homework</b>
+<ul>
+<li><a href="summer10/work/hw0">Homework 0</a>. 
+<br>Due: Monday, June 28, 11:59PM.
+<li><a href="summer10/work/hw1">Homework 1</a>.
+<br>Due: Monday, July 5, 11:59PM.
+<li><a href="summer10/work/hw2">Homework 2</a>.
+<br>Due: Monday, July 12, 11:59PM.
+<li><a href="summer10/work/hw3">Homework 3</a>.
+<br>Due: Monday, July 19, 11:59PM.
+<li><a href="summer10/work/hw4">Homework 4</a>.
+<br>Due: Monday, July 26, 11:59PM.
+<li><a href="summer10/work/hw5">Homework 5</a>.
+<br>Due: Monday, August 2, 11:59PM.
+<li><a href="summer10/work/hw6">Homework 6</a>.
+<br>Due: Monday, August 9, 11:59PM.
+<li><a href="summer10/work/hw7">Homework 7</a>.
+<br>Due: Monday, August 16, 11:59PM.
+<li><a href="summer10/work/hw8">Homework 8</a>.
+<br>Due: <b>in class</b>, Wednesday, August 25.
+</ul>
+<p>
+<b>Lectures</b> (Jump to current <a href="#Aug18">lecture</a>)
+<dl>
+<!-- 1 -->
+<dt>Friday, June 25</dt>
+<dd><a href=summer10/lectures/June25/index.html><b>Introduction, Electricity to Gates</b></a>
+<ul>
+<li>P&amp;P, Chapter 1
+<li>P&amp;P, 2.6, 3.1, 3.2
+</ul>
+</dd>
+<p>
+<!-- 2 -->
+<dt>Monday, June 28</dt>
+<dd><a href=summer10/lectures/June28><b>Binary Numbers, Combinatorial Logic</b></a>
+<ul>
+<li>P&amp;P, 1, 3.3.1
+<li>T 3.1, Appendix A
+</ul>
+</dd>
+<p>
+<!-- 3 -->
+<dt>Tuesday, June 29</dt>
+<dd>No X-hour
+<ul>
+</ul>
+</dd>
+<p>
+<!-- 4 -->
+<dt><a name="lect4">Wednesday, June 30</dt>
+<dd><a href=summer10/lectures/June30><b>Trickier Combinatorial Logic</b></a>
+<ul>
+<li>P&amp;P, 3.3.2, 3.3.3
+<li>T, pp 154-155
+</ul>
+</dd>
+<p>
+<!-- 5 -->
+<dt>Friday, July 2</dt>
+<dd><a href="summer10/lectures/July2"><b>Reality Check: Logic Design</b></a>
+<ul>
+<li>P&amp;P, 3.3.4, 3.3.5
+<li>T, 3.2.1-3.2.3
+</ul>
+</dd>
+<p>
+<!-- 6 -->
+<dt>Monday, July 5</dt>
+<dd>No class -- Independence day
+<ul>
+</ul>
+</dd>
+<p>
+<!-- 7 -->
+<dt>Tuesday, July 6</dt>
+<dd>No X-hour
+<ul>
+</ul>
+</dd>
+<p>
+<!-- 8 -->
+<dt>Wednesday, July 7</dt>
+<dd><a href="summer10/lectures/July7"><b>Storage Elements</b></a>
+<ul>
+<li>P&amp;P, 3.4, 3.5
+<li>T 3.3.1-3.3.3
+</ul>
+</dd>
+<p>
+<!-- 7 -->
+<dt>Friday, July 9</dt>
+<dd><a href="summer10/lectures/July9"><b>RAM</b></a>
+<ul>
+<li>P&amp;P, 3.4, 3.5
+<li>T 3.3
+</ul>
+</dd>
+<p>
+<!-- 8 -->
+<dt>Monday, July 12</dt>
+<dd><a href="summer10/lectures/July12"><b>Clocks</b></a>
+<a name="July12">
+<ul>
+<li>P&amp;P 3.6 
+</ul>
+</dd>
+<p>
+<!-- 9 -->
+<dt>Tuesday, July 13</dt>
+<dd><a href="summer10/lectures/July13"><b>I like Traffic Lights</b></a>
+<a name="July13">
+<ul>
+<li>P&amp;P 3.6
+</ul>
+</dd>
+<p>
+<!-- 10 -->
+<dt>Wednesday, July 14</dt>
+<dd><a href="summer10/lectures/July14"><b>Traffic Lights and ROM</b></a>
+<a name="July14">
+<ul>
+<li>T 3.3.4-3.3.6, 3.4
+</ul>
+</dd>
+<p>
+<!-- 11 -->
+<dt>Friday, July 16</dt>
+<dd><a href="summer10/lectures/July16"><b>Get On the Bus!</b></a>
+<a name="July16">
+<ul>
+<li>T 3.3.4-3.3.6, 3.4
+</ul>
+</dd>
+<p>
+<!-- 12 -->
+<dt>Monday, July 19</dt>
+<dd><a href="summer10/lectures/July19"><b>Architecture</b></a>
+<a name="July19">
+<ul>
+<li>P&amp;P 3.7, 4
+</ul>
+</dd>
+<p>
+<!-- 13 -->
+<dt>Tuesday, July 20</dt>
+<dd><a href="summer10/lectures/July20"><b>ISA</b></a>
+<a name="July20">
+<ul>
+<li>P&amp;P 5
+</ul>
+</dd>
+<p>
+<!-- 14 -->
+<dt>Wednesday, July 21</dt>
+<dd><a href="summer10/lectures/July21"><b>Assembly Language</b></a>
+<a name="July21">
+<ul>
+<li>P&amp;P 7
+<li>T 3.5, 5.1, 6.1
+</ul>
+</dd>
+<p>
+<!-- 15 -->
+<dt>Friday, July 23</dt>
+<dd><a href="summer10/lectures/July23"><b>Input/Output</b></a>
+<a name="July23">
+<ul>
+<li>P&amp;P 8
+</ul>
+</dd>
+<p>
+<!-- 16 -->
+<dt>Monday, July 26</dt>
+<dd><a href="summer10/lectures/July26"><b>Loose Ends, Traps</b></a>
+<a name="July26">
+<ul>
+<li>P&amp;P 9
+</ul>
+</dd>
+<p>
+<!-- 17 -->
+<dt>Tuesday, July 27</dt>
+<dd><a href="summer10/lectures/July27"><b>Interrupts, a Reality Check</b></a>
+<a name="July27">
+<ul>
+<li>
+</ul>
+</dd>
+<p>
+<!-- 18 -->
+<dt>Wendesday, July 28</dt>
+<dd><a href="summer10/lectures/July28"><b>Reality check, The Stack</b></a>
+<a name="July28">
+<ul>
+<li>P&amp;P 10
+</ul>
+</dd>
+<p>
+<!-- 19 -->
+<dt>Friday, July 30</dt>
+<dd><a href="summer10/lectures/July30"><b>The Stack</b></a>
+<a name="July30">
+<ul>
+<li>P&amp;P 11
+</ul>
+</dd>
+<p>
+<!-- 20 -->
+<dt>Monday, August 2</dt>
+<dd><a href="summer10/lectures/Aug02"><b>High Level Languages, C</b></a>
+<a name="Aug02">
+<ul>
+<li>P&amp;P 11
+</ul>
+</dd>
+<p>
+<!-- 21 -->
+<dt>Tuesday, August 3</dt>
+<dd><a href="summer10/lectures/Aug03"><b>Homework Solutions, Data Types</b></a>
+<a name="Aug03">
+<ul>
+<li>P&amp;P 12.2, 12.3
+</ul>
+</dd>
+<p>
+<!-- 22 -->
+<dt>Wednesday, August 4</dt>
+<dd><a href="summer10/lectures/Aug04"><b>Data Types, Variables, Operators</b></a>
+<a name="Aug04">
+<ul>
+<li>P&amp;P  12.2, 12.3, 12.5, 13.2
+</ul>
+</dd>
+<p>
+<!-- 23 -->
+<dt>Friday, August 6</dt>
+<dd><a href="summer10/lectures/Aug06"><b>Control Flow, Functions, and Stack Frames</b></a>
+<a name="Aug06">
+<ul>
+<li>P&amp;P 13.2, 13.3, 14.3
+</ul>
+</dd>
+<p>
+<!-- 24 -->
+<dt>Monday, August 9</dt>
+<dd><a href="summer10/lectures/Aug09"><b>Stack Frames, Functions, Recursion</b></a>
+<a name="Aug09">
+<ul>
+<li>P&amp;P 17.1-17.3
+</ul>
+</dd>
+<p>
+<!-- 25 -->
+<dt>Tuesday, August 10</dt>
+<dd><a href="summer10/lectures/Aug10"><b>Data Structures and other cool C stuff</b></a>
+<a name="Aug10">
+<ul>
+<li>P&amp;P 19.2
+</ul>
+</dd>
+<p>
+<!-- 26 -->
+<dt>Wednesday, August 11</dt>
+<dd><a href="summer10/lectures/Aug11"><b>Microarchecture Revisited</b></a>
+<a name="Aug11">
+<ul>
+<li>P&amp;P 4, Appendix C
+<li>T 2
+<li>T 4.1-4.3
+</ul>
+</dd>
+<p>
+<!-- 27 -->
+<dt>Friday, August 13</dt>
+<dd><a href="summer10/lectures/Aug13"><b>Microarchitecture Revisited part Deux</b></a>
+<a name="Aug13">
+<ul>
+<li>T 2
+<li>T 4.1-4.3
+</ul>
+</dd>
+<p>
+<!-- 28 -->
+<dt>Monday, August 16</dt>
+<dd><a href="summer10/lectures/Aug16"><b>Into the Real World</b></a>
+<a name="Aug16">
+<ul>
+<li>T 2
+</ul>
+</dd>
+<p>
+<!-- 29 -->
+<dt>Tuesday, August 17</dt>
+<dd>open
+</dd>
+<p>
+<!-- more 29 -->
+<dt>Wednesday, August 18</dt>
+<dd><a href="summer10/lectures/Aug18"><b>Dirty Tricks part 1</b></a>
+<a name="Aug18">
+<ul>
+<li> T 4.4, 4.5
+</ul>
+</dd>
+<p>
+<!-- 30 -->
+<dt>Friday, August 20</dt>
+<dd><b>Dirty Tricks part 2</b>
+<a name="Aug20">
+<ul>
+<li> T 4
+</ul>
+</dd>
+<p>
+<!-- 31 -->
+<dt>Monday, August 23</dt>
+<dd><b>Computer Security</b>
+<ul>
+<li>
+</ul>
+</dd>
+<p>
+<!-- 32 -->
+<dt>Tuesday, August 24</dt>
+<dd>open
+</dd>
+<p>
+<!-- 33 -->
+<dt>Wednesday, August 25, <b>11:30-1:30</b></dt>
+<dd><b>The Olympics</b>
+<ul>
+<li>
+</ul>
+</dd>
+</dl>
+<p>
+<hr>
+<b>Acknowledgements</b><br>
+Much of this course was designed by <a href="http://www.cs.dartmouth.edu/~sws">Sean Smith</a>.  I greatfully follow his design and suggestions/improvements by Sean and previous professors including Pete Johnson and Vibhor Bhatt.

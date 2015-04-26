@@ -1,0 +1,125 @@
+http://www.cs.dartmouth.edu/~miluzzo
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Title      : Puzzled
+Version    : 1.0
+Released   : 20080706
+Description: A wide two-column design suitable for blogs and small websites.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Emiliano Miluzzo</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<!-- Google  analytics stuff start -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19440560-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google  analytics stuff end -->
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1>Emiliano Miluzzo</h1>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="#">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<div id="headerbg">
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<!-- start latest-post -->
+		<div id="latest-post" class="post">
+			<h1 class="title">personal biography</h1>
+			
+			<div class="entry">
+				<p> I am a 5-th year PhD student working with <a href="http://www.cs.dartmouth.edu/~campbell">Prof. Andrew T. Campbell</a> in the <a href="http://www.cs.dartmouth.edu/~sensorlab">Mobile Sensing Group</a> at Dartmouth College.</p>
+
+				<p>I am an experimental computer scientist working at the intersection of mobile systems and applied machine learning and have helped spearhead the emerging area of mobile phone sensing. By mining large scale sensing data sets from mobile phones and using machine learning techniques to analyze the data it is possible to discover patterns and details about individuals and ensembles of people not possible before. As a result we can exploit real-time and historical sensing data from communities of people, making inferences at scale and advancing the design of new people-centric sensing systems across many emerging application domains. My goal is to push machine learning techniques to the phone, exploit large-scale data and advance the design of smart mobile systems. </p>
+
+				<p>I spent four months (September-December 2009) at Nokia Research Center - Palo Alto, as research intern working on mobile sensing frameworks and applications for smartphones.</p>
+
+				<p>I have been TPC co-chair of the <a href="http://sensorlab.cs.dartmouth.edu/s32010/">ACM S3 2010 Workshop</a>, co-located with ACM MobiCom and MobiHoc 2010, and panel co-chair of <a href="http://synrg.ee.duke.edu/mobihoc09_s3/index.htm">ACM S3 2009</a>, co-located with MobiHoc 2009.</p>				
+
+			</div>
+		</div>
+		<!-- end latest-post -->
+		<!-- start recent-posts -->
+		<div id="recent-posts">
+			<div class="post">
+				<h2 class="title">what's new </h2>
+				<div class="entry">
+					<p>The Eyes Have it, <i>Communications of the ACM</i>, December 2010</p>
+					<p><a href="http://cacm.acm.org/magazines/2010/12/102119-the-eyes-have-it/fulltext" class="more">Read more</a></p>
+				</div>
+				<div class="entry">
+					<p>Share Information to Boost Cellphone Performance, <i>New Scientist</i>, June 2010</p>
+					<p><a href="http://www.newscientist.com/article/dn19104-share-information-to-boost-cellphone-performance.html" class="more">Read more</a></p>
+				</div>
+				<div class="entry">
+					<p>EyePhone: New Cellphone Software Tracks Users' Eye Movements For Control, <i>Popular Science</i>, May 2010</p>
+					<p><a href="http://www.popsci.com/gadgets/article/2010-05/eyephone-new-cellphone-software-tracks-users-eye-movements" class="more">Read more</a></p>
+				</div>
+				<div class="entry">
+					<p>Eye Tracking for Mobile Control, <i>MIT Technology Review</i>, May 2010</p>
+					<p><a href="http://www.technologyreview.com/computing/25369/?a=f" class="more">Read more</a></p>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- end recent-posts -->
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+
+<div id="footer">
+	<!-- empty footer -->
+</div>
+
+<div style="font-size: 0.8em; text-align: center;">
+<br />
+Based on template from <a href="http://www.zeroweb.org">Zeroweb.org</a><br />
+<br />
+</div>
+</body>
+</html>

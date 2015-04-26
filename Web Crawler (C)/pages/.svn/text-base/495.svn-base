@@ -1,0 +1,136 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July20
+3
+<html><head><title>July 20: The LC-3 ISA</title></head>
+
+<body>           
+
+<h1>July 20: The LC-3 ISA</h1>
+
+
+<hr><h2>0) Recap</h2><hr> 
+
+Yesterday, we talked alot about architecutres and what goes into an
+instruction set architecture.  We also talked about the LC-3
+architecture, which you'll be implementing this term, and we saw that
+it gives low level programmers the following to play with:
+
+<p>
+<img src="img/isasketch.jpg" width="50%" alt="oops"></img>
+</p>
+
+The only part of the LC-3 ISA that we <i>didn't</i> talk about it the
+actual instruction set.
+
+<hr><h2>The LC-3 instruction set</h2><hr>
+
+P&amp;P, Appendix A:<br>
+<img src="img/opcodes.jpg" widht="70%" alt="oops"></img>
+
+<p>The P&amp;P book dicides instructions into three types:
+<ul>
+<li> <b>operate</b> instructions: process information
+<li> <b>data movement</b> instructions: move data between registers and memory (and I/O...)
+<li> <b>control</b> instructions: change the sequence of instructions being executed.
+</ul>
+
+<hr>
+<b>Operate Instructions</b>: AND,ADD,NOT
+<br> These do exactly what you'd expect.
+Two ways of calling AND/ADD:
+<ul>
+<li>both inputs are registers
+<li>one input register, one input immediate value (i.e. a constant)
+</ul>
+
+<p><hr>
+<b>Data Movement Instructions</b>: LD,LDR,LDI,LEA,ST,STR,STI
+<br> Load instructions move data from memory to a register.
+<br> Store instructions move data from a register to memory.
+<p>All of them have a similar form:
+<p><center>
+<img src="img/ldr.jpg" alt="oops" width="90%"></img>
+</center></p>
+<ul>
+<li> opcode -- you know already
+<li> DR/SR -- register we're writing to (on a load) or reading from (on a store)
+<li> address generation bits -- the last nine bits (get turned into a memory address)
+</ul>
+All data movement instructions use the last nine bits to generate an
+address for the memory part of the instruction.
+
+<p>There are four ways the LC-3 uses these bits to get at the desired
+address.  Together, they're called <i>addressing modes</i>.</p>
+
+<hr><h3> Addressing Modes</h3><hr>
+
+<p>How does an opcode specify the data?</p>
+
+<hr><p>In the LC-3:</p>
+
+<hr>
+
+<h3>PC-relative</h3>
+
+<p><img src="img/pcr-ex.jpg" alt="too bad" width="50%"></p>
+
+<hr>
+<h3>Base+offset</h3>
+
+<p><img src="img/bo-ex.jpg" alt="too bad" width="50%"></p>
+
+<hr>
+<h3>literal/immediate</h3>
+Don't go to memory at all!  instead, load an <i>address</i> into a register, e.g., R1 <--  PC* + SEXT(offset).
+<hr>
+<h3>indirect</h3>
+
+<p><img src="img/indirect2.jpg" alt="too bad" width="80%"></p>
+
+
+<p><hr>
+<b>Control Instructions</b>: BR,JMP,JSR,JSRR,RET,RTI,TRAP
+<p>Control instructions change the sequence of instructions that get executed.
+<p>The Branch instruction changes the PC to PC* + SEXT(PCoffset) but
+only if the sign of the last written GPR value matches one of
+the <i>set</i> condition codes in the instruction.  (e.g., if the last
+GPR write was zero, and Z==1)
+
+<hr>
+<p>Another example: Jump to Subroutine
+<p><img src="img/jsr.jpg" alt="too bad" width="60%"></p>
+
+<p>Why would you want to jump to a subroutine?
+
+<hr><h2>2) An Example Program</h2><hr>
+
+
+
+<hr><p>Program</p>
+
+<p><img src="img/myfig5-13.jpg" alt="too bad" width="30%"></p>
+
+
+<p><a href="demo/513.bin"><b>demo/513.bin</b></a></p>
+
+
+<p>lc3convert -b2</p>
+<p><a href="demo/data.hex"><b>demo/data.hex</b></a></p>
+
+
+<p>lc3convert -b16</p>
+<p>lc3sim-tk</p>
+
+
+<hr><h2>3) The LC-3 Instruction Cycle</h2><hr>
+<ul>
+<li>Fetch
+<li>Decode
+<li>Evaluate Address
+<li>Fetch Operands
+<li>Execute
+<li>Store Result.
+</ul>
+
+</body>
+</html>
+

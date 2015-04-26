@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query
+END
+QueryEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/QueryEngine.h
+END
+QueryEngine.h.gch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/QueryEngine.h.gch
+END
+getDocList.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/getDocList.c
+END
+make_test_run_tinysearch.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/make_test_run_tinysearch.sh
+END
+query_test
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/query_test
+END
+sortList.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/sortList.c
+END
+query_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/query_test.c
+END
+printList.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/printList.c
+END
+Query_Engine
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/Query_Engine
+END
+Query_Engine.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/Query_Engine.c
+END
+getList.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/getList.c
+END
+getWord.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/getWord.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/query/Makefile
+END

@@ -1,0 +1,6 @@
+%mMax is the simulation size for the double infinite sum
+%nMax is the number of energy states simulting (i.e. matrix size)
+function out = createDList(mMax,r,nMax);
+    out = cell(1,2*mMax+2);
+    for i = -mMax:mMax,
+        out{i+mMax+1) = 

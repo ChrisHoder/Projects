@@ -1,0 +1,386 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Python_setup
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Python setup" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Python setup - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Python_setup";
+		var wgTitle = "Python setup";
+		var wgAction = "view";
+		var wgArticleId = "16";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1021;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Python_setup skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Python_setup" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Python_setup" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Python_setup&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Python_setup&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Python_setup&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Python setup</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>We will use Python 2.7 for all programming assignments.  Python is straightforward enough that, as long as you have some prior coding experience in other languages, you should be able to become fluent quickly, and there are several modules available that will allow you to put solutions together quickly.  This page will describe modules and libraries that you will need for the assignments.
+</p><p>I'm using a Mac, and cannot give effective instructions for installing the required software on Windows.  
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Python_2.7"><span class="tocnumber">1</span> <span class="toctext">Python 2.7</span></a></li>
+<li class="toclevel-1"><a href="#Eclipse"><span class="tocnumber">2</span> <span class="toctext">Eclipse</span></a></li>
+<li class="toclevel-1"><a href="#Numpy"><span class="tocnumber">3</span> <span class="toctext">Numpy</span></a></li>
+<li class="toclevel-1"><a href="#Py_OpenGL"><span class="tocnumber">4</span> <span class="toctext">Py OpenGL</span></a></li>
+<li class="toclevel-1"><a href="#pyserial"><span class="tocnumber">5</span> <span class="toctext">pyserial</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Python_2.7" id="Python_2.7"></a><h2> <span class="mw-headline">Python 2.7 </span></h2>
+<p>Unfortunately, many of the modules will will use have not been updated for Python 3.  Therefore, we will use version 2.7.  Downloads for Windows and Mac are available at:
+</p><p><a href="http://www.python.org/" class="external free" title="http://www.python.org/" rel="nofollow">http://www.python.org/</a>
+</p><p>If you're using a mac and snow leopard, you might have better luck with the distribution here:  
+<a href="http://macinscience.org/?page_id=6" class="external free" title="http://macinscience.org/?page_id=6" rel="nofollow">http://macinscience.org/?page_id=6</a>, which will also install numpy for you!
+</p>
+<a name="Eclipse" id="Eclipse"></a><h2> <span class="mw-headline"> Eclipse </span></h2>
+<p>It's not necessary to use an IDE for python development (Emacs variants, vim, or Jedit text editors work just fine), but if you do want an IDE, you might use Eclipe, together with the pydev plugin.  You can find Eclipse at:
+</p><p><a href="http://www.eclipse.org/downloads/" class="external free" title="http://www.eclipse.org/downloads/" rel="nofollow">http://www.eclipse.org/downloads/</a>
+</p><p>You probably want "eclipse IDE for Java developers", the first link.
+</p><p><a href="http://pydev.org/" class="external text" title="http://pydev.org/" rel="nofollow">Pydev</a> is the Python language plugin for Eclipse.  The easiest way to install pydev is to use the auto-updater within Eclipse.  Instructions <a href="http://pydev.org/download.html" class="external text" title="http://pydev.org/download.html" rel="nofollow">here</a>.
+</p>
+<a name="Numpy" id="Numpy"></a><h2> <span class="mw-headline"> Numpy </span></h2>
+<p><a href="http://numpy.scipy.org/" class="external free" title="http://numpy.scipy.org/" rel="nofollow">http://numpy.scipy.org/</a>
+</p><p>Here's some example code to experiment with once you've got numpy up and running.
+</p>
+<pre>
+from numpy import *
+from math import *
+
+theta = array([0, 120, 240, 0, 120, 240, 0, 0])
+alpha = [radians(x) for x in theta]
+
+print(alpha)
+
+# convert to radians from degrees
+def radians(deg):
+    return deg / 180 * pi
+</pre>
+<p>The import commands tell python we'll be using the math and numpy modules -- it works very much like a Java import.  Numpy provides arrays; the math module provides the pi constant we'll be using.  The line 
+</p>
+<pre>
+theta = array([0, 120, 240, 0, 120, 240, 0, 0])
+</pre>
+<p>creates a variable theta.  Notice that in python you do not have to declare variables.  This shortens the code, but it does mean that some type errors may not be caught until runtime.  Be careful!
+</p>
+<pre>
+alpha = array([radians(x) for x in theta])
+</pre>  
+<p>is somewhat python-esque.  "for x in theta" iterates over each element in the array theta.  The 'radians' function is called on each element, and the brackets indicate that results are to be put into a new list.  But we want an array, not a list -- the array() function converts the list into a numpy array.
+</p><p>If you are as new to Python as I am, you may find it useful to look at the <a href="http://docs.python.org/tutorial/" class="external text" title="http://docs.python.org/tutorial/" rel="nofollow">Python tutorial</a>, and particularly the <a href="http://docs.python.org/tutorial/controlflow.html" class="external text" title="http://docs.python.org/tutorial/controlflow.html" rel="nofollow">section on control flow</a>.
+</p>
+<a name="Py_OpenGL" id="Py_OpenGL"></a><h2> <span class="mw-headline">Py OpenGL</span></h2>
+<p><a href="http://pyopengl.sourceforge.net/" class="external free" title="http://pyopengl.sourceforge.net/" rel="nofollow">http://pyopengl.sourceforge.net/</a>
+</p><p>You'll need to have GLUT and an OpenGL library installed before Py OpenGL will work, but the good news is that many computers will already have these libraries installed -- my Mac laptop had both.  The win32 version of Py OpenGL apparently contains a version of GLUT, so you should be in good shape.
+</p><p>To install Py OpenGL, all I had to do was run
+</p>
+<pre>
+python setup.py install
+</pre>
+<p>from the unzipped Py OpenGL directory.  
+</p><p>You'll also want to install the examples.  Look around for the hello.py example in the redbook example directory.  There are three components to take a look at.  The program is initialized with:
+</p>
+<pre>
+glutInit(sys.argv)
+glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB)
+glutInitWindowSize(250, 250)
+glutInitWindowPosition(100, 100)
+glutCreateWindow(&quot;hello&quot;)
+init()
+glutDisplayFunc(display)
+glutMainLoop()
+</pre>
+<p>This sets up GLUT, which is the interface library that draws windows, etc for simple OpenGL programs.  You could easily use another windowing library like GTK or wxWindows in place of GLUT, but GLUT is the simplest.  For now, you can treat the lines from glutInit... glutCreateWindow as boilerplate -- they set up glut and open a new, single-buffered rgb 250x250 pixel window at the position 100, 100 on the screen.  init() is more interesting; it contains the code that your openGL program will run one time at the start of the program.  
+</p>
+<pre>
+def init():
+   # select clearing color 	
+   glClearColor (0.0, 0.0, 0.0, 0.0)
+
+   # initialize viewing values  
+   glMatrixMode(GL_PROJECTION)
+   glLoadIdentity()
+   glOrtho(0.0, 1.0, 0.0, 1.0, -1.0, 1.0)
+</pre>
+<p>glClearColor sets the color that the background will be set to every time the window is moved or resized (every time GLUT requests a redraw).  Notice that these numbers are floating points (between 0 and 1), and that there are four numbers; the fourth is an alpha parameter describing the `transparency' of the color.  
+</p><p>OpenGL maintains several stacks of matrices.  Every time you render a point or a line segment with OpenGL, the coordinates are multiplied by the modelview matrix first -- by changing the modelview matrix, you can rotate or scale what shows up on the screen without changing the coordinates you've used to describe your 3D model.  
+</p><p>Before display, openGL also multiplies every vertex by the projection matrix.  Projection matrices change the positions of points based on where the points are with respect to the viewer.  For example, in a perspective projection two points that are far away from the viewer and 1 meter apart in real space will only be separated by a few pixels, whereas they might be separated by many pixels if they are closer to the viewer.  Orthogonal projections, however, which are used for architectural drawings, do not have this property.  Every point is projected along parallel lines onto the viewing plane, so the pixel distance between two points does not depend on the distance of the viewer from the points.  
+</p><p>So -- the init function sets the matrix mode to projection, which means that succeeding openGL functions will change the projection matrix (but not the modelview matrix).  The next line, glLoadIdentity, sets the projection matrix to the identity.  
+<a href="http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml" class="external text" title="http://www.opengl.org/sdk/docs/man/xhtml/glOrtho.xml" rel="nofollow">glOrtho</a> then sets up an orthogonal projection so that the window we are looking at will show model coordinates that appear in a two-unit cube around the origin.
+</p><p>Technically, we should probably set the modelview matrix as well, to set the viewing direction and location, but by default it turns out that we are looking 'down' the z axis, so nothing needs to be done.
+</p><p>The next line of interest in the main program is 
+</p>
+<pre>
+glutDisplayFunc(display)
+</pre>
+<p>The GLUT user interface uses <i>callbacks</i> to render the interface.  This line tells glut "every time you need to re-render the interface, for any reason, call the <i>display</i> function.  Of course, you have to write the display function in your program.  This function will get called when the window is resized, and might also be called if the window is dragged or exposed (depending on whether your windowing environment cached the contents of the window).  The display function is where you put most of your drawing code.  We have
+</p>
+<pre>
+   glClear (GL_COLOR_BUFFER_BIT)
+
+   # draw white polygon (rectangle) with corners at
+   # (0.25, 0.25, 0.0) and (0.75, 0.75, 0.0)  
+   glColor3f (1.0, 1.0, 1.0)
+   glBegin(GL_POLYGON)
+   glVertex3f (0.25, 0.25, 0.0)
+   glVertex3f (0.75, 0.25, 0.0)
+   glVertex3f (0.75, 0.75, 0.0)
+   glVertex3f (0.25, 0.75, 0.0)
+   glEnd()
+
+   # don't wait!  
+   # start processing buffered OpenGL routines 
+   glFlush ();
+</pre>
+<pre>glClear (GL_COLOR_BUFFER_BIT)</pre> clears the screen.  The argument would let you use the same command to clear other raster buffers associated with the screen.  For example, you could clear the z-buffer bit used to determine how "deep" a pixel is on your screen, and prevent later pixels that correspond to points farther away from being drawn on top of near pixels.  We won't worry about that for now.
+<p>The next line sets the color to 1, 1, 1, white.  The glBegin and glEnd commands bracket the data for the first polygon to draw.  glVertex3f indicates that the vertex will be specified using three floating-point coordinates.
+</p>
+<a name="pyserial" id="pyserial"></a><h2> <span class="mw-headline">pyserial</span></h2>
+<p><a href="http://pyserial.sourceforge.net/examples.html" class="external free" title="http://pyserial.sourceforge.net/examples.html" rel="nofollow">http://pyserial.sourceforge.net/examples.html</a>
+</p><p>Some code to test with the robot:
+</p>
+<pre>
+'''
+Created on Jun 19, 2009
+
+'''
+#!/usr/bin/python
+
+# Chrisil's test code for moving the create robot
+
+import serial  # pySerial package
+
+#set serial options here
+port = '/dev/tty.ElementSerial-ElementSe'  
+rate = 19200
+t = 1
+
+# instantiate new serial object
+ser = serial.Serial(port, rate, timeout = t);
+
+# commands
+fwdcmd1 = [128, 131]
+fwdcmd2 = [137, 0, 100, 128, 0]
+fwdcmd3 = [136, 4]
+
+#convert to binary strings
+bfwdcmd1 = ''.join(map(chr, fwdcmd1));
+bfwdcmd2 = ''.join(map(chr, fwdcmd3));
+
+#write to the serial device
+ser.write(bfwdcmd1);
+ser.write(bfwdcmd2);
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 36/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:16-0!1!0!!en!2!edit=0 and timestamp 20110220202714 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Python_setup">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Python_setup</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Python_setup" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Python_setup" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Python_setup&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Python_setup&amp;oldid=1021" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 4 January 2011, at 13:26.</li>
+					<li id="viewcount">This page has been accessed 2,799 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.207 secs. --></body></html>

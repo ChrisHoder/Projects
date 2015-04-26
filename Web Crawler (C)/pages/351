@@ -1,0 +1,343 @@
+http://www.cs.dartmouth.edu/~doug/tinysort.html
+3
+<html>
+<title>Tiniest sort</title>
+<body>
+<h2>The tiniest C sort function?</h2>
+I wondered how small a sort program one can write in C.
+The best result to date, after investigating several 
+distinctly different algorithms, tweaking a lot, and
+getting major help from others, 
+is a 61-byte function at step 23. Can you beat it?
+Or tie it, with subexponential running time?
+<pre><big>&nbsp;&nbsp;s(a,n)int*a;{n-->1?s(a,n),s(a+1,n),n=*a,*a=a[1],a[n>*a]=n:0;}
+</big></pre>
+<ul>
+GCC warning: some of the programs below need option
+<big><tt>-std=c99</tt></big>.
+<p>
+HTML warning.
+To preserve verbatim C source, naked
+<big><tt>&gt;</tt></big> symbols have been 
+left in function definitions instead of the proper HTML
+escape sequence.  Internet Explorer,
+Safari, and  Firefox tolerate the lapse.
+</ul>
+<p>
+My original intuition was that something really short would be really cryptic; and much of the code below is. But the current winner, while unconventional in using a conditional expression
+instead of <tt>if</tt>, is very clean, with only one 
+deep-C trick&mdash;the conditional subscript.
+The code is "oblivious", doing exactly the
+same steps in the same order on every
+input of a given length, and
+its running time is extraordinary!
+
+<h4>Comparison flaw</h4>
+A technical flaw (pointed out by Bill Mckeeman, who credits
+Steve Johnson) afflicts many of the following functions, in
+which pointer <tt>b</tt> (or <tt>c</tt>) 
+can take on the value <tt>a-1</tt>.
+The C standard does not guarantee the result of comparisons
+of pointers <i>p</i> related to an array <i>a</i> of length <i>n</i>
+for <i>p</i> outside the range [<i>a,a+n</i>].
+Code that suffers from this defect is marked CF.
+<p>
+One example of what could go wrong is that if 
+the array address <i>a</i>
+happens to be 0, then
+<i>a-1</i> may compare high to <i>a</i>.
+However, the situation of an array being allocated
+at address 0 won't happen in implementations of C
+that take address 0 to be the null pointer.
+Trouble could also arise for pointers represented
+as base plus (nonnegative) offset.
+<p>
+In some cases the flaw only affects empty arrays
+and can be dispelled by the classic maneuver of
+declaring it a feature, not a bug: change
+the precondition to require <tt>n>0</tt>.
+<ol type=1>
+
+<h3>Selection sort</h3>.
+<li>
+It all began with a vanilla selection sort, the
+precondition for which is <tt>a!=NULL&amp;&amp;n>=0</tt>.
+The only trickery here is routine: eliminating curly brackets
+by using commas instead of semicolons.
+The length is 93 bytes,
+excluding newlines. (CF)
+<pre><big>void sort(int*a,int n){int*b,*c,t;for(b=a+n;--b>a;)
+for(c=b;--c>=a;)if(*c>*b)t=*b,*b=*c,*c=t;}
+</big></pre>
+
+<li>
+Ditch a separate declaration by using C++/C99
+loop initialization;
+and can variable <tt>t</tt> by reusing
+<tt>n</tt>.
+(87 bytes, CF)
+<pre><big>void sort(int*a,int n){for(int*b=a+n,*c;--b>a;)
+for(c=b;c-->a;)if(*c>*b)n=*b,*b=*c,*c=n;}
+</big></pre>
+
+<li>
+Save the calculation of <tt>b</tt> by
+changing signature to <tt>sort</tt>(<i>first,last+1</i>).
+(83 bytes, CF)
+<pre><big>void sort(int*a,int*b){for(int*c,t;--b>a;)
+for(c=b;c-->a;)if(*c>*b)t=*b,*b=*c,*c=t;}
+</big></pre>
+
+<li>
+Peter McIlroy moved the declarations of
+<big><tt>c</tt></big> and
+<big><tt>t</tt></big>.
+(82 bytes, CF)
+<pre><big>void sort(int*a,int*b){while(--b>a)
+for(int*c=b,t;c-->a;)if(*c>*b)t=*b,*b=*c,*c=t;}
+</big></pre>
+
+<li>
+Now something wild: put both 
+loop tests in one <big><tt>for</tt></big>. (81 bytes, CF)
+<br>
+<i>Some bootless work gets done. The inner loop test
+comes first, and fails the first time through.
+Also the
+<big><tt>if</tt></big> fails the first time
+it's executed in each iteration of the outer loop.</i>
+<pre><big>void sort(int*a,int*b){for(int*c=a,t;c-->a
+||(c=--b)>a;)if(*c>*b)t=*b,*b=*c,*c=t;}
+</big></pre>
+
+<li>
+Peter takes out a common subexpression, <big><tt>*b</tt></big>,
+by embedding an assignment in a comparison.
+(80 bytes, CF)
+<pre><big>void sort(int*a,int*b){for(int*c=a,t;c-->a
+||(c=--b)>a;)if(*c>(t=*b))*b=*c,*c=t;}
+</big></pre>
+
+<h3>Weed out inversions</h3>
+<li>
+Do away with one loop.  Sweep the whole array, looking
+for an inversion. If one is found, reverse it and
+bump the decreasing loop index
+back to the top. (79 bytes, CF)
+<br>
+<i>This turns O(N<sup>2</sup>) behavior into O(N<sup>3</sup>).
+But speed isn't our objective, and O(N<sup>2</sup>) is shabby
+itself.</i>
+<br>
+<pre><big>void sort(int*a,int*b){for(int*c=b,t;--c>a;)
+if(t=c[-1],t>*c)c[-1]=*c,*c=t,c=b;}
+</big></pre>
+<li>
+Shorten the name. (76 bytes, CF)
+<pre><big>void s(int*a,int*b){for(int*c=b,t;--c>a;)
+if(t=c[-1],t>*c)c[-1]=*c,*c=t,c=b;}
+</big></pre>
+<li>
+Convert from <i>first,last+1</i> to <i>first,last</i> to get rid of
+a decrement operator.
+Use decrement and subscript <tt>[1]</tt> instead of
+two subscripts <tt>[-1]</tt>.
+(72 bytes, CF)
+<pre><big>void s(int*a,int*b){for(int*c=b,t;c>a;)
+if(t=*c--,*c>t)c[1]=*c,*c=t,c=b;}
+</big></pre>
+<li>
+Use obsolescent (pre-<tt><big>void</big></tt>) syntax. (68 bytes)
+<pre><big>s(a,b)int*a,*b;{for(int*c=b,t;c>a;)
+if(t=*c--,*c>t)c[1]=*c,*c=t,c=b;}
+</big></pre>
+
+<li>
+Live dangerously.  Same as step 10, but
+with modern parameter declarations.
+(67 bytes, CF)
+<br>
+<i>
+Actually I wrote 11 before 10, but erroneously assumed I had
+to revert to ancient syntax in order to have an
+<tt>int</tt> function that doesn't
+return a value.  In fact
+this is legal; the standard
+merely forbids use of the missing result.</i>
+<pre><big>s(int*a,int*b){for(int*c=b,t;c>a;)
+if(t=*c--,*c>t)c[1]=*c,*c=t,c=b;}
+</big></pre>
+
+<li>
+Jeremy Yallop replaced the <tt>if</tt> with a conditional
+expression. (66 bytes, CF)
+<br>
+<i>The <tt>if</tt> had no <tt>else</tt>, so the
+second branch (<tt>:0</tt>) in the conditional
+is useless code. Still the trick saves a byte. 
+<br>
+The nesting of commas illustrates an asymmetry of the two
+branches of a conditional: only the first 
+can contain commas.
+</i>
+<pre><big>s(int*a,int*b){for(int*c=b,t;c>a;)
+t=*c--,*c>t?c[1]=*c,*c=t,c=b:0;}
+</big>
+</pre>
+
+<li>
+Then he shed a comma by moving all but the first comma-clause from the body of the
+<tt>for</tt> into the "increment"
+clause.
+(65 bytes, CF)
+<pre><big>s(int*a,int*b){for(int*c=b,t;c>a;
+*c>t?c[1]=*c,*c=t,c=b:0)t=*c--;}
+</big></pre>
+
+<h3>Cheating</h3>
+<li>
+Grzegorz Lukasik observed that at least
+one compiler (gcc) will infer
+type specifiers in global object declarations.
+(64 bytes, CF)
+<br>
+<i>Error: allowed in the early days of C, this behavior
+does not comply with current standards.  If the code
+compiles, though, it is likely to work.</i>
+<pre><big>*c,t;s(int*a,int*b){for(c=b;c>a;
+*c>t?c[1]=*c,*c=t,c=b:0)t=*c--;}
+</big></pre>
+
+<h3>Recursion</h3>
+<li>
+In this approach
+the first recursive call sorts all but the
+first element of the array.  Then if the first
+element isn't smallest, it's swapped with the
+smallest and the rest of the array is sorted again. 
+The signature is <tt>s</tt>(<i>first,last+1</i>). (68 bytes)
+<br>
+<i>With two recursive calls in the body, the code
+may look as if its running time is
+O(2<sup>N</sup>), but more detailed analysis
+reveals it's O(N<sup>3</sup>), the
+same as for the previous program.
+<br>Flaw: one element is accessed even if the array is empty.
+</i>
+<pre><big>s(int*a,int*b){int t=*a;b>++a?s(a,b),
+t>*a?a[-1]=*a,*a=t,s(a,b):0:0;}
+</big></pre>
+
+<li>
+Several suggestions from a 
+<a href="http://www.reddit.com/r/programming/comments/aopdn/the_tiniest_c_sort_function">
+blog discussion</a> can be combined
+to make a little progress.
+First, change the signature to
+<tt>s(</tt><i>first,length,dummy</i><tt><big>)</big></tt>.
+(68 bytes)
+<br><i>This code doesn't do all its own work,
+as it depends on the caller to allocate temporary
+storage for it by supplying a dummy argument.</i>
+<br><i>Flaws: accesses one element beyond end of array and
+goes wild on empty arrays.</i>
+<pre><big>s(a,n,t)int*a;{t=*a++;--n?s(a,n,0),
+t>*a?a[-1]=*a,*a=t,s(a,n,0):0:0;}
+</big></pre>
+
+<li>
+Then suppress the increment of <tt>a</tt> to
+facilitate a remarkable conditional swap in place of
+a conditional expression. 
+Change the guard, <tt>--n &rArr; n--</tt>), to tame one flaw.
+(67 bytes)
+<br><i>
+Big effect of a "small" change:
+eliminating the conditional expression causes the running time
+to explode to</i>
+<i>O</i>(2<sup><i>N</i></sup><tt><big>)</tt></big>.
+<br>
+<i>Flaw: accesses one element beyond end of array.</i>
+<pre><big>s(a,n,t)int*a;{t=*a;n--?s(a+1,n,0),
+*a=a[1],a[t>*a]=t,s(a+1,n,0):0;}
+</big></pre>
+
+<li>
+Get rid of the dummy-argument zeroes by putting useful code in their place.
+(62 bytes)
+<br><i>The trick was pioneered by a blog commenter who
+put the first recursive call in the dummy argument of
+the second:
+<br><tt>
+&nbsp;&nbsp;s(a,n,t)int*a;{n--&&s(a,n,a[t>(*a=1[s(a+1,n),a])]=t=*a);}
+</tt>
+<br>
+Alas, this valiant offering overreaches and stumbles into
+severely undefined behaviors: calling with the wrong number of arguments,
+order of side-effects in an expresssion.
+As the code happened to compile for me,
+it propagated <tt>a[n]</tt> throughout the array.</i>
+<br>
+<i>Flaw (below): accesses one element beyond end of nonempty array.</i>
+<pre><big>s(a,n,t)int*a;{n--?s(a+1,n,t=*a),s(a+1,n,a[t>(*a=a[1])]=t):0;}
+</big></pre>
+<li>
+Correct the flaw by strengthening the guard.
+(64 bytes)
+<pre><big>s(a,n,t)int*a;{n-->1?s(a+1,n,t=*a),s(a+1,n,a[t>(*a=a[1])]=t):0;}
+</big></pre>
+
+<h3>Hybrid</h3>
+<li>
+Ben Carter saw past the ingrained habit of swapping adjacent elements
+and abolished subscripts by swapping data via existing pointers.
+Make the last element nonminimal. Bring the minimal element to the
+front by sorting all but the last, then sort all but the first.  
+The signature is <tt>s(<i>first,last</i>)</tt>
+and the running time is <i>O</i>(2<sup><small><i>N</i></small></sup>).
+(70 bytes, CF)
+<pre><big>s(int*a,int*b){int t;if(b>a)t=*a,t>*b?*a=*b,*b=t:0,
+s(a++,b-1),s(a,b);}
+</big></pre>
+
+<li>
+Replace tail recursion with iteration and
+split the conditional-swap sequence between the increment clause
+and the body of the <tt>for</tt> statement. (64 bytes, CF)
+<pre><big>s(int*a,int*b){for(int t;b>a;t>*b?*a=*b,*b=t:0,s(a++,b-1))t=*a;}
+</big></pre>
+
+<li>
+Displace the useless 0 with the recursive call. (62 bytes, CF)
+<br><i>Due to exponential running time, the cost of this change (which
+causes the tests to be reexecuted after a swap) 
+is less than that of lengthening
+the array by 1.</i>
+<pre><big>s(int*a,int*b){for(int t;b>a;t>*b?*a=*b,*b=t:s(a++,b-1))t=*a;}
+</big></pre>
+
+<h3>Recursion again</h3>
+
+<li>
+Ben then put the sorts before the swap, which allows <tt>t</tt>
+to be eliminated. This orders
+the array unless the minimal element is last, in which case the
+minimal element ends up in second place and gets swapped
+home with conditional-swap code from step 17. 
+The signature is
+<tt>s(<i>first,length</i>)</tt>.
+(61 bytes)
+<pre><big>s(a,n)int*a;{n-->1?s(a,n),s(a+1,n),n=*a,*a=a[1],a[n>*a]=n:0;}
+</big></pre>
+
+</ol>
+Originally written March 2008.  "Recursion" section soon shortened, and corrected
+with regard to asymptotic running time.
+<br>
+Steps 12,13,14,16,17 added January 2010.
+<br>
+Steps 18 and 19 added October 2010.
+<br>
+Steps 20-23 and special treatment of "Comparison flaw" added November 2010.
+</body>
+</html>

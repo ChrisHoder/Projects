@@ -1,0 +1,121 @@
+http://www.cs.dartmouth.edu/%7Ecbk
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg  </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="deimmunization.php"><img src="img/proj/deimm.png" alt="deimmunization" /></a><div><a href="deimmunization.php">Projects | Deimmunization</a></div></div></div>
+	
+<div id="left">
+	<div id="lab" class="panel">
+		<div class="paneltitle"><a href="lab.php">lab</a></div>
+		<div class="panelcontent">
+			<ul class="pix">
+				<li><a href="http://www.cs.dartmouth.edu/~cbk/cbk.php"><img src="img/lab/cbk.jpg" alt="Chris Bailey-Kellogg" title="Chris Bailey-Kellogg" /></a></li>
+				<li><a href="http://www.cs.dartmouth.edu/~himanshu/"><img src="img/lab/himanshu.jpg" alt="Himanshu Chandola" title="Himanshu Chandola"/></a></li>
+				<li><a href="http://www.cs.dartmouth.edu/~bornika/"><img src="img/lab/bornika.jpg" alt="Bornika Ghosh" title="Bornika Ghosh" /></a></li>
+				<li><a href="http://www.cs.dartmouth.edu/~luhe/"><img src="img/lab/lu.jpg" alt="Lu He" title="Lu He" /></a></li>
+				<li><a href="http://www.cs.dartmouth.edu/~asp/"><img src="img/lab/asp.jpg" alt="Andrew Scott Parker" title="Andrew Scott Parker" /></a></li>
+				<li><a href="http://www.cs.dartmouth.edu/~tuobinwang/"><img src="img/lab/tuobin.jpg" alt="Tuobin Wang" title="Tuobin Wang" /></a></li>
+				<li><a href="lab.php" class="more">[more...]</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="projects" class="panel">
+		<div class="paneltitle"><a href="projects.php">projects</a></div>
+		<div class="panelcontent">
+			<ul class="pix">
+				<li><a href="multimodal.php"><img src="img/proj/multimodal-small.png" alt="multimodal" title="Multimodal protein structure" /></a></li>
+				<li><a href="nmr.php"><img src="img/proj/nmr-graph-small.png" alt="nmr" title="NMR assignment" /></a></li>
+				<li><a href="oligomer.php"><img src="img/proj/2hyn-small.jpg" alt="oligomer" title="Protein complexes" /></a></li>
+				<li><a href="mrf.php"><img src="img/proj/mrf-small.png" alt="graphical models" title="Protein graphical models" /></a></li>
+				<li><a href="recombination.php"><img src="img/proj/recomb-small.png" alt="recombination" title="Protein recombination" /></a></li>
+		   <li><a href="deimmunization.php"><img src="img/proj/deimm-small.png" alt="deimmunization" title="Protein therapeutic deimmunization" /></a></li>
+			</ul>
+			<p class="clear"><a href="projects.php" class="more">[more...]</a></p>
+		</div>
+	</div>
+	
+	<div id="classes" class="panel">
+		<div class="paneltitle"><a href="classes.php">classes</a></div>
+		<div class="panelcontent">
+	  <h4>Spring 11: <a href="http://www.cs.dartmouth.edu/~cbk/design/">Computational methods in protein, drug, and vaccine design (CS 88/188)</a></h4>
+			<p id="classdesc">This course will explore how computer science can help in the
+rational design of proteins, drugs, and vaccines.  For example, in
+protein design we will look at approaches for optimizing mutations, or
+even entirely new proteins, to be harnessed in applications ranging
+from biofuels to biosensors.  In drug design, we will study algorithms
+for discovering new lead compounds, and for mining the relationships
+between properties of molecules and their activities.  In vaccine
+design, we will see how to train immunogenicity predictors and use
+them to develop specifically targeted vaccines.  We will find that
+these and other such applications raise numerous interesting and
+challenging problems requiring the development of appropriate models
+and algorithms.</p>
+			<div id="classimg">
+				<img src="img/class/cs88-188.png" alt="CS 88/188" />
+			</div>
+			<p class="clear"><a href="classes.php" class="more">[more...]</a></p>
+		</div>
+	</div>
+</div>
+	
+<div id="right">
+	<div id="pubs" class="panel">
+		<div class="paneltitle"><a href="pubs.php">publications</a></div>
+		<div class="panelcontent">
+			<table>
+<tr><td><a href="abs.php#recomb11"><img src="img/pub/recomb11-small.png" alt="recomb11" /></a></td><td><a href="abs.php#bmc10">Parker et al.</a>, "Optimization of combinatorial mutagenesis", <i>RECOMB</i>, 2011</td></tr>
+
+<tr><td><a href="abs.php#proteins11"><img src="img/pub/proteins11-small.png" alt="proteins11" /></td><td><a href="abs.php#proteins11">Kamisetty et al.,</a>"Accounting for conformational entropy in predicting binding free energies of protein-protein interactions", <i>Proteins</i>, 2011</td></tr>
+
+<tr><td><a href="abs.php#jcb10"><img src="img/pub/jcb10-small.png" alt="jcb10" /></a></td><td><a href="abs.php#jcb10">Zheng et al.</a>, "Protein fragment swapping: a method for asymmetric, selective site-directed recombination", <i>J. Comp. Biol.</i>, 2010</td></tr>
+
+<tr><td><a href="abs.php#bmc10"><img src="img/pub/bmc10-small.png" alt="bmc10" /></a></td><td><a href="abs.php#bmc10">Parker et al.</a>, "Optimization algorithms for functional deimmunization of therapeutic proteins", <i>BMC Bioinf.</i>, 2010</td></tr>
+
+<tr><td><a href="abs.php#proteins09"><img src="img/pub/proteins09-small.png" alt="proteins09" /></a></td><td><a href="abs.php#proteins09">Thomas et al.</a>, "Graphical models of protein-protein interaction specificity from correlated mutations and interaction data", <i>Proteins</i>, 2009</td></tr>
+
+			</table>
+			<a href="pubs.php" class="more">[more...]</a>
+		</div>
+	</div>
+	
+	<div id="news" class="panel">
+		<div class="paneltitle"><a href="news.php">news</a></div>
+		<div class="panelcontent">
+			<table>
+<tr class="on"><td class="newsdate">Jan 11</td><td><a href="http://www.immunome.org/events/1st-immunogenicity-determinants-and-correlates/">Immunogenicity workshop</a> announced for this May</td></tr><tr class="off"><td class="newsdate">Dec 10</td><td>Chris has been awarded a Dartmouth Senior Faculty Grant to help support his sabbatical next year at the <a href="http://www.immunome.org">Institute for Immunology and Informatics</a></td></tr><tr class="on"><td class="newsdate">Dec 10</td><td>Congratulations to Andrew, whose paper "Optimization of combinatorial mutagenesis" was accepted to RECOMB-11.</td></tr><tr class="off"><td class="newsdate">Dec 10</td><td>Congratulations to Jeff and Tony (Bruce Donald's lab, Duke), whose paper "A geometric arrangement algorithm for structure determination of symmetric protein homo-oligomers from NOEs and RDCs" was accepted to RECOMB-11.</td></tr>			</table>
+			<a href="news.php" class="more">[more...]</a>
+		</div>
+	</div>
+</div>
+
+<div id="footer"></div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,785 @@
+http://www.cs.dartmouth.edu/site-content/connector/internships-and-job-postings.php
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Dartmouth CS Connector | Internship and Job Postings</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="en">
+		<link rel="icon" href="http://www.cs.dartmouth.edu/favicon.ico" type="image/x-icon">
+		<meta name="keywords" content="dartmouth college computer science, dartmouth college, computer science, dartmouth computer science, dartmouth college cs, dartmouth cs, BASIC programming language, Sudikoff Laboratory, Sudikoff, Ph.D. program in Computer Science, M.S. program in Computer Science, undergraduate program in Computer Science">
+		<meta name="author" content="Dartmouth Computer Science">
+		<link rel="start" href="http://www.cs.dartmouth.edu/site-content/connector/index.php" title="Dartmouth CS Connector | Homepage">
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="all,index,follow">
+		<link href="http://www.cs.dartmouth.edu/css/support.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/site.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/lib.js"></script>
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/topNavigation.js"></script>
+		<link href="http://www.cs.dartmouth.edu/css/baseline.type.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/quickview.js"></script>
+		<script type="text/javascript">
+var imNavArr = [];
+imNavArr[0] = 'http://www.cs.dartmouth.edu/images/t2-mh_01_home.png';
+imNavArr[1] = 'http://www.cs.dartmouth.edu/images/t2-mh_02_people.png';
+imNavArr[2] = 'http://www.cs.dartmouth.edu/images/t2-mh_03_research.png';
+imNavArr[3] = 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png';
+imNavArr[4] = 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png';
+
+function preloadNavImages() {
+	if (document.images) {
+		t2_mh_0_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png");
+		t2_mh_0_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png");
+
+		t2_mh_1_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png");
+		t2_mh_1_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png");
+
+		t2_mh_2_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png");
+		t2_mh_2_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png");
+
+		t2_mh_3_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png");
+		t2_mh_3_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png");
+
+		t2_mh_4_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png");
+		t2_mh_4_click_right = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png");
+
+		preloadFlag = true;
+	}
+}
+
+function menuListener()
+	{
+	window.addEventListener('click',resetNav,false);
+	}
+
+addLoadEvent(preloadNavImages());
+addLoadEvent(menuListener());
+
+		</script>
+	</head>
+
+	<body id="pageBody">
+		<div id="helpdiv"><div id="helpdivcontent"></div></div>
+		<div id="formSubmissionDiv"><div id="formSubmissionDivContent"></div></div>
+<div id="quickview"><div id="quickviewclose"><a href="javascript:closeQuickView();">close</a></div><div id="quickviewcontent"></div></div>
+<a name="top"></a><!-- masthead and navigation table -->
+
+		<table width="838" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+<div style="position:relative;">
+
+		<table width="838" height="44" border="0" cellpadding="0" cellspacing="0">
+			<tr height="44">
+				<td valign="bottom" width="237" height="99"><a href="http://www.cs.dartmouth.edu"><img src="http://www.cs.dartmouth.edu/images/t2-mh_01.png" width="237" height="99" border="0"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_0', 'http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png', 't2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png');resetNavClock();"><img name="t2_mh_0" id="t2_mh_0_id" src="http://www.cs.dartmouth.edu/images/t2-mh_01_home.png" width="120" height="44" border="0" alt="Home"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png', 't2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png');resetNavClock();"><img name="t2_mh_1" id="t2_mh_1_id" src="http://www.cs.dartmouth.edu/images/t2-mh_02_people.png" width="120" height="44" border="0" alt="People"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png');resetNavClock();"><img name="t2_mh_2" id="t2_mh_2_id" src="http://www.cs.dartmouth.edu/images/t2-mh_03_research.png" width="120" height="44" border="0" alt="Research"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png', 't2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png');resetNavClock();"><img name="t2_mh_3" id="t2_mh_3_id" src="http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png" width="120" height="44" border="0" alt="Programs"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png');resetNavClock();"><img name="t2_mh_4" id="t2_mh_4_id" src="http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png" width="120" height="44" border="0" alt="Admissions"></a></td>
+				<td valign="bottom" width="1" height="99"><img src="http://www.cs.dartmouth.edu/images/spacer.gif" width="1" height="44"></td>
+			</tr>
+
+
+		</table>
+<div id="subnavwrap" style="position:absolute;top:99px;left:237px;width:599px;z-index:200;">
+<div class="topnavSubOverlay" id="div_t2_mh_0_sub" style="left:-2px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a></li><li><a href="http://www.dartmouth.edu" target="_blank">Dartmouth</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_1_sub" style="left:118px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_2_sub" style="left:238px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a></li><li><a href="http://cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a></li><li><a href="http://cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a></li><li><a href="http://cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_3_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Main_Page" target="_self">Summer Robotics Camp</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_4_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate Admissions</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a></li><li><a href="http://cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+
+<!-- end masthead and navigation table -->
+<!-- content table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="329">
+		<td class="contentLeft" valign="top" width="10" height="329"></td>
+		<td valign="top" bgcolor="white" width="838" height="329">
+<!-- begin page content -->
+<div style="padding:5px 10px 0px 10px;">
+<h3>
+	<span style="color: rgb(0, 51, 153);">Internships And Job Postings</span></h3>
+<hr />
+<h3>
+	<span style="color: rgb(0, 0, 128);">Web Designer at Dartmouth Medical School</span></h3>
+<p>
+	Bryan Luikart is looking for someone to design a webpage for his laboratory in the Department of<br />
+	Physiology and Neurobiology at Dartmouth Medical School.&nbsp; The laboratory focuses on the molecular mechanisms that govern the way neural activity sculpts the synaptic connections between neurons.&nbsp; The webpage would include text, pictures, and some short animations. These elements already exist, but need to be organized in a creative, appealing, and easily accessible fashion consisting of several linked pages.&nbsp; The website will be displayed at a Dartmouth domain and <a href="http://synapticplasticity.com">http://synapticplasticity.com</a>.&nbsp; Further, he would like to be taught how to maintain the site himself.&nbsp; The job will pay $200.&nbsp; Some experience required. Contact Bryan Luikart (<a href="mailto:Bryan.W.Luikart@Dartmouth.edu">Bryan.W.Luikart@Dartmouth.edu</a>) if interested.</p>
+<hr />
+<p>
+	<span style="font-size: 18px;"><strong><span style="color: rgb(0, 0, 128);">User Interface Design Internship at Disney Studios</span></strong></span><br />
+	<br />
+	If you have both technical and artistic talent, and want to make animation software a pleasure to use, Walt Disney Animation Studios is looking for top-notch student talent to join our interaction design team for our Summer 2011 internship program.<br />
+	<br />
+	We aim to partner with a qualified intern interested in the following areas:<br />
+	<br />
+	* Interface/Interaction Design<br />
+	* Task/Workflow Analysis<br />
+	* Information Visualization<br />
+	* Analytics and Data Mining<br />
+	<br />
+	Candidates will have just completed &ndash; or be in the process of completing &ndash; a degree program in interface/interaction design, information visualization, computer science, animation, experimental psychology or a related discipline. Familiarity with computer graphics, experimental design, analytics, software development, game design and film production are all highly desirable. To apply, contact Krispin Leydon &#39;99 at <a href="http://mailto:krispin.leydon@disneyanimation.com">krispin.leydon@disneyanimation.com</a>.<br />
+	<br />
+	Walt Disney Animation Studios brings imagination to life through traditional and CG animated films. We are a committed team of storytellers, artists and technologists. See our work at <a href="http://www.disneyanimation.com">www.disneyanimation.com</a> &ndash; and a theatre near you.</p>
+<hr style="height: 3px;" />
+<h3>
+	<span style="color: rgb(0, 0, 128);">iPad/iPhone App Developers at Adobe</span></h3>
+<p>
+	Professor Mary Flanagan, Sherman Fairchild Distinguished Professor in Digital Humanities, has sent us the following job announcements:</p>
+<p>
+	A friend of mine at Adobe (Bay area) is working on an iPad/iPhone app called Adobe Ideas:&nbsp; <a href="http://www.adobe.com/products/adobeideas/">http://www.adobe.com/products/adobeideas/</a><br />
+	&nbsp;<br />
+	Adobe is looking to hire 4 more experienced iPhone/iPad developers. If you know of anyone qualified / interested alums or friends, have the person send Brian his or her resume!&nbsp; Thanks.<br />
+	<br />
+	<a href="http://mailto:brantner@adobe.com">brantner@adobe.com</a><br />
+	&nbsp;<br />
+	Here are the job descriptions:<br />
+	Computer Scientist:<br />
+	<a href="https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06206">https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06206</a><br />
+	Computer Scientist:<br />
+	<a href="https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06205">https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06205</a><br />
+	Member of Technical Staff (New Graduate):<br />
+	<a href="https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06558">https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06558</a><br />
+	QE Developer:<br />
+	<a href="https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06225">https://adobe.taleo.net/careersection/2/jobdetail.ftl?lang=en&amp;job=06225</a><br />
+	&nbsp;</p>
+<hr />
+<p>
+	<span style="color: rgb(0, 0, 128);"><span style="font-size: 16px;">Research Programmer at NYU</span></span><br />
+	<br />
+	Institute for Pediatric Neuroscience, NYU Child Study Center, NYU; School of Medicine<br />
+	<br />
+	The Institute for Pediatric Neuroscience is currently recruiting a research programmer. Responsibilities for this position include designing, developing, and supporting software required to analyze functional and structural MRI data in clinical populations (e.g., file-handling, statistical analysis, graph theory, machine learning theory).&nbsp; The programmer will work as part of a multidisciplinary team that works to integrate the findings of a broad spectrum of approaches including:<br />
+	- resting state functional MRI<br />
+	- simultaneous EEG/fMRI<br />
+	- diffusion tensor imaging<br />
+	- cortical thickness<br />
+	- voxel-based morphometry<br />
+	<br />
+	Flexibility exists for the development of novel analytic approaches, visualization techniques and algorithms.<br />
+	<br />
+	Required Education and Experience:<br />
+	- BA/BS degree in computer science, software engineering, or related field required (advanced degree preferred). Alternative degree fields will be considered/accepted if accompanied by equivalent experience (depending on nature and depth of experience as it relates to relevant projects).<br />
+	- Two years related work experience.<br />
+	- Extensive experience in Perl, BASH, Python or similar scripting language.<br />
+	- Extensive background in C / C++ languages.<br />
+	- Working knowledge of UNIX/LINUX environments.<br />
+	<br />
+	Anticipated start date: immediate<br />
+	<br />
+	Salary: competitive and commensurate with experience/educational qualifications<br />
+	<br />
+	If interested, contact <a href="mailto:Michael.Milham@nyumc.org">Michael.Milham@nyumc.org</a> or <a href="mailto:Devika.Jutagir@nyumc.org">Devika.Jutagir@nyumc.org</a>.<br />
+	&nbsp;</p>
+<hr />
+<h3>
+	<span style="font-size: 16px;"><span style="color: rgb(0, 0, 128);">Software Engineering Intern at Flurry, Inc (San Francisco or New York)</span></span></h3>
+<p>
+	Company Name: Flurry, Inc.<br />
+	Contact Person: Sean Byrnes<br />
+	Contact Email: sean@flurry.com<br />
+	Company Address: 282 2nd St. Suite 202<br />
+	City: San Francisco<br />
+	State: CA<br />
+	Zip: 94105<br />
+	(Positions also available in New York, NY)<br />
+	Company Website: <a href="http://flurry.com">http://flurry.com</a><br />
+	Internship Job Title: Software Engineering Intern<br />
+	Antipated Weekly/Hourly Wage: $15-$20/hr<br />
+	Project Description:<br />
+	Flurry is the leading provide of services to developer of mobile applications for iPhone, Android, Blackberry and other smartphone devices. Flurry Analytics provides analytics on mobile application usage for 35,000 customers across 55,000 applications which represents over 4 billion sessions a month.<br />
+	<br />
+	Projects vary and are driven by the interest of the intern. Past projects<br />
+	have included:<br />
+	1. iPhone and Android application development<br />
+	2. Metrics dashboard to analyze usage of REST APIs<br />
+	3. REST API design and implementation<br />
+	4. Data mining and visualization<br />
+	<br />
+	Technologies that are used include Hadoop, HBase, XCode (Objective-C), Eclipse (Java) and Linux<br />
+	<br />
+	Key Skills Required: incoming Junior or Senior Computer Science major (or equivalent) with interest/experience in any of the following:<br />
+	1. Mobile application development<br />
+	2. Statistical analysis<br />
+	3. Data visualization<br />
+	<br />
+	Ideal candidates are self-driven and have interest beyond programming including product management, business development or marketing.</p>
+<p>
+	&nbsp;</p>
+<hr />
+<h3>
+	<span style="font-size: 16px;"><span style="color: rgb(0, 0, 128);">IT Application Support Analyst at NYU</span></span></h3>
+<p>
+	Job Title: End User IT Application Support Analyst (Education)</p>
+<p>
+	Unit: Dean&rsquo;s Office, Division of Educational Informatics</p>
+<p>
+	Contact: William Holloway, william.holloway@med.nyu.edu</p>
+<p>
+	&nbsp;</p>
+<p>
+	The Division of Educational Informatics (DEI) at the NYU Langone Medical Center is recruiting a developer to build and support rich-media educational simulations, assessment components and infrastructure. DEI is the R&amp;D department for educational technology and, as such, develops innovative applications and infrastructure for undergraduate, graduate and post-graduate medical education. The applications and programs developed by DEI play an essential role in advancing the educational program of the School of Medicine.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Position Summary</strong></p>
+<p>
+	Candidate will be part of the development group which is responsible for building and supporting rich-media educational simulations, assessment components and infrastructure; developing innovative applications and infrastructure for undergraduate, graduate, and postgraduate medical education. Primary responsibilities include:</p>
+<ul>
+	<li>
+		Providing Tier 2 application support services for NYU Langone Medical Center faculty and staff. Respond to, resolve, or properly route all customer inquiries involving specific Division of Educational Informatics applications (mostly web-based) and service requests.</li>
+	<li>
+		Providing training as needed on DEI applications as well as DEI-supported commercial software to faculty, students, and staff.</li>
+</ul>
+<p>
+	Specific job duties listed below.</p>
+<p>
+	<strong>Job Duties:</strong></p>
+<ul>
+	<li>
+		Provide assistance to end users: problem identification, instruction, and resolution of problems &ndash; either over-the-phone, via email, or in person.</li>
+	<li>
+		Responsible to create and maintain written documentation on problem solutions, tool configurations and end user documentation.</li>
+	<li>
+		Provide one-on-one instructions/training/guidance to end users and the help desk on use of Division of Educational Informatics created or supported applications.</li>
+	<li>
+		Monitor the assigned application queue(s) in the Front Range ticket system. Log real time journal entries documenting actions taken on all ticket requests. Close tickets within established service levels.</li>
+	<li>
+		Interface with customers and other IT groups to process requests in a timely fashion.</li>
+	<li>
+		Perform related duties as assigned or requested.</li>
+</ul>
+<p>
+	<strong>Minimum Qualifications</strong></p>
+<ul>
+	<li>
+		BA or BS in Information Systems or a related discipline.</li>
+	<li>
+		At least one year of support and analysis experience in End User Application Support and infrastructure or an equivalent combination of education and work experience.</li>
+	<li>
+		Work experience in healthcare and/or education or equivalent experience in complex organizations.</li>
+	<li>
+		Good consultative and communication skills, analytical ability, decisiveness, strong judgment, and the ability to work effectively with clients, IT management, staff and vendors. Know when it is appropriate to escalate a problem.</li>
+	<li>
+		Must have excellent interpersonal skills, and ability to understand the business and technical needs of the client as well as foster customer relationship building and deliver outstanding customer service.</li>
+	<li>
+		Strong verbal and written communication skills; ability to communicate technical information to non-technical users; ability to work effectively with customers and other IT members.</li>
+	<li>
+		Candidate should be able to work in a fast-paced environment, support multiple initiatives simultaneously, prioritize work to meet and or exceed established service levels and be dependable.</li>
+</ul>
+<p>
+	<strong>Preferred Qualifications</strong></p>
+<ul>
+	<li>
+		Familiarity with FrontRange ticketing system, Microsoft Outlook, and Microsoft SharePoint a plus.</li>
+	<li>
+		Basic understanding of web applications and technologies.</li>
+	<li>
+		Interest in cultivating software development skills.</li>
+</ul>
+<hr />
+<h3>
+	<span style="color: rgb(0, 0, 128);"><span style="font-size: 16px;">2011 Summer Internships for Undergraduate Students though the Department of Homeland Security</span></span></h3>
+<h3>
+	<span _fck_bookmark="1" style="display: none;">&nbsp;</span></h3>
+<p>
+	10 week research experience; $5,000 stipend plus travel expenses<br />
+	&nbsp;<br />
+	Areas of research: Engineering, computer science, mathematics, physics, chemistry, biological/life sciences, agricultural sciences, environmental science, emergency and incident management, psychology, social sciences<br />
+	&nbsp;<br />
+	Projects offered at:</p>
+<ul>
+	<li>
+		National research laboratories: Argonne,&nbsp; Lawrence Livermore, Los Alamos, Oak Ridge, Pacific Northwest, Sandia, Savannah River</li>
+	<li>
+		DHS laboratories: Transportation Security Laboratory</li>
+	<li>
+		Other research facilities, including Battelle, National Institute of Standards and Technology, Naval Research Laboratory</li>
+</ul>
+<p>
+	Locations include CA, CO, IL, MD, NM, NJ, SC, TN, WA<br />
+	&nbsp;<br />
+	U.S. citizenship required<br />
+	&nbsp;<br />
+	Application deadline: January 5, 2011<br />
+	<a href="http://www.orau.gov/dhsinternships">http://www.orau.gov/dhsinternships</a><br />
+	Administered by Oak Ridge Institute for Science and Education</p>
+<hr />
+<h3>
+	<span style="font-size: 16px;"><span style="color: rgb(0, 0, 128);">Consultant/Model Developer at International Planning &amp; Research Corporation</span></span></h3>
+<p>
+	See <a href="http://www.cs.dartmouth.edu/cms_file/87/IPRConsultantandModelDeveloperPosition.pdf">this flyer</a> for information.</p>
+<hr />
+<h3>
+	<span style="color: rgb(0, 0, 255);"><span style="font-size: 16px;">Summer Internships in Parallel Computational Science at NCAR</span></span></h3>
+<p>
+	Summer internship opportunities sponsored by the Computational and Information Systems Laboratory (CISL) at the National Center for Atmospheric Research (NCAR). NCAR is a federally funded research and development center, established in 1960, that seeks to better understand our atmosphere and how weather and climate affect the Earth. NCAR is located in Boulder, Colorado and is operated by The University Corporation for Atmospheric Research (UCAR) under a cooperative agreement with the National Science Foundation (NSF), our primary sponsor. Over 120 Ph.D. researchers and hundreds of visiting scientists conduct interdisciplinary research at NCAR with state of the art research tools - including a variety of community climate and weather computer models.<br />
+	<br />
+	As part of NCAR, CISL provides the high performance computing resources and data storage infrastructure in support of the atmospheric and related sciences and performs applied mathematics, statistics and computer science research needed to advance NCAR&#39;s science mission. NCAR/CISL have been partners of the NSF&#39;s TeraGrid since 2006 and has been a TeraGrid resource provider since 2007.<br />
+	<br />
+	SIParCS - Summer Internships in Parallel Computational Science (http://www.cisl.ucar.edu/siparcs):</p>
+<p>
+	The SIParCS Program at the National Center for Atmospheric Research (NCAR) offers graduate students and undergraduate students, who have completed their sophomore year by the summer 2011, significant hands-on R&amp;D opportunities in high performance computing (HPC) and related fields that use HPC for scientific discovery and modeling. This 10-week internship program embeds students in mentored research projects in computation science relevant to NCAR&#39;s mission. SIParCS application window opens December 1, 2010 and closes February 4, 2011.<br />
+	UCAR values diversity and encourages those in underrepresented groups to apply.</p>
+<p>
+	For more information, see <a href="http://www.cs.dartmouth.edu/cms_file/86/SIParCSflyer2011KKM102610.pdf">this flyer</a>.</p>
+<hr />
+<h3>
+	<span style="font-size: 18px;"><span style="color: rgb(0, 0, 255);"><span style="font-family: lucida sans unicode,lucida grande,sans-serif;"><b style="">Information Systems Developer&mdash;Cleveland Cavaliers</b> </span></span></span></h3>
+<p>
+	Please email your resume and cover letter to Stacey Brown-Walker (<a href="http://mailto:sbrownwalker@cavs.com">sbrownwalker@cavs.com</a>) and Farrell Finnin (<a href="http://mailto:ffinnin@cavs.com">ffinnin@cavs.com</a>) if interested.<br />
+	<br />
+	Job Description:<br />
+	<br />
+	The Information Systems Developer (ISD) will be responsible for developing Cavaliers information systems and applications throughout the company. The ISD will focus on building and documenting highly automated applications and data presentation tools that produce accurate, relevant, and timely data and analysis tools for the Cavaliers Basketball Operations, Ticket Sales, Marketing, and Merchandising staff members.<br />
+	<br />
+	Major Responsibilities</p>
+<ul>
+	<li>
+		Work with the Basketball Operations department to develop a Cavaliers specific basketball database application using Quicken Loans&rsquo; BI platform.&nbsp; This project will involve several layers:</li>
+	<li>
+		Working closely with Cavaliers front office staff to understand department needs.</li>
+	<li>
+		Organizing existing disparate data sources into a centralized, regularly updated database.</li>
+	<li>
+		Implementing a multi-faceted user interface which allows the front office, coaching staff, statistical analysis group, and ownership group to access and manipulate Cavaliers&rsquo; data.</li>
+	<li>
+		Provide data management and application development support to Ticket Sales, Marketing, and other departments.</li>
+	<li>
+		Guide the organization in identifying new data needs and delivery mechanisms for analysis, process improvement, and reporting information.</li>
+	<li>
+		Assist in the development and support of ClozOp website for retail operations.</li>
+	<li>
+		Work to integrate the Quicken Loans BI platform with Microsoft Dynamics CRM</li>
+</ul>
+<p>
+	<br />
+	Requirements:</p>
+<ul>
+	<li>
+		B.S. degree in Computer Science, Information Technology, or equivalent experience</li>
+	<li>
+		2+ Years ASP.NET development experience (C# preferably)</li>
+	<li>
+		1+ Years Microsoft SQL Server 2005/2008 T-SQL coding</li>
+	<li>
+		Familiar with creating SQL Server Reporting Services (SSRS) reports</li>
+	<li>
+		SQL 2005/2008 Analysis Services Experience a plus</li>
+	<li>
+		Experience with SharePoint integration a plus</li>
+	<li>
+		High level of interest in the NBA, some basketball playing experience a plus</li>
+	<li>
+		Experience with Microsoft Dynamics GP</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Additional information:</p>
+<p>
+	It&#39;s a great opportunity for someone who has a programming/software development background and loves the NBA, because the position will be working closely with the front office, coaches, scouts, general manager, and ownership.&nbsp; As a result there is a lot of potential to become an integral part of the Cavaliers&#39; Basketball Operations Department.<br />
+	&nbsp;</p>
+<p>
+	<span _fck_bookmark="1" style="display: none;">&nbsp;</span></p>
+<hr />
+<h3>
+	<span style="color: rgb(92, 130, 204);"><span>Jobs at Facebook</span></span></h3>
+<p>
+	<span style="color: rgb(0, 128, 128);">Software Engineer, Intern/Co-op</span><br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
+	Interested in creating great products that more than 500 million people use? Building new features and improving existing products like Photos, NewsFeed, Mobile and Inbox? Want to solve large scale, highly complex technical problems?<br />
+	&nbsp;<br />
+	Facebook is seeking a Software Engineer Intern to join the Product team.&nbsp; You will help build the next-generation system behind Facebook&rsquo;s products, create web applications that reach millions of people, and build high performance servers.&nbsp; This internship has a minimum twelve (12) week duration.<br />
+	&nbsp;<br />
+	Responsibilities</p>
+<ul>
+	<li>
+		Code highly efficient and scalable software using primarily C++ and Java</li>
+	<li>
+		Create web applications using primarily PHP</li>
+	<li>
+		Implement web interfaces using XHTML, CSS, and Javascript</li>
+	<li>
+		Build report interfaces and data feeds</li>
+</ul>
+<p>
+	<br />
+	Requirements</p>
+<ul>
+	<li>
+		Working towards B.S., M.S., or Ph.D. in Computer Science or related field</li>
+	<li>
+		Expertise with C++ and/or Java</li>
+	<li>
+		Knowledge of perl or PHP or python</li>
+	<li>
+		Knowledge of relational databases and SQL, preferably MySQL and Oracle</li>
+	<li>
+		High levels of creativity and quick problem solving capabilities</li>
+</ul>
+<p>
+	<br />
+	Bonus Points</p>
+<ul>
+	<li>
+		Great taste in music</li>
+</ul>
+<p>
+	Location</p>
+<ul>
+	<li>
+		This opportunity is located in our Palo Alto, CA headquarters.</li>
+</ul>
+<p>
+	Interested?&nbsp; Email your resume to: courtneymoloney@fb.com<br />
+	&nbsp;<br />
+	<br />
+	<span style="color: rgb(0, 128, 128);">Software Engineer &ndash; New Grad</span><br />
+	&nbsp;<br />
+	Interested in creating great products that more than 500 million people use? Building new features and improving existing products like Photos, NewsFeed, Mobile and Inbox? Want to solve large scale, highly complex technical problems?<br />
+	&nbsp;<br />
+	Facebook is seeking a Software Engineer to join the Product team.&nbsp; You will help build the next-generation system behind Facebook&#39;s products, create web applications that reach millions of people, and build high performance services. This position is full-time and there are minimal travel requirements.<br />
+	&nbsp;<br />
+	Responsibilities:</p>
+<ul>
+	<li>
+		Code high-volume ad delivery software using primarily C++ and Java</li>
+	<li>
+		Create web applications using primarily PHP</li>
+	<li>
+		Implement web interfaces using XHTML, CSS, and Javascript</li>
+	<li>
+		Build report interfaces and data feeds</li>
+</ul>
+<p>
+	&nbsp;<br />
+	Requirements:</p>
+<ul>
+	<li>
+		B.S. / M.S. / PhD Computer Science or related field</li>
+	<li>
+		Expertise with C++ and/or Java</li>
+	<li>
+		Knowledge of perl or PHP or python</li>
+	<li>
+		Knowledge of relational databases and SQL, preferably MySQL and Oracle</li>
+	<li>
+		High levels of creativity and quick problem solving capabilities</li>
+</ul>
+<p>
+	Location:</p>
+<ul>
+	<li>
+		This opportunity is located in our Palo Alto, CA headquarters.</li>
+</ul>
+<p>
+	Interested?&nbsp; Email your resume to: <span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;">&nbsp;</span><span _fck_bookmark="1" style="display: none;"> </span><a href="mailto:courtneymoloney@fb.com">mailto:courtneymoloney@fb.com</a><br />
+	&nbsp;</p>
+<hr />
+<h3>
+	<span style="color: rgb(92, 130, 204);">EMOTODROME</span></h3>
+<p>
+	Programmer needed for interactive art/science project: EMOTODROME<br />
+	<br />
+	Final application is for hand-held devices (such as iPod,iPhone).<br />
+	<br />
+	This is a Neukom Scholar position that pays $1,000 per term.<br />
+	<br />
+	Active for: fall, winter, spring<br />
+	<br />
+	Job title: programmer<br />
+	<br />
+	Skills:<br />
+	C, Java, PHP, OpenGL, Quartz, Networks (it&#39;s not necessary to know all of these, but basic level and ability to learn are needed.)<br />
+	<br />
+	Project overview:<br />
+	We will create a real-time environment in which the movements of participants (globally) are captured and merged with databases of global ice movements. the combined data sets of visitor and ice movement will, together, create a unique environment of color, pattern and sound.</p>
+<p>
+	We want people to move their bodies, to physically engage with data that might otherwise remain distant and vague. we hope to provide relevant moments in which people have an opportunity to personally interact with some of the most crucial data of our times and walk away with an attachment. Though, rationally, nothing may change for our visitors, we hope to find a way to create emotional attachment through the bodily engagement with data.</p>
+<p>
+	Contact: Blitz Victoria Smith.</p>
+<hr />
+<h3>
+	<span style="color: rgb(92, 130, 204);"><img align="" alt="Anchor" src="../include/ckeditor/images/spacer.gif?t=A4SD49Y" />Web Engineer at Kapost</span></h3>
+<p>
+	<span style="color: rgb(0, 128, 128);">About Kapost</span><br />
+	Kapost is a venture-backed start-up based in beautiful Boulder, CO. We&rsquo;re revolutionizing the publishing industry by bringing the power of the crowd into the publisher&rsquo;s newsroom, enabling publishers to generate more and higher quality content at lower cost. The founding team consists of 2 Dartmouth CS graduates and have all previously started companies that have had successful exits. You can learn more about us here: <a href="http://kapost.com">kapost.com</a></p>
+<p>
+	<br />
+	<span style="color: rgb(0, 128, 128);">Where you fit in!</span><br />
+	We&rsquo;re looking for a Web Engineer who has a passion for building modern web applications. As our team is still small we&rsquo;re looking for an all-star, someone who is equally comfortable building beautiful APIs and a scalable service layer as they are making incredible user experiences whether those be web or mobile. More than anything you must thrive in a start-up environment, where you will be given a lot of responsibility and be expected to learn and adapt quickly.</p>
+<p>
+	<br />
+	<span style="color: rgb(0, 128, 128);">Responsibilities</span></p>
+<ul>
+	<li>
+		Design, implement and maintain major components of the server architecture</li>
+	<li>
+		Own entire sub-systems of the product suite, like search, performance-tracking, analytics platform</li>
+	<li>
+		Build innovative and beautiful user experiences</li>
+</ul>
+<p>
+	<span style="color: rgb(0, 128, 128);">Requirements</span></p>
+<ul>
+	<li>
+		Solid experience with Ruby on Rails or equivalent modern MVC application framework</li>
+	<li>
+		Experience working on a high-traffic application</li>
+	<li>
+		Experience building rich user interfaces</li>
+	<li>
+		A commitment to test driven development and quality craftsmanship</li>
+</ul>
+<p>
+	<span style="color: rgb(0, 128, 128);">Bonus</span><br />
+	We use a lot of cutting edge technologies at Kapost. While we mostly value an understanding of fundamental design patterns, experience, and an ability to learn, if you&rsquo;ve worked with the technologies in our stack that would be beneficial. Here are a sampling of our tools: Ruby on Rails, MongoDB, Semantic HTML5, jQuery, HAML/SASS, Heroku, Git, Capybara, Selenium</p>
+<p>
+	<br />
+	<span style="color: rgb(0, 128, 128);">How to apply</span><br />
+	If you think you&rsquo;d be a good fit, please send your resume and some samples of your work to <a href="http://mailto:jobs@kapost.com">jobs@kapost.com</a><br />
+	&nbsp;</p>
+<hr />
+<h3>
+	<span style="color: rgb(92, 130, 204);"><a name="mc10"></a>Interns Wanted at mc10</span></h3>
+<p>
+	mc10 is a venture-financed, nanotech electronics startup developing products for medical, consumer and industrial applications. We have paid internship opportunities for the winter, spring and summer terms.</p>
+<p>
+	More information on the attached <a href="http://www.cs.dartmouth.edu/cms_file/57/MC10IncInternshipFlyerv2.pdf">flyer</a>.</p>
+<hr style="height: 1px;" />
+<p>
+	&lt;&lt; <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php">Back to Connector Homepage</a></p>
+
+</div>
+<!-- end page content -->
+		</td>
+		<td class="contentRight" valign="top" width="10" height="329"></td>
+	</tr>
+</table>
+<!-- end content table -->
+
+<!-- page divider table -->
+<table width="858" height="20" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="20">
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_04.png" width="10" height="20" alt=""></td>
+		<td width="838" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_05.jpg" width="838" height="20" alt=""></td>
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_06.png" width="10" height="20" alt=""></td>
+		</tr>
+</table>
+<!-- end page divider table -->
+<!-- bottom navigation and search table -->
+<table width="838" align="center" height="144" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="128">
+		<td class="pageBottom" width="838" height="128">
+							<table border="0" cellspacing="0" cellpadding="0" align="center" class="bottomNav">
+		<tr>
+			<td class="bottomNavRowHead">About</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a> | <a href="http://cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a> | <a href="http://www.dartmouth.edu" target="_self">Dartmouth</a> | <a href="http://cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a> | <a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a> | <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">People</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a> | <a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Research</td>
+			<td class="bottomNavLinks"><a href="http://cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a> | <a href="http://cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a> | <a href="http://cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a> | <a href="http://cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a> | <a href="http://cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Programs</td>
+			<td class="bottomNavLinks"><a href="http://cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a> | <a href="http://cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Admissions</td>
+			<td class="bottomNavLinks"><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate</a> | <a href="http://cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a> | <a href="http://cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a> | <a href="http://cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a> | <a href="http://cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr height="16">
+		<td width="838" height="16"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_11.gif" width="838" height="16" alt=""></td>
+	</tr>
+</table>
+<!-- end bottom navigation and search table -->
+
+<!-- copyright table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td class="pad5" width="838" style="padding-left:25px;"><span class="copyrightText">&copy; Copyright 2010, Dartmouth College Computer Science Department, All Rights Reserved</span></td>
+	</tr>
+</table>
+<!-- end copyright table -->
+
+<!-- pad the page bottom -->
+<div class="pad5"><div class="pad5"></div></div>
+<!-- end pad the page bottom -->
+	</body>
+</html>

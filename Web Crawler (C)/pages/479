@@ -1,0 +1,89 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw5
+3
+<html> <head>
+<title>CS37: Homework 5</title>
+</head>
+ 
+<body>
+<h1>Homework 5</h1>
+
+Published: Tuesday, July 27 <br>
+Due: Monday, August 2, <strong>11:59PM</strong>.<br>
+<p>
+<hr>
+<h2>Q1: Build the LC-3 Datapath</h2>(40 points)
+<hr>
+<p>
+Build up the part
+of the LC-3 processor <a href="dpath.pdf"><b>shown here</b></a>.
+(That is, everything except the FSM, the memory, the IO, and the
+interrupt handling stuff.)
+<ul>
+<li> Use LogiSim "tunnel components" to handle your control signals.
+<li> Use Table C.1 to determine how to hook up the inputs to the multiplexors.
+(The options are listed in numerical order.)
+<li> Add an extra control line, CLEAR, that clears all registers.
+</ul>
+Feel free to use your components from previous homeworks as well as LogiSim components.
+<p>
+<p>
+
+
+<hr>
+<h2>Q2: Test!</h2>(10 points)
+<hr>
+<p>
+Test your datapath. 
+<p>
+It might be useful to consider:
+<ul>
+<li> starting with some very simple hex I/O to simulate memory 
+<li> having a bank of switches to drive the control lines
+<li> having binary probes on the control signals
+<li> having a few hex probes scattered around, to monitor buses
+<li> having a way to spy on register values
+</ul>
+<p>
+Wiggle the switches and see that you can move data
+around.  Check for things such as:
+<ul>
+<li> broken connections
+<li> lines that aren't wired per the table in the book
+</ul>
+<p>
+ Then, find a partner and test each other's datapaths.  
+<p>
+<hr>
+<h2>Q3: Add some Memory</h2>(30 points)
+<hr>
+<p>
+Add RAM for your user code. You'll need:
+<ul>
+<li> 4K words, starting at x3000, for your user code.
+<li> 1K words, ending at xEFFF, for your stack.
+</ul>
+<p>
+<hr>
+<h2>Q4: Add some IO</h2>(20 points)
+<hr>
+<p>
+Implement (memory-mapped) IO by connecting the 
+LogiSim TTY and keyboard components---and installing some glue so they 
+behave as the LC-3 KBDR/KBSR and DDR/DSR.
+<p>
+(Refer to sections 8.2 and 8.3 (Patt & Patel) for more details about memory-mapped IO implementation.)
+<p>
+As usual, make sure you have a test harness for this---so you can convince Ranganath and James that you convinced yourself it worked.
+<p>
+<p>
+
+
+<h2>Submission</h2>
+<hr>
+<p>
+ Send email to cs37staff@cs with the subject line "Homework 5
+ Submitted".  Attach all relevant files.  If you use multiple files,
+ packing the assignment into a single zip file is preferred.
+<p>
+</body> </html>
+

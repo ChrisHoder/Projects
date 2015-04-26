@@ -1,0 +1,78 @@
+http://www.cs.dartmouth.edu/~mckeeman/downloads.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- FILE:    downloads.html
+     PURPOSE: download page for McKeeman
+     MODS:    McKeeman - 2009.06.02 - original
+  -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>downloads</title>
+</head>
+
+<body bgcolor="#FFF0D0">
+
+<!-- the following table head provides margins and textbook like appearance -->
+<table>
+<tr><td width=50></td><td width=600>
+<h3>Download page for Bill McKeeman's stuff</h3>
+<p>
+This is the standard place to get programs I have written.
+Many of them have been used in academic courses.
+Sometimes ex-students want to get a copy to use or modify for new work.
+In any case all these programs carry the BSD <a href="bsd.html">copyright</a>.
+</p>
+<p>
+<li>
+<b>Compiler and compiler course</b>. 
+This entry contains a teaching compiler written MATLAB 
+and accompanying course materials
+suitable for a 10 day industrial short course (16Mb compressed)
+[<a href="mxcom20090603.zip">download</a>].
+</li>
+
+<li><b>xcom in C++</b>
+This entry contains a teaching compiler written in C++.
+It is an earlier version of the compiler written in MATLAB (above).
+Some students choose to download the C++ version as a starting
+point for a more serious compiler (200Kb compressed) 
+[<a href="c++.zip">download</a>].
+</li>
+
+<li><b>Growing a Compiler</b>.
+This entry contains a paper describing growing a compiler via bootstrapping
+from small beginnings. 
+The presentation is via the MATLAB publish feature but the
+operational code of the compiler is written in C. 
+The components used to generate the publish file are included.  
+Some of them require 32-bit Intel X86 hardware to run correctly 
+(600Kb compressed).
+[<a href="cs48/mxcom/gem/html/GrowingCompiler.html">read</a>]
+&nbsp;
+[<a href="gem20090603.zip">download</a>]
+</li>
+
+<li><b>Can a tiny compiler-compiler grow into something useful?</b>.
+This entry is an earlier version of <em>Growing a Compiler</em>
+(above) as delivered to EE 380, Stanford Computer Science Department,
+March 4, 2009 [<a href="cs48/mxcom/m/html/StanfordTalk.html">talk</a>]
+&nbsp;
+[<a href="cs48/mxcom/m/html/StanfordSlides-01.html">overheads</a>].
+</li>
+
+<LI><b>Computation of Pi by Archimedes</b>
+A MATLAB publish script resulting in an HTML description of the 
+steps taken by Archimedes in his result 3 1/7 &gt; pi &gt; 3 10/71.
+<A href="http://www.mathworks.com/matlabcentral/fileexchange/29504">
+Computation of Pi by Archimedes</A>
+</LI>
+
+</ul>
+
+<!-- the following table end provides margins and textbook like appearance -->
+</td><td width=50></td></tr>
+</table>
+
+</body>
+</html>

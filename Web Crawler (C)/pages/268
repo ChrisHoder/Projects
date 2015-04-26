@@ -1,0 +1,187 @@
+http://www.cs.dartmouth.edu/~ac/Teach/CS85-Fall09
+3
+<html><head>
+  <title>CS 85/185 (Fall 2009): Amit Chakrabarti</title>
+  <link rel="stylesheet" type="text/css" href="/~ac/main.css">
+  <style>
+    .schedtbl {font-family:arial,sans-serif; font-size:smaller}
+    .bannertext {color: #ffffff; font-weight: bold; height: 20px}
+    .fakecaps {font-size: smaller; text-transform: uppercase}
+  </style>
+</head>
+
+<body>
+
+<i> <div align=right>
+  <a href="../"> Teaching</a> &nbsp &nbsp
+  <a href="../../"> Home</a>
+</div> </i>
+
+<table border=0 width=100% cellpadding=5 cellspacing=0> <tr>
+  <td valign=top>
+    <img align=center src="http://www.cs.dartmouth.edu/images/Dtree.gif" 
+    alt="Dartmouth Logo"><br>
+    <a href="http://www.cs.dartmouth.edu">Computer Science</a><br>
+    <a href="http://www.dartmouth.edu">Dartmouth College</a>
+  </td>
+  <td valign=middle align=center>
+    <h3>Computer Science 85/185<br>
+    Data Stream Algorithms <br>
+    <a href="http://www.cs.dartmouth.edu/~ac/">Amit Chakrabarti</a></h3><br>
+  </td>
+  <td valign=middle align=right><h3>Fall 2009<h3></td>
+</tr></table>
+
+<!-- ------------------------------------------------ -->
+
+<table width=800px> <tr> <td style="font-size:100%">
+
+  <p> <strong>Where:</strong> Sudikoff 214 </p>
+
+  <p> <strong>When:</strong> 10A hour: TTh 10:00-12:00, X-hr W 15:00-16:05 </p>
+
+  <p> <strong>What:</strong> 
+  This course studies algorithms that process massive amounts of
+  data; so massive that they will not fit in a computer's storage.
+  As we shall see, this forces one to rethink even very basic
+  algorithmic problems, such as counting the number of distinct
+  elements, selection, and sorting. We shall study techniques to
+  summarize such large amounts of data into succinct "sketches"
+  that nevertheless retain important and useful information. We
+  shall introduce the necessary mathematical tools along the way. 
+  Most techniques we shall study come from research in the last
+  decade or so, although a few date as far back as the 1970s.  The
+  techniques we shall study have been applied successfully to web
+  data compression, approximate query processing in databases,
+  network measurement and signal processing. The course itself
+  will focus on the underlying techniques rather than the specific
+  applications. </p>
+	  
+  <p> <strong>Prerequisites:</strong> An undergraduate-level course 
+  in Algorithms (such as our CS 25) <br>
+  &nbsp;&nbsp;<strong><i>or else:</i></strong> A strong mathematics 
+  background and permission of the instructor. </p>
+
+  <p> <strong>Lecture Plan:</strong> The following is a rough outline. </p>
+
+<table cellpadding=1 class=schedtbl>
+
+<tr>
+<td colspan=3 bgcolor=#00aa88> <div class=bannertext> I. Basic Algorithms: Estimating Statistics. </div> </td> </tr>
+
+<tr class=oddrow>
+<td align=right>1. </td> <td>Sep 24</td>  <td class=rowdata> Data stream model; Our first algorithm: the <span class=fakecaps>majority</span> problem. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>2. </td> <td>Sep 29</td>  <td class=rowdata> The <span class=fakecaps>distinct-elements</span> problem; Randomized algorithms; Approximation. </td> </tr>
+                                              
+<tr class=oddrow>
+<td align=right>3. </td> <td>Oct 1 </td>  <td class=rowdata> Review of basic probability theory; Hash functions. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>4. </td> <td>Oct 6 </td>  <td class=rowdata> Count Sketch; Count-Min Sketch; <span class=fakecaps>majority</span> revisited; The <span class=fakecaps>heavy-hitters</span> problem. </td> </tr>
+                                              
+<tr class=oddrow>
+<td align=right>5. </td> <td>Oct 8 </td>  <td class=rowdata> More modern results on <span class=fakecaps>distinct-elements</span>. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>6. </td> <td>Oct 13</td>  <td class=rowdata> Frequency moments; Norms; The amazing second moment (F<sub>2</sub>) algorithm. </td> </tr>
+                                              
+<tr class=oddrow>
+<td align=right>7. </td> <td>Oct 15</td>  <td class=rowdata> Delving deeper into the F<sub>2</sub> algorithm; Johnson-Lindenstrauss Lemma. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>8. </td> <td>Oct 20</td>  <td class=rowdata> The <span class=fakecaps>median</span> and <span class=fakecaps>selection</span> problems; Random order versus adversarial order. </td> </tr>
+                                              
+<tr class=oddrow>
+<td align=right>9. </td> <td>Oct 22</td>  <td class=rowdata> Stable distributions; Estimating L<sub>1</sub> distance; The <span class=fakecaps>variational-distance</span> problem. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>10.</td> <td>Oct 27</td>  <td class=rowdata> Slack. </td> </tr>
+                                              
+<tr>
+<td colspan=3 bgcolor=#00aa88> <div class=bannertext> II. More Advanced Algorithms: Graphs, Geometry, Sequences </div> </td> </tr>
+
+<tr class=oddrow>
+<td align=right>11.</td> <td>Oct 29</td>  <td class=rowdata> Spanners and Shortest Paths. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>12.</td> <td>Nov 3 </td>  <td class=rowdata> Matchings. </td> </tr>
+                                              
+<tr class=oddrow>
+<td align=right>13.</td> <td>Nov 5 </td>  <td class=rowdata> Triangle counting; Mininum Spanning Trees. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>14.</td> <td>Nov 10</td>  <td class=rowdata> Clustering; <i>k</i>-center, <i>k</i>-median, <i>k</i>-means. </td> </tr>
+                                              
+<tr class=oddrow>
+<td align=right>15.</td> <td>Nov 12</td>  <td class=rowdata> Coresets; Earthmover distance. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>16.</td> <td>Nov 17</td>  <td class=rowdata> Slack. </td> </tr>
+                                              
+<tr>
+<td colspan=3 bgcolor=#00aa88> <div class=bannertext> III. Lower Bounds </div> </td> </tr>
+
+<tr class=oddrow>
+<td align=right>17.</td> <td>Nov 19</td>  <td class=rowdata> Communication complexity; The <span class=fakecaps>index</span>, <span class=fakecaps>disjointness</span> and <span class=fakecaps>gap-hamming</span> problems. </td> </tr>
+                                              
+<tr class=evenrow>
+<td align=right>18.</td> <td>Nov 24</td>  <td class=rowdata> Some reductions from communication to streaming problems. </td> </tr>
+                                              
+<tr class=oddrow>
+<td align=right>19.</td> <td>Dec 1 </td>  <td class=rowdata> Slack. </td> </tr>
+
+</table>
+
+<br/>
+
+  <p> <strong>Textbooks:</strong> There is no set textbook for this
+  course. A good fraction of the material we shall study only resides in
+  research papers. There is a good survey by <a
+  href="http://www.cs.rutgers.edu/~muthu/">Muthukrishnan</a>, somewhat
+  dated at this point, but still very useful for the basics. </p>
+
+  <p> <strong>Course Blog:</strong> Please follow 
+  <a href="http://dartstreams.wordpress.com">this weblog</a>
+  for updates on all aspects of the course. This is where announcements
+  and helpful little notes will be posted from time to time.
+
+  <p> <strong>Lecture Notes:</strong> Here are the <a
+  href="Notes/lecnotes.pdf">evolving lecture notes</a> for the course.
+  All registered students are required to scribe a minimum of one
+  lecture each, and help prepare notes for that lecture, in the style of
+  the posted notes. It is imperative to learn basic LaTeX for this
+  purpose. We shall regularly update these notes, effectively
+  circulating them to all other students. </p>
+
+  <!--
+  <p> Scribes: Please <a href="Scribing/">click here</a> (accessible only
+  from Dartmouth IP addresses) to download the necessary templates for
+  scribing. Simply create a new file, one per lecture, imitate the style
+  of "01comptrees.tex" and include this new file in the master file
+  "lecnotes.tex". </p>
+  -->
+
+  <p> <strong>Homework Sets:</strong> We will have 3 or 4 sets in total. 
+  When a new set is posted here, it will be announced on the 
+  <a href="http://dartstreams.wordpress.com">course blog</a>. </p>
+
+  <ul> 
+    <li> <a href="Homework/hw1.pdf">Homework 1</a>, due Thu Oct 22, at 10:00am. </li>
+    <li> <a href="Homework/hw2.pdf">Homework 2</a>, due Thu Oct 29, at 5:00pm. </li>
+    <li> <a href="Homework/hw3.pdf">Homework 3</a>, due Mon Nov 23, at 5:00pm. </li>
+    <li> <a href="Homework/hw4.pdf">Homework 4</a>, due Sun Dec 6, at 5:00pm. </li>
+  </ul>
+
+  <p> <strong>TA and Office Hours:</strong> Our TA will be 
+  <a href="http://www.cs.dartmouth.edu/~cja">Chrisil Arackaparambil</a>,
+  who will hold office hours for this course every Monday, 4:00-5:00pm.
+  Additionally, Amit will be available Wednesdays, 3:00-4:00pm (this is
+  the X-hour for the course). Also, feel free to drop by and chat with 
+  Amit whenever his door is open. </p>
+
+  </td> </tr> </table> 
+
+</body>
+</html>

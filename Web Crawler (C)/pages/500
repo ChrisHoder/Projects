@@ -1,0 +1,100 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July27
+3
+<html><head><title>July 27: Interrupts, Reality Check</title></head>
+
+<body>
+
+<h1>July 27: Interrupts, Reality Check</h1>
+
+<hr><h2>0) Recap</h2><hr>
+First, some I/O recap.  
+
+On Friday, Ranga discussed to main ways to connect I/O devices to the
+CPU: connecting directly to the BUS and accessing I/O via special I/O
+(ISA) instructions, and via memory mapping.  We'll be implementing the
+memory mapping version.
+
+<p>Two kinds of I/O:
+<ul>
+<li>Synchronous.  The CPU and I/O agree to run in lockstep.  The I/O
+reads a character every 30 million clock cycles (say), and the typist
+agrees to type at 100 wpm.  Problem: Humans don't type at a constant
+rate.
+<li>Asynchronous: Let I/O happen at one speed, CPU another.
+</ul>
+Especially when humans are involved, synchronous I/O is difficult.
+
+<p>Two ways of handling asynchronous I/O:
+<ul>
+<li>Polling:
+<ol><li>Keep checking to see if KBSR[15] is set.
+<li>KB sets KBSR[15] when new input arrives
+<li>CPU reads contents of KBDR
+<li>CPU resets KBSR.
+</ol>
+(This is an example of <i>handshaking</i> -- getting the CPU and I/O to agree on what's going on.)
+<li>Iterrupts
+<ol>
+<li>I/O device forces CPU to stop
+<li>Processor handles needs of I/O device
+<li>Processor resumes work.
+</ol>
+</ul>
+
+<hr><h2>1) Interrupts</h2><hr>
+Polling is simpler to implement, but interrupts (once implemented) can
+be much faster.  In the LC-3, interrupts are generated and handled via
+an <b>INT</b> signal.
+
+<hr>
+<p><b>Generating INT signals</b>
+<p>We don't just want to let I/O interrupt whenever it feels like it.
+(why not?).  To generate an interrupt, three things need to happen:
+<ul>
+<li>I/O wants service
+<li>I/O has permission to interrupt.
+<p>To handle this permission, use bit 14 of the status register:
+KBSR[14].  Then, the I/O tries to make a request when it has data
+(KBSR[15]) <i>and</i> permission (KBSR[14]).
+<li>I/O device request must be more urgent than whatever the processor is currently computing. 
+<p>Example: checking email on a computer that controls a nuclear
+reactor.  What if the reactor control software is in the middle of
+something critical?  Do you really want to interrupt it to send off an
+email instead of handling a potential meltdowm?
+</ul>
+
+To implement the third item above, establish notion
+of <b>priority</b>.  The LC-3 defines 8 priority levels: PL0,...,PL7.
+An INT signal is generated only if there is an interrupting I/O device
+who's priority is greater than the priority of the currently running
+process.  A <b>priority encoder</b> takes in all possible interrupt
+request and determines highest-priority.  From there, we compare that
+PL to the PL of the currently running program.  Only then do we assert <b>INT</b>.
+
+<p>
+<hr><h3>Handling INT signal</h3>
+Now that you have an INT signal, what to do with it?
+
+<p>The interrupt implementation described in the book
+checks <b>INT</b> during the STORE RESULTS phase.  If INT is set, then
+instead of running the next program, the CPU:
+<ul>
+<li>saves all relevant current state
+<li>loads an <b>interrupt vector</b>
+<li>runs a subroutine to handle the interrupt
+<li>restores relevant state and returns to the regularly scheduled program
+</ul>
+
+Actually running the interrupt is very similar to a TRAP: there's an
+interrupt vector table, with a series of different pointers to
+interrupt subroutines in the Operating System section of memory.  The
+main difference is that since the interrupt is unexpected, we need to
+save all relavent state somewhere. That <i>somewhere</i> is the
+supervisor stack, which we'll talk about later this week.
+
+
+<hr><h2>2) Reality Check</h2><hr>
+<h3>That's all we got through</h3>
+
+</body>
+</html>

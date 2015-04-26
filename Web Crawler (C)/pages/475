@@ -1,0 +1,113 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw1
+3
+<html> <head>
+<title>CS37: Homework 1</title>
+</head>
+ 
+<body>
+
+<H1>Homework 1</H1>
+
+Published: Tuesday, June 29<br>
+Due: <strong>11:59PM</strong>, Monday, July 5<br>
+<p>
+
+<hr>
+<h2>Part 1: Digital Design</h2>
+<hr>
+<p>
+Objective: to become familiar with the elements of combinatorial logic... by seeing it for yourself!
+<p>
+Platforms: Use LogiSim as you did in Homework 0.  
+<ul>
+<li> Get to know the  LogiSim "Help" menu.  The documentation is pretty good, and we like it when you try to debug circuits on your own before asking for help.
+<li> Things like code and circuits aren't actually complete unless you know 
+they work. To know they work, you need to <i>test</i> them.   So....   we won't regard your solutions as complete unless they also have a convincing test harness.
+</ul>
+<p>
+<hr>
+<h3>Q1</h3>
+<hr>
+<p>
+<i>Preamble:</i>
+Create yourself a 3:8 decoder (via the Plexer menu, with three select bits).
+Create a fan-out 3, bit-width in 3 splitter (via the Base menu) and hook it up
+to the select bits on the decoder... so it looks something like this:
+<p>
+<center>
+<img src ="q2a.png">
+</center>
+<p>
+This way, you can do the rest
+of the question without having to deal with the confusing abstraction of
+wires of width more than one.
+<p>
+<i>Now, the main question</i>:
+<ul>
+<li> Using <i>one</i> instance of the 3:8 decoder you just built, 
+and a bunch of gates, build yourself a 4:16 decoder.  (E.g., output Q0 should be asserted true when the four select bits are all 0.)
+<li> Package your 4:16 decoder as a LogiSim subcircuit, looking like this:
+</ul>
+<p>
+<center>
+<img src ="q2b.png">
+</center>
+<p>
+<hr>
+<h3>Q1.5</h3>
+<hr>
+<p>
+Build a <b>test harness</b> for your 4:16 decoder.  Use the subcircuit you built in the first part of this question and add some circuitry to convince yourself and us that the decoder correctly decodes.
+<p>
+<hr>
+<h3>Q2</h3>
+<hr>
+<p>
+At the <a href="http://www.cs.dartmouth.edu/ug_courses.php"><b>CS departmental web page</b></a>,
+you'll find a list of undergrad courses we offer. 
+Using two instances of the subcircuit you built in Q1
+and a bunch of gates,
+build a circuit that takes two 
+BCD digits
+and outputs a "1" if and only if that is the number of 
+a valid CS ugrad course.
+<p>
+<hr>
+<h3>Q3</h3>
+<hr>
+<p>
+In class this week, we are building circuits that take two binary numbers A and B, and output a 1 if and only if A equals B.    Build another kind of comparator: one that outputs a 1 if and only if A is <strong>greater than</strong> B.  (Assume 4-bit unsigned integers.)
+<p>
+Again, use only gates---nothing from the Plexers, Arithmetic, or Memory menus.
+<p>
+<hr>
+<h2>Part 2: Binary, etc</h2>
+<hr>
+<p>
+Objective: you should be able to work with binary and hex, without even thinking about it.
+<p>
+<hr>
+<h3>Q4</h3>
+<hr>
+<p>
+Patt and Patel, 2.45.
+<p>
+<hr>
+<h3>Q5</h3>
+<hr>
+<p>
+Patt and Patel, 2.47.
+<p>
+<hr>
+<h3>Q6</h3>
+<hr>
+<p>
+Patt and Patel, 2.50  (Assume 16-bit values.)
+<p>
+<hr>
+<h3>Q7</h3>
+<hr>
+<p>
+Patt and Patel, 2.52   (Assume 32-bit values.)
+<p>
+</body> </html>

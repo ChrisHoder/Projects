@@ -1,0 +1,149 @@
+http://www.cs.dartmouth.edu/~tanzeem/teaching/teaching.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<!-- #BeginEditable "doctitle" -->
+  <title>Teaching</title>
+
+
+<!-- #EndEditable -->
+  <link href="../styles/style0.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+
+  <style type="text/css">
+.style1 {
+color: #006699;
+}
+  </style>
+</head>
+
+
+<body>
+
+<!-- Begin Container -->
+<div id="container"><!-- Begin Masthead -->
+<div id="masthead">
+<h1><a href="#">Tanzeem Choudhury</a></h1>
+
+<h3>Assistant Professor</h3>
+
+<h4>Computer Science, Dartmouth College</h4>
+
+</div>
+
+<!-- End Masthead --><!-- Begin Navigation -->
+<div id="navigation">
+<ul>
+
+  <li><a href="../index.html">About</a></li>
+
+  <li><a href="../pubs/pubs.html">Publications</a></li>
+
+  <li><a href="../cv/TanzeemChoudhury_CV.pdf">C.V.</a></li>
+
+  <li><a href="../students/students.html">Students</a></li>
+
+  <li><a href="teaching.html">Teaching</a></li>
+
+  <li><a href="../press/press.html">Press</a></li>
+
+  <li><a href="../news/news.html">News</a></li>
+
+  <li><a href="../contact/contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<!-- End Navigation --><!-- Begin content_container -->
+<div id="content_container"><!-- Begin Left Column -->
+<div id="column_left"><!-- #BeginEditable "content" -->
+<blockquote><span style="font-weight: bold;">Spring
+2010<br />
+
+  </span>
+  <ul>
+
+    <li><a href="http://www.cs.dartmouth.edu/%7Ecs3/">CS
+03: Computational Thinking</a> </li>
+
+  </ul>
+
+  <span style="font-weight: bold;"></span><span style="font-weight: bold;">Winter 2010<br />
+
+  </span>
+  <ul>
+
+    <li><a href="http://www.cs.dartmouth.edu/%7Ecs104">CS
+104: Graduate Artificial Intelligence</a></li>
+
+    <li><a href="http://www.cs.dartmouth.edu/%7Etanzeem/teaching/CS188-Winter10/">CS
+88/188: Computational Social Science: A route to being health, wealthy,
+and wise</a></li>
+
+  </ul>
+
+  <span style="font-weight: bold;">Spring
+2009<br />
+
+  </span>
+  <ul>
+
+    <li><a href="http://www.cs.dartmouth.edu/%7Ecs3/CS3Spring2009/">CS
+03: Computational Thinking</a> </li>
+
+  </ul>
+
+  <span style="font-weight: bold;">Winter 2009<br />
+
+  </span>
+  <ul>
+
+    <li><a href="CS188-Winter09/index.html">CS
+88/188 Intelligent Systems Seminar: Community Sensing and Modeling</a>
+    </li>
+
+  </ul>
+
+  <span style="font-weight: bold;">Fall 2008<br />
+
+  </span>
+  <ul>
+
+    <li><a href="CS188-Fall08/index.html">CS 88/188
+Intelligent Systems Seminar: Computational Techniques for Modeling
+Human Behavior</a> </li>
+
+  </ul>
+
+  <span style="font-weight: bold;"> </span>
+  <ul>
+
+  </ul>
+
+  <span style="font-weight: bold;"><br />
+
+  </span></blockquote>
+
+<!-- #EndEditable --></div>
+
+<!-- End Left Column --><!-- Begin Right Column --><!-- End Right Column --><!-- Begin Footer -->
+<div id="footer">
+<p><a href="../index.html">About</a> |<a href="../pubs/pubs.html">Publications</a> | <a href="../cv/TanzeemChoudhury_CV.pdf">C.V.</a>
+| <a href="../students/students.html">Students</a>
+|
+<a href="teaching.html">Teaching</a> |
+<a href="../press/press.html">Press</a> | <a href="../news/news.html">News</a> | <a href="../contact/contact.html"> Contact</a></p>
+
+</div>
+
+<!-- End Footer --></div>
+
+<!-- End content_container --></div>
+
+<!-- End Container -->
+</body>
+</html>

@@ -1,0 +1,33 @@
+http://www.cs.dartmouth.edu/~cs39
+2
+<html> <head>
+<title>CS 39: Theory of Computation</title>
+</head>
+
+<body bgcolor=#ffffff>
+<center>
+<h1> CS 39: Theory of Computation </h1>
+<h2>Instructor: <a href="/~prasad/">Prasad Jayanti</a></h2>
+<h2> Winter 2011</h2>
+</center>
+
+<!--
+<h2> IMPORTANT: </h2>
+<Huge>
+Professor Jayanti is traveling until January 6.  
+So the first lecture of CS 39 will be on Friday, January 7.
+(In other words, we don't meet during x-hour on Tuesday, Jan 4 
+nor on Wednesday, Jan 5.)
+</Huge>
+-->
+
+<h2><a href="syllabus.html">Course Syllabus</a></h2>
+
+<h2><a href="journal.html">Day by Day</a></h2>
+
+<h2><a href="homework">Homework and Exams</a></h2>
+
+<p>
+
+</body> </html>
+

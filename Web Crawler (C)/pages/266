@@ -1,0 +1,198 @@
+http://www.cs.dartmouth.edu/~ac/Teach/CS33-Spring10
+3
+<html><head>
+  <link rel="stylesheet" type="text/css" href="/~ac/main.css">
+  <title>CS 33 (Spring 2010): Amit Chakrabarti</title>
+</head>
+
+<body>
+
+<i> <div align=right>
+  <a href="../"> Teaching</a> &nbsp &nbsp
+  <a href="../../"> Home</a>
+</div> </i>
+
+<table border=0 width=100% cellpadding=5 cellspacing=0> <tr>
+  <td valign=top>
+    <img align=center src="http://www.cs.dartmouth.edu/images/Dtree.gif" 
+    alt="Dartmouth Logo"><br/>
+    <a href="http://www.cs.dartmouth.edu">Computer Science</a><br/>
+    <a href="http://www.dartmouth.edu">Dartmouth College</a>
+  </td>
+  <td valign=middle align=center>
+    <h3>Computer Science 33<br/>
+    Information Systems<br/><br/>
+    <a href="http://www.cs.dartmouth.edu/~ac/">Amit Chakrabarti</a></h3><br/>
+  </td>
+  <td valign=middle align=right><h3>Spring 2010</h3><span style="color:red">Under Construction</span></td>
+</tr></table>
+<center>
+  [ <a href="#announcements">Announcements</a> |
+  <a href="#admin">Administrative Basics</a> |
+  <a href="#lectures">Schedule and Homeworks</a> |
+  <a href="#scores">Grades Database</a> ]
+
+</center>
+
+<!-- ------------------------------------------------ -->
+
+<hr>
+<h3>Course Description</h3> 
+
+<p> In this course we shall study the management of large bodies of data
+or information.  During the first half of the course, we shall study on
+schemes for the representation, manipulation, and storage of complex
+information structures as well as algorithms for processing these
+structures efficiently and for retrieving the information they contain.
+In particular, we shall spend considerable time on relational algebra,
+SQL, database normalization, indexing and hashing. </p>
+
+<p> In the second half of the course, we shall study &mdash; at a high
+level &mdash; the issues raised when databases are shared by several
+users and/or several computers. This includes such topics as transaction
+processing, robustness guarantees against failure, security and data
+integrity guarantees from unauthorized access, privacy. Time permitting,
+we might also consider data mining, warehousing and object-oriented
+schemes for multimedia data. </p>
+
+<p> It is expected that a student who enrols for this course <i>already
+knows how to program</i> and is comfortable working within a
+<i>UNIX-like environment</i>. Some degree of mathematical maturity will
+be required for the more theoretical aspects of the course. </p>
+
+<!-- ------------------------------------------------ -->
+
+<hr>
+
+<a name="announcements"></a>
+<h3>Announcements</h3> 
+
+  Newer announcements are at the top. Think "blogs" or "twitter".
+
+  <ul> 
+
+    <li> [May 4] Basic info about the final exam has been added. </li>
+
+    <li> [Apr 6] Office hours have been announced. These might be adjusted at 
+    some point, and if they are, there will be a new announcement here. </li>
+
+    <li> [Mar 28] All homework in this course must be submitted electronically; 
+    there will be no hand-written submissions. I strongly suggest that 
+    you learn to use a suitable typesetting system to prepare the 
+    non-programming part of your homework submissions. My personal
+    favorite is <a href="http://www.latex-project.org/">LaTeX</a>, which
+    is also the de-facto standard in many academic disciplines, but 
+    MS Word or its equivalents would also be okay. </li>
+
+    <li> [Mar 28] You will need an account on the CS department UNIX servers for 
+    some of your work in this course. Make sure you have one. </li>
+
+  </ul>
+
+
+<!-- ------------------------------------------------ -->
+
+<hr>
+
+<a name="admin"></a>
+<h3>Administrative Basics</h3>
+
+<b>Important!</b> Please also read and familiarize yourself with the <a
+href="admindetails.html">administrative details</a> not covered in the
+outline below. Pay special attention to the section that describes <a
+href="admindetails.html#honorcode">how the honor code applies to this
+course</a>; violations of the honor code <i>will</i> be treated
+seriously.<p><br/>
+
+<table cellpadding=2>
+  <tr><td valign=top width=15%><b>Lectures</b> <br/></td> 
+    <td valign=top> 
+      Sudikoff 115 | 10 hour | Mon-Wed-Fri 10:00-11:05, X-hr Thu 12:00-12:50
+    </td>
+  </tr>
+  <tr><td valign=top><b>Instructor</b> <br/> </td> 
+    <td valign=top> 
+      <a href="/~ac">Amit Chakrabarti</a> | Sudikoff 107 | 6-1710 | 
+      Office hours: Thu 4-5pm, Fri 1:30-2:30pm, or by appointment
+    </td>
+  </tr>
+  <tr><td valign=top><b>Teaching Assistants</b> <br/> </td> 
+    <td valign=top> 
+      <a href="/~hughes">James Hughes</a> | Sudikoff 157 | 6-8743 | 
+      Office hours: Wed 6-8pm, Sun 7-9pm, or by appointment
+      <br/>
+    </td>
+  </tr>
+  <tr><td valign=top><b>Textbook (Required)</b> <br/></td> 
+    <td valign=top> 
+      <a href="http://www.db-book.com/">
+      "Database System Concepts,"</a> Fifth or Sixth Edition. <br/>
+       Avi Silberschatz, Henry F. Korth, S. Sudarshan. <br/>
+    </td>
+  </tr>
+  <tr><td valign=top><b>Prerequisites</b> <br/> </td> 
+    <td valign=top> 
+      CS 23 <br/>
+    </td>
+  </tr>
+
+  <tr><td valign=top><b>Work</b> <br/> </td> 
+    <td valign=top>
+      Homeworks, roughly one a week [20 points] <br/>
+      Three in-class quizzes [30 points] <br/>
+      Class project [25 points] <br/>
+      Final exam [25 points] <br/>
+      <br/>
+      Please take note of the <a href="admindetails.html#late">late 
+      homework policy</a>. It will be enforced, strictly. <br/>
+  </tr>
+</table>
+
+<!-- ------------------------------------------------ -->
+
+<hr/>
+
+<a name="lectures"></a>
+<h3>Schedule and Homeworks</h3> 
+
+<p> This schedule will be updated frequently, depending on our pace during the lectures. In particular, required readings before each class may need to be updated. Please do keep up
+with these readings from the textbook, because there is plenty of material in the textbook that I <i>won't</i> get to cover directly in class, but that you <i>will</i> be
+responsible for, in your homework, quizzes and final exam. The chapter and section numbers below refer to the Sixth Edition of the textbook, <i>and not the Fifth Edition</i>. </p>
+
+<p> Please make it a habit to check this website often, and please remember to hit the RELOAD button to get the latest version. </p>
+
+<p> Any part of the schedule that is <span style="color:#888888">greyed out</span> is tentative and subject to change. </p>
+
+<table class="schedule"> <tr class="heading">
+  <td valign=top colspan=2><p class=hdr> Lecture #<br/> and Date </p></td>
+  <td><p class=hdr> Reading Due<br/> Before Class </p></td>
+  <td><p class=hdr> Homework<br/> Due </p></td>
+  <td><p class=hdr> Topics Covered in<br/> This Lecture </p></td>
+</tr><tr class="oddrow"><td class="lecnum"> 1. </td><td class="date">Mar 29</td><td class="reading">&mdash;</td><td class="hw"></td><td class="norm">Course overview: Things to think about when designing a database system</td></tr><tr class="evnrow"><td class="lecnum"> 2. </td><td class="date">Mar 31</td><td class="reading">Chap. 1</td><td class="hw"></td><td class="norm">The relational model; The fundamental operators of relational algebra</td></tr><tr class="oddrow"><td class="lecnum"> 3. </td><td class="date">Apr  2</td><td class="reading">Chap. 2</td><td class="hw"></td><td class="norm">Extended relational algebra operators; Null values; DB modification</td></tr><tr class="evnrow"><td class="lecnum"> 4. </td><td class="date">Apr  5</td><td class="reading">6.1</td><td class="hw"></td><td class="norm">SQL I: Language basics; The set operations</td></tr><tr class="oddrow"><td class="lecnum"> 5. </td><td class="date">Apr  7</td><td class="reading">3.1-3.5</td><td class="hw"></td><td class="norm">SQL II: Aggregation; Null values; Nested subqueries</td></tr><tr class="evnrow"><td class="lecnum"> 6. </td><td class="date">Apr  9</td><td class="reading"></td><td class="hw"></td><td class="norm">SQL III: Complex queries; Views; DB modification</td></tr><tr class="oddrow"><td class="lecnum"> 7. </td><td class="date">Apr 12</td><td class="reading"></td><td class="hw"><a href="Homework/hw1.html">HW1</a></td><td class="norm">SQL IV: Types; Integrity constraints; Authorization</td></tr><tr class="evnrow"><td class="lecnum"> 8. </td><td class="date">Apr 14</td><td class="reading">Chap. 4</td><td class="hw"></td><td class="norm">Embedded SQL; Dynamic SQL</td></tr><tr class="oddrow"><td class="blank"> </td><td class="date">Apr 15 (X-hr)</td><td class="blank"> </td><td class="blank"> </td><td class="exam">Quiz 1: Closed notes, in class</td></tr><tr class="evnrow"><td class="lecnum"> 9. </td><td class="date">Apr 16</td><td class="reading">Chap. 5</td><td class="hw"></td><td class="norm">Overview of relational calculus and QBE</td></tr><tr class="oddrow"><td class="lecnum"> 10. </td><td class="date">Apr 19</td><td class="reading">Chap. 6; C.1</td><td class="hw"><a href="Homework/hw2.html">HW2</a></td><td class="norm">Overview of the Entity-Relationship model</td></tr><tr class="evnrow"><td class="lecnum"> 11. </td><td class="date">Apr 21</td><td class="reading">Chap. 7</td><td class="hw"></td><td class="norm">Normal forms I</td></tr><tr class="oddrow"><td class="lecnum"> 12. </td><td class="date">Apr 23</td><td class="reading"></td><td class="hw"></td><td class="norm">Normal forms II</td></tr><tr class="evnrow"><td class="lecnum"> 13. </td><td class="date">Apr 26</td><td class="reading"></td><td class="hw"><a href="Homework/hw3.html">HW3</a></td><td class="norm">Normal forms III</td></tr><tr class="oddrow"><td class="lecnum"> 14. </td><td class="date">Apr 28</td><td class="reading">Chap. 8</td><td class="hw"></td><td class="norm">Normalization; Application design, Web interfaces, PHP/CGI/Javascript</td></tr><tr class="evnrow"><td class="blank"> </td><td class="date">Apr 29 (X-hr)</td><td class="blank"> </td><td class="blank"> </td><td class="exam">Quiz 2: Closed notes, in class</td></tr><tr class="oddrow"><td class="lecnum"> 15. </td><td class="date">Apr 30</td><td class="reading"></td><td class="hw"></td><td class="norm">Organizing storage; RAID</td></tr><tr class="evnrow"><td class="lecnum"> 16. </td><td class="date">May  3</td><td class="reading"></td><td class="hw"><a href="Project/proj.html">Proj 1</a></td><td class="norm">File structure; Minimizing disk access; Intro to indexing</td></tr><tr class="oddrow"><td class="lecnum"> 17. </td><td class="date">May  5</td><td class="reading"></td><td class="hw"></td><td class="norm">Stage 1 project presentations</td></tr><tr class="evnrow"><td class="lecnum"> 18. </td><td class="date">May  7</td><td class="reading"></td><td class="hw"></td><td class="norm">Indexing: B<sup>+</sup> trees</td></tr><tr class="oddrow"><td class="lecnum"> 19. </td><td class="date">May 10</td><td class="reading"></td><td class="hw"><a href="Project/proj.html">Proj 2</a></td><td class="norm">Hashing; Trees vs Hashing</td></tr><tr class="evnrow"><td class="lecnum"> 20. </td><td class="date">May 12</td><td class="reading"></td><td class="hw"></td><td class="norm">Indexing wrap-up; Query processing I: selection, sorting</td></tr><tr class="oddrow"><td class="lecnum"> 21. </td><td class="date">May 14</td><td class="reading"></td><td class="hw"></td><td class="norm">Query processing II: joins, hash join</td></tr><tr class="evnrow"><td class="lecnum"> 22. </td><td class="date">May 17</td><td class="reading"></td><td class="hw"><a href="Project/proj.html">Proj 3</a></td><td class="norm">Query optimization (overview)</td></tr><tr class="oddrow"><td class="lecnum"> 23. </td><td class="date">May 19</td><td class="reading">13.1 &ndash; 13.2</td><td class="hw"></td><td class="norm">Transactions; ACID properties; Serializability</td></tr><tr class="evnrow"><td class="blank"> </td><td class="date">May 20 (X-hr)</td><td class="blank"> </td><td class="blank"> </td><td class="exam">Quiz 3: Closed notes, in class</td></tr><tr class="oddrow"><td class="lecnum"> 24. </td><td class="date">May 21</td><td class="reading">Chap. 14</td><td class="hw"></td><td class="norm">Concurrency Control I</td></tr><tr class="evnrow"><td class="lecnum"> 25. </td><td class="date">May 24</td><td class="reading">15.1 &ndash; 15.6</td><td class="hw"><a href="Homework/hw7.html">HW7</a></td><td class="norm">Concurrency Control II</td></tr><tr class="oddrow"><td class="lecnum"> 26. </td><td class="date">May 26</td><td class="reading">Chap. 15</td><td class="hw"></td><td class="norm">Failures; Recovery; Logging</td></tr><tr class="evnrow"><td class="lecnum"> 27. </td><td class="date">May 28</td><td class="reading">Chap. 16</td><td class="hw"></td><td class="norm">Open session (bring your questions!)</td></tr><tr class="oddrow"><td class="lecnum"> 28. </td><td class="date">Jun  2</td><td class="reading"></td><td class="hw"><a href="Project/proj.html">Proj Rep</a></td><td class="norm">Final project presentations (9:00 &ndash; 11:05)</td></tr><tr class="evnrow"><td class="blank"> </td><td class="date"></td><td class="blank"> </td><td class="blank"> </td><td class="exam">&nbsp;</td></tr><tr class="oddrow"><td class="blank"> </td><td class="date">Jun  4</td><td class="blank"> </td><td class="blank"> </td><td class="exam">Final Exam: Open notes, in class, 8:00 &ndash; 11:30 am</td></tr></table>
+<br/>
+
+<!-- ------------------------------------------------ -->
+
+<hr>
+
+<a name=scores></a>
+<h3>Homework Submission Form and Grades Database</h3>
+
+<p> All homework is to be submitted electronically, using a homework
+submission form. <a href="http://www.cs.dartmouth.edu/~cs33/login.html">
+Click here</a> to get to that form. </p>
+
+<p style="color:red"> The homework submission system is still
+experimental.  Please use it only as instructed, for everyone's 
+safety!  </p>
+
+<!-- ------------------------------------------------ -->
+
+<hr>
+
+<i> <div align=right>
+  <a href="../"> Teaching</a> &nbsp &nbsp
+  <a href="../../"> Home</a>
+</div> </i>
+
+</body></html>

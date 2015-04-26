@@ -1,0 +1,44 @@
+Lab 3 Readme
+
+
+1) echo.c
+   
+   This function replicates the echo bash command. With the -n option. If a different
+   option is used such as "-r" it will just echo it out normally as the
+   echo function will. 
+
+2) network.c
+   
+   when somebody inputs a command for the prompt, only the first letter will be read
+   no matter how many characters are put in.
+
+   When someone inputs  the the IP address. the code will check to see if any of the
+   parts of the IP are greater than 255. Additionally if you input more after the
+   IP address you will get an error caught by the fact that it will make the prefix
+   command prompt not work. If it doesn't cause this error it will not matter because
+   the parsing of the input will only take the <x.y.z.t> part.
+
+   Addtionally for the automatic portion of the network program to work the bash
+   script getadr.sh needs to be present and in the same folder. As well it needs
+   to be able to create the file address.dat
+
+3) sort.c
+
+   This program assumes that the file given has numbers in it, where only one
+   number is on each line and there is an arbitrary max number of numbers of 400
+   and max length of the number 400.
+   
+   For the switches, you can input the same switch more than once and this will
+   not change the function of the program but it does check to make sure that
+   the switches are either -r, -u or -n. 
+
+4) rps
+   
+   This can be compiled using the header file game.h, and to compile the function
+   the header file game.h and the files main.c, printStart.c, gameStats.c,
+   playGame.c, helpFunc.c, computerChoice.c, looseFunc.c, winFunc.c, tieFunc.c,
+   userInput.c must be in the same folder to compile
+
+   When running the function and the user is told to input their choice, only
+   the first character will be read into the program and everything after
+   that will be ignored.

@@ -1,0 +1,137 @@
+http://www.cs.dartmouth.edu/~cbk/recombination.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects | Recombination </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="recomb.php"><img src="img/proj/recomb.png" alt="hybrid library" /></a><div><a href="recomb.php">Projects | Recombination</a>: optimization of combinatorial recombination</div></div></div>
+<div id="projbody"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php" class="navhere" >projects</a></span><span><a href="classes.php"  >classes</a></span><span><a href="pubs.php"  >pubs</a></span><span><a href="news.php"  >news</a></span>
+</div>
+	<div id="projcontent"><h3>Protein recombination</h3>
+
+<p>Protein engineering by site-directed recombination generates
+libraries of hybrid proteins (or "chimeras") by mimicking the mixing
+and inheritance that occur in natural reproduction.  As shown in the
+left-hand figure, a set of homologous parent genes are recombined at
+defined breakpoint locations, yielding a combinatorial set of hybrids.
+Subsequent screening/selection then identifies hybrids with desirable
+functional characteristics.</p>
+
+<p>We are developing techniques to optimize the planning of
+recombination experiments.  For example, when selecting breakpoints, one must consider the trade-off
+between the stability and the diversity of the resulting hybrids.
+Given a family of homologous proteins, we select a small number of parents to
+be recombined at specific locations, generating a library of hybrids.
+Recombination may perturb the previously observed correlations between
+amino acid types for interacting residues,
+thereby possibly affecting stability.  Furthermore, the resulting
+library may have more or less diversity; the choice of breakpoint
+location on the top yields hybrids that are identical to the parents,
+while that on the bottom results in sequence space being sampled
+relatively uniformly, with an equal number of mutations between each
+hybrid and each parent.  Our methods simultaneously optimize both
+these criteria.</p>
+
+<p>We are also developing techniques to optimize the robotic assembly
+of the planned library.</p>
+
+<h4>Software</h4>
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/~cbk/spliso/">Spliso</a> demo</li>
+<li><a href="http://www.cs.dartmouth.edu/~cbk/robomix/">Robomix</a> demo</li>
+<li>Staversity and Swagmer, for breakpoint selection, available by request.</li>
+</ul>
+
+<h4>Papers</h4>
+<ul>
+<li>W. Zheng, K.E. Griswold, and C. Bailey-Kellogg, "Protein fragment
+swapping: a method for asymmetric, selective site-directed
+recombination", Proc. RECOMB, 2009, to appear.</li>
+
+<li>W. Zheng, A.M. Friedman, and C. Bailey-Kellogg,
+"Algorithms for joint optimization of stability and diversity in planning
+combinatorial libraries of chimeric proteins", Proc. RECOMB, 2008,
+pp. 300-314.
+<a href="abs.php#recomb08">abstract</a>.
+<a href="http://dx.doi.org/10.1007/978-3-540-78839-3_26">official version</a>.
+<a href="papers/recomb08.pdf">preprint</a>.</li>
+
+<li>L.V. Avramova, J. Desai, S. Weaver, A.M. Friedman, and C.
+Bailey-Kellogg, "Robotic hierarchical mixing for the production of
+combinatorial libraries of proteins and small molecules", <i>J.
+Comb. Chem.</i>, 10:63-68, 2008. <a href="abs.php#jcc07">abstract</a>.
+<a href="http://pubs.acs.org/cgi-bin/abstract.cgi/jcchff/2008/10/i01/abs/cc700106e.html">paper</a>.</li>
+
+<li>W. Zheng, X. Ye, A.M. Friedman, and C. Bailey-Kellogg, "Algorithms
+for selecting breakpoint locations to optimize diversity in protein
+engineering by site-directed protein recombination", Proc. CSB, 2007,
+pp. 31-40.
+<a href="abs.php#csb07">abstract</a>.
+<a href="papers/csb07.pdf">preprint</a>.</li>
+
+<li>X. Ye, A.M. Friedman, and C. Bailey-Kellogg, "Hypergraph model of
+multi-residue interactions in proteins: sequentially-constrained
+partitioning algorithms for optimization of site-directed protein
+recombination", <i>J. Computational Biology</i>, 2007, 14:777-790.
+<a href="abs.php#jcb07">abstract</a>.
+<a
+href="http://www.liebertonline.com/doi/abs/10.1089/cmb.2007.R016">official version</a>.
+<a href="papers/jcb07.pdf">preprint</a>.<br/>
+Conference version: Proc. RECOMB, 2006, 15-29.
+<a href="abs.php#recomb06">abstract</a>.
+<a href="http://dx.doi.org/10.1007/11732990_2">official version</a>.
+</li>
+
+<li>L. Saftalov, P.A. Smith, A.M. Friedman, and C. Bailey-Kellogg,
+"Site-directed combinatorial construction of chimaeric genes:
+general method for optimizing assembly of gene fragments",
+<i>Proteins</i>, 2006, 64:629-642.
+<a href="abs.php#proteins06b">abstract</a>.
+<a href="http://www3.interscience.wiley.com/cgi-bin/abstract/112656549/ABSTRACT">official version</a>.
+<a href="papers/proteins06b.pdf">preprint</a>.
+</li>
+</ul>
+
+	</div>
+	</div>
+
+	<div id="projnav">
+	<h4>Current projects</h4>
+	<ul class="pix">
+		<li><a href="multimodal.php"><img src="img/proj/multimodal-small.png" alt="multimodal" title="Multimodal protein structure"  /></a></li>
+		<li><a href="nmr.php"><img src="img/proj/nmr-graph-small.png" alt="nmr" title="NMR assignment"  /></a></li>
+		<li><a href="oligomer.php"><img src="img/proj/2hyn-small.jpg" alt="oligomer" title="Protein complexes"  /></a></li>
+		<li><a href="mrf.php"><img src="img/proj/mrf-small.png" alt="graphical models" title="Protein graphical models"  /></a></li>
+		<li><a href="recombination.php"><img src="img/proj/recomb-small.png" alt="recombination" title="Protein recombination" class="thisproj" /></a></li>
+		<li><a href="deimmunization.php"><img src="img/proj/deimm-small.png" alt="deimmunization" title="Protein therapeutic deimmunization"  /></a></li>
+	</ul>
+	</div>
+
+<div id="footer"></div>
+</div>
+</body>
+</html>
+	

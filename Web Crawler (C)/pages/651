@@ -1,0 +1,38 @@
+http://www.cs.dartmouth.edu/~cs110/LaTeX
+3
+<html> <head>
+<title>CS 110 LaTeX Examples</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<h1><a href="index.html">CS 110</a><br>
+Winter 2010<br>
+Writing, Presenting, and Evaluating Technical Papers in Computer Science<br>
+<i>LaTeX Examples</i></h1>
+
+<ul>
+  <li> <a href="page.txt">page.tex</a>
+  <li> <a href="basic1.txt">basic1.tex</a>
+  <li> <a href="basic2.txt">basic2.tex</a>
+  <li> <a href="intermed1.txt">intermed1.tex</a>
+  <li> <a href="math1.txt">math1.tex</a>
+  <li> <a href="math2.txt">math2.tex</a>
+  <li> <a href="math3.txt">math3.tex</a>
+  <li> <a href="eqnarrays.sty">eqnarrays.sty</a>
+  <li> <a href="figure-placement.txt">figure-placement.tex</a>
+  <li> <a href="Dijkstra-proof.eps">Dijkstra-proof.eps</a>
+  <li> <a href="flow-network.eps">flow-network.eps</a>
+  <li> <a href="residual-network.eps">residual-network.eps</a>
+  <li> <a href="bit-mapping.eps">bit-mapping.eps</a>
+  <li> <a href="formatting.txt">formatting.tex</a>
+  <li> <a href="clrscode3e.sty">clrscode3e.sty</a>
+</ul>
+
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Fri Feb 19 23:20:41 2010
+<!-- hhmts end -->
+</body> </html>

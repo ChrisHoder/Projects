@@ -1,0 +1,172 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July28
+3
+<html><head><title>July 28: Reality Check</title></head>
+
+<body>
+
+<h1>July 28: Reality Check</h1>
+
+<hr><h2>0) Recap</h2><hr>
+
+Some quick notes on the homework:
+<ul>
+<li>Start before the midterm.  It sounds like a bad idea, but this is
+another long homework, and starting to think about it will help study
+for the midterm.
+<li><b>Tunnel Components</b> We showed in class what these are and how
+they work.  Tunnel components come with labels, and two (or more)
+components with the same label are considered to be connected.
+<li><b>Keyboard and TTY</b>.  Logisim has a baked in component for a
+keyboard device and another for a monitor.  
+<li><b>Help Menu</b>  If you're ever in doubt how a component works, check out Logisim's help menu.  Often with software like Logisim, the documentation isn't very good, but that's not the case here.  The documentation can really help you learn what's going on.
+</ul>
+
+<hr><h2>1) Reality Check</h2><hr>
+
+<b>Sean's advice:</b> Keep in mind that the role of 37 is to fill in
+the gap between the laws of physics and assembly/C, for CS
+majors---NOT to train you to be a professional hw engineer.  Hence,
+we give representative solutions and hint at how things get
+elaborated, rather than the full complexity of all the real-world
+variations and issues.
+
+<hr><h3>Real world busses</h3><hr>
+Standard busses: PCI, SCSI, USB
+
+<p>Several Real World Bus issues:
+<ul>
+<li><b>Hardware Issues.</b> Some times, the CPU pins don't match up to
+bus pins. 
+
+<p>Example: CPU has a single memory R/W signal; bus has separate
+memory read signals and memory write signals.
+
+<p>Solution: add decoder hardware.
+
+<li><b>Bus Width.</b> bus lines take up space and cost.  In reality,
+some lines are slightly faster than others (<b>bus skew</b>)
+
+<p>Solutions: slow down bus; separate address/data busses vs
+"multiplexed" bus
+
+<li><b>Backwards Compatability.</b> Intel chips used to have 20 bit
+addresses (+some control), then 24 bits (+ control), then 32(+
+control)...
+
+<p> To make sure e.g., the 80386 address bus handled 8088
+instructions, need to keep old 20 bits (+ control) and add 4 bits,
+then 8 more bits.
+
+<p> It's easier to just have 32 bits + some control, but...
+
+<li><b>Bus Arbitration.</b> master vs slave.  Who's driving the bus?
+
+<p>Problem: multiple masters 
+
+<p>Solution: bus arbitration.  Have masters request bus.  Several ways
+of determining who gets bus.  Can have extra bus-controller hardware.
+
+<li><b>Bus Operations</b> Sometimes bus is smaller than a word.  Sometimes, you really want extra data.
+<p>Solution: block-read: CPI sends address, word count. Memory sends
+that many "words" in succession in a single transaction.  (time-multiplexing)
+
+</ul>
+
+<hr><h3>Real-World CPUs</h3><hr>
+
+<p>T 3.5 goes over some example real-world CPUs.  (Don't worry if you
+don't understand all the concepts yet---there's a lot there)</p>
+<p>
+Addressing:
+<ul>
+<li> the LC-3, like many modern processors, has a word size greater than one byte.
+<li> ...but the LC-3 addresses on a WORD granularity.  Real systems
+tend to still address on a byte granularity.  <br><b>Sean says</b>: This
+can be the cause for much fun! <br><b>Joshua says</b>: by "fun" Sean means
+"pain" and "late nights debugging"
+</ul>
+
+<p>
+
+<hr><h4>Pentium 4.</h4><hr>
+
+
+<p>backwards compatible with older Intel 32-bit ISAs, but has some 64-bit hw</p>
+<p>36-bit address bus (bytes) --> except there's only 33 address pins!</p>
+<p>478 pins, (198 signals, 85 power, 180 ground, 15 spare)</p>
+<p>63 watts of power.</b>
+<p>bigger PSR (PSR == Process Status Register.  inludes things like NZP flags, priority levels, ...)</p>
+<p>support for BCD</p>
+<p>data bus:  64 bits, plus control for ready/busy signals, parity check, ...
+
+<hr><h4>UltraSPARC III</h4><hr>
+
+
+<p>1368-pin chip.</p>
+<p>64-bit words, but data bus is double-wide</p>
+<p>43-bit address space (but probably bytes, not words)</p>
+<p>UltraSPARC Data Buffer (UDB):  buffers memory writes/reads.  Enables controlled memory ops in parallel with other CPU actions.  (e.g: when the CPU wants to write some memory, it sends it to UDB and resume's it's activities, leaving the UDB to do the write.)</p>
+
+<hr><h4>8051</h4><hr>
+
+<p>microcontroller</p>
+<p>40-pin chip</p>
+<p>16-bit address bus, 8-bit words</p>
+
+<p>
+<hr><h2>2) Stack Intro</h2><hr>
+
+Most of you have seen stacks in CS 5.  However, maybe that was a long
+time ago.  Even if it wasn't, it's a good idea to take a look at
+stacks from the architecture prospective.
+
+<p>
+The Problem: We've seen in our assembly code several examples of
+subroutines.  What happens when we <i>nest</i> our subroutines though?
+
+<p><a href="sub1.asm"><b>sub1.asm</b></a>
+
+<p>In this example, jumping to a subroutine from within another
+subroutine erases the contents of R7.  We won't know where to return
+from SUB anymore.
+
+<p>
+Possible solutions:
+<ul>
+<li>switch from JSR to branches, do the return values by hand.  
+<li>reprogram your code so you never nest subroutines.
+<li>move data around to other registers.
+<li>save register(s) to memory.
+</ul>
+
+A better subtraction routine:  <a href="sub3.asm"><b>sub3.asm</b></a>
+
+<p>This assembly program blocks of some space for local variables.  Then,
+each subroutine takes the register(s) it'll overwrite and save those
+contents to memory.  After that, it's free to use the registers as it
+wants.  When it's about to return, the subroutine loads back in the
+original values and returns gracefully.
+
+<p>
+Two kinds of register-saving:
+<ul>
+<li><b>Caller-save</b> Whomever calls the subroutine saves the
+registers they care about before calling the subroutine.  They also
+load the registers back after returning from the subroutine.
+<li><b>Callee-save</b> The subroutine itself saves the registers it'll
+overwrite, and loads them back again before returning.
+</ul>
+Both of these methods are valid and get used.  Keeping track of which
+get used when, and which registers you need to save and which you
+don't is an example of what Sean calls "a lot of fun".  If you find
+yourself doing this kind of programming in the real world, definitely
+make sure you know which format the subroutine is, and be careful to
+save registers accordingly.
+
+
+<p>Tomorrow, we'll talk about what stacks are all about and how they
+can be used to <i>gracefully</i> handle all of this register-saving
+for you.
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+Comments on the crawler program:
+    You cannot crawl to a 0 depth. This is to check to make sure that the input depth is correct.
+    Also the feedback from wget has been turned off to simplify output. In extractURLs.c there is no
+    check to see if there are more than 10000 urls, though one could easily add this. when extracting urls
+    the normilize urls does allow a url with a javascript to work. For example, http://www.cs.dartmouth.edu/site-content/graduate-students/javascript:changeNavImages().
+    Also, the parsed url notification lists all urls found in a page before finding out if they are unique but after
+    the prefix has been tested. A valgrind check was made though it was not included in the test script and no memory checks
+    were detected.
+   
+  
+
+
+The arrangement of these files is necessary to allow the Makefile to work properly
+
+This directory contains the following files
+
+Makefile
+  - compiles the crawler - items need to be arranged as is with
+    Dictionary, File and utl folders
+
+test.sh
+  - This is a bash test script which will call the crawler
+    with various test senarios to make sure it works properly
+
+crawler_testlog."date"
+  - results from the test script call at the given date
+
+Folder Pages:
+  - folder where HTML files can be stored
+
+****************
+Folder Functions
+****************
+
+cleanup.c
+  - this file contains the function cleanup which will 
+    free all the remaining allocated memory at the end
+    of the crawl
+
+crawler.h
+  - this file contains a declaration of all the functions
+    that need to be called. as well as the prototype declarations
+    and the constant declarations
+
+getAddressFromThelinksToBeVisited.c
+  - this file contains the function of the same name to get the next
+    url to be crawled from traversing down the dnodes
+
+initLists.c
+  - this file contains the function initLists which will initialize
+    the dictionary
+
+main.c
+  - this file contains the main function which runs the crawler 
+    and implements all the other functions. requires all other functions
+    in the dictionary
+
+setURLasVisited.c
+  - this file contains the functions that will set a given URL as visited
+    in the corresponding URLNODE
+
+updateListLinkToBeVisited.c
+  - this file contains the function that will update the DNODE list
+    with the new URLs from the page just crawled using the external
+    list of urls url_list
+
+extractURLs.c
+  - this will extract the URLs from an HTML string
+    and save them to the url_list array of urls.
+    this function will use the GetNextUrls function
+    in html.c and the normalizeURL in the same file
+
+
+
+
+ 
+

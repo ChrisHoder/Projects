@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions
+END
+updateListLinkToBeVisited.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/updateListLinkToBeVisited.c
+END
+crawler.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/crawler.c
+END
+extractURLs.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/extractURLs.c
+END
+crawler.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/crawler.h
+END
+crawler.h.gch
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/crawler.h.gch
+END
+cleanup.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/cleanup.c
+END
+setURLasVisited.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/setURLasVisited.c
+END
+getPage.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/getPage.c
+END
+getAddressFromTheLinksToBeVisited.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/getAddressFromTheLinksToBeVisited.c
+END
+inputCheck.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/classes/cs23-W11/!svn/ver/145/hoder/lab6/crawler/Functions/inputCheck.c
+END

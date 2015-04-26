@@ -1,0 +1,141 @@
+http://www.cs.dartmouth.edu/~cs37/resources
+3
+<html> <head>
+<title>Textbook and Resources</title>
+</head>
+ 
+<body>
+
+
+<h1>Textbook and Resources</h1>
+
+<b>Official Textbooks</b>
+<p>
+
+<ol>
+<li><strong>Introduction to Computing Systems: From Bits and Gates to C and Beyond.
+(Second Edition.)</strong><br> Yale Patt and Sanjay Patel. McGraw-Hill, 2004. <br>
+Also known as Patt and Patel, or <b>"P&amp;P"</b><br><br>
+<li><strong>Structured Computer Organization (Fifth Edition.)</strong><br>
+Andrew Tanenbaum, Pearson/Prentice Hall, 2006.<br>
+Also known as <b>"T"</b><br>
+</ol>
+<hr>
+<p>
+
+<a name="LS"><b>LogiSim Tips</b></a>
+<p>
+
+We'll be using LogiSim (the <a href="http://code.google.com/p/logisim-gt-2009/"><b>Georgia Tech variant</b></a>) for our digital logic simulation work this term.
+<p>
+<ul>
+<li> For OSX users, download <a href="LogiSim/Logisim.app.zip"><b>Logisim.app.zip</b></a>.  (We will see that this is installed on the 005 Macs)
+<li> For Windows users, download <a href="LogiSim/Logisim.exe"><b>Logisim.exe</b></a>
+</ul>
+<p>
+You can also download <a href="LogiSim/Logisim.jar"><b>Logisim.jar</b></a>
+on any system with Java and run it with the command "java -jar Logisim.jar". <p>
+
+You will probably
+find <a href="LogiSim/LogisimTechnicalManual.pdf"><b>Logisim Technical
+Manual</b></a> useful during this course.
+<p>
+<hr>
+<p>
+<strong>You must have at least Java 1.6 to run LogiSim.</strong>
+
+<p>
+For Mac OS X 1.5 or later, Java 1.6 should already be installed
+through a software update.  If it's not, you'll need to get it from
+the Apple website (try searching for e.g. "Java for Mac OS X 10.5".)
+
+<p>
+To see if you have Java 1.6 and/or if it is your default version of
+Java, go to Applications->Utilities->Java Preferences and follow
+instructions there.
+
+<p>
+Apple does not appear to support Java 1.6 on older versions of Mac OS
+such as 10.4.11.  However, there are some third party solutions.  The
+following link seems to discuss the issues:
+
+<p>
+<a href="http://blog.adsdevshop.com/2008/02/26/installing-the-jdk-16-on-mac-os-x/">http://blog.adsdevshop.com/2008/02/26/installing-the-jdk-16-on-mac-os-x/</a>
+<p>
+<p>
+<p>
+<hr>
+<b>LC3 tools</b> 
+<p>
+First download <a href="archive.zip"><b>archive.zip</b> </a>  
+<ul>
+<li> <b>LC3 assembler and simulator</b> : This is in the "lc3tools" directory.
+<p> After putting it in the right directory on your Mac, run 
+<tt>./configure</tt> then <tt>make install</tt> (you may have to run <tt>sudo make install</tt>).
+<br> For the simulator to work, put the correct path into the <tt>set path(lc3sim)</tt> line in the file <tt>lc3sim-tk</tt>.  Check this file before editing; <br>the
+	installer may have added the correct path already (in which case you don't need to do anything).<br><br>
+The <a  href="LC3_unix.pdf">manual</a> can come pretty handy too. 
+<p>This might come in handy too : <a href="PattPatelAppA.pdf"><b>P&amp;P Appendix A </b></a>. 
+<p> You should also change your PATH on your Mac so that you can run <tt>lc3as</tt>
+and <tt>lc3sim-tk</tt> from anywhere in your machine. BASH users can do this:
+<ul>
+<li> First create a file .bash_profile through the terminal.
+<li> Then add the line <tt>export PATH=$PATH:</tt> followed by the path of the directory you want to add.
+<p>
+
+</ul>
+<li> <b>LC3 compiler</b>: This is in the "lcc-1.3" directory. Follow the following steps to install:
+<ul> 
+<li> Go to the lcc-1.3 directory and run configure : <tt>./configure</tt>
+<li> Then <tt>make install</tt>
+<li> The go to the install directory and copy <tt>lc3as</tt> from "lc3tools" directory.
+</ul>
+Usage: <tt> lcc -Wf-g0,';' C_file-name -o output-name.</tt>
+<p> It may be convenient to add the following line to .bash_profile : <tt>alias lccx="lcc -Wf-g0,';'"</tt> (note: no spaces after -Wf)
+<br> This way you just have to type <tt>lccx </tt> instead of the full thing.
+</ul>
+<p>
+
+
+<p>
+<hr>
+<b>UNIX and Linux</b>
+<p>
+
+Tools:
+<ul>
+<li> From your Linux account, you can access manual pages for most commands 
+and functions with the <tt>man</tt> command, e.g.
+<pre>
+    man getpid
+</pre>
+will tell you about the <tt>getpid( )</tt> system call.
+For an alternative interface, check out <tt>xman</tt>.
+<p>
+If you don't know what the command is, 
+<tt>man -k</tt>
+lets you look up manpages by keyword.  
+In the response, the numbers in parens indicate section
+numbers; use <tt>man -S</tt> to specify section.
+<li> Life is much easier if you use an editor that recognizes
+your syntax, and highlights and indents appropriately. 
+<p>
+I like 
+<tt>emacs</tt>.  (There are various X-enhanced versions around.)
+But your mileage may vary.
+</ul>
+<p>
+<hr>
+<p>
+<p>
+<hr>
+<b>Misc</b>
+<p>
+
+<p>
+
+<b><a href="ascii.html">ASCII</a></b>
+<p>
+<A HREF="/~cs37"><b>Back to  CS37 Home Page</b></A>
+</body> </html>
+

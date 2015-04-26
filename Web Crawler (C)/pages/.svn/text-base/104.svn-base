@@ -1,0 +1,219 @@
+http://www.cs.dartmouth.edu/~cbk/bio
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>CS 43/143 | Intro to Bioinformatics | Fall 2009</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="page">
+<div id="header">
+  <div id="title">CS 43/143, Fall 2009</div>
+  <div id="subtitle">Intro to Bioinformatics</div>
+</div>
+
+<div id="navigation">
+  <a href="index.html" class="navhere">About</a>
+  <a href="schedule.html" class="navthere">Schedule</a>
+</div>
+
+<div id="content">
+
+<table id="pix">
+  <tr>
+    <td><img src="img/seq.png" alt="sequence similarity" /></td>
+    <td><img src="img/1hpv.png" alt="1hpv structure" /></td>
+    <td><img src="img/ppi.png" alt="protein interaction network" /></td>
+  </tr>
+  <tr>
+    <td><em>sequence</em> similarity across organisms</td>
+    <td><em>structure</em> of HIV-1 protease + drug <a href="http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=1HPV">[1hpv]</a></td>
+    <td>possible <em>functional</em> interactions <a href="http://www.nature.com/nature/journal/v411/n6833/full/411041a0.html">[Jeong+]</a></td>
+  </tr>
+</table>
+
+<h2>Course description</h2> 
+
+<p>Computation is vital for modern molecular biology, helping
+scientists to model, predict the behaviors of, and control the
+molecular machinery of the cell.  This course will study algorithmic
+challenges in analyzing biomolecular <i>sequences</i> (what genes
+encode an organism, and how are genes related across organisms?),
+<i>structures</i> (what do the proteins constructed for these genes
+look like, and what does that tell us about their mechanisms?), and
+<i>functions</i> (what do these things do, and how do they interact
+with each other in doing it?).  The course is application-driven, but
+focused on the underlying algorithms and information processing
+techniques, employing approaches from search, optimization, pattern
+recognition, and so forth.</p>
+
+<p>For a beautiful visualization of the underlying molecules, see
+<i>The Inner Life of the Cell</i>, with either <a
+href="http://www.studiodaily.com/main/searchlist/6850.html">musical
+accompaniment</a> or <a
+href="http://multimedia.mcb.harvard.edu/anim_innerlife_Hi.html">narration</a>.</p>
+
+<p>To get a feel for the content (although it will be revised), see the <a href="08spring/">previous version</a>.</p>
+
+<a name="admin"></a>
+<h2>Administrative info</h2>
+
+<dl>
+<dt>Instructor</dt>
+<dd><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a> | 250 Sudikoff | office hours: Tu 1 (x-hour), Th 11, or by appointment</dd>
+
+<dt>Teaching Assistant</dt>
+<dd><a href="http://www.cs.dartmouth.edu/~asparker/">Andrew Scott Parker</a> | 251 Sudikoff | office hours: TuTh 4</dd>
+
+<dt>Announcements and discussion board</dt>
+<dd>Available on <a href="http://www.dartmouth.edu/~blackboard/">Blackboard</a> </dd>
+
+<dt>Lectures</dt>
+<dd>12-hour | MWF 12:30-1:35 | 006 Kemeny</dd>
+
+<dt>Textbook</dt> 
+<dd>None required.  While there are several great
+books out there covering some of the material, I haven't found one
+that comprehensively introduces the topics we'll cover (biomolecular
+sequence, structure, and function) from a computational perspective.
+Thus I'll distribute lecture notes and provide references to the
+literature.</dd>
+</dl>
+
+<a name="coursework"></a>
+<h2>Coursework</h2>
+
+<p>The course seeks to provide broad exposure to some important
+algorithmic challenges and approaches in bioinformatics.  The lectures
+and readings will provide a fairly general (for a ten-week course)
+survey of the field.  As this is an introductory course targeted at
+undergraduate and graduate students in computer science, a background
+in biology is not required.  However, students should be interested in
+learning some basic molecular biology and biochemistry, in
+context.</p>
+
+<p>Students from other related disciplines are encouraged to take the
+course; it has been approved as an elective for MCB students and to
+fulfill the applied math requirement for Thayer students.  Naturally,
+a basic understanding of the underlying computational techniques is
+expected.  The homework assignments require implementing
+bioinformatics algorithms, so programming experience is necessary.
+Please contact me to discuss your background and interests.</p>
+
+<p>The course is dual-listed as CS 43 for undergraduate students and
+CS 143 for graduate students.  Grades will be handled separately, and
+each assignment specifies additional requirements for graduate
+students.</p>
+
+<p>The coursework consists of the following:</p>
+<dl>
+  <dt>Homeworks (70%)</dt>
+  <dd>Since one of the best ways to learn something is by doing it,
+weekly programming labs for roughly the first two-thirds of the term will offer 
+the opportunity to implement and apply some core bioinformatics
+algorithms.  To standardize and enable us to provide some
+infrastructure, labs will be done in <a
+href="http://www.python.org/">python</a> (version 3.1); students have reported
+that learning/practicing python is another valuable outcome of the class. <br />
+In addition, graduate students will have the chance to practice their
+skills at critically reading primary literature, with weekly short
+critiques and discussion of papers related to the topics covered in class.</dd>
+  
+  <dt>Final project (25%)</dt>
+  <dd>The final project provides the opportunity to more deeply
+explore a topic of interest, individually or in a group, choosing
+an appropriate mixture of research, implementation, and application.  A project
+proposal and a project update will ensure that we are on the same
+page; a project presentation will make for a fun class-wide exchange;
+a project report will document what was done and what was learned.</dd>
+  
+  <dt>Participation (5%)</dt>
+  <dd>This is some encouragement to participate in class (asking
+questions, pointing out potential pitfalls, characterizing strengths,
+etc.) as well as outside of class (suggesting examples, pointing out
+significant applications and recent developments, finding related
+materials, etc.).</dd>
+
+</dl>
+
+<p>Assignments are to be turned in via <a
+ href="http://www.dartmouth.edu/~blackboard/">Blackboard</a>
+<em>before</em> class on the due date.  Ample time is provided for
+each assignment, so in general, late submissions will not be accepted.
+Under extenuating circumstances, arrangements must be made with the instructor
+<em>before</em> the due date.</p>
+
+<p><strong>Flu policy</strong>.  In keeping with Dartmouth's <a
+href="http://www.dartmouth.edu/~prepare/swineflu/">flu response
+effort</a>, <em>do not come to class</em> if you have flu-like
+symptoms.  Contact me, and follow the <a
+href="http://www.dartmouth.edu/~prepare/swineflu/response090809.html">prescribed
+protocol</a>.  You do not need to do any sequence, structure, or
+function analysis of your flu strain to be excused.</p>
+
+<a name="honor"></a>
+<h2>Honor code</h2>
+
+<p>Dartmouth's honor code applies to this course, and academic
+misconduct policies will be strictly enforced.  If you have questions,
+ask!</p>
+
+<p>You may discuss the programming labs with other current CS 43/143
+students, but your submission must be entirely your own.  As part of a
+discussion, you may show (in person) another student your work.
+However, your submission must be created and documented by you alone.
+You may not copy anything directly from another student's work.  For
+example, copying a portion of someone else's solution onto a piece of
+paper would violate the honor code, even if you eventually turn in a
+different answer.  Similarly, e-mailing a portion of your code to
+another student, or posting it on-line for them to see would violate
+the honor code.  Although all students must create and type in their
+own code, you may help other students debug their programs once you
+and they have already written your programs.  Discussion of the labs
+is encouraged, subject to these rules; such discussion will be most
+useful when both students have already made serious attempts to solve
+the problems on their own.</p>
+
+<p>If you make use of any code that is not your own, you must clearly
+attribute the source of the code with clear comments in the code that
+you submit.  You do not need to acknowledge discussion with other
+students on your submitted work.  Proper respect for copyright laws as
+applied to printed materials and software products is subsumed by
+Dartmouth College's <a
+href="http://www.dartmouth.edu/comp/about/policies/">Computing
+Policies</a>.</p>
+
+<p>Written paper critiques are to be done individually; class time
+will be reserved for discussion after submission.</p>
+
+<p>The final project may be conducted individually or in a group.
+Here, collaboration is encouraged.  Building on existing code is
+acceptable, subject to the above comments regarding attribution.</p>
+
+<a name="access"></a>
+<h2>Disabilities</h2>
+
+<p>Students with disabilities enrolled in this course and who may need
+disability-related classroom accommodations are encouraged to make an
+appointment to see the instructor before the end of the second week of
+the term. All discussions will remain confidential, although the <a
+href="http://www.dartmouth.edu/~accessibility/">Student Accessibility
+Services</a> office may be consulted to discuss appropriate
+implementation of any accommodation requested.</p>
+
+</div>
+
+<div id="footer">
+<!-- hhmts start --> Last modified: Wed Sep 30 14:14:58 EDT 2009 <!-- hhmts end -->
+</div>
+
+</div>
+
+</body>
+</html>

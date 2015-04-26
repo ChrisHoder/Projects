@@ -1,0 +1,38 @@
+http://www.cs.dartmouth.edu/~dxoigmn
+2
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>//dxoig.mn**</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.2.0/build/cssreset/reset-min.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://dxoigmn.myopenid.com/" />
+    <link rel="openid2.local_id" href="http://dxoigmn.myopenid.com" />
+    <link rel="openid2.provider" href="http://www.myopenid.com/server" />
+
+    <script src="http://dxoig.mn/mint/?js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="picture">
+      <img src="images/me2.jpg" />
+    </div>
+
+    <div id="description">
+      <h1>//dxoig.mn**</h1>
+      <p>
+        I am a third-year graduate student in the Computer Science Department at Dartmouth College working with <a href="http://www.cs.dartmouth.edu/~dfk/">David Kotz</a>.
+        I am generally interested in security &amp; privacy, and lately I have been focusing on the mobile health (mHealth) domain.
+        My <a href="http://dxoig.mn/resume.html">resume</a> has more details about my research and publications.
+        Any code I have released publicly can be found on <a href="https://github.com/dxoigmn">GitHub</a>.
+        Sometimes I <a href="http://log.dxoig.mn/">write</a> about stuff mostly unrelated to my research.
+        If you want to get in contact with me, send an email to <code>my.name @ dartmouth.edu</code>, drop by Sudikoff 241 (lab) or 254 (office), or friend me on <a href="http://www.facebook.com/dxoigmn">Facebook</a>.
+      </p>
+      <p id="signature">&mdash; Cory Cornelius</p>
+    </div>
+  </body>
+</html>

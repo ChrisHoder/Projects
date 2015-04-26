@@ -1,0 +1,95 @@
+http://www.cs.dartmouth.edu/~jbrody
+3
+<html>
+<head>
+<title>Joshua Brody: Dartmouth College</title>
+</head>
+<body bgcolor="white" style="font-size:75%">
+<table border="0">
+<tr>
+<td width=246>
+<img height="200" alt="Yours Truly" src="img/joshua-seattle.jpg">
+</td>
+<td align="left">
+<b>Joshua Brody</b>
+<br>112 Sudikoff Laboratory
+<br><a href="http://www.dartmouth.edu">Dartmouth College</a>
+<br>cell: 603-738-2154
+<br>jbrody at cs dot dartmouth dot edu
+<br>
+<br><a href="final/jbrodyresume.pdf">resume</a>
+<br><a href="final/jbrodycv.pdf">CV</a>
+</td>
+
+</tr>
+</table>
+
+<hr>
+<p>I am a fifth year Ph.D. student in theoretical computer science
+at <a href="http://www.dartmouth.edu">Dartmouth College</a>.<br>  My
+thesis focuses on communication complexity.  I am also
+interested in upper and lower bounds and other aspects of theory of
+computation and algorithms.
+
+<p>I expect to graduate in the summer of 2010.  During the 2010-2011
+academic year, I'll be a postdoc at Tsinghua University ITCS under
+Andy Yao.
+
+<!-- <p>
+Here's my <a href="final/jbrodyresume.pdf">resume</a> and <a href="final/jbrodycv.pdf">cv</a>.
+-->
+
+<hr>
+<p><H2>Publications</H2>
+<ul>
+<li><b>The Coin Problem, and Pseudorandomness for Branching Programs</b><br>
+  (with Elad Verbin) <br>
+  <a href="papers/TheCoinProblemFOCS.pdf">pdf</a><br>
+  FOCS 2010 (to appear) <br><br>
+<li><b>Better Gap-Hamming Lower Bounds via Better Round Elimination</b><br>
+  (with Amit Chakrabarti, Oded Regev, Thomas Vidick, and Ronald de Wolf) <br>
+  <a href="papers/betterghd.pdf">pdf</a><br>
+  RANDOM 2010 (to appear) <br><br>
+<li><b>Distributed Monitoring of Conditional Entropy for Anomaly Detection in Streams</b><br>
+  (with Chrisil Arackaparambil, Sergey Bratus, and Anna Shubina) <br>
+  <a href="papers/AnomalyDetection.pdf">pdf</a><br>
+  SSPS 2010 <br><br>
+<li><b>A Multi-Round Communication Lower bound
+    for Gap Hamming and Some Consequences</b> <br>
+  (with Amit Chakrabarti) <br>
+  <a href="papers/ghd.pdf">pdf</a> <a href="slides/ccc_ghd.pdf">slides</a><br>
+  CCC 2009 <br><br>
+<li><b>The Maximum Communication Complexity of Multiparty
+  Pointer Jumping </b><br>
+  <a href="papers/myopic.pdf">pdf</a> <a href="slides/ccc_myopic.pdf">slides</a><br>
+  CCC 2009 <br><br>
+<li><b>Functional Monitoring Without Monotonicity</b> <br> (with
+  Chrisil Arackaparambil and Amit Chakrabarti) <br> 
+  <a href="papers/funcmon.pdf">pdf</a> <br>
+  Preliminary version available as Dartmouth College Technical Report <a href="papers/funcmon_tr.pdf">TR2008-639 </a><br>
+  ICALP 2009 <br><br>
+<li><b>Information-Theoretic Metrics for Anomaly Detection
+    (Extended Abstract)</b><br>  
+  (with Sergey Bratus, David Kotz, and Anna Shubina) <br>
+  <a href="papers/ITMetrics.pdf">extended
+  abstract</a> <a href="papers/ITMetricsPoster.pdf">poster</a>  <br>
+  RAID 2008 <br> <br>
+<li><b>Sublinear Communication Protocols for Multi-Party Pointer Jumping
+    and a Related Lower Bound </b><br> (with Amit Chakrabarti) <br>
+  <a href="papers/mpj-ub.pdf">pdf</a> <a href="slides/stacs_talk.pdf">slides</a> <br>
+  STACS 2008
+</ul>
+
+<hr>
+<p><H2>Links</H2>
+<ul>
+<li>Dartmouth <a href="http://www.cs.dartmouth.edu/~theory/winter_2009.html">Theory
+Reading Group</a>.</li>
+<li>The <a href="http://feedworld.net/toc/">Theory Blog Aggregator.</a></li>
+</ul>
+
+<hr>
+<p style="font-size:11px">Last updated 8/23/10</p>
+
+</body>
+</html>

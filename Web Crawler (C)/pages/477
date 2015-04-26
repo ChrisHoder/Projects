@@ -1,0 +1,108 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw3
+3
+<html> <head>
+<title>CS37: Homework 3</title>
+</head>
+ 
+<body>
+
+<h1>Homework 3</h1>
+
+Published: Tuesday, July 13<br>
+Due: <strong>11:59PM</strong>, Monday, July 19<br>
+<p>
+<hr>
+<p>
+You'll now start building components for your processor!  
+<p>
+<hr>
+<p>
+For this assignment, if a question asks you to use only <b>discrete
+gates</b>, you can use anything from the Base or Gates libraries.  Do
+not use anything from the Plexers or Memory libraries.  When you use a
+logic gate, you are free use any fan-in you want, and any number of
+data bits per input line.
+<p>
+For this homework assignment, try to minimimize the number of gates
+used, but do not stress too much about it.  We'll only take points off
+for submissions that use <i>way</i> more gates than is needed.
+<p>
+As always, email cs37staff@cs.dartmouth.edu if you have any questions
+about this homework.
+<p>
+<hr>
+<p>
+Q1.(15 points)  The LC-3 requires a 2:1 16-bit MUX; the textbook shows it like this:
+<p>
+<center><img width="20%" src="2mux.jpg"></center>
+<p>
+LogiSim has such beasts as baked-in components (from the Plexers menu).
+In your LC-3, you can use that one.   But in the spirit of seeing what's inside everything....
+<p>
+From discrete gates, build a 2:1 16-bit MUX.
+<p>
+<hr>
+<p>
+Q2. (15 points) The LC-3 also requires a 4:1 16-bit MUX.
+<p>
+<center><img width="25%" src="4mux.jpg"></center>
+<p>
+Build one from discrete gates and 2:1 16-bit MUXes.   
+<p>
+<hr>
+<p>
+Q3: (40 points) Build a register file for the LC-3. This should have
+<ul>
+<li> 8 word-length registers
+<li> one word-length input
+<li> two word-length outputs ("SR2 Out" and "SR1 Out")
+<li> three 3-bit address controls ("DR," "SR1," and "SR2")
+<li> a load line ("LD.REG")
+<li>an active-low clear line, "CLEAR"
+</ul>
+<p>
+Here's how the textbook shows it:
+<center><img width="40%" src="regfile.jpg"></center>
+<p>
+This is the functionality:
+<ul>
+<li> the "SR1 Out" contains the value of the register specified by "SR1"
+<li> the "SR2 Out" contains the value of the register specified by "SR2"
+<li> if "LD.REG" is asserted, then the value on the input is written into the register specified by "DR"
+<li> all of the above things can happen at the same time
+<li> And... "CLEAR" clears all the registers.  (Yes, there's no clear
+line in the textbook's register file.  You'll be providing <i>extra
+functionality</i>).  Stick the clear input line right above DR.
+</ul>
+<p>
+A few notes:
+<ul>
+<li> Package this is a subcircuit module.   Make sure you put labels on all the pins in the subcircuit, so that mouse-over will show the labels in the main circuit, so we can know what's what.
+<li> If you right-click on an instance of a subcircuit within a larger circuit, you can open up and see the internal state of that instance.
+<li> I would recommend adding eight word-length outputs to your subcircuit, one for each register---so you can hang probes on them and spy on their contents.
+</ul>
+<p>
+<hr>
+<p>
+Q4: (30 points) Build an ALU for the LC-3.  The book shows it like this:
+<p>
+<center><img width="30%" src="alu.jpg"></center>
+(but yours will have the standard LogiSim subcircuit icon)
+<p>
+The two data lines should each be one word.<br>
+The two control lines should specify the operation as follows:
+<ul>
+<li> 00: ADD
+<li> 01: AND  (The output word is the bitwise AND of the two input words)
+<li> 10: NOT A (The output word is the bitwise NOT of input word A)
+<li> 11: PASS A (The output word is the input word A)
+</ul>
+<p>
+<hr>
+<h2>Submission</h2>
+<hr>
+<p>
+ Send email to cs37staff@cs with the subject line "Homework 3
+ Submitted".  Attach all relevant files.  If you use multiple files, packing the assignment into a single zip file is preferred.
+<p>
+</body> </html>

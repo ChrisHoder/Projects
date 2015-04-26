@@ -1,0 +1,112 @@
+http://www.cs.dartmouth.edu/~cbk/mrf.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects | Graphical models of proteins </title>
+<link href="style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+  <div id="title">
+    <h1><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a></h1>
+    <h2><a href="http://www.cs.dartmouth.edu/">Computer Science</a>, <a href="http://www.dartmouth.edu/">Dartmouth</a></h2>
+		<h3>Associate Professor</h3>
+		<div id="contact">
+			cbk -at- cs -dot- dartmouth -dot- edu<br />
+			6211 Sudikoff Laboratory, Hanover, NH 03755, USA<br />
+			Room 250 Sudikoff<br />
+			603-646-3385<br />
+		</div>
+	</div>
+  <div id="highlight"><a href="abs.php#csb09a"><img src="img/pub/csb09a.png" alt="CSB09a" /></a><div><a href="abs.php#csb09a">Pubs | CSB-09a</a>: sequence+structure graphical models</div></div></div>
+<div id="projbody"><div id="nav">
+<span><a href="index.php"  >home</a></span><span><a href="lab.php"  >lab</a></span><span><a href="projects.php" class="navhere" >projects</a></span><span><a href="classes.php"  >classes</a></span><span><a href="pubs.php"  >pubs</a></span><span><a href="news.php"  >news</a></span>
+</div>
+	<div id="projcontent"><h3>Graphical models of proteins</h3>
+
+<p>Protein sequences are constrained both at individual residues
+(conservation) and in relation to each other (covariation).  Selective
+pressures to maintain structure and function have constrained
+sequences over time and across species.  Constraints thus manifested
+in sequence-structure-function relationships can be inferred from the
+evolutionary record, along with information from available structural
+studies and functional assays.  Identified relationships can then be
+employed in all different `directions', e.g., to predict function from
+the sequence of a newly-discovered protein, discriminate predicted
+structures for a sequence according to functional tests, and design
+variant (homologous) protein sequences with related functions.</p>
+
+<p>We are developing approaches to learn and use probabilistic
+graphical models (aka Markov random fields) that capture significant
+conservation and coupling observable in a multiply-aligned set of
+sequences.  By incorporating structural information, our models can
+provide mechanistic explanations for observed constraints.  By
+incorporating functional class information, they can perform
+interpretable classification of new sequences, explaining decisions in
+terms of the underlying conservation and coupling constraints.  By
+incorporating information about interacting proteins, they can
+identify "cross-coupling" constraints and make explainable predictions
+about novel interactions.  Finally, the models can be used
+generatively, to design new sequences consistent with the modeled
+constraints, and thus predicted to be folded and functional.</p>
+
+<h4>Papers</h4>
+<ul>
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Graphical
+models of protein-protein interaction specificity from correlated
+mutations and interaction data", <i>Proteins</i>, in press.
+<a href="abs.html#proteins09">abstract</a>.
+
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Protein design
+by sampling an undirected graphical model of residue constraints", 
+<i>IEEE/ACM Transactions on Computational Biology and Bioinformatics</i>,
+in press.
+<a href="abs.html#tcbb08">abstract</a>.
+<a href="papers/tcbb08.pdf">preprint</a>.
+</li>
+
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Graphical
+models of residue coupling in protein families", <i>IEEE/ACM
+Transactions on Computational Biology and Bioinformatics</i>, 2008, 5:183-197.
+<a href="abs.html#tcbb07">abstract</a>.
+<a href="http://www2.computer.org/portal/web/csdl/doi/10.1109/TCBB.2007.70225">official version</a>.
+<a href="papers/tcbb07.pdf">preprint</a>.
+</li>
+
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Graphical
+models of residue coupling in protein families", Proc. BioKDD, 2005.
+<a href="abs.html#biokdd05">abstract</a>.
+<a href="papers/biokdd05.pdf">pdf</a>.  
+Copyright 2005, ACM.
+</li>
+
+</ul>
+
+	</div>
+	</div>
+
+	<div id="projnav">
+	<h4>Current projects</h4>
+	<ul class="pix">
+		<li><a href="multimodal.php"><img src="img/proj/multimodal-small.png" alt="multimodal" title="Multimodal protein structure"  /></a></li>
+		<li><a href="nmr.php"><img src="img/proj/nmr-graph-small.png" alt="nmr" title="NMR assignment"  /></a></li>
+		<li><a href="oligomer.php"><img src="img/proj/2hyn-small.jpg" alt="oligomer" title="Protein complexes"  /></a></li>
+		<li><a href="mrf.php"><img src="img/proj/mrf-small.png" alt="graphical models" title="Protein graphical models" class="thisproj" /></a></li>
+		<li><a href="recombination.php"><img src="img/proj/recomb-small.png" alt="recombination" title="Protein recombination"  /></a></li>
+		<li><a href="deimmunization.php"><img src="img/proj/deimm-small.png" alt="deimmunization" title="Protein therapeutic deimmunization"  /></a></li>
+	</ul>
+	</div>
+
+<div id="footer"></div>
+</div>
+</body>
+</html>
+	

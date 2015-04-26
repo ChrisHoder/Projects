@@ -1,0 +1,279 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Viterbi_algorithm
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Viterbi algorithm" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Viterbi algorithm - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Viterbi_algorithm";
+		var wgTitle = "Viterbi algorithm";
+		var wgAction = "view";
+		var wgArticleId = "29";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 412;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Viterbi_algorithm skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Viterbi algorithm</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Problem_0:_find_and_clean_some_text"><span class="tocnumber">2</span> <span class="toctext">Problem 0: find and clean some text</span></a></li>
+<li class="toclevel-1"><a href="#Problem_1:__word-level_bigrams_of_English"><span class="tocnumber">3</span> <span class="toctext">Problem 1:  word-level bigrams of English</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Problem_1b"><span class="tocnumber">3.1</span> <span class="toctext">Problem 1b</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Problem_2:__character-level_bigrams_of_English"><span class="tocnumber">4</span> <span class="toctext">Problem 2:  character-level bigrams of English</span></a></li>
+<li class="toclevel-1"><a href="#Problem_3:_Spell-checking_without_a_dictionary"><span class="tocnumber">5</span> <span class="toctext">Problem 3: Spell-checking without a dictionary</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Problem_3a"><span class="tocnumber">5.1</span> <span class="toctext">Problem 3a</span></a></li>
+<li class="toclevel-2"><a href="#Problem_3b"><span class="tocnumber">5.2</span> <span class="toctext">Problem 3b</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Introduction" id="Introduction"></a><h2> <span class="mw-headline">Introduction</span></h2>
+<p>Due Sunday, March 7, at midnight.
+</p><p>In this (final) assignment, you will experiment with statistical natural language processing, using the algorithms from chapter 15 of the text, and <a href="http://en.wikipedia.org/wiki/N-gram" class="external text" title="http://en.wikipedia.org/wiki/N-gram" rel="nofollow">n-gram models of English</a>.
+</p>
+<a name="Problem_0:_find_and_clean_some_text" id="Problem_0:_find_and_clean_some_text"></a><h2> <span class="mw-headline">Problem 0: find and clean some text </span></h2>
+<p>Find a nice free book online of at least 100 pages.  It should be in plain text format.  I recommend <a href="http://www.gutenberg.org/wiki/Main_Page" class="external text" title="http://www.gutenberg.org/wiki/Main_Page" rel="nofollow">project Gutenberg</a>.  Choose one of the ones written in English, rather than ancient Mayan.  
+</p><p>Punctuation makes things tricky.  So the next step is to clean your text.  Process it so that it only contains letters [a...z] and [A...Z] and whitespace.
+</p><p>Here's a perl script to do it for you. 
+</p>
+<pre>
+#!/usr/bin/perl -w
+
+while(&lt;&gt;) {
+    s/[^a-zA-Z\s]//g;
+    print $_;
+}
+</pre>
+<p>If you want to use my script, save it as puncstrip.pl and then run it with something like
+</p>
+<pre>
+perl puncstrip.pl &lt;inputfile.txt &gt;outputfile.txt
+</pre>
+<a name="Problem_1:__word-level_bigrams_of_English" id="Problem_1:__word-level_bigrams_of_English"></a><h2> <span class="mw-headline">Problem 1:  word-level bigrams of English</span></h2>
+<p>Consider a sequence of words, <span class="texhtml"><i>w</i><sub>1</sub><i>w</i><sub>2</sub><i>w</i><sub>3</sub><i>w</i><sub>4</sub><i>w</i><sub>5</sub><i>w</i><sub>6</sub></span>.  A bigram is a pair of words, and a bigram model gives the probability of any word given the two preceding words.  So for example, I might ask, what's the probability of the word 'machines' given that I heard "international business" as the two preceding words?  This would be written as 
+</p>
+<dl><dd><span class="texhtml"><i>P</i>(<i>w</i><sub>3</sub> = 'machines' | <i>w</i><sub>2</sub> = 'business',<i>w</i><sub>1</sub> = 'international')</span>.
+</dd></dl>
+<p>We'll assume that the probability is independent of the actual position of the words in the sequence, so for example 
+</p>
+<dl><dd><span class="texhtml"><i>P</i>(<i>w</i><sub>3</sub> = 'machines' | <i>w</i><sub>2</sub> = 'business',<i>w</i><sub>1</sub> = 'international') = <i>P</i>(<i>w</i><sub>5</sub> = 'machines' | <i>w</i><sub>4</sub> = 'business',<i>w</i><sub>3</sub> = 'international')</span>.
+</dd></dl>
+<p>Many of these probabilities will be tiny.  Rather than storing tiny decimals, we'll keep track of counts -- just like the Google database of 5-grams.  
+</p><p>Remember that <img class="tex" alt="P(a | \mathrm{bigram}) = P(a \and \mathrm{bigram}) / P(\mathrm{bigram})" src="/~robotics/cs44/images/math/2/0/6/206c04be8c9b031d25841e0879c2fd93.png" />.
+</p>
+<ul><li> Step 1:  collect a count of all bigrams in the file.  (A bigram is a pair of words, in sequence.  So "international business" is a different bigram than "business international".)  I'd recommend a hashtable.
+</li><li> Step 2:  collect a count of all trigrams in the file.  Another hashtable.
+</li><li> Step 3:  Write a short method that, given each of these hashtables, and a triplet of words, gives the probability.
+</li></ul>
+<a name="Problem_1b" id="Problem_1b"></a><h3> <span class="mw-headline">Problem 1b</span></h3>
+<p>How good of a model is the trigram model?  We'll use it to generate some English.  Write a program that, given the first two words of a sentence, randomly selects the next word from a distribution that is consistent with the probablistic model you have built. 
+</p><p>In your write-up, write down ten sentences of length fifteen words each generated by your algorithm.  Do they look like English to you?  Discuss.
+</p>
+<a name="Problem_2:__character-level_bigrams_of_English" id="Problem_2:__character-level_bigrams_of_English"></a><h2> <span class="mw-headline">Problem 2:  character-level bigrams of English</span></h2>
+<p>Build similar hashtables for character bigrams, e.g., <span class="texhtml"><i>P</i>(<i>I</i> | <i>M</i>,<i>B</i>)</span>. There are a few details to consider.  First, how to deal with whitespace.  Treat any amount of whitespace as a single space character.  (Yes, you should include spaces in your bigram model.)  The easiest way to do this will be to tokenize the file on whitespace, and then add a single space after each token.  (Don't just hack this into the perl script, because we will test your code by giving it a file processed only by the perl script I provided.  You won't have seen that file.)
+</p><p>The second detail is that you should have exactly 2809 bigrams (pairs of letters), since <span class="texhtml">(26 + 26 + 1)<sup>2</sup> = 2809.</span>  You'll have 148877 trigrams.  Some of those bigrams and trigrams may not show up in your text file.  But we don't want any probabilities to be equal to zero.  (In the next section we will be multiplying probabilities.  And just because we didn't see a trigram doesn't mean it's impossible!).  So in your method that computes conditional probabilities, assume that the minimum frequency count for any trigram is 1.  (Technically, we should also increase the bigram counts in this case, because otherwise there will be some probabilities that sum to more than 1.  Don't worry about doing this though.)
+</p>
+<ul><li> At this point, you should have methods that input the file, cleans whitespace, computes all bigram and trigram counts, and computes any conditional probability of a letter given the two preceding letters.
+</li></ul>
+<ul><li> Test your methods by generating sentences in "English" using the same method as for problem 1:  given two starting letters, pick a third letter with probability drawn from the table.
+</li></ul>
+<a name="Problem_3:_Spell-checking_without_a_dictionary" id="Problem_3:_Spell-checking_without_a_dictionary"></a><h2> <span class="mw-headline">Problem 3: Spell-checking without a dictionary</span></h2>
+<p>Find another large English text file and clean it using the perl scripts.  Make two copies of it.  You're going to introduce spelling errors into one of the copies.  Write a method that with probability 10% randomly changes a non-whitespace character into some uniformly randomly selected lowercase or uppercase letter.  
+</p>
+<a name="Problem_3a" id="Problem_3a"></a><h3> <span class="mw-headline">Problem 3a</span></h3>
+<p>Implement the Viterbi algorithm, as described in the textbook.  Apply it to the umbrella-world example in figure 15.5 in the textbook, and in your writeup, convince me that it worked.  (e.g, you should get the same probabilities as in the figure!)
+</p>
+<a name="Problem_3b" id="Problem_3b"></a><h3> <span class="mw-headline">Problem 3b</span></h3>
+<ul><li> Implement the Viterbi algorithm, as described in the textbook, to correct your misspelled text.
+</li></ul>
+<p>One detail to consider is that many of the probabilities will be very small.  Multiplying them together is numerically unstable.  But notice that <span class="texhtml">log(<i>a</i> * <i>b</i> * <i>c</i> * <i>d</i> * <i>e</i>) = log(<i>a</i>) + log(<i>b</i>) + log(<i>c</i>) + log(<i>d</i>) + log(<i>e</i>).</span>  So, instead of multiplying probabilities, take the log of each probability, and instead of multiplying, add!  Then when you are done, take the log inverse to display any actual probabilities you would like.
+</p>
+<ul><li> Compare your corrected text to the original.  How many errors remain?  (The number should be less than 10%!)
+</li><li> Try your algorithm with 5%, 20%, and 40% errors.  How does it perform?  Discuss.
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 36/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:29-0!1!0!!en!2!edit=0 and timestamp 20110220172257 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Viterbi_algorithm">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Viterbi_algorithm</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Viterbi_algorithm" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Viterbi_algorithm&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Viterbi_algorithm&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Viterbi_algorithm&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Viterbi_algorithm" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Viterbi_algorithm" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Viterbi_algorithm" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Viterbi_algorithm&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Viterbi_algorithm&amp;oldid=412" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 2 March 2010, at 15:56.</li>
+					<li id="viewcount">This page has been accessed 1,665 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.215 secs. --></body></html>

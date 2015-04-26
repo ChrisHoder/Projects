@@ -1,0 +1,89 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July9
+3
+<h1>July 9: Random Access Memory</h1>
+
+<p>Reading: P&amp;P 3.4, 3.5<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;T 3.3
+<hr>
+<h2>0) Recap</h2>
+Abstraction Levels<p>
+Latches and Flip-Flops
+<ul>
+<li>Our implementation: <a href="circuits/dff.circ">dff.circ</a>
+<li>Latch vs. Flip-Flop: <a href="circuits/latchflop.circ">latchflop.circ</a>
+</ul>
+<hr>
+<h2>1) RAM (top level view)</h2> Now that we've seen how we can store
+bits, we'll use it to construct some memory.
+
+<p>What is Random Access Memory?
+<ul>
+<li> array of "slots"
+<li> Each slot holds some unit of data (byte? word?)
+<li> Each slot has an <i>address</i>, which is just an index into the array
+</ul>
+Operations on RAM:
+<ul>
+<li><b>Read:</b> takes address, returns contents of that slot
+<li><b>Write:</b> takes address, new slot contents.  Saves into slot indicated by address
+</ul>
+Q: What should the slot size be? One byte? One word? (i.e. 32 bits, or 64 bits, or...)<p>
+A: Usually slot size = 1 byte, but memory accesses touch a word at a time, so could take e.g. 4 slots.  Here, word addresses come in multiples of 4.  (why 4 slots?)
+<p>
+<hr>
+<h2>2) RAM (bottom-up view) </h2>
+How do we implement this?<p>
+
+Say we want 4 slots, with slot size = 4 bits.
+<ul>
+<li>Use 4 D Flip-Flops per slot
+<li>Pipe incoming data into each slot
+<li>Use decoder on address to control which slot is active and gets used.
+</ul>
+<a href="circuits/ram.circ">ram.circ</a><br>
+<img src="ram.jpg" alt="oops"></img>
+
+<p>Implementing RAM out of Flip-Flops is an example of Static RAM
+(SRAM), and while our example only stores 16 bits of memory, this
+generalizes easily.  Below illustrates 1MB of SRAM:<p>
+<img src="megabyte3.jpg" alt="oops"></img><p>
+
+Q: How many bytes are in a megabyte?<p>
+A: not one million bytes.  actually 2^20 == 1,048,576 B.<p>
+
+Some CS humor from xkcd about #bytes in a kilobyte:<br>
+
+<img src="kilobyte.png" alt="oops"></img><p>
+<hr>
+<h2>3) Dynamic RAM</h2> 
+
+So far, we've seen memory implementations that use flip flops to store
+bits.  There's another way to store a bit called Dynamic RAM (DRAM):<p>
+
+See this <a href="http://micro.magnet.fsu.edu/electromag/java/capacitor">demo.</a><p>
+
+Saving one bit of memory in DRAM takes only one transistor and one capacitor.
+Saving a bit of memory in SRAM takes (at least) six transistors.  There are more tradeoffs:
+
+
+<h3>SRAM vs DRAM</h3>
+<ul>
+<li> SRAM: faster, but consumes more power, and is more expensive.
+<li> DRAM: cheaper to produce, denser (since it uses fewer transistors), but slower.  Also, capacitors leak electricity, so memory needs to be refreshed periodically
+</ul>
+
+The Real World solution: use both in a way that gets the best of both
+worlds (more on this at the end of the term).
+
+<p>
+<hr>
+<h2> 4) Homework 1</h2>
+
+There was a question last class about the class course number problem.
+Here are two nice solutions from last term's students:
+<ul>
+<li>Parker Phinney's <a href="circuits/Class1.circ">solution</a> using
+one gate per course.
+<li>Eric Richard's <a href="circuits/Class2.circ">solution</a>
+minimizing the number of gates.
+</ul>

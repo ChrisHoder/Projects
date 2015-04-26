@@ -1,0 +1,820 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug04
+3
+<html><head><title>August 4: Data Types, Operations, Variables</title></head>
+
+<body>
+
+<h1>August 4: Data Types, Operations, Variables</h1>
+
+<hr><h2>0) Recap</h2><hr>
+
+To see how high-level languages turn into assembly code, we've started
+looking at (a subset of) C.
+
+<p><b>Reviewing the build process</b>
+<p>The real world:
+<ul>
+<li>Compiler transforms high-level source code to "object code"
+<li>Linker patches up loose ends (such as unresolved symbols) across
+multiple object files + builds final executable.
+<li>Modern tools (e.g. <b>gcc</b>) do it all.
+</ul>
+
+<br>The LC-3:
+<ul>
+<li>usage:  lccx foo.c -o foo
+<li>lcc (or lccx to get source lines included as comments) turns
+high-level source into assembly code.
+<li>lc3as (run by lcc) turns assembly into executable (i.e., into .obj
+code runnable by the LC-3 simulator.
+</ul>
+
+<p>Some example C code:  <a href="code/null3.c"><b>null3.c</b></a>
+<br>...and the associated assembly
+code: <a href="code/null3.asm"><b>null3.asm</b></a>.  
+<br>Why are we generating so much assembly code?
+
+<p><b>Today:</b> more on C---data types, operations, variables. 
+
+<hr><h2>1) Data Types</h2><hr>
+<b>int</b> 
+<ul>
+<li>an integer
+<li>typically 2's complement
+<li>usually native word size  (constrast with Java)
+</ul>
+<p>
+<b>char</b>
+<ul>
+<li> a "character"
+<li> binary encoding of said character
+<li>
+one <a href="http://www.cs.dartmouth.edu/~cs37/resources/ascii.html"><b>ASCII</b></a>
+byte.  (again, different
+than <a href="http://en.wikipedia.org/wiki/Unicode"><b>Java</b></a>)
+<li> chars as constants: use single quotes e.g.,  'F'
+</ul>
+<p>
+<b>character string</b>
+<ul>
+<li>sequence of characters, terminated by x00  a.k.a. '\0'.
+<li>character strings as constants: use double quotes e.g., "I view
+the landslide of C use in education as something of a
+calamity. (Niklaus Wirth, 1993)"
+</ul>
+
+<p><hr><h3>In Hardware</h3>
+How do these data types get represented in the LC-3?
+
+<p>integer, char: straightforward
+<p>character string
+<ul>
+<li>character string:  sequence of bytes (but stored as words)
+<li>the "address" of the string == address of zeroth byte.  
+<li>one char per word or two?   (LC-3 has traps for both:  PUTS, PUTSP)
+</ul>
+
+<p><hr><p>let's get empirical</p>
+
+<a href="code/vars2.c"><b>vars2.c</b></a>:
+<pre>
+int i1;
+int i2;
+char c1;
+char c2;
+char *string = "there is no dark side of the moon, really";
+
+main() {
+  
+  if (string == "there is no dark side of the moon, really")
+    printf("as a matter of fact, it's all dark\n");
+  else printf("huh?\n");
+
+}
+</pre>
+
+<a href="code/vars2.asm"><b>vars2.asm</b></a>
+
+<hr><h3>The Hardware/Software Boundary</h3>
+<p>What do you expect this code to do?
+<p>
+<a href="code/vars3b.c"><b>vars3b.c</b></a>
+
+<hr><h2>2) Operations</h2><hr>
+<p><b>Integer Operations</b>
+<ul>
+<li>+,-,*,/,%      &nbsp;&nbsp;&nbsp;  (% is the <i>mod</i> operator e.g. 17 % 3 = 2)
+<li><<, >>       &nbsp;&nbsp;&nbsp;    Shift operators e.g. 5 << 2 = 20; 8>>1 = 4
+<li>|,&,^,~      &nbsp;&nbsp;&nbsp;    bitwise OR, AND, XOR, NOT
+</ul>
+<p><hr><b>Boolean Operations</b>
+<br>By convention: 
+<ul>
+<li>0 == "false"
+<li>nonzero == "true"
+</ul>
+Operations:
+<ul>
+<li>||, &&, !     &nbsp;&nbsp;&nbsp;   logical OR, AND, NOT
+</ul>
+
+<p><hr><b>Don't try this at home</b>
+<p>C lets you merge operations into more complex expressions:
+<ul><li>x += 2;&nbsp;&nbsp;&nbsp;    // x = x + 2</ul>
+<p>...or auto-increment...
+<ul><li>x++;   &nbsp;&nbsp;&nbsp;   // x = x+1</ul>
+<p>...or merge auto-increment into expressions....
+<ul><li>z = x++ - --y; &nbsp;&nbsp;&nbsp; // ???</ul>
+
+<a href="code/ugly.c"><b>ugly.c</b></a>
+<p>Please don't do this.  It's hard to read/understand, hard to debug, ...
+
+
+<hr><h3>In the hardware</h3><hr>
+Next, lets look at some of the basic C operations and see how they're implemented in hardware!
+
+<p>How do you add?</p>
+<p><a href="code/add.c"><b>add.c</b></a>:
+<pre>
+int x = 0xDEAD;
+int y = 0xBEEF;
+int z;
+
+main() {
+
+  z = x + y;
+}
+
+</pre>
+<p><a href="code/add.asm"><b>add.asm</b></a>:
+<pre>
+.Orig x3000
+INIT_CODE
+LEA R6, #-1
+ADD R5, R6, #0
+ADD R6, R6, R6
+ADD R6, R6, R6
+ADD R6, R6, R5
+ADD R6, R6, #-1
+ADD R5, R5, R5
+ADD R5, R6, #0
+LD R4, GLOBAL_DATA_POINTER
+LD R7, GLOBAL_MAIN_POINTER
+jsrr R7
+HALT
+
+GLOBAL_DATA_POINTER .FILL GLOBAL_DATA_START
+GLOBAL_MAIN_POINTER .FILL main
+;main() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;main;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+main
+ADD R6, R6, #-2
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #-1
+
+ADD R6, R6, #-1
+;  z = x + y;
+ADD R7, R4, #3
+ADD R3, R4, #0
+ldr R3, R3, #0
+ADD R2, R4, #1
+ldr R2, R2, #0
+add R3, R3, R2
+str R3, R7, #0
+ADD R7, R4, #4
+ldr R7, R7, #0
+;}
+lc3_L1_add
+STR R7, R5, #3
+ADD R6, R5, #1
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+
+
+GLOBAL_DATA_START
+x .FILL #32768
+y .FILL #32768
+L1_add .FILL lc3_L1_add
+z .BLKW 1
+L2_add .FILL #0
+.END
+</pre>
+
+<hr><p>How do you subtract?</p>
+
+<p>are we right? </p>
+<p><a href="code/sub.c"><b>sub.c</b></a>:
+<pre>
+int x = 0xDEAD;
+int y = 0xBEEF;
+int z;
+
+main() {
+
+  z = x - y;
+
+}
+
+</pre>
+<p><a href="code/sub.asm"><b>sub.asm</b></a>:
+<pre>
+.Orig x3000
+INIT_CODE
+LEA R6, #-1
+ADD R5, R6, #0
+ADD R6, R6, R6
+ADD R6, R6, R6
+ADD R6, R6, R5
+ADD R6, R6, #-1
+ADD R5, R5, R5
+ADD R5, R6, #0
+LD R4, GLOBAL_DATA_POINTER
+LD R7, GLOBAL_MAIN_POINTER
+jsrr R7
+HALT
+
+GLOBAL_DATA_POINTER .FILL GLOBAL_DATA_START
+GLOBAL_MAIN_POINTER .FILL main
+;main() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;main;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+main
+ADD R6, R6, #-2
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #-1
+
+ADD R6, R6, #-1
+;  z = x - y;
+ADD R7, R4, #3
+ADD R3, R4, #0
+ldr R3, R3, #0
+ADD R2, R4, #1
+ldr R2, R2, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+ADD R6, R6, #-1
+STR R2, R6, #0
+NOT R2, R2
+ADD R2, R2, #1
+ADD R0, R3, R2
+LDR R2, R6, #0
+ADD R6, R6, #1
+ADD R3, R0, #0
+LDR R0, R6, #0
+ADD R6, R6, #1
+str R3, R7, #0
+ADD R7, R4, #4
+ldr R7, R7, #0
+;}
+lc3_L1_sub
+STR R7, R5, #3
+ADD R6, R5, #1
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+
+
+GLOBAL_DATA_START
+x .FILL #32768
+y .FILL #32768
+L1_sub .FILL lc3_L1_sub
+z .BLKW 1
+L2_sub .FILL #0
+.END
+
+</pre>
+<hr><p>How do you multiply?</p>
+
+<p>are we right? </p>
+<p><a href="code/mul.c"><b>mul.c</b></a>:
+<pre>
+int x = 0x0010;
+int y = 0x000F;
+int z;
+
+main() {
+
+  z = x * y;
+
+}
+
+</pre>
+<p><a href="code/mul.asm"><b>mul.asm</b></a>:
+
+(relevant part for us)
+<pre>
+;  z = x * y;
+ADD R7, R4, #3
+ADD R3, R4, #0
+ldr R3, R3, #0
+ADD R2, R4, #1
+ldr R2, R2, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+ADD R6, R6, #-1
+STR R2, R6, #0
+AND R0, R0, #0
+ADD R2, R2, #0
+BRz L4
+BRp L3
+NOT R2, R2
+ADD R2, R2, #1
+L3
+ADD R0, R0, R3
+ADD R2, R2, #-1
+BRnp L3
+L4
+LDR R2, R6, #0
+ADD R6, R6, #1
+ADD R2, R2, #0
+BRzp L5
+NOT R0, R0
+ADD R0, R0, #1
+L5
+;bef epilogue x=0 y=3 z=2
+ADD R3, R0, #0
+LDR R0, R6, #0
+ADD R6, R6, #1
+;aft epilogue x=0 y=3 z=2
+str R3, R7, #0
+ADD R7, R4, #4
+ldr R7, R7, #0
+;}
+</pre>
+
+
+
+<hr><p>How do we bit shift?</p>
+
+<p>are we right?</p>
+<p><a href="code/shift.c"><b>shift.c</b></a>:
+<pre>
+int x = 0x000F;
+int z;
+
+main() {
+
+  z = x << 1;
+
+}
+</pre>
+<p><a href="code/shift.asm"><b>shift.asm</b></a>:
+<pre>
+.Orig x3000
+INIT_CODE
+LEA R6, #-1
+ADD R5, R6, #0
+ADD R6, R6, R6
+ADD R6, R6, R6
+ADD R6, R6, R5
+ADD R6, R6, #-1
+ADD R5, R5, R5
+ADD R5, R6, #0
+LD R4, GLOBAL_DATA_POINTER
+LD R7, GLOBAL_MAIN_POINTER
+jsrr R7
+HALT
+
+GLOBAL_DATA_POINTER .FILL GLOBAL_DATA_START
+GLOBAL_MAIN_POINTER .FILL main
+;main() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;main;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+main
+ADD R6, R6, #-2
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #-1
+
+ADD R6, R6, #-1
+;  z = x << 1;
+ADD R7, R4, #2
+ADD R3, R4, #0
+ldr R3, R3, #0
+ADD R2, R4, #4
+ldr R2, R2, #0
+;LSH
+ADD R6, R6, #-1
+STR R0, R6, #0
+ADD R0, R3, #0
+ADD R2, R2, #0
+BRz L5
+L4
+ADD R0, R0, R0
+ADD R2, R2, #-1
+BRnp L4
+L5
+ADD R3, R0, #0
+LDR R0, R6, #0
+ADD R6, R6, #1
+str R3, R7, #0
+ADD R7, R4, #3
+ldr R7, R7, #0
+;}
+lc3_L1_shift
+STR R7, R5, #3
+ADD R6, R5, #1
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+
+
+GLOBAL_DATA_START
+x .FILL #15
+L1_shift .FILL lc3_L1_shift
+z .BLKW 1
+L3_shift .FILL #0
+L2_shift .FILL #1
+.END
+</pre>
+
+<hr><p>How do we &amp;?</p>
+
+<p><a href="code/and1.c"><b>and1.c</b></a>:
+<pre>
+int x = 0x000F;
+int y = 0x00F0;
+int z;
+
+main() {
+
+  z = x & y;
+
+}
+</pre>
+
+
+<p><a href="code/and1.asm"><b>and1.asm</b></a>
+<pre>
+.Orig x3000
+INIT_CODE
+LEA R6, #-1
+ADD R5, R6, #0
+ADD R6, R6, R6
+ADD R6, R6, R6
+ADD R6, R6, R5
+ADD R6, R6, #-1
+ADD R5, R5, R5
+ADD R5, R6, #0
+LD R4, GLOBAL_DATA_POINTER
+LD R7, GLOBAL_MAIN_POINTER
+jsrr R7
+HALT
+
+GLOBAL_DATA_POINTER .FILL GLOBAL_DATA_START
+GLOBAL_MAIN_POINTER .FILL main
+;main() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;main;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+main
+ADD R6, R6, #-2
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #-1
+
+ADD R6, R6, #-1
+;  z = x & y;
+ADD R7, R4, #3
+ADD R3, R4, #0
+ldr R3, R3, #0
+ADD R2, R4, #1
+ldr R2, R2, #0
+and R3, R3, R2
+str R3, R7, #0
+ADD R7, R4, #4
+ldr R7, R7, #0
+;}
+lc3_L1_and1
+STR R7, R5, #3
+ADD R6, R5, #1
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+
+
+GLOBAL_DATA_START
+x .FILL #15
+y .FILL #240
+L1_and1 .FILL lc3_L1_and1
+z .BLKW 1
+L2_and1 .FILL #0
+.END
+</pre>
+
+<hr><p>How do we |?</p>
+
+<p><a href="code/or.c"><b>or.c</b></a>:
+<pre>
+int x = 0x000F;
+int y = 0x00F0;
+int z;
+
+main() {
+
+  z = x | y;
+
+  printf("%x\n", z);
+}
+</pre>
+
+<p><a href="code/or.asm"><b>or.asm</b></a> (excerpt):
+<pre>
+.Orig x3000
+INIT_CODE
+LEA R6, #-1
+ADD R5, R6, #0
+ADD R6, R6, R6
+ADD R6, R6, R6
+ADD R6, R6, R5
+ADD R6, R6, #-1
+ADD R5, R5, R5
+ADD R5, R6, #0
+LD R4, GLOBAL_DATA_POINTER
+LD R7, GLOBAL_MAIN_POINTER
+jsrr R7
+HALT
+
+GLOBAL_DATA_POINTER .FILL GLOBAL_DATA_START
+GLOBAL_MAIN_POINTER .FILL main
+;main() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;main;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+main
+ADD R6, R6, #-2
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #-1
+
+ADD R6, R6, #-1
+;  z = x | y;
+ADD R7, R4, #3
+ADD R3, R4, #0
+ldr R3, R3, #0
+ADD R2, R4, #1
+ldr R2, R2, #0
+ADD R6, R6, #-1
+STR R0, R6, #0
+ADD R6, R6, #-1
+STR R3, R6, #0
+ADD R6, R6, #-1
+STR R2, R6, #0
+NOT R3, R3
+NOT R2, R2
+AND R0, R3, R2
+NOT R0, R0
+LDR R2, R6, #0
+ADD R6, R6, #1
+LDR R3, R6, #0
+ADD R6, R6, #1
+ADD R3, R0, #0
+LDR R0, R6, #0
+ADD R6, R6, #1
+str R3, R7, #0
+ADD R7, R4, #4
+ldr R7, R7, #0
+;}
+lc3_L1_or0
+STR R7, R5, #3
+ADD R6, R5, #1
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+
+
+GLOBAL_DATA_START
+x .FILL #15
+y .FILL #240
+L1_or0 .FILL lc3_L1_or0
+z .BLKW 1
+L2_or0 .FILL #0
+.END
+</pre>
+<hr><p>How do we ^?</p>
+
+<p><a href="code/xor.c"><b>xor.c</b></a>:
+<pre>
+int x = 0x000F;
+int y = 0x00F0;
+int z;
+
+main() {
+
+  z = x ^ y;
+
+  printf("%x\n", z);
+}
+
+</pre>
+
+<hr><p>What's the difference between ! and ~?</p>
+
+<p><a href="code/not.c"><b>not.c</b></a>:
+<pre>
+int x = 0x000F;
+int y;
+int z;
+
+main() {
+
+  y = ~x;
+  z = !x;
+
+  printf("~%x -> %x\n", x, y);
+  printf("!%x -> %x\n", x, z);
+}
+</pre>
+
+<p>run it...</p>
+<p><a href="code/not.asm"><b>not.asm</b></a>:
+<pre>
+;  y = ~x;
+ADD R7, R4, #6
+ADD R3, R4, #0
+ldr R3, R3, #0
+not R3,R3
+str R3, R7, #0
+</pre>
+
+<hr><p>What's the difference between &amp;&amp; and &amp;?</p>
+
+
+
+
+<hr><h2>3) Variables</h2><hr>
+
+<h3>Two flavors:</h3>
+
+<p>(That is, in our simplification)</p>
+<hr><p>Global variables</p>
+<ul>
+<li>As we've seen so far...
+<li>Declared at the beginning
+<li>Pre-initialized to 0, unless we specify otherwise
+<li>Visible throught the program file
+</ul>
+
+
+<hr><p>Local variables</p>
+
+<ul>
+<li>Declared within a {...} code block
+<li>Visible only within that block, after declaration
+<li>Typically, declared at the start of a function, and visible only within that.
+</ul>
+
+<p><hr><b>Unitialized Local Variables</b>
+If we don't explicitly initialize a local variable,
+<ul>
+<li>it <i>will</i> have an initial value
+<li>we won't necessarily know what it is
+<li>and it could change.
+</ul>
+
+
+<hr><h2>In the hardware...</h2><hr>
+
+<p>HW and SW conspire to...</p>
+<p>keep the global data all together in one region.</p>
+<ul>
+<li>We've seen that already: GLOBAL_DATA_START
+</ul>
+
+<p>retain a register that points to the lowest entry  in that region</p>
+<ul>
+<li>We've seen that already: R4
+</ul>
+
+
+<p>the compiler maintains a symbol table tracking where global
+variables live, within this region</p>
+<p>to access a global, the compiler produces code that adds the offset
+(from this table) to the global data base (R4), and using that as an
+address</p>
+<ul>
+<li>ADD R3, R4, #0<br>ldr R3, R3, #0
+</ul>
+
+
+<hr><p>What about LOCALS?</p>
+
+<p>keep the locals together in one region.</p>
+<p>retain a register that points to the HIGHEST entry  in that region</p>
+<ul>
+<li>R5, the "frame pointer" (Like the "sp" the "fp" is an explicit
+register in many other processors)
+</ul>
+
+
+<p>the compiler maintains a symbol table tracking where local
+variables live, within this region</p>
+<p>to access a local, the compiler produces code that adds the offset
+(from this table) to the local data base (R5), and using that as an
+address</p>
+
+<hr><p>Let's get empirical</p>
+
+<p><a href="code/not2.c"><b>not2.c</b></a>:
+<pre>
+int global_1 = 0x000F;
+int global_2;
+
+main() {
+
+  int local_1 = 0x00F0;
+  int local_2;
+
+  global_2 = ~global_1;
+  local_2 = ~local_1;
+
+
+}
+
+</pre>
+<p><a href="code/not2.asm"><b>not2.asm</b></a>
+<pre>
+.Orig x3000
+INIT_CODE
+LEA R6, #-1
+ADD R5, R6, #0
+ADD R6, R6, R6
+ADD R6, R6, R6
+ADD R6, R6, R5
+ADD R6, R6, #-1
+ADD R5, R5, R5
+ADD R5, R6, #0
+LD R4, GLOBAL_DATA_POINTER
+LD R7, GLOBAL_MAIN_POINTER
+jsrr R7
+HALT
+
+GLOBAL_DATA_POINTER .FILL GLOBAL_DATA_START
+GLOBAL_MAIN_POINTER .FILL main
+;main() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;main;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+main
+ADD R6, R6, #-2
+STR R7, R6, #0
+ADD R6, R6, #-1
+STR R5, R6, #0
+ADD R5, R6, #-1
+
+ADD R6, R6, #-2
+;  int local_1 = 0x00F0;
+ADD R7, R4, #4
+ldr R7, R7, #0
+str R7, R5, #0
+;  global_2 = ~global_1;
+ADD R7, R4, #2
+ADD R3, R4, #0
+ldr R3, R3, #0
+not R3,R3
+str R3, R7, #0
+;  local_2 = ~local_1;
+ldr R7, R5, #0
+not R7,R7
+str R7, R5, #-1
+ADD R7, R4, #3
+ldr R7, R7, #0
+;}
+lc3_L1_not2
+STR R7, R5, #3
+ADD R6, R5, #1
+LDR R5, R6, #0
+ADD R6, R6, #1
+LDR R7, R6, #0
+ADD R6, R6, #1
+RET
+
+
+GLOBAL_DATA_START
+global_1 .FILL #15
+L1_not2 .FILL lc3_L1_not2
+global_2 .BLKW 1
+L3_not2 .FILL #0
+L2_not2 .FILL #240
+.END
+
+
+</pre>
+
+
+
+
+
+
+</body>
+</html>

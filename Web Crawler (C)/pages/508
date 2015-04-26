@@ -1,0 +1,76 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/Aug13
+3
+<html><head><title>August 13: More Microarchitecure </title></head>
+
+<body>
+
+<h1>August 11: More Microarchitecture</h1>
+
+<hr><h2>0) Recap</h2><hr> 
+
+In the first half of this course, we went from electricity all the way
+up to the instruction set.  This past week or two, we've been looking
+at a representative high-level programming language (C), and how it
+interfaces with the architecture.  
+
+<p>Last class, we completed our discussion of C and talked about the
+LC-3 datapath (especially as it pertained to homework 5) and
+the <i>microarchitecture</i>.
+
+<p>Today we'll continue looking into the microarchitecture, but in a
+more in-depth fashion.
+
+
+
+<hr><h2>1) Reviewing the FSM Hardware</h2><hr>
+
+<p>
+Here are the book's figures again.
+<p>
+<img src="img/book.jpg" width="90%"></img>
+<p>
+
+<hr><p>State</p>
+
+The LC-3 FSM has <b>52</b> different states.  Thus, we need <b>6
+bits</b> to describe the state, since 2^5 < 52 < 2^6.
+
+<p>ROM contains the <b>control store</b>.  There's a microinstruction
+for each state.
+
+<p>There are <b>49</b> different signals we need to take care of in
+the LC-3.  Hence, each microinstruction is <b>49 bits</b>.
+
+<p>We can divide this microinstruction into at least three parts:</p>
+
+<ul>
+<li>the ones that control the valves (<b>GateMDR, ALUK0, MIO.EN, ...</b>)
+<li>the ones that clock registers/flip-flops (<b>LD.MAR, LD.REG, ...</b>)
+<li>the ones that help determine which state to go to next (<b>J[5:0],
+COND[2:0], IRD</b>)
+</ul>
+
+<p>The microsequencer figures out where to go next based on these last
+ten bits (J,COND, IRD) and some other signals from the datapath (INT,
+R, IR[15:12],...)
+
+
+<hr><h2>2) Looking at some states</h2><hr>
+
+Let's consider the JMP instruction:
+<p>
+
+<img src="img/jmp.jpg" width="50%" ></img>
+<p>
+<hr>
+<p>
+<img src="img/jmpstates.jpg" width="50%" ></img>
+<p>
+<img src="img/fsm-xls.jpg"  width="100%"></img>
+<p>
+<img src="img/hw4dpath.jpg" alt="too bad" width="100%"></img>
+<p>
+
+<hr><h2>...and that's as far as we got...</h2><hr>
+</body>
+</html>

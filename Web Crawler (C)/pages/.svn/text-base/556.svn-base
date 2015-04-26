@@ -1,0 +1,268 @@
+http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_3
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Lecture 3" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs44/opensearch_desc.php" title="cs44 (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs44 RSS Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs44 Atom Feed" href="/~robotics/cs44/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Lecture 3 - cs44</title>
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs44/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs44/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/~robotics/cs44/skins";
+		var wgArticlePath = "/~robotics/cs44/index.php/$1";
+		var wgScriptPath = "/~robotics/cs44";
+		var wgScript = "/~robotics/cs44/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Lecture_3";
+		var wgTitle = "Lecture 3";
+		var wgAction = "view";
+		var wgArticleId = "10";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 230;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs44/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs44/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Lecture_3 skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Lecture 3</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs44</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>Quick review of BFS and DFS.  
+</p>
+<pre>
+add start state to a queue, called the frontier
+DO:
+  if the frontier is empty return failure
+  choose a leaf node and remove it from the frontier
+  if the node contains a goal state then return the corresponding solution
+  else expand the chosen node, adding the resulting nodes to the frontier
+</pre>
+<p>Tree version vs. graph version.  Notice that DFS, if you use the "graph" version with a visited list, uses just as much memory as BFS.  Could you avoid all this extra memory cost?  Yes, just have the DFS check each node along the current expansion path to see if the expanded node is on that path.  Some additional time cost but a large saving in memory.  IDS would typically use this approach -- since the only reason to use IDS over BFS is to save memory.
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Wavefront_planning"><span class="tocnumber">1</span> <span class="toctext">Wavefront planning</span></a></li>
+<li class="toclevel-1"><a href="#AI_as_search"><span class="tocnumber">2</span> <span class="toctext">AI as search</span></a></li>
+<li class="toclevel-1"><a href="#Uniform_cost_search"><span class="tocnumber">3</span> <span class="toctext">Uniform cost search</span></a></li>
+<li class="toclevel-1"><a href="#Greedy_best-first_search"><span class="tocnumber">4</span> <span class="toctext">Greedy best-first search</span></a></li>
+<li class="toclevel-1"><a href="#A.2A_search"><span class="tocnumber">5</span> <span class="toctext">A* search</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Wavefront_planning" id="Wavefront_planning"></a><h2> <span class="mw-headline">Wavefront planning</span></h2>
+<p>By the way, because it is so easy to reconstruct the "action" that transferred you from one cell to another in robot mazeworld, we can implement BFS with a nice simplification, where we store the value of nodes in the grid cells themselves, then walk downhill to find the goal.  This is called "wavefront planning", and it shows the connection between value functions and breadth-first or A* search.
+</p>
+<a name="AI_as_search" id="AI_as_search"></a><h2> <span class="mw-headline"> AI as search</span></h2>
+<p>Many AI problems can be formulated as search problems.  Some people say AI should actually be called "search".  
+</p>
+<ul><li> An agent begins in some state, the initial or start state.  
+</li><li> The agent would like to get to some final state, the goal state.  
+</li><li> The agent has certain actions available
+</li><li> The agent knows the result of each action (which state after)
+</li><li> The agent also knows the result of actions from each of _those_ states
+</li></ul>
+<p>Formally, a search problem has four components:
+</p>
+<ul><li>  The initial state
+</li><li>  Possible actions
+</li><li>  The goal test
+</li><li>  A path cost function
+</li></ul>
+<p>So far we have considered cases where the cost of each action is one.  BFS and IDS return optimal paths, if we consider optimal paths to minimize the number of states visited on the way to the goal.  But what if the costs of different actions are different?  For example, in the Hanover map example from last time, the cost of an action might be the number of meters between the nodes.
+</p>
+<a name="Uniform_cost_search" id="Uniform_cost_search"></a><h2> <span class="mw-headline">Uniform cost search</span></h2>
+<p>A <i>uniform cost search</i> searches for paths by using a priority queue that keeps track of the  "cost" accumulated so far to get to each node.  Since the lowest cost nodes are popped first from the fringe, the paths returned are optimal. At least on a tree.  What happens in a graph?  Come back to that in a second.
+</p><p>Common gotcha!  What if you checked for the goal as you added the children to the priority queue?  It seems like it would save you a lot of computation, since you can stop the search a lot earlier.  But you'd lose optimality!  
+</p><p>UCS on a GRAPH.  Could we get multiple copies of the same node on the priority queue?  Yes, if there are multiple loop-free paths to the state.  We should fix up the visited list to discard the more expensive way to get to a node, rather than just checking if the node has been visited.  (Note that you could find a cheaper way to get to the node LATER in the search.  How?  See the gotcha above.)  
+</p><p>If there are costs associated with paths, those costs came from somewhere.  Maybe the search problem is a discretization of a map, and the costs are real-world distances between nodes.  You might have some idea of how to get there.  It seems foolish to expand nodes "behind" you before considering nodes that seem "obviously" closer to the goal, but this is exactly what BFS might do.  
+</p><p>Assume that we can define a "heuristic" function that guesses at the cost to get to the goal from every possible state.  Now if the heuristic were "perfect" (it gave the exact, true cost to the goal from every state) you could just look at the adjacent nodes and choose the one for which the "cost to goal + step cost to get to that node" is minimum.  This would give an optimal path, and find the goal in time linear in the length of the path.  We wouldn't need a search algorithm in that case!  Such a "perfect" heuristic isn't really a heuristic at all -- it's the value function over the state space.
+</p><p>We can't really expect to come up with perfect heuristics, though, so assume the heuristic mis-estimates things sometimes (or always).  Combining that heuristic with search algorithms may still reduce the time or memory cost of the search.
+</p>
+<a name="Greedy_best-first_search" id="Greedy_best-first_search"></a><h2> <span class="mw-headline"> Greedy best-first search</span></h2>
+<p>Algorithm 1:  Greedy best-first search.  Use a priority queue.  Instead of the "cost to get to a node" like in the UCS, use the heuristic as the priority value.  This search always expands the node the it "thinks" is closest to the goal first.  There are two potential issues:
+</p>
+<ul><li> It really trusts the heuristic, even if the heuristic gives evidence of being wrong during the search.
+</li><li> The paths returned may not be optimal.
+</li></ul>
+<a name="A.2A_search" id="A.2A_search"></a><h2> <span class="mw-headline"> A* search</span></h2>
+<p>Algorithm 2:  A* search.  Let the heuristic cost from a node be h(n).  Let the cost expended to get to the node be g(n).  A* uses the priority f(n) = g(n) + h(n).  That's the estimated cost of the best path through the current node.
+</p><p>Can A* give suboptimal paths?  Sure.  Assume the optimal path goes through some node N.  Let's let the heuristic estimating the cost from the node to the goal take a very large value, say one billion.  That node will never be expanded until every path of length less than one billion has been explored.
+</p><p>Idea.  If we make sure this never happens, by making sure the heuristic always underestimates the cost to the goal, then in fact that node _will_ be expanded before any bad path to the goal is fully expanded.  Since all intermediate nodes on the optimal path to the goal are expanded before any complete bad (longer) path, then the optimal path is found first.  
+</p><p>Let's prove this more formally, assuming A* on a tree.  
+</p><p>Assume there is a suboptimal goal G_2 in the priority queue, and let the cost of the optimal solution G_1 be C*.  h(G_2) = 0 since G_2 is a goal, and since the heuristic is optimistic.  So the priority of G_2 node is:
+</p><p><span class="texhtml"><i>f</i>(<i>G</i><sub>2</sub>) = <i>g</i>(<i>G</i><sub>2</sub>) + <i>h</i>(<i>G</i><sub>2</sub>) = <i>g</i>(<i>G</i><sub>2</sub>) &gt; <i>C</i> * </span>
+</p><p>i.e the priority is a larger number than the cost of the optimal path.  Now consider a node n in the priority queue along the optimal path to the optimal goal.  
+</p><p><span class="texhtml"><i>f</i>(<i>n</i>) = <i>g</i>(<i>n</i>) + <i>h</i>(<i>n</i>) &lt;  = <i>C</i> * ,</span>
+</p><p>so this node will be expanded before G_2.  Its children will be added, and one of these children will have a cost &lt;= C*, by the same reasoning.  
+</p><p>Now let's look at A* on a graph.  The same difficulty that we found for UCS shows up again -- there might be multiple ways to get to an intermediate node on the optimal path, and we might encounter the more expensive way to get there first.  Optimistic heuristic doesn't save us, because the heuristic is only guaranteed to underestimate the best path to the _goal_, not to every intermediate state.  It all worked out in the end for the tree search, but we have to be careful on the graph.  Two solutions:
+</p><p>1) fix visited list to discard expensive paths when better ones show up.
+2)  OR choose a consistent heuristic, that has the property that 
+</p><p>for every node n, and every successor n' generated by any action a, the estimated cost of reaching the goal from n is no greater than the step cost of getting to n' plust the cost of reaching the goal from n'.
+</p><p><img class="tex" alt="&#10;h(n) \le c(n, a, n&#39;) + h(n&#39;)&#10;" src="/~robotics/cs44/images/math/8/3/4/834298786ee70bbbc108aa64e5cd7212.png" />
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 18/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs44_:pcache:idhash:10-0!1!0!!en!2!edit=0 and timestamp 20110220172300 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_3">http://www.cs.dartmouth.edu/~robotics/cs44/index.php/Lecture_3</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs44/index.php/Lecture_3" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs44/index.php?title=Talk:Lecture_3&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs44/index.php?title=Lecture_3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs44/index.php?title=Lecture_3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs44/index.php?title=Special:UserLogin&amp;returnto=Lecture_3" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://www.cs.dartmouth.edu/~robotics/brain.png);" href="/~robotics/cs44/index.php/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs44/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs44/index.php/Schedule">Schedule</a></li>
+				<li id="n-BFS-code-fragment"><a href="/~robotics/cs44/index.php/Bfsnotes">BFS code fragment</a></li>
+				<li id="n-Cool-AI-links"><a href="/~robotics/cs44/index.php/Cool_AI_links">Cool AI links</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-.231"><a href="/~robotics/cs44/index.php/Missionaries_and_Cannibals">Assignment #1</a></li>
+				<li id="n-Assignment-.232"><a href="/~robotics/cs44/index.php/Internet_search_and_multi-robot_mazeworld">Assignment #2</a></li>
+				<li id="n-Assignment-.233"><a href="/~robotics/cs44/index.php/Connect_four">Assignment #3</a></li>
+				<li id="n-Assignment-.234"><a href="/~robotics/cs44/index.php/Circuit-board_layout">Assignment #4</a></li>
+				<li id="n-Assignment-.235"><a href="/~robotics/cs44/index.php/Viterbi_algorithm">Assignment #5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Lecture_outlines'>
+		<h5>Lecture outlines</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Lecture-2"><a href="/~robotics/cs44/index.php/Lecture_2">Lecture 2</a></li>
+				<li id="n-Lecture-3"><a href="/~robotics/cs44/index.php/Lecture_3">Lecture 3</a></li>
+				<li id="n-Lecture-4"><a href="/~robotics/cs44/index.php/Lecture_4">Lecture 4</a></li>
+				<li id="n-Lecture-5"><a href="/~robotics/cs44/index.php/Lecture_5">Lecture 5</a></li>
+				<li id="n-Lecture-6"><a href="/~robotics/cs44/index.php/Lecture_6">Lecture 6</a></li>
+				<li id="n-Lecture-7"><a href="/~robotics/cs44/index.php/Lecture_7">Lecture 7</a></li>
+				<li id="n-Lecture-8"><a href="/~robotics/cs44/index.php/Lecture_8">Lecture 8</a></li>
+				<li id="n-Lecture-9"><a href="/~robotics/cs44/index.php/Lecture_9">Lecture 9</a></li>
+				<li id="n-10:-CSP.27s"><a href="/~robotics/cs44/index.php/Lecture_10">10: CSP's</a></li>
+				<li id="n-11:-Solving-CPS.27s"><a href="/~robotics/cs44/index.php/Lecture_11">11: Solving CPS's</a></li>
+				<li id="n-12:-Prop-logic"><a href="/~robotics/cs44/index.php/Lecture_12">12: Prop logic</a></li>
+				<li id="n-13:-Resolution"><a href="/~robotics/cs44/index.php/Lecture_13">13: Resolution</a></li>
+				<li id="n-14:-SAT-problems"><a href="/~robotics/cs44/index.php/Lecture_14">14: SAT problems</a></li>
+				<li id="n-22:-Viterbi.2C-HMMs"><a href="/~robotics/cs44/index.php/Lecture_22">22: Viterbi, HMMs</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs44/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs44 [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs44/index.php/Special:WhatLinksHere/Lecture_3" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs44/index.php/Special:RecentChangesLinked/Lecture_3" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs44/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs44/index.php?title=Lecture_3&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs44/index.php?title=Lecture_3&amp;oldid=230" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs44/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 28 January 2010, at 13:59.</li>
+					<li id="viewcount">This page has been accessed 1,436 times.</li>
+					<li id="privacy"><a href="/~robotics/cs44/index.php/cs44:Privacy_policy" title="cs44:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs44/index.php/cs44:About" title="cs44:About">About cs44</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs44/index.php/cs44:General_disclaimer" title="cs44:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.214 secs. --></body></html>

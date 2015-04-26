@@ -1,0 +1,124 @@
+http://www.cs.dartmouth.edu/~cs38/purpose
+3
+<html> <head>
+<title>CS38: Purpose</title>
+</head>
+ 
+<body>
+
+
+<h2>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+
+Purpose of Course
+<br>
+ CS38, Security and Privacy, Spring 2007
+</h2>
+<i> www.cs.dartmouth.edu/~cs38/purpose/index.shtml</i>
+ &nbsp;&nbsp;&nbsp;
+
+<i> Last modified: 03/10/07 03:08:03 PM</i>
+
+<hr>
+
+<p>
+
+<p>
+
+
+
+
+<h1>Background</h1>
+
+<p>
+This course is based on COSC88/188, which I taught in Spring 2001
+and Winter 2002; we ran COSC38 the first time in Spring 2003.
+
+<p>
+
+I've had the opportunity to have professional experience doing
+security analyses, research, design, and implementation in 
+government, and industry, and academia.  
+I've been crafting this course
+for a mid-level undergraduate student, covering what I wished I had
+known when I was starting out.
+After this introduction, students can move on to 
+more detailed research projects
+in OS, systems, and cryptography;
+and in the special topics course.
+
+<p>
+(Note: this course <b>has</b> been approved for graduate credit
+as well.)
+<p>
+
+
+<h1>Overview</h1>
+
+<p>
+Commerce and government are rapidly moving from 
+media such as paper (which we've had
+several millennia to understand) to distributed, electronic systems
+(which seem to change every six months).
+<p>
+
+The financial, political, and social importance of what these systems
+do raises critical security and privacy issues.  
+However, the rapidity of
+this migration makes even stating these critical properties, let alone
+designing and deploying systems that provide them, rather
+difficult---as history shows. In this course, we will examine:
+<ul>
+<li>  what security and privacy mean in these settings; 
+<li>  the techniques that might help; 
+<li>  and the ways these techniques can nevertheless be used to build insecure systems. 
+</ul>
+<p>
+We will loosely use the migration of 
+paper processes to electronic
+settings as a focus.  
+<p>
+<ul>
+<li>  This focus raises the right issues.
+<li>   This focus makes us look 
+at the system as a whole, rather than on one particular piece.
+<li>   Many of you will shortly go on to build such systems. 
+<li>   Others may go on to perform vulnerability analysis on them. 
+</ul>
+This term, I plan to use the real-world systems of NH voting,
+the North American power grid, and one other business enterprise 
+as a framework.
+<p>
+<h1>Objectives</h1>
+
+<p>
+The course has two main objectives:
+<ul>
+<li>   Minimally, students should gain an awareness of the breadth of
+   tools and topics that constitutes security in this emerging arena
+   (and a healthy wariness from the way 
+the computer science community has continually 
+failed to achieve security and privacy goals).
+<li>   Maximally, I hope that we might synthesize from this breadth and
+   experience some new approaches for effective security architecture.
+</ul>
+<p>
+
+
+<p>
+
+<hr>
+<b>
+<IMG ALIGN="left" SRC="http://www.cs.dartmouth.edu/icons/back.gif">
+
+<A HREF="/~cs38/"><b>Back to Home Page</b></A>
+</b>
+&nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.dartmouth.edu/~sws/"><b>Sean Smith</b></a>
+&nbsp;&nbsp;&nbsp;
+&lt; <a href="mailto:sws@cs.dartmouth.edu"><b>sws@cs.dartmouth.edu</b></a>&gt;
+
+
+
+
+</body> </html>

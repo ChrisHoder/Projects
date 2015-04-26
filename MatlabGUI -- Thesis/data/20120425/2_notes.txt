@@ -1,0 +1,14 @@
+function of: Alpha 
+ nMax: 20
+ eta: 0.1 
+  wA:1 
+ phiNot: 0 
+ wm: 2*pi/10000 
+ whf: 2*pi 
+ Tp: 0.125 
+ alpha: pi/4 
+ mMax: 75 
+ pulseArea: pi/2 
+ minValue: 0 
+ maxValue: pi 
+ points: 20

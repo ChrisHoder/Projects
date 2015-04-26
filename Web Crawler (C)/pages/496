@@ -1,0 +1,115 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July21
+3
+<html><head><title>July 21: Assembly Language</title></head>
+
+<body>
+
+<h1>July 21: Assembly Language</h1>
+
+
+<hr><h2>0) Re-Orienting</h2><hr>
+
+
+<p>
+We've now gone from electricity all the way up to instructions.
+
+<p>
+Yesterday we talked about the LC-3 ISA, including:
+<ul>
+<li>types of instructions: operate, data movement, control.
+<li>addressing modes
+</ul>
+<p>Finally, we went over a real actual LC-3 program.
+
+
+<hr><h2>1) Programming Languages</h2><hr>
+Wouldn't it be nice if we could do away with having to program in binary?  
+It would be nice to just be able to say<p>
+
+LDR DR BaseR offset <p>
+
+instead of having to type in a 16-bit word every time.  It would be
+nice to have other things too.  It turns out we can, and our solution is <i>assembly language</i>
+
+<p>An asside:  High level vs. Low level programming languages<p>
+<b>High Level:</b>
+<ul>
+<li>C, C++, Java, BASIC, Python, ...
+<li>instructions tend to look much closer to English than machine code (e.g. x = y+z;)
+<li>Can be used on multiple computer architectures
+</ul>
+
+<p><b>Low Level:</b>
+<ul>
+<li>machine language, assembly</li>
+<li>instructions are made for a specific computer (machine language) or are usually tied to a specific computer (assembly)
+<li>much closer to binary than English.
+<li>non-machine language languages hopefully easier to program than straight machine instructions.
+</ul>
+
+<hr><h2>2) Assembly Language</h2><hr>
+
+<p>key advantages of assembler over machine language</p>
+<ul>
+<li>human-usable instruction names!
+<li>labels
+</ul>
+
+<hr><p>an assembler</p>
+
+<p>first pass: the symbol file</p>
+<p>second pass: generating the object code</p>
+
+<hr><p>Pseudo-operations <p>
+<ul><li>a.k.a. assembler directives</li></ul>
+These are instructions to the assembler  to do specific things.
+<p>The LC-3 Assembler Pseudo-ops:
+<ul>
+<li>.ORIG -- This tells the assembler where it should start the program.
+<li>.FILL -- Fill this word with this data.
+<li>.BLKW -- Set aside this many words in the program
+<li>.STRINGZ -- set asside (n+1) words to store n characters.  (Why the extra word?)
+<li>.END  -- Tell the assembler where the program stops.
+</ul>
+Note the '.' at the start of each pseudo-op.
+
+
+<hr><h2>3) Examples</h2><hr>
+
+<p><a href="demo2/demo1.asm"><b>demo2/demo1.asm</b></a></p>
+
+
+<p>compare to hand-built <a href="img/myfig5-13.jpg">one</a>.</p>
+<hr><p>then....  add a negation routine.</p>
+
+<p><a href="demo2/demo2.asm"><b>demo2/demo2.asm</b></a></p>
+
+
+
+<p>check out the differences between the ML.</p>
+<p>run.  next vs. step (or "step into" vs "step over")</p>
+<hr><p>what if we get evil with R7?</p>
+
+<p><a href="demo2/demo3.asm"><b>demo2/demo3.asm</b></a></p>
+
+
+
+<hr><p>try using .STRINGZ</p>
+
+<p><a href="demo2/demo4.asm"><b>demo2/demo4.asm</b></a></p>
+
+
+<p><a href="../../../resources/ascii.html">ASCII</a></p>
+<p>why the NOP at the end?</p>
+
+<hr><p>try using .BLKW</p>
+
+<p><a href="demo2/demo5.asm"><b>demo2/demo5.asm</b></a></p>
+
+
+<p><a href="demo2/demo6.asm"><b>demo2/demo6.asm</b></a></p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+http://www.cs.dartmouth.edu/~umang
+2
+<html>
+
+
+
+<head>
+<title>Umang's page</title>
+
+<style type="text/css">
+table.main td {background-color: #daeeda}
+</style>
+</head>
+
+<body>
+<center>
+<table width=700px border=0 class="main">
+
+<tr>
+<td colspan=2><img src=IMG_3542(2).jpg></td>
+</tr>
+
+<tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td width=20%><center><font face=verdana size=4><b>Me</b></font></center></td>
+<td>
+<p><br>
+I am a fourth year PhD student in the Computer Science at Dartmouth College. I am working with Prof. Lisa Fleischer on problems in algorithms and game theory.
+<p>
+Previously I did my MTech from IIT, Bombay and my BTech from NIT, Allahabad. In between, I worked for two years with Tata Consultancy Services.
+<p>
+<b>Update:</b> I'm looking for internships for Summer 2011. I'm interested in research problems in theoretical computer science, especially algorithms and algorithmic game theory. Here's my <a href="Bhaskar_Resume_Dec10.pdf">resume</a> and my <a href="Bhaskar_Research_Dec10.pdf">research statement</a>. If you know of any internships which would be a good match for me, please drop me an email!
+<p>
+</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td width=20%><center><font face=verdana size=4><b>Research</b></font></center></td>
+<td>
+<p><br>
+A Stackelberg Strategy for Routing Flows over Time (<a href="sfot_soda11.pdf">pdf</a>). With Lisa Fleischer and Elliot Anshelevich, to appear in SODA 2011. Full version available on Arxiv <a href="http://arxiv.org/abs/1010.3034">here</a>.
+<p>
+A <a href="sfot_csrs.pptx">presentation</a> based on this paper, for a general audience.
+<hr>
+<p>
+The Price of Collusion in Series-Parallel Networks (<a href="IPCO2010_bhaskar.pdf">pdf</a>). With Lisa Fleischer and Chien-Chung Huang, appeared in IPCO 2010. Full version (<a href="ipco2010_full.pdf">pdf</a>).
+<p>
+<hr>
+<p>
+Equilibria of Atomic Flow Games are not Unique (<a href="bhaskaru.pdf">pdf</a>). With Lisa Fleischer, Darrell Hoy and Chien-Chung Huang, appeared in SODA 2009.
+<p>
+Two presentations based on this paper: <a href="pres.pdf">this</a> is for a general audience, while <a href="SODA4.ppt">this</a> is the talk I gave at SODA.
+<p>
+</td>
+</tr>
+
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td width=20%><center><font face=verdana size=4><b>Interests</b></font></center></td>
+<td>
+<p><br>
+I am an occasional photographer, and I picked up a second-hand Canon Rebel XT recently. I have a 50mm f/1.8 Canon lens to go with it. I still have much to learn about photography though. I enjoy reading, and hiking in the surrounding White Mountains. Infrequently, I write, some of which ends up on various blogs, and most of which never sees the light of day.
+<br>
+<p>
+</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td width=20%><center><font face=verdana size=4><b>Links</b></font></center></td>
+<td>
+<table cellspacing=10%>
+<tr>
+<td valign=top>
+news sites <br>
+<a href="http://www.slashdot.org">slashdot</a> <br>
+<a href="http://www.wsj.com">wsj</a> <br>
+<a href="http://www.outlookindia.com">outlook india</a><br>
+</td>
+<td>
+tech blogs <br>
+<a href="http://mybiasedcoin.blogspot.com/">michael mitzenmacher</a> <br>
+<a href="http://weblog.fortnow.com/">fortnow etc</a> <br>
+<a href="http://ac0.blogspot.com/">amit</a> <br>
+<a href="http://www.scottaaronson.com/blog/">scott aaronson</a> <br>
+<p>
+</td>
+</tr>
+
+
+</table>
+</center>
+</body>
+
+</html>

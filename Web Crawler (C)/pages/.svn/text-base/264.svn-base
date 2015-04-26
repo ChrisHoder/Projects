@@ -1,0 +1,249 @@
+http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Special:ListGroupRights
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="robots" content="noindex,nofollow" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/summercamp/opensearch_desc.php" title="Dartmouth summer robotics camp (en)" />
+		<link rel="alternate" type="application/rss+xml" title="Dartmouth summer robotics camp RSS Feed" href="/~robotics/summercamp/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="Dartmouth summer robotics camp Atom Feed" href="/~robotics/summercamp/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>User group rights - Dartmouth summer robotics camp</title>
+		<link rel="stylesheet" href="/~robotics/summercamp/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/summercamp/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/summercamp/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/summercamp/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/summercamp/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/summercamp/skins";
+		var wgArticlePath = "/~robotics/summercamp/index.php/$1";
+		var wgScriptPath = "/~robotics/summercamp";
+		var wgScript = "/~robotics/summercamp/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "Special";
+		var wgCanonicalSpecialPageName = "Listgrouprights";
+		var wgNamespaceNumber = -1;
+		var wgPageName = "Special:ListGroupRights";
+		var wgTitle = "ListGroupRights";
+		var wgAction = "view";
+		var wgArticleId = 0;
+		var wgIsArticle = false;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 0;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/summercamp/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/summercamp/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/summercamp/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns--1 ns-special page-Special_ListGroupRights skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/summercamp/index.php?title=Special:UserLogin&amp;returnto=Special:ListGroupRights" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Dartmouth summer robotics camp </div>
+<div id="site-subtitle">computer science department, summer 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-special" class="selected"><a href="/~robotics/summercamp/index.php/Special:ListGroupRights" title="This is a special page, you cannot edit the page itself">Special page</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">User group rights</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Dartmouth summer robotics camp</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<div class="mw-specialpage-summary">
+<p>The following is a list of user groups defined on this wiki, with their associated access rights.
+</p>
+There may be <a href="/~robotics/summercamp/index.php?title=Help:Group_rights&amp;action=edit&amp;redlink=1" class="new" title="Help:Group rights (page does not exist)">additional information</a> about individual rights.</div>
+<table class="mw-listgrouprights-table"><tr><th>Group</th><th>Rights</th></tr><tr>
+					<td>(all)</td>
+					<td><ul><li>Create discussion pages (createtalk)</li>
+<li>Read pages (read)</li>
+<li>Use of the write API (writeapi)</li></ul></td>
+				</tr><tr>
+					<td><a href="/~robotics/summercamp/index.php?title=Dartmouth_summer_robotics_camp:Users&amp;action=edit&amp;redlink=1" class="new" title="Dartmouth summer robotics camp:Users (page does not exist)">Users</a><br /><a href="/~robotics/summercamp/index.php/Special:ListUsers" title="Special:ListUsers">(list of members)</a></td>
+					<td><ul><li>Create discussion pages (createtalk)</li>
+<li>Create pages (which are not discussion pages) (createpage)</li>
+<li>Edit pages (edit)</li>
+<li>Mark edits as minor (minoredit)</li>
+<li>Move pages (move)</li>
+<li>Move pages with their subpages (move-subpages)</li>
+<li>Move root user pages (move-rootuserpages)</li>
+<li>Override files on the shared media repository locally (reupload-shared)</li>
+<li>Overwrite existing files (reupload)</li>
+<li>Purge the site cache for a page without confirmation (purge)</li>
+<li>Read pages (read)</li>
+<li>Upload files (upload)</li>
+<li>Use of the write API (writeapi)</li></ul></td>
+				</tr><tr>
+					<td><a href="/~robotics/summercamp/index.php?title=Dartmouth_summer_robotics_camp:Autoconfirmed_users&amp;action=edit&amp;redlink=1" class="new" title="Dartmouth summer robotics camp:Autoconfirmed users (page does not exist)">Autoconfirmed users</a></td>
+					<td><ul><li>Edit semi-protected pages (autoconfirmed)</li></ul></td>
+				</tr><tr>
+					<td><a href="/~robotics/summercamp/index.php?title=Dartmouth_summer_robotics_camp:Bots&amp;action=edit&amp;redlink=1" class="new" title="Dartmouth summer robotics camp:Bots (page does not exist)">Bots</a><br /><a href="/~robotics/summercamp/index.php?title=Special:ListUsers&amp;group=bot" title="Special:ListUsers">(list of members)</a></td>
+					<td><ul><li>Be treated as an automated process (bot)</li>
+<li>Edit semi-protected pages (autoconfirmed)</li>
+<li>Have one's own edits automatically marked as patrolled (autopatrol)</li>
+<li>Not create a redirect from the old name when moving a page (suppressredirect)</li>
+<li>Not have minor edits to discussion pages trigger the new messages prompt (nominornewtalk)</li>
+<li>Use higher limits in API queries (apihighlimits)</li>
+<li>Use of the write API (writeapi)</li></ul></td>
+				</tr><tr>
+					<td><a href="/~robotics/summercamp/index.php?title=Dartmouth_summer_robotics_camp:Administrators&amp;action=edit&amp;redlink=1" class="new" title="Dartmouth summer robotics camp:Administrators (page does not exist)">Administrators</a><br /><a href="/~robotics/summercamp/index.php?title=Special:ListUsers&amp;group=sysop" title="Special:ListUsers">(list of members)</a></td>
+					<td><ul><li>Block a user from sending e-mail (blockemail)</li>
+<li>Block other users from editing (block)</li>
+<li>Bypass IP blocks, auto-blocks and range blocks (ipblock-exempt)</li>
+<li>Bypass automatic blocks of proxies (proxyunbannable)</li>
+<li>Change protection levels and edit protected pages (protect)</li>
+<li>Create new user accounts (createaccount)</li>
+<li>Delete pages (delete)</li>
+<li>Delete pages with large histories (bigdelete)</li>
+<li>Edit other users' CSS and JS files (editusercssjs)</li>
+<li>Edit semi-protected pages (autoconfirmed)</li>
+<li>Edit the user interface (editinterface)</li>
+<li>Have one's own edits automatically marked as patrolled (autopatrol)</li>
+<li>Import pages from a file upload (importupload)</li>
+<li>Import pages from other wikis (import)</li>
+<li>Mark others' edits as patrolled (patrol)</li>
+<li>Mark rolled-back edits as bot edits (markbotedits)</li>
+<li>Move files (movefile)</li>
+<li>Move pages (move)</li>
+<li>Move pages with their subpages (move-subpages)</li>
+<li>Move root user pages (move-rootuserpages)</li>
+<li>Not be affected by rate limits (noratelimit)</li>
+<li>Override files on the shared media repository locally (reupload-shared)</li>
+<li>Overwrite existing files (reupload)</li>
+<li>Quickly rollback the edits of the last user who edited a particular page (rollback)</li>
+<li>Search deleted pages (browsearchive)</li>
+<li>Submit a trackback (trackback)</li>
+<li>Undelete a page (undelete)</li>
+<li>Upload files (upload)</li>
+<li>Upload files from a URL (upload_by_url)</li>
+<li>Use higher limits in API queries (apihighlimits)</li>
+<li>View a list of unwatched pages (unwatchedpages)</li>
+<li>View deleted history entries, without their associated text (deletedhistory)</li></ul></td>
+				</tr><tr>
+					<td><a href="/~robotics/summercamp/index.php?title=Dartmouth_summer_robotics_camp:Bureaucrats&amp;action=edit&amp;redlink=1" class="new" title="Dartmouth summer robotics camp:Bureaucrats (page does not exist)">Bureaucrats</a><br /><a href="/~robotics/summercamp/index.php?title=Special:ListUsers&amp;group=bureaucrat" title="Special:ListUsers">(list of members)</a></td>
+					<td><ul><li>Edit all user rights (userrights)</li>
+<li>Not be affected by rate limits (noratelimit)</li></ul></td>
+				</tr></table>
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Special:ListGroupRights">http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Special:ListGroupRights</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Main-page"><a href="/~robotics/summercamp/index.php/Main_Page">Main page</a></li>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics">Robotics lab</a></li>
+				<li id="n-Application-form"><a href="http://www.cs.dartmouth.edu:/~robotics/summercamp/2010app.txt">Application form</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-resources'>
+		<h5>resources</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Create-Tutorial"><a href="/~robotics/summercamp/index.php/Create_tutorial">Create Tutorial</a></li>
+				<li id="n-Bioloid-Tutorial"><a href="/~robotics/summercamp/index.php/Bioloid_Tutorial">Bioloid Tutorial</a></li>
+				<li id="n-Bioloid-Assembly"><a href="/~robotics/summercamp/index.php/Bioloid_Assembly">Bioloid Assembly</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/summercamp/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search Dartmouth summer robotics camp [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+<li id="t-specialpages"><a href="/~robotics/summercamp/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/summercamp/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="privacy"><a href="/~robotics/summercamp/index.php/Dartmouth_summer_robotics_camp:Privacy_policy" title="Dartmouth summer robotics camp:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/summercamp/index.php/Dartmouth_summer_robotics_camp:About" title="Dartmouth summer robotics camp:About">About Dartmouth summer robotics camp</a></li>
+					<li id="disclaimer"><a href="/~robotics/summercamp/index.php/Dartmouth_summer_robotics_camp:General_disclaimer" title="Dartmouth summer robotics camp:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.258 secs. --></body></html>

@@ -1,0 +1,157 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw7
+3
+<html> <head>
+<title>CS37: Homework 7</title>
+</head>
+ 
+<body>
+<h1>Homework 7</h1>
+
+Published: Tuesday, August 10<br>
+Due: <strong>11:59PM</strong>, Monday, August 16.<br>
+<p>
+
+
+
+
+<hr>
+<h2>Q1. Branch Enable Logic</h2>(10 points)
+<hr>
+<p>
+Build the 
+<strong>branch enable logic</strong>
+for your LC-3.
+<p>
+<ul>
+<li> In state 32, the FSM wants to calculate "BEN"---"is a branch enabled?"
+In state 0, the FSM will use the result.   
+<li> Build a device to do that.  When the LD.BEN line rises, it should
+clock the result into a flip-flop.
+</ul>
+<hr>
+<h2>Q2. Microsequencer</h2>(20 points)
+<hr>
+<p>
+Build the <strong>microsequencer</strong> for your LC-3.
+<p>
+<hr>
+<h2>Q3. FSM</h2>(20 points)
+<hr>
+<p>
+
+
+In <a href="fsm.circ"><b>fsm.circ</b></a>, you'll find a skeleton FSM containing:
+<ul>
+<li> ROM devices for the control signals.  (I broke the "FSM ROM" into
+pieces since LogiSim doesn't support ROMs with more than 32-bit
+words!)  Mouse-over the output pins (on the right) to see what's what.
+(Note that <i>all</i> the signals for the full LC-3 are included, even
+interrupts and privilege.  It is unlikely that you will use all of
+them.)
+<p>
+<li> A master clock... which (for now) is a hand-controlled switch.
+</ul>
+<p>
+Use the skeleton and your solutions to Q1 and Q2 to 
+finish the FSM for your LC-3!     
+				 <p>
+(If you used wires of width greater than 1 for multi-bit things like PCMUX,
+make sure you hook up the right things in the right places.)
+<p>
+<hr>
+<p>
+However...
+<p>
+<hr>
+<p>
+"Computation," as you learn it in CS classes, is several abstractions above
+Boolean logic.  However, Boolean logic itself is several abstractions away from
+the real world.    One troublesome issue: in the real world, things take <i>time</i>.
+<p>
+Look at the state diagram in the book.  In each state, the 
+the machine calculates some value and stores it somewhere.   Now, look at the
+control lines down the right side of your FSM skeleton.   The ones that <i>don't</i>
+start with "LD." control the setting of the valves so that the value gets calculated.
+The "LD" ones then clock the result into wherever it's supposed to go.
+<p>
+If you assert everything all at once, you're likely to run into trouble, since 
+your LD lines will have rising edges, and be trying to save results, before the valves are done being set and the circuit has a chance to work.   
+So....     I recommend you think about using the <i>entire</i> clock cycle, and somehow have the LD lines rise after everything else has a chance to settle.
+<p>
+As we discussed in class, when memory is asked to do
+something, it will assert the "R" line when it's done.    So, on memory reads, you want
+to make sure you don't actually clock LD.MDR until the output from the memory is actually
+ready!
+<p>
+<hr>
+<h2>Q4. SR2 Controls</h2>(5 points)
+<hr>
+<p>
+The book does not specify how you should generate the SR2MUX and SR2.0-SR2.2 control signals.
+You need to figure that out!
+<p>
+<hr>
+<h2>Q5. Single Instructions</h2>(5 points)
+<hr>
+<p>
+Now you're ready to try individual instructions!
+<p>
+Hand-assemble an opcode (such as NOT R1,R0), set it up as simulated memory,
+and clock it through.   Make it work.  Try AND and ADD.
+<p>
+<hr>
+<h2>Q6. Run Code!</h2>(15 points)
+<hr>
+<p>
+Once you're done with Q6....   now you can run code!
+<p>
+Since x0000-0x01FF are reserved for trap and interrupt tables, the earliest
+place for code is 0x0200.   Consequently, it might make sense to 
+replace your PC register with one that "clears" to 0x0200.  (Hint: you can do this
+with two gates.)
+<p>
+Write a simple assembler
+program that exercises every instruction (except for RTI, since 
+your LC-3 does not support interrupts).   Load it into RAM.  Step through
+the FSM and make sure things work.   (Because if they don't, it will
+be easier to find out now.)
+<p>
+<a href="/~cs37/summer10/burning/index.html"><b>This page</b></a> summarizes
+how to burn data into ROM and RAM.
+<p>
+<hr>
+<h2>Q7</h2>(10 points)
+<hr>
+<p>
+Write a simple "OS."   It should:
+<ul>
+<li> live from x0000 up to x03FF
+<li> support the basic traps x20 to x23 (see Table A.2).  (Yes, you might
+inspect 
+<a href="lc3os.asm"><b>the default "os" that comes with lc3sim</b></a>
+for inspiration!  Yes, inspecting this but <i>not attributing</i> it as a source is an honor code violation). 
+<li> support a nop loop for trap x25
+<li> at x0200, have code that jumps to x3000.
+</ul>
+<p>
+Burn it into ROM.  Install it.
+<p>
+<hr>
+<h2>Q8</h2>(15 points)
+<hr>
+<p>
+Write some simple C code with I/O.  Burn into RAM.  Watch it run!  Be amazed!
+<p>
+
+<hr>
+<hr>
+
+<h2>Submission</h2>
+<hr>
+<p>
+ Send email to cs37staff@cs with the subject line "Homework 7
+ Submitted.  My LC-3 runs C code!".  Attach all relevant files.  If
+ you use multiple files, packing the assignment into a single zip file
+ is preferred.
+<p>
+</body> </html>

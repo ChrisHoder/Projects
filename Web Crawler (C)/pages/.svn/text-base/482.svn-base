@@ -1,0 +1,105 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/work/hw8
+3
+<html> <head>
+<title>CS37: Homework 8</title>
+</head>
+ 
+<body>
+<h1>Homework 8 -- the LC-3 Olympics!</h1>
+
+Published: Wednesday, August 18<br>
+Due: <strong>in class</strong>, Wednesday, August 25.<br>
+<p>
+
+<p>
+<hr>
+<h1>Challenge</h1>
+<hr>
+<p>
+To solve a problem as fast as possible on your own LC3 processor on LogiSim!
+<p>
+<hr>
+<h1>Q0</h1>
+<hr>
+<p>
+Find a team partner, and pick a fun name for your team!
+<hr>
+<h1>Q1</h1>
+<hr>
+<p>
+The problem : Factor a number given at location x4000 and store the
+factors at locations x4001 and x4002.
+
+<p><b>Note:</b> You can assume that the input is either prime, or the
+product of two primes.  If the number is some prime <i>p</i>, then
+write the factors as "p" and "1".
+<p>Who cares about factoring n = p*q?  <b>You</b> do.  At least if you use encryption:
+<a href="http://en.wikipedia.org/wiki/RSA"><b>RSA encrpytion</b></a>.
+
+<p>RSA encryption is based on the assumption that multiplying two
+large primes is much easier than factoring them.
+<hr>
+<p>
+Resources:
+<ul>
+<li> The following wikipedia page has information on <a href="http://en.wikipedia.org/wiki/Integer_factorization_algorithms"><b>integer factorization algorithms</b></a>.  <br>(Do not modify this page)
+<li> <a href="factor-v0.asm"><b>factor-v0.asm</b></a>, a sample implementation.
+</ul>
+<p>
+Keep the following things in mind :
+<ul>
+<li> You can keep the ready bit <b>R</b> set (i.e. no delay)
+<li> To enable testing of <b>correctness</b>, you should add some
+easily-programmable register (or RAM) living as memory word 0x4000
+---and easily-displayed registers living at 0x4001 and 0x4002.
+<li> To enable testing of <b>timing</b>,
+ you should abstract your processor a subcircuit
+with these pins:
+<ul>
+<li> CLK : Input coming in.
+<li> CLR : Usual..
+<li> HALT : This is the signal coming out; your processor should set this signal to one when the program is completed. This would be used to stop the clock for your processor.
+<li> Have probes so to spy on 0x4000, 0x4001, and 0x4002.
+</ul>
+</ul>
+<p>
+<strong>If you use bona-fine <i>n</i>-stage pipelining, then we'll pretend your clock is faster by a factor of <i>n</i>.   That is: when counting how long your processor takes, we'll divide the cycles by <i>n</i>.</strong>
+<p>
+<hl>
+<p>
+ The ultimate goal is to solve the problem <b>correctly</b> with
+minimum input clock cycles. You can use any sort of
+optimization. Multiprocessing, branch prediction, pipelining,
+superscalar, speculative execution---whatever you can think of!
+<p><b>Restrictions</b>
+<ul>
+<li> You can add registers, ROM, or RAM if you want, but no more than
+1K additional words total between them.
+<li> You must run your circuits using one of the machines in 005.
+<li> You cannot change any wikipedia pages to confuse/deceive your classmates. ;)
+</ul>
+<p>
+<b>Prize for the winner</b>: Pride! Glory! Satisfaction!
+<p>
+
+
+<hr>
+<h2>On Olympic Day (Wednesday, August 25)</h2>
+<hr>
+<p>
+Be sure to do one of these:
+<ul>
+<li> bring a memory stick with your device, or
+<li> bring a Mac laptop with LogiSim installed and your device
+</ul>
+<p>
+<hr>
+<h2>Submission</h2>
+<hr>
+<p>
+ Send email to cs37staff@cs with the subject line "Homework 8
+ Submitted.  YAR!".  Attach all relevant files.  If
+ you use multiple files, packing the assignment into a single zip file
+ is preferred.
+<p>
+</body> </html>

@@ -1,0 +1,99 @@
+http://www.cs.dartmouth.edu/~miluzzo/resume.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Title      : Puzzled
+Version    : 1.0
+Released   : 20080706
+Description: A wide two-column design suitable for blogs and small websites.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Emiliano Miluzzo :: resume</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<!-- Google  analytics stuff start -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19440560-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google  analytics stuff end -->
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1>Emiliano Miluzzo</h1>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li class="current_page_item"><a href="#">R&eacute;sum&eacute;</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<div id="headerbg">
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<!-- start latest-post -->
+		<div id="latest-post-2" class="post">
+			<h1 class="title">r&eacute;sum&eacute; / job application package</h1>
+			
+			<div class="entry">
+				<p> <a href="http://www.cs.dartmouth.edu/~miluzzo/Emiliano-Miluzzo-CV.pdf">CV</a></p>	
+				<p> <a href="http://www.cs.dartmouth.edu/~miluzzo/Emiliano-Miluzzo-research-statement.pdf">Research Statement</a></p>	
+				<p> <a href="http://www.cs.dartmouth.edu/~miluzzo/Emiliano-Miluzzo-teaching-statement.pdf">Teaching Statement</a></p>				
+
+			</div>
+		</div>
+		<!-- end latest-post -->
+		<!-- start recent-posts -->
+		
+		<!-- end recent-posts -->
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+
+<div id="footer">
+	<!-- empty footer -->
+</div>
+
+<div style="font-size: 0.8em; text-align: center;">
+<br />
+Based on template from <a href="http://www.zeroweb.org">Zeroweb.org</a><br />
+<br />
+</div>
+</body>
+</html>

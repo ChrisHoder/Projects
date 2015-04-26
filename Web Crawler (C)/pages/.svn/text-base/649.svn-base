@@ -1,0 +1,435 @@
+http://www.cs.dartmouth.edu/~cs110/syllabus.html
+3
+<html> <head>
+<title>CS 110 Winter 2010 Syllabus</title>
+</head>
+
+<body>
+<h1>CS 110 Winter 2010 Syllabus</h1>
+
+<a href="#basic">Basic&nbsp;information</a>&nbsp;&nbsp;&nbsp;
+<a href="#desc">Course&nbsp;description</a>&nbsp;&nbsp;&nbsp;
+<a href="#goals">Course&nbsp;goals</a>&nbsp;&nbsp;&nbsp;
+<a href="#prereq">Prerequisites</a>&nbsp;&nbsp;&nbsp;
+<a href="#methods">Teaching&nbsp;methods</a>&nbsp;&nbsp;&nbsp;
+<a href="#expect">Expectations</a>&nbsp;&nbsp;&nbsp;
+<a href="#texts">Texts</a>&nbsp;&nbsp;&nbsp;
+<a href="#grading">Grading</a>&nbsp;&nbsp;&nbsp;
+<a href="#honor">Academic&nbsp;honor</a>&nbsp;&nbsp;&nbsp;
+<a href="#needs">Student&nbsp;needs</a>&nbsp;&nbsp;&nbsp;
+<a href="#support">Additional&nbsp;support</a>&nbsp;&nbsp;&nbsp;
+<a href="#schedule">Course&nbsp;schedule</a>
+
+<h2><a name="basic"></a>Basic information</h2>
+
+Instructor: Tom Cormen<br>
+Office: 204 Sudikoff<br>
+Email: <a href="mailto:thc@cs.dartmouth.edu">thc@cs.dartmouth.edu</a><br>
+Office phone: 646-2417<br>
+Office hours: January 4 through March 9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday
+1:00&ndash;3:00 pm (1:00&ndash;2:00 pm on January 19 and February
+23)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friday 10:00
+am&ndash;12:00 noon<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition, you may
+schedule appointments with me as necessary<br>
+Class time: 2 (1:45&ndash;2:50 pm Monday, Wednesday, and Friday)<br>
+x-hours: We will use x-hours occasionally; see the <a
+href="#schedule">course schedule</a> for specific dates
+
+<h2><a name="desc"></a>Course description</h2>
+
+Here's the ORC description of CS 110:
+<blockquote>
+Students will learn how to write technical papers in computer science,
+how to present technical papers in a conference-talk setting, and how
+program committees and journal editors evaluate technical papers.
+Writing topics include the proper use of technical typesetting
+software, organization of technical papers, and English usage.
+Students will write technical papers, produce official course notes,
+and give oral presentations.
+</blockquote>
+
+<p>
+
+We'll focus mostly on writing.  Some of the writing issues we cover
+will be specific to computer science or mathematics, whereas some will
+be material that you should have learned in your freshman writing
+course, but probably did not.
+
+<p>
+
+Second in prominence will be how to give talks.  Each enrolled student
+will give a 20-minute (conference-length) technical talk.
+
+<p>
+
+We'll spend the least time on how reviewers evaluate papers.  We need
+to cover this angle, however, since every paper you submit to a
+conference or journal will be reviewed.  You should have an idea of
+what your readers are looking for.
+
+<h2><a name="goals"></a>Course goals</h2>
+
+To be a successful researcher, you need to do more than just obtain
+results.  You need to communicate your results to your research
+community.  In order to do so, you need to write papers that are
+accepted to conferences and journals.  Although poorly written papers
+are sometimes accepted (too often, in my humble opinion), the odds of
+a paper being accepted increase if the paper is well written.
+Moreover, the odds of a paper being <em>cited</em> are much higher if
+the paper is well written.
+
+<p>
+
+Alas, most of us did not choose computer science because we love to
+write English prose.  Indeed, most of us seldom wrote prose during our
+undergraduate years.  You might be rusty as a writer, and you almost
+certainly need to learn how to write technical papers.  This course
+will teach you how and give you practice in doing so.
+
+<p>
+
+We will cover the following writing topics:
+<ul>
+
+  <li> <em>Style</em>: How to construct sentences and paragraphs that
+       are clear and concise.
+
+       <p>
+
+  <li> <em>Usage</em>: Which words apply in which situations.
+
+       <p>
+
+  <li> <em>Paper organization</em>: What sections to put in a paper,
+       and what to put in each section.
+
+       <p>
+
+  <li> <em>Figures</em>: How to design illustrations that are simple,
+       accurate, and effective.
+
+       <p>
+
+  <li> <em>LaTeX</em>: How to typeset your work using LaTeX correctly.
+
+</ul>
+
+<p>
+
+As a computer-science researcher, you will occasionally give technical
+talks.  Some talk-giving skills apply to any form of public speaking,
+but others are specific to our field.  This course will teach you how
+to give technical talks.  You will give one, and you will critique
+talks given by others.
+
+<h2><a name="prereq"></a>Prerequisites</h2>
+
+From the ORC:
+<blockquote>
+Each student must submit a short expository piece to be evaluated by
+the instructor at the start of the course; only those students meeting
+a required level of competence will be permitted to take the course
+for a grade.  Students should also have a Computer Science background
+sufficient to understand research papers.
+</blockquote>
+
+<p>
+
+I have posted guidelines for the <a
+href="writing-test.html">expository piece</a>.  I need it by 5:00 pm
+on Tuesday, January 5.  You will know by class time on Wednesday,
+January 6 whether you have passed the writing test.
+
+<h2><a name="methods"></a>Teaching methods</h2>
+
+We will use a combination of lectures and discussion.  For the writing
+topics, I'll present some material, then we'll discuss.  Then I'll
+present more material, then we'll discuss, and so on.  For the segment
+on giving talks, we'll talk about elements of good and bad talks, then
+I'll present two talks&mdash;one intentionally bad and the other not
+intentionally bad&mdash;and I'll ask you to critique them.  Then each
+member of the class will present a talk, which the rest of the class
+will critique.
+
+<p>
+
+We'll be running this course on the scribe system.  For each class
+meeting that includes lecture or discussion, one student will be the
+official scribe.  That student will take careful notes and write them
+up beautifully in LaTeX.  Once the notes pass my muster, I'll post
+them on the course website.  Depending on the enrollment, each student
+will scribe somewhere between one and three times.  <em>Auditors might
+be asked to take a turn scribing.</em>
+
+<h2><a name="expect"></a>Expectations</h2>
+
+Part of your grade will depend on class participation, and so I expect
+you to attend classes.  Of course, you will occasionally have to miss
+class for a good reason, such as attending a conference.  In order to
+have good discussions, we need discussants.  I'm good at talking to
+myself, but I'd much rather have you there.
+
+<p>
+
+The workload in this course will be moderate.  I'll ask you to read a
+bit, but the reading will be about writing, rather than technical.
+We'll have a few homework assignments.  And you'll have to write a
+technical paper, with a draft due near the end of the term and the
+final version due at the end of the term.
+
+<p>
+
+I will alter the <a href="#schedule">course schedule</a> as needed.
+Among other things, it depends on how many students end up registered
+for the course.
+
+<h2><a name="texts"></a>Texts</h2>
+
+I have selected the following books:
+
+<ol>
+
+  <li> Leslie Lamport, <i>LaTeX: A Document Preparation System</i>,
+       second edition.  Required.  Although better LaTeX tutorials
+       might be out there, Lamport's book is to LaTeX as K&amp;R is to
+       C.
+
+       <p>
+
+  <li> Lyn Dupr&eacute;, <i>Bugs in Writing</i>.  Required.  A good
+       usage reference, geared toward computer scientists.  You'll
+       enjoy reading it all the more if you happen to like cats.
+
+       <p>
+
+  <li> Joseph M. Williams, <i>Style: The Basics of Clarity and
+       Grace</i>, third edition.  Required.  The best book on writing
+       style I've ever seen.  This book tells you how to diagnose and
+       repair sentences that are grammatically correct and even make
+       sense semantically, yet somehow seem off.  It has greatly
+       altered the way I write.
+
+       <p>
+
+  <li> Justin Zobel, <i>Writing for Computer Science</i>, second
+       edition.  Required.  I don't agree with everything that Zobel
+       writes, but I agree with much of it.  This book will serve as a
+       good starting point for discussion.
+
+       <p>
+
+  <li> William Strunk Jr. and E. B. White, <i>The Elements of
+       Style</i>, fourth edition.  Recommended.  <em>The</em> classic,
+       though a bit musty by now.  I prefer Williams as a style book
+       and Dupr&eacute; as a usage book.
+
+</ol>
+
+<p>
+
+In addition, we will use <em>your</em> writing as text.  I will ask
+each of you to submit some writing, and the entire class will critique
+some of the submitted writing.  Lest you think that I'm asking you to
+do something I wouldn't submit myself to, fear not: you'll be
+critiquing my writing before you critique your classmates' writing.
+
+<p>
+
+Here are other books that you might find useful and possibly even
+enjoy:
+
+<ol start="6">
+
+  <li> Nicolas J. Higham, <i>Handbook of Writing for the Mathematical
+       Sciences</i>.  It has a little that's specific to writing
+       mathematics, a little on usage, and a lot on the process of
+       writing a paper.
+
+       <p>
+
+  <li> Donald E. Knuth, <i>The TeXbook</i>.  Like Lamport's book, this
+       book is to TeX as K&amp;R is to C.  I find this book a bit
+       difficult to use, however, and the index is a quintessential
+       example of TMI.
+
+       <p>
+
+  <li> Patricia T. O'Conner, <i>Woe Is I: The Grammarphobe's Guide to
+       Better English in Plain English</i>.  Julie Sussman, the
+       World's Best Technical Copyeditor, is a big fan of this book.
+
+       <p>
+
+  <li> William Safire, <i>Fumblerules</i>.  Safire's list of grammar
+       and usage rules, each of which violates itself.  Example: "The
+       passive voice should never be used."
+
+       <p>
+
+  <li> Lynne Truss, <i>Eats, Shoots &amp; Leaves</i>.  If you were as
+       fixated on your research as Truss is on punctuation, you would
+       have graduated by now.
+
+       <p>
+
+  <li> Bill Bryson.  <i>Bryson's Dictionary of Troublesome Words: A
+       Writer's Guide to Getting It Right</i>.  The most complete
+       usage reference I've ever seen.  A true labor of love and
+       cantankerousness.
+
+       <p>
+
+  <li> Edward R. Tufte, <i>The Visual Display of Quantitative
+       Information</i>.  This book was an instant classic.  I don't
+       agree with all of it, but it's certainly thought provoking.
+       We'll discuss many of its positions when we talk about figures.
+
+</ol>
+
+<h2><a name="grading"></a>Grading</h2>
+
+Your grade will be a weighted combination of the assignments,
+presentation, paper, and class participation.
+
+<h2><a name="honor"></a>Academic honor</h2>
+
+The principle of academic honor applies in this course as in any other
+course.  Work you submit must be your own, subject to requirements
+that I state in each assignment.  If you need to work with someone
+else, you must fully attribute with whom you worked.
+
+<p>
+
+<em>Believe it or not, I have had an academic honor violation come up
+in a past version of this course.  I will not hesitate to bring any
+suspected violations to the attention of the Dean of Graduate Studies,
+and violators can expect to be suspended for some number of terms.  If
+you have any question about whether you are in danger of violating the
+principle of academic honor, please check with me before you do
+something you'll regret.</em>
+
+<h2><a name="needs"></a>Student needs</h2>
+
+Students with disabilities enrolled in this course and who may need
+disability-related classroom accommodations are encouraged to make an
+appointment to see me before the end of the second week of the term.
+All discussions will remain confidential, although the Student
+Accessibility Services office may be consulted to discuss appropriate
+implementation of any accommodation requested.
+
+<h2><a name="support"></a>Additional support</h2>
+
+In addition to my office hours, you can get help at RWIT, the Student
+Center for Research, Writing, and Information Technology, located in
+183 Berry Library, a few feet south of the Reference Desk on the main
+floor of Berry.  The RWIT tutors are trained to help you in all phases
+of the composition process, including preparing talks.  Back when I
+directed the Institute for Writing and Rhetoric, I was indirectly in
+charge of RWIT.  Not every RWIT tutor will be able to help you with
+your specific problems, but most of them will be able to help you in
+some way.  The RWIT service is free.  You may either schedule an
+appointment or walk in.  See <a
+href="http://www.dartmouth.edu/~rwit/">http://www.dartmouth.edu/~rwit/</a>
+for information and scheduling.
+
+<h2><a name="schedule"></a>Course schedule</h2>
+
+<em>Subject to change with minimal notice.</em>
+
+<dl>
+
+  <dt> Week 1: January 4, 6, 8
+
+  <dd> <!-- 1/4 --> Course overview.
+       <!-- 1/6, 1/8 --> Paper organization.
+       <br>
+       Reading: Zobel, Chapters 1 and 9.
+       <p>
+
+  <dt> Week 2: January 11, 13, 14, 15
+
+  <dd> <!-- 1/11 --> Paper organization.
+       <!-- 1/11, 1/13/, 1/14, 1/15 --> Style.
+       <br>
+       Reading: Williams, especially Lessons 1&ndash;6;
+       Strunk and White, Chapter II;
+       Zobel, Chapters 2 and 3.
+
+       <p>
+
+  <dt> Week 3: January 20, 21 (x-hour), 22
+
+  <dd> <!-- 1/20 --> Figure design.
+       <!-- 1/21, 1/22 --> Mathematical writing.
+       <!-- 1/22 --> Usage.
+       <br>
+       Reading: Zobel, Chapters 5 and 6;
+       Dupr&eacute;, Segments 15, 23, 29, 43, 47, 49, 50, 57, 75, 77,
+       104, 118, 126, 139.
+
+       <p>
+
+  <dt> Week 4: January 27, 28, 29
+
+  <dd> <!-- 1/27, 1/28, 1/29 --> Usage.
+       <br>
+       Dupr&eacute;, Segments 3, 4, 5, 7, 8, 11, 13, 17, 19, 21,
+       24, 26, 27, 29, 41, 61, 64, 66, 73, 80, 92, 99, 115, 116, 119,
+       129, 135.
+
+       <p>
+
+  <dt> Week 5: February 1, 3, 5
+
+  <dd> <!-- 2/1, 2/5 --> Critique student writing.
+       <!-- 2/3 --> The review process.
+       <br>
+       Reading: Zobel, Chapter 12.
+
+      <p>
+
+  <dt> Week 6: February 8, 10, 11 (x-hour), no class February 12 due
+       to Winter Carnival
+
+  <dd> <!-- 2/8, 2/10 --> How to give talks.
+       <!-- 2/11 TBA -->
+       <br>
+       Reading: Zobel, Chapter 14; Dupr&eacute;, Segment 122.
+
+       <p>
+
+  <dt> Week 7: February 15, 17, 19
+
+  <dd> <!-- 2/15, 2/17, 2/19 --> LaTeX.<br>
+       Reading: Lamport
+
+       <p>
+
+  <dt> Week 8: February 22, 24, 26
+       
+  <dd> <!-- 2/22, 2/24/, 2/26 --> Student presentations.
+
+       <p>
+
+  <dt> Week 9: March 1, 3, 5
+
+  <dd> <!-- 3/1, 3/3, 3/5 --> Student presentations.
+
+      <p>
+
+  <dt> Week 10: March 8
+
+  <dd> <!-- 3/8 --> Student presentations.
+
+</dl>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Sun Feb 14 21:33:02 2010
+<!-- hhmts end -->
+</body> </html>

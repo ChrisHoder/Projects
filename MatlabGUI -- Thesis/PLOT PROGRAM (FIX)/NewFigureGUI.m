@@ -1,0 +1,227 @@
+%------------------------------------------------------------------------%
+% NewFigureGUI.m -- This file creates a GUI that has the options for a a
+% plot on a new figure.
+%------------------------------------------------------------------------%
+
+% File: NewFigureGUI.m
+% Date: 7/24/2011
+
+function varargout = NewFigureGUI(varargin)
+% NEWFIGUREGUI MATLAB code for NewFigureGUI.fig
+%      NEWFIGUREGUI, by itself, creates a new NEWFIGUREGUI or raises the existing
+%      singleton*.
+%
+%      H = NEWFIGUREGUI returns the handle to a new NEWFIGUREGUI or the handle to
+%      the existing singleton*.
+%
+%      NEWFIGUREGUI('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in NEWFIGUREGUI.M with the given input arguments.
+%
+%      NEWFIGUREGUI('Property','Value',...) creates a new NEWFIGUREGUI or raises the
+%      existing singleton*.  Starting from the left, property value pairs are
+%      applied to the GUI before NewFigureGUI_OpeningFcn gets called.  An
+%      unrecognized property name or invalid value makes property application
+%      stop.  All inputs are passed to NewFigureGUI_OpeningFcn via varargin.
+%
+%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
+%      instance to run (singleton)".
+%
+% See also: GUIDE, GUIDATA, GUIHANDLES
+
+% Edit the above text to modify the response to help NewFigureGUI
+
+% Last Modified by GUIDE v2.5 18-Jul-2011 17:29:44
+
+% Begin initialization code - DO NOT EDIT
+gui_Singleton = 1;
+gui_State = struct('gui_Name',       mfilename, ...
+                   'gui_Singleton',  gui_Singleton, ...
+                   'gui_OpeningFcn', @NewFigureGUI_OpeningFcn, ...
+                   'gui_OutputFcn',  @NewFigureGUI_OutputFcn, ...
+                   'gui_LayoutFcn',  [] , ...
+                   'gui_Callback',   []);
+if nargin && ischar(varargin{1})
+    gui_State.gui_Callback = str2func(varargin{1});
+end
+
+if nargout
+    [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+else
+    gui_mainfcn(gui_State, varargin{:});
+end
+% End initialization code - DO NOT EDIT
+
+% --- Executes just before NewFigureGUI is made visible.
+function NewFigureGUI_OpeningFcn(hObject, eventdata, handles, varargin)
+% This function has no output args, see OutputFcn.
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+% varargin   command line arguments to NewFigureGUI (see VARARGIN)
+
+% Choose default command line output for NewFigureGUI
+handles.output = hObject;
+
+% Update handles structure
+guidata(hObject, handles);
+
+plotGui = getappdata(0,'plotGui');
+setappdata(plotGui,'NewFigure',gcf);
+
+
+% --- Outputs from this function are returned to the command line.
+function varargout = NewFigureGUI_OutputFcn(hObject, eventdata, handles) 
+% varargout  cell array for returning output args (see VARARGOUT);
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Get default command line output from handles structure
+varargout{1} = handles.output;
+
+function xLabel_Callback(hObject, eventdata, handles)
+% hObject    handle to xLabel (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% --- Executes during object creation, after setting all properties.
+function xLabel_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to xLabel (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+function yLabel_Callback(hObject, eventdata, handles)
+% hObject    handle to yLabel (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% --- Executes during object creation, after setting all properties.
+function yLabel_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to yLabel (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+function zLabel_Callback(hObject, eventdata, handles)
+% hObject    handle to zLabel (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% --- Executes during object creation, after setting all properties.
+function zLabel_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to zLabel (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+% --- Executes on button press in plotButton.
+function plotButton_Callback(hObject, eventdata, handles)
+% hObject    handle to plotButton (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+%plots a new figure
+
+%loads figure, functions and axes handles
+plotGui = getappdata(0,'plotGui');
+fhplot2d = getappdata(plotGui,'fhplot2d');
+fhplot3d = getappdata(plotGui,'fhplot3d');
+fhplotSlices = getappdata(plotGui,'fhplotSlices');
+%findobj(plotGui,'tag','axes9');
+h = figure;
+setappdata(plotGui,'plotFigure',getappdata(plotGui,'NewFigure'));
+setappdata(plotGui,'newFigureGraph',h);
+type = get(handles.plotType,'Value');
+setappdata(plotGui,'plotLocation',5);
+%switch on the type of graph to be plotted
+switch type 
+    case 1 % 2d
+      setappdata(plotGui,'axesPlot',0);
+      setappdata(plotGui,'xLabel',get(handles.xLabel,'String'));
+      setappdata(plotGui,'yLabel',get(handles.yLabel,'String'));
+      setappdata(plotGui,'title',get(handles.title,'String'));
+      feval(fhplot2d);
+    case 2 %3d
+       setappdata(plotGui,'axesPlot',0);
+       setappdata(plotGui,'xLabel',get(handles.xLabel,'String'));
+       setappdata(plotGui,'yLabel',get(handles.yLabel,'String'));
+       setappdata(plotGui,'zLabel',get(handles.zLabel,'String'));
+       setappdata(plotGui,'title',get(handles.title,'String'));
+       feval(fhplot3d);
+    case 3 % slices
+       setappdata(plotGui,'axesPlot',0);
+       setappdata(plotGui,'xLabel',get(handles.xLabel,'String'));
+       setappdata(plotGui,'yLabel',get(handles.yLabel,'String'));
+       setappdata(plotGui,'zLabel',get(handles.zLabel,'String'));
+       setappdata(plotGui,'title',get(handles.title,'String'));
+       feval(fhplotSlices);
+end
+%close this GUI at the end
+close(getappdata(plotGui,'NewFigure'));
+
+function title_Callback(hObject, eventdata, handles)
+% hObject    handle to title (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% --- Executes during object creation, after setting all properties.
+function title_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to title (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+% --- Executes on selection change in plotType.
+function plotType_Callback(hObject, eventdata, handles)
+% hObject    handle to plotType (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns plotType contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from plotType
+
+contents = get(hObject,'Value');
+switch contents
+    case 1
+        set(handles.zText,'visible','off');
+        set(handles.zLabel,'visible','off');
+    case 2
+        set(handles.zText,'visible','on');
+        set(handles.zLabel,'visible','on');        
+    case 3
+        set(handles.zText,'visible','on');
+        set(handles.zLabel,'visible','on');
+end
+
+% --- Executes during object creation, after setting all properties.
+function plotType_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to plotType (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end

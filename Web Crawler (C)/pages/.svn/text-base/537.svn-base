@@ -1,0 +1,739 @@
+http://www.cs.dartmouth.edu/~cs39/journal.html
+3
+<html>
+
+<head>
+<title>CS39 11W Journal</title>
+</head>
+
+<body bgcolor=#EEEEEE>
+
+<h1>
+CS 39 Day by Day
+</h1>
+Created: <em>
+Wednesday, December 22, 2010
+</em>
+<br>Last modified:&nbsp;
+<em>
+<script language="JavaScript">
+document.write(document.lastModified)
+</script>
+</em>
+<p>
+
+<a name="week1"><strong>Week 1</strong></a>
+<dl>
+  <dt> January 4, Tuesday, X-hour
+  <dd> We don't meet, professor is traveling
+
+  <dt> January 5, Wednesday 
+  <dd> No lecture, professor traveling
+
+  <dt> <b> Lecture 1</b>, January 7, Friday 
+  <dd> Administrivia
+  <dd> Course overview
+  <dd> Math Preliminaries: Proofs by contradiction 
+  <dd> Reading: Lecture Notes + Sipser Chapter 0
+</dl>
+
+<a name="week2"><strong>Week 2</strong></a>
+<dl>
+  <dt> <b>Lecture 2</b>, January 10, Monday
+  <dd>Math Preliminaries: Proof by induction; construction; set notation; 
+      boolean logic and quantifiers; relations and functions
+  <dd> Pigeon-Hole Principle
+  <dd>Reading: Lecture Notes + Sipser Chapter 0
+
+  <dt> <b>Lecture 3</b>, January 11, Tuesday, X-hour
+  <dd> Comparing the sizes of sets
+  <dd> Countability of integers, NxN 
+  <dd> <a href="homework/hw1.pdf">Homework 1</a> given out.
+  <dd> Reading: Lecture Notes 
+
+  <dt> <b>Lecture 4</b>, January 12, Wednesday
+  <dd> Uncountability of Reals
+
+  <dt> <b>Lecture 5</b>, January 14, Friday
+  <dd> Formal Language theory: Alphabet, String, Language
+  <dd> Inductive definitions for languages
+  <dd> Union, concatenation, and Kleene star and plus operations on languages
+  <dd> Reading: Lecture Notes + Sipser Chapter 0.3 (pages 13, 14) + Chapter 1.1 (up to page 43)
+</dl>
+
+<a name="week3"><strong>Week 3</strong></a>
+<dl>
+  <dt> <b>MLK day, no class</b>, January 17, Monday
+
+  <dt> <b>Lecture 6</b>, January 18, Tuesday, X-hour
+  <dd> Illustration of set notation by defining and understanding some operations on languages
+  (e.g., OffByOne and Half operations)
+  <dd> Introduction to DFAs
+
+  <dt> <b>Lecture 7</b>, January 19, Wednesday
+  <dd> DFA examples
+  <dd> Formal definition of a DFA
+  <dd> DFA computation: definition of delta-hat and "M accepts w"
+  <dd> Definition of a regular language
+  <dd> <a href="homework/hw2.pdf">Homework 2</a> given out.
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.1 (up to page 43)
+
+  <dt> <b>Lecture 8</b>, January 21, Friday
+  <dd> NFAs: introduction and examples
+  <dd> Formal definition of an NFA
+  <dd> NFA computation, definition of delta-hat
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.2 (up to page 58)
+</dl>
+
+<a name="week4"><strong>Week 4</strong></a>
+<dl>
+  <dt> <b>Lecture 9</b>, January 24, Monday
+  <dd> Formal definition of an NFA
+  <dd> NFA computation, definition of delta-hat
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.2 (up to page 58)
+
+  <dt> <b>Lecture 10</b>, January 25, Tuesday, X-hour
+  <dd> Equivalence of DFAs and NFAs
+  <dd> Closure of regular languages under Union and Concatenation operations
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.2 (pages 53-62)
+
+  <dt> <b>Lecture 11</b>, January 26, Wednesday
+  <dd> Definition of regular expressions
+  <dd> Examples of regular expressions
+  <dd> <a href="homework/hw3.pdf">Homework 3</a> given out.
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.3 (pages 63-69)
+
+  <dt> <b>Quiz 1</b>, January 27, Thursday, 7.00-8.00pm, Carson 60
+
+  <dt> <b>Lecture 12</b>, January 28, Friday
+  <dd> Converting regular expression to an equivalent NFA
+  <dd> Converting a DFA to an equivalent regular expression
+  <dd> Closure of regular languages under Complementation and Intersection
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.3 (pages 70-76, which provide a different proof than one given in class)
+</dl>
+
+<a name="week5"><strong>Week 5</strong></a>
+<dl>
+  <dt> <b>Lecture 13</b>, January 31, Monday
+  <dd> Pumping Lemma for regular languages: Proof and Applications
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.4 (pages 77-82)
+
+  <dt> <b>Lecture 14</b>, February 1, Tuesday, X-hour
+  <dd> More applications of Pumping Lemma
+  <dd> Closure of regular languages under Complementation and Intersection
+  <dd> Reading: Lecture Notes + Sipser Chapter 1.4 (pages 80-82)
+
+  <dt> <b>Lecture 15</b>, February 2, Wednesday
+  <dd> Closure of regular languages under the operation CRAZY(L) = {w | ww^R is in L}
+  <dd> <a href="homework/hw4.pdf">Homework 4</a> given out.
+  <dd> Reading: Lecture Notes + Sipser Chapter  (pages 99-105)
+
+  <dt> <b>Lecture 16</b>, February 4, Friday
+  <dd> CFGs: some examples
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.1 (pages 99-105)
+</dl>
+
+<a name="week6"><strong>Week 6</strong></a>
+<dl>
+  <dt> <b>Lecture 17</b>, February 7, Monday
+  <dd> More examples of CFGs
+  <dd> Formal definition of CFG, CFL
+  <dd> Closure of CFLs under Union, Concatenation, and Kleene-Star
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.2 (pages 109-114)
+
+  <dt> <b>Lecture 18</b>, February 8, Tuesday, X-hour
+  <dd> PDAs and examples
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.2 (pages 109-114)
+
+  <dt> <b>Lecture 19</b>, February 9, Wednesday
+  <dd> Formal definition of PDA and its computation
+  <dd> <a href="homework/midterm2011.pdf">Midterm Exam</a> given out.
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.2 (pages 109-114)
+
+  <dt> <b>No class Friday, Winter Carnival</b>
+</dl>
+
+<a name="week7"><strong>Week 7</strong></a>
+<dl>
+  <dt> <b>Lecture 20</b>, February 14, Monday (Shahrzad (TA) taught)
+  <dd> Converting a CFG to an equivalent PDA
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.2 (pages 115-122)
+
+  <dt> <b>Lecture 21</b>, February 15, Tuesday, X-hour
+  <dd> Converting a PDA to an equivalent CFG
+  <dd> Proof of Pumping Lemma for CFLs
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.2 (pages 123-125)
+
+  <dt> <b>Lecture 22</b>, February 16, Wednesday
+  <dd> Proof of Pumping Lemma for CFLs
+  <dd> <a href="homework/hw5.pdf">Homework 5</a> given out.
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.2 (pages 126-127)
+
+
+  <dt> <b>Lecture 23</b>, February 19, Friday
+  <dd> Applications of Pumping Lemma
+  <dd> Proof that CFLs are closed under intersection with regular languages
+  <dd> Proof that CFLs are not closed under intersection and complementation
+  <dd> Proof of a nontrivial closure property: closure of CFLs under Shave operation
+  <dd> Reading: Lecture Notes + Sipser Chapter 2.1 (pages 106-109)
+</dl>
+
+
+<!--
+<a name="week8"><strong>Week 8</strong></a>
+<dl>
+  <dt> <b>Lecture 24</b>, February 22, Monday
+  <dd> Turing machine model and an example
+  <dd> Reading: Lecture Notes + Sipser Chapter 3.1 (pages 137-147)
+
+  <dt> <b>Lecture 25</b>, February 23, Tuesday, X-hour
+  <dd> Formalization of TM's computation
+  <dd> Definition of halting, decider, Turing-recognizable, Turing-decidable
+  <dd> Reading: Lecture Notes + Sipser Chapter 3.1 (pages 140-142) 
+
+  <dt> <b>Lecture 26</b>, February 24, Wednesday
+  <dd> Church-Turing Thesis
+  <dd> Multitape TM
+  <dd> Reading: Lecture Notes + Sipser Chapter 3.2 (pages 148-154)
+  <dd> <a href="homework/hw6.pdf">Homework 6</a> given out.
+
+  <dt> <b>Quiz 2</b>, February 25, Thursday, 7.00-8.00pm, Moore B03
+
+  <dt> <b>Lecture 27</b>, February 26, Friday
+  <dd> Equivalence of doubly infinite tape TMs, k-tape TMs, and nondeterministic TMs with basic TM
+  <dd> Random-access computers and their equivalence with basic TM (statement without proof)
+  <dd> Church-Turing thesis
+  <dd> Reading: Lecture Notes + Sipser Chapter 3.2 (pages 142-159)
+</dl>
+
+<a name="week9"><strong>Week 9</strong></a>
+<dl>
+  <dt> <b>Lecture 28</b>, March 1, Monday
+  <dd> Some decidable languages
+  <dd> Definition of A_TM
+  <dd> Reading: Lecture Notes + Sipser Chapter 4 (pages 165-173)
+
+  <dt> <b>Lecture 29</b>, March 2, Tuesday, X-hour
+  <dd> Proof that A_TM is recognizable, but is notdecidable
+  <dd> Complement of A_TM is unrecognizable
+  <dd> Reading: Lecture Notes + Sipser Chapter 4 (pages 173-182) 
+
+  <dt> <b>Lecture 30</b>, March 3, Wednesday
+  <dd> Reduction
+  <dd> Proving languages undecidable/unrecognizable via reductions
+  <dd> Reading: Lecture Notes + Sipser Chapter 5 (pages 187-192)
+  <dd> <a href="homework/hw7.pdf">Homework 7</a> given out.
+
+  <dt> <b>Lecture 31</b>, March 5, Friday
+  <dd> More examples of proving languages undecidable/unrecognizable via reductions
+  <dd> Reading: Lecture Notes + Sipser Chapter 5 (pages 159)
+</dl>
+
+<a name="week9"><strong>Week 10</strong></a>
+<dl>
+  <dt> <b>Lecture 32</b>, March 8, Monday
+  <dd> P, NP, Polynomial time reductions, NP-completeness, statement of Cook-Levin theorem
+  <dd> Reading: Lecture Notes + Sipser Chapter 7.2-7.4 (pages 256-274)
+
+  <dt> <b>Lecture 33</b>, March 9, Tuesday, X-hour
+  <dd> 3-SAT, CLIQUE, proof of NP-completeness of CLIQUE
+  <dd> Reading: Lecture Notes + Sipser Chapter 7.4 (pages 274-276) 
+
+  <dt> <b>Review Session</b>, March 11, Thursday, 1.00-3.00pm, 108 Kemeny
+  <dd> Here are the <a href="homework/review.pdf">Review Problems</a>
+  <dd> Here is the <a href="Exams/final2010.pdf">Final Exam</a>
+</dl>
+
+-->
+
+<!--
+
+<LI><B>Lecture 06</B>, Friday, October 4
+    <UL>
+    <LI> Pigeon-Hole Principle
+    <LI> Formal Language theory: Alphabet, String, Language
+    <LI> Examples of languages
+    <LI> Inductive definitions
+    <LI> Operations over languages
+    <LI> <b>Reading</b>: Lecture Notes
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 07</B>, Monday, October 7
+    <UL>
+    <LI> Operations over languages (Continued)
+    <LI> DFA, Examples
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.1 (up to page 43)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 08</B>, Tuesday, October 8, X-hour
+    <UL>
+    <LI> DFA, Examples
+    <LI> Formalization of DFA 
+    <LI> <b>Reading</b>: Lecture Notes 
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 09</B>, Wednesday, October 9
+    <UL>
+    <LI> Formalizing of DFA's computation
+    <LI> NFA, Examples
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.2 (up to page 52)
+    <LI> <a href="../Homework/HW2/hw2.html">HW 2</a> given out.
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 10</B>, Friday, October 11
+    <UL>
+    <LI> More NFA examples
+    <LI> <b>Reading</b>: Lecture Notes 
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 11</B>, Monday, October 14
+    <UL>
+    <LI> Formalization of NFA and its computation
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.2 (up to page 54)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 12</B>, Tuesday, October 15, X-hour
+    <UL>
+    <LI> Equivalence of DFAs and NFAs
+    <LI> Closure of regular languages under union
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.2 (up to page 60) 
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 13</B>, Wednesday, October 16
+    <UL>
+    <LI> Closure of regular languages under concatenation and *
+    <LI> Closure of regular languages under intersection
+    <LI> Regular expressions
+    <LI> <a href="../Homework/HW3/hw3.pdf">HW 3</a> given out.
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.3 (up to page 66)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 14</B>, Friday, October 19
+    <UL>
+    <LI> Equivalence of regular expressions and finite automata
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.3 (up to page 76)
+    </UL>
+<P>
+</LI>
+
+
+<LI><B>Lecture 15</B>, Monday, October 21
+    <UL>
+    <LI> Pumping Lemma
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.4 (up to page 80)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Quiz 1</B>, Tuesday, October 22, X-hour
+    <UL> 
+    <LI> <a href="../Exams/Quiz1/quiz1.pdf">Quiz 1</a>
+    <LI> <a href="../Exams/Quiz1/quiz1solution.ps">Solutions to Quiz 1 (PS)</a>
+    <LI> <a href="../Exams/Quiz1/quiz1solution.pdf">Solutions to Quiz 1 (PDF)</a>
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 16</B>, Wednesday, October 23
+    <UL>
+    <LI> Applying Pumping Lemma: Proving languages nonregular
+    <LI> <a href="../Homework/HW4/hw4.pdf">HW 4</a> given out.
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 1.4 (pages 80 to 83)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 17</B>, Friday, October 25
+    <UL>
+    <LI> A complex example on how to prove closure
+    <LI> <b>Reading</b>: Lecture Notes 
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 18</B>, Monday, October 28
+    <UL>
+    <LI> CFGs: Examples
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 2.1 (up to page 97)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 19</B>, Tuesday, October 29, X-hour
+    <UL>
+    <LI> More CFL examples
+    <LI> Formal definition of CFLs
+    <LI> <b>Reading</b>: Lecture Notes
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 20</B>, Wednesday, October 30
+    <UL>
+    <LI> Closure of CFLs under union, concatenation and star
+    <LI> Ambiguity
+    <LI> PDAs
+    <LI> <a href="../Exams/Midterm/midterm.pdf">Midterm</a> given out.
+    <LI> <b>Reading</b>: Lecture Notes + Sipser (pages 97, 98)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 21</B>, Friday, November 1
+    <UL>
+    <LI> PDA Examples 
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 2.2 (pages 101 to 106)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 22</B>, Monday, November 4
+    <UL>
+    <LI> More PDA examples
+    <LI> Formalization of PDA and its computation
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 2.2 (pages 101 to 106)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 23</B>, Tuesday, November 5, X-hour
+    <UL>
+    <LI> Converting a CFG into a PDA
+    <LI> Converting a PDA into a CFG (not completed)
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 2.2 (pages 106 to 114)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 24</B>, Wednesday, November 6
+    <UL>
+    <LI> Converting a PDA into a CFG (completed)
+    <LI> Pumping Lemma: Statement and applications
+    <LI> <a href="../Homework/HW5/hw5.pdf">HW 5</a> given out.
+    <LI> <a href="../Homework/HW5/hw5hint.pdf">HW 5 Hint</a>
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 2.3 (pages 115 to end of second chapter)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 25</B>, Friday, November 8
+    <UL>
+    <LI> Proof of Pumping Lemma
+    <LI> Nonclosure of CFLs under intersection and complementation
+    <LI> Closure of CFLs under intersection with regular languages
+    <LI> <b>Reading</b>: Lecture Notes + Sipser 2.3 (pages 115, 116)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 26</B>, Monday, November 11
+    <UL>
+    <LI> Closure of CFLs under INIT
+    <LI> Chomsky Normal Form
+    <LI> Turing Machine model
+    <LI> <b>Reading</b>: Lecture Notes + Pages 98, 99 and 100 in Sipser 
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 27</B>, Tuesday, November 12, X-hour
+    <UL>
+    <LI> Turing machine examples 
+    <LI> <b>Reading</b>: Lecture Notes + Sipser pages 125 to 135
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 28</B>, Wednesday, November 13
+    <UL>
+    <LI> Formalizing Turing machine computation
+    <LI> Some TM Variants
+    <LI> <b>Reading</b>: Lecture Notes
+    <LI> <a href="../Homework/HW6/hw6.pdf">HW 6</a> given out
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 29</B>, Friday, November 15
+    <UL>
+    <LI> More TM variants: doubly infinite tape, multiple tapes, nondeterminism
+    <LI> Their equivalence to the basic TM model
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 30</B>, Monday, November 18
+    <UL>
+    <LI> Random Access Machine, its equivalence to TM
+    <LI> Church-Turing Thesis
+    <LI> Equivalence of enumerators and recognizers
+    <LI> <b>Reading</b>: Lecture Notes
+    </UL>
+<P>
+</LI>
+
+<LI><B>Quiz 2</B>, Tuesday, November 19, X-hour
+    <UL>
+    <LI> <a href="../Exams/Quiz2/quiz2.pdf">Quiz 2</a>
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 31</B>, Wednesday, November 20
+    <UL>
+    <LI> Solving yes/no problems is the same as deciding languages
+    <LI> Encoding objects into binary strings
+    <LI> Some decidable problems
+    <LI> Existence of unrecognizable languages
+    <LI> A_TM is recognizable
+    <LI> <b>Reading</b>: Lecture Notes
+    <LI> <a href="../Homework/HW7/hw7.pdf">HW 7</a> given out
+    </UL>
+<P>
+</LI>
+-->
+
+<!--
+<LI><B>Lecture 31</B>, Monday, November 26
+    <UL>
+    <LI> Proof of undecidability of A_TM (repeated)
+    <LI> Proof of unrecognizability of complement of A_TM
+    <LI> Countability argument to show that there are uncountably many unrecognizable languages
+    <LI> Reductions to prove other languages undecidable
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 32</B>, Tuesday, November 27, X-hour
+    <UL>
+    <LI> Reduction: Proving E_TM is undecidable
+    <LI> Reduction: Proving REG_TM is undecidable
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 33</B>, Wednesday, November 28
+    <UL>
+    <LI> Reduction: Proving EQ_TM is undecidable
+    <LI> Proving languages unrecognizable:
+         NONREG_TM is unrecognizable
+    <LI> Statement and intuition for Rice's theorem
+    <LI> Statement of PCP (Post Correspondence Problem)
+    </UL>
+<P>
+</LI>
+
+<LI><B>Lecture 34</B>, Friday, November 30
+    <UL>
+    <LI> NP-completeness: P, NP, examples of problems in NP
+    </UL>
+<P>
+</LI>
+
+
+<P>
+<LI><B>Lecture 02</B>, Mon 01-08-01
+    <UL>
+    <LI> DFA's, Regular Languages
+    <LI><EM>Reading:</EM> Sipser 0, 1.1
+    </UL>
+<P>
+<LI><B>Lecture 03</B>, Tue 01-09-01
+    <UL>
+    <LI> NFA's, Equivalance of NFA's and DFA's
+    <LI><EM>Reading:</EM> Sipser 1.2
+    </UL>
+<P>
+<LI><B>Lecture 04</B>, Wed 01-10-01
+    <UL>
+    <LI> Closure Properties
+    <LI><EM>Reading:</EM> Sipser 1.2
+    <LI><A href="../Homeworks/hw.01.html">Homework 01</A> assigned
+    </UL>
+<P>
+<LI><B>Lecture 05</B>, Fri 01-12-01
+    <UL>
+    <LI> Closure Properties, Regular Expressions 
+    <LI><EM>Reading:</EM> Sipser 1.3
+    </UL>
+<P>
+<LI><B>Lecture 06</B>, Tue  01-16-01
+    <UL>
+    <LI> Regular Expressions, Pumping Lemma
+    <LI><EM>Reading:</EM> Sipser 1.3-1.4
+    </UL>
+<P>
+<LI><B>Lecture 07</B>, Wed 01-17-01 
+    <UL>
+    <LI> Pumping Lemma
+    <LI><EM>Reading:</EM> Sipser 1.3-1.4
+    <LI><A href="../Homeworks/hw.01.html">Homework 01</A> due
+    <LI><A href="../Homeworks/hw.02.html">Homework 02</A> assigned
+    </UL>
+<P>
+<LI><B>Lecture 08</B>, Fri 01-19-01 
+    <UL>
+    <LI> Pushdown Automata
+    <LI><EM>Reading:</EM> Sipser 2.1-2.2
+    </UL>
+<P>
+<LI><B>Lecture 09</B>, Mon 01-22-01 
+    <UL>
+    <LI> Context Free Languages
+    <LI><EM>Reading:</EM> Sipser 2.1-2.2
+    </UL>
+<P>
+<LI><B>Lecture 10</B>, Wed 01-24-01
+    <UL>
+    <LI> Ambiguity, Chomsky Normal Form
+    <LI><EM>Reading:</EM> Sipser 2.1-2.2
+    <LI><A href="../Homeworks/hw.02.html">Homework 02</A> due
+    <LI><A href="../Homeworks/hw.03.html">Homework 03</A> assigned
+    </UL>
+<P>
+<LI><B>Lecture 11</B>, Fri 01-26-01
+    <UL>
+    <LI> Equivalence of Pushdown Automata and CFG's
+    <LI><EM>Reading:</EM> Sipser 2.2
+    </UL>
+<P>
+<LI><B>Lecture 12</B>, Mon 01-29-01
+    <UL>
+    <LI> Pumping Lemma for CFLs
+    <LI><EM>Reading:</EM> Sipser 2.3
+    </UL>
+<P>
+<LI><B>Lecture 13</B>, Wed 01-31-01
+    <UL>
+    <LI> Pumping Lemma for CFLs
+    <LI><EM>Reading:</EM> Sipser 2.3
+    <LI><A href="../Homeworks/hw.03.html">Homework 03</A> due
+    <LI><em>Midterm exam assigned</em>
+    </UL>
+<P>
+<LI><B>Lecture 14</B>, Fri 02-02-01
+    <UL>
+    <LI> Turing Machines 
+    <LI><EM>Reading:</EM> Sipser 3.1
+    </UL>
+<P>
+<LI><B>Lecture 15</B>, Mon 02-05-01
+    <UL>
+    <LI> Turing machine variants
+    <LI><EM>Reading:</EM> Sipser 3.2
+    </UL>
+<P>
+<LI><B>Lecture 16</B>, Wed 02-07-01
+    <UL>
+    <LI> Enumerators 
+    <LI><EM>Reading:</EM> Sipser 3.2-3.3
+    <LI><em>Midterm exam due</em>
+    <LI><A href="../Homeworks/hw.04.html">Homework 04</A> assigned
+    </UL>
+<P>
+<LI><B>Lecture 17</B>, Mon 02-12-01 
+    <UL>
+    <LI> Decidability
+    <LI><EM>Reading:</EM> Sipser 4.1
+    </UL>
+<P>
+<LI><B>Lecture 18</B>, Tue 02-13-01
+    <UL>
+    <LI> Diagonalization
+    <LI><EM>Reading:</EM> Sipser 4.2
+    </UL>
+<P>
+<LI><B>Lecture 19</B>, Wed 02-14-01
+    <UL>
+    <LI> Halting Problem
+    <LI><EM>Reading:</EM> Sipser 4.2
+    <LI><A href="../Homeworks/hw.04.html">Homework 04</A> due
+    <LI><A href="../Homeworks/hw.05.html">Homework 05</A> assigned
+    </UL>
+<P>
+<LI><B>Lecture 20</B>, Fri 02-16-01
+    <UL>
+    <LI> Reducibility
+    <LI><EM>Reading:</EM> Sipser 5.1-5.3
+    </UL>
+<P>
+<LI><B>Lecture 21</B>, Mon 02-19-01
+    <UL>
+    <LI> Reducibility
+    <LI><EM>Reading:</EM> Sipser 5.1-5.3
+    </UL>
+<P>
+<LI><B>Lecture 22</B>, Wed 02-21-01
+    <UL>
+    <LI> Time Complexity
+    <LI><EM>Reading:</EM> Sipser 7.1
+    <LI><A href="../Homeworks/hw.05.html">Homework 05</A> due
+    <LI><A href="../Homeworks/hw.06.html">Homework 06</A> assigned
+    </UL>
+<P>
+<LI><B>Lecture 23</B>, Fri 02-23-01
+    <UL>
+    <LI> P and NP
+    <LI><EM>Reading:</EM> Sipser 7.2-7.3
+    </UL>
+<P>
+<LI><B>Lecture 24</B>, Mon 02-26-01
+    <UL>
+    <LI> Polytime Reductions
+    <LI><EM>Reading:</EM> Sipser 7.4
+    </UL>
+<P>
+<LI><B>Lecture 25</B>, Wed 02-28-01
+    <UL>
+    <LI> NP-Completeness
+    <LI><EM>Reading:</EM> Sipser 7.4
+    <LI><A href="../Homeworks/hw.06.html">Homework 06</A> due
+    <LI><A href="../Homeworks/hw.07.html">Homework 07</A> assigned
+    </UL>
+<P>
+<LI><B>Lecture 26</B>, Fri 03-02-01
+    <UL>
+    <LI> NP-Completeness
+    <LI><EM>Reading:</EM> Sipser 7.4-7.5
+    </UL>
+<P>
+<LI><B>Lecture 27</B>, Mon 03-05-01
+    <UL>
+    <LI> NP-Completeness
+    <LI><EM>Reading:</EM> Sipser 7.4-7.5
+    </UL>
+<P>
+<LI><B>Lecture 28</B>, Wed 03-07-01
+    <UL>
+    <LI> NP-Completeness
+    <LI><EM>Reading:</EM> Sipser 7.4-7.5
+    <LI><A href="../Homeworks/hw.07.html">Homework 07</A> due
+    <LI><em>Final exam assigned</em>
+    </UL>
+<p>
+<li>Sat 03-10-01
+    <ul>
+    <li><em>Final exam due</em>, 5pm
+    </ul>
+</OL>
+-->
+
+</BODY>
+
+</HTML>

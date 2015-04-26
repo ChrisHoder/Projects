@@ -1,0 +1,433 @@
+http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Frames_and_rigid_bodies
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Frames and rigid bodies" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs54/opensearch_desc.php" title="cs54:  Introduction to Robotics (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs54:  Introduction to Robotics RSS Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs54:  Introduction to Robotics Atom Feed" href="/~robotics/cs54/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Frames and rigid bodies - cs54:  Introduction to Robotics</title>
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs54/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs54/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs54/skins";
+		var wgArticlePath = "/~robotics/cs54/index.php/$1";
+		var wgScriptPath = "/~robotics/cs54";
+		var wgScript = "/~robotics/cs54/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Frames_and_rigid_bodies";
+		var wgTitle = "Frames and rigid bodies";
+		var wgAction = "view";
+		var wgArticleId = "70";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1113;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs54/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs54/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Frames_and_rigid_bodies skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs54/index.php?title=Special:UserLogin&amp;returnto=Frames_and_rigid_bodies" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> Introduction to robotics </div>
+<div id="site-subtitle">Dartmouth Computer Science cs54, Winter 2011</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs54/index.php?title=Talk:Frames_and_rigid_bodies&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/~robotics/cs54/index.php?title=Frames_and_rigid_bodies&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs54/index.php?title=Frames_and_rigid_bodies&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Frames and rigid bodies</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs54:  Introduction to Robotics</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1"><a href="#Displacements"><span class="tocnumber">2</span> <span class="toctext">Displacements</span></a>
+<ul>
+<li class="toclevel-2"><a href="#All_displacements_in_the_plane_are_pure_rotations_.28or_translations.29"><span class="tocnumber">2.1</span> <span class="toctext">All displacements in the plane are pure rotations (or translations)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Reuleaux.27s_method_for_analyzing_planar_rigid-body_grasps"><span class="tocnumber">3</span> <span class="toctext">Reuleaux's method for analyzing planar rigid-body grasps</span></a></li>
+<li class="toclevel-1"><a href="#Vectors"><span class="tocnumber">4</span> <span class="toctext">Vectors</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Dot_products"><span class="tocnumber">4.1</span> <span class="toctext">Dot products</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Frames"><span class="tocnumber">5</span> <span class="toctext">Frames</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Cross_products_and_handedness"><span class="tocnumber">5.1</span> <span class="toctext">Cross products and handedness</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Geometry_of_matrix_multiplication"><span class="tocnumber">6</span> <span class="toctext">Geometry of matrix multiplication</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Matrix_multiplication_as_a_weighted_sum_of_column_vectors"><span class="tocnumber">6.1</span> <span class="toctext">Matrix multiplication as a weighted sum of column vectors</span></a></li>
+<li class="toclevel-2"><a href="#Matrix_multiplication_as_a_projection_onto_row_vectors"><span class="tocnumber">6.2</span> <span class="toctext">Matrix multiplication as a projection onto row vectors</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Representing_displacements"><span class="tocnumber">7</span> <span class="toctext">Representing displacements</span></a></li>
+<li class="toclevel-1"><a href="#Rotation_matrices"><span class="tocnumber">8</span> <span class="toctext">Rotation matrices</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Two_dimensions"><span class="tocnumber">8.1</span> <span class="toctext">Two dimensions</span></a></li>
+<li class="toclevel-2"><a href="#Three_dimensions"><span class="tocnumber">8.2</span> <span class="toctext">Three dimensions</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Euler_angles"><span class="tocnumber">8.2.1</span> <span class="toctext">Euler angles</span></a></li>
+<li class="toclevel-3"><a href="#SO.283.29_rotation_matrics"><span class="tocnumber">8.2.2</span> <span class="toctext">SO(3) rotation matrics</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Homogeneous_coordinates"><span class="tocnumber">9</span> <span class="toctext">Homogeneous coordinates</span></a></li>
+<li class="toclevel-1"><a href="#Other_ways_to_represent_rotations:_Axis-angle.2C_Quaternions"><span class="tocnumber">10</span> <span class="toctext">Other ways to represent rotations: Axis-angle, Quaternions</span></a></li>
+<li class="toclevel-1"><a href="#Converting_between_rotation_representations"><span class="tocnumber">11</span> <span class="toctext">Converting between rotation representations</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Definition" id="Definition"></a><h2> <span class="mw-headline">Definition</span></h2>
+<p>A <b>rigid body</b> is a system of particles with the constraint that the distance between any pair of particles is fixed.  No physical body is entirely rigid, but rigid-body models are good enough for many purposes. There are situations where rigid-body models do not work as we would like; for example, during collisions, the forces generated depend on deformations of the bodies.
+</p>
+<a name="Displacements" id="Displacements"></a><h2> <span class="mw-headline"> Displacements</span></h2>
+<p>A <b>displacement</b> is a transformation of a system that maintains the distance between every pair of points in the system.  Rigid bodies are therefore systems for which we only allow displacements.
+</p><p>There are two special types of displacements:
+</p><p>A <b>rotation</b> is a displacement that leaves a single point (called the center of rotation) fixed.  Notice that there's no reason that the point has to a particle in the system; the fixed point could be anywhere.  Another thing to notice is that this definition of rotation applies in any number of dimensions.
+</p><p>A <b>translation</b> is a displacement where all points move along parallel lines.
+</p><p>There are displacements in 3D that are neither pure translations nor pure rotations, but it turns out that they are just combinations of translations and rotations.  In fact, given a displacement, you choose an arbitrary point in space, and get that displacement by a rotation that leaves that point fixed, followed by a translation.  (<i>Intuition</i>.  Think about a rigid body in two configurations.  Choose a point O.  Rotate the body however you like, but keeping the distance of every point on the rigid body the same distance from O.  You can eventually get he body to be in the same orientation as the goal configuration.  Then you'll have to do a translation to get the body into the right place.  A formal proof can be found in the Mason text.) 
+</p>
+<a name="All_displacements_in_the_plane_are_pure_rotations_.28or_translations.29" id="All_displacements_in_the_plane_are_pure_rotations_.28or_translations.29"></a><h3> <span class="mw-headline"> All displacements in the plane are pure rotations (or translations) </span></h3>
+<p>A displacement can be viewed as a translation composed with a rotation about any point.  However, if you choose that point carefully in the plane, you can get rid of the translation component.  
+</p><p>Here's an experiment to try for yourself.  Cut out a "rigid body" from a piece of paper; any shape you like.  Mark two different points on the body, A and B.  Outline the body on a piece of "background" paper, and mark the two points also.  Move the body from one configuration to another -- this motion is a displacement.  Outline the body in its new configuration on the background paper, and mark the two points in their new configurations, A' and B'.  Notice that the center of rotation, if it exists, must be on the perpendicular bisector of the segment AA'; draw this bisector.  The center of rotation must also be on the perpendicular bisector of BB'; draw this bisector.  The center of rotation must be at the intersection of the two bisectors you just drew.
+</p><p>But what if the two bisectors are parallel, and don't intersect?  That's a pure translation.  It doesn't appear to leave any point fixed.  However, if the motion were <i>almost</i> a pure translation, the lines would intersect, just very far away.  As we get closer and closer to translation, that intersection moves towards infinity.  In <i>projective geometry</i>, we are allowed to have points at infinity -- a translation is therefore a rotation about a point at infinity, in a particular direction.  
+</p><p><br />
+The fact that displacements in the plane are pure rotations is a special case of the fact that <b>all displacements in space are screws (Chasle's theorem)</b>.  A <i>screw</i> is a rotation about an axis, combined with a translation parallel to that axis.  There is a proof of Chasle's theorem in the Mason book.
+</p>
+<a name="Reuleaux.27s_method_for_analyzing_planar_rigid-body_grasps" id="Reuleaux.27s_method_for_analyzing_planar_rigid-body_grasps"></a><h2> <span class="mw-headline"> Reuleaux's method for analyzing planar rigid-body grasps</span></h2>
+<p>The fact that all displacements in the plane are pure rotations allows graphical methods for analysis of rigid body motion.  For example, consider grasping a rigid body with <i>n</i> point fingers.  Assume that the fingers are frictionless, and apply unilateral forces (they push, but do not pull).  How many fingers need to be placed around the boundary of a planar rigid body to immobilize it?  
+</p><p>Here is a triangular rigid body being grasped by three fingers (one red, one green, and one blue).  
+</p><p><br />
+</p>
+<div class="center"><div class="floatnone"><a href="/~robotics/cs54/index.php/File:Reuleaux.png" class="image" title="Reuleaux.png"><img alt="" src="/~robotics/cs54/images/b/b3/Reuleaux.png" width="234" height="221" border="0" /></a></div></div>
+<p><br />
+Is the body immobilized?  What if we add a finger at the location shown by the dotted circle?  First, consider the way a single finger restricts the motion of the body.  For example, the red finger.  Any displacement can be described by a rotation center, and a distance and direction to rotate around that rotation center.  So pick a rotation center.  Notice that either the finger prohibits clockwise (negative) rotations, or prohibits counterclockwise (positive) rotations, unless the rotation center is on the line through the finger parallel to the normal.  
+</p><p>So we can label each rotation center as allowing positive or negative rotations.  The red + and - signs show the allowed rotation for rotation centers at various locations.  
+</p><p>Now consider the blue finger.  Each rotation center may be similarly positive, or negative.  What if a rotation center is positive for the red finger, and negative for the blue?  That means that rotation in either direction will cause a collision with at least one finger, so these rotation centers are not possible.  
+</p><p>We add each additional finger, labeling rotation centers, and removing regions where the signs conflict.  If, at the end, the entire plane of rotation centers has been removed, the object is in an immobilizing grasp.
+</p>
+<a name="Vectors" id="Vectors"></a><h2> <span class="mw-headline"> Vectors</span></h2>
+<p>Wikipedia has a useful <a href="http://en.wikipedia.org/wiki/Euclidean_vector" class="external text" title="http://en.wikipedia.org/wiki/Euclidean_vector" rel="nofollow">page on vectors</a>.  A vector is a direction in space, with an associated magnitude.  Vectors have a initial point and a terminal point, but often we do not write down the initial point, and instead just write the vector as the difference between the two points.  For example, we would say that the vector from the initial point (2, 3, 1) to the terminal point (10, 10, 10) is (8, 7, 9).  We should not forget that the vector has an initial point.  
+</p><p>Vectors can be written vertically (a column vector) or horizontally (a row vector).  Typically we will write vectors as column vectors, i.e.
+</p>
+<dl><dd><img class="tex" alt="&#10;x = \left(\begin{matrix}&#10;8 \\&#10;7 \\&#10;9 &#10;\end{matrix}&#10;\right)&#10;" src="/~robotics/cs54/images/math/4/a/4/4a487d12ee4af12142e62b5b316a908b.png" />
+</dd></dl>
+<p>Transposition changes a row vector to a column vector, and vice versa.  Transposition is denoted by a superscript T; <span class="texhtml"><i>x</i><sup><i>T</i></sup> = (8,7,9)</span>.
+</p><p>We say that a set of vectors is <i>independent</i> if none of the vectors can be expressed as a linear combination of the others.
+</p><p>We will use vectors in many ways; one use is to express position.  We label some point in the world the origin, and any other location can be expressed by a vector giving the location of that location with respect to the origin.
+</p><p><br />
+</p>
+<a name="Dot_products" id="Dot_products"></a><h3> <span class="mw-headline"> Dot products</span></h3>
+<p>The dot product of two vectors returns a scalar, and can be computed in two ways.  First, you can multiply the corresponding elements of the vectors and add them: <img class="tex" alt="a \cdot b = a_1 b_1 + a_2 b_2 + a_3 b_3 +\ldots" src="/~robotics/cs54/images/math/e/6/e/e6eefbad9196d0bb847e486770ca466f.png" />.  The length of a vector is the square root of the vector of the dot product of that vector with itself.  <img class="tex" alt="||a|| = \sqrt{a \cdot a}" src="/~robotics/cs54/images/math/a/d/0/ad09faed4909a4641111080aa5b1bd28.png" />.
+</p><p>The second way to compute a dot product is as the cosine of the angle between the two vectors, multiplied by the lengths of the vectors.   <img class="tex" alt="a \cdot b = ||a|| ||b|| \cos \alpha" src="/~robotics/cs54/images/math/a/f/d/afd5902471f740213c8c297345a086c7.png" />.  The equivalence of these two formulas define cosine in higher dimensions.  If you want to compute the angle between two vectors, scale the vectors be be unit vectors, and take the arccosine of the dot product.
+</p><p>Dot products are discussed <a href="http://en.wikipedia.org/wiki/Dot_product" class="external text" title="http://en.wikipedia.org/wiki/Dot_product" rel="nofollow">at more length on Wikipedia</a>.  You should make sure you understand the geometric interpretation of dot products as a scaled projection of one vector onto another.
+</p><p>There are several different types of notation for the dot product.  Sometimes you'll see a dot between the vectors:  <img class="tex" alt="a \cdot b" src="/~robotics/cs54/images/math/2/3/f/23f67728366e547d92590bc017f83b94.png" />.  Sometimes you'll simply see a row vector multiplied by a column vector:  <span class="texhtml"><i>a</i><sup><i>T</i></sup><i>b</i></span>.  Sometimes you'll see angle brackets:  <img class="tex" alt="\langle a, b \rangle" src="/~robotics/cs54/images/math/e/c/3/ec35790be969f4af7fd4ad4c2782514f.png" />.
+</p>
+<a name="Frames" id="Frames"></a><h2> <span class="mw-headline"> Frames </span></h2>
+<p>A frame in three dimensions is a collection of three independent vectors with the same initial point.  Typically we will consider orthogonal frames, where the dot product of any pair of vectors is zero.  We will also use only vectors of unit length.  
+</p><p>We can attach a frame to the world, to a rigid body, or to any other portion of the world.  For example, to describe a coordinate system on the world, we chose some point and call it the origin, then attach a frame to that point so that the vectors point in convenient directions, which we might call x, y, and z.  
+</p><p>We can describe the orientation of a frame using a matrix.  For example,
+</p>
+<dl><dd><img class="tex" alt="&#10;F_1 = \left[&#10;\begin{array}{ccc}&#10;\sqrt{3}/2 &amp; -.5 &amp; 0\\&#10;.5 &amp; \sqrt{3}/2 &amp; 0\\&#10;0 &amp; 0 &amp; 1&#10;\end{array}&#10;\right]&#10;" src="/~robotics/cs54/images/math/4/d/b/4db69d36bf7d061eb7da55037fbce2ea.png" />
+</dd></dl>
+<p>The columns of the matrix are the three vectors that make up the frame.  We would also need to know where the origin of the frame was.  Let's say that the origin of the frame <span class="texhtml"><i>F</i><sub>1</sub></span> is (0, 2, 0).
+</p><p>We can attach a frame rigidly to a rigid body -- this is called a body-fixed frame.  Locations of points on the body can then be expressed relative to a frame.  For example, we might talk about a point <span class="texhtml"><sup>1</sup><i>p</i><sub>1</sub></span> with location <span class="texhtml">(1,0,0)</span> in the frame <span class="texhtml"><i>F</i><sub>1</sub></span>.  The superscript before the variable indicates that the vector is expressed relative to that frame.  The coordinates of that same point would be very different if expressed relative to the world frame:  in this case, <img class="tex" alt="(\sqrt{3}/2, 2.5, 0)" src="/~robotics/cs54/images/math/9/5/4/95400b30310cc709be3e7c193e8b4030.png" />.  
+Sometimes we leave the superscript off, if the position is relative to a world frame, or we have been very careful to say which frame we intend the position to be relative to.    
+</p><p>If we attach a frame to a rigid body, the location of the frame, as well as the matrix associated with the frame, determine where every point in the rigid body is.  Therefore, when we think about moving rigid bodies, we tend to attach a frame to them, and then perform all computations on that frame, rather than worrying about where the individual particles in the body are.  This is one reason rigid-body models are so convenient.  
+</p>
+<a name="Cross_products_and_handedness" id="Cross_products_and_handedness"></a><h3> <span class="mw-headline"> Cross products and handedness</span></h3>
+<p>We'll be using frames as coordinate systems, and there is one more convention to know about:  handedness.  If you point the fingers of your right hand along the first vector, and curl your fingers towards the second vector, your thumb will point either directly along the third vector of an orthogonal frame, or directly oppose the third vector.  We say the frame, or coordinate system, is "right-handed" if your thumb points along the third vector.  Unless otherwise specified, we will use right-handed frames.
+</p><p>If you've taken linear algebra or a basic physics class, you've seen the cross product.  The cross-product is an operation that takes two vectors in <img class="tex" alt="\mathbf R^3" src="/~robotics/cs54/images/math/3/d/a/3da9c37021d9c642140ee55b4bbb0228.png" /> and returns a third vector.  The direction of the new vector is perpendicular to each of the first two vectors, and the magnitude of the new vector is equal to the scalar product of the magnitudes of the first two vectors, times the sine of the angle between those vectors.  But there are two directions perpendicular to the first two vectors.  The cross-product is defined so that if you wrap the finger of your right hand from the first vector to the second, your thumb points in the direction of the computed vector.
+</p><p>Notice that the handedness of cross products means that <img class="tex" alt="a \times b = - b \times a" src="/~robotics/cs54/images/math/1/3/4/13435abd02fd94cda5d6e91d1f4bdd43.png" />; a minus sign is introduces if you swap the orders of the vectors.  Formally, this property is called "skew-symmetry".   
+</p><p>Given the first two vectors of a right-handed orthogonal frame, you can construct the third vector by taking the cross product.  Maybe you don't remember how to compute the cross product.  One option is to look up the <a href="http://en.wikipedia.org/wiki/Cross_product" class="external text" title="http://en.wikipedia.org/wiki/Cross_product" rel="nofollow">formula on Wikipedia</a>.  But there's also a clever trick to remember how.  In physics the coordinate vectors are sometimes called <b>i</b>, <b>j</b>, and <b>k</b>. So the sum <img class="tex" alt="3\mathbf{i} + 2\mathbf{j} + \mathbf{k}" src="/~robotics/cs54/images/math/c/b/4/cb436d52c87cf216712e2372b38e559c.png" /> is an alternate way of writing the vector <span class="texhtml">(3,2,1)</span>.  It turns out that the cross product of two vectors can be written as the determinant of a matrix in which <b>i</b>, <b>j</b>, and <b>k</b> are the 'elements' of the first row.  (It may seem odd to have coordinate directions be elements of a matrix, and to compute a determinant that is not a scalar.  This is called an "abuse of notation".) 
+</p>
+<dl><dd><img class="tex" alt="&#10;a \times b =&#10;\mathrm{Det} &#10;\left[&#10;\begin{array}{ccc}&#10;\mathbf{i}&amp; \mathbf{j} &amp; \mathbf{k} \\&#10;a_1 &amp; a_2 &amp; a_3\\&#10;b_1 &amp; b_2 &amp; b_3&#10;\end{array}&#10;\right]&#10;" src="/~robotics/cs54/images/math/0/b/7/0b7055fb3beeca62a8e3151e96a52c72.png" />  
+</dd></dl>
+<p>Of course, you might not remember how to compute the determinant of a 3x3 matrix.  Fortunately, <a href="http://en.wikipedia.org/wiki/Cofactor_expansion" class="external text" title="http://en.wikipedia.org/wiki/Cofactor_expansion" rel="nofollow">Wikipedia does</a>.
+</p>
+<a name="Geometry_of_matrix_multiplication" id="Geometry_of_matrix_multiplication"></a><h2> <span class="mw-headline"> Geometry of matrix multiplication</span></h2>
+<p>You remember how to multiply matrices by vectors and matrices by matrices.  There are useful geometric interpretations of matrix multiplication.  A matrix is a rectangle containing numbers.  
+</p>
+<a name="Matrix_multiplication_as_a_weighted_sum_of_column_vectors" id="Matrix_multiplication_as_a_weighted_sum_of_column_vectors"></a><h3> <span class="mw-headline"> Matrix multiplication as a weighted sum of column vectors</span></h3>
+<p>We could also think of a matrix as being a row vector whose elements are column vectors.  That is,
+</p>
+<dl><dd><img class="tex" alt="&#10;Ax = &#10;\left[&#10;\begin{array}{ccc}&#10;a_{11} &amp; a_{12} &amp; a_{13}\\&#10;a_{21} &amp; a_{22} &amp; a_{23} \\&#10;a_{31} &amp; a_{32} &amp; a_{33}&#10;\end{array}&#10;\right]&#10;x&#10;=&#10;a_1 x_1 + a_2 x_2 + a_3 x_3  &#10;" src="/~robotics/cs54/images/math/2/f/5/2f5883ba658bb9c7bbb3830f6955306d.png" />
+</dd></dl>
+<p>where <span class="texhtml"><i>a</i><sub>1</sub></span>, <span class="texhtml"><i>a</i><sub>2</sub></span>, and <span class="texhtml"><i>a</i><sub>3</sub></span> are the columns of <i>A</i>.  The matrix-vector product scales each of these vectors by an element of <span class="texhtml"><i>x</i></span> and takes the sum.  So, matrix multiplication can be seen as taking a weighted sum of the column vectors of the matrix.
+</p>
+<a name="Matrix_multiplication_as_a_projection_onto_row_vectors" id="Matrix_multiplication_as_a_projection_onto_row_vectors"></a><h3> <span class="mw-headline"> Matrix multiplication as a projection onto row vectors</span></h3>
+<p>A matrix could also be viewed as a column vector whose elements are row vectors.  If <span class="texhtml"><i>b</i><sub>1</sub></span>, <span class="texhtml"><i>b</i><sub>2</sub></span>, and <span class="texhtml"><i>b</i><sub>3</sub></span> are the rows of the matrix B, then
+</p>
+<dl><dd><img class="tex" alt="&#10;B x = &#10;\left(&#10;\begin{array}{c}&#10;b_1 \cdot x \\&#10;b_2 \cdot x \\&#10;b_3 \cdot x&#10;\end{array}&#10;\right)&#10;" src="/~robotics/cs54/images/math/9/d/a/9da7b78a649589a5b49f9f38604932df.png" />
+</dd></dl>
+<p>That is, the elements of the resulting vector are the projection of the original vector onto each of the rows of the matrix.  We'll come back to this idea in the future when we study robot grasping.
+</p>
+<a name="Representing_displacements" id="Representing_displacements"></a><h2> <span class="mw-headline"> Representing displacements</span></h2>
+<p>Displacements are combinations of rotations and translations, pure rotations, or pure translations.  We would like to represent displacements mathematically, so that we can build algorithms that generate or interpret rigid body motions.
+</p><p>There are three things we want to do:
+</p>
+<ul><li> Represent (describe) displacements
+</li><li> Transform a rigid body system using a displacement
+</li><li> Given a point in one coordinate system, find its coordinates relative to a different frame
+</li></ul>
+<p>How we do this depends somewhat on how we represent rigid bodies.  For now, assume the rigid body system is described as a collection of points in the plane or in space, with a 2-vector or 3-vector giving the Cartesian location of each point relative to some frame.
+</p><p>Translation is easy to represent:  We just use a vector describing the magnitude of the components of the translation along the axes of some frame. 
+</p><p>Transformation by a translation is then implemented by vector addition of each point in the system and the translation vector.  The inverse of a translation is represented by the vector multiplied by negative one.
+</p>
+<a name="Rotation_matrices" id="Rotation_matrices"></a><h2> <span class="mw-headline"> Rotation matrices</span></h2>
+<p>Rotations leave one point fixed.  Since any displacement can be viewed as a rotation about some arbitrary point, combined with a translation, it follows that a rotation can be viewed as a translation, a rotation about the origin, and a translation that is the inverse of the first translation.  For this reason, we will only consider rotations about the origin.
+</p>
+<a name="Two_dimensions" id="Two_dimensions"></a><h3> <span class="mw-headline"> Two dimensions</span></h3>
+<p>Consider a rotation in two dimensions about the origin by the angle <span class="texhtml">&theta;</span>.  We could represent this rotation just by a single number, the value of <span class="texhtml">&theta;</span>.
+</p><p>How can we then implement transformation by rotation?  Probably you've seen a formula that looks like this:
+</p>
+<dl><dd><span class="texhtml"><i>x</i>' = <i>R</i><i>x</i></span>
+</dd></dl>
+<p>where
+</p>
+<dl><dd><img class="tex" alt="&#10;R = &#10;\left[&#10;\begin{array}{cc}&#10;\cos \theta &amp; -\sin \theta \\&#10;\sin \theta &amp; \cos \theta  &#10;\end{array}&#10;\right].&#10;" src="/~robotics/cs54/images/math/2/8/2/2825dcebe459967bc180fdc7e0f0e3ae.png" />
+</dd></dl>
+<p>Why should this be the right formula?  Let's try a few points.  First, take the point <span class="texhtml"><i>x</i><sup><i>T</i></sup> = (1,0)</span>.  We multiply through and get <span class="texhtml"><i>x</i>'<sup><i>T</i></sup> = (cos&theta;,sin&theta;)</span>, which is geometrically what we expect.  Then, take the point <span class="texhtml"><i>x</i><sup><i>T</i></sup> = (0,1)</span>.  Multiplication gives you  <span class="texhtml"><i>x</i>'<sup><i>T</i></sup> = ( &minus; sin&theta;,cos&theta;)</span>, also what we expect.
+</p><p>This is for me the easiest way to remember the correct elements in a rotation matrix -- otherwise I get very confused about which signs, sines, and cosines go where.  
+</p><p>This interpretation of the rotation matrix (the columns are the coordinates of the transformed world frame) also lets us see a few important properties of rotation matrices:
+</p>
+<ul><li> The columns are of unit length (take the dot product of a column with itself.  It's one.)
+</li><li> The columns are orthogonal (take the dot product of two columns.  It's zero.)
+</li><li> The determinant is 1.  
+</li></ul>
+<p>There is a geometric interpretation of the determinant of a matrix -- it describes how much the matrix "stretches" points away from each other.  We won't go into the details, but a rotation preserves areas and volumes of rigid bodies (not surprising!), and thus has determinant one.  There is another type of matrix that has orthogonal columns of unit length but determinant -1 -- these are called reflections.
+</p><p>The set of all possible 2D rotation matrices has a name:  the "special orthogonal group 2", abbreviated SO(2).  The "special" means determinant 1 (not -1), and the orthogonal means the columns are orthogonal.  You just have to remember that these matrices also have columns of unit length.
+</p><p>Orthogonal matrices have an interesting property:  their transpose and their inverse are the same.  So to invert a rotation, just transpose the matrix!
+</p>
+<a name="Three_dimensions" id="Three_dimensions"></a><h3> <span class="mw-headline"> Three dimensions</span></h3>
+<p>Who cares about special orthogonal matrices?  Why not just use the angle <span class="texhtml"><i>t</i><i>h</i><i>e</i><i>t</i><i>a</i></span> to represent rotations?  In 2D, that's perfectly fine, but in 3D, which <span class="texhtml">&theta;</span> do you use?  
+</p>
+<a name="Euler_angles" id="Euler_angles"></a><h4> <span class="mw-headline"> Euler angles</span></h4>
+<p>You could pick three angles, describing, for example, the rotation about the X axis by angle <span class="texhtml">&alpha;</span>, followed by a rotation about the Z axis by angle <span class="texhtml">&beta;</span>, followed by a new rotation about the X axis by angle <span class="texhtml">&gamma;</span>, as shown on this <a href="http://en.wikipedia.org/wiki/Euler_angles" class="external text" title="http://en.wikipedia.org/wiki/Euler_angles" rel="nofollow">Wikipedia page</a>.
+</p><p>This representation is called a "XZX" Euler angle representation.  It's ok in some cases, but imagine a simple rotation about the X axis by $\theta$.  The rotation about the Z axis is zero.  There are an infinite number of choices of combinations for $\alpha$ and $\gamma$ -- they just have to sum to $\theta$!
+</p><p>This can be problematic.  For example, if you just sample the three angles uniformly, you might hope to get a "uniform" distribution of rotations.  What does a uniform distribution of rotations mean?  I'm not sure, but this isn't it -- a lot of the rotations you get will tend to be rotations about, or nearly about, the X axis.  
+</p><p>The choice of XZX axes was arbitrary.  There are also ZYZ axes, XYZ angles, and other conventions.
+</p>
+<a name="SO.283.29_rotation_matrics" id="SO.283.29_rotation_matrics"></a><h4> <span class="mw-headline"> SO(3) rotation matrics</span></h4>
+<p>Some things are simplified if we use a matrix (with nine numbers) instead of the three Euler angles to describe rotations.  The columns of the matrix represent the location of each of the axis of the base frame after the rotation, so the geometric interpretation seems to me to be much much simpler than for Euler angles.  There are constraints on these nine numbers:  the columns are orthogonal, of unit length, and the determinant is one.  
+</p><p>The name for the space of rotation matrices is SO(3):  the special orthogonal group 3.  If we remember the interpretation of columns as transformations of the vectors along the axes of the base frame, it's easy to write down several special cases of rotation matrices.  For example, <span class="texhtml"><i>R</i><sub><i>z</i></sub>(&theta;)</span> is the rotation matrix describing rotation around the z axis by the angle <span class="texhtml">&theta;</span>, and the columns are similar to those for the 2D rotation matrix.  (2D rotations are always around the z-axis.)  
+</p>
+<dl><dd><img class="tex" alt="&#10;R_z(\theta) = &#10;\left[&#10;\begin{array}{ccc}&#10;\cos \theta &amp; -\sin \theta  &amp; 0\\&#10;\sin \theta &amp; \cos \theta &amp; 0 \\&#10;0 &amp; 0 &amp; 1 \\&#10;\end{array}.&#10;\right]&#10;" src="/~robotics/cs54/images/math/3/8/8/388363c9fefc24553972d3c064d1c150.png" />
+</dd></dl>
+<p>There's also a convention that we need to keep track of.  Given an axis, do we rotate around it clockwise or counterclockwise?  We will use right-handed rotation matrices.  Point your right thumb along the axis you want to rotate around; your fingers curl in the positive direction.
+</p>
+<a name="Homogeneous_coordinates" id="Homogeneous_coordinates"></a><h2> <span class="mw-headline"> Homogeneous coordinates</span></h2>
+<p>Every displacement is a composition of a rotation about any point you choose, and a translation.  Let's say that you use a rotation matrix R to represent rotations, and a vector v to represent translations.  Then a displacement transformation can be implemented with:
+</p>
+<dl><dd><span class="texhtml"><i>p</i>' = <i>R</i><i>p</i> + <i>v</i></span>
+</dd></dl>
+<p>The inverse is given by
+</p>
+<dl><dd><span class="texhtml"><i>p</i> = <i>R</i><sup> &minus; 1</sup>(<i>p</i>' &minus; <i>v</i>) = <i>R</i><sup><i>T</i></sup>(<i>p</i>' &minus; <i>v</i>).</span>
+</dd></dl>
+<p>There's nothing wrong with that, but it would be nice to represent a displacement by just a matrix, and implement the transformation by a simple multiplication.  There's a trick to this.  We represent the points in the rigid body using *four* numbers,  p = (x, y, z, w).  For now let w = 1.  Then we can write a 4x4 displacement matrix that looks like:
+</p>
+<dl><dd><img class="tex" alt="&#10;T =&#10;\left[&#10;\begin{array}{cccc}&#10;R &amp; &amp; &amp; v \\&#10;0 &amp; 0 &amp; 0 &amp; 1 &#10;\end{array}.&#10;\right]&#10;" src="/~robotics/cs54/images/math/c/f/c/cfcd45cd224adedb4016698dae0bd1f4.png" />
+</dd></dl>
+<p>This is called a <b>homogeneous coordinate system</b>.  For displacements, w is always 1, but it can take on other values.  The physical location of p is interpreted as (x/w, y/w, z/w).  Why do we care?  Well, if you set w = 0, then you can describe a point at infinity, in a particular direction.  Why would you want to?  Well, a translation can be viewed as a translation about a point at infinity.  
+</p><p>Homogeneous coordinates also show up in computer graphics, and are useful in studying the geometry of projections (since you can scale along a vector by just changing the parameter w.)  For now we will not worry too much about projective geometry, but we will use homogeneous transform matrices to represent displacements.
+</p>
+<a name="Other_ways_to_represent_rotations:_Axis-angle.2C_Quaternions" id="Other_ways_to_represent_rotations:_Axis-angle.2C_Quaternions"></a><h2> <span class="mw-headline"> Other ways to represent rotations: Axis-angle, Quaternions</span></h2>
+<p>You could describe a rotation by three numbers that describe a rotation axis, together with an angle by which to rotate.  A variation of this is to use the length of the rotation axis vector to give the magnitude of the rotation.  
+</p><p>Quaternions are another way of representing rotations using four numbers.  They have some nice properties, particularly in terms of uniform sampling and stability of numerical computations, and are used very widely for implementations of robotics and graphics algorithms.  I'd recommend you read up on them on your own.   
+</p>
+<a name="Converting_between_rotation_representations" id="Converting_between_rotation_representations"></a><h2> <span class="mw-headline"> Converting between rotation representations</span></h2>
+<p>Sometimes it's necessary to convert between rotation representations.  For example,   <a href="http://mathworld.wolfram.com/RodriguesRotationFormula.html" class="external text" title="http://mathworld.wolfram.com/RodriguesRotationFormula.html" rel="nofollow">Rodrigues formula</a> lets you convert from axis-angle to rotation matrix.  It's easy to convert from an Euler-angle representation to a rotation matrix -- just write three matrices down representing each coordinate axis rotation, and multiply.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 162/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs54_:pcache:idhash:70-0!1!0!!en!2!edit=0 and timestamp 20110220141914 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Frames_and_rigid_bodies">http://www.cs.dartmouth.edu/~robotics/cs54/index.php/Frames_and_rigid_bodies</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs54/index.php/Main_Page">About the course</a></li>
+				<li id="n-Schedule"><a href="/~robotics/cs54/index.php/Schedule">Schedule</a></li>
+				<li id="n-Python-setup"><a href="/~robotics/cs54/index.php/Python_setup">Python setup</a></li>
+				<li id="n-Create-manager"><a href="/~robotics/cs54/index.php/Create_Manager">Create manager</a></li>
+				<li id="n-Bioloid-control"><a href="/~robotics/cs54/index.php/Bioloid_control">Bioloid control</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-assignments'>
+		<h5>assignments</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-1"><a href="http://www.cs.dartmouth.edu/~robotics/cs54/assignments/assignment1/assign1.pdf">Assignment 1</a></li>
+				<li id="n-Assignment-2"><a href="/~robotics/cs54/index.php/Assignment_2">Assignment 2</a></li>
+				<li id="n-Assignment-3"><a href="/~robotics/cs54/index.php/Assignment_3">Assignment 3</a></li>
+				<li id="n-Assignment-4"><a href="/~robotics/cs54/index.php/Assignment_4">Assignment 4</a></li>
+				<li id="n-Assignment-5"><a href="/~robotics/cs54/index.php/Assignment_5">Assignment 5</a></li>
+				<li id="n-Assignment-6"><a href="/~robotics/cs54/index.php/Assignment_6">Assignment 6</a></li>
+				<li id="n-Assignment-7"><a href="/~robotics/cs54/index.php/Assignment_7">Assignment 7</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-sample_solutions'>
+		<h5>sample solutions</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assignment-2-.28Annie.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Annie_Assignment2.zip">Assignment 2 (Annie)</a></li>
+				<li id="n-Assignment-3-.28Julian.29"><a href="http://www.cs.dartmouth.edu/~robotics/cs54_solutions_W2011/Julian_Assignment3.zip">Assignment 3 (Julian)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-articles'>
+		<h5>articles</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Introduction"><a href="/~robotics/cs54/index.php/Article_1:_Introduction">Introduction</a></li>
+				<li id="n-Mechanisms"><a href="/~robotics/cs54/index.php/Mechanisms_and_configuration_spaces">Mechanisms</a></li>
+				<li id="n-Kinematics"><a href="/~robotics/cs54/index.php/Kinematics">Kinematics</a></li>
+				<li id="n-Rigid-bodies"><a href="/~robotics/cs54/index.php/Frames_and_rigid_bodies">Rigid bodies</a></li>
+				<li id="n-Differential-Kinematics"><a href="/~robotics/cs54/index.php/Differential_kinematics">Differential Kinematics</a></li>
+				<li id="n-Sampling-c-space"><a href="/~robotics/cs54/index.php/Sampling_c-space">Sampling c-space</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs54/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs54:  Introduction to Robotics [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs54/index.php/Special:WhatLinksHere/Frames_and_rigid_bodies" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs54/index.php/Special:RecentChangesLinked/Frames_and_rigid_bodies" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs54/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs54/index.php?title=Frames_and_rigid_bodies&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs54/index.php?title=Frames_and_rigid_bodies&amp;oldid=1113" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs54/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 1 February 2011, at 18:25.</li>
+					<li id="viewcount">This page has been accessed 300 times.</li>
+					<li id="privacy"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:Privacy_policy" title="cs54:  Introduction to Robotics:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:About" title="cs54:  Introduction to Robotics:About">About cs54:  Introduction to Robotics</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs54/index.php/cs54:__Introduction_to_Robotics:General_disclaimer" title="cs54:  Introduction to Robotics:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.210 secs. --></body></html>

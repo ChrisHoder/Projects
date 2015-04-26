@@ -1,0 +1,240 @@
+http://www.cs.dartmouth.edu/~robotics/cs88
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="Main Page" />
+		<link rel="alternate" type="application/x-wiki" title="Edit" href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit" />
+		<link rel="edit" title="Edit" href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/~robotics/cs88/opensearch_desc.php" title="cs88: robotics research seminar (en)" />
+		<link rel="alternate" type="application/rss+xml" title="cs88: robotics research seminar RSS Feed" href="/~robotics/cs88/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="cs88: robotics research seminar Atom Feed" href="/~robotics/cs88/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>cs88: robotics research seminar</title>
+		<link rel="stylesheet" href="/~robotics/cs88/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/~robotics/cs88/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs88/skins/letterhead/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/~robotics/cs88/skins/letterhead/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/~robotics/cs88/skins/letterhead/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/~robotics/cs88/skins/letterhead/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/~robotics/cs88/skins/letterhead/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/~robotics/cs88/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs88/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/~robotics/cs88/index.php?title=MediaWiki:Letterhead.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/~robotics/cs88/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/~robotics/cs88/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "letterhead";
+		var stylepath = "/~robotics/cs88/skins";
+		var wgArticlePath = "/~robotics/cs88/index.php/$1";
+		var wgScriptPath = "/~robotics/cs88";
+		var wgScript = "/~robotics/cs88/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.cs.dartmouth.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Main_Page";
+		var wgTitle = "Main Page";
+		var wgAction = "view";
+		var wgArticleId = "1";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 149;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/~robotics/cs88/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/~robotics/cs88/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/~robotics/cs88/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=letterhead"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Main_Page skin-letterhead">
+ 
+
+
+	<span class="noprint">
+
+	<div id="p-personal">
+			<ul>
+				<li id="pt-login"><a href="/~robotics/cs88/index.php?title=Special:UserLogin&amp;returnto=Main_Page" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<br>
+
+
+	<div id="site-title"> robotics research seminar </div>
+<div id="site-subtitle">dartmouth computer science cs88/188, spring 2010</div>
+	
+
+	
+
+	<div id="p-cactions">
+
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/~robotics/cs88/index.php/Main_Page" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/~robotics/cs88/index.php?title=Talk:Main_Page&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-edit"><a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit" title="You can edit this page.&#10;Please use the preview button before saving [e]" accesskey="e">Edit</a></li>
+				 <li id="ca-history"><a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	
+
+	<div id="headerseparator"> </div>
+ 
+	</span> <!-- End noprint span-->
+ 
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Main Page</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From cs88: robotics research seminar</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>Welcome to the web page for cs88.  On odd-numbered weeks we will present and discuss research.  On even-numbered weeks we will present and discuss papers.  Each week you will do some reading, some research, and write about both.  
+</p>
+<a name="Contact" id="Contact"></a><h2><span class="editsection">[<a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit&amp;section=1" title="Edit section: Contact">edit</a>]</span> <span class="mw-headline"> Contact </span></h2>
+<p>Professor Devin Balkcom <br />
+e-mail:  myfirstname AT cs.dartmouth.edu <br />
+Office:  Sudikoff 211 <br />
+</p>
+<a name="Journal_club_reading_plan:__four_and_one" id="Journal_club_reading_plan:__four_and_one"></a><h2><span class="editsection">[<a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit&amp;section=2" title="Edit section: Journal club reading plan:  four and one">edit</a>]</span> <span class="mw-headline">Journal club reading plan:  four and one</span></h2>
+<p>Expect to spend five to six hours per week reading and preparing paper presentations.
+</p><p>On <b>odd-numbered weeks</b>, you will find and read <b>four</b> papers at a high level, spending thirty minutes on each paper.  You will record each of these papers on the wiki, with a citation and bibtex data.  On the private forums, you will give a 100-word description of the problem the paper attacks, your best guess at the significance of the paper, and a rating of the overall quality of the paper.  This task should take about two hours in total.  You will pick <b>one</b> of these papers, take detailed notes, and post your notes on the forum.  This is the paper you are recommending to the class, so pick a good one, and spend about three hours on it.    
+</p><p>On <b>even-numbered weeks</b>, you will read the recommended papers from other students (about thirty minutes per paper, which should take about three hours), write a comment on the recommender's forum review, and present the paper you are recommending, in a 15-minute presentation, from your notes.  You will then lead a 15-minute discussion of that paper.
+</p>
+<a name="Where_to_get_papers" id="Where_to_get_papers"></a><h3><span class="editsection">[<a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit&amp;section=3" title="Edit section: Where to get papers">edit</a>]</span> <span class="mw-headline">Where to get papers</span></h3>
+<p>You can ask me for recommendations, and check out the most recent publications (or most cited papers from) the <a href="http://ijr.sagepub.com" class="external text" title="http://ijr.sagepub.com" rel="nofollow">International Journal of Robotics Research</a> or the <a href="http://www.ieee-ras.org/tro" class="external text" title="http://www.ieee-ras.org/tro" rel="nofollow">IEEE Transactions on Robotics</a>.  I believe you can get full text for these papers free as long as you are on the Dartmouth campus network.  As you read papers, take a look at the bibliography to find references to key papers from the past.
+</p><p>Another approach is to go by authors.  For example, you might check out the web pages for robotics conferences, like ICRA, IROS, or WAFR.  (Just google for the conference name + year + robotics).  Then look at the list of keynote speakers, senior program committee, and area chairs.  Write a few down, find their web pages, figure out what they're working on, and what their top papers are.  
+</p><p>We want high-quality papers -- a very rough way to ensure this (for older papers anyway) is to make sure that a paper has at least a few citations, as shown by google scholar.  Or just ask me, and I'll give you my opinion as to whether the paper is appropriate.
+</p>
+<a name="Research_problem" id="Research_problem"></a><h2><span class="editsection">[<a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit&amp;section=4" title="Edit section: Research problem">edit</a>]</span> <span class="mw-headline">Research problem</span></h2>
+<p>On the first week you will pick a research problem and develop a research plan.  You may work in groups of any size.  I will recommend some projects for you to choose from, but how you approach the problem will be up to you.  Each week you will check in your current latex text and code to the svn repository.
+</p>
+<a name="Due_dates" id="Due_dates"></a><h2><span class="editsection">[<a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit&amp;section=5" title="Edit section: Due dates">edit</a>]</span> <span class="mw-headline">Due dates</span></h2>
+<ul><li> <b>Every Monday</b>.  SVN code and latex commit.  Plan on about 500 lines of code and the equivalent of two full pages of latex'd pdf in two-column format.  The report should describe your progress over the past week, and goals for the next week.  We will review code and projects as a group on even Tuesdays, and make plans for the next research step on even Thursdays.   
+</li></ul>
+<ul><li> <b>Even-week Thursdays</b>. (April 8, 22, May 6, 20).  Write a comment on each of the recommended papers on the forum.
+</li></ul>
+<ul><li> <b>Odd-week Thursdays</b>.  (April 1, 15, 29, May 13).  Minireviews of four papers due on forum.  Put citation data on wiki for all four papers.  Choose one paper and add it to the reading list calendar on the wiki for the next week.  
+</li></ul>
+<ul><li> <b>Odd-week Saturdays</b>.  (April 3, 17, 31, May 15).  Submit your detailed notes on the next paper for which you are the discussion leader to the forum.
+</li></ul>
+<p>By the end of the term, you will have submitted 5000 lines of code, 20 pages of 2-column progress reports, done minireviews or commented on about 50 papers, and presented five papers to the class.
+</p>
+<a name="Software_tools" id="Software_tools"></a><h2><span class="editsection">[<a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit&amp;section=6" title="Edit section: Software tools">edit</a>]</span> <span class="mw-headline">Software tools</span></h2>
+<p>We will use python 2.6 for all coding, with numpy, scipy, and matplotlib.  I also recommend pyqt (for user interfaces), pyopengl, and the <a href="http://opencv.willowgarage.com/wiki/" class="external text" title="http://opencv.willowgarage.com/wiki/" rel="nofollow">open computer vision library</a>.
+</p><p>I expect you to use LaTeX for all typesetting.  We will use svn to keep code and tex.  The forums are run on phpbb, and this site is mediawiki.
+</p>
+<a name="Academic_honesty" id="Academic_honesty"></a><h2><span class="editsection">[<a href="/~robotics/cs88/index.php?title=Main_Page&amp;action=edit&amp;section=7" title="Edit section: Academic honesty">edit</a>]</span> <span class="mw-headline">Academic honesty</span></h2>
+<p>You are permitted to discuss any problem you like with anyone, in as much detail as you like.  However, you must cite your sources and give credit for ideas and work that are not your own.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 8/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key robo_wiki-cs88_:pcache:idhash:1-0!1!0!!en!2 and timestamp 20110220050526 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.cs.dartmouth.edu/~robotics/cs88/index.php/Main_Page">http://www.cs.dartmouth.edu/~robotics/cs88/index.php/Main_Page</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+
+		
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Robotics-lab"><a href="http://www.cs.dartmouth.edu/~robotics/">Robotics lab</a></li>
+				<li id="n-CS-54:--Robotics"><a href="http://www.cs.dartmouth.edu/~robotics/cs54">CS 54:  Robotics</a></li>
+				<li id="n-CS-88:--Seminar"><a href="http://www.cs.dartmouth.edu/~robotics/cs88">CS 88:  Seminar</a></li>
+				<li id="n-Robotics-camp"><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Robotics camp</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-course'>
+		<h5>course</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-the-course"><a href="/~robotics/cs88/index.php/Main_Page">About the course</a></li>
+				<li id="n-Fun-links"><a href="/~robotics/cs88/index.php/Fun_links">Fun links</a></li>
+				<li id="n-The-big-paper-list"><a href="/~robotics/cs88/index.php/Papers">The big paper list</a></li>
+				<li id="n-Forum"><a href="http://www.cs.dartmouth.edu/~robotics/roboticsbb/">Forum</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-due_dates'>
+		<h5>due dates</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-April-1.2C-2-pm"><a href="/~robotics/cs88/index.php/April_1">April 1, 2 pm</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~robotics/cs88/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search cs88: robotics research seminar [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/~robotics/cs88/index.php/Special:WhatLinksHere/Main_Page" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/~robotics/cs88/index.php/Special:RecentChangesLinked/Main_Page" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/~robotics/cs88/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/~robotics/cs88/index.php?title=Main_Page&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/~robotics/cs88/index.php?title=Main_Page&amp;oldid=149" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/~robotics/cs88/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 15 April 2010, at 12:52.</li>
+					<li id="viewcount">This page has been accessed 2,451 times.</li>
+					<li id="privacy"><a href="/~robotics/cs88/index.php/cs88:_robotics_research_seminar:Privacy_policy" title="cs88: robotics research seminar:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/~robotics/cs88/index.php/cs88:_robotics_research_seminar:About" title="cs88: robotics research seminar:About">About cs88: robotics research seminar</a></li>
+					<li id="disclaimer"><a href="/~robotics/cs88/index.php/cs88:_robotics_research_seminar:General_disclaimer" title="cs88: robotics research seminar:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.176 secs. --></body></html>

@@ -1,0 +1,169 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July2
+3
+<h1>July 2: Reality Check; Logic Design</h1>
+
+<p>Reading: P&amp;P 3.3.4, 3.3.5<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;T 3.2.1-3.2.3
+<hr>
+<h2>0) Recap</h2>
+
+<hr>
+<h2>1) Adders</h2>
+Full Adders <a href="circuits/addition.circ">addition.circ</a>
+<ul>
+<li>Full adder with discrete gates.
+<li>Full adder with decoder.
+<li>4-bit ripple carry adder.
+<li>4-bit carry select adder.
+</ul>
+Ripple carry vs. Carry select.  Which should you use?
+<hr>
+<p>Programmable Logic Arrays (PLAs)</p>
+<hr>
+<h2>2) Reality affects logic</h2><p>
+<hr>
+<h3>Conflicting Advice:</h3>
+<dl>
+<dt><b>Butler Lampson:</b></dt>
+<dd>"Keep secrets of the implementation.  Secrets are assumptions about an implementation that client programs are not allowed to make."</dd><br>
+<dt><b>Sean Smith:</b></dt>
+<dd>"Try to imagine a complex business or treaty negotiation...except no one is allowed to go to the bathroom."</dd>
+</dl>
+<p>
+<hr>
+<p>
+<h3>Example: Cost of a zero.</h3>
+binary at different abstraction levels:
+<ul>
+<li>electricity: 0 == 0v; 1 == +5v
+<li>logic: 0 == false; 1 == true
+</ul>
+
+<b>But</b>, in reality, some issues:
+<ul>
+<li>electricity:  0v/2.9v in some circuits
+<li>0v,+5v consume different amounts of power
+</ul>
+
+Do we really need to have 1 == +5v?
+
+<ul>
+<li><b>active high:</b> 1 corresponds to high voltage
+<li><b>active low:</b> 1 corresponds to low voltage
+</ul>
+
+<a href="circuits/alow.cct">alow.cct</a> &nbsp;&nbsp;(LogicWorks)<p>
+<center>
+<img src="alow.jpg">
+</center>
+<p>
+
+<hr>
+<h3>Example: time delay through gates</h3>
+<a href="circuits/addition.circ">addition.circ</a><p>
+
+<p>
+<a href="demo/timing.cct"><b>timing.cct</b></a>
+<center>
+<img src="tcirc.jpg">
+</center>
+<p>
+If we flip the switch to 1....
+<ul>
+<li> What should happen, if we imagine a world of pure logic?
+<li> What does happen, when gates take nonzero duration before output reflects
+changed input?
+</ul>
+<p>
+<hr>
+<h3>Example: Time delay through wires</h3>
+<p><a href="http://en.wikipedia.org/wiki/Grace_Hopper"><b>Admiral "Amazing" Grace Hopper</b></a></p>
+One foot ~= one nanosecond
+
+<hr>
+<h2>3) So you want to build a logical circuit in reality...</h2>
+<h3>Discrete Transistors</h3>
+<center>
+<img src="discrete_transistors.jpg" alt="oops">
+</center>
+<p>
+<hr>
+<h3>Integrated Circuits</h3>
+<center>
+<img src="integrated_circuit.jpeg" alt="oops">
+</center>
+<ul>
+<li> SSI: Small Scale Integration.  # transistors: ~10.
+<li> MSI: Medium Scale Integration.  # transistors: hundreds.
+<li> LSI: Large Scale Integration.  # transistors: thousands.
+<li> VLSI: Very Large Scale Integration.  # transistors: hundreds of thousands/millions.
+<li> 3D-IC: Three dimensional integrated circuit.
+</ul>
+
+<hr><h2>Building circuits from discrete logic ICs</h2><hr>
+
+<p>look up the <a href="databook1.pdf"><b>chip layout</b></a></p>
+<p>hook up power and ground</p>
+<p>and go for it!</p>
+<p>in the 7400 TTL family, using a LED to as a binary probe</p>
+<p>medium 1: the "breadboard"</p>
+<p>medium 2:  wirewrapping</p>
+<p>medium 3: printed circuit boards</p>
+<p></p>
+<p>good idea for <a href="http://www.stevechamberlin.com/cpu/2009/05/28/bmow-project-summary">final project?</a></p>
+<hr><h2>The Fine Print</h2>
+<p>
+<a href="databook2.pdf"><b>for example</b></a>
+<p>
+
+<hr><h2>Putting it all in one IC.</h2>
+
+<p>the ASIC: "application-specific IC"</p>
+<p>the <a href="http://www.fpga4fun.com">FPGA</a>: "field-programmable gate array"</a></p>
+
+<p>Pros and Cons</p>
+
+<hr><h2>Generating your design</h2><hr>
+
+<p>you COULD do it by "hand"</p>
+<p>but what about all that crazy optimization?   </p>
+<p>and what if you wanted to massage the circuit to accommodate the unique constraints of a particular FPGA, say?</p>
+<p>New reality: design circuits by writing programs in a high-level language (Verilog and VHDL are popular choices), and then have your IDE "compile" it into the circuit</p>
+
+<hr><h2>4) Circuit Complexity</h2><hr>
+<P>
+So what <b>can</b> we compute with a Boolean circuit?
+<p>
+<hr>
+<p>
+What if we start limiting the circuit?
+<p>
+<hr>
+<p>
+Quick review (or introduction, depending on what you've seen before:)
+<ul>
+<li> complexity theory
+<li> big-O notation
+</ul>
+<p>
+<hr>
+<p>
+Massaging: 
+<ul>
+<li> But a given circuit only calculates a function on <i>n</i> bits, for fixed <i>n</i>
+<li> So we need to extend it to a family of circuits, one for each input size
+<li> And maybe add some "uniformity" rules to how each one gets constructed
+</ul>
+<p>
+<hr>
+<p>
+Now we can start asking questions like:
+<ul>
+<li> What functions can be computed by circuits with only a polynomial number of gates?
+<li> What if the depth of circuit is constant?
+<li> What if we limit the depth of the circuit to <i>O(log<sup>k</sup>n)</i> for some <i>k > 0</i>?
+<li> What if we also limit the fan-in of the gates to 2?
+</ul>
+<p>
+
+<p>

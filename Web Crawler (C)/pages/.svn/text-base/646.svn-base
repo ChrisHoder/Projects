@@ -1,0 +1,66 @@
+http://www.cs.dartmouth.edu/~cs105/Homework/hw.06.html
+3
+<html><head>
+<title>CS105 W11: Homework 6</title>
+</head><body>
+
+<h1>
+<a href="../index.html">CS105 W11</a>: Homework 06
+</h1>
+<strong>Assigned:</strong>
+Friday   February 11, 2011<br>
+<strong>Due:</strong>
+Friday   February 18, 2011<br>
+
+<ol>
+<li> CLRS 29.2-3.  But also explain what the y values
+     in the dual problem represent.  In particular, given
+     a graph with V = {s, x, y, z} and edge weights: <p>
+     <ul>
+        <li> (s, x) = 10
+        <li> (s, y) = 7
+        <li> (x,z) = 15
+        <li> (y,z) = 4
+        <li> (y,x) = 2
+     </ul>
+     <p>Give the linear program, the dual, and the solution to 
+     each.  (Hint - don't solve the LP using simplex!  You 
+     can assign values to the x's and the y's based on what 
+     they represent, and then can verify that all constraints
+     are met and that the functions maximized and minimized 
+     have the same value.)
+     <p>
+<li> CLRS 29.4-3.  The LP describing maximum flow the third edition 
+     is closer to the version of flow that we saw in KT (no negative 
+     flows), and is probably easier to use than the one in the second
+     edition.  Show the LP and the dual
+     on the graph given in the last problem replacing z by t (the sink)
+     and interpreting the edge weights as capacities.  Give the 
+     solutions to each.  (Again, don't use simplex to solve the LP.)
+     <p>
+<li> CLRS 29-1 b
+     <p>
+<li> CLRS 5.2-2
+     <p>
+<li> CLRS 5.2-5
+     <p>
+<li> CLRS 5.4-6.  Express the approximate fraction of the bins that are empty 
+     in terms of e.  Also give the expected number of bins with exactly k
+     balls.  How does this relate to hashing?  
+<p>
+<li> KT 13.5
+</ol> 
+
+<strong>Extra Credit:</strong>
+
+<ol>
+<li> CLRS 5.4-2
+<p>
+<li> CLRS 7-5
+</ol> 
+
+
+
+</body>
+</html>
+

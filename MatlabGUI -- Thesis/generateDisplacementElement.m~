@@ -1,0 +1,27 @@
+function out = generateDisplacementElement(l,m,r),
+    overallcoef = exp(-r^2*0.5)*(1/(sqrt(factorial(m))*sqrt(factorial(l))))*((1i*r)^(l+m));
+    overallValue = 0;
+    for k = 0:l,
+        value1 = nchoosek(l,k)*(-1)^k;
+        
+        
+        for j=0:(m-1),
+            
+            
+            for p=0:j,
+                
+                for v=0:p,
+                    if( (k-1) <
+                    temp = ((-1)^v)*nchoosek(p,v)*(1/(p+1))*
+                    
+                end
+                
+            end
+            
+        end
+        
+    end
+    
+
+
+out

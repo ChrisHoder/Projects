@@ -1,0 +1,66 @@
+http://www.cs.dartmouth.edu/~cs37/summer10/lectures/July13
+3
+<h1>July 13: Clocks and Traffic Lights</h1>
+
+<p>Reading: P&amp;P 3.6<br>
+<hr>
+<h2>0) Recap</h2>
+<b>Combinatorial Logic</b> circuits:  output is uniquely identified by inputs<p>
+<b>Storage:</b> D FFs store bits, words, ...
+<hr>
+<h2>1) Clocks</h2>
+<a href="circuits/clock.circ"><b>clock.circ</b></a>
+<ul>
+<li>Logisim's clock 
+<li>What if we feed it to a D flip-flop?
+<li>What if we wire NOT-Q to D?
+<li>And attach more D flip-flops?
+</ul>
+<b>clock4.circ</b>
+<p>
+<center><img src="counting2.jpg" alt="oops" width="90%"></img></center>
+<hr>
+<h2>2) Sequential Logic</h2>
+With Combinatorial logic circuits, output is uniquely defined by inputs.
+<p>Sequential logic circuits both processes information and store
+information. <br> Stored information can be used both as <i>input</i> and
+as <i>output</i>.
+<p>
+<hr>
+<h3>Using Storage as Input</h3>
+
+Bike lock: compare stored input to fixed
+combination: <a href="circuits/bikelock.circ"><b>bikelock.circ</b></a>
+
+<p>
+<hr>
+<h3>Using Storage as Output</h3> 
+
+<p>
+We used storage as output in the <b>clock</b>.  Notice anything
+interesting about the circuit?<p>
+
+<a href="circuits/clock5.circ"><b>clock5.circ</b></a><p>
+Potential Problems: Use a latch output -> lots of combinatorial logic
+-> input to the same latch.
+
+<p>A standard solution: the Master-Slave
+flip-flop: <a href="circuits/ms.circ"><b>ms.circ</b></a>
+
+<p>
+<hr>
+<h2>3) Traffic Lights</h3>
+Watch the traffic light <a href="http://www.youtube.com/watch?v=GbPovgCP5BU">video.</a><p>
+
+<a href="circuits/light_demo.circ"><b>light_demo.circ</b></a><br>
+<img src="light_demo.jpg" alt="oops"></img><p>
+What should a traffic light do?<p>
+How would you implement circuitry for a traffic light?<p>
+
+Concept: <b>Finite State Machine</b><br>
+<ul>
+<li>directed graph
+<li><b>states</b> represent <i>everything</i> about system
+<li><b>transitions</b> tell you how to get from one state to another
+</ul>
+
