@@ -1,0 +1,14 @@
+Watch0=testPoint:main
+Watch1=r_head:main
+Watch2=tmpbuf:main
+Watch3=c:main
+Watch4=rvalue:main
+Watch5=head:main
+cbWatch0=head
+cbWatch1=rvalue
+cbWatch2=c
+cbWatch3=tmpbuf
+cbWatch4=tmpbuff
+cbWatch5=r_head
+cbWatch6=testPoint
+cbWatch7=hog

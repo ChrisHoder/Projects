@@ -1,0 +1,39 @@
+% FILE: AdapQuad.m
+% AUTHOR: Chris Hoder
+% DATE: 10/18/2012
+% CLASS: ENGS 91
+% LAB 5 QUESTION 4
+
+%This recursive method computes the adaptive quadrature using Simpson's
+%method. See page 213 for a discussion of adaptive quadrature. a,b are the
+%interval o f
+function [value points] = AdapQuad(a,b,tol,f,points,depth,maxDepth)
+    h = (b-a)/2;
+    c = (a+b)/2;
+    Sab = (h/3)*(f(a) + f(b) + 4*f(c));
+    Sac = (h/6)*(f(a) + f(c) + 4*f((a+c)/2));
+    Scb = (h/6)*(f(b) + f(c) + 4*f((b+c)/2));
+    if( abs( Sab - Sac - Scb ) < 15*tol),
+       value = Sab;
+       return
+    elseif( depth < maxDepth ),
+        points(end+1) = c;
+        depth = depth+1;
+        %Recursively call on the left and right sides.
+        [sumLeft pointsLeft] =  AdapQuad(a,c,tol,f,points,depth,maxDepth);
+        [sumRight pointsRight] = AdapQuad(c,b,tol,f,points,depth,maxDepth);
+        %collect the points evaluated from each to return
+        points = union(pointsLeft, pointsRight);
+        %return the sum as the integral over this region (a,b)
+        value = sumLeft+sumRight;
+        return
+    else
+        %We have reached max depth without reaching the desired accuracy.
+        %display a warning and exit
+        warning(['Method reached max depth, ', num2str(maxDepth),...
+            ' without reaching desired tolerance of ', num2str(tol)]);
+        value = Sab;
+        
+    end
+
+end

@@ -1,0 +1,14 @@
+function [a0 a1] = linLeastSquare(x,y),
+    m = max(size(x));
+    
+    for i=1:m,
+       xiyi = xiyi + x(i)*y(i);
+       xi = xi + x(i);
+       yi = yi + y(i);
+       
+        
+    end
+
+
+
+end

@@ -1,0 +1,568 @@
+// Compilers view of MMU. Note these values are determined by the origin statements in the BIOS.
+//Segment           Origin     Size
+Root Code           00:0000    00246a
+Root Data           00:bdff    0003eb
+Xmem Code           fe:e200    000890
+
+
+
+// Function mapping and source reference.
+// * The size of labels is indeterminate and so is denoted with an asterisk.
+//  Addr     Size   Function                        File                         Line Num
+    1a6c      406   main                            \CONTAINS_WIND_METHODS.C           48
+    1c02      533   encInit                         \CONTAINS_WIND_METHODS.C           94
+    1e17      237   EncRead                         \CONTAINS_WIND_METHODS.C          152
+    1f04      269   EncWrite                        \CONTAINS_WIND_METHODS.C          202
+    2011      391   getWindPos                      \CONTAINS_WIND_METHODS.C          245
+    2198      374   getWindVel                      \CONTAINS_WIND_METHODS.C          277
+    230e      211   getCount                        \CONTAINS_WIND_METHODS.C          309
+
+
+// Global/static data symbol mapping and source reference.
+//  Addr     Size   Symbol                          File                         Line Num  Type
+    ba15        4   old_anem_pos                    \CONTAINS_WIND_METHODS.C           38  long            
+    23e8        2   _orgtablesize                   \Rabbitbios.c                      41  int             
+    23ea        0   _orgtable                       \Rabbitbios.c                      42  struct _orgtable[]
+
+// Parameter and local auto symbol mapping and source reference.
+//Offset Rel. to     Size   Symbol                          File                         Line Num  Type
+      18      SP        4   main:windpos                    \CONTAINS_WIND_METHODS.C           51  float           
+      14      SP        4   main:windvel                    \CONTAINS_WIND_METHODS.C           52  float           
+      10      SP        4   main:offset                     \CONTAINS_WIND_METHODS.C           53  long            
+       8      SP        2   main:N                          \CONTAINS_WIND_METHODS.C           54  int             
+       4      SP        4   main:dt                         \CONTAINS_WIND_METHODS.C           55  float           
+       0      SP        4   main:T0                         \CONTAINS_WIND_METHODS.C           56  float           
+       6      SP        0   encInit:_____ZW0000006F         \CONTAINS_WIND_METHODS.C           94  void            
+       4      SP        2   encInit:fail                    \CONTAINS_WIND_METHODS.C           96  int             
+       2      SP        2   encInit:i                       \CONTAINS_WIND_METHODS.C           97  int             
+       0      SP        2   encInit:j                       \CONTAINS_WIND_METHODS.C           97  int             
+       8      SP        2   EncRead:channel                 \CONTAINS_WIND_METHODS.C          152  int             
+      10      SP        2   EncRead:reg                     \CONTAINS_WIND_METHODS.C          152  int             
+       4      SP        2   EncRead:EncData                 \CONTAINS_WIND_METHODS.C          156  int             
+       2      SP        2   EncRead:i                       \CONTAINS_WIND_METHODS.C          157  int             
+       0      SP        2   EncRead:delayvar                \CONTAINS_WIND_METHODS.C          157  int             
+       6      SP        2   EncWrite:channel                \CONTAINS_WIND_METHODS.C          202  int             
+       8      SP        2   EncWrite:data                   \CONTAINS_WIND_METHODS.C          202  int             
+      10      SP        2   EncWrite:reg                    \CONTAINS_WIND_METHODS.C          202  int             
+       2      SP        2   EncWrite:i                      \CONTAINS_WIND_METHODS.C          204  int             
+       0      SP        2   EncWrite:delayvar               \CONTAINS_WIND_METHODS.C          204  int             
+      16      SP        4   getWindPos:offset               \CONTAINS_WIND_METHODS.C          246  long            
+      12      SP        2   getWindPos:asb                  \CONTAINS_WIND_METHODS.C          247  int             
+      10      SP        2   getWindPos:bsb                  \CONTAINS_WIND_METHODS.C          247  int             
+       8      SP        2   getWindPos:csb                  \CONTAINS_WIND_METHODS.C          247  int             
+       4      SP        4   getWindPos:position             \CONTAINS_WIND_METHODS.C          248  long            
+       0      SP        4   getWindPos:floatPos             \CONTAINS_WIND_METHODS.C          249  float           
+      16      SP        4   getWindVel:dt                   \CONTAINS_WIND_METHODS.C          278  float           
+      12      SP        2   getWindVel:asb                  \CONTAINS_WIND_METHODS.C          279  int             
+      10      SP        2   getWindVel:bsb                  \CONTAINS_WIND_METHODS.C          279  int             
+       8      SP        2   getWindVel:csb                  \CONTAINS_WIND_METHODS.C          279  int             
+       4      SP        4   getWindVel:vel                  \CONTAINS_WIND_METHODS.C          280  float           
+       0      SP        4   getWindVel:position             \CONTAINS_WIND_METHODS.C          281  long            
+      12      SP        2   getCount:channel                \CONTAINS_WIND_METHODS.C          310  int             
+       8      SP        2   getCount:asb                    \CONTAINS_WIND_METHODS.C          311  int             
+       6      SP        2   getCount:bsb                    \CONTAINS_WIND_METHODS.C          311  int             
+       4      SP        2   getCount:csb                    \CONTAINS_WIND_METHODS.C          311  int             
+       0      SP        4   getCount:position               \CONTAINS_WIND_METHODS.C          312  long            
+
+
+// Macro listing and source reference.
+//  Name                           File                         Line Num
+   _RESTRICT_WATCHCODE_            
+   BL26_ENET_OPT2                  \DEFAULT.H                        215
+   __BL26XX_LIB                    \BL26XX.LIB                         2
+   _bl2600_nodebug                 \BL26XX.LIB                        13
+   WR_BANK0                        \BL26XX.LIB                        88
+   WR_BANK1                        \BL26XX.LIB                        89
+   WR_BANK2                        \BL26XX.LIB                        90
+   SPI                             \BL26XX.LIB                        91
+   SPARE                           \BL26XX.LIB                        92
+   RD_BANK0                        \BL26XX.LIB                        93
+   RD_BANK8                        \BL26XX.LIB                        94
+   RD_BANK23                       \BL26XX.LIB                        95
+   HOUT_LOW                        \BL26XX.LIB                        98
+   HOUT_HIGH                       \BL26XX.LIB                        99
+   HOUT_HI_Z                       \BL26XX.LIB                       100
+   SERC_RTS_SHADOW                 \BL26XX.LIB                       103
+   SERC_RTS_PORT                   \BL26XX.LIB                       104
+   SERC_RTS_BIT                    \BL26XX.LIB                       105
+   SERC_CTS_PORT                   \BL26XX.LIB                       106
+   SERC_CTS_BIT                    \BL26XX.LIB                       107
+   SPI_PORT_ADDR                   \BL26XX.LIB                       110
+   SPI_SF1000                      \BL26XX.LIB                       111
+   SPI_RN_PORT1                    \BL26XX.LIB                       112
+   SPI_RN_PORT2                    \BL26XX.LIB                       113
+   SPI_ADC_CHIP                    \BL26XX.LIB                       114
+   SPI_DAC_CHIP                    \BL26XX.LIB                       115
+   SPI_PWR_CNTRL                   \BL26XX.LIB                       116
+   SBC_SPI_DIVISOR                 \BL26XX.LIB                       119
+   SPI_CLK_DIVISOR                 \BL26XX.LIB                       120
+   MAXDACCOUNT                     \BL26XX.LIB                       122
+   MINDACCOUNT                     \BL26XX.LIB                       123
+   ADOVERFLOW                      \BL26XX.LIB                       124
+   ADCBOARD                        \BL26XX.LIB                       126
+   EECLK                           \BL26XX.LIB                       127
+   EEDATA                          \BL26XX.LIB                       128
+   EEACK                           \BL26XX.LIB                       129
+   EEPROM_WRITE                    \BL26XX.LIB                       130
+   EEPROM_READ                     \BL26XX.LIB                       131
+   CAL_ADC_SE0                     \BL26XX.LIB                       133
+   CAL_ADC_SE1                     \BL26XX.LIB                       134
+   CAL_ADC_DIFF                    \BL26XX.LIB                       135
+   CAL_ADC_MA                      \BL26XX.LIB                       136
+   CAL_DACV_UNIPOLAR               \BL26XX.LIB                       138
+   CAL_DACV_BIPOLAR                \BL26XX.LIB                       139
+   CAL_DACI_UNIPOLAR               \BL26XX.LIB                       140
+   CAL_DACI_BIPOLAR                \BL26XX.LIB                       141
+   DIRECTMODE                      \BL26XX.LIB                       144
+   REGISTERMODE                    \BL26XX.LIB                       145
+   SE0_MODE                        \BL26XX.LIB                       148
+   SE1_MODE                        \BL26XX.LIB                       149
+   DIFF_MODE                       \BL26XX.LIB                       150
+   mAMP_MODE                       \BL26XX.LIB                       151
+   DAC_UNIPOLAR_X1                 \BL26XX.LIB                       154
+   DAC_UNIPOLAR_X2                 \BL26XX.LIB                       155
+   DAC_UNIPOLAR_X4                 \BL26XX.LIB                       156
+   DAC_UNIPOLAR_X5                 \BL26XX.LIB                       157
+   DAC_UNIPOLAR_X8                 \BL26XX.LIB                       158
+   DAC_UNIPOLAR_X10                \BL26XX.LIB                       159
+   DAC_UNIPOLAR_X16                \BL26XX.LIB                       160
+   DAC_UNIPOLAR_X20                \BL26XX.LIB                       161
+   DAC_BIPOLAR_X1                  \BL26XX.LIB                       163
+   DAC_BIPOLAR_X2                  \BL26XX.LIB                       164
+   DAC_BIPOLAR_X4                  \BL26XX.LIB                       165
+   DAC_BIPOLAR_X5                  \BL26XX.LIB                       166
+   DAC_BIPOLAR_X8                  \BL26XX.LIB                       167
+   DAC_BIPOLAR_X10                 \BL26XX.LIB                       168
+   DAC_BIPOLAR_X16                 \BL26XX.LIB                       169
+   DAC_BIPOLAR_X20                 \BL26XX.LIB                       170
+   SINGLE_ENDED                    \BL26XX.LIB                       173
+   DIFFERENTIAL                    \BL26XX.LIB                       174
+   mAMP_GAINCODE                   \BL26XX.LIB                       177
+   DAC_UNIPOLAR                    \BL26XX.LIB                       180
+   DAC_BIPOLAR                     \BL26XX.LIB                       181
+   DAC_VOLT0_INDEX                 \BL26XX.LIB                       183
+   DAC_VOLT1_INDEX                 \BL26XX.LIB                       184
+   DAC_MA0_INDEX                   \BL26XX.LIB                       185
+   DAC_MA1_INDEX                   \BL26XX.LIB                       186
+   DAC_ASYNC                       \BL26XX.LIB                       188
+   DAC_SYNC                        \BL26XX.LIB                       189
+   REG0                            \BL26XX.LIB                       192
+   REG1                            \BL26XX.LIB                       193
+   REG2                            \BL26XX.LIB                       194
+   REG3                            \BL26XX.LIB                       195
+   REG4                            \BL26XX.LIB                       196
+   REG5                            \BL26XX.LIB                       197
+   REG6                            \BL26XX.LIB                       198
+   REG7                            \BL26XX.LIB                       199
+   REG24                           \BL26XX.LIB                       200
+   REG31                           \BL26XX.LIB                       201
+   RD_REG                          \BL26XX.LIB                       204
+   WR_REG                          \BL26XX.LIB                       205
+   BITS16                          \BL26XX.LIB                       208
+   BITS8                           \BL26XX.LIB                       209
+   DIRECTMODE                      \BL26XX.LIB                       212
+   REGISTERMODE                    \BL26XX.LIB                       213
+   SPI_DAC_CLK                     \BL26XX.LIB                       216
+   SPI_ADC_CLK                     \BL26XX.LIB                       217
+   PORTA_AUX_IO                    \BL26XX.LIB                       223
+   SPI_SER_D                       \BL26XX.LIB                       227
+   SF1000_CS_PORT                  \BL26XX.LIB                       228
+   CS_ENABLE                       \BL26XX.LIB                       230
+   CS_DISABLE                      \BL26XX.LIB                       231
+   __RN_CFG_BL26_LIB               \RN_CFG_BL26.LIB                   25
+   REC_OP                          \RN_CFG_BL26.LIB                   36
+   TRANS_OP                        \RN_CFG_BL26.LIB                   37
+   REC_TRANS_OP                    \RN_CFG_BL26.LIB                   38
+   USE_ALT                         \RN_CFG_BL26.LIB                   39
+   DISABLE_REC                     \RN_CFG_BL26.LIB                   40
+   INTERNAL_CLOCK                  \RN_CFG_BL26.LIB                   41
+   EXTERNAL_CLOCK                  \RN_CFG_BL26.LIB                   42
+   RNSTATUSABORT                   \RN_CFG_BL26.LIB                   65
+   RN_MAX_DEV                      \RN_CFG_BL26.LIB                   69
+   RN_MAX_DATA                     \RN_CFG_BL26.LIB                   73
+   RN_MAX_PORT                     \RN_CFG_BL26.LIB                   77
+   RN_PORTS                        \RN_CFG_BL26.LIB                   78
+   RN_SPI_BAUD                     \RN_CFG_BL26.LIB                   82
+   __RNET_LIB                      \RNET.LIB                          96
+   __RNET_DRIVER_LIB               \RNET_DRIVER.LIB                   21
+   C1R00                           \RNET.LIB                         108
+   C1R01                           \RNET.LIB                         109
+   C1R02                           \RNET.LIB                         110
+   C1R03                           \RNET.LIB                         111
+   C1R04                           \RNET.LIB                         112
+   C1R05                           \RNET.LIB                         113
+   C1R06                           \RNET.LIB                         114
+   C1R07                           \RNET.LIB                         115
+   C0R00                           \RNET.LIB                         117
+   C0R02                           \RNET.LIB                         118
+   C0R03                           \RNET.LIB                         119
+   C0R04                           \RNET.LIB                         120
+   C0R05                           \RNET.LIB                         121
+   C0R07                           \RNET.LIB                         122
+   WCMD                            \RNET.LIB                         124
+   RCMD                            \RNET.LIB                         125
+   HOS                             \RNET.LIB                         126
+   HB                              \RNET.LIB                         127
+   NOCONNECT                       \RNET.LIB                         128
+   RNHUB                           \RNET.LIB                         129
+   RNDEVICE                        \RNET.LIB                         130
+   RNDEVSTATE                      \RNET.LIB                         132
+   RNBUSY                          \RNET.LIB                         133
+   RNCMDREJ                        \RNET.LIB                         134
+   RNWDTO                          \RNET.LIB                         135
+   RNREADY                         \RNET.LIB                         136
+   ITNCONSTANT                     \RNET.LIB                         138
+   RNPRINTDEBUG                    \RNET.LIB                         140
+   RNEMUDEBUG                      \RNET.LIB                         141
+   RN_MATCH_PORT                   \RNET.LIB                         188
+   RN_MATCH_PNA                    \RNET.LIB                         189
+   RN_MATCH_HANDLE                 \RNET.LIB                         190
+   RN_MATCH_PRDID                  \RNET.LIB                         191
+   RN_MATCH_PRDREV                 \RNET.LIB                         192
+   RN_MATCH_CODEREV                \RNET.LIB                         193
+   RN_MATCH_SN                     \RNET.LIB                         194
+   RN_EXCLUSIONS                   \RNET.LIB                         195
+   RN_ADD_TO_EXCL                  \RNET.LIB                         196
+   __RNET_DIO_LIB                  \RNET_DIO.LIB                       2
+   RN1100                          \RNET_DIO.LIB                      25
+   _RN1100TIME                     \RNET_DIO.LIB                      30
+   DIOR10                          \RNET_DIO.LIB                      38
+   DIOR11                          \RNET_DIO.LIB                      39
+   DIOR12                          \RNET_DIO.LIB                      40
+   DIOR13                          \RNET_DIO.LIB                      41
+   DIOR14                          \RNET_DIO.LIB                      42
+   DIOR16                          \RNET_DIO.LIB                      43
+   DIOR17                          \RNET_DIO.LIB                      44
+   DIOR30                          \RNET_DIO.LIB                      46
+   DIOR31                          \RNET_DIO.LIB                      47
+   DIOR32                          \RNET_DIO.LIB                      48
+   DIOR33                          \RNET_DIO.LIB                      49
+   DIOR40                          \RNET_DIO.LIB                      51
+   DIOR41                          \RNET_DIO.LIB                      52
+   DIOR42                          \RNET_DIO.LIB                      53
+   DIOR43                          \RNET_DIO.LIB                      54
+   DIOR47                          \RNET_DIO.LIB                      56
+   DIOW10                          \RNET_DIO.LIB                      58
+   DIOW11                          \RNET_DIO.LIB                      59
+   DIOW12                          \RNET_DIO.LIB                      60
+   DIOW13                          \RNET_DIO.LIB                      61
+   DIOW14                          \RNET_DIO.LIB                      62
+   DIOW15                          \RNET_DIO.LIB                      63
+   DIOW16                          \RNET_DIO.LIB                      64
+   DIOW17                          \RNET_DIO.LIB                      65
+   DIOW40                          \RNET_DIO.LIB                      67
+   DIOW41                          \RNET_DIO.LIB                      68
+   DIOW42                          \RNET_DIO.LIB                      69
+   DIOW43                          \RNET_DIO.LIB                      70
+   DIOW47                          \RNET_DIO.LIB                      72
+   __RNET_AIN_LIB                  \RNET_AIN.LIB                       2
+   RN1200                          \RNET_AIN.LIB                      29
+   _RN1200TIME                     \RNET_AIN.LIB                      34
+   AINR10                          \RNET_AIN.LIB                      42
+   AINR20                          \RNET_AIN.LIB                      44
+   AINR21                          \RNET_AIN.LIB                      45
+   AINR22                          \RNET_AIN.LIB                      46
+   AINR23                          \RNET_AIN.LIB                      47
+   AINR24                          \RNET_AIN.LIB                      48
+   AINR25                          \RNET_AIN.LIB                      49
+   AINR26                          \RNET_AIN.LIB                      50
+   AINR27                          \RNET_AIN.LIB                      51
+   AINR30                          \RNET_AIN.LIB                      53
+   AINR31                          \RNET_AIN.LIB                      54
+   AINR32                          \RNET_AIN.LIB                      55
+   AINR33                          \RNET_AIN.LIB                      56
+   AINR34                          \RNET_AIN.LIB                      57
+   AINR35                          \RNET_AIN.LIB                      58
+   AINR36                          \RNET_AIN.LIB                      59
+   AINR37                          \RNET_AIN.LIB                      60
+   AINR40                          \RNET_AIN.LIB                      62
+   AINW10                          \RNET_AIN.LIB                      65
+   AINW11                          \RNET_AIN.LIB                      66
+   AINW12                          \RNET_AIN.LIB                      67
+   AINW13                          \RNET_AIN.LIB                      68
+   AINW14                          \RNET_AIN.LIB                      69
+   AINW15                          \RNET_AIN.LIB                      70
+   AINW16                          \RNET_AIN.LIB                      71
+   AINW17                          \RNET_AIN.LIB                      72
+   AINW20                          \RNET_AIN.LIB                      74
+   AINW21                          \RNET_AIN.LIB                      75
+   AINW22                          \RNET_AIN.LIB                      76
+   AINW23                          \RNET_AIN.LIB                      77
+   AINW24                          \RNET_AIN.LIB                      78
+   AINW25                          \RNET_AIN.LIB                      79
+   AINW26                          \RNET_AIN.LIB                      80
+   AINW27                          \RNET_AIN.LIB                      81
+   AINW30                          \RNET_AIN.LIB                      83
+   AINW31                          \RNET_AIN.LIB                      84
+   AINW32                          \RNET_AIN.LIB                      85
+   AINW33                          \RNET_AIN.LIB                      86
+   AINW34                          \RNET_AIN.LIB                      87
+   AINW35                          \RNET_AIN.LIB                      88
+   AINW36                          \RNET_AIN.LIB                      89
+   AINW37                          \RNET_AIN.LIB                      90
+   AINW40                          \RNET_AIN.LIB                      92
+   AINW41                          \RNET_AIN.LIB                      93
+   RNSINGLE                        \RNET_AIN.LIB                      98
+   RNDIFF                          \RNET_AIN.LIB                     102
+   RNmAMP                          \RNET_AIN.LIB                     106
+   RNmAMP_GAINCODE                 \RNET_AIN.LIB                     110
+   ADCENABLE                       \RNET_AIN.LIB                     114
+   ADCDISABLE                      \RNET_AIN.LIB                     115
+   ADOVERFLOW                      \RNET_AIN.LIB                    1115
+   SE_DEVCHAN                      \RNET_AIN.LIB                    1116
+   AD_OSC_ENABLE                   \RNET_AIN.LIB                    1117
+   AD_OSC_DISABLE                  \RNET_AIN.LIB                    1119
+   __RNET_AOUT_LIB                 \RNET_AOUT.LIB                      2
+   RN1300                          \RNET_AOUT.LIB                     23
+   _RN1300TIME                     \RNET_AOUT.LIB                     28
+   AOUTW10                         \RNET_AOUT.LIB                     37
+   AOUTW20                         \RNET_AOUT.LIB                     39
+   AOUTW21                         \RNET_AOUT.LIB                     40
+   AOUTW22                         \RNET_AOUT.LIB                     41
+   AOUTW23                         \RNET_AOUT.LIB                     42
+   AOUTW24                         \RNET_AOUT.LIB                     43
+   AOUTW25                         \RNET_AOUT.LIB                     44
+   AOUTW26                         \RNET_AOUT.LIB                     45
+   AOUTW27                         \RNET_AOUT.LIB                     46
+   AOUTW30                         \RNET_AOUT.LIB                     48
+   AOUTW31                         \RNET_AOUT.LIB                     49
+   AOUTW32                         \RNET_AOUT.LIB                     50
+   AOUTW33                         \RNET_AOUT.LIB                     51
+   AOUTW34                         \RNET_AOUT.LIB                     52
+   AOUTW35                         \RNET_AOUT.LIB                     53
+   AOUTW36                         \RNET_AOUT.LIB                     54
+   AOUTW37                         \RNET_AOUT.LIB                     55
+   AOUTW40                         \RNET_AOUT.LIB                     57
+   AOUTW41                         \RNET_AOUT.LIB                     58
+   AOUTR30                         \RNET_AOUT.LIB                     63
+   AOUTR31                         \RNET_AOUT.LIB                     64
+   AOUTR32                         \RNET_AOUT.LIB                     65
+   AOUTR33                         \RNET_AOUT.LIB                     66
+   AOUTR34                         \RNET_AOUT.LIB                     67
+   AOUTR35                         \RNET_AOUT.LIB                     68
+   AOUTR36                         \RNET_AOUT.LIB                     69
+   AOUTR37                         \RNET_AOUT.LIB                     70
+   RNMINDACCOUNT                   \RNET_AOUT.LIB                     72
+   RNMAXDACCOUNT                   \RNET_AOUT.LIB                     73
+   __RNET_RELAY_LIB                \RNET_RELAY.LIB                     2
+   RN1400                          \RNET_RELAY.LIB                    23
+   _RN1400TIME                     \RNET_RELAY.LIB                    27
+   RELAYW10                        \RNET_RELAY.LIB                    35
+   RELAYW11                        \RNET_RELAY.LIB                    36
+   RELAYW12                        \RNET_RELAY.LIB                    37
+   RELAYW13                        \RNET_RELAY.LIB                    38
+   RELAYW14                        \RNET_RELAY.LIB                    39
+   RELAYW15                        \RNET_RELAY.LIB                    40
+   RELAYW20                        \RNET_RELAY.LIB                    41
+   RELAYW21                        \RNET_RELAY.LIB                    42
+   __RNET_KEYIF_LIB                \RNET_KEYIF.LIB                     2
+   _keyif_nodebug                  \RNET_KEYIF.LIB                     9
+   USE_KEYIF                       \RNET_KEYIF.LIB                    34
+   RN1600                          \RNET_KEYIF.LIB                    39
+   _RN1600TIME                     \RNET_KEYIF.LIB                    44
+   KEYIFW13                        \RNET_KEYIF.LIB                    53
+   KEYIFW15                        \RNET_KEYIF.LIB                    54
+   KEYIFW16                        \RNET_KEYIF.LIB                    55
+   KEYIFR17                        \RNET_KEYIF.LIB                    58
+   KEYIFR40                        \RNET_KEYIF.LIB                    60
+   KEYIFR41                        \RNET_KEYIF.LIB                    61
+   KEYIFR42                        \RNET_KEYIF.LIB                    62
+   KEYIFR43                        \RNET_KEYIF.LIB                    63
+   KEYIFR44                        \RNET_KEYIF.LIB                    64
+   KEYIFR45                        \RNET_KEYIF.LIB                    65
+   KEYIFR46                        \RNET_KEYIF.LIB                    66
+   KEYIFR47                        \RNET_KEYIF.LIB                    67
+   KEYIFR50                        \RNET_KEYIF.LIB                    68
+   KEYIFR51                        \RNET_KEYIF.LIB                    69
+   KEYIFR52                        \RNET_KEYIF.LIB                    70
+   KEYIFR53                        \RNET_KEYIF.LIB                    71
+   KEYIFR54                        \RNET_KEYIF.LIB                    72
+   KEYIFR55                        \RNET_KEYIF.LIB                    73
+   KEYIFR56                        \RNET_KEYIF.LIB                    74
+   KEYIFR57                        \RNET_KEYIF.LIB                    75
+   __RNET_LCDIF_LIB                \RNET_LCDIF.LIB                     2
+   _lcdif_nodebug                  \RNET_LCDIF.LIB                     7
+   LCDIFW17                        \RNET_LCDIF.LIB                    48
+   LCDIFW20                        \RNET_LCDIF.LIB                    49
+   LCDIFW30                        \RNET_LCDIF.LIB                    50
+   LCDIFR17                        \RNET_LCDIF.LIB                    53
+   LCDIFR20                        \RNET_LCDIF.LIB                    54
+   LCDIFR30                        \RNET_LCDIF.LIB                    55
+   RNDISP_CUROFF                   \RNET_LCDIF.LIB                    67
+   RNDISP_CURON                    \RNET_LCDIF.LIB                    68
+   RNDISP_CURBLINKOFF              \RNET_LCDIF.LIB                    69
+   RNDISP_CURBLINKON               \RNET_LCDIF.LIB                    70
+   RNDISP_SCRNONOFF                \RNET_LCDIF.LIB                    71
+   RNDISP_CLEAR                    \RNET_LCDIF.LIB                    72
+   ZWORLD_RESERVED_SIZE            \DEFAULT.H                        276
+   __R3000_LIB__                   \R3000.LIB                         29
+   QD_DIVISOR                      \R3000.LIB                         32
+   QD_OVERFLOW                     \R3000.LIB                         34
+   QD_UNDERFLOW                    \R3000.LIB                         35
+   PWM_FREQ_FACTOR                 \R3000.LIB                        417
+   PWM_SPREAD                      \R3000.LIB                        469
+   PWM_OPENDRAIN                   \R3000.LIB                        470
+   SETUSERMODE                     \DEFAULT.H                        286
+   SETSYSMODE                      \DEFAULT.H                        287
+   _system                         \DEFAULT.H                        288
+   _SYS_CALL_VARS                  \DEFAULT.H                        289
+   _NET_SYSCALL                    \DEFAULT.H                        290
+   _rk_printf                      \DEFAULT.H                        291
+   _rk_sprintf                     \DEFAULT.H                        292
+   DK_ENABLE_BREAKPOINTS           \DEFAULT.H                        328
+   DK_ENABLE_ASMSINGLESTEP         \DEFAULT.H                        336
+   DK_ENABLE_WATCHEXPRESSIONS      \DEFAULT.H                        344
+   DK_ENABLE_TRACING               \DEFAULT.H                        352
+   DK_ENABLE_STACK_TRACING         \DEFAULT.H                        360
+   DK_SEND_STACK_LENGTH            \DEFAULT.H                        368
+   DK_ENABLE_DEBUGKERNEL           \DEFAULT.H                        370
+   __DKENTRY_LIB                   \DKENTRY.LIB                        2
+   __DKCOMMON_LIB                  \DKCOMMON.LIB                       2
+   __DKCORE_LIB                    \DKCORE.LIB                         2
+   TC_TYPE_DEBUG                   \DKCORE.LIB                        14
+   TC_DEBUG_NOREQUEST              \DKCORE.LIB                        16
+   TC_DEBUG_SINGLESTEP             \DKCORE.LIB                        17
+   TC_DEBUG_TOGGLEBREAKPOINT       \DKCORE.LIB                        18
+   TC_DEBUG_CLEARBREAKPOINTS       \DKCORE.LIB                        19
+   TC_DEBUG_TOGGLEALLBREAKPOINTS   \DKCORE.LIB                        20
+   TC_DEBUG_ATBREAKPOINT           \DKCORE.LIB                        21
+   TC_DEBUG_STARTPROGRAM           \DKCORE.LIB                        22
+   TC_DEBUG_RUNPROGRAM             \DKCORE.LIB                        23
+   TC_DEBUG_STOPPROGRAM            \DKCORE.LIB                        24
+   TC_DEBUG_ADDWATCH               \DKCORE.LIB                        25
+   TC_DEBUG_DELETEWATCH            \DKCORE.LIB                        26
+   TC_DEBUG_DELETEALLWATCHES       \DKCORE.LIB                        27
+   TC_DEBUG_EXECWATCH              \DKCORE.LIB                        28
+   TC_DEBUG_EXECALLWATCHES         \DKCORE.LIB                        29
+   TC_DEBUG_SENDCHAR               \DKCORE.LIB                        30
+   TC_DEBUG_RESET                  \DKCORE.LIB                        31
+   TC_DEBUG_SETSENDFLAGS           \DKCORE.LIB                        32
+   TC_DEBUG_REGDATA                \DKCORE.LIB                        33
+   TC_DEBUG_WATCHDATA              \DKCORE.LIB                        34
+   TC_DEBUG_ASMDATA                \DKCORE.LIB                        35
+   TC_DEBUG_STACKDATA              \DKCORE.LIB                        36
+   TC_DEBUG_STDIO                  \DKCORE.LIB                        37
+   TC_DEBUG_WRITEREGDATA           \DKCORE.LIB                        38
+   TC_DEBUG_STDIOCHARREADY         \DKCORE.LIB                        39
+   TC_DEBUG_NOOP                   \DKCORE.LIB                        40
+   TC_DEBUG_ENABLEDOPTIONS         \DKCORE.LIB                        41
+   TC_DEBUG_WRITESTACKSIZE         \DKCORE.LIB                        47
+   TC_DEBUG_STACKTRACEDATA         \DKCORE.LIB                        48
+   DKF_STEP_INTO                   \DKCORE.LIB                        52
+   DKF_STEP_OVER                   \DKCORE.LIB                        53
+   DKF_STEP_ASM                    \DKCORE.LIB                        54
+   DKF_STEP_SOURCE                 \DKCORE.LIB                        55
+   DKF_STEP_CALL                   \DKCORE.LIB                        56
+   DKF_STEP_LCALL                  \DKCORE.LIB                        57
+   DKF_STAT_AT_BP                  \DKCORE.LIB                        60
+   DKF_STAT_AT_HARD_BP             \DKCORE.LIB                        61
+   DKF_STAT_RUNMODE                \DKCORE.LIB                        62
+   DKF_STAT_STEPMODE               \DKCORE.LIB                        63
+   DKF_STAT_ASMSTEPMODE            \DKCORE.LIB                        64
+   DKF_STAT_ATEXIT                 \DKCORE.LIB                        65
+   DKF_STAT_CONTEXTSWITCH          \DKCORE.LIB                        66
+   DKF_STAT_INWATCH                \DKCORE.LIB                        67
+   _TRACE                          \DKCORE.LIB                       135
+   _TRACEON                        \DKCORE.LIB                       136
+   _TRACEOFF                       \DKCORE.LIB                       137
+   DK_SEND_ASM_LENGTH              \DKCORE.LIB                       141
+   DKF_SEND_STACK                  \DKCORE.LIB                       143
+   DKF_SEND_WATCHES                \DKCORE.LIB                       144
+   DKF_SEND_ASM                    \DKCORE.LIB                       145
+   DKF_SEND_REGS                   \DKCORE.LIB                       146
+   DKF_SEND_STATUS                 \DKCORE.LIB                       147
+   DKF_SEND_ACK                    \DKCORE.LIB                       148
+   DKF_SEND_STACKTRACE             \DKCORE.LIB                       153
+   DK_ERROR_BPNOTENABLED           \DKCORE.LIB                       159
+   DK_ERROR_ASMSINGLESTEPNOTENABLED \DKCORE.LIB                       160
+   DK_ERROR_WATCHNOTENABLED        \DKCORE.LIB                       161
+   DKF_STDIO_LOCK                  \DKCORE.LIB                       163
+   DKF_GETCHAR_LOCK                \DKCORE.LIB                       164
+   DKF_RESET_LOCK                  \DKCORE.LIB                       165
+   DKF_DK_LOCK                     \DKCORE.LIB                       166
+   DK_STDIO_TIMEOUT                \DKCORE.LIB                       167
+   DK_GETCHAR_TIMEOUT              \DKCORE.LIB                       168
+   dkIOI                           \DKCORE.LIB                       170
+   dkIOE                           \DKCORE.LIB                       171
+   dkALTD                          \DKCORE.LIB                       172
+   DK_RST20                        \DKCORE.LIB                       174
+   DK_RST28                        \DKCORE.LIB                       175
+   dkZZ                            \DKCORE.LIB                       182
+   dkZS                            \DKCORE.LIB                       183
+   dkZD                            \DKCORE.LIB                       184
+   dkZT                            \DKCORE.LIB                       185
+   dkSZ                            \DKCORE.LIB                       186
+   dkSS                            \DKCORE.LIB                       187
+   dkSD                            \DKCORE.LIB                       188
+   dkST                            \DKCORE.LIB                       189
+   dkDZ                            \DKCORE.LIB                       190
+   dkDS                            \DKCORE.LIB                       191
+   dkDD                            \DKCORE.LIB                       192
+   dkDT                            \DKCORE.LIB                       193
+   dkTZ                            \DKCORE.LIB                       194
+   dkTS                            \DKCORE.LIB                       195
+   dkTD                            \DKCORE.LIB                       196
+   dkTT                            \DKCORE.LIB                       197
+   DK_MAX_WATCHES                  \DKCORE.LIB                       274
+   DKF_BP_INACTIVE                 \DKCORE.LIB                       814
+   DKF_BP_ACTIVE                   \DKCORE.LIB                       815
+   DKF_BP_DELETED                  \DKCORE.LIB                       816
+   DKF_BP_CONDITIONAL              \DKCORE.LIB                       817
+   DKF_BP_HARD                     \DKCORE.LIB                       818
+   DKF_BP_INSERT                   \DKCORE.LIB                       821
+   DKF_BP_FOUND                    \DKCORE.LIB                       822
+   DKF_BP_NOTFOUND                 \DKCORE.LIB                       823
+   DKF_BP_EMPTYFOUND               \DKCORE.LIB                       824
+   DKF_BP_EXHAUSTED                \DKCORE.LIB                       825
+   DK_MAX_BREAKPOINTS              \DKCORE.LIB                       830
+   DK_BREAKPOINT_MASK              \DKCORE.LIB                       848
+   DKF_RST_RST28                   \DKCORE.LIB                      3264
+   DKF_RST_RST20                   \DKCORE.LIB                      3265
+   DKF_RST_RST18                   \DKCORE.LIB                      3266
+   __DKAPP_LIB                     \DKAPP.LIB                          2
+   DKF_OPTIONS_BREAKPOINTS         \DKAPP.LIB                         71
+   DKF_OPTIONS_ASMSINGLESTEP       \DKAPP.LIB                         72
+   DKF_OPTIONS_WATCHES             \DKAPP.LIB                         73
+   DK_BREAKPOINTS_ENABLED          \DKAPP.LIB                         75
+   DK_ASMSINGLESTEP_ENABLED        \DKAPP.LIB                         76
+   DK_WATCHES_ENABLED              \DKAPP.LIB                         77
+   __PROGRAM_LIB                   \PROGRAM.LIB                        2
+   _program_debug                  \PROGRAM.LIB                        4
+   _rk_mem_debug                   \MEM.LIB                            5
+   XALLOC_ANY                      \MEM.LIB                           12
+   XALLOC_BB                       \MEM.LIB                           13
+   XALLOC_NOTBB                    \MEM.LIB                           14
+   XALLOC_MAYBBB                   \MEM.LIB                           15
+   _RS_USER_XALLOC_START           \MEM.LIB                           80
+   _RS_XALLOC_START                \MEM.LIB                           81
+   _RS_XALLOC_END                  \MEM.LIB                           82
+   _xavail                         \MEM.LIB                          514
+   DATA                            \CONTAINS_WIND_METHODS.C            3
+   RD                              \CONTAINS_WIND_METHODS.C            4
+   WR                              \CONTAINS_WIND_METHODS.C            5
+   CS1                             \CONTAINS_WIND_METHODS.C            6
+   CS2                             \CONTAINS_WIND_METHODS.C            7
+   YX                              \CONTAINS_WIND_METHODS.C            8
+   CD                              \CONTAINS_WIND_METHODS.C            9
+   BP_RESET                        \CONTAINS_WIND_METHODS.C           10
+   EFLAG_RESET                     \CONTAINS_WIND_METHODS.C           11
+   CNT                             \CONTAINS_WIND_METHODS.C           12
+   DAT                             \CONTAINS_WIND_METHODS.C           13
+   BP_RESETB                       \CONTAINS_WIND_METHODS.C           14
+   CLOCK_DATA                      \CONTAINS_WIND_METHODS.C           15
+   CLOCK_SETUP                     \CONTAINS_WIND_METHODS.C           16
+   INPUT_SETUP                     \CONTAINS_WIND_METHODS.C           17
+   QUAD_X1                         \CONTAINS_WIND_METHODS.C           18
+   QUAD_X2                         \CONTAINS_WIND_METHODS.C           19
+   QUAD_X4                         \CONTAINS_WIND_METHODS.C           20
+   CNTR_RESET                      \CONTAINS_WIND_METHODS.C           21
+   CNTR_RESETB                     \CONTAINS_WIND_METHODS.C           22
+   TRSFRPR_CNTR                    \CONTAINS_WIND_METHODS.C           23
+   TRSFRCNTR_OL                    \CONTAINS_WIND_METHODS.C           24
+   XYIDR_SETUP                     \CONTAINS_WIND_METHODS.C           25
+   XYIOR_SETUP                     \CONTAINS_WIND_METHODS.C           26
+   HI_Z_STATE                      \CONTAINS_WIND_METHODS.C           27
+
+
+// Function call graph.
+No call graph information available.

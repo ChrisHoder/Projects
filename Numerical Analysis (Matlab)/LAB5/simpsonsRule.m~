@@ -1,0 +1,39 @@
+% FILE: SimpsonsRule.m
+% AUTHOR: Chris Hoder
+% DATE: 10/18/2012
+% CLASS: ENGS 91
+% LAB 5 QUESTION 4
+
+%this method will compute simposons rule with the following points already
+%chosen. This allows for us to 
+function [ErrorMatrix value] = simpsonsRule(f,a,b,n,type)
+    ErrorMatrix = [];
+    i = 1;
+    j = 1;
+    h = (b-a)/n;
+    %h = abs(points(1)-points(2));
+    while(i < max(size(points))),
+        a = points(i);
+        c = points(i+);
+        b = points(i+2);
+        h = c-a;
+        i = i + 2;
+        ErrorMatrix(j,1) = a;
+        ErrorMatrix(j,2) = b;
+        ErrorMatrix(j,3) = (h/3)*(f(a)+4*f(c)+f(b));
+        if(type == 1),
+            %for integral a
+            intf = inline('(-x^2-2*x-2)*exp(-x)');
+        else
+            %for integral b
+            intf = inline('(3*x^(4/3))/4');
+        end
+        ErrorMatrix(j,4) = (intf(b)-intf(a));
+        ErrorMatrix(j,5) = abs(ErrorMatrix(j,3) - ErrorMatrix(j,4));
+        ErrorMatrix(j,6) = ErrorMatrix(j,5)/(b-a);
+        j = j+1;
+    end
+    
+    value = sum(ErrorMatrix(:,3));
+
+end

@@ -1,0 +1,66 @@
+% FILE: newtonSys.m
+% AUTHOR: Chris Hoder
+% DATE: 9/20/2012
+% CLASS: ENGS 91
+% LAB 2 QUESTION 3
+
+
+% This method can be used to solve question 3 using Newton's method for
+% systems of nonlinear equations. theta is a vector of the initial
+% conditions for theta2 and theta3. tol is the tolerance we want to know
+% the root to. nMax is the maximum number of iterations. This uses the
+% inversion of the Jacobian. This will return thetaN which contains a
+% matrix where the first column is theta2 the 2nd is theta3. the iteration
+% number is the row number where the iterations start at 1.
+
+function [thetaN,i,error] = newtonSys(theta,tol,nMax,theta4_input,linkLength)
+    % save initial values
+    thetaN(1,1) = theta(1,1);
+    thetaN(1,2) = theta(1,2);
+    %error array
+    error(1) = 1;
+    %define symbolic place holders so we can define the jacobian
+    syms theta2 theta3 theta4 r1 r2 r3 r4;
+    %convert to radians
+    theta4_ins = theta4_input;
+    Jn = [-r2*sin(theta2) -r3*sin(theta3); r2*cos(theta2) r3*cos(theta3)];
+    fn = [r2*cos(theta2)+r3*cos(theta3)+r4*cos(theta4)-r1;
+        r2*sin(theta2)+r3*sin(theta3)+r4*sin(theta4)];
+    %put in some known values r2, r3, r4, theta4
+    Jn = subs(Jn,{r2, r3},{7,9});
+    fn = subs(fn,{r1, r2,r3,r4,theta4},{linkLength(1),linkLength(2),linkLength(3), linkLength(4), theta4_ins});
+    %define iterator
+    i = 2;
+    %while i < Max number of iterations, continue
+    while( i < nMax),
+        %evaluate the function, f, and the jacobian, J, at the ith points.
+        f = subs(fn,{theta2, theta3},{thetaN(i-1,1),thetaN(i-1,2)});
+        J = subs(Jn,{theta2,theta3},{thetaN(i-1,1),thetaN(i-1,2)});
+        %Find the 2 new points using Netwon's method for systems of
+        %nonlinear equations
+        thetaNew = thetaN(i-1,:)-(J\f)';
+        thetaN(i,1) = thetaNew(1);
+        thetaN(i,2) = thetaNew(2);
+        
+        %calc error
+        thetaOld = thetaN(i-1,:);
+        errorTemp = abs(thetaNew-thetaOld);
+        error(i) = sqrt(errorTemp*errorTemp');
+        %error(i) = sqrt(errorTemp*errorTemp')/sqrt(thetaNew*thetaNew');
+        %if the error is less than our tolerance, we are done, exit the
+        %loop
+        if( error(i) < tol),
+            break;
+        end
+        
+        %update iterator
+        i = i+1;
+    end
+    
+    %if method exited loop due to max number of iterations, warn the user.
+    if( i == nMax),
+        warning(['Method reached max number of iterations,',...
+                        '%d with theta4 input as %d'],nMax,theta4_input);
+    end
+    
+end

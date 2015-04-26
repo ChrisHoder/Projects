@@ -1,0 +1,42 @@
+function [y yprime x] = nonlinNewton(interval,initialCond,dF2dt,n,m,tol),
+    a     = interval(1);
+    b     = interval(2);
+    alpha = initialCond(1);
+    beta  = initialCond(2);
+    %step size
+    h = (b-a)/n;
+    %number of iterations
+    k = 1;
+    %initial guess
+    %T = (beta-alpha)/(b-a);
+    T = 1;
+    
+    %while we have not reached the maximum number of interations
+    while( k <= m),
+        z1o = alpha;
+        z2o = T(k);
+        [z t] = ABAMPC4(0,50,h,[z1o z2o 0 1],dF2dt,0);
+        error = ( abs(z(end,1) - beta ));
+        if( error < tol ),
+            y = z(:,1);
+            yprime = z(:,2);
+            x = t;
+            return
+        end
+        %z(end,3)
+        %newton's method to update our guess on the initial point
+        T(k+1) = T( - (z(end,1)-beta)/z(end,3);
+        %update our counter
+        k = k + 1;
+        %sprintf('Done')
+    end
+    
+    warning('Maximum number of iterations exceeded'); %#ok<*WNTAG>
+    y = z(:,1);
+    yprime = z(:,2);
+    x = t;
+    return
+
+
+
+end

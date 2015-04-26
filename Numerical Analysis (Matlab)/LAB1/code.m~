@@ -1,0 +1,34 @@
+%% forward direction
+%x value
+x = ;
+calc = zeros(30,3);
+for i=1:1:31,
+   x1 = besselj(i,x);
+   
+end
+
+
+function error = besselCalcForward(x,nMax,n0,n1),
+calc = zeros(nMax+1,4);
+for i=1:1:nMax+1,
+    %gets the exact value from BesselJ matlab method
+    x1 = besselj(i,x); 
+    
+    if( i == 1),
+        x2 = n0;
+    elseif( i == 2 ),
+        x2 = n1;
+    else
+        x2 = 
+    end
+    
+    calc(i,1) = x1;
+    calc(i,2) = x2;
+    calc(i,3) = abs(x1-x2);
+    calc(i,4) 
+   
+end
+
+
+
+end

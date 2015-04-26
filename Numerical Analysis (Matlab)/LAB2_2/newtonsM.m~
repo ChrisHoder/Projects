@@ -1,0 +1,12 @@
+function Pn = newtonsM(f,fprime, fo, tol, nMax),
+    
+    Pn(1) = fo;
+    i = 2;
+    while( i < nMax),
+        Pn(i) = 
+        
+        i = i+1; 
+    end
+
+
+end

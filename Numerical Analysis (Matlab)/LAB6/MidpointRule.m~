@@ -1,0 +1,7 @@
+% FILE: MidpointRule.m
+% AUTHOR: Chris Hoder
+% DATE: 10/24/2012
+% CLASS: ENGS 91
+% LAB 5 QUESTION 1
+
+function [x y] = MidPoint(

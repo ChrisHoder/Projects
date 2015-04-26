@@ -1,0 +1,934 @@
+/*** BeginHeader */
+#ifndef __GPS2_LIB
+#define __GPS2_LIB
+#ifndef PI
+#define PI  3.141592654
+#endif
+/*** EndHeader */
+
+/* START LIBRARY DESCRIPTION *********************************************
+5/16/2011
+Suk Joon Lee
+-new gps bearing function (gps_bearing2) was added to GPS3.Lib
+
+25jan2007
+gps2.lib
+ZWorld, 2001
+Goetz Dietrich, March 2005
+John Murphy, January 2007
+- gps_get_position changed to return lat & long even for invalid strings, and
+to note validity with a 0 (yes) or 1 (no)
+- changed sog (speed over ground) to a float, and corrected the parsing for it
+- added gps_get_satellites
+- added timestamp field to GPSPosition
+- changed R for Hanover's latitude
+
+- bearing calculation changed to double ( arccos transfered to arctan)
+- bearing calculation changed to 0°/180° case
+
+functions for parsing NMEA-0183 location data from a GPS receiver.
+Also has functions for computing distances, bearings and to calculate
+basing points:
+
+gps_get_position
+gps_get_satellites
+gps_get_utc
+gps_ground_distance
+gps_bearing
+gps_basing_point
+getgps
+
+END DESCRIPTION *********************************************************/
+
+/*** BeginHeader */
+
+//This structure holds geographical position as reported by a GPS receiver
+//use the gps_get_position function below to set the fields
+typedef struct {
+	char timestamp[8];
+	int lat_degrees;
+	int lon_degrees;
+	float lat_minutes;
+	float lon_minutes;
+	char lat_direction;
+	char lon_direction;
+	float sog;    			//speed over ground
+	float tog;            //track over ground
+} GPSPosition;
+
+typedef struct {
+	int num_sat;
+	int pos_mode;
+	char sat_list[12];
+	char pdop[4];
+	char hdop[4];
+	char vdop[4];
+} gps_sat;
+//in km
+
+//#define GPS_EARTH_RADIUS 6356      // in km, for south pole
+//#define GPS_EARTH_RADIUS 6368 // in km, for 43 d. lat.  (Hanover)
+#define GPS_EARTH_RADIUS  6359 // in k, for 72.6 d. lat. (Summit,Greenland)
+#define dbp 0.15	// distance to next basing point in km
+
+/*** EndHeader */
+
+/*** BeginHeader gps_parse_coordinate */
+int gps_parse_coordinate(char *coord, int *degrees, float *minutes);
+/*** EndHeader */
+
+//helper function for splitting xxxxx.xxxx into degrees and minutes
+//returns 0 if succeeded
+nodebug int gps_parse_coordinate(char *coord, int *degrees, float *minutes)
+{
+	auto char *decimal_point;
+	auto char temp;
+	auto char *dummy;
+
+	decimal_point = strchr(coord, '.');
+	if(decimal_point == NULL)
+	return -1;
+	temp = *(decimal_point - 2);
+	*(decimal_point - 2) = 0; //temporary terminator
+	*degrees = atoi(coord);
+	*(decimal_point - 2) = temp; //reinstate character
+	*minutes = strtod(decimal_point - 2, &dummy);
+	return 0;
+}
+/*** BeginHeader gps_get_satellites */
+int gps_get_satellites(gps_sat *sats, char *sentence);
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION *********************************************
+gps_get_satellites							<gps2.lib>
+END DESCRIPTION **********************************************************/
+int gps_get_satellites(gps_sat *sats, char *sentence)
+{
+	auto int i, num;
+
+	if(strlen(sentence) < 4)
+	{
+		return -1;
+	}
+
+	if(strncmp(sentence, "$GPGSA", 6) == 0)
+	{
+		sats->num_sat = 0;
+		//parse GSA sentence
+		for (i = 0;i < 17;i++)
+		{
+			sentence = strchr(sentence, ','); // scan for first instance of *
+			if (sentence == NULL)
+			{
+				return -1; // got to the end of the string without finding ','
+			}
+			sentence++; //first character in field
+			//pull out data
+			/*			if(i == 0) //acquisition mode
+*/
+			if (i == 1) //positioning mode
+			{
+				sats->pos_mode = atoi(sentence[0]);
+			}
+			if ((i > 1)&(i < 14))// satellites
+			{
+				if (sentence[0] != ',')
+				{
+					num = (sentence[0]-48)*10 + (sentence[1]-48);
+					sats->sat_list[sats->num_sat] = num;
+					sats->num_sat++;
+				}
+			}
+			if(i == 14) //PDOP
+			{
+				memcpy(&sats->pdop[0], sentence, 4);
+			}
+			if(i == 15) //HDOP
+			{
+				memcpy(&sats->hdop[0], sentence, 4);
+			}
+			if(i == 16) //VDOP
+			{
+				memcpy(&sats->vdop[0], sentence, 4);
+			}
+		} // for i
+	} // if correct string
+	else
+	{
+		return -1;
+	}
+	return sats->num_sat;
+}
+
+/*** BeginHeader gps_get_position */
+int gps_get_position(GPSPosition *newpos, char *sentence);
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+gps_get_position		                  <gps2.lib>
+
+SYNTAX: 			int gps_get_position(GPSPositon *newpos, char *sentence);
+KEYWORDS:      gps
+DESCRIPTION:   Parses a sentence to extract position data.
+					This function is able to parse any of the following
+					GPS sentence formats: GGA, GLL, RMC
+PARAMETER1:    newpos - a GPSPosition structure to fill
+PARAMETER2:		sentence - a string containing a line of GPS data
+					in NMEA-0183 format
+RETURN VALUE:  0 - success
+					-1 - parsing error
+					1 - sentence marked invalid
+SEE ALSO:
+
+END DESCRIPTION **********************************************************/
+
+//can parse GGA, GLL, or RMC sentence
+int gps_get_position(GPSPosition *newpos, char *sentence)
+{
+	auto int i, tg, valid, sog;
+	auto char togg[5];
+	auto char *dummy;
+   //auto char sub[6];
+	valid = 0;
+	if(strlen(sentence) < 4)
+	return -1;
+
+   //strncpy(sub,sentence,6);
+   //printf("Header: %s\n",sub);
+
+	if(strncmp(sentence, "$GPGGA", 6) == 0)
+	{
+		//parse GGA sentence
+		for(i = 0;i < 11;i++)
+		{
+			sentence = strchr(sentence, ',');
+			if(sentence == NULL)
+			return -1;
+			sentence++; //first character in field
+			//pull out data
+			if(i == 1) //latitude
+			{
+				if( gps_parse_coordinate(sentence,
+							&newpos->lat_degrees,
+							&newpos->lat_minutes)
+						)
+				{
+					return -1; //get_coordinate failed
+				}
+			}
+			if(i == 2) //lat direction
+			{
+				newpos->lat_direction = *sentence;
+			}
+			if(i == 3) // longitude
+			{
+				if( gps_parse_coordinate(sentence,
+							&newpos->lon_degrees,
+							&newpos->lon_minutes)
+						)
+				{
+					return -1; //get_coordinate failed
+				}
+			}
+			if(i == 4) //lon direction
+			{
+				newpos->lon_direction = *sentence;
+			}
+			if(i == 5) //link quality
+			{
+				if(*sentence == '0')
+				return -2;
+			}
+		}
+	}
+	else if(strncmp(sentence, "$GPGLL", 6) == 0)
+	{
+		//parse GLL sentence
+		for(i = 0;i < 6;i++)
+		{
+			sentence = strchr(sentence, ',');
+			if(sentence == NULL)
+			{
+				//handle short GLL sentences from Garmin receivers
+				if(i > 3) break;
+				return -1;
+			}
+			sentence++; //first character in field
+			//pull out data
+			if(i == 0) //latitude
+			{
+				if( gps_parse_coordinate(sentence,
+							&newpos->lat_degrees,
+							&newpos->lat_minutes)
+						)
+				{
+					return -1; //get_coordinate failed
+				}
+			}
+			if(i == 1) //lat direction
+			{
+				newpos->lat_direction = *sentence;
+			}
+			if(i == 2) // longitude
+			{
+				if( gps_parse_coordinate(sentence,
+							&newpos->lon_degrees,
+							&newpos->lon_minutes)
+						)
+				{
+					return -1; //get_coordinate failed
+				}
+			}
+			if(i == 3) //lon direction
+			{
+				newpos->lon_direction = *sentence;
+			}
+			if(i == 5) //link quality
+			{
+				if(*sentence != 'A')
+				{
+					if (*sentence !='V') {
+						return -2;
+					} else {
+						valid = 1;
+					}
+				}
+			}
+		}
+	}
+	else if(strncmp(sentence, "$GPRMC", 6) == 0)
+	{
+	  //	printf("GPRMC\n");
+		//parse RMC sentence
+		for(i = 0;i < 11;i++)
+		{
+			sentence = strchr(sentence, ',');
+			if(sentence == NULL)
+			return -1;
+			sentence++; //first character in field
+			//pull out data
+			if(i == 0) // timestamp
+			{
+				memcpy(&newpos->timestamp, sentence, 8);
+			}
+			if(i == 1) //link quality
+			{
+				if(*sentence != 'A')
+				{
+					if (*sentence !='V') {
+						return -2;
+					} else {
+						valid = 1;
+					}
+				}
+			}
+			if(i == 2) //latitude
+			{
+				if( gps_parse_coordinate(sentence,
+							&newpos->lat_degrees,
+							&newpos->lat_minutes)
+						)
+				{
+					return -1; //get_coordinate failed
+				}
+			}
+			if(i == 3) //lat direction
+			{
+				if(*sentence == 'N' || *sentence == 'S')
+				{
+					newpos->lat_direction = *sentence;
+				}		// end if
+				else
+				return -2;
+			}
+			if(i == 4) // longitude
+			{
+				if( gps_parse_coordinate(sentence,
+							&newpos->lon_degrees,
+							&newpos->lon_minutes)
+						)
+				{
+					return -1; //get_coordinate failed
+				}
+			}
+			if(i == 5) //lon direction
+			{
+				if(*sentence == 'W' || *sentence == 'E')
+				{
+					newpos->lon_direction = *sentence;
+				}		// end if
+				else
+				return -2;
+			}
+			if(i == 6) //speed over ground, knots
+			{
+				//				newpos->sog = *sentence;
+				sog = 100*(sentence[0]-48) + 10*(sentence[1]-48) + (sentence[2]-48);
+				newpos->sog = (float)sog + ((float)(sentence[4]-48))/10.0;
+			}
+			if(i == 7) //track over ground, degrees true
+			{
+				//for(tg=1;tg<6;tg++){
+            //togg[tg-1] = *(sentence + tg);  }
+				//newpos->tog = strtod(togg, &dummy);
+            newpos->tog = atof(strncpy(togg,sentence,5));    //Hoder change
+
+            //printf("tog %f\n",newpos->tog);
+			}
+		}
+	}
+	else
+	{
+		return -1; //unknown sentence type
+	}
+	return valid;
+}
+
+/*** BeginHeader gps_get_utc */
+int gps_get_utc(struct tm *newtime, char *sentence);
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+gps_get_utc		                  <gps2.lib>
+
+SYNTAX: 			int gps_get_utc(struct tm *newtime, char *sentence);
+KEYWORDS:      gps
+DESCRIPTION:   Parses an RMC sentence to extract time data
+PARAMETER1:		newtime - tm structure to fill with new UTC time
+PARAMETER2:		sentence - a string containing a line of GPS data
+					in NMEA-0183 format(RMC sentence)
+RETURN VALUE:  0 - success
+					-1 - parsing error
+					-2 - sentence marked invalid
+SEE ALSO:
+
+END DESCRIPTION **********************************************************/
+
+nodebug int gps_get_utc(struct tm *newtime, char *sentence)
+{
+	int i;
+	char temp_str[3];
+	unsigned long epoch_sec;
+	temp_str[2] = 0; //2 character string
+	if(strncmp(sentence, "$GPRMC", 6) == 0)
+	{
+		//parse RMC sentence
+		for(i = 0;i < 11;i++)
+		{
+			sentence = strchr(sentence, ',');
+			if(sentence == NULL)
+			return -1;
+			sentence++; //first character in field
+			//pull out data
+			if(i == 0)
+			{
+				strncpy(temp_str, sentence, 2);
+				newtime->tm_hour = atoi(temp_str);
+				strncpy(temp_str, sentence+2, 2);
+				newtime->tm_min = atoi(temp_str);
+				strncpy(temp_str, sentence+4, 2);
+				newtime->tm_sec = atoi(temp_str);
+			}
+			if(i == 1) //link quality
+			{
+				if(*sentence != 'A')
+				return -2;
+			}
+			if(i == 8) //lon direction
+			{
+				strncpy(temp_str, sentence, 2);
+				newtime->tm_mday = atoi(temp_str);
+				strncpy(temp_str, sentence+2, 2);
+				newtime->tm_mon = atoi(temp_str);
+				strncpy(temp_str, sentence+4, 2);
+				newtime->tm_year = 100 + atoi(temp_str);
+			}
+		}
+		//convert back and forth to get weekday
+		epoch_sec = mktime(newtime);
+		mktm(newtime, epoch_sec);
+		return 0;
+	}
+	else
+	{
+		return -1; //unknown sentence type
+	}
+}
+
+/*** BeginHeader gps_ground_distance */
+float gps_ground_distance(GPSPosition *a, GPSPosition *b);
+#use DoublePrecision.lib
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+gps_ground_distance		               <gps2.lib>
+
+SYNTAX: float gps_ground_distance(GPSPosition *a, GPSPosition *b);
+KEYWORDS:      gps
+DESCRIPTION:   Calculates ground distance(in km) between to
+			geographical points. (Uses spherical earth model)
+PARAMETER1:		a - first point
+PARAMETER2:		b - second point
+RETURN VALUE:  distance in kilometers
+SEE ALSO:
+
+END DESCRIPTION **********************************************************/
+
+float gps_ground_distance(GPSPosition *a, GPSPosition *b)
+{
+	float angle, pi;
+	float lat_a, lon_a, lat_b, lon_b;
+	_double dummy00, dummy2, diss;
+	_double lat_x, lat_y, lon_x, lon_y;
+   _double dlat2, dlon2;
+
+   pi = 3.141592654;
+
+   if(a->lat_degrees == b->lat_degrees && a->lat_minutes==b->lat_minutes &&
+		a->lon_degrees == b->lon_degrees && a->lon_minutes==b->lon_minutes)
+      return 0;
+
+   lat_x = dpAdd(dpFloat2Double(a->lat_degrees),dpFloat2Double(a->lat_minutes/60.0));
+	if(a->lat_direction == 'S')
+  		lat_x = dpNeg(lat_x);
+ 	lat_x = dpDiv(dpMul(lat_x,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   lon_x = dpAdd(dpFloat2Double(a->lon_degrees),dpFloat2Double(a->lon_minutes/60.0));
+  	if(a->lon_direction == 'E')
+		lon_x = dpNeg(lon_x);
+	lon_x = dpDiv(dpMul(lon_x,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   lat_y = dpAdd(dpFloat2Double(b->lat_degrees),dpFloat2Double(b->lat_minutes/60.0));
+	if(b->lat_direction == 'S')
+		lat_y = dpNeg(lat_y);
+	lat_y = dpDiv(dpMul(lat_y,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   lon_y = dpAdd(dpFloat2Double(b->lon_degrees),dpFloat2Double(b->lon_minutes/60.0));
+	if(b->lon_direction == 'E')
+		lon_y = dpNeg(lon_y);
+	lon_y = dpDiv(dpMul(lon_y,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   //Todo : account for when dividing by 0
+   dlat2 = dpDiv(dpSub(lat_y,lat_x),dpFloat2Double(2.0));
+   dlon2 = dpDiv(dpSub(lon_y,lon_x),dpFloat2Double(2.0));
+
+   dummy00 = dpAdd(dpMul(dpSine(dlat2),dpSine(dlat2)),dpMul(dpMul(dpMul(dpCosine(lat_x),dpCosine(lat_y)),dpSine(dlon2)),dpSine(dlon2)));
+   dummy2 = dpMul(dpArctan(dpDiv(dpSqrt(dummy00), dpSqrt(dpSub(dpFloat2Double(1.0),dummy00)))),dpFloat2Double(2.0));
+   diss = dpMul(dummy2,dpFloat2Double(GPS_EARTH_RADIUS));
+
+	return dpDouble2Float(diss);
+}
+
+
+/*** BeginHeader gps_bearing */
+float gps_bearing(GPSPosition *c, GPSPosition *d, float dist);
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+gps_bearing		               <gps2.lib>
+
+SYNTAX: float gps_bearing(GPSPosition *a, GPSPosition *b, dist);
+KEYWORDS:      gps
+DESCRIPTION:   Calculates bearing(in degree) from one geographical point a
+			to a geographical point b. (Uses spherical earth model)
+PARAMETER1:		a - first point
+PARAMETER2:		b - second point
+PARAMETER3:		dist - ground distance between the two points a b
+RETURN VALUE:  bearing in degrees
+SEE ALSO:
+
+END DESCRIPTION **********************************************************/
+
+float gps_bearing(GPSPosition *c, GPSPosition *d, float dist)
+{
+	float bearing, pi, lon_dif, lon_diflim;
+	float lat_c, lon_c, lat_d, lon_d;
+	_double dummy00, dista, dummy01;
+	_double lat_x, lat_y, lon_x, lon_y;
+	pi = 3.141592654;
+
+   lat_c = c->lat_degrees + c->lat_minutes/60;
+	if(c->lat_direction == 'S')
+		lat_c = -lat_c;
+	lat_c = lat_c * PI / 180;
+
+   lon_c = c->lon_degrees + c->lon_minutes/60;
+	if(c->lon_direction == 'E')
+		lon_c = -lon_c;
+	lon_c = lon_c * PI / 180;
+
+   lat_d = d->lat_degrees + d->lat_minutes/60;
+	if(d->lat_direction == 'S')
+		lat_d = -lat_d;
+	lat_d = lat_d * PI / 180;
+
+   lon_d = d->lon_degrees + d->lon_minutes/60;
+	if(d->lon_direction == 'E')
+		lon_d = -lon_d;
+	lon_d = lon_d * PI / 180;
+
+	if (cos(lat_c) < 0.0001)      // Small number
+		if (lat_c > 0)
+			bearing = 180;          	// Starting from N pole
+		else bearing = 360;				// Starting from S pole
+
+	dist = dist / GPS_EARTH_RADIUS; // Convert distance to radian
+	lon_dif = lon_c - lon_d;
+	lon_diflim = 0.00000006399;
+
+   if(lon_dif < lon_diflim && lon_dif > -lon_diflim)
+   { //abs
+		if(lat_c > lat_d)
+		{
+	  		bearing = PI;
+  		}		// end if
+  		else
+		{
+	  		bearing = 0;
+  		}		// end else
+   }
+	else
+	{
+      lat_x = dpAdd(dpFloat2Double(c->lat_degrees),dpFloat2Double(c->lat_minutes/60.0));
+	   if(c->lat_direction == 'S')
+  			lat_x = dpNeg(lat_x);
+ 		lat_x = dpDiv(dpMul(lat_x,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   	lon_x = dpAdd(dpFloat2Double(c->lon_degrees),dpFloat2Double(c->lon_minutes/60.0));
+  		if(c->lon_direction == 'E')
+			lon_x = dpNeg(lon_x);
+		lon_x = dpDiv(dpMul(lon_x,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   	lat_y = dpAdd(dpFloat2Double(d->lat_degrees),dpFloat2Double(d->lat_minutes/60.0));
+	   if(d->lat_direction == 'S')
+			lat_y = dpNeg(lat_y);
+		lat_y = dpDiv(dpMul(lat_y,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   	lon_y = dpAdd(dpFloat2Double(d->lon_degrees),dpFloat2Double(d->lon_minutes/60.0));
+	   if(d->lon_direction == 'E')
+			lon_y = dpNeg(lon_y);
+		lon_y = dpDiv(dpMul(lon_y,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+      //printf("%f %f %f %f\n",dpDouble2Float(lat_x), dpDouble2Float(lon_x), dpDouble2Float(lat_y), dpDouble2Float(lon_y));
+
+      if (sin(lon_d - lon_c) < 0)         // Calculation of bearing
+		{
+			/*lat_x = dpFloat2Double(lat_c);
+			lat_y = dpFloat2Double(lat_d);
+			lon_x = dpFloat2Double(lon_c);
+			lon_y = dpFloat2Double(lon_d);*/
+
+  			dista = dpFloat2Double(dist);
+			dummy00 = dpDiv(dpSub(dpSine(lat_y),dpMul(dpSine(lat_x),dpCosine(dista))),dpMul(dpSine(dista),dpCosine(lat_x)));
+			//bearing = acos(dummy01);
+			dummy01 = dpAdd(dpArctan(dpDiv(dpNeg(dummy00),dpSqrt(dpAdd(dpMul(dpNeg(dummy00),dummy00),dpMakeNum(0x3ff00000,0x0)/*1*/)))),dpMul(dpMakeNum(0x40000000,0x0)/*2*/,dpArctan(dpMakeNum(0x3ff00000,0x0)/*1*/)));
+			//dummy01 = dpAtan(-dummy00/dpSqrt(-dummy00*dummy00+1))+2*dpAtan(1)
+			bearing = dpDouble2Float(dummy01);
+		}		// end if
+		else
+		{
+			/*lat_x = dpFloat2Double(lat_c);
+			lat_y = dpFloat2Double(lat_d);
+			lon_x = dpFloat2Double(lon_c);
+			lon_y = dpFloat2Double(lon_d);*/
+
+         dista = dpFloat2Double(dist);
+			dummy00 = dpDiv(dpSub(dpSine(lat_y),dpMul(dpSine(lat_x),dpCosine(dista))),dpMul(dpSine(dista),dpCosine(lat_x)));
+			//bearing = 2*PI-acos((sin(lat_d)-sin(lat_c)*cos(dist))/(sin(dist)*cos(lat_c)));
+			dummy01 = dpAdd(dpArctan(dpDiv(dpNeg(dummy00),dpSqrt(dpAdd(dpMul(dpNeg(dummy00),dummy00),dpMakeNum(0x3ff00000,0x0)/*1*/)))),dpMul(dpMakeNum(0x40000000,0x0)/*2*/,dpArctan(dpMakeNum(0x3ff00000,0x0)/*1*/)));
+			//dummy01 = dpAtan(-dummy00/dpSqrt(-dummy00*dummy00+1))+2*dpAtan(1)
+			bearing = dpDouble2Float(dummy01);
+			bearing = 2*PI - bearing;
+		}		// end else
+	}		// end else
+
+   return bearing * (180 / PI);
+}
+
+
+/*** BeginHeader gps_basing_point */
+gps_basing_point(GPSPosition *c, GPSPosition *bp, float tc1);
+extern float dist_bp;
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+gps_basing_point		               <gps2.lib>
+
+SYNTAX: float gps_bearing(GPSPosition *c, GPSPosition *bp, tc1);
+KEYWORDS:      gps
+DESCRIPTION:   Calculates lat and lon of a basing_point bp at a certain distance
+					dbp from starting point c with the initial bearing tc1
+PARAMETER1:		c - starting point
+PARAMETER2:		bp - basing_point
+PARAMETER3:		tc1 in true degrees
+RETURN VALUE:
+SEE ALSO:
+
+END DESCRIPTION **********************************************************/
+
+gps_basing_point(GPSPosition *c, GPSPosition *bp, float tc1)
+{
+	float lat_c, lon_c, lat_d, lon_d, dist, dummy2;
+	int dummy;
+
+	lat_c = c->lat_degrees + c->lat_minutes/60;     // transform lat and lon to radians
+	if(c->lat_direction == 'S')
+	lat_c = -lat_c;
+	lat_c = lat_c * PI / 180;
+	lon_c = c->lon_degrees + c->lon_minutes/60;
+	if(c->lon_direction == 'E')
+	lon_c = -lon_c;
+	lon_c = lon_c * PI / 180;
+
+	tc1 = tc1 * (PI / 180);							// change heading to radians
+	dist = dist_bp / GPS_EARTH_RADIUS;			// dist is the angular sweep between c and bp
+
+	// d is an intermediate step in the calculations
+	lat_d = asin(sin(lat_c) * cos(dist) + cos(lat_c) * sin(dist) * cos(tc1));
+	if (cos(lat_d) == 0)
+	lon_d = lon_c;			// the generated basing point is a pole,
+	// this assignment avoids a div0 error
+	else
+	lon_d = (lon_c - asin(sin(tc1) * sin(dist) / cos(lat_d)) + PI);
+	dummy = (int) ((lon_d) / (2 * PI));
+	dummy2 = (float) dummy * (2 * PI);
+	lon_d = lon_d - dummy2;
+	lon_d = lon_d - PI;
+
+	// d now contains the location of the basing point in terms of lat and long
+	// radians.  Convert the latitude into degrees, minutes, direction and store
+	// in bp
+	lat_d = lat_d * 180 / PI;
+	if(lat_d < 0)
+	bp->lat_direction = 'S';
+	else
+	bp->lat_direction = 'N';
+	dummy = (int) lat_d;
+	bp->lat_degrees = dummy;
+	lat_d = (lat_d - (float)dummy) * 60;
+	bp->lat_minutes = lat_d;
+
+	// convert longitude into degrees, minutes, direction and store in the bp struct
+	lon_d = lon_d * 180 / PI;
+	if(lon_d < 0)
+	bp->lon_direction = 'E';
+	else
+	bp->lon_direction = 'W';
+	dummy = (int) lon_d;
+	bp->lon_degrees = dummy;
+	lon_d = (lon_d - (float)dummy) * 60;
+	bp->lon_minutes = lon_d;
+
+	// the bp struct now contains the lat and lon coordinates for the basing point
+}		// end gps_basing_point
+
+
+/*** BeginHeader getgps */
+char *getgps(char *buffer_gps);
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+getgps(*in_str)		               <gps2.lib>
+
+SYNTAX: char getgps(*in_str);
+KEYWORDS:      gps
+DESCRIPTION:   gets gps data string from serC
+PARAMETER1:    string to put
+RETURN VALUE:  string from modem
+SEE ALSO:
+
+END DESCRIPTION **********************************************************/
+
+
+char *getgps(char *buffer_gps)
+{
+
+	auto int i,ch;
+	serCwrFlush();
+	serCrdFlush();
+	memset(buffer_gps, 0x00, sizeof(buffer_gps));
+
+	i = 0;
+   //buffer_gps[i++] = '$';
+	WrPortI(PBDDR, &PBDDRShadow, 0xFF);   // PB = all output
+	//SPIinit();
+	while((ch = serCgetc()) != '\n' )
+	{
+		// Copy only valid RCV'd characters to the buffer
+		if(ch != -1)
+		{
+			buffer_gps[i++] = ch;
+		} // endif
+	}   //end while
+
+	buffer_gps[i++] = ch;      //copy '\r' to the data buffer
+	buffer_gps[i]   = '\0';     //terminate the ascii string
+	//printf("Latest GPS string is %s", buffer_gps);
+	return buffer_gps;
+} // end getpgs
+
+///////////////////////////////////
+
+/*** BeginHeader getgps2 */
+int getgps2(char *buffer_gps);
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+getgps2(*in_str)		               <gps2.lib>
+
+SYNTAX: char getgps2(*in_str);
+KEYWORDS:      gps
+DESCRIPTION:   gets gps data string from serC
+PARAMETER1:    string to put
+RETURN VALUE:  string from modem
+SEE ALSO:
+TODO: better serial buffer flushing.
+END DESCRIPTION **********************************************************/
+
+int getgps2(char *buffer_gps)
+{
+	auto int i,ch;
+	memset(buffer_gps, 0x00, sizeof(buffer_gps));		//clear out string contents
+
+	i = 0;
+	buffer_gps[i++] = '$';
+	while((ch = serCgetc()) != '*' )		//look for the * termination character
+	{
+		// Copy only valid RCV'd characters to the buffer
+		if(ch != -1)
+		{
+			buffer_gps[i++] = ch;
+         //printf("%c\n",ch);
+		} // endif
+		else
+		{
+			return -1;
+		}
+	}   //end while
+
+	buffer_gps[i++] = ch;      //copy '\r' to the data buffer
+	buffer_gps[i++]   = '\n';  //add '\n' to the data buffer
+	buffer_gps[i]   = '\0';     //terminate the ascii string
+	//printf("Latest GPS string is %s", buffer_gps);
+	serFrdFlush();
+	return 0;
+} // end getgps2
+
+/*** BeginHeader */
+#endif
+/*** EndHeader */
+
+/*** BeginHeader gps_bearing2 */
+float gps_bearing2(GPSPosition *c, GPSPosition *d);
+/*** EndHeader */
+
+/* START FUNCTION DESCRIPTION ********************************************
+gps_bearing2		               <gps2.lib>
+
+SYNTAX: float gps_bearing(GPSPosition *a, GPSPosition *b, dist);
+KEYWORDS:      gps
+DESCRIPTION:   Calculates bearing(in degree) from one geographical point a
+			to a geographical point b. (Uses spherical earth model)
+PARAMETER1:		a - first point
+PARAMETER2:		b - second point
+PARAMETER3:		dist - ground distance between the two points a b
+RETURN VALUE:  bearing in degrees
+SEE ALSO:
+
+END DESCRIPTION **********************************************************/
+
+float gps_bearing2(GPSPosition *c, GPSPosition *d)
+{
+	float bearing, pi, lon_dif, lon_diflim;
+	float lat_c, lon_c, lat_d, lon_d;
+	_double x,y;
+	_double lat_x, lat_y, lon_x, lon_y;
+   _double dlat, dlon;
+   _double dummy,pi2;
+
+	pi = 3.141592654;
+
+   if(c->lat_degrees == d->lat_degrees && c->lat_minutes==d->lat_minutes &&
+		c->lon_degrees == d->lon_degrees && c->lon_minutes==d->lon_minutes)
+      return 0;
+
+      lat_x = dpAdd(dpFloat2Double(c->lat_degrees),dpFloat2Double(c->lat_minutes/60.0));
+	   if(c->lat_direction == 'S')
+  			lat_x = dpNeg(lat_x);
+ 		lat_x = dpDiv(dpMul(lat_x,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   	lon_x = dpAdd(dpFloat2Double(c->lon_degrees),dpFloat2Double(c->lon_minutes/60.0));
+  		if(c->lon_direction == 'E')
+			lon_x = dpNeg(lon_x);
+		lon_x = dpDiv(dpMul(lon_x,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   	lat_y = dpAdd(dpFloat2Double(d->lat_degrees),dpFloat2Double(d->lat_minutes/60.0));
+	   if(d->lat_direction == 'S')
+			lat_y = dpNeg(lat_y);
+		lat_y = dpDiv(dpMul(lat_y,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+   	lon_y = dpAdd(dpFloat2Double(d->lon_degrees),dpFloat2Double(d->lon_minutes/60.0));
+	   if(d->lon_direction == 'E')
+			lon_y = dpNeg(lon_y);
+		lon_y = dpDiv(dpMul(lon_y,dpFloat2Double(pi)),dpFloat2Double(180.0));
+
+      pi2 = dpFloat2Double(pi);
+
+      //printf("double: %f %f %f %f\n",dpDouble2Float(lat_x), dpDouble2Float(lon_x), dpDouble2Float(lat_y), dpDouble2Float(lon_y));
+
+		/*lat_x = dpFloat2Double(lat_c);
+		lat_y = dpFloat2Double(lat_d);
+		lon_x = dpFloat2Double(lon_c);
+		lon_y = dpFloat2Double(lon_d);
+      printf("float: %f %f %f %f\n",dpDouble2Float(lat_x), dpDouble2Float(lon_x), dpDouble2Float(lat_y), dpDouble2Float(lon_y));*/
+
+      //dlat = dpSub(lat_y,lat_x);
+      dlon = dpSub(lon_y,lon_x);
+
+      y = dpMul(dpSine(dlon),dpCosine(lat_y));
+      // y = sin(dlon) * cos(lat_y)
+      x = dpSub(dpMul(dpCosine(lat_x),dpSine(lat_y)),dpMul(dpMul(dpSine(lat_x),dpCosine(lat_y)),dpCosine(dlon)));
+      // x = cos(lat_x)*sin(lat_y) - sin(lat_x)*cos(lat_y)*cos(dlon)
+
+      //diss = dpAdd(dpArctan(dpDiv(dpNeg(dummy00),dpSqrt(dpAdd(dpMul(dpNeg(dummy00),dummy00),dpMakeNum(0x3ff00000,0x0)/*1*/)))),dpMul(dpMakeNum(0x40000000,0x0)/*2*/,dpArctan(dpMakeNum(0x3ff00000,0x0)/*1*/)));
+
+      //printf("x,y: %f, %f\n",dpDouble2Float(x),dpDouble2Float(y));
+
+      if(dpDouble2Float(y)>0){
+      	if(dpDouble2Float(x)>0){
+          	dummy = dpArctan(dpDiv(y,x));
+         	bearing = dpDouble2Float(dummy);
+         }
+         else if(dpDouble2Float(x)<0){
+          	dummy = dpSub(pi2,dpArctan(dpDiv(y,dpNeg(x))));
+            bearing = dpDouble2Float(dummy);
+         }
+         else bearing = pi/2.0;
+      }
+      else if(dpDouble2Float(y)<0){
+         if(dpDouble2Float(x)>0){
+         	 dummy = dpArctan(dpDiv(dpNeg(y),x));
+             dummy = dpSub(dpMul(pi2,dpFloat2Double(2.0)),dummy);
+             bearing = dpDouble2Float(dummy);
+         }
+         else if(dpDouble2Float(x)<0){
+          	dummy = dpAdd(dpArctan(dpDiv(dpNeg(y),dpNeg(x))),pi2);
+            bearing = dpDouble2Float(dummy);
+         }
+         else bearing = pi*3.0/2.0;
+      }
+      else if(dpDouble2Float(y)==0){
+      	if(dpDouble2Float(x)>0){
+         	 bearing = 0.0;
+         }
+         else if(dpDouble2Float(x)<0){
+         	 bearing = pi;
+         }
+         else bearing=0.0;
+      }
+
+   if(bearing<0)
+   	bearing = bearing + 2*pi;
+
+	return bearing * (180.0 / PI);
+}

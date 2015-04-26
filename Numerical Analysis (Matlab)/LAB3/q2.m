@@ -1,0 +1,213 @@
+% FILE: q2.m
+% AUTHOR: Chris Hoder
+% DATE: 9/27/2012
+% ENGS 91
+% Laboratory 3
+
+% This script can be used to answer questions 2 and 3 on the assignment.
+% They are modularized so that you can run and plot them separately.
+%
+% The script should also be run in order. some cells rely on information
+% from previous cells (i.e. the plotting ones)
+
+%% Load the points
+clear
+q = [0.0 400 360;
+20.0 380 360;
+50.0 350 360;
+80.0 320 360;
+110.0 290 360;
+115.0 290 355;
+150.0 290 320;
+195.0 290 275;
+220.0 290 250;
+240.0 310 250;
+286.1 355 260;
+319.7 382 240;
+397.1 340 175;
+427.5 310 180;
+455.8 290 200;
+475.8 290 180;
+495.8 290 160;
+513.8 305 150;
+593.8 385 150;
+629.9 405 180;
+700.6 415 250;
+722.9 405 270;
+772.2 360 290;
+792.8 340 285;
+815.2 320 275;
+830.2 320 290;
+850.2 320 310;
+880.2 320 340;
+890.2 320 350;
+920.2 350 350;
+950.2 380 350;
+970.2 400 350;
+980.2 400 360];
+
+% Use neville's method to interpolate the x(s) and y(s) polynomials
+s = q(:,1)';
+x = q(:,2)';
+y = q(:,3)';
+
+clc
+%points
+p = 8000;
+sPoints = linspace(0,1000,p);
+ds = sPoints(2)-sPoints(1)
+
+%for each s point, get the x and y value using neville's method
+for i=1:p,
+   xx(i) =  neville(s,x,sPoints(i),(max(size(s))-1));
+   yy(i) =  neville(s,y,sPoints(i),(max(size(s))-1));
+end
+
+max_yy = max(yy)
+max_xx = max(xx)
+
+% create subplots where the top one is the x(s) and the bottom one is y(s).
+% The y(x) is graphed on a separate plot to allow for proper proportioning
+subplot(2,1,1);
+plot(sPoints,xx);
+hold on
+scatter(s,x);
+hold off
+xlabel('s');
+ylabel('x');
+legend('Neville''s Method for x(s)','x points');
+axis([min(s) max(s) min(x)-20 max(x)+20])
+subplot(2,1,2);
+plot(sPoints,yy);
+hold on 
+scatter(s,y);
+hold off
+xlabel('s');
+ylabel('y');
+legend('Neville''s Method for y(s)','y points');
+axis([min(s) max(s) min(y)-20 max(y)+20])
+
+%% This will plot y(x) using the data obtained in the previous section from
+% neville's method
+cla
+
+plot(xx,yy)
+hold on
+plot(x,y,'sr')
+hold off
+axis([180 520 50 620])
+xlabel('x');
+ylabel('y');
+legend('y(x) approximated using parametric Neville''s','Actual points')
+
+
+% The below code can be used totest to make sure it goes through all
+% 33 points
+% for j=1:max(size(s)),
+%     g(j,1) = neville(s,y,s(j),max(size(s))-1);
+%     g(j,2) = neville(s,x,s(j),max(size(s))-1);
+%     g(j,3) = y(j)==g(j,1);
+%     g(j,4) = y(j)- g(j,1);
+%     g(j,5) = x(j) == g(j,2);
+%     g(j,6) = x(j) - g(j,2);
+% end
+% 
+% max(xx)
+% max(yy)
+% 
+% neville(s,x,115,max(size(s))-1)
+
+
+%% q3 Repeat problem (2) with a natural cubic spline. Report the 4
+%  coefficients for each of the cubics that interpolate x(s) and y(s).
+clc
+clear
+
+q = [0.0 400 360;
+20.0 380 360;
+50.0 350 360;
+80.0 320 360;
+110.0 290 360;
+115.0 290 355;
+150.0 290 320;
+195.0 290 275;
+220.0 290 250;
+240.0 310 250;
+286.1 355 260;
+319.7 382 240;
+397.1 340 175;
+427.5 310 180;
+455.8 290 200;
+475.8 290 180;
+495.8 290 160;
+513.8 305 150;
+593.8 385 150;
+629.9 405 180;
+700.6 415 250;
+722.9 405 270;
+772.2 360 290;
+792.8 340 285;
+815.2 320 275;
+830.2 320 290;
+850.2 320 310;
+880.2 320 340;
+890.2 320 350;
+920.2 350 350;
+950.2 380 350;
+970.2 400 350;
+980.2 400 360];
+
+s = q(:,1)';
+x = q(:,2)';
+y = q(:,3)';
+
+
+%perform the cubic splines for x(s) and y(s)
+[a b c d] = natCubicSpline(s,x);
+[e f g h] = natCubicSpline(s,y);
+
+
+%use the splines in a parametric method to plot the path
+p = 1000;
+%evenly spaced points
+sPoints = linspace(0,max(s),p);
+%determine delta s
+ds = sPoints(2)-sPoints(1);
+%for each s point we need to find x(s) and y(s) by using the correct cubic
+%spline. The method splineNum allows us to find the correct index to get
+%the coefficients.
+for i=1:p,
+    j = splineNum(sPoints(i),s)
+    xxx(i) = cubic(a(j),b(j),c(j),d(j),s(j),sPoints(i));
+    yyy(i) = cubic(e(j),f(j),g(j),h(j),s(j),sPoints(i));
+end
+
+%construct a table for printing
+xx_spline_table = [s(1:end-1); a(1,1:end-1) ;b ;c(1:end-1,1)'; d]';
+yy_spline_table = [s(1:end-1); e(1,1:end-1) ;f ;g(1:end-1,1)'; h]';
+%plot the function, where we have on the top 2 subplots x(s) and y(s)
+% the bottom large plot will be y(x). The actual points that were used in
+% the cubic spline will be on all the graphs as squares.
+subplot(2,2,1)
+plot(sPoints,xxx)
+hold on
+plot(s,x,'sg');
+xlabel('s');
+ylabel('x');
+legend('Cubic Spline for x(s)','Input points');
+hold off
+subplot(2,2,2)
+plot(sPoints,yyy)
+hold on
+plot(s,y,'sg');
+xlabel('s');
+ylabel('y');
+legend('Cubic Spline for y(s)','Input Points');
+subplot(2,2,3:4)
+plot(xxx,yyy)
+hold on
+plot(x,y,'sg');
+hold off
+xlabel('x');
+ylabel('y');
+legend('Cubic Spline','Input Points');

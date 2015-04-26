@@ -1,0 +1,15 @@
+
+clc;clear
+
+interval = [0 50];
+initialCond = [0 0];
+n = 10000;
+m = 100;
+tol = 10^-9;
+h = (b-a)/n;
+%slope guesses
+z2o = -2:0.1:2;
+z1o = interval(2);
+for i = max(
+    [z t] = ABAMPC4(0,50,h,[z1o z2o 0 1],dF2dt,0);
+    

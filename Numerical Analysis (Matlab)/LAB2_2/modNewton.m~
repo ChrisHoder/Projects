@@ -1,0 +1,13 @@
+function Pn = modNewton(f, fprime, Po, tol, nMax),
+    Pn(1) = Po;
+    i = 2;
+    while( i < nMax),
+        u = f(i-1)/fprime(i-1);
+        uprime = 1 - (f
+        Pn(i) = Pn(i-1) - u/uprime;
+        i = i + 1;
+    end
+    
+    
+    
+end

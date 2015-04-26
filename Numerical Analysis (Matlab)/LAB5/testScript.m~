@@ -1,0 +1,4 @@
+%Test Script
+
+f = inline('sin(x)');
+R = RombergInt(0,pi,f,6,10^-9);

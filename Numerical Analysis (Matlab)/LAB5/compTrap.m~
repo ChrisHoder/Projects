@@ -1,0 +1,17 @@
+% FILE: AdapQuad.m
+% AUTHOR: Chris Hoder
+% DATE: 10/18/2012
+% CLASS: ENGS 91
+% LAB 5 QUESTION 2
+
+
+function value = compTrap(a,b,f,n),
+    h = (b-a)/n;
+    fa = f(a);
+    fb = f(b);
+    %sum the inner
+    for i = 1:n-1;
+        
+    end
+
+end

@@ -1,0 +1,1207 @@
+typedef struct {
+	int rAngle;           // rudder servo angle
+   int sAngle;           // sail servo angle
+   int gpsState;         // GPS sending state
+   int boatState;        // Boat state values
+   int controlState;     // control state of the sailboat
+   float Kri;				 // rudder integral gain param
+   float Krp;            // rudder proportional gain param
+  // int Ksi;					 // sail integral gain param
+   float desiredHeading; // desired heading angle
+   float windDir;        // Current realtive wind direction   (degrees)
+   float windVel;        // Current relative wind velocity     (m/s)
+   int initialize_Wind;  // flag to initialze the wind
+   int windSet;          // flag for xBee ack
+   int Abort;            // abort flag
+
+} sailState;
+// This structure will be used to hold the state of the sailboat as well as any
+// control and debug information
+typedef struct {
+ float velocity; //wind velocity
+ long old_anem_pos_st;//old anemometer position
+ } velOutput;
+//Dynamic C is stupid and doesn't like global variables and pointers
+
+#ifndef PI
+#define PI  3.141592654
+#endif
+
+
+/** DEBUGGING DEFINES     */
+// comment out to shut off different debug/settings
+
+//#define _debug_
+//#define _printState_        // prints state
+#define _statusChange_        // status
+#define _GPS_Debug_           // prints gps string
+//#define _windDebug_         // prints wind values
+#define _xBeeDebug_           // prints xbee strings
+#define _send_xBee_ //turns on xbee communication out
+
+/** END DEBUGGING DEFINTES
+
+
+/*** SET BUFFER SIZES */
+#define CINBUFSIZE 511
+#define COUTBUFSIZE 511
+#define EINBUFSIZE 511
+#define EOUTBUFSIZE 511
+/*** END BUFFER SIZES */
+
+
+/*** DEFINE GPS DEFAULTS */
+
+#define GPS_POSITION_LENGTH 28
+#define MAX_SENTENCE 85 // max sentence length for GPS as specified
+//Define return states
+#define GPS_VALID 0
+#define GPS_PARSING_ERROR -1
+#define GPS_INVALID_MESSAGE 1
+//#define GPS_VALID_POSITION 2
+//#define GPS_VALID_SATELLITE 3
+/*** END GPS DEFINES */
+
+/*** DEFINE GPS SERIAL PORT TO USE */
+#define BAUD_GPS 38400
+#define serGPSOpen(Baud)             serCopen(Baud)
+#define serGPSRead(data,length,tout) serCread(data,length,tout)
+#define serGPSputc(data)             serCputc(data)
+#define serGPSrdFlush()			  		 serCrdFlush()
+#define serGPSwrFlush()			  		 serCwrFlush()
+#define serGPSrdUsed()			  		 serCrdUsed()
+#define serGPSMode(value)       		 serMode(value)
+#define serGPSgetc()				  		 serCgetc();
+#define GPS_MODE 0
+
+
+
+/*** DEFINE XBEE SPECFICIC SERIAL PORT TO USE */
+#define BAUD_XBEE 9600
+#define serXbeeOpen(Baud)         		serEopen(Baud)
+#define serXbeeRead(data,length, tout) serEread(data,length,tout)
+#define serXbeeputc(data)       		   serEputc(data)
+#define serXbeerdFlush()			      serErdFlush()
+#define serXbeewrFlush()			      serEwrFlush()
+#define serXbeerdUsed()			         serErdUsed()
+#define serXbeeMode(value)             serMode(value)
+#define serXbeegetc()					   serEgetc()
+#define XBEE_MODE 0
+
+/** DEFINE MAXIMIZTION PARAMETERS */
+#define HEAD_GRAD_STEP .1		// stepsize of gradient search
+/** END MAXIMIZATION PARAMETERS */
+
+
+/** SET SERVO ADDRESS VALUES */
+#define RUDDER 6
+#define SAIL 7
+/*** END SERVO VALUES */
+
+/*** SERVO SETTINGS */
+// Min and max sail angles
+#define MIN_SAIL -90
+#define MAX_SAIL 90
+
+// min an max rudder angles
+#define MIN_RUDDER -90
+#define MAX_RUDDER 90
+/*** END SERVO SETTTINGS */
+
+
+/*** BEGIN CONTROL MODES */
+#define USER_CONTROL_MODE 0
+#define GPS_CONTROL_MODE 1
+#define ESCAPE_CONTROL_MODE 2
+#define HEADING_CONTROL_MODE 3
+#define HALT_MODE 4
+/*** END CONTROL MODES */
+
+/*** BEGIN BOAT STATES */
+#define BROADCAST_STATE 0
+#define NO_BROADCAST_STATE 1
+/* END BOAT STATES */
+
+/*** GPS STATES */
+#define GPS_BROADCAST_STATE 0
+#define NO_GPS_BROADCAST_STATE 1
+/* END GPS STATES
+
+/*** START TELEMETRY SETTINGS */
+#define TELEMETRY_INTERVAL 1
+/* END TELEMETRY SETTINGS */
+
+
+#use GPS4.LIB
+#use BL26XX.LIB
+
+/*ENCODER DEFINITIONS*/
+#define DATA 	0x00ff
+#define RD     8
+#define WR     9
+#define CS1    10
+#define CS2    11
+#define YX     12
+#define CD     13
+#define BP_RESET    	  	0X01		// reset byte pointer
+#define EFLAG_RESET		0X86		// reset E bit of flag register
+#define CNT					0x01  // access control register
+#define DAT					0x00  // access data register
+#define BP_RESETB  		0X81		// reset byte pointer (x and y)
+#define CLOCK_DATA 		2			// FCK frequency divider
+#define CLOCK_SETUP 		0X98		// transfer PR0 to PSC (x and y)
+#define INPUT_SETUP   		0XC1		// enable inputs A and B (x and y)
+#define QUAD_X1       		0XA8	// quadrature multiplier to 1 (x and y)
+#define QUAD_X2       		0XB0	// quadrature multiplier to 2 (x and y)
+#define QUAD_X4       		0XB8	// quadrature multiplier to 4 (x and y)
+#define CNTR_RESET    		0X02		// reset counter
+#define CNTR_RESETB    		0X82		// reset counter (x and y)
+#define TRSFRPR_CNTR    	0X08	// transfer preset register to counter
+#define TRSFRCNTR_OL			0X90	// transfer CNTR to OL (x and y)
+#define XYIDR_SETUP			0XE1	// x and y index cntrl register
+#define XYIOR_SETUP			0XDB	// x and y i/o cntrl register
+#define HI_Z_STATE         0xFF
+/*END ENCODER DEFINITIONS*/
+
+// servo serial function prototypes
+void writeServo(char cmd, int serv, char data);
+void initServo();
+void setServoSpeed(int serv, int spd);
+int setServoPosition(int serv, int ang);
+
+// generic write to servo function
+void writeServo(char cmd, int serv, char data)
+{
+   char buf[5];
+	serFputc(0x80);	// start com with servo contorller
+	serFputc(0x01);	// servo type id
+	serFputc(cmd);		// cmd
+
+	serFputc(sprintf(buf,"%d",serv));	// servo number
+	serFputc(data);		// put in data
+}
+
+// initialize servo, open each servo pwm line
+void initServo()
+{
+	int i;
+   serFwrFlush();
+	serFrdFlush();
+	for (i =0 ; i<8; i++)
+   {writeServo(0, i, 0x2F);	// setup servo one
+   }
+   setServoSpeed(7, 0);
+   setServoSpeed(6, 0);
+}
+
+// set the servos to instant response mode
+void setServoSpeed(int serv, int spd)
+{  writeServo(0x01, serv, spd);  }
+
+/* set servo position
+ takes: servo number (0-7)
+ 		  ang   -  the angle to go to (-90 to 90, with 0 straight ahead)
+ gives: retu  - a status bit indicating
+ 					-1 angle set too low
+               1  angle set too high
+               0  angle set correctly
+*/
+int setServoPosition(int serv, int ang)
+{
+	int temp, retu;
+	char buf;
+
+   serFputc((char)0x80); // start byte
+   serFputc((char)0x01); // device id
+   serFputc((char)0x02); // set position command (7 bit)
+   serFputc((char)serv);	// set servo
+
+
+	if (ang < -90)
+		{
+      serFputc((char)0x0E); // high byte
+      serFputc((char)0x6C); // low byte
+      retu = -1;	// angle set too low
+		}
+	else if (ang > 90)
+		{
+      serFputc((char)0x21); // high byte
+      serFputc((char)0x4C); // low byte
+      retu = 1;	// angle set too high
+		}
+	else
+		{
+      temp = (int) (63.5*ang/90+63.5);       //
+		//printf("index = %d\n",temp);
+  	   serFputc((char)temp);
+		//printf("serial put value: %c\n",(char)temp);
+      retu = 0;	// all is well
+		}
+	return retu;
+}
+
+
+ long old_anem_pos;
+/*** Begin Header EncRead */
+int EncRead(int channel, int reg);
+/*** End Header */
+/* START FUNCTION DESCRIPTION ********************************************
+EncRead
+
+SYNTAX:        int EncRead(int channel, int reg);
+KEYWORDS:      encoder,read
+DESCRIPTION:   Returns data from the enc oder board, depending on input
+PARAMETER 1:   channel - an int from 0 to 3 indicating which encoder is to be read
+PARAMATER 2:   reg - an int which is 1 or 0 indicating whether control or data is desired
+RETURN VALUE:  the requested data, as an int
+
+END DESCRIPTION**********************************************************/
+int EncRead(int channel, int reg)
+{
+// channel is an int from 0 to 3 indicating which encoder
+// reg is an int which is 1 or 0 indicating whether control or data is desired
+   int EncData;
+   int i, delayvar;
+   EncData = 0;
+
+   digOutConfig(0xff00); // set data lines as inputs and everything else as outputs
+
+   // select which chip
+   if (channel <= 1)
+   	digOut(CS1,0);
+	else
+   	digOut(CS2,0);
+
+    // Select control or data register
+    digOut(CD,reg);
+
+   // select which channel, X or Y
+   if ((channel == 0) | (channel == 3) )
+   	digOut(YX,0);
+  else
+      digOut(YX,1);
+     // assert Read low
+   digOut(RD,0);
+
+   EncData = digInBank(0);     // read the data from the data lines
+
+//     for(i = 0; i < 5; i++)
+//        { delayvar = i; }
+
+//deassert read reads the data. Deassert delay to allow rise then deselect
+   digOut(RD,1);
+   digOut(CS1,1);
+   digOut(CS2,1);
+   return EncData;
+}
+/*** Begin Header EncWrite */
+void EncWrite(int channel, int data, int reg);
+/*** End Header */
+/* START FUNCTION DESCRIPTION ********************************************
+EncWrite
+
+SYNTAX:       void EncWrite(int channel, int data, int reg);
+KEYWORDS:      encoder,write
+DESCRIPTION:   puts data onto registers in the encoder board
+PARAMETER 1:   channel - an int from 0 to 3 indicating which encoder is to be written to
+PARAMATER 2: 	data - the data to be put on the register
+PARAMATER 2:   reg - an int which is 1 or 0 indicating whether control or data register is desired
+RETURN VALUE: none
+
+END DESCRIPTION**********************************************************/
+void EncWrite(int channel, int data, int reg)
+{
+   int i, delayvar;
+
+   digOutConfig(0xffff);// set all digI/O lines as outputs
+
+  // select which chip - channel 0 & 1 are chip 1 and channel 2 & 3 are chip 2
+   if (channel <= 1)
+      digOut(CS1,0);
+   else
+   	digOut(CS2,0);
+   // select which channel, X or Y  X = 0 and 2, Y = 1 and 3
+   digOut(CD,reg);
+
+   if ((channel == 0) | (channel == 3) )
+   	digOut(YX,0);
+  else
+      digOut(YX,1);
+       digOutBank((char)0,(char)data);
+
+    // assert write
+   digOut(WR,0);
+
+   // deassert write
+   digOut(WR,1);
+
+   // deselect chip
+   digOut(CS1,1);
+   digOut(CS2,1);
+   //Set all outputs to 1 so that open collector transistor is off
+   digOutBank((char)0,(char)HI_Z_STATE);
+   digOutConfig(0xff00);
+}
+/*** Begin Header EncInit */
+int encInit(void);
+/*** End Header */
+/* START FUNCTION DESCRIPTION ********************************************
+encInit
+
+SYNTAX:       int encInit(void)
+KEYWORDS:      encoder,init
+DESCRIPTION:   Sets up the encoder board
+RETURN VALUE:  a failute check, zero means no fault
+
+END DESCRIPTION**********************************************************/
+int encInit(void)
+{
+   int fail;
+   int i,j;
+   fail = 0;
+       digOutConfig(0xff00);
+   digOut(CS1,1);
+   digOut(CS2,1);
+   digOut(RD,1);
+   digOut(WR,1);
+
+   for (i = 0; i<4; i++)
+   {
+//		EncWrite(i, XYIOR_SETUP,CNT);	// Setup I/O control register
+//		EncWrite(i, XYIDR_SETUP,CNT);		// Disable Index
+      EncWrite(i,EFLAG_RESET,CNT);
+      EncWrite(i,BP_RESETB,CNT);
+      //EncWrite(i,CNTR_RESETB,CNT);
+     	EncWrite(i,CLOCK_DATA,DAT);
+    	EncWrite(i,CLOCK_SETUP,CNT);
+     	EncWrite(i,INPUT_SETUP,CNT);
+     	EncWrite(i,QUAD_X4,CNT);
+
+      EncWrite(i,BP_RESETB,CNT);
+      EncWrite(i,0x12,DAT);
+      EncWrite(i,0x34,DAT);
+      EncWrite(i,0x56,DAT);
+
+      EncWrite(i,TRSFRPR_CNTR,CNT);
+      EncWrite(i,TRSFRCNTR_OL,CNT);
+
+      EncWrite(i,BP_RESETB,CNT);
+      #ifdef _debug_
+		printf("written = %d, read = %d\n",0x12,EncRead(i,DAT));
+      printf("written = %d, read = %d\n",0x34,EncRead(i,DAT));
+      printf("written = %d, read = %d\n",0x56,EncRead(i,DAT));
+      #endif
+    // Reset the counter now so that starting position is 0
+       EncWrite(i,0x5A0,DAT);
+       EncWrite(i,CNTR_RESET,CNT);
+       EncWrite(i,CNTR_RESETB,CNT);
+
+   }
+   return fail;
+}
+
+
+
+/*** Begin Header getWindPos */
+float getWindPos(long offset);
+/*** End Header */
+ /* START FUNCTION DESCRIPTION ********************************************
+getWindPos
+
+SYNTAX:        float getWindPos(long offset);
+KEYWORDS:      encoder,read,vane
+DESCRIPTION:   Returns the wind direction using the wind vane position
+PARAMETER 1:   offset - the count treated as straight ahead (using the boat
+Coordinate system)
+RETURN VALUE:  the wind direction, in degrees
+
+END DESCRIPTION**********************************************************/
+float getWindPos(long offset){
+  int asb, bsb, csb;
+  long position;
+  float floatPos  ;
+
+   EncWrite(3, TRSFRCNTR_OL, CNT);
+  	EncWrite(3,BP_RESETB,CNT);
+   asb = EncRead(3,DAT);
+   bsb = EncRead(3,DAT);
+   csb = EncRead(3,DAT);
+   // printf("%d, %d, %d, \n",csb, bsb, asb);
+ 	position  = (long)asb;			// least significant byte
+ 	position += (long)(bsb << 8);
+ 	position += (long)(csb <<16);
+   position=position-offset;
+ 	position= (position % 1440);
+	floatPos=(position * 360.0)/1440.0;
+
+   if (floatPos < 0 ){ return 360 + floatPos;}
+
+   return floatPos;
+}
+/*** Begin Header getWindVel */
+velOutput getWindVel(float dt, long old_anem_pos);
+/*** End Header */
+/* START FUNCTION DESCRIPTION ********************************************
+getWindVel
+
+SYNTAX:        float getWindVel(float dt);
+KEYWORDS:      encoder,read,anemometer
+DESCRIPTION:   Returns the wind velocity using the anemometer position
+PARAMETER 1:   dt - the timestep, used in the derivitive calculation
+RETURN VALUE:  the wind velocity
+
+END DESCRIPTION**********************************************************/
+velOutput getWindVel(float dt, long old_anem_pos_in){
+  int asb, bsb, csb;
+  float vel;
+  long position;
+	velOutput output;
+    EncWrite(2, TRSFRCNTR_OL, CNT);
+              EncWrite(2,BP_RESETB,CNT);
+              asb = EncRead(2,DAT);
+              bsb = EncRead(2,DAT);
+              csb = EncRead(2,DAT);
+
+//              printf("%d, %d, %d, \n",csb, bsb, asb);
+              position  = (long)asb;			// least significant byte
+				  position += (long)(bsb << 8);
+				  position += (long)(csb <<16);
+              //printf("%d, %d \n",position,old);
+             vel= ((float)position-(float)old_anem_pos_in)/(dt);
+             vel=0.001*vel-0.0369;
+              if (vel<0){ vel=-vel;}
+              output.velocity=vel;
+              output.old_anem_pos_st=position;
+              return output;
+
+}
+/*** Begin Header getCount */
+long getCount(int channel);
+/*** End Header */
+/* START FUNCTION DESCRIPTION ********************************************
+getCount
+
+SYNTAX:        long getCount(int channel);
+KEYWORDS:      encoder,read
+DESCRIPTION:   Returns the current encoder position in counts
+PARAMATER 1: channel - an int from 0 to 3 indicating which encoder is to be written to
+RETURN VALUE:  The current encoder count
+
+END DESCRIPTION**********************************************************/
+long getCount(int channel){
+ int asb, bsb, csb;
+ long position;
+   EncWrite(2, TRSFRCNTR_OL, CNT);
+  	EncWrite(2,BP_RESETB,CNT);
+   asb = EncRead(2,DAT);
+   bsb = EncRead(2,DAT);
+   csb = EncRead(2,DAT);
+   // printf("%d, %d, %d, \n",csb, bsb, asb);
+ 	position  = (long)asb;			// least significant byte
+ 	position += (long)(bsb << 8);
+ 	position += (long)(csb <<16);
+   return position;
+}
+
+/*** Begin Header  printGPSPosition */
+void printGPSPosition(GPSPosition* pos);
+/*** End Header */
+
+/* START FUNCTION DESCRIPTION *********************************************
+printGPSPosition
+
+SYNTAX:         void printGPSPosition(GPSPosition* pos);
+KEYWORDS:       gps
+DESCRIPTION:    Prints out the information contained in the GPSPosition
+					 structure.
+PARAMETER 1:    pos - a GPSPosition structure that is to be printed out
+RETURN VALUE:   none
+
+END DESCRIPTION **********************************************************/
+void printGPSPosition(GPSPosition* pos)
+{
+	printf("-------------------\n");
+ 	printf("\nLat degrees: %d\n",pos->lat_degrees);
+   printf("Lat minutes: %f\n",pos->lat_minutes);
+   printf("Lat Direction: %c\n",pos->lat_direction);
+	printf("Lon degrees: %d\n",pos->lon_degrees);
+	printf("Lon minutes: %f\n",pos->lon_minutes);
+   printf("Lon Direction: %c\n",pos->lon_direction);
+   printf("speed over ground: %f\n",pos->sog);
+   printf("heading (deg): %f\n",pos->tog);
+   printf("-------------------\n");
+}
+
+
+void printSailState(sailState *state)
+{
+	printf("\n--------------\n");
+	//printf("Rudder Angle: %d\n", state->rAangle );
+   printf("Sail Angle: %d\n",state->sAngle);
+   printf("GPS state: %d\n",state->gpsState);
+   printf("--------------\n");
+
+}
+
+
+/*** Begin Header writeGPSsTRING */
+void writeGPSString(char* str);
+/* End Header */
+
+/* START FUNCTION DESCRIPTION ********************************************
+writeGPSString
+
+SYNTAX:        void writeGPSString(char* str);
+KEYWORDS:      gps, write
+DESCRIPTION:   Takes the input string, str and sends it out to the gps in
+               the correct format
+PARAMETER 1:   str - string to be transmitted to the GPS
+RETURN VALUE:  none
+
+END DESCRIPTION**********************************************************/
+ void writeGPSString(char* str)
+{
+ 	int len;
+	int n;
+
+	len = strlen(str);
+	//printf("string length: %d",len);
+	//printf("string %s\n",str);
+    for(n=0;n<len;n++) {
+      serGPSputc(str[n]);
+      //serCputc(str[n]);
+	}
+   serGPSputc('*');
+   serGPSputc(13);
+   serGPSputc(10);
+}
+
+
+/*** Begin Header initGPS */
+void initGPS();
+/* End Header */
+
+/* START FUNCTION DESCRIPTION ********************************************
+initGPS
+
+SYNTAX:       void initGPS()
+KEYWORDS:     gps, initialize
+DESCRIPTION:  Initializes the GPS to the desired settings
+RETURN VALUE: none
+
+END DESCRIPTION**********************************************************/
+void initGPS()
+{
+   //serCwrFlush();
+	//serCrdFlush();
+   serGPSrdFlush();
+   serGPSwrFlush();
+	writeGPSString("$PGRMO,GPRMC,2"); //Disable all strings
+	writeGPSString("$PGRMO,GPRMC,1");  //enable GPRMC string
+   //writeGPSString("$PGRMC1,1,2,2,,,,2,W,N,,,,1");
+   writeGPSString("$PGRMC1,1,1,2,,,,2,W,N,,,,1"); //enable NMEA 0183 2.3
+   writeGPSString("$PGRMI,,,,,,,R");
+   writeGPSString("$PGRMO,GPGSA,1"); //get sat info
+	printf("using garmin GPS\n");
+
+}
+
+/*** Begin Header writeXBeeString */
+void writeXBeeString(char *str);
+/*** End Header */
+
+
+/* START FUNCTION DESCRIPTION ********************************************
+writeXBeeString
+
+SYNTAX:       void writeXBeeString(char *str)
+KEYWORDS:     xbee, write
+DESCRIPTION:  Writes the given string to the xbee
+PARAMETER 1:  str -- string to be written to the Xbee
+RETURN VALUE: None
+END DESCRIPTION**********************************************************/
+void writeXBeeString(char *str)
+{
+ 	int len, i;
+
+   len = strlen(str);
+   for(i=0;i<len;i++){
+      serXbeeputc(str[i]);
+   }
+   serXbeeputc((char)10); // add the LF character at the end (message term flag)
+}
+
+
+/*** Begin Header setCostates */
+void setCostates(sailState *state);
+/*** End Header */
+
+
+
+/*** Begin Header update_Sail_State */
+int update_Sail_State(sailState *newstate, char *sentence);
+/*** End Header */
+
+/* START FUNCTION DESCRIPTION ********************************************
+update_Sail_State
+
+SYNTAX:       int update_Sail_State(sailState *newstate, char *sentence)
+KEYWORDS:     sailState
+DESCRIPTION:  Updates the new sail state with the given sentence which is
+				  assumed to come from our xBee communication
+PARAMETER 1:  newstate - sailState struct to update with information
+PARAMETER 2:  sentence - recieved radio communication string to parse out
+RETURN VALUE: 0 if the message was parsed correctly
+				  -1 invalid message
+              1 right syntax but unable to parse (should never happen)
+END DESCRIPTION**********************************************************/
+int update_Sail_State(sailState *newstate, char *sentence)
+{
+	auto int i, valid;
+   auto int angle;
+   //auto char temp[8];
+   valid = 0;
+   // at a minimum the sentence should have verb, which is 2 characters
+   if( strlen(sentence) < 2) {
+   	return -1;
+      }
+   // switch on the types
+
+   // rudder angle setting
+   //if( sentence[0] == 'R'){
+   switch( sentence[1] )
+   {
+   case 'A':
+   	newstate->Abort = 1;
+#ifdef _statusChange_
+     	printf("Abort loop\n");
+#endif
+      break;
+   case 'R':
+   //if( strncmp(sentence, "R",1) == 0){
+       sentence = strchr(sentence,',');
+       sentence++;
+       angle = atoi(sentence);
+       if( angle > MAX_RUDDER){
+        	angle = MAX_RUDDER;
+       }
+       else if( angle < MIN_RUDDER){
+        	angle = MIN_RUDDER;
+       }
+
+       newstate->rAngle = angle;
+#ifdef _statusChange_
+       printf("rAngle: %d\n",newstate->rAngle);
+#endif
+       break;
+   //}
+   // sail angle setting
+   //else if( sentence[0] == 'S'){
+   //else if( strncmp(sentence, "S",1) == 0){
+    case 'S':
+       sentence = strchr(sentence,',');
+       sentence++;
+       printf("sentence: %s\n",sentence);
+       angle = atoi(sentence);
+       if( angle > MAX_SAIL ){
+        	angle = MAX_SAIL;
+       }
+       else if( angle < MIN_SAIL){
+        	angle = MIN_SAIL;
+       }
+       newstate->sAngle = angle;
+#ifdef _statusChange_
+       printf("sAngle: %d\n",newstate->sAngle);
+#endif
+       break;
+   //}
+   case 'G':
+   //else if( sentence[0] == 'G' ){
+   //else if( strncmp(sentence, "G",1) == 0){
+       sentence = strchr(sentence,',');
+       sentence++;
+       newstate->gpsState = atoi(sentence);
+#ifdef _statusChange_
+       printf("GPS state: %d\n",newstate->gpsState);
+#endif
+       break;
+   case 'C':
+   //reset the control state
+      sentence = strchr(sentence,',');
+      sentence++;
+      newstate->controlState = atoi(sentence);
+
+      setCostates(newstate);  // update costates
+
+#ifdef _statusChange_
+      printf("Control State: %d\n",newstate->controlState);
+#endif
+
+
+   	break;
+
+   case 'O':
+     newstate->initialize_Wind = 1;     // set flag
+#ifdef _statusChange_
+     printf("Initialize Wind set \n");
+#endif
+     break;
+
+   case 'K':
+   //reset the rudder integral gain
+   	sentence = strchr(sentence,',');
+      sentence++;
+      newstate->Kri = atof(sentence);
+
+      sentence = strchr(sentence,',');
+      sentence++;
+      newstate->Krp = atof(sentence);
+
+#ifdef _statusChange_
+      printf("KRI: %f, KRP %f\n",newstate->Kri, newstate->Krp);
+#endif
+		break;
+   //}
+   default:
+    	valid = 1;
+      break;
+   }
+
+
+   return valid;
+}
+
+/* Initialize Costate data */
+   CoData  maxHeading, maxVelocity, headingControl, UserControl, generate_offset; // costate names
+
+/* START FUNCTION DESCRIPTION ********************************************
+setCostates
+
+SYNTAX:       void setCostates(sailState *state)
+KEYWORDS:     setCostates, initialize
+DESCRIPTION:  This will set the costates to the correct state (pause/resume)
+              based on the current control state
+PARAMETER 1:  state - sailState struct to update with information
+
+RETURN VALUE: None
+END DESCRIPTION**********************************************************/
+void setCostates(sailState *state)
+{
+	switch (state->controlState ){
+         	// only control methods remaining on
+          	case (USER_CONTROL_MODE):
+            	CoPause(&maxHeading);
+               CoPause(&maxVelocity);
+               CoPause(&headingControl);
+               CoResume(&UserControl);
+               break;
+            case( GPS_CONTROL_MODE ):
+            	CoResume(&maxHeading);
+               CoResume(&maxVelocity);
+               CoResume(&headingControl);
+               CoPause(&UserControl);
+               break;
+               //CoPause(&headingControl);
+            case( HEADING_CONTROL_MODE):
+               CoResume(&headingControl);
+               CoPause(&maxVelocity);
+               CoPause(&maxHeading);
+	}
+
+}// END setCostates
+
+void main()
+{
+ // variable initialization
+   int i,n,g, temp;
+   auto int GPSConnectionStatus; // holds a status of GPS connection
+   int sail_Flag;
+   auto char c;
+   int sendMsg;
+   auto int nIn;
+   auto char cOut,ch;
+   GPSPosition GPS_Location, GPS_Way;  // current and destination
+   auto char sentence[MAX_SENTENCE];
+   auto char gpsString[MAX_SENTENCE];
+   auto char xBeeString[MAX_SENTENCE];
+   auto char xBee_write_buffer[MAX_SENTENCE];
+   sailState state;
+   velOutput output;
+   //int controlState; // holds the current state of the control system
+
+   // maximizing desired heading
+   auto float wayBear, wayDist;   		// bearing, distance to waypoint
+   auto float vmg, pvmg;   // previous vmg
+   auto float slope;	 		// improvement on vmg
+
+   auto float ehead;
+   auto int uheadm1;
+   auto int uhead;    // heading control variables
+
+
+   auto int rud_stat;		// status return of setting rudder servo
+   auto int sail_stat;		// status return of setting the sail servo
+
+
+   auto int usedXbeeIn; // number of characters in the Xbee in buffer
+   auto int usedGPSIn; // number of characters in the GPS in buffer
+
+   //encoder stuff
+   int N2;
+   float dt;
+   float T0;
+   long offset;
+   long old_anem_pos;
+   old_anem_pos = 0;
+
+
+   // initialize program state
+   state.rAngle = 0;                           // degrees
+	state.sAngle = 0;                           // degrees
+   state.gpsState = GPS_BROADCAST_STATE;       // send raw gps data on xbee
+   state.controlState = USER_CONTROL_MODE;     // initially in user control
+   state.initialize_Wind = 0;                  // initially not initializing
+   state.windSet = 0;                          // flag for xBee ack initialy 0
+   state.Abort = 0;                            // unset abort flag
+   GPSConnectionStatus = GPS_INVALID_MESSAGE;  // initially no GPS contact
+   state.controlState = GPS_CONTROL_MODE;      // initially in GPS Control
+   state.boatState = BROADCAST_STATE;         // initially broadcast boat state
+   sail_Flag = 0;
+   //controlState = GPS_CONTROL_MODE; // initially in the GPS Control
+
+   brdInit(); /// initialize the board
+
+   // setup Xbee
+   serXbeeOpen(BAUD_XBEE);
+   serXbeerdFlush();
+   serXbeewrFlush();
+   serXbeeMode(XBEE_MODE);
+
+   // setup GPS
+   serGPSOpen(BAUD_GPS);
+   serGPSrdFlush();
+   serGPSwrFlush();
+   serGPSMode(GPS_MODE);
+
+   //initialize serial data check flags
+   usedXbeeIn = -1;
+   usedGPSIn = -1;
+   memset(&xBeeString,0x00, sizeof(xBeeString));
+   // initialize the GPS
+   initGPS();
+
+   /*
+   // initialize the servos
+   serFopen(19200);
+	serMode(0);
+   initServo();
+   uhead = 0;
+   uheadm1 = 0;
+   */
+
+   //BEGIN Enconder initialization
+   N2 = 50;
+   dt = ((float)N2)/1024;
+ 	offset=0;
+   encInit();
+   //offset=getCount(3);
+   old_anem_pos=getCount(2);
+   // END Encoder
+
+
+// OUTERMOST WHILE LOOP. THIS WILL ONLY LOOP FORWARD FOR A RESET
+while(1){
+
+   /*** START LOOP. WILL WAIT FOR GO COMMAND */
+   while(1){
+
+      // recieved a message
+      if( i = serXbeerdUsed()> 0){
+      	//usedXBeeIn = serXbeerdUsed();
+         serXbeeRead(xBeeString,2,0);
+         // recieved a 1. This means start the main control loop
+#ifdef _debug_
+         printf("Xbee Values: %s\n",xBeeString);
+#endif
+
+         if(atoi(&xBeeString[0]) == 1){
+
+				break;
+         } // ENDIF
+         else{
+           serXbeerdFlush();
+         }
+
+      } // ENDIF (check if message recieved)
+
+   }//END initialization while loop
+
+
+   usedXbeeIn = -1;
+   usedGPSIn = -1;
+#ifdef _debug_
+   printf("Begining Control while loop\n");
+#endif
+   printf("ENTERING COSTATES\n");
+   while(1)
+   {
+		T0 = TICK_TIMER;
+   	costate checkSerial always_on
+      {
+
+      	usedXbeeIn = serXbeerdUsed();
+         usedGPSIn  = serGPSrdUsed();
+#ifdef _debug_
+         if( usedXbeeIn > 0 || usedGPSIn > 0 )
+         {
+          	printf("usedXbee: %d, usedGPS: %d \n",usedXbeeIn, usedGPSIn);
+         }
+
+#endif
+      } // end costate
+
+      costate stateUpdate init_on
+      {
+      	// update costates
+         setCostates(&state);
+      /*
+       	switch (state.controlState ){
+         	// only control methods remaining on
+          	case (USER_CONTROL_MODE):
+            	CoPause(&maxHeading);
+               CoPause(&maxVelocity);
+               CoPause(&headingControl);
+               CoResume(&UserControl);
+               break;
+            case( GPS_CONTROL_MODE ):
+            	CoResume(&maxHeading);
+               CoResume(&maxVelocity);
+               CoResume(&headingControl);
+               CoPause(&UserControl);
+               break;
+               //CoPause(&headingControl);
+            case( HEADING_CONTROL_MODE):
+               CoResume(&headingControl);
+               CoPause(&maxVelocity);
+               CoPause(&maxHeading);
+
+         }
+         */
+      }
+
+#ifdef _send_xBee_
+      costate xBeeWr always_on
+      {
+      	// wait for a set amount of time between transmissions
+        // waitfor(DelaySec(TELEMETRY_INTERVAL));
+         // GPS state 1 means send GPS data
+         if(state.gpsState == GPS_BROADCAST_STATE && GPSConnectionStatus == GPS_VALID){
+         	// string
+            // $GPS, timestamp, lat minutes, long minutes, sog, tog
+         	sprintf(xBee_write_buffer,"$GPS,%s,%f,%f,%f,%f",
+                                     GPS_Location.timestamp,
+                                     GPS_Location.lat_minutes,
+                                     GPS_Location.lon_minutes,
+                                     GPS_Location.sog,
+                                     GPS_Location.tog);
+         	writeXBeeString(xBee_write_buffer);
+
+         }
+         // send error message instead of the gps coordinates
+         else if(state.gpsState == GPS_BROADCAST_STATE){
+         	sprintf(xBee_write_buffer,"$E,%d",GPSConnectionStatus);
+            writeXBeeString(xBee_write_buffer);
+
+         }// ENDIF GPS error if
+        //printf("debug flag\n");
+         if( state.boatState == BROADCAST_STATE)
+         {
+         	sprintf(xBee_write_buffer,"$ST,%d,%d,%f,%f,%f",state.rAngle,
+                                                     state.sAngle,
+                                                     state.desiredHeading,
+                                                     state.windDir,
+                                                     state.windVel);
+            writeXBeeString(xBee_write_buffer);
+
+         }
+
+         if( state.windSet == 1 ){
+          	writeXBeeString("$S,1");
+            state.windSet = 0;
+            CoPause(&generate_offset);    // pause the costate
+         }
+      }// END costate xBeeWr
+#endif
+      costate xBeeRead always_on
+      {
+       	waitfor(usedXbeeIn > 0);// wait for there to be a message in the buffer
+
+         // give the message a chance to finish sending
+         waitfor(DelayMs(20));
+         // read in the entire string
+         usedXbeeIn = serXbeerdUsed();
+         serXbeeRead(xBeeString,usedXbeeIn, 0);
+         //usedXBeeIn++;
+         xBeeString[usedXbeeIn] = '\0'; // add terminating string
+
+#ifdef _xBeeDebug_
+         printf("Xbee String read in: %s\n",xBeeString);
+#endif
+         // update the state
+         update_Sail_State(&state, xBeeString);
+        if (state.Abort == 1)
+        {
+        		state.Abort = 0; // reset flag
+#ifdef _statusChange_
+      		printf("Abort executed\n");
+#endif
+         	abort; //exit the loop
+        }
+
+        else if (state.initialize_Wind==1)
+        {
+#ifdef _statusChange_
+        	printf("initialize wind\n");
+#endif
+         CoResume(&generate_offset); //start the initialization costate
+        }// ENDIF check if wind is to be initialized
+      }// END costate xBeeRead
+
+      costate GPSRead always_on
+      {
+         waitfor(usedGPSIn > 0); // wait for msg in buffer
+
+         c = 0;
+         while(1)
+         {
+         	 c = serGPSgetc();
+             if( c == -1)
+             {
+             	serGPSrdFlush();
+               abort;
+             } // END if
+             else if ( c == '$')
+             {
+             	waitfor(DelayMs(20));  // wait for message to come
+               break;
+             } //END else if
+         }// end while(1)
+
+         // now that some time has passed read in the gps string
+         getgps(gpsString);
+#ifdef _GPS_Debug_
+			printf("gps: %s\n",gpsString);
+#endif
+			//update our gpsLocation
+      	GPSConnectionStatus = gps_get_position(&GPS_Location,gpsString);
+#ifdef _printState_
+         if( GPSConnectionStatus == GPS_VALID)
+         {
+         	printGPSPosition(&GPS_Location);
+         }// END if
+#endif
+
+      } // END costate GPSRead
+
+      costate get_wind always_on
+      {
+      T0=TICK_TIMER;
+      state.windDir=getWindPos(offset);
+
+      output=getWindVel(dt,old_anem_pos);
+#ifdef _windDebug_
+      printf("outputs: %f, %d\n", output.velocity, output.old_anem_pos_st);
+#endif
+      old_anem_pos=output.old_anem_pos_st;
+		state.windVel=output.velocity;
+
+     }  // END get_wind costate
+
+      costate generate_offset always_on
+      {
+         offset = getCount(3);   //generates offset
+         state.initialize_Wind = 0;
+         state.windSet = 1; // set flag for xBee ack
+#ifdef _debug_
+         printf("Wind initialization complete");
+#endif
+
+      } // END generate_offset costate
+
+      costate maxHeading always_on
+      {
+
+         wayDist = gps_ground_distance(&GPS_Way, &GPS_Location);  // distance to waypoint
+         wayBear = gps_bearing(&GPS_Way, &GPS_Location, wayDist);	// bearing to waypoint
+         vmg = GPS_Location.sog*cos(rad(wayBear));  // vmg toward waypoint
+         slope = (vmg - pvmg)*1024/N2;    // improvement on vmg over loop time
+         // take a step in appropriate heading change
+         state.desiredHeading = (1 + HEAD_GRAD_STEP*slope)*state.desiredHeading;
+         pvmg = vmg;
+#ifdef _debug_
+         printf("vmg: %f, pvmg: %f, slope: %f, desired Heading: %f\n",vmg,pvmg,slope,state.desiredHeading);
+#endif
+
+
+      }// END costate maxHeading
+
+      costate maxVelocity always_on
+      {
+         // gradient search with GPS_Location.sog and GPS_Last.sog
+         // to set the sail angle
+        // printf("maxVelocity\n");
+
+      }// END costate maxVelocity
+
+      costate headingControl always_on
+      {
+
+
+      	ehead = state.desiredHeading - GPS_Location.tog;
+         // u/e = k1/(z-1)
+         // uk = ukm1*ki - ek*kp
+         uhead = (int)(state.Kri*uheadm1 - ehead*state.Krp);
+         uheadm1 = uhead;
+         rud_stat = setServoPosition(RUDDER, uhead);
+#ifdef _debug_
+         printf("uhead: %d, uheadm1: %d, rud_stat: %d\n",uhead,uheadm1,rud_stat);
+
+#endif
+
+         //printf("headingcontrol\n");
+
+      }// END costate headingControl
+
+      costate WaypointCheck always_on
+      {
+         //printf("waypointCheck\n");
+
+
+      }// END WaypointCheck
+
+      costate UserControl always_on
+      {
+        //printf("userControl\n");
+
+#ifdef _printState_
+      printSailState(&state);
+#endif
+
+      }// END UserControl
+
+
+     	//set loop length
+#ifdef _debug_
+      if( (TICK_TIMER - T0) > N2)
+		{
+      		printf("overrun sampling time\n");
+     	}
+#endif
+
+		while(TICK_TIMER-T0<=N2){}
+
+
+
+   }// END costate while(1)
+   }// END far outside while(1) loop
+}// END main loop

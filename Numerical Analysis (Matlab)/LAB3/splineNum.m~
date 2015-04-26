@@ -1,0 +1,14 @@
+
+%x is the point, xx is the vector of points 
+function out = splineNum(x,xx),
+    for i=1:max(size(xx))-1,
+        %we check to see if our point x is greater than the given index yet
+        %still less than the next number. We only go up to the second to
+        %last point.
+        if(x>=xx(i) && x<xx(i+1)),
+            out = i;
+            return
+        end
+    end
+    out = i;
+end

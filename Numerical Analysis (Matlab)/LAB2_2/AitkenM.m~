@@ -1,0 +1,5 @@
+function error = AitkenM(x,tol,nMax),
+
+    while( i < 
+
+end

@@ -1,0 +1,543 @@
+function varargout = comm(varargin)
+% COMM MATLAB code for comm.fig
+%      COMM, by itself, creates a new COMM or raises the existing
+%      singleton*.
+%
+%      H = COMM returns the handle to a new COMM or the handle to
+%      the existing singleton*.
+%
+%      COMM('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in COMM.M with the given input arguments.
+%
+%      COMM('Property','Value',...) creates a new COMM or raises the
+%      existing singleton*.  Starting from the left, property value pairs are
+%      applied to the GUI before comm_OpeningFcn gets called.  An
+%      unrecognized property name or invalid value makes property application
+%      stop.  All inputs are passed to comm_OpeningFcn via varargin.
+%
+%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
+%      instance to run (singleton)".
+%
+% See also: GUIDE, GUIDATA, GUIHANDLES
+
+% Edit the above text to modify the response to help comm
+
+% Last Modified by GUIDE v2.5 23-May-2013 21:15:37
+
+% Begin initialization code - DO NOT EDIT
+gui_Singleton = 1;
+gui_State = struct('gui_Name',       mfilename, ...
+                   'gui_Singleton',  gui_Singleton, ...
+                   'gui_OpeningFcn', @comm_OpeningFcn, ...
+                   'gui_OutputFcn',  @comm_OutputFcn, ...
+                   'gui_LayoutFcn',  [] , ...
+                   'gui_Callback',   []);
+if nargin && ischar(varargin{1})
+    gui_State.gui_Callback = str2func(varargin{1});
+end
+
+if nargout
+    [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+else
+    gui_mainfcn(gui_State, varargin{:});
+end
+% End initialization code - DO NOT EDIT
+
+
+% --- Executes just before comm is made visible.
+function comm_OpeningFcn(hObject, eventdata, handles, varargin)
+% This function has no output args, see OutputFcn.
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+% varargin   command line arguments to comm (see VARARGIN)
+
+% Choose default command line output for comm
+handles.output = hObject;
+global stop;
+setappdata(0,'hMainGui',gcf);
+hMainGui = getappdata(0,'hMainGui');
+setappdata(hMainGui,'STOP',1);
+setappdata(hMainGui,'STOPPING',1);
+% Update handles structure
+guidata(hObject, handles);
+
+% UIWAIT makes comm wait for user response (see UIRESUME)
+% uiwait(handles.figure1);
+
+
+% --- Outputs from this function are returned to the command line.
+function varargout = comm_OutputFcn(hObject, eventdata, handles) 
+% varargout  cell array for returning output args (see VARARGOUT);
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Get default command line output from handles structure
+varargout{1} = handles.output;
+
+
+% --- Executes on button press in start.
+function start_Callback(hObject, eventdata, handles)
+% hObject    handle to start (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)%
+%value = get(handles.minX,'String')
+    global stop 
+    stop = false;
+    hMainGui = getappdata(0,'hMainGui');
+    stopVal = getappdata(hMainGui,'STOP');
+    stoppedVal = getappdata(hMainGui,'STOPPING');
+    if( stopVal == 1 && stoppedVal == 1 ),
+        setappdata(hMainGui,'STOPPING',0);
+        setappdata(hMainGui,'STOP',0);
+        
+    elseif( stopVal == 0 && stoppedVal == 0),
+        return;
+    elseif( stopVal == 0 && stoppedVal == 1),
+        %should never get here
+        disp('ERROR');
+        return
+    elseif( stopVal == 1 && stoppedVal == 0),
+        %wait for the method to exit
+        return; 
+    end 
+    
+    hMainGui = getappdata(0,'hMainGui');
+   
+    % get settings
+    rA_s = str2num(get(handles.rA_s,'String'));
+    sA_s = str2num(get(handles.sA_s,'String'));
+    bot_state = str2num(get(handles.bot_state,'String'));
+    %check to see if we want to save the data
+    saveVal = get(handles.saveCheck,'Value');
+    if( saveVal),
+        filename = get(handles.filename,'String');
+        %filename = './GPS_DATA';
+        fp = fopen(filename,'w')
+    end
+    
+    comport = get(handles.comPort,'String');
+    
+    
+    %reset values
+    set(handles.text3,'String',0);
+    set(handles.text4,'String',0);
+    locationHist = zeros(2,100000); %history
+    locationNum = 1;
+    
+    
+    GPS_Location= struct('timestamp',0','lat',0,'long',0,'latD','N','longD','W','sog',0,'tog',0);
+    boat_State = struct('rAngle',0,'sAngle',0,'desiredHeading',0);
+    count = 0;
+    s = xBeeInit(comport); % open/configure com port
+    setappdata(hMainGui,'xBee',s);
+    
+    startTime = clock();
+    while(1),
+        secTime = etime(clock(),startTime);
+        set(handles.text3,'String',sprintf('%d',round(secTime)));
+        drawnow();
+        if( getappdata(hMainGui,'STOP') == 1),
+            break;
+        end
+       %disp(count);
+       % count = count + 1;
+       %%% write data
+       rA_s2 = str2num(get(handles.rA_s,'String'));
+       if( rA_s2 ~= rA_s),
+          rA_s = rA_s;
+          fprintf(s,sprintf('$R,%d',round(rA_s)));
+       end
+       
+       sA_s2 = str2num(get(handles.sA_s,'String'));
+       if( sA_s2 ~= sA_s ),
+           sA_s = sA_s2;
+           fprintf(s,sprintf('$S,%d',round(sA_s)));
+       end
+       
+       
+       bot_state2 = str2num(get(handles.bot_state,'String')); %#ok<*ST2NM>
+       
+       if( bot_state2 ~= bot_state ),
+          bot_state = bot_state2;
+          fprintf(s,sprintf('$B,%d',bot_state));
+       end
+       
+       
+       %%% read data
+       if( s.BytesAvailable == 0),
+          pause(0.1);
+          continue;
+       end
+       
+       
+       line = fscanf(s); % read line in
+       line = strtrim(line);
+       %msg recieved
+       if(~isempty(line)),
+           %update count
+           count = count + 1;
+           set(handles.text4,'String',sprintf('%d',count));
+           
+           
+           if(saveVal), 
+                fprintf(fp,[line,'\n']);
+           end
+           disp(line);
+           if( length(line) < 6),
+               continue;
+           elseif( strcmp(line(1:6),'$GPRMC')),
+               %parse string GPS data
+               [out, GPS_Location] = parseGPS_custom(line,GPS_Location);
+               GPS_Location
+               if( out ~= 0),
+                   disp('Error parsing GPS string');
+                   disp(line);
+                   disp('END string');
+                   continue;
+               end
+               %update GUI
+               %lat
+               set(handles.lat,'String',num2str(GPS_Location.lat));
+               %long
+               set(handles.long,'String',num2str(GPS_Location.long));
+               %sog
+               set(handles.sog,'String',num2str(GPS_Location.sog));
+               %tog
+               set(handles.tog,'String',num2str(GPS_Location.tog));
+               
+               %long-lat plot
+               locationHist(:,locationNum) = [GPS_Location.long; GPS_Location.lat];
+               axes(handles.longLat);
+               plot(locationHist(1,1:locationNum), locationHist(2,1:locationNum));
+               xlabel(sprintf('Longitude, %s',GPS_Location.longD));
+               ylabel(sprintf('Latitude, %s',GPS_Location.latD));
+               locationNum = locationNum + 1; 
+               %axes(handles.longLat);
+               %drawnow();
+               axes(handles.sogTog);
+               rdir = GPS_Location.tog * pi/180; %convert to radians
+               [x,y] = pol2cart(rdir,GPS_Location.sog);
+               compass(x,y);
+               guidata(hObject, handles);
+               drawnow();
+               
+           elseif(strcmp(line(1:3),'$ST')),
+           %status update    
+                [out, boat_State] = parseBoatState(line,boat_State);
+                set(handles.sA_r,'String',num2str(boat_State.sAngle));
+                set(handles.rA_r,'String',num2str(boat_State.rAngle));
+                set(handles.desiredHeading,'String',...
+                                      num2str(boat_State.desiredHeading));
+                
+           
+           else
+           else
+               disp('Non GPS data recieved:');
+               disp(line);
+           end
+        
+           
+           
+       end
+       
+    end
+    setappdata(hMainGui,'STOPPING',1);
+    fclose(s); % close serial port
+    
+   
+% --- Executes on button press in stop.
+function stop_Callback(hObject, eventdata, handles)
+% hObject    handle to stop (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+hMainGui = getappdata(0,'hMainGui');
+stopVal = getappdata(hMainGui,'STOP');
+stoppedVal = getappdata(hMainGui,'STOPPING');
+setappdata(hMainGui,'STOP',1);
+disp('Stopping Loop');
+
+
+% --- Executes on button press in checkbox1.
+function checkbox1_Callback(hObject, eventdata, handles)
+% hObject    handle to checkbox1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of checkbox1
+
+
+
+function sA_s_Callback(hObject, eventdata, handles)
+% hObject    handle to sA_s (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of sA_s as text
+%        str2double(get(hObject,'String')) returns contents of sA_s as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function sA_s_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to sA_s (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function rA_s_Callback(hObject, eventdata, handles)
+% hObject    handle to rA_s (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of rA_s as text
+%        str2double(get(hObject,'String')) returns contents of rA_s as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function rA_s_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to rA_s (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function bot_state_Callback(hObject, eventdata, handles)
+% hObject    handle to bot_state (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of bot_state as text
+%        str2double(get(hObject,'String')) returns contents of bot_state as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function bot_state_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to bot_state (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in sA_button.
+function sA_button_Callback(hObject, eventdata, handles)
+% hObject    handle to sA_button (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in rA_button.
+function rA_button_Callback(hObject, eventdata, handles)
+% hObject    handle to rA_button (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in bot_state_button.
+function bot_state_button_Callback(hObject, eventdata, handles)
+% hObject    handle to bot_state_button (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in saveCheck.
+function saveCheck_Callback(hObject, eventdata, handles)
+% hObject    handle to saveCheck (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of saveCheck
+
+
+
+function comPort_Callback(hObject, eventdata, handles)
+% hObject    handle to comPort (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of comPort as text
+%        str2double(get(hObject,'String')) returns contents of comPort as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function comPort_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to comPort (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function filename_Callback(hObject, eventdata, handles)
+% hObject    handle to filename (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of filename as text
+%        str2double(get(hObject,'String')) returns contents of filename as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function filename_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to filename (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in pushbutton8.
+function pushbutton8_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton8 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on selection change in controlState.
+function controlState_Callback(hObject, eventdata, handles)
+% hObject    handle to controlState (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns controlState contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from controlState
+
+
+% --- Executes during object creation, after setting all properties.
+function controlState_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to controlState (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function writeCustomString_Callback(hObject, eventdata, handles)
+% hObject    handle to writeCustomString (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of writeCustomString as text
+%        str2double(get(hObject,'String')) returns contents of writeCustomString as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function writeCustomString_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to writeCustomString (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in writeString.
+function writeString_Callback(hObject, eventdata, handles)
+% hObject    handle to writeString (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+hMainGui = getappdata(0,'hMainGui');
+s = getappdata(hMainGui,'xBee');  
+xBeeString = get(handles.writeCustomString,'String');
+stopVal = getappdata(hMainGui,'STOP');
+stoppedVal = getappdata(hMainGui,'STOPPING');
+if( stopVal == 0 && stoppedVal == 0)
+    fprintf(s,xBeeString);
+end
+
+
+
+
+% --- Executes on button press in startLoop.
+function startLoop_Callback(hObject, eventdata, handles)
+% hObject    handle to startLoop (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+hMainGui = getappdata(0,'hMainGui');
+s = getappdata(hMainGui,'xBee'); 
+stopVal = getappdata(hMainGui,'STOP');
+stoppedVal = getappdata(hMainGui,'STOPPING');
+if( stopVal == 0 && stoppedVal == 0)
+    
+    fprintf(s,'1');
+end
+
+
+function desiredHeading_Callback(hObject, eventdata, handles)
+% hObject    handle to desiredHeading (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of desiredHeading as text
+%        str2double(get(hObject,'String')) returns contents of desiredHeading as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function desiredHeading_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to desiredHeading (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on selection change in GPS_state.
+function GPS_state_Callback(hObject, eventdata, handles)
+% hObject    handle to GPS_state (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: contents = cellstr(get(hObject,'String')) returns GPS_state contents as cell array
+%        contents{get(hObject,'Value')} returns selected item from GPS_state
+
+
+% --- Executes during object creation, after setting all properties.
+function GPS_state_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to GPS_state (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end

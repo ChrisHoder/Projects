@@ -1,0 +1,110 @@
+define angle_off_wind;
+define tack_length
+
+#ifdefine layLimit
+int
+float bearing;
+
+//have a waypoint
+//get bearing to waypoint
+
+bearing=gps_bearing2(&GPS_Location,&GPS_Way[state.Goal]);	// bearing to waypoint
+if (bearing-state.windDir< INTERVAL && bearing-state.windDir>-INTERVAL)       {
+	coResume(&tacking);
+   coPause(&jibing);
+   }
+   else
+   {
+   coPause (&tacking);
+   coResume(&jibing);
+   }
+   strategyselected=1;
+
+
+
+costate tacking always_on   {
+GPSPosition tackOrigin;
+waitfor(strategySleected==1);
+tackOrigin = GPS_Location;
+bearing=gps_bearing2(&GPS_Location,&GPS_Way[state.Goal]);	// bearing to waypoint
+if (tack_possible==1){
+if (bearing>state.windDir){
+desired_heading=windDir+ang_off_wind;
+}
+else
+{
+desired_heading=windDir-ang_off_wind
+}
+}
+waitfor(gps_ground_distance(tackOrigin,GPS_Location)>TACK_LENGTH);
+if (GPS_state.sog>MIN_TACK_SPEED)
+{
+tack_possible=1;
+}
+else
+{
+tack_possible=0;
+}
+}
+
+costate jibing always_on {
+desiredheading=gps_bearing2(&GPS_Location,&GPS_Way[state.Goal]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// store a start of tack position
+tackOrigin = GPS_Location.lat_min;			// absolute origin inside corridor
+markBearInit = gps_bearing2(&GPS_Way[state.Goal], &GPS_Location);	// bearing to waypoint
+
+markBear = gps_bearing2(&GPS_Way[state.Goal], &GPS_Location);	// bearing to waypoint
+
+//generate bounding box
+
+//point A
+ang_alph=90-markBearInit
+diff_x=sin(bearing)*width;
+diff_y=cos_beratin*width;
+
+a_x=tackOriginLon-diff_x;
+a_y=tackoriginLat+diff_y;
+
+b_x=tackOriginLon+diff_x;
+b_y=tackoriginLat-diff_y;
+
+
+
+}
+
+
+
+
+
+// store a start of tack position
+tackOrigin = GPS_Location.lat_min;			// absolute origin inside corridor
+markBearInit = gps_bearing2(&GPS_Way[state.Goal], &GPS_Location);	// bearing to waypoint
+
+// inside recurring tack loop
+
+markBear = gps_bearing2(&GPS_Way[state.Goal], &GPS_Location);	// bearing to waypoint
+
+if (GPS_Location.lat_min > corWidth || GPS_Location.lat_min < -corWidth)  // outside corridor
+	{   // execute tack block}
+else if ( GPS_Location.tog - markBear > layLimit )		// intersection of laylines
+				// check the signs on this cause the angle may go 0 to 360 cw or ccw
+	{  // tack block}
+else
+	{ // continue straight}
+

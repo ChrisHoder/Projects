@@ -1,0 +1,159 @@
+/*** BeginHeader */
+#ifndef __ENCODER_LIB
+#define __ENCODER_LIB
+
+//Encoder Board configurations
+#define DATA 	0x00ff
+#define RD     8            // Control lines DIO pins 9-13
+#define WR     9
+#define CS1    10
+#define CS2    11
+#define YX     12
+#define CD     13
+
+#define BP_RESET    	  	0X01	    // reset byte pointer
+#define EFLAG_RESET		0X86	    // reset E bit of flag register
+#define CNT					0x01       // access control register
+#define DAT					0x00       // access data register
+#define BP_RESETB  		0X81	   // reset byte pointer (x and y)
+#define CLOCK_DATA 		   0x00		// FCK frequency divider  *Original value = 2
+#define CLOCK_SETUP 			0X18		// transfer PR0 to PSC (x and y)
+#define INPUT_SETUP   		0XC1		// enable inputs A and B (x and y)
+#define QUAD_X1       		0XA8		// quadrature multiplier to 1 (x and y)
+#define QUAD_X2       		0XB0		// quadrature multiplier to 2 (x and y)
+#define QUAD_X4       		0XB8		// quadrature multiplier to 4 (x and y)
+#define CNTR_RESET    		0X02		// reset counter
+#define CNTR_RESETB    		0X82		// reset counter (x and y)
+#define TRSFRPR_CNTR    	0X08		// transfer preset register to counter
+#define TRSFRCNTR_OL			0X90		// transfer CNTR to OL (x and y)
+#define XYIDR_SETUP			0XE1			// x and y index cntrl register
+#define XYIOR_SETUP			0XDB			// x and y i/o cntrl register
+#define HI_Z_STATE         0xFF
+/*** EndHeader */
+
+/*** BeginHeader initEncoder, EncWrite, EncRead */
+int initEncoder(void);
+void EncWrite(int channel, int data, int reg);
+int EncRead(int channel, int reg);
+/*** EndHeader */
+
+//Send initialization information to encoder counter chips
+int initEncoder(void)
+{
+   int fail;
+   int i,j;
+   fail = 0;
+
+   for (i = 0; i<4; i++)
+   {
+//		EncWrite(i, XYIOR_SETUP,CNT);	// Setup I/O control register
+//		EncWrite(i, XYIDR_SETUP,CNT);		// Disable Index
+      EncWrite(i,EFLAG_RESET,CNT);
+      EncWrite(i,BP_RESETB,CNT);
+      // EncWrite(i,CNTR_RESETB,CNT);
+     	EncWrite(i,CLOCK_DATA,DAT);
+    	EncWrite(i,CLOCK_SETUP,CNT);
+     	EncWrite(i,INPUT_SETUP,CNT);
+     	EncWrite(i,QUAD_X2,CNT);   		//changed from Quad_X4
+
+      EncWrite(i,BP_RESETB,CNT);
+      EncWrite(i,0x12,DAT);
+      EncWrite(i,0x34,DAT);
+      EncWrite(i,0x56,DAT);
+
+      EncWrite(i,TRSFRPR_CNTR,CNT);
+      EncWrite(i,TRSFRCNTR_OL,CNT);
+
+      // EncWrite(i,BP_RESET,CNT);
+      EncWrite(i,BP_RESETB,CNT);
+      //printf("written = %d, read = %d\n",0x12,EncRead(i,DAT));
+      //printf("written = %d, read = %d\n",0x34,EncRead(i,DAT));
+      //printf("written = %d, read = %d\n",0x56,EncRead(i,DAT));
+
+    // Reset the counter now so that starting position is 0
+       EncWrite(i,CNTR_RESET,CNT);
+       EncWrite(i,CNTR_RESETB,CNT);
+   }
+
+   return fail;
+}
+
+void EncWrite(int channel, int data, int reg)
+{
+   int i, delayvar;
+
+   digOutConfig(0xffff);// set all digI/O lines as outputs
+
+   // select which chip - channel 0 & 1 are chip 1 and channel 2 & 3 are chip 2
+   if (channel <= 1)
+      digOut(CS1,0);
+   else
+   	digOut(CS2,0);
+   // select control or data, depending on what is being written
+    digOut(CD,reg);
+
+  // select which channel, X or Y  Y = 0 and 2, X = 1 and 3
+   if ((channel == 0) | (channel == 2) )
+   	digOut(YX,1);
+  else
+      digOut(YX,0);
+
+    digOutBank((char)0,(char)data);
+    // assert write
+   digOut(WR,0);
+   // deassert write
+   digOut(WR,1);
+    // deselect chip
+   digOut(CS1,1);
+   digOut(CS2,1);
+   //Set all outputs to 1 so that open collector transistor is off
+   digOutBank((char)0,(char)HI_Z_STATE);
+   digOutConfig(0xff00);
+}
+
+// channel is an int from 0 to 3 indicating which encoder
+// reg is an int which is 1 or 0 indicating whether control or data is desired
+int EncRead(int channel, int reg)
+{
+   int EncData;
+   int i, delayvar;
+   EncData = 0;
+
+   digOutConfig(0xff00); // set data lines as inputs and everything else as outputs
+
+   // select which chip
+   if (channel <= 1)
+   	digOut(CS1,0);
+	else
+   	digOut(CS2,0);
+
+    // Select control or data register, depending on what is being read
+    digOut(CD,reg);
+
+   // select which channel, X or Y
+   if ((channel == 0) | (channel == 2) )
+   	digOut(YX,1);
+  else
+      digOut(YX,0);
+     // assert Read low
+   digOut(RD,0);
+
+   EncData = digInBank(0);     // read the data from the data lines
+
+//     for(i = 0; i < 5; i++)
+//        { delayvar = i; }
+
+    //deassert read reads the data.  Deassert, delay to allow rise
+   // then deselect chips
+   digOut(RD,1);
+
+   digOut(CS1,1);
+   digOut(CS2,1);
+
+   return EncData;
+}
+
+/*** BeginHeader */
+#endif
+/*** EndHeader */
+

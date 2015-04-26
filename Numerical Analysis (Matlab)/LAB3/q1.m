@@ -1,0 +1,187 @@
+% FILE: q1.m
+% AUTHOR: Chris Hoder
+% DATE: 9/27/2012
+% ENGS 91
+% LABORATORY 3
+
+
+% This script will answer the parts to question 1 and plot them
+
+% The script should also be run in order. some cells rely on information
+% from previous cells (i.e. the plotting ones)
+
+%%q1 a)
+clear
+% a polynomial that matches the function at N+1 locations uniformly spaced
+% over the interval
+
+N = 5;
+%points
+p = N+1;
+%evenly spaced points
+x = linspace(1,2,p)
+%Get the function values at our choice of x_i's
+for i=1:p, 
+    y(i) = f(x(i));
+end
+
+%plot the neville's method approximation at a given number of points
+points = 1:0.001:2;
+for i=1:max(size(points)),
+ xx(i,1) = points(i);
+ xx(i,2) = neville(x,y,xx(i,1),N);
+ %also get data points for the function
+ xxx(i) = f(points(i));
+ error1(i) = abs(xx(i,2)-xxx(i))/abs(xxx(i));
+end
+
+
+
+% This code can be used to test to check that all of the input y(i)'s
+% are returned with neville's algorithm.
+%
+% for j=1:p,
+%     g = neville(x,y,x(j),N);
+%     y(j)==g;
+%     y(j)-g;
+%     
+% end
+
+%plot the data in subplots. the left plot is the actual f(x). On the right
+% we have the neville's method approximation with equally spaced points and
+% the origional f(x) for comparision. The points used for neville's method
+% are drawn as circles
+subplot(2,2,1) 
+plot(xx(:,1),xxx,'-r')
+xlabel('x')
+ylabel('f(x)')
+title('Actual f(x) = 10x + e^xcos(10x)')
+subplot(2,2,2)
+plot(xx(:,1),xx(:,2),xx(:,1),xxx,'-.g')
+hold on
+scatter(x,y);
+hold off
+xlabel('x');
+ylabel('f(x)');
+legend('Approximation w/Neville''s Method','Actual f(x)','points used')
+title('Neville''s Method with equally spaced points, marked on graph');
+
+%% Question 1 part b)
+
+%a Taylor polynomial expanded about x_o in [1,2], to the fifth order
+
+%point to do taylor expansion around
+x_o = 1.5;
+
+%find the derivatives for the 5th order taylor expansion
+f_eval = f(x_o);
+fprime  = 10+exp(x_o)*cos(10*x_o)-10*exp(x_o)*sin(10*x_o);
+fprime2 = -exp(x_o)*(20*sin(10*x_o)+99*cos(10*x_o));
+fprime3 = exp(x_o)*(970*sin(10*x_o)-299*cos(10*x_o));
+fprime4 = exp(x_o)*(3960*sin(10*x_o)+9401*cos(10*x_o));
+fprime5 = exp(x_o)*(49001*cos(10*x_o)+9050*sin(10*x_o));
+
+%obtain the plot of the taylor expansion over the range [1,2]
+points2 = 1:0.001:2;
+for i=1:max(size(points2)),
+    x_temp = points2(i);
+    %difference between point and expansion point, x_o
+    h = x_temp-x_o;
+    %taylor expansion to the 5th order
+    fTaylor(i) =  f_eval + fprime*(h)+ (fprime2/2)*(h)^2 +...
+                  (fprime3/6)*(h)^3 + (fprime4/24)*h^4 + (fprime5/120)*h^5;
+    exact = f(x_temp);
+    error2(i) = abs(exact-fTaylor(i))/abs(exact);
+end
+
+%Add this plot to the subplots, as the bottom left. The actual f(x) will
+%also be on the plot as a dotted green line.
+subplot(2,2,3);
+plot(points2, fTaylor,xx(:,1),xxx,'-.g');
+xlabel('x');
+ylabel('f(x)');
+title('Approximation of f(x) with 5^{th} order taylor expansion about 1.5');
+legend('Approximation w/5^{th} order taylor expansion around 1.5',...
+        'Actual f(x)');
+
+
+
+%% Question 1 part c)
+% part c, use neville's method and the optimal chebyshev (n+1)th order
+% roots.
+N =5;
+p = N+1;
+%get the roots of the n+1 order polynomial and then shift to our interval
+%between 1 and 2
+chebpoints = (1+2)/2 + ((2-1)/2)*chebyshevRoots(p);
+%evaluate our function at these points
+for i = 1:p,
+    y2(i) = f(chebpoints(i));
+end
+
+%use neville's algorithm to approximate the function
+points3 = 1:0.001:2;
+for i =1:max(size(points3)),
+    xx2(i,1) = points3(i);
+    xx2(i,2) = neville(chebpoints,y2,xx(i,1),N);
+    %also get points to plot the actual function for comparison
+    xxx(i) = f(points3(i));
+    error3(i) = abs(xxx(i) -xx2(i,2))/abs(xxx(i));
+end
+
+%Plot the data on the last bottom right figure. Also include the origional
+%f(x) as a dotted green line. The chebyshev points taken will also be
+%included on the graph as circles
+subplot(2,2,4);
+plot(xx2(:,1),xx2(:,2),xx(:,1),xxx,'-.g');
+hold on
+scatter(chebpoints,y2);
+xlabel('x');
+ylabel('f(x)');
+title(['Approximation of f(x) using Neville''s Method and',...
+                              'chebyshev roots shown on figure']);
+legend('Approximation w/Chebyshev roots','Actual f(x)','Chebyshev roots');
+                          
+
+%% This code can be used to compare the neville's method with evenly spaced
+% points and that with the chebyshev points
+%find the error
+error_equal = max(abs(xx(:,2)-xxx'));
+error2_cbhey = abs(xx2(:,2)-xxx');
+max(error2_cbhey)
+
+%% This will plot all of these approximations on one large figure so that
+% they can be easily compared. The equally spaced points will be a square
+% while the chebyshev optimal points will be circles.
+plot(xx(:,1),xxx,'-.r',xx(:,1),xx(:,2),'--g',points,fTaylor,':b',...
+                                                   xx2(:,1),xx2(:,2),'-k');
+hold on
+plot(x,y,'square')
+scatter(chebpoints,y2);
+hold off
+xlabel('x');
+ylabel('f(x)')
+title(' Comparison of various approximation method for f(x)' );
+legend('Actual f(x)','Neville''s Method w/ equally spaced points',...
+       'Taylor approximation around 1.5',...
+       'Neville''s Method w/ Chebyshev roots',...
+       'Equally spaced points', 'Chebyshev optimal points');
+   
+%% plot the errors. plotted separately so you can compare the errors to
+% eachother and the plots to eachother.
+cla
+subplot(2,2,1);
+semilogy(points,error1);
+xlabel('x value')
+ylabel('Relative Error');
+title('Relative Error for Neville''s Method with equally spaced points');
+subplot(2,2,2);
+semilogy(points2,error2);
+xlabel('x value');
+ylabel('Relative Error');
+title('Relative Eror for the 5th orer Taylor Expansion about x_o = 1.5');
+subplot(2,2,3);
+semilogy(points3,error3);
+xlabel('x value');
+ylabel('Relative Error');
+title('Relative Error for Neville''s Method with the Chebyshev roots');

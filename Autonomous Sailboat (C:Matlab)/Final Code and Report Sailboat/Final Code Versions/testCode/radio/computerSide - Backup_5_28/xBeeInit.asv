@@ -1,0 +1,5 @@
+function out = xBeeInit(comport)
+    
+    out = serial(comport);
+    out.Terminator = 'CR';
+    

@@ -1,0 +1,8 @@
+Watch0=tmpbuf:main
+Watch1=stat:main
+Watch2=angle:main
+cbWatch0=angle
+cbWatch1=ang
+cbWatch2=stat
+cbWatch3=tmpbuf
+cbWatch4=buf
