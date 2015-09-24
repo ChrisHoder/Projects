@@ -1,0 +1,6 @@
+addpath('./code')
+addpath('./code/NeuralNetwork')
+addpath('./code/Validation_results/')
+addpath('./code/Experiments/')
+addpath('./code/DecisionTrees/')
+addpath('./Data/MatlabFiles/')
